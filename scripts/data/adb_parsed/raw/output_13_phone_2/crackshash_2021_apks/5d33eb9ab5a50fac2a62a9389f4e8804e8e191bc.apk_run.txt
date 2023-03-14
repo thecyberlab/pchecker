@@ -1,0 +1,355 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        bd81000 com.mg.android/.ui.activities.initial.InitialActivity filter 91aa67e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "weatherpro.com": -1
+          Path: "PatternMatcher{PREFIX: /app}"
+      genericidp:
+        e8283d7 com.mg.android/com.google.firebase.auth.internal.GenericIdpActivity filter 107d4c4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        6c17fad com.mg.android/com.google.firebase.auth.internal.RecaptchaActivity filter 21842e2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        bd81000 com.mg.android/.ui.activities.initial.InitialActivity filter fdf0039
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        28777df com.mg.android/.widgets.large.LargeWidgetConfigActivity filter fae2c2c
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        4a666f5 com.mg.android/.widgets.medium.MediumWidgetConfigActivity filter 4b6ac8a
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        715b2fb com.mg.android/.widgets.small.SmallWidgetConfigActivity filter 9e7df18
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        2437d71 com.mg.android/.widgets.resizable.ResizeableWidgetConfigActivity filter d5b0756
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        a58f263 com.mg.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter d4b8e60
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        c6eae1d com.mg.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b9b2892
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        5818673 com.mg.android/com.teragence.client.service.PresenceReceiver filter f0f7930
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_TICK:
+        41da4e1 com.mg.android/.widgets.base.WidgetBroadcastReceiver filter fe1f206
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.SCREEN_ON"
+          Action: "android.intent.action.TIME_TICK"
+      android.intent.action.SCREEN_ON:
+        41da4e1 com.mg.android/.widgets.base.WidgetBroadcastReceiver filter fe1f206
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.SCREEN_ON"
+          Action: "android.intent.action.TIME_TICK"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        ccd0f19 com.mg.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 43f3bde
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        ede51bf com.mg.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter a4b308c
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.AIRPLANE_MODE:
+        41da4e1 com.mg.android/.widgets.base.WidgetBroadcastReceiver filter fe1f206
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.SCREEN_ON"
+          Action: "android.intent.action.TIME_TICK"
+      android.intent.action.DEVICE_STORAGE_OK:
+        ccd0f19 com.mg.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 43f3bde
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        3488851 com.mg.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter f10e8b6
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      zendesk.support:
+        19610c7 com.mg.android/zendesk.support.DeepLinkingBroadcastReceiver filter 6ebf6f4
+          Action: "zendesk.support"
+      android.intent.action.BATTERY_LOW:
+        a58f263 com.mg.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter d4b8e60
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        31683d5 com.mg.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 87f37ea
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        31683d5 com.mg.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 87f37ea
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        5818673 com.mg.android/com.teragence.client.service.PresenceReceiver filter f0f7930
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        41da4e1 com.mg.android/.widgets.base.WidgetBroadcastReceiver filter fe1f206
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.SCREEN_ON"
+          Action: "android.intent.action.TIME_TICK"
+        31683d5 com.mg.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 87f37ea
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        c6eae1d com.mg.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b9b2892
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        ba369a9 com.mg.android/.widgets.large.LargeWidgetProvider filter 7bab2e
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        66416cf com.mg.android/.widgets.medium.MediumWidgetProvider filter aaaf85c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        59ff765 com.mg.android/.widgets.small.SmallWidgetProvider filter f9b4c3a
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        53550eb com.mg.android/.widgets.resizable.ResizeableWidgetProvider filter 71d3e48
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        a304adb com.mg.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter dc0c978
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.teragence.client.service.MetricsService:
+        29b3a53 com.mg.android/com.teragence.client.service.MetricsService filter 70f4f90
+          Action: "com.teragence.client.service.MetricsService"
+      com.google.firebase.auth.api.gms.service.START:
+        9bc588d com.mg.android/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 23ada42
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+      com.mg.android.messenger:
+        3deb9b7 com.mg.android/com.blankj.utilcode.util.MessengerUtils$ServerService filter cf50524
+          Action: "com.mg.android.messenger"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          weatherpro.com
+
+Registered ContentProviders:
+  com.mg.android/zendesk.belvedere.BelvedereFileProvider:
+    Provider{ad9d02f com.mg.android/zendesk.belvedere.BelvedereFileProvider}
+  com.mg.android/com.blankj.utilcode.util.UtilsFileProvider:
+    Provider{f86263c com.mg.android/com.blankj.utilcode.util.UtilsFileProvider}
+  com.mg.android/zendesk.support.SupportSdkStartupProvider:
+    Provider{a2cbfc5 com.mg.android/zendesk.support.SupportSdkStartupProvider}
+  com.mg.android/androidx.work.impl.WorkManagerInitializer:
+    Provider{ed9dd1a com.mg.android/androidx.work.impl.WorkManagerInitializer}
+  com.mg.android/com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider:
+    Provider{3d404b com.mg.android/com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider}
+  com.mg.android/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{8ad6a28 com.mg.android/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.mg.android/com.squareup.picasso.PicassoProvider:
+    Provider{b1e9341 com.mg.android/com.squareup.picasso.PicassoProvider}
+  com.mg.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{228b0e6 com.mg.android/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.mg.android.utilcode.provider]:
+    Provider{f86263c com.mg.android/com.blankj.utilcode.util.UtilsFileProvider}
+      applicationInfo=ApplicationInfo{c3f4c20 com.mg.android}
+  [com.mg.android.firebaseperfprovider]:
+    Provider{8ad6a28 com.mg.android/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{e559d9 com.mg.android}
+  [com.mg.android.com.squareup.picasso]:
+    Provider{b1e9341 com.mg.android/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{9dd8f9e com.mg.android}
+  [com.mg.android.mapboxtelemetryinitprovider]:
+    Provider{3d404b com.mg.android/com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider}
+      applicationInfo=ApplicationInfo{74c7a7f com.mg.android}
+  [com.mg.android.workmanager-init]:
+    Provider{ed9dd1a com.mg.android/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{61d0a4c com.mg.android}
+  [com.mg.android.zendesk.support.SupportSdkStartupProvider]:
+    Provider{a2cbfc5 com.mg.android/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{648ba95 com.mg.android}
+  [com.mg.android.firebaseinitprovider]:
+    Provider{228b0e6 com.mg.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{a0f07aa com.mg.android}
+  [com.mg.android.belvedere2.attachments]:
+    Provider{ad9d02f com.mg.android/zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{4383f9b com.mg.android}
+
+Key Set Manager:
+  [com.mg.android]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.mg.android] (c367f38):
+    userId=10388
+    pkg=Package{273c0ca com.mg.android}
+    codePath=/data/app/~~RsBmOiFs5ROIDkVZYOkeIQ==/com.mg.android-Lkgsho5skcS_9RNa7L0OwA==
+    resourcePath=/data/app/~~RsBmOiFs5ROIDkVZYOkeIQ==/com.mg.android-Lkgsho5skcS_9RNa7L0OwA==
+    legacyNativeLibraryDir=/data/app/~~RsBmOiFs5ROIDkVZYOkeIQ==/com.mg.android-Lkgsho5skcS_9RNa7L0OwA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=800 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=5.6.3
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.mg.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.test.runner
+      org.apache.http.legacy
+      android.test.runner
+      android.test.base
+      android.test.mock
+    usesLibraryFiles:
+      /system/framework/android.test.runner.jar
+      /system/framework/org.apache.http.legacy.jar
+      /system/framework/android.test.base.jar
+      /system/framework/android.test.mock.jar
+    timeStamp=2022-11-30 17:25:15
+    lastUpdateTime=2022-11-30 17:25:17
+    packageSource=0
+    signatures=PackageSignatures{b23ad58 version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      com.android.alarm.permission.SET_ALARM
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.READ_EXTERNAL_STORAGE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=80997 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 17:25:17
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.mg.android
+    com.google.android.apps.diagnosticstool:
+      com.mg.android
+    com.google.android.settings.intelligence:
+      com.mg.android
+    com.google.android.apps.accessibility.voiceaccess:
+      com.mg.android
+    com.truecaller:
+      com.mg.android
+    com.dv.adm:
+      com.mg.android
+    com.zappcues.gamingmode:
+      com.mg.android
+    com.mg.android:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      com.mobisystems.office
+      com.dv.adm
+      com.utorrent.client.pro
+    com.jio.myjio:
+      com.mg.android
+  queryable via interaction:
+    User 0:
+      [com.android.keychain,com.android.location.fused,com.android.qns,com.android.providers.settings,com.google.android.settings.future.biometrics.faceenroll,com.android.localtransport,com.google.android.iwlan,com.android.server.telecom,com.android.inputdevices,com.android.settings,com.android.wallpaperbackup,android,com.android.dynsystem,com.google.SSRestartDetector]:
+        com.mg.android
+      [com.google.android.gsf,com.google.android.gms]:
+        com.mg.android
+  queryable via uses-library:
+
+Dexopt state:
+  [com.mg.android]
+    path: /data/app/~~RsBmOiFs5ROIDkVZYOkeIQ==/com.mg.android-Lkgsho5skcS_9RNa7L0OwA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1205209
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.mg.android]
+     base.apk - 648

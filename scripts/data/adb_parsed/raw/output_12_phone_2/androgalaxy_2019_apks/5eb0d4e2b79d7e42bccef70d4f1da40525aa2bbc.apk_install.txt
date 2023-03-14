@@ -1,0 +1,893 @@
+Activity Resolver Table:
+  Schemes:
+      fbYOUR_APP_ID:
+        83f3b3e com.SearingMedia.Parrot/com.facebook.CustomTabActivity filter 6ed4d9f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbYOUR_APP_ID"
+      parrot:
+        5e2e566 com.SearingMedia.Parrot/.features.main.MainActivity filter 2778954
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "parrot"
+      http:
+        5e2e566 com.SearingMedia.Parrot/.features.main.MainActivity filter 3b540fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "theparrotapp.com": -1
+          Path: "PatternMatcher{PREFIX: /app}"
+        5e2e566 com.SearingMedia.Parrot/.features.main.MainActivity filter c65f043
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "theparrotapp.com": -1
+          Path: "PatternMatcher{PREFIX: /}"
+      android-app:
+        5e2e566 com.SearingMedia.Parrot/.features.main.MainActivity filter ea7f1f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "android-app"
+          Authority: "com.SearingMedia.Parrot": -1
+          Path: "PatternMatcher{PREFIX: /}"
+      db-2v69yg8rgi98300:
+        d6de6c0 com.SearingMedia.Parrot/com.dropbox.core.android.AuthActivity filter c99eff9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "db-2v69yg8rgi98300"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        5e2e566 com.SearingMedia.Parrot/.features.main.MainActivity filter 664f0a7
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.SearingMedia.Parrot.controllers.recorders.helpers.small.ACTION_STOP:
+        f39ef84 com.SearingMedia.Parrot/.receivers.WidgetReceiverSmall filter 6bd636d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.small.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.small.ACTION_STOP"
+      android.intent.action.BATTERY_OKAY:
+        c2dab1c com.SearingMedia.Parrot/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter d3c9325
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        34eefee com.SearingMedia.Parrot/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 5cadc8f
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        8aaaeec com.SearingMedia.Parrot/.receivers.BootReceiver filter 88092b5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_CHANGED"
+          Action: "android.intent.action.PACKAGE_INSTALL"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.intent.action.REBOOT"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.receivers.ScheduledRecordingReceiver:
+        809cdd8 com.SearingMedia.Parrot/.receivers.alarm.ScheduledRecordingReceiver filter 5f4a531
+          Action: "com.SearingMedia.Parrot.receivers.ScheduledRecordingReceiver"
+      android.intent.action.PHONE_STATE:
+        63cbba2 com.SearingMedia.Parrot/.receivers.PhoneStateBroadcastReceiver filter a537033
+          Action: "android.intent.action.PHONE_STATE"
+          Action: "android.intent.action.NEW_OUTGOING_CALL"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_UNPAUSE:
+        8657416 com.SearingMedia.Parrot/.receivers.WidgetReceiver filter b955197
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_STOP"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_UNPAUSE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        b3e1cfa com.SearingMedia.Parrot/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 9a2b2ab
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        7f85d08 com.SearingMedia.Parrot/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter d483ca1
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.SearingMedia.Parrot.controllers.recorders.helpers.small.ACTION_RECORD:
+        f39ef84 com.SearingMedia.Parrot/.receivers.WidgetReceiverSmall filter 6bd636d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.small.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.small.ACTION_STOP"
+      com.SearingMedia.Parrot.receivers.WaveformCloudReceiver.Confirm:
+        c287ff0 com.SearingMedia.Parrot/.receivers.WaveformCloudReceiver filter 7d9c969
+          Action: "com.SearingMedia.Parrot.receivers.WaveformCloudReceiver.Confirm"
+          Action: "com.SearingMedia.Parrot.receivers.WaveformCloudReceiver.Deny"
+      android.intent.action.DEVICE_STORAGE_OK:
+        b3e1cfa com.SearingMedia.Parrot/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 9a2b2ab
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        513c520 com.SearingMedia.Parrot/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 63aded9
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_PAUSE:
+        8657416 com.SearingMedia.Parrot/.receivers.WidgetReceiver filter b955197
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_STOP"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_UNPAUSE"
+      android.intent.action.PACKAGE_CHANGED:
+        8aaaeec com.SearingMedia.Parrot/.receivers.BootReceiver filter 88092b5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_CHANGED"
+          Action: "android.intent.action.PACKAGE_INSTALL"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.intent.action.REBOOT"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.c2dm.intent.RECEIVE:
+        52f5152 com.SearingMedia.Parrot/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 758cc23
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        c2dab1c com.SearingMedia.Parrot/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter d3c9325
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        fc10ec6 com.SearingMedia.Parrot/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ad7ce87
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        fc10ec6 com.SearingMedia.Parrot/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ad7ce87
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        8aaaeec com.SearingMedia.Parrot/.receivers.BootReceiver filter 88092b5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_CHANGED"
+          Action: "android.intent.action.PACKAGE_INSTALL"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.intent.action.REBOOT"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+        fc10ec6 com.SearingMedia.Parrot/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ad7ce87
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.USER_PRESENT:
+        8aaaeec com.SearingMedia.Parrot/.receivers.BootReceiver filter 88092b5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_CHANGED"
+          Action: "android.intent.action.PACKAGE_INSTALL"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.intent.action.REBOOT"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_RECORD:
+        8657416 com.SearingMedia.Parrot/.receivers.WidgetReceiver filter b955197
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_STOP"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_UNPAUSE"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        34eefee com.SearingMedia.Parrot/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 5cadc8f
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.SearingMedia.Parrot.receivers.WaveformCloudReceiver.Deny:
+        c287ff0 com.SearingMedia.Parrot/.receivers.WaveformCloudReceiver filter 7d9c969
+          Action: "com.SearingMedia.Parrot.receivers.WaveformCloudReceiver.Confirm"
+          Action: "com.SearingMedia.Parrot.receivers.WaveformCloudReceiver.Deny"
+      com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_STOP:
+        8657416 com.SearingMedia.Parrot/.receivers.WidgetReceiver filter b955197
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_STOP"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_UNPAUSE"
+      android.intent.action.PACKAGE_INSTALL:
+        8aaaeec com.SearingMedia.Parrot/.receivers.BootReceiver filter 88092b5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_CHANGED"
+          Action: "android.intent.action.PACKAGE_INSTALL"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.intent.action.REBOOT"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        8657416 com.SearingMedia.Parrot/.receivers.WidgetReceiver filter b955197
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_STOP"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.ACTION_UNPAUSE"
+        f39ef84 com.SearingMedia.Parrot/.receivers.WidgetReceiverSmall filter 6bd636d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.small.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.controllers.recorders.helpers.small.ACTION_STOP"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        8aaaeec com.SearingMedia.Parrot/.receivers.BootReceiver filter 88092b5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_CHANGED"
+          Action: "android.intent.action.PACKAGE_INSTALL"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.intent.action.REBOOT"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        23a41b4 com.SearingMedia.Parrot/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 80b01dd
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.NEW_OUTGOING_CALL:
+        63cbba2 com.SearingMedia.Parrot/.receivers.PhoneStateBroadcastReceiver filter a537033
+          Action: "android.intent.action.PHONE_STATE"
+          Action: "android.intent.action.NEW_OUTGOING_CALL"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.MEDIA_BUTTON:
+        86fcd4a com.SearingMedia.Parrot/.receivers.MediaButtonIntentReceiver filter 96324bb
+          Action: "android.intent.action.MEDIA_BUTTON"
+      android.intent.action.REBOOT:
+        8aaaeec com.SearingMedia.Parrot/.receivers.BootReceiver filter 88092b5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_CHANGED"
+          Action: "android.intent.action.PACKAGE_INSTALL"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.intent.action.REBOOT"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.SearingMedia.Parrot.services.AudioRecordService.ACTION_TOGGLE_PAUSE:
+        a40134c com.SearingMedia.Parrot/.services.AudioRecordService filter bf18f95
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_TIMED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_SCHEDULED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_UNPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_AUTOPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_TOGGLE_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP_IF_NOT_PLAYING"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.features.backup.BackupService.stop:
+        a011838 com.SearingMedia.Parrot/.features.backup.BackupService filter b289011
+          Action: "com.SearingMedia.Parrot.features.backup.BackupService.stop"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_STOP:
+        bcd309e com.SearingMedia.Parrot/.services.MediaPlayerService filter 362077f
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_REWIND"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_RESUME"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_FASTFORWARD"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_STOP"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_SCHEDULED:
+        a40134c com.SearingMedia.Parrot/.services.AudioRecordService filter bf18f95
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_TIMED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_SCHEDULED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_UNPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_AUTOPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_TOGGLE_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP_IF_NOT_PLAYING"
+          Category: "android.intent.category.DEFAULT"
+      android.service.quicksettings.action.QS_TILE:
+        48ab302 com.SearingMedia.Parrot/.services.ParrotTileService filter 7250413 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP:
+        a40134c com.SearingMedia.Parrot/.services.AudioRecordService filter bf18f95
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_TIMED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_SCHEDULED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_UNPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_AUTOPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_TOGGLE_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP_IF_NOT_PLAYING"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.services.AudioRecordService.ACTION_PAUSE:
+        a40134c com.SearingMedia.Parrot/.services.AudioRecordService filter bf18f95
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_TIMED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_SCHEDULED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_UNPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_AUTOPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_TOGGLE_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP_IF_NOT_PLAYING"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_TIMED:
+        a40134c com.SearingMedia.Parrot/.services.AudioRecordService filter bf18f95
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_TIMED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_SCHEDULED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_UNPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_AUTOPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_TOGGLE_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP_IF_NOT_PLAYING"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.services.AudioRecordService.ACTION_UNPAUSE:
+        a40134c com.SearingMedia.Parrot/.services.AudioRecordService filter bf18f95
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_TIMED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_SCHEDULED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_UNPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_AUTOPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_TOGGLE_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP_IF_NOT_PLAYING"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.services.DownloadService.stop:
+        a50b576 com.SearingMedia.Parrot/.services.DownloadService filter aeb6777
+          Action: "com.SearingMedia.Parrot.services.DownloadService.stop"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        1d7b8aa com.SearingMedia.Parrot/.services.MaintenanceService filter 999c9b permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.SearingMedia.Parrot.services.AudioProcessingService.Start:
+        ccb7fe4 com.SearingMedia.Parrot/.services.AudioProcessingService filter 1f51c4d
+          Action: "com.SearingMedia.Parrot.services.AudioProcessingService.Start"
+          Action: "com.SearingMedia.Parrot.services.AudioProcessingService.Stop"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_PAUSE:
+        bcd309e com.SearingMedia.Parrot/.services.MediaPlayerService filter 362077f
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_REWIND"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_RESUME"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_FASTFORWARD"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_STOP"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_FASTFORWARD:
+        bcd309e com.SearingMedia.Parrot/.services.MediaPlayerService filter 362077f
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_REWIND"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_RESUME"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_FASTFORWARD"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_STOP"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.services.AudioProcessingService.Stop:
+        ccb7fe4 com.SearingMedia.Parrot/.services.AudioProcessingService filter 1f51c4d
+          Action: "com.SearingMedia.Parrot.services.AudioProcessingService.Start"
+          Action: "com.SearingMedia.Parrot.services.AudioProcessingService.Stop"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_RESUME:
+        bcd309e com.SearingMedia.Parrot/.services.MediaPlayerService filter 362077f
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_REWIND"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_RESUME"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_FASTFORWARD"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_STOP"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_REWIND:
+        bcd309e com.SearingMedia.Parrot/.services.MediaPlayerService filter 362077f
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_REWIND"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_RESUME"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_FASTFORWARD"
+          Action: "com.SearingMedia.Parrot.services.MediaPlayerService.ACTION_STOP"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP_IF_NOT_PLAYING:
+        a40134c com.SearingMedia.Parrot/.services.AudioRecordService filter bf18f95
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_TIMED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_SCHEDULED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_UNPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_AUTOPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_TOGGLE_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP_IF_NOT_PLAYING"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD:
+        a40134c com.SearingMedia.Parrot/.services.AudioRecordService filter bf18f95
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_TIMED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_SCHEDULED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_UNPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_AUTOPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_TOGGLE_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP_IF_NOT_PLAYING"
+          Category: "android.intent.category.DEFAULT"
+      com.SearingMedia.Parrot.services.AudioRecordService.ACTION_AUTOPAUSE:
+        a40134c com.SearingMedia.Parrot/.services.AudioRecordService filter bf18f95
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_TIMED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_RECORD_SCHEDULED"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_UNPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_AUTOPAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_TOGGLE_PAUSE"
+          Action: "com.SearingMedia.Parrot.services.AudioRecordService.ACTION_STOP_IF_NOT_PLAYING"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          theparrotapp.com
+
+Registered ContentProviders:
+  com.SearingMedia.Parrot/com.commonsware.cwac.provider.StreamProvider:
+    Provider{1eb10f com.SearingMedia.Parrot/com.commonsware.cwac.provider.StreamProvider}
+  com.SearingMedia.Parrot/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{79e259c com.SearingMedia.Parrot/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.SearingMedia.Parrot/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{73bba5 com.SearingMedia.Parrot/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.SearingMedia.Parrot/androidx.work.impl.WorkManagerInitializer:
+    Provider{b115b7a com.SearingMedia.Parrot/androidx.work.impl.WorkManagerInitializer}
+  com.SearingMedia.Parrot/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{a9f4f2b com.SearingMedia.Parrot/com.crashlytics.android.CrashlyticsInitProvider}
+  com.SearingMedia.Parrot/com.firebase.ui.auth.data.client.AuthUiInitProvider:
+    Provider{635ff88 com.SearingMedia.Parrot/com.firebase.ui.auth.data.client.AuthUiInitProvider}
+  com.SearingMedia.Parrot/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{4096d21 com.SearingMedia.Parrot/com.google.firebase.provider.FirebaseInitProvider}
+  com.SearingMedia.Parrot/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{fc9b546 com.SearingMedia.Parrot/com.facebook.ads.AudienceNetworkContentProvider}
+
+ContentProvider Authorities:
+  [com.SearingMedia.Parrot.AudienceNetworkContentProvider]:
+    Provider{fc9b546 com.SearingMedia.Parrot/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{841b307 com.SearingMedia.Parrot}
+  [com.SearingMedia.Parrot.lifecycle-process]:
+    Provider{79e259c com.SearingMedia.Parrot/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{6ef8c34 com.SearingMedia.Parrot}
+  [com.SearingMedia.Parrot.fileprovider]:
+    Provider{1eb10f com.SearingMedia.Parrot/com.commonsware.cwac.provider.StreamProvider}
+      applicationInfo=ApplicationInfo{4eeba5d com.SearingMedia.Parrot}
+  [com.SearingMedia.Parrot.crashlyticsinitprovider]:
+    Provider{a9f4f2b com.SearingMedia.Parrot/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{75bdfd2 com.SearingMedia.Parrot}
+  [com.SearingMedia.Parrot.firebaseinitprovider]:
+    Provider{4096d21 com.SearingMedia.Parrot/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{ebc78a3 com.SearingMedia.Parrot}
+  [com.SearingMedia.Parrot.authuiinitprovider]:
+    Provider{635ff88 com.SearingMedia.Parrot/com.firebase.ui.auth.data.client.AuthUiInitProvider}
+      applicationInfo=ApplicationInfo{41337a0 com.SearingMedia.Parrot}
+  [com.SearingMedia.Parrot.mobileadsinitprovider]:
+    Provider{73bba5 com.SearingMedia.Parrot/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{ce19f59 com.SearingMedia.Parrot}
+  [com.SearingMedia.Parrot.workmanager-init]:
+    Provider{b115b7a com.SearingMedia.Parrot/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{274271e com.SearingMedia.Parrot}
+
+Key Set Manager:
+  [com.SearingMedia.Parrot]
+      Signing KeySets: 41
+
+Packages:
+  Package [com.SearingMedia.Parrot] (e93fbff):
+    userId=19948
+    pkg=Package{2042dcc com.SearingMedia.Parrot}
+    codePath=/data/app/~~-EgSLkaEjnVn48FIV1_l6Q==/com.SearingMedia.Parrot-MuWydWVyt8Ch8eZqAPn5ZA==
+    resourcePath=/data/app/~~-EgSLkaEjnVn48FIV1_l6Q==/com.SearingMedia.Parrot-MuWydWVyt8Ch8eZqAPn5ZA==
+    legacyNativeLibraryDir=/data/app/~~-EgSLkaEjnVn48FIV1_l6Q==/com.SearingMedia.Parrot-MuWydWVyt8Ch8eZqAPn5ZA==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=256 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=3.2.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=PackageImpl{2042dcc com.SearingMedia.Parrot}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[]
+    dataDir=/data/user/0/com.SearingMedia.Parrot
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-28 12:13:30
+    firstInstallTime=2022-11-28 12:13:31
+    lastUpdateTime=2022-11-28 12:13:31
+    signatures=PackageSignatures{983d815 version:1, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    requested permissions:
+      android.permission.RECORD_AUDIO
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_PHONE_STATE
+      android.permission.READ_CONTACTS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.android.vending.BILLING
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=51515 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+SkippingApks:
+  name : 100Game_MOVISTAR_4x3_KU84_2009_2.0.9.apk
+  name : 100Game_PERSONAL_4x4_PF36_2009_2.0.2.apk
+  name : 149_companion-release.apk
+  name : Adalyst_ZTA.apk
+  name : AirtelStub.apk
+  name : AlticeMusic_2.3.apk
+  name : AmazonMDIP_CAN.apk
+  name : AmazonShopping-32bit.apk
+  name : AmazonShopping_CAN.apk
+  name : AppCenter_v5.9.18-6851_signed-aligned-signing.apk
+  name : BellTVWidget.apk
+  name : ClaroContenedor_Full.apk
+  name : ClaroContenedor_Stub.apk
+  name : ClaroJuegos_Stub.apk
+  name : CombinedStarter_T31-14.05.00-build_5265-Release-signed-aligned-pd.apk
+  name : DeviceCheckup_TLS.apk
+  name : DigitalKey.apk
+  name : HPSClient.apk
+  name : HpsAgreement.apk
+  name : Ignite-Singtel.apk
+  name : Ignite-Tigo.apk
+  name : Ignite-aoneSamsungAgent_8.1.098-5783_release.apk
+  name : Ignite-attMexico.apk
+  name : Ignite-timSamsungAgent_7.1.300-5521_release.apk
+  name : KT114Provider2.apk
+  name : KTAuth.apk
+  name : KTCustomerService.apk
+  name : KTHiddenMenu.apk
+  name : KTOneStore.apk
+  name : KTPushNotiService.apk
+  name : KTServiceAgent.apk
+  name : KTServiceMenu.apk
+  name : KTUsimManager.apk
+  name : LGUGPSnWPS.apk
+  name : LGUHiddenMenu.apk
+  name : LGUMiniCustomerCenter.apk
+  name : LGUOZStore.apk
+  name : LGUplusTsmProxy.apk
+  name : MDIP-TIM_O2UK_DTDE_VFAU_OPTUSAU_3IT_sdk-30.apk
+  name : MDIP.apk
+  name : MaftPreloadManagerAndroidApp-MovistarMX.apk
+  name : MaftPreloadManagerAndroidApp-TEF_LATAM.apk
+  name : MaftPreloadManagerAndroidApp-release-signed-tagged.apk
+  name : MeuTIM.apk
+  name : MinhaOi.apk
+  name : MovitarPlayTGU_b_stub_v1.1_20180517.apk
+  name : Musica_VIVA_v1.1.apk
+  name : MyAccount_FMC.apk
+  name : MyAccount_GLW.apk
+  name : MyAccount_VMC.apk
+  name : MyApps-1.7.2-logoff-obson-prodSamsungRelease.apk
+  name : MyBell.apk
+  name : MyGalaxy.apk
+  name : MyGalaxy_NEBANGS.apk
+  name : MyRogers.apk
+  name : MySingtel.apk
+  name : MyTELUS.apk
+  name : NaverV_N.apk
+  name : OPENMarketHiddenMenu.apk
+  name : OiApps.apk
+  name : OiAppsClube.apk
+  name : OiRecarga.apk
+  name : OiWiFi.apk
+  name : Omc.apk
+  name : OnStart_Notification_V30.apk
+  name : OneStoreService.apk
+  name : ProductSearch.apk
+  name : Push_To_Talk_BMC.apk
+  name : RRO_NBS_stk1.apk
+  name : RRO_NBS_stk2.apk
+  name : SEIOAgent.apk
+  name : SFRJeux-8.2.2-logoff-obson-samsungRelease.apk
+  name : SKTHiddenMenu.apk
+  name : SKTMemberShip.apk
+  name : SKTOneStore.apk
+  name : SYSdll.apk
+  name : SafetyCleaner.apk
+  name : SamsungCarKeyFw.apk
+  name : SamsungPayStub.apk
+  name : SelfCareMobile-6.0.3-prod-signed.apk
+  name : SktUsimService.apk
+  name : SmartPush.apk
+  name : TPhoneOnePackage.apk
+  name : TPhoneSetup.apk
+  name : TWorld.apk
+  name : TelcelContenedor_Full.apk
+  name : UnifiedVVM.apk
+  name : Upday.apk
+  name : UserManual.apk
+  name : VivoAppsClube.apk
+  name : VivoMaisApps.apk
+  name : WebManual.apk
+  name : app-a1telekomaustriaSamsung-1.0.73.108(841)-release.apk
+  name : appcloud_oobe_hutchison-release_V4.3.4.6.apk
+  name : appcloud_oobe_samsungDeutscheTelekom-release_V5.2.4.1.apk
+  name : appcloud_oobe_samsungGlobal-release_V5.0.0.0.apk
+  name : appcloud_oobe_samsungOrange-release_V5.2.8.1.apk
+  name : appcloud_oobe_samsungVodafone-release_V5.2.4.6.apk
+  name : che_notification_6.apk
+  name : entelPlay_20122016.apk
+  name : entel_peru_6-10.apk
+  name : instagram-stub-BR.apk
+  name : instagram-stub.apk
+  name : instagram-stub_33-1-8.apk
+  name : kolbi_5.0.19.apk
+  name : koodo.apk
+  name : messenger-stub-BR.apk
+  name : messenger-stub_33-1-8.apk
+  name : messenger_stub.apk
+  name : miTelcel_Stub.apk
+  name : mySaskTel.apk
+  name : myflow_cww_6-3-2-131.apk
+  name : noticias_aro_52.apk
+  name : samsung_club_bo_4.3.4.apk
+  name : samsung_club_uy_access_release_v1_3.apk
+  name : samsungclub_py.apk
+  name : samsungclub_py_3-7-1.apk
+  name : samsungclub_uy.apk
+  name : signatureClub.apk
+  name : tickantel_1.0_stub.apk
+  name : trendystub_1.apk
+  name : tuapp_1.0_stub.apk
+  name : veramas_1.0_stub.apk
+  name : veratv_1.0_stub.apk
+  name : videotron_usercentre_plus.apk
+  name : virginmobile_mybenefits.apk
+  name : SearchSelector.apk
+
+Queries:
+  system apps queryable: false
+  queries via package name:
+  queries via intent:
+    [com.samsung.android.bixby.service,com.samsung.android.bixby.agent]:
+      com.SearingMedia.Parrot
+    com.google.android.apps.messaging:
+      com.SearingMedia.Parrot
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Package Changes:
+  Sequence number=662
+  User 0:
+    seq=2, package=com.android.bluetooth
+    seq=5, package=com.sec.unifiedwfc
+    seq=13, package=com.google.android.gms
+    seq=68, package=com.google.android.apps.messaging
+    seq=95, package=org.tlhInganHol.android.klingonassistant
+    seq=98, package=org.eehouse.android.xw4
+    seq=99, package=de.audioattack.openlink
+    seq=172, package=com.example.permissiongrant
+    seq=188, package=com.example.permissiontest
+    seq=226, package=com.example.rtpc
+    seq=269, package=com.google.android.trichromelibrary_530414133
+    seq=270, package=com.google.android.webview
+    seq=404, package=com.samsung.android.forest
+    seq=406, package=com.samsung.android.app.sharelive
+    seq=412, package=com.samsung.android.sm.policy
+    seq=414, package=com.microsoft.appmanager
+    seq=417, package=com.google.android.youtube
+    seq=418, package=com.google.android.apps.maps
+    seq=419, package=com.example.testpermissionsdk
+    seq=420, package=com.example.bevigil
+    seq=421, package=com.microsoft.skydrive
+    seq=429, package=com.kajda.fuelio
+    seq=434, package=me.piere.christmas
+    seq=436, package=ak.alizandro.smartaudiobookplayer
+    seq=438, package=amazing.three_d.icons
+    seq=440, package=com.first75.voicerecorder2pro
+    seq=442, package=digifit.virtuagym.client.android
+    seq=444, package=com.paget96.lspeed
+    seq=453, package=izzl.gruvy.pack
+    seq=455, package=com.android.chrome
+    seq=456, package=com.in.w3d
+    seq=458, package=com.luzapplications.alessio.wallooppro
+    seq=460, package=com.alesp.orologiomondiale.pro
+    seq=462, package=co.windyapp.android
+    seq=464, package=com.yuanwofei.cardemulator.pro
+    seq=469, package=com.lb.app_manager
+    seq=473, package=com.microblink.photomath
+    seq=475, package=studio14.application.caeluswhite
+    seq=477, package=com.david.android.languageswitch
+    seq=479, package=com.perfectapps.muviz
+    seq=483, package=net.xnano.android.ftpserver
+    seq=485, package=org.khankids.android
+    seq=487, package=com.aezowie.mycalpro
+    seq=489, package=com.bialy.zonelauncher
+    seq=493, package=com.indigomadina.tabloid
+    seq=495, package=com.plexapp.android
+    seq=497, package=com.mixplorer
+    seq=499, package=com.mobilefootie.wc2010
+    seq=501, package=de.dwd.warnapp
+    seq=503, package=oos.dark.material
+    seq=505, package=com.intsig.camscanner
+    seq=509, package=com.indigomadina.spheroid
+    seq=511, package=com.footej.camera
+    seq=515, package=net.sourceforge.photomaton18
+    seq=518, package=com.cray.software.justreminderpro
+    seq=520, package=com.sofascore.results
+    seq=526, package=pl.solidexplorer2
+    seq=532, package=jp.gr.java_conf.soboku.batterymeter
+    seq=534, package=com.iioannou.phototools.pro
+    seq=537, package=com.unvoid.borealis
+    seq=541, package=com.happening.studios.swipeforfacebookfree
+    seq=543, package=com.rookiestudio.perfectviewer
+    seq=546, package=com.osheden.azulox
+    seq=551, package=com.fullreader
+    seq=553, package=com.pakdata.easyurdu
+    seq=555, package=eu.faircode.netguard
+    seq=561, package=indigomadina.furatto.ui
+    seq=563, package=com.brit.swiftblack.layers
+    seq=567, package=o.o.joey
+    seq=569, package=at.bitfire.davdroid
+    seq=571, package=com.overlook.android.fing
+    seq=573, package=ru.involta.metro
+    seq=577, package=hastamev.oneuidark.com
+    seq=582, package=com.compscieddy.writeaday
+    seq=584, package=vitalypanov.personalaccounting.pro
+    seq=586, package=com.protectstar.ishredder.pro
+    seq=588, package=prism.kustom.pack
+    seq=592, package=com.protectstar.ishredder.mil
+    seq=594, package=com.androidev.xhafe.earthquakepro
+    seq=596, package=com.n7mobile.nplayer
+    seq=598, package=com.franco.doze
+    seq=602, package=com.mobisystems.fileman
+    seq=604, package=com.changemystyle.gentlewakeuppro
+    seq=606, package=com.codium.hydrocoach.pro
+    seq=608, package=com.ottplay.ottplay
+    seq=610, package=studio14.application.juno
+    seq=612, package=com.thegrammaruniversity.drfrench
+    seq=614, package=com.medisafe.android.client
+    seq=617, package=com.adguard.android
+    seq=619, package=com.shaiban.audioplayer.mplayer
+    seq=621, package=com.brit.swiftdark.substratum
+    seq=623, package=com.bergin_it.gpsscatterplot
+    seq=625, package=com.zemana.msecurity
+    seq=627, package=be.inet.rainwidget.donate
+    seq=629, package=com.bergin_it.gpsattitude
+    seq=631, package=ru.yandex.music
+    seq=633, package=com.roamingsquirrel.android.calculator_plus
+    seq=636, package=com.aathifmahir.iconpack.kora.free
+    seq=638, package=com.iudesk.android.photo.editor
+    seq=640, package=com.franco.kernel
+    seq=642, package=com.magdalm.wifimasterpassword
+    seq=645, package=com.nll.asr
+    seq=648, package=com.crypter.cryptocyrrency
+    seq=650, package=com.kimcy929.screenrecorder
+    seq=652, package=com.pavelrekun.skit.premium
+    seq=654, package=com.mobilefootie.fotmobpro
+    seq=658, package=yo.app
+    seq=660, package=com.wiseschematics.reeq01
+    seq=661, package=com.SearingMedia.Parrot
+
+
+Dexopt state:
+  [com.SearingMedia.Parrot]
+    path: /data/app/~~-EgSLkaEjnVn48FIV1_l6Q==/com.SearingMedia.Parrot-MuWydWVyt8Ch8eZqAPn5ZA==/base.apk
+      arm64: [status=verify] [reason=install]
+
+
+HeimdAllFS state:
+  [com.SearingMedia.Parrot]
+    path: /data/app/~~-EgSLkaEjnVn48FIV1_l6Q==/com.SearingMedia.Parrot-MuWydWVyt8Ch8eZqAPn5ZA==/base.apk
+    Compressed? False
+  [ Summary ]
+    # of packages: 1 / # of packages in DATA: 1 (1)
+    Compressed apks info - sum of orig size: 0 / sum of compr size : 0
+
+
+Compiler stats:
+  [com.SearingMedia.Parrot]
+     base.apk - 2181
+
+APEX session state:
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+
+Historical install Logging info(9/10):
+  []
+    1669659210112: "Ver":"", "Session":"0", "Write":"1", "Commit":"905", "Stage":"0", "Copy":"14", "Sign":"2", "DexOpt":
+    "2", 
+Snapshot statistics
+   Unrecorded-hits: 8382  Cork-level: 0
+   Summary stats               TotBlds     TotUsed     TotCork     BigBlds    ShortLvd     TotTime     MaxTime
+          0:39         now         136      816139           0           6          31         262          19
+          1:39        0:39         198     1397835           0           9          44         502          78
+          2:39        1:39         185     1187674           0           6          42         341          29
+          3:39        2:39         170     1090787           0           7          42         371          47
+          4:39        3:39         217     1391974           0           8          59         426          27
+          5:39        4:39         194     1303876           0          10          44         636         148
+          6:39        5:39         255     1632180           0           6          56         638         117
+          7:39        6:39          61      292288           0           2          12         117          20
+          8:39        7:39           3       27231           0           0           1           1           1
+         58:40        8:39           9      160869           0           0           5          17           5
+    5:17:11:36         now        3145    19274550           0         103         622        7627         148
+
+   Build times                  <= 1ms      <= 2ms      <= 5ms     <= 10ms     <= 20ms     <= 50ms    <= 100ms     > 100ms
+          0:39         now          97           9          21           5           4           0           0           0
+          1:39        0:39         138           9          33          11           5           1           1           0
+          2:39        1:39         141           1          34           3           5           1           0           0
+          3:39        2:39         127           4          29           3           5           2           0           0
+          4:39        3:39         156          12          37           6           4           2           0           0
+          5:39        4:39         142           8          27           7           6           2           1           1
+          6:39        5:39         192           5          46           6           4           0           0           2
+          7:39        6:39          46           1           9           3           2           0           0           0
+          8:39        7:39           3           0           0           0           0           0           0           0
+         58:40        8:39           6           0           3           0           0           0           0           0
+    5:17:11:36         now        2080         106         681         184          76          13           2           3
+
+   Use counters                   <= 1        <= 2        <= 5       <= 10       <= 20       <= 50      <= 100       > 100
+          0:39         now          24           4           3           2           5           9          14          75
+          1:39        0:39          42           2           0           1          11          13          18         111
+          2:39        1:39          35           6           1           3           5          14          19         102
+          3:39        2:39          31           6           5           4           9          15          15          85
+          4:39        3:39          49           5           5           5          11           6          17         119
+          5:39        4:39          37           4           3           5           3          11          11         120
+          6:39        5:39          51           3           2           5           6          21          20         147
+          7:39        6:39          10           0           2           3           0           6           8          32
+          8:39        7:39           1           0           0           0           0           0           0           2
+         58:40        8:39           4           0           1           1           0           0           0           3
+    5:17:11:36         now         466          65          90         106         116         212         258        1831

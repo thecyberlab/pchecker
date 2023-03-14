@@ -1,0 +1,438 @@
+Activity Resolver Table:
+  Schemes:
+      moneylover:
+        5266cda com.bookmark.money/com.zoostudio.moneylover.ui.ActivityReceiverDeepLink filter 122f50b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "moneylover"
+          Authority: "moneylover.me": -1
+          AutoVerify=true
+      fbconnect:
+        3a676c9 com.bookmark.money/com.facebook.CustomTabActivity filter 3c9b8ef
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.bookmark.money": -1
+      genericidp:
+        70e7ca6 com.bookmark.money/com.google.firebase.auth.internal.GenericIdpActivity filter 989d6e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        cd51294 com.bookmark.money/com.google.firebase.auth.internal.RecaptchaActivity filter 4da313d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      fb186738618063436:
+        3a676c9 com.bookmark.money/com.facebook.CustomTabActivity filter e8801ce
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb186738618063436"
+      fs-moneylover:
+        b16bffc com.bookmark.money/com.zoostudio.moneylover.linkedWallet.ui.activitys.ActivityLinkRemoteAccount filter 16b685
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fs-moneylover"
+          Authority: "connect": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      com.zoostudio.intent.action.RUN_SHORTCUT:
+        40ddfe8 com.bookmark.money/com.zoostudio.moneylover.main.MainActivity filter 9913601
+          Action: "com.zoostudio.intent.action.RUN_SHORTCUT"
+          Action: "com.zoostudio.intent.action.RUN_SHORTCUT_WALLET"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.MAIN:
+        3b4693 com.bookmark.money/com.zoostudio.moneylover.ui.ActivitySplash filter 17006d0
+          Action: "android.intent.action.MAIN"
+          Action: "com.zoostudio.intent.action.RUN_SHORTCUT_WALLET"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        887facd com.bookmark.money/com.zoostudio.moneylover.widget.ActivityPickerWalletForWidget filter 7de6f82
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      com.zoostudio.intent.action.RUN_SHORTCUT_WALLET:
+        3b4693 com.bookmark.money/com.zoostudio.moneylover.ui.ActivitySplash filter 17006d0
+          Action: "android.intent.action.MAIN"
+          Action: "com.zoostudio.intent.action.RUN_SHORTCUT_WALLET"
+          Category: "android.intent.category.LAUNCHER"
+        40ddfe8 com.bookmark.money/com.zoostudio.moneylover.main.MainActivity filter 9913601
+          Action: "com.zoostudio.intent.action.RUN_SHORTCUT"
+          Action: "com.zoostudio.intent.action.RUN_SHORTCUT_WALLET"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        7c64bea com.bookmark.money/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b8bcedb
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        c2f248c com.bookmark.money/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d7d67d5
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        4e3bc92 com.bookmark.money/com.evernote.android.job.JobBootReceiver filter 357f663
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.zoostudio.moneylover.SMS_BANKING_RECEIVER:
+        e15bd32 com.bookmark.money/com.zoostudio.moneylover.ui.ActivityReceiverSmsBanking filter 592fa83
+          Action: "com.zoostudio.moneylover.SMS_BANKING_RECEIVER"
+      com.zoostudio.moneylover.db.sync.MoneyCloud.TIMEOUT_ERROR:
+        c3ac400 com.bookmark.money/com.zoostudio.moneylover.broadcast.BroadcastSyncTimeout filter 4bda439
+          Action: "com.zoostudio.moneylover.db.sync.MoneyCloud.TIMEOUT_ERROR"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        4e3bc92 com.bookmark.money/com.evernote.android.job.JobBootReceiver filter 357f663
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        beffd78 com.bookmark.money/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 739ac51
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        db53cb6 com.bookmark.money/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 96e7db7
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.zoostudio.moneylover.utils.INIT:
+        a35603a com.bookmark.money/com.zoostudio.moneylover.broadcast.InitReceiver filter 2e7d4eb
+          Action: "com.zoostudio.moneylover.utils.INIT"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        d184260 com.bookmark.money/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter dcdb319
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        beffd78 com.bookmark.money/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 739ac51
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        455b56 com.bookmark.money/com.zoostudio.moneylover.broadcast.BroadcastInstallReferrer filter 9e047d7
+          Action: "com.android.vending.INSTALL_REFERRER"
+      UPDATE_APPLICATION_FOR_CURRENT_USERITEM_BECAUSE_OF_SYNCING:
+        1ac48c4 com.bookmark.money/com.zoostudio.moneylover.widget.MoneyWidgetAccountDark filter b53d6e2
+          Action: "UPDATE_APPLICATION_FOR_CURRENT_USERITEM_BECAUSE_OF_SYNCING"
+          Category: "android.intent.category.DEFAULT"
+        7730da9 com.bookmark.money/com.zoostudio.moneylover.widget.MoneyAccountWidgetLight filter f365acf
+          Action: "UPDATE_APPLICATION_FOR_CURRENT_USERITEM_BECAUSE_OF_SYNCING"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.LOCALE_CHANGED:
+        c094606 com.bookmark.money/com.zoostudio.moneylover.broadcast.LanguageChangedReceiver filter 1ecd4c7
+          Action: "android.intent.action.LOCALE_CHANGED"
+      UPDATE_CURRENT_WALLET_IN_USERITEM:
+        1ac48c4 com.bookmark.money/com.zoostudio.moneylover.widget.MoneyWidgetAccountDark filter 7872d30
+          Action: "UPDATE_CURRENT_WALLET_IN_USERITEM"
+          Category: "android.intent.category.DEFAULT"
+        7730da9 com.bookmark.money/com.zoostudio.moneylover.widget.MoneyAccountWidgetLight filter 8c5db65
+          Action: "UPDATE_CURRENT_WALLET_IN_USERITEM"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.c2dm.intent.RECEIVE:
+        b7d0fde com.bookmark.money/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 2c995bf
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        7c64bea com.bookmark.money/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b8bcedb
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        e37924 com.bookmark.money/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 59bbc8d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        e37924 com.bookmark.money/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 59bbc8d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.evernote.android.job.v14.RUN_JOB:
+        3956af4 com.bookmark.money/com.evernote.android.job.v14.PlatformAlarmReceiver filter 9ed121d
+          Action: "com.evernote.android.job.v14.RUN_JOB"
+          Action: "net.vrallev.android.job.v14.RUN_JOB"
+      android.intent.action.BOOT_COMPLETED:
+        8577248 com.bookmark.money/com.zoostudio.moneylover.broadcast.BootUpReceiver filter dbdc8e1
+          Action: "android.intent.action.BOOT_COMPLETED"
+        4e3bc92 com.bookmark.money/com.evernote.android.job.JobBootReceiver filter 357f663
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        e37924 com.bookmark.money/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 59bbc8d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        c2f248c com.bookmark.money/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d7d67d5
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DOWNLOAD_COMPLETE:
+        56d1318 com.bookmark.money/com.zoostudio.moneylover.broadcast.BroadcastDownloadIconDone filter 7d2a171
+          Action: "android.intent.action.DOWNLOAD_COMPLETE"
+      com.zoostudio.moneylover.GET_LIST_RECEIVER:
+        9de7a7e com.bookmark.money/com.zoostudio.moneylover.ui.ActivitySendListWalletToSMSDetector filter 880bbdf
+          Action: "com.zoostudio.moneylover.GET_LIST_RECEIVER"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        588202c com.bookmark.money/com.zoostudio.moneylover.widget.AddTransactionWidget filter 2cb4af5
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        fe3c08a com.bookmark.money/com.zoostudio.moneylover.broadcast.BroadcastUpdateBalanceQuickAdd filter d5f36fb
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        1ac48c4 com.bookmark.money/com.zoostudio.moneylover.widget.MoneyWidgetAccountDark filter 1ee3ad
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        7730da9 com.bookmark.money/com.zoostudio.moneylover.widget.MoneyAccountWidgetLight filter 3dc7f2e
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        4e3bc92 com.bookmark.money/com.evernote.android.job.JobBootReceiver filter 357f663
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      UPDATE_APPLICATION_FOR_CURRENT_ACCOUNT_BECAUSE_OF_EDITING_TRANSACTIONS:
+        1ac48c4 com.bookmark.money/com.zoostudio.moneylover.widget.MoneyWidgetAccountDark filter 2f78a73
+          Action: "UPDATE_APPLICATION_FOR_CURRENT_ACCOUNT_BECAUSE_OF_EDITING_TRANSACTIONS"
+          Category: "android.intent.category.DEFAULT"
+        7730da9 com.bookmark.money/com.zoostudio.moneylover.widget.MoneyAccountWidgetLight filter 4e9ec5c
+          Action: "UPDATE_APPLICATION_FOR_CURRENT_ACCOUNT_BECAUSE_OF_EDITING_TRANSACTIONS"
+          Category: "android.intent.category.DEFAULT"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        8d06e42 com.bookmark.money/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter b633e53
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      net.vrallev.android.job.v14.RUN_JOB:
+        3956af4 com.bookmark.money/com.evernote.android.job.v14.PlatformAlarmReceiver filter 9ed121d
+          Action: "com.evernote.android.job.v14.RUN_JOB"
+          Action: "net.vrallev.android.job.v14.RUN_JOB"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.autofill.AutofillService:
+        d710390 com.bookmark.money/com.zoostudio.moneylover.utils.AutoFillService filter 9949489 permission android.permission.BIND_AUTOFILL_SERVICE
+          Action: "android.service.autofill.AutofillService"
+      com.google.firebase.INSTANCE_ID_EVENT:
+        d01839a com.bookmark.money/com.clevertap.android.sdk.FcmTokenListenerService filter 2da24cb
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        de4ebf2 com.bookmark.money/com.evernote.android.job.gcm.PlatformGcmService filter 9886243 permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        10ac8bc com.bookmark.money/.fcm.MLFirebaseMessagingService filter 828f045
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        fd470c0 com.bookmark.money/com.google.firebase.messaging.FirebaseMessagingService filter c4eb1f9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.apps.dashclock.Extension:
+        47b2c8e com.bookmark.money/com.zoostudio.moneylover.service.DashClockExtensionService filter 3d96caf permission com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA
+          Action: "com.google.android.apps.dashclock.Extension"
+      com.google.firebase.auth.api.gms.service.START:
+        5643f66 com.bookmark.money/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 5e442a7
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+      com.clevertap.BG_EVENT:
+        e19b4a8 com.bookmark.money/com.clevertap.android.sdk.CTBackgroundIntentService filter 7ed4bc1
+          Action: "com.clevertap.BG_EVENT"
+        2a97354 com.bookmark.money/com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService filter a41e2fd permission android.permission.BIND_JOB_SERVICE
+          Action: "com.clevertap.BG_EVENT"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.bookmark.money/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{ca03d40 com.bookmark.money/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.bookmark.money/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{263c479 com.bookmark.money/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.bookmark.money/androidx.core.content.FileProvider:
+    Provider{8edb5be com.bookmark.money/androidx.core.content.FileProvider}
+  com.bookmark.money/androidx.work.impl.WorkManagerInitializer:
+    Provider{98a761f com.bookmark.money/androidx.work.impl.WorkManagerInitializer}
+  com.bookmark.money/com.squareup.picasso.PicassoProvider:
+    Provider{aebed6c com.bookmark.money/com.squareup.picasso.PicassoProvider}
+  com.bookmark.money/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{6532f35 com.bookmark.money/com.google.firebase.provider.FirebaseInitProvider}
+  com.bookmark.money/com.facebook.internal.FacebookInitProvider:
+    Provider{1cb6fca com.bookmark.money/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.bookmark.money]:
+    Provider{8edb5be com.bookmark.money/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{fea553b com.bookmark.money}
+  [com.bookmark.money.firebaseinitprovider]:
+    Provider{6532f35 com.bookmark.money/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{3607458 com.bookmark.money}
+  [com.bookmark.money.FacebookInitProvider]:
+    Provider{1cb6fca com.bookmark.money/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{79489b1 com.bookmark.money}
+  [com.bookmark.money.workmanager-init]:
+    Provider{98a761f com.bookmark.money/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{c18be96 com.bookmark.money}
+  [com.bookmark.money.mobileadsinitprovider]:
+    Provider{263c479 com.bookmark.money/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{e9f0a17 com.bookmark.money}
+  [com.bookmark.money.com.squareup.picasso]:
+    Provider{aebed6c com.bookmark.money/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{3947e04 com.bookmark.money}
+  [com.bookmark.money.lifecycle-process]:
+    Provider{ca03d40 com.bookmark.money/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{fb70fed com.bookmark.money}
+
+Key Set Manager:
+  [com.bookmark.money]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.bookmark.money] (61a2e22):
+    userId=10449
+    pkg=Package{38030b3 com.bookmark.money}
+    codePath=/data/app/~~PjgustnL2UkUZ3T9OPB6Uw==/com.bookmark.money-ClSevk6nw8FJgGp6u4hEsA==
+    resourcePath=/data/app/~~PjgustnL2UkUZ3T9OPB6Uw==/com.bookmark.money-ClSevk6nw8FJgGp6u4hEsA==
+    legacyNativeLibraryDir=/data/app/~~PjgustnL2UkUZ3T9OPB6Uw==/com.bookmark.money-ClSevk6nw8FJgGp6u4hEsA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1729 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=6.5.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.zoostudio.moneylover.mlexcelexporter, com.zoostudio.loanshark.app, com.zoostudio.moneylover.smsbanking, com.zoostudio.shoppinglover, com.zoostudio.exchanger, com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    dataDir=/data/user/0/com.bookmark.money
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 18:21:12
+    lastUpdateTime=2022-11-30 18:21:13
+    packageSource=0
+    signatures=PackageSignatures{9dd7670 version:2, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_CONTACTS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      com.android.launcher.permission.UNINSTALL_SHORTCUT
+      disabled_com.android.vending.BILLING
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.USE_FINGERPRINT
+      android.permission.FOREGROUND_SERVICE
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.USE_BIOMETRIC
+      disabled_com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.launcher.permission.UNINSTALL_SHORTCUT: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=82382 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 18:21:13
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.bookmark.money:
+      com.google.android.apps.maps
+  queries via component:
+    com.google.android.apps.messaging:
+      com.bookmark.money
+    com.google.android.apps.diagnosticstool:
+      com.bookmark.money
+    com.google.android.settings.intelligence:
+      com.bookmark.money
+    com.google.android.apps.accessibility.voiceaccess:
+      com.bookmark.money
+    com.truecaller:
+      com.bookmark.money
+    com.dv.adm:
+      com.bookmark.money
+    com.zappcues.gamingmode:
+      com.bookmark.money
+    com.jio.myjio:
+      com.bookmark.money
+    com.bookmark.money:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      ru.iptvremote.android.iptv.pro
+      com.mobisystems.office
+      com.dv.adm
+      com.utorrent.client.pro
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.bookmark.money]
+    path: /data/app/~~PjgustnL2UkUZ3T9OPB6Uw==/com.bookmark.money-ClSevk6nw8FJgGp6u4hEsA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1159422
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.bookmark.money]
+     base.apk - 946

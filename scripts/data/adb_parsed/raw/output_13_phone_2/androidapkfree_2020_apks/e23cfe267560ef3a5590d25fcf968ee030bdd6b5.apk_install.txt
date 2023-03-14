@@ -1,0 +1,2199 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        58f2281 com.life360.android.safetymapd/com.life360.koko.root.RootActivity filter b8b4914
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "i.life360.com": -1
+        58f2281 com.life360.android.safetymapd/com.life360.koko.root.RootActivity filter 9b17b2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "i.lf360.co": -1
+      life360:
+        58f2281 com.life360.android.safetymapd/com.life360.koko.root.RootActivity filter df4d767
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "life360"
+      Life360:
+        58f2281 com.life360.android.safetymapd/com.life360.koko.root.RootActivity filter 40a65bd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "Life360"
+          Authority: "open": -1
+      appcenter:
+        25de280 com.life360.android.safetymapd/com.microsoft.appcenter.distribute.DeepLinkActivity filter bfca0b9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "appcenter"
+          Authority: "updates": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      com.life360.android.safetymapd.ACTION_GOOGLE_ASSISTANT:
+        58f2281 com.life360.android.safetymapd/com.life360.koko.root.RootActivity filter 8ed8303
+          Action: "com.life360.android.safetymapd.ACTION_GOOGLE_ASSISTANT"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        58f2281 com.life360.android.safetymapd/com.life360.koko.root.RootActivity filter b3b2f26
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_IN:
+        261abf8 com.life360.android.safetymapd/com.life360.android.health.receiver.HealthEventReceiver filter fcbf8d1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_CONNECTION_STATUS_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_IN"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_OUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+      com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND:
+        f64adf1 com.life360.android.safetymapd/com.life360.koko.recievers.AppStatusReceiver filter 443add6
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter e2bf561
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+        8285712 com.life360.android.safetymapd/com.life360.koko.recievers.ZoneCoordinatorReceiver filter da0bee3
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DEACTIVATE_ZONE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_EXPIRE_ZONE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REFRESH_CIRCLE_ZONES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REFRESH_ALL_CIRCLES_ZONES"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+        261abf8 com.life360.android.safetymapd/com.life360.android.health.receiver.HealthEventReceiver filter fcbf8d1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_CONNECTION_STATUS_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_IN"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_OUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+      com.life360.android.safetymapd.DriverBehavior.CRASH_DETECTED:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter ee21547
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_AIRPLANE_MODE_CHANGED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_APP_UPGRADED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_CRASH_CANCELED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_DRIVING_ANALYSIS_TOGGLED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_SEND_TAG_FEEDBACK"
+          Action: "com.life360.android.safetymapd.DriverBehavior.CRASH_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.FREE_COLLISION_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.RAW_DATA_EXCHANGE"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STARTUP"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STATE_EVENT"
+          Action: "com.life360.android.safetymapd.DriverBehavior.TRIP_ANALYZED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.UPLOAD_LOGS"
+      android.intent.action.BATTERY_OKAY:
+        d9a0210 com.life360.android.safetymapd/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f93f109
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+        261abf8 com.life360.android.safetymapd/com.life360.android.health.receiver.HealthEventReceiver filter fcbf8d1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_CONNECTION_STATUS_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_IN"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_OUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+        5b0a8c2 com.life360.android.safetymapd/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 7af26d3
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED:
+        ec771e6 com.life360.android.safetymapd/com.microsoft.appcenter.distribute.DownloadManagerReceiver filter d83c327
+          Action: "android.intent.action.DOWNLOAD_COMPLETE"
+          Action: "android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"
+      com.life360.android.safetymapd.MetricsApi.ACTION_ANSWERS_EVENT:
+        deeebb0 com.life360.android.safetymapd/com.life360.android.metrics.MetricsReceiver filter a02a1ae
+          Action: "com.life360.android.safetymapd.MetricsApi.ACTION_ANSWERS_EVENT"
+      com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+        ab0d25e com.life360.android.safetymapd/com.life360.android.location.recievers.MovementDetectionReceiver filter 16663f
+          Action: "com.life360.android.safetymapd.MovementDetection.ALARM_EXPIRY"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_STRATEGY_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_STRATEGY_START"
+        261abf8 com.life360.android.safetymapd/com.life360.android.health.receiver.HealthEventReceiver filter fcbf8d1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_CONNECTION_STATUS_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_IN"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_OUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+      com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter f2880c8
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_LOW"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_OKAY"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOGOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_POWER_CONNECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.DriverBehavior.RAW_DATA_EXCHANGE:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter ee21547
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_AIRPLANE_MODE_CHANGED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_APP_UPGRADED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_CRASH_CANCELED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_DRIVING_ANALYSIS_TOGGLED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_SEND_TAG_FEEDBACK"
+          Action: "com.life360.android.safetymapd.DriverBehavior.CRASH_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.FREE_COLLISION_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.RAW_DATA_EXCHANGE"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STARTUP"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STATE_EVENT"
+          Action: "com.life360.android.safetymapd.DriverBehavior.TRIP_ANALYZED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.UPLOAD_LOGS"
+      com.life360.android.safetymapd.SharedIntents.ACTION_START:
+        b9efcfe com.life360.android.safetymapd/com.life360.message.messaging.MessagingReceiver filter e3b4c5f
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DO_LOGOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REACTION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_UPDATE_THREADS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOAD_CACHE"
+      com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_STRATEGY_END:
+        ab0d25e com.life360.android.safetymapd/com.life360.android.location.recievers.MovementDetectionReceiver filter 16663f
+          Action: "com.life360.android.safetymapd.MovementDetection.ALARM_EXPIRY"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_STRATEGY_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_STRATEGY_START"
+      com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.SharedIntents.ACTION_EXPIRE_ZONE:
+        8285712 com.life360.android.safetymapd/com.life360.koko.recievers.ZoneCoordinatorReceiver filter da0bee3
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DEACTIVATE_ZONE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_EXPIRE_ZONE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REFRESH_CIRCLE_ZONES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REFRESH_ALL_CIRCLES_ZONES"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+      com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+        ab0d25e com.life360.android.safetymapd/com.life360.android.location.recievers.MovementDetectionReceiver filter 16663f
+          Action: "com.life360.android.safetymapd.MovementDetection.ALARM_EXPIRY"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_STRATEGY_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_STRATEGY_START"
+        261abf8 com.life360.android.safetymapd/com.life360.android.health.receiver.HealthEventReceiver filter fcbf8d1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_CONNECTION_STATUS_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_IN"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_OUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+      com.life360.android.safetymapd.ACTION_COLLISION_RESPONSE_SCHEDULE_JOB_SERVICE:
+        6b3b66a com.life360.android.safetymapd/com.life360.koko.collision_response.CollisionResponseReceiver filter c15275b
+          Action: "com.life360.android.safetymapd.ACTION_COLLISION_RESPONSE_SCHEDULE_JOB_SERVICE"
+      android.location.PROVIDERS_CHANGED:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        b648f0e com.life360.android.safetymapd/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 3b5d2f
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        1052f3c com.life360.android.safetymapd/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 80194c5
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.life360.android.safetymapd.DriverBehavior.TRIP_ANALYZED:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter ee21547
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_AIRPLANE_MODE_CHANGED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_APP_UPGRADED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_CRASH_CANCELED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_DRIVING_ANALYSIS_TOGGLED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_SEND_TAG_FEEDBACK"
+          Action: "com.life360.android.safetymapd.DriverBehavior.CRASH_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.FREE_COLLISION_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.RAW_DATA_EXCHANGE"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STARTUP"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STATE_EVENT"
+          Action: "com.life360.android.safetymapd.DriverBehavior.TRIP_ANALYZED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.UPLOAD_LOGS"
+      com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND:
+        f64adf1 com.life360.android.safetymapd/com.life360.koko.recievers.AppStatusReceiver filter 94c6857
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+        261abf8 com.life360.android.safetymapd/com.life360.android.health.receiver.HealthEventReceiver filter fcbf8d1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_CONNECTION_STATUS_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_IN"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_OUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+      android.intent.action.AIRPLANE_MODE:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.DriverBehavior.ACTION_SEND_TAG_FEEDBACK:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter ee21547
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_AIRPLANE_MODE_CHANGED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_APP_UPGRADED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_CRASH_CANCELED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_DRIVING_ANALYSIS_TOGGLED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_SEND_TAG_FEEDBACK"
+          Action: "com.life360.android.safetymapd.DriverBehavior.CRASH_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.FREE_COLLISION_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.RAW_DATA_EXCHANGE"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STARTUP"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STATE_EVENT"
+          Action: "com.life360.android.safetymapd.DriverBehavior.TRIP_ANALYZED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.UPLOAD_LOGS"
+      com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_OUT:
+        261abf8 com.life360.android.safetymapd/com.life360.android.health.receiver.HealthEventReceiver filter fcbf8d1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_CONNECTION_STATUS_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_IN"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_OUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+      com.life360.android.safetymapd.SharedIntents.ACTION_UPDATE_THREADS:
+        b9efcfe com.life360.android.safetymapd/com.life360.message.messaging.MessagingReceiver filter e3b4c5f
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DO_LOGOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REACTION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_UPDATE_THREADS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOAD_CACHE"
+      com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_STRATEGY_START:
+        ab0d25e com.life360.android.safetymapd/com.life360.android.location.recievers.MovementDetectionReceiver filter 16663f
+          Action: "com.life360.android.safetymapd.MovementDetection.ALARM_EXPIRY"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_STRATEGY_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_STRATEGY_START"
+      android.intent.action.DEVICE_STORAGE_OK:
+        b648f0e com.life360.android.safetymapd/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 3b5d2f
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.SharedIntents.ACTION_REFRESH_CIRCLE_ZONES:
+        8285712 com.life360.android.safetymapd/com.life360.koko.recievers.ZoneCoordinatorReceiver filter da0bee3
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DEACTIVATE_ZONE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_EXPIRE_ZONE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REFRESH_CIRCLE_ZONES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REFRESH_ALL_CIRCLES_ZONES"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+      com.android.vending.INSTALL_REFERRER:
+        924d162 com.life360.android.safetymapd/com.appsflyer.MultipleInstallBroadcastReceiver filter 4532f3
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.geofence.OUTER_GEOFENCE:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.geofence.INNER_GEOFENCE:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.SharedIntents.ACTION_POWER_DISCONNECTED:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter f2880c8
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_LOW"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_OKAY"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOGOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_POWER_CONNECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+      android.location.MODE_CHANGED:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.SharedIntents.ACTION_DO_LOGOUT:
+        b9efcfe com.life360.android.safetymapd/com.life360.message.messaging.MessagingReceiver filter e3b4c5f
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DO_LOGOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REACTION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_UPDATE_THREADS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOAD_CACHE"
+      com.life360.android.safetymapd.MetricsApi.ACTION_ANALYTICS_EVENT:
+        deeebb0 com.life360.android.safetymapd/com.life360.android.metrics.MetricsReceiver filter af60b4f
+          Action: "com.life360.android.safetymapd.MetricsApi.ACTION_ANALYTICS_EVENT"
+      com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.DriverBehavior.ACTION_AIRPLANE_MODE_CHANGED:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter ee21547
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_AIRPLANE_MODE_CHANGED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_APP_UPGRADED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_CRASH_CANCELED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_DRIVING_ANALYSIS_TOGGLED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_SEND_TAG_FEEDBACK"
+          Action: "com.life360.android.safetymapd.DriverBehavior.CRASH_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.FREE_COLLISION_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.RAW_DATA_EXCHANGE"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STARTUP"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STATE_EVENT"
+          Action: "com.life360.android.safetymapd.DriverBehavior.TRIP_ANALYZED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.UPLOAD_LOGS"
+      com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_OKAY:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter f2880c8
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_LOW"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_OKAY"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOGOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_POWER_CONNECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+      com.life360.android.safetymapd.SharedIntents.ACTION_REACTION:
+        b9efcfe com.life360.android.safetymapd/com.life360.message.messaging.MessagingReceiver filter e3b4c5f
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DO_LOGOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REACTION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_UPDATE_THREADS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOAD_CACHE"
+      com.life360.android.safetymapd.SharedIntents.ACTION_REFRESH_ALL_CIRCLES_ZONES:
+        8285712 com.life360.android.safetymapd/com.life360.koko.recievers.ZoneCoordinatorReceiver filter da0bee3
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DEACTIVATE_ZONE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_EXPIRE_ZONE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REFRESH_CIRCLE_ZONES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REFRESH_ALL_CIRCLES_ZONES"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+      android.intent.action.LOCALE_CHANGED:
+        f724f7b com.life360.android.safetymapd/com.life360.koko.recievers.KokoReceiver filter c058198
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.life360.android.safetymapd.Life360BaseApplication.ACTION_CONNECTION_STATUS_CHANGED:
+        261abf8 com.life360.android.safetymapd/com.life360.android.health.receiver.HealthEventReceiver filter fcbf8d1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_CONNECTION_STATUS_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_IN"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_OUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+      com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.MovementDetection.ALARM_EXPIRY:
+        ab0d25e com.life360.android.safetymapd/com.life360.android.location.recievers.MovementDetectionReceiver filter 16663f
+          Action: "com.life360.android.safetymapd.MovementDetection.ALARM_EXPIRY"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_STRATEGY_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_STRATEGY_START"
+      com.life360.android.safetymapd.DriverBehavior.FREE_COLLISION_DETECTED:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter ee21547
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_AIRPLANE_MODE_CHANGED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_APP_UPGRADED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_CRASH_CANCELED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_DRIVING_ANALYSIS_TOGGLED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_SEND_TAG_FEEDBACK"
+          Action: "com.life360.android.safetymapd.DriverBehavior.CRASH_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.FREE_COLLISION_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.RAW_DATA_EXCHANGE"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STARTUP"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STATE_EVENT"
+          Action: "com.life360.android.safetymapd.DriverBehavior.TRIP_ANALYZED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.UPLOAD_LOGS"
+      com.life360.android.safetymapd.EVENT_UNAUTHENTICATED:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter 6320d6b
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.SharedIntents.ACTION_POWER_CONNECTED:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter f2880c8
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_LOW"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_OKAY"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOGOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_POWER_CONNECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+      com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.DriverBehavior.ACTION_CRASH_CANCELED:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter ee21547
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_AIRPLANE_MODE_CHANGED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_APP_UPGRADED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_CRASH_CANCELED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_DRIVING_ANALYSIS_TOGGLED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_SEND_TAG_FEEDBACK"
+          Action: "com.life360.android.safetymapd.DriverBehavior.CRASH_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.FREE_COLLISION_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.RAW_DATA_EXCHANGE"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STARTUP"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STATE_EVENT"
+          Action: "com.life360.android.safetymapd.DriverBehavior.TRIP_ANALYZED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.UPLOAD_LOGS"
+      com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.google.android.c2dm.intent.RECEIVE:
+        b018fa4 com.life360.android.safetymapd/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 646510d
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.life360.android.safetymapd.MetricsApi.ACTION_METRIC_EVENT:
+        deeebb0 com.life360.android.safetymapd/com.life360.android.metrics.MetricsReceiver filter 4aa2a29
+          Action: "com.life360.android.safetymapd.MetricsApi.ACTION_METRIC_EVENT"
+      zendesk.support:
+        24ecf36 com.life360.android.safetymapd/zendesk.support.DeepLinkingBroadcastReceiver filter 874de37
+          Action: "zendesk.support"
+      android.intent.action.BATTERY_LOW:
+        d9a0210 com.life360.android.safetymapd/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f93f109
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        95e8e1a com.life360.android.safetymapd/androidx.work.impl.background.systemalarm.RescheduleReceiver filter eaa9d4b
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+        95e8e1a com.life360.android.safetymapd/androidx.work.impl.background.systemalarm.RescheduleReceiver filter eaa9d4b
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.life360.android.safetymapd.intent.APPBOY_NOTIFICATION_OPENED:
+        79d1f44 com.life360.android.safetymapd/com.life360.inappmessaging.PushReceiver filter 5382d
+          Action: "com.life360.android.safetymapd.intent.APPBOY_PUSH_RECEIVED"
+          Action: "com.life360.android.safetymapd.intent.APPBOY_NOTIFICATION_OPENED"
+      com.life360.android.safetymapd.DriverBehavior.ACTION_APP_UPGRADED:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter ee21547
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_AIRPLANE_MODE_CHANGED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_APP_UPGRADED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_CRASH_CANCELED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_DRIVING_ANALYSIS_TOGGLED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_SEND_TAG_FEEDBACK"
+          Action: "com.life360.android.safetymapd.DriverBehavior.CRASH_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.FREE_COLLISION_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.RAW_DATA_EXCHANGE"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STARTUP"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STATE_EVENT"
+          Action: "com.life360.android.safetymapd.DriverBehavior.TRIP_ANALYZED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.UPLOAD_LOGS"
+      com.life360.android.safetymapd.SharedIntents.ACTION_DEACTIVATE_ZONE:
+        8285712 com.life360.android.safetymapd/com.life360.koko.recievers.ZoneCoordinatorReceiver filter da0bee3
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DEACTIVATE_ZONE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_EXPIRE_ZONE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REFRESH_CIRCLE_ZONES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REFRESH_ALL_CIRCLES_ZONES"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+      com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_LOW:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter f2880c8
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_LOW"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_OKAY"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOGOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_POWER_CONNECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+      com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_TRANSITION:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter f2880c8
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_LOW"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_OKAY"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOGOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_POWER_CONNECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+      android.intent.action.BOOT_COMPLETED:
+        fea6ac com.life360.android.safetymapd/com.life360.message.messaging.MessagingService$StartUpReceiver filter 83d8f75
+          Action: "android.intent.action.BOOT_COMPLETED"
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter 7813886
+          Action: "android.intent.action.BOOT_COMPLETED"
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+        261abf8 com.life360.android.safetymapd/com.life360.android.health.receiver.HealthEventReceiver filter fcbf8d1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_CONNECTION_STATUS_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_IN"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_OUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+        95e8e1a com.life360.android.safetymapd/androidx.work.impl.background.systemalarm.RescheduleReceiver filter eaa9d4b
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.life360.android.safetymapd.intent.APPBOY_PUSH_RECEIVED:
+        79d1f44 com.life360.android.safetymapd/com.life360.inappmessaging.PushReceiver filter 5382d
+          Action: "com.life360.android.safetymapd.intent.APPBOY_PUSH_RECEIVED"
+          Action: "com.life360.android.safetymapd.intent.APPBOY_NOTIFICATION_OPENED"
+      com.life360.android.safetymapd.SharedIntents.ACTION_LOGOUT:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter f2880c8
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_LOW"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_OKAY"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_BATTERY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOGOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_POWER_CONNECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+        261abf8 com.life360.android.safetymapd/com.life360.android.health.receiver.HealthEventReceiver filter fcbf8d1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_CONNECTION_STATUS_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_IN"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_KOKO_FUE_LOGGED_OUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+        5b0a8c2 com.life360.android.safetymapd/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 7af26d3
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.EVENT_INITIALIZED:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter cdb2aba
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      android.intent.action.DOWNLOAD_COMPLETE:
+        ec771e6 com.life360.android.safetymapd/com.microsoft.appcenter.distribute.DownloadManagerReceiver filter d83c327
+          Action: "android.intent.action.DOWNLOAD_COMPLETE"
+          Action: "android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"
+      com.life360.android.safetymapd.DriverBehavior.UPLOAD_LOGS:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter ee21547
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_AIRPLANE_MODE_CHANGED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_APP_UPGRADED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_CRASH_CANCELED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_DRIVING_ANALYSIS_TOGGLED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_SEND_TAG_FEEDBACK"
+          Action: "com.life360.android.safetymapd.DriverBehavior.CRASH_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.FREE_COLLISION_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.RAW_DATA_EXCHANGE"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STARTUP"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STATE_EVENT"
+          Action: "com.life360.android.safetymapd.DriverBehavior.TRIP_ANALYZED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.UPLOAD_LOGS"
+      com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_REPORT_REMINDER:
+        6aeb0c com.life360.android.safetymapd/com.life360.koko.utilities.WeeklyAlarmReceiver filter 86bec55
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_REPORT_REMINDER"
+      com.life360.android.safetymapd.DriverBehavior.ACTION_DRIVING_ANALYSIS_TOGGLED:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter ee21547
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_AIRPLANE_MODE_CHANGED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_APP_UPGRADED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_CRASH_CANCELED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_DRIVING_ANALYSIS_TOGGLED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_SEND_TAG_FEEDBACK"
+          Action: "com.life360.android.safetymapd.DriverBehavior.CRASH_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.FREE_COLLISION_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.RAW_DATA_EXCHANGE"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STARTUP"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STATE_EVENT"
+          Action: "com.life360.android.safetymapd.DriverBehavior.TRIP_ANALYZED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.UPLOAD_LOGS"
+      com.life360.android.safetymapd.geofence.ZONE_GEOFENCE:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.MetricsApi.ACTION_METRIC_USER_PROPERTY:
+        deeebb0 com.life360.android.safetymapd/com.life360.android.metrics.MetricsReceiver filter 4f12dc
+          Action: "com.life360.android.safetymapd.MetricsApi.ACTION_METRIC_USER_PROPERTY"
+      com.life360.android.safetymapd.SharedIntents.ACTION_LOAD_CACHE:
+        b9efcfe com.life360.android.safetymapd/com.life360.message.messaging.MessagingReceiver filter e3b4c5f
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DO_LOGOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_REACTION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_UPDATE_THREADS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOAD_CACHE"
+      com.arity.coreEngine.InternalConfiguration.ACTION_NEXT_KVM_DOWNLOAD_ALARM:
+        dba29d4 com.life360.android.safetymapd/com.arity.coreEngine.InternalConfiguration.InternalConfigurationDownloadHelper$InternalConfigFetchReceiver filter efa977d
+          Action: "com.arity.coreEngine.InternalConfiguration.ACTION_NEXT_KVM_DOWNLOAD_ALARM"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        fea6ac com.life360.android.safetymapd/com.life360.message.messaging.MessagingService$StartUpReceiver filter d69eb0a
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        4a8e174 com.life360.android.safetymapd/com.life360.koko.recievers.KokoReinstallReceiver filter 451869d
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      android.os.action.POWER_SAVE_MODE_CHANGED:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.DriverBehavior.SDK_STARTUP:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter ee21547
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_AIRPLANE_MODE_CHANGED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_APP_UPGRADED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_CRASH_CANCELED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_DRIVING_ANALYSIS_TOGGLED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_SEND_TAG_FEEDBACK"
+          Action: "com.life360.android.safetymapd.DriverBehavior.CRASH_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.FREE_COLLISION_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.RAW_DATA_EXCHANGE"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STARTUP"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STATE_EVENT"
+          Action: "com.life360.android.safetymapd.DriverBehavior.TRIP_ANALYZED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.UPLOAD_LOGS"
+      com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      com.life360.android.safetymapd.DriverBehavior.SDK_STATE_EVENT:
+        b923fe5 com.life360.android.safetymapd/com.life360.android.driving.DriverBehaviorReceiver filter ee21547
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_AIRPLANE_MODE_CHANGED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_APP_UPGRADED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_CRASH_CANCELED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_DRIVING_ANALYSIS_TOGGLED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.ACTION_SEND_TAG_FEEDBACK"
+          Action: "com.life360.android.safetymapd.DriverBehavior.CRASH_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.FREE_COLLISION_DETECTED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.RAW_DATA_EXCHANGE"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STARTUP"
+          Action: "com.life360.android.safetymapd.DriverBehavior.SDK_STATE_EVENT"
+          Action: "com.life360.android.safetymapd.DriverBehavior.TRIP_ANALYZED"
+          Action: "com.life360.android.safetymapd.DriverBehavior.UPLOAD_LOGS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        d940328 com.life360.android.safetymapd/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 9ebb841
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.ACTION_SHUTDOWN:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+      android.intent.action.DOCK_EVENT:
+        e2ca0e0 com.life360.android.safetymapd/com.life360.android.location.recievers.LocationReceiver filter f44ef99
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_TIMER"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_FOREGROUND"
+          Action: "com.life360.android.safetymapd.Life360BaseApplication.ACTION_APP_TO_BACKGROUND"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.life360.android.safetymapd.EVENT_INITIALIZED"
+          Action: "com.life360.android.safetymapd.EVENT_UNAUTHENTICATED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_FEATURE_FLAGS_UPDATED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.DOCK_EVENT"
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.life360.android.safetymapd.geofence.OUTER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.INNER_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.LOCAL_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.BOUNCE_OUT_GEOFENCE"
+          Action: "com.life360.android.safetymapd.geofence.ZONE_GEOFENCE"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_SAVER_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.HIDE_BATTERY_OPTIMIZATION_NOTIF"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_END"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DRIVE_START"
+          Action: "com.life360.android.safetymapd.SharedIntents.LOCATION_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTIVITY_PERMISSION_GRANTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SFW_ACTIVITY_TRANSITION"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONES_STREAM_CHANGED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ZONE_EXPIRED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_MANAGER_SAMPLE:
+        f4a3935 com.life360.android.safetymapd/com.life360.android.location.controllers.EventController filter 406b1ca
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_MANAGER_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ON_DEMAND_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_WAKEUP_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SMART_REAL_TIME_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_MOVEMENT_DETECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SCHEDULED_JOB_HEARTBEAT_CHECK"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DETECTED_ACTIVITIES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_DETECTION_TIMEOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SYNC_PLACES"
+      com.life360.android.safetymapd.SharedIntents.ACTION_SMART_REAL_TIME_PUSH:
+        f4a3935 com.life360.android.safetymapd/com.life360.android.location.controllers.EventController filter 406b1ca
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_MANAGER_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ON_DEMAND_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_WAKEUP_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SMART_REAL_TIME_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_MOVEMENT_DETECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SCHEDULED_JOB_HEARTBEAT_CHECK"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DETECTED_ACTIVITIES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_DETECTION_TIMEOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SYNC_PLACES"
+      com.life360.android.safetymapd.MetricsApi.ACTION_ANSWERS_EVENT:
+        d7a0f40 com.life360.android.safetymapd/com.life360.android.metrics.MetricsService filter e98d7be
+          Action: "com.life360.android.safetymapd.MetricsApi.ACTION_ANSWERS_EVENT"
+      com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_PUSH:
+        f4a3935 com.life360.android.safetymapd/com.life360.android.location.controllers.EventController filter 406b1ca
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_MANAGER_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ON_DEMAND_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_WAKEUP_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SMART_REAL_TIME_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_MOVEMENT_DETECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SCHEDULED_JOB_HEARTBEAT_CHECK"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DETECTED_ACTIVITIES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_DETECTION_TIMEOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SYNC_PLACES"
+      com.life360.android.safetymapd.MetricsApi.ACTION_ANALYTICS_EVENT:
+        d7a0f40 com.life360.android.safetymapd/com.life360.android.metrics.MetricsService filter 3c3f01f
+          Action: "com.life360.android.safetymapd.MetricsApi.ACTION_ANALYTICS_EVENT"
+      com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS:
+        f4a3935 com.life360.android.safetymapd/com.life360.android.location.controllers.EventController filter 406b1ca
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_MANAGER_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ON_DEMAND_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_WAKEUP_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SMART_REAL_TIME_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_MOVEMENT_DETECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SCHEDULED_JOB_HEARTBEAT_CHECK"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DETECTED_ACTIVITIES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_DETECTION_TIMEOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SYNC_PLACES"
+      com.life360.android.safetymapd.SharedIntents.ACTION_SYNC_PLACES:
+        f4a3935 com.life360.android.safetymapd/com.life360.android.location.controllers.EventController filter 406b1ca
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_MANAGER_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ON_DEMAND_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_WAKEUP_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SMART_REAL_TIME_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_MOVEMENT_DETECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SCHEDULED_JOB_HEARTBEAT_CHECK"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DETECTED_ACTIVITIES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_DETECTION_TIMEOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SYNC_PLACES"
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        b4559ed com.life360.android.safetymapd/com.firebase.jobdispatcher.GooglePlayReceiver filter 83bb022 permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_DETECTION_TIMEOUT:
+        f4a3935 com.life360.android.safetymapd/com.life360.android.location.controllers.EventController filter 406b1ca
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_MANAGER_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ON_DEMAND_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_WAKEUP_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SMART_REAL_TIME_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_MOVEMENT_DETECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SCHEDULED_JOB_HEARTBEAT_CHECK"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DETECTED_ACTIVITIES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_DETECTION_TIMEOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SYNC_PLACES"
+      com.google.firebase.MESSAGING_EVENT:
+        288c672 com.life360.android.safetymapd/com.life360.koko.services.L360FirebaseMessagingService filter edf6ac3
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        34dc417 com.life360.android.safetymapd/com.google.firebase.messaging.FirebaseMessagingService filter aa5b004
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.life360.android.safetymapd.SharedIntents.ACTION_ON_DEMAND_PUSH:
+        f4a3935 com.life360.android.safetymapd/com.life360.android.location.controllers.EventController filter 406b1ca
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_MANAGER_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ON_DEMAND_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_WAKEUP_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SMART_REAL_TIME_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_MOVEMENT_DETECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SCHEDULED_JOB_HEARTBEAT_CHECK"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DETECTED_ACTIVITIES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_DETECTION_TIMEOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SYNC_PLACES"
+      com.life360.android.safetymapd.MetricsApi.ACTION_METRIC_EVENT:
+        d7a0f40 com.life360.android.safetymapd/com.life360.android.metrics.MetricsService filter 91e2e79
+          Action: "com.life360.android.safetymapd.MetricsApi.ACTION_METRIC_EVENT"
+      com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_SAMPLE:
+        f4a3935 com.life360.android.safetymapd/com.life360.android.location.controllers.EventController filter 406b1ca
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_MANAGER_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ON_DEMAND_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_WAKEUP_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SMART_REAL_TIME_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_MOVEMENT_DETECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SCHEDULED_JOB_HEARTBEAT_CHECK"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DETECTED_ACTIVITIES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_DETECTION_TIMEOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SYNC_PLACES"
+      com.life360.android.safetymapd.SharedIntents.ACTION_MOVEMENT_DETECTED:
+        f4a3935 com.life360.android.safetymapd/com.life360.android.location.controllers.EventController filter 406b1ca
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_MANAGER_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ON_DEMAND_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_WAKEUP_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SMART_REAL_TIME_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_MOVEMENT_DETECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SCHEDULED_JOB_HEARTBEAT_CHECK"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DETECTED_ACTIVITIES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_DETECTION_TIMEOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SYNC_PLACES"
+      com.firebase.jobdispatcher.ACTION_EXECUTE:
+        d416f3b com.life360.android.safetymapd/com.life360.android.location.services.LocationJobService filter 7628658
+          Action: "com.firebase.jobdispatcher.ACTION_EXECUTE"
+        9f233b1 com.life360.android.safetymapd/com.life360.android.driving.service.DriverBehaviorFileJobService filter 3c62096
+          Action: "com.firebase.jobdispatcher.ACTION_EXECUTE"
+      com.life360.android.safetymapd.SharedIntents.ACTION_WAKEUP_PUSH:
+        f4a3935 com.life360.android.safetymapd/com.life360.android.location.controllers.EventController filter 406b1ca
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_MANAGER_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ON_DEMAND_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_WAKEUP_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SMART_REAL_TIME_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_MOVEMENT_DETECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SCHEDULED_JOB_HEARTBEAT_CHECK"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DETECTED_ACTIVITIES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_DETECTION_TIMEOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SYNC_PLACES"
+      com.life360.android.safetymapd.MetricsApi.ACTION_METRIC_USER_PROPERTY:
+        d7a0f40 com.life360.android.safetymapd/com.life360.android.metrics.MetricsService filter 490df6c
+          Action: "com.life360.android.safetymapd.MetricsApi.ACTION_METRIC_USER_PROPERTY"
+      com.life360.android.safetymapd.SharedIntents.ACTION_SCHEDULED_JOB_HEARTBEAT_CHECK:
+        f4a3935 com.life360.android.safetymapd/com.life360.android.location.controllers.EventController filter 406b1ca
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_MANAGER_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ON_DEMAND_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_WAKEUP_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SMART_REAL_TIME_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_MOVEMENT_DETECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SCHEDULED_JOB_HEARTBEAT_CHECK"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DETECTED_ACTIVITIES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_DETECTION_TIMEOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SYNC_PLACES"
+      com.life360.android.safetymapd.SharedIntents.ACTION_DETECTED_ACTIVITIES:
+        f4a3935 com.life360.android.safetymapd/com.life360.android.location.controllers.EventController filter 406b1ca
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_LOCATION_MANAGER_SAMPLE"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ON_DEMAND_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_WAKEUP_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SMART_REAL_TIME_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_HEARTBEAT_PUSH"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_MOVEMENT_DETECTED"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_CHECK_LOCATION_PROVIDERS"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SCHEDULED_JOB_HEARTBEAT_CHECK"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_DETECTED_ACTIVITIES"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_ACTIVITY_DETECTION_TIMEOUT"
+          Action: "com.life360.android.safetymapd.SharedIntents.ACTION_SYNC_PLACES"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          i.lf360.co
+          i.life360.com
+
+Registered ContentProviders:
+  com.life360.android.safetymapd/com.life360.android.settings.features.DataProviderBase:
+    Provider{a555830 com.life360.android.safetymapd/com.life360.android.settings.features.DataProviderBase}
+  com.life360.android.safetymapd/com.life360.android.logging.ServiceProcessLogProvider:
+    Provider{c555ca9 com.life360.android.safetymapd/com.life360.android.logging.ServiceProcessLogProvider}
+  com.life360.android.safetymapd/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{64a222e com.life360.android.safetymapd/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.life360.android.safetymapd/com.squareup.picasso.PicassoProvider:
+    Provider{18ec1cf com.life360.android.safetymapd/com.squareup.picasso.PicassoProvider}
+  com.life360.android.safetymapd/com.facebook.internal.FacebookInitProvider:
+    Provider{defc75c com.life360.android.safetymapd/com.facebook.internal.FacebookInitProvider}
+  com.life360.android.safetymapd/com.life360.android.settings.data.SourceOfTruthProvider:
+    Provider{afe1a65 com.life360.android.safetymapd/com.life360.android.settings.data.SourceOfTruthProvider}
+  com.life360.android.safetymapd/zendesk.belvedere.BelvedereFileProvider:
+    Provider{95a333a com.life360.android.safetymapd/zendesk.belvedere.BelvedereFileProvider}
+  com.life360.android.safetymapd/com.life360.android.shared.L360ServiceAppInitProvider:
+    Provider{fdfabeb com.life360.android.safetymapd/com.life360.android.shared.L360ServiceAppInitProvider}
+  com.life360.android.safetymapd/com.life360.android.settings.data.SettingsProvider:
+    Provider{b5ffd48 com.life360.android.safetymapd/com.life360.android.settings.data.SettingsProvider}
+  com.life360.android.safetymapd/com.life360.android.shared.L360MainAppInitProvider:
+    Provider{4baf7e1 com.life360.android.safetymapd/com.life360.android.shared.L360MainAppInitProvider}
+  com.life360.android.safetymapd/com.life360.android.history.data.HistoryRequestProvider:
+    Provider{4284906 com.life360.android.safetymapd/com.life360.android.history.data.HistoryRequestProvider}
+  com.life360.android.safetymapd/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{c0b1bc7 com.life360.android.safetymapd/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.life360.android.safetymapd/androidx.core.content.FileProvider:
+    Provider{61ba5f4 com.life360.android.safetymapd/androidx.core.content.FileProvider}
+  com.life360.android.safetymapd/zendesk.support.SupportSdkStartupProvider:
+    Provider{50e311d com.life360.android.safetymapd/zendesk.support.SupportSdkStartupProvider}
+
+ContentProvider Authorities:
+  [com.life360.android.safetymapd.truth]:
+    Provider{afe1a65 com.life360.android.safetymapd/com.life360.android.settings.data.SourceOfTruthProvider}
+      applicationInfo=ApplicationInfo{36fef92 com.life360.android.safetymapd}
+  [com.life360.android.safetymapd.zendesk.support.SupportSdkStartupProvider]:
+    Provider{50e311d com.life360.android.safetymapd/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{e93ad63 com.life360.android.safetymapd}
+  [com.life360.android.safetymapd.settings]:
+    Provider{b5ffd48 com.life360.android.safetymapd/com.life360.android.settings.data.SettingsProvider}
+      applicationInfo=ApplicationInfo{1472d60 com.life360.android.safetymapd}
+  [com.life360.android.safetymapd.FacebookInitProvider]:
+    Provider{defc75c com.life360.android.safetymapd/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{361c219 com.life360.android.safetymapd}
+  [com.life360.android.safetymapd.firebaseperfprovider]:
+    Provider{64a222e com.life360.android.safetymapd/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{21972de com.life360.android.safetymapd}
+  [com.life360.android.safetymapd.HistoryRequests]:
+    Provider{4284906 com.life360.android.safetymapd/com.life360.android.history.data.HistoryRequestProvider}
+      applicationInfo=ApplicationInfo{b89bcbf com.life360.android.safetymapd}
+  [com.life360.android.safetymapd.shared.providers.provider]:
+    Provider{a555830 com.life360.android.safetymapd/com.life360.android.settings.features.DataProviderBase}
+      applicationInfo=ApplicationInfo{be1bf8c com.life360.android.safetymapd}
+  [com.life360.android.safetymapd.com.squareup.picasso]:
+    Provider{18ec1cf com.life360.android.safetymapd/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{9c366d5 com.life360.android.safetymapd}
+  [com.life360.android.safetymapd.service_file_log_provider]:
+    Provider{c555ca9 com.life360.android.safetymapd/com.life360.android.logging.ServiceProcessLogProvider}
+      applicationInfo=ApplicationInfo{f45deea com.life360.android.safetymapd}
+  [com.life360.android.safetymapd.context.l360MainAppInitProvider]:
+    Provider{4baf7e1 com.life360.android.safetymapd/com.life360.android.shared.L360MainAppInitProvider}
+      applicationInfo=ApplicationInfo{da765db com.life360.android.safetymapd}
+  [com.life360.android.safetymapd.context.l360ServiceAppInitProvider]:
+    Provider{fdfabeb com.life360.android.safetymapd/com.life360.android.shared.L360ServiceAppInitProvider}
+      applicationInfo=ApplicationInfo{3b14878 com.life360.android.safetymapd}
+  [com.life360.android.safetymapd.belvedere2.attachments]:
+    Provider{95a333a com.life360.android.safetymapd/zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{b609b51 com.life360.android.safetymapd}
+  [com.life360.android.safetymapd.file_provider]:
+    Provider{61ba5f4 com.life360.android.safetymapd/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{91affb6 com.life360.android.safetymapd}
+  [com.life360.android.safetymapd.mobileadsinitprovider]:
+    Provider{c0b1bc7 com.life360.android.safetymapd/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{72c84b7 com.life360.android.safetymapd}
+
+Key Set Manager:
+  [com.life360.android.safetymapd]
+      Signing KeySets: 4832
+
+Packages:
+  Package [com.life360.android.safetymapd] (6c29b8d):
+    userId=10251
+    pkg=Package{84f6142 com.life360.android.safetymapd}
+    codePath=/data/app/~~udBxxg0txud8OD9ILZpNEQ==/com.life360.android.safetymapd-lF5mVqbjq0K4hTHqGrrozg==
+    resourcePath=/data/app/~~udBxxg0txud8OD9ILZpNEQ==/com.life360.android.safetymapd-lF5mVqbjq0K4hTHqGrrozg==
+    legacyNativeLibraryDir=/data/app/~~udBxxg0txud8OD9ILZpNEQ==/com.life360.android.safetymapd-lF5mVqbjq0K4hTHqGrrozg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=227064 minSdk=23 targetSdk=29
+    minExtensionVersions=[]
+    versionName=20.5.3
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.life360.android.safetymapd
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 10:13:21
+    lastUpdateTime=2022-11-30 10:13:22
+    packageSource=0
+    signatures=PackageSignatures{47ab553 version:3, signatures:[635c74a6], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.BLUETOOTH
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.CAMERA
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.NFC
+      android.permission.CALL_PHONE
+      android.permission.INTERNET
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      com.android.vending.BILLING
+      android.permission.VIBRATE
+      android.permission.READ_PHONE_STATE
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      android.permission.ACTIVITY_RECOGNITION
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=44244 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 10:13:22
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACTIVITY_RECOGNITION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.life360.android.safetymapd
+    com.google.android.apps.diagnosticstool:
+      com.life360.android.safetymapd
+    com.google.android.settings.intelligence:
+      com.life360.android.safetymapd
+    com.google.android.apps.accessibility.voiceaccess:
+      com.life360.android.safetymapd
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.life360.android.safetymapd]
+    path: /data/app/~~udBxxg0txud8OD9ILZpNEQ==/com.life360.android.safetymapd-lF5mVqbjq0K4hTHqGrrozg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:391963
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.life360.android.safetymapd]
+     base.apk - 969

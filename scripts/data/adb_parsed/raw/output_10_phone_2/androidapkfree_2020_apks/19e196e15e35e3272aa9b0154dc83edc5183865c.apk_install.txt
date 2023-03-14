@@ -1,0 +1,203 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        a6d78ff de.resolution.yf_android/.StatusActivity filter 6c29d2b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "www.your-freedom.net": -1
+          Path: "PatternMatcher{GLOB: /android-app}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        a6d78ff de.resolution.yf_android/.StatusActivity filter b99217a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      de.resolution.yf_android.ACTION_UPDATE_WIDGETS_BANDWIDTH_REFRESH:
+        fb466cc de.resolution.yf_android/.BandwidthIndicatorWidget filter 807db46
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_CONNECTION_STATE"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_BANDWIDTH_REFRESH"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_BANDWIDTH_ADD_VALUES"
+      de.resolution.yf_android.TOGGLE_CONNECTION:
+        4ea1d15 de.resolution.yf_android/.VpnControl filter 7023588
+          Action: "de.resolution.yf_android.START_CONNECTION"
+          Action: "de.resolution.yf_android.STOP_CONNECTION"
+          Action: "de.resolution.yf_android.TOGGLE_CONNECTION"
+      de.resolution.yf_android.ACTION_UPDATE_WIDGETS_CONNECTION_STATE:
+        fc8f82a de.resolution.yf_android/.SimpleIndicatorWidget filter 7706b21
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_CONNECTION_STATE"
+        fb466cc de.resolution.yf_android/.BandwidthIndicatorWidget filter 807db46
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_CONNECTION_STATE"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_BANDWIDTH_REFRESH"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_BANDWIDTH_ADD_VALUES"
+      de.resolution.yf_android.START_CONNECTION:
+        4ea1d15 de.resolution.yf_android/.VpnControl filter 7023588
+          Action: "de.resolution.yf_android.START_CONNECTION"
+          Action: "de.resolution.yf_android.STOP_CONNECTION"
+          Action: "de.resolution.yf_android.TOGGLE_CONNECTION"
+      de.resolution.yf_android.ACTION_UPDATE_WIDGETS_BANDWIDTH_ADD_VALUES:
+        fb466cc de.resolution.yf_android/.BandwidthIndicatorWidget filter 807db46
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_CONNECTION_STATE"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_BANDWIDTH_REFRESH"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_BANDWIDTH_ADD_VALUES"
+      android.intent.action.USER_PRESENT:
+        fc8f82a de.resolution.yf_android/.SimpleIndicatorWidget filter 7706b21
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_CONNECTION_STATE"
+        fb466cc de.resolution.yf_android/.BandwidthIndicatorWidget filter 807db46
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_CONNECTION_STATE"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_BANDWIDTH_REFRESH"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_BANDWIDTH_ADD_VALUES"
+      de.resolution.yf_android.STOP_CONNECTION:
+        4ea1d15 de.resolution.yf_android/.VpnControl filter 7023588
+          Action: "de.resolution.yf_android.START_CONNECTION"
+          Action: "de.resolution.yf_android.STOP_CONNECTION"
+          Action: "de.resolution.yf_android.TOGGLE_CONNECTION"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        fc8f82a de.resolution.yf_android/.SimpleIndicatorWidget filter 7706b21
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_CONNECTION_STATE"
+        fb466cc de.resolution.yf_android/.BandwidthIndicatorWidget filter 807db46
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_CONNECTION_STATE"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_BANDWIDTH_REFRESH"
+          Action: "de.resolution.yf_android.ACTION_UPDATE_WIDGETS_BANDWIDTH_ADD_VALUES"
+
+Permissions:
+  Permission [de.resolution.yf_android.VPN_CONTROL] (eaaa61b):
+    sourcePackage=de.resolution.yf_android
+    uid=10152 gids=null type=0 prot=dangerous
+    perm=Permission{12723b8 de.resolution.yf_android.VPN_CONTROL}
+    packageSetting=PackageSetting{ec6d9a5 de.resolution.yf_android/10152}
+
+Key Set Manager:
+  [de.resolution.yf_android]
+      Signing KeySets: 207
+
+Packages:
+  Package [de.resolution.yf_android] (ec6d9a5):
+    userId=10152
+    sharedUser=SharedUserSetting{2dc7591 de.resolution.yf/10152}
+    pkg=Package{d091f0f de.resolution.yf_android}
+    codePath=/data/app/de.resolution.yf_android-jVG1-puef_H6qVSpTW3E8g==
+    resourcePath=/data/app/de.resolution.yf_android-jVG1-puef_H6qVSpTW3E8g==
+    legacyNativeLibraryDir=/data/app/de.resolution.yf_android-jVG1-puef_H6qVSpTW3E8g==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=2020091501 minSdk=14 targetSdk=30
+    versionName=20200915-01
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{2d66cf6 de.resolution.yf_android}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/de.resolution.yf_android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 07:48:49
+    firstInstallTime=2021-03-06 07:48:49
+    lastUpdateTime=2021-03-06 07:48:49
+    signatures=PackageSignatures{6c388f7 version:2, signatures:[c48af1f1], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    declared permissions:
+      de.resolution.yf_android.VPN_CONTROL: prot=dangerous, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      com.android.vending.BILLING
+      android.permission.GET_ACCOUNTS
+      android.permission.CAMERA
+      android.permission.VIBRATE
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+    User 0: ceDataInode=7265 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+
+Shared users:
+  SharedUser [de.resolution.yf] (2dc7591):
+    userId=10152
+    Packages
+      PackageSetting{ec6d9a5 de.resolution.yf_android/10152}
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+    User 0: 
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=25
+  User 0:
+    seq=6, package=com.google.android.gms
+    seq=7, package=com.ultimateguitar.tabs
+    seq=9, package=com.anddoes.launcher
+    seq=11, package=tv.twitch.android.app
+    seq=13, package=com.ludo.king
+    seq=15, package=net.zedge.android
+    seq=17, package=com.shazam.android
+    seq=19, package=com.whatsweb.app
+    seq=21, package=com.yahoo.mobile.client.android.finance
+    seq=23, package=com.yahoo.mobile.client.android.mail
+    seq=24, package=de.resolution.yf_android
+
+
+Dexopt state:
+  [de.resolution.yf_android]
+    path: /data/app/de.resolution.yf_android-jVG1-puef_H6qVSpTW3E8g==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [de.resolution.yf_android]
+     base.apk - 2470
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

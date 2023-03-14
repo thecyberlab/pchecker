@@ -1,0 +1,241 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d15fbf6 org.voidsink.anewjkuapp/.activity.MainActivity filter b656bf7
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      org.voidsink.anewjkuapp.prefs.LOGIN:
+        27ad093 org.voidsink.anewjkuapp/.activity.KusssAuthenticatorActivity filter e89c8d0
+          Action: "org.voidsink.anewjkuapp.prefs.LOGIN"
+          Category: "android.intent.category.DEFAULT"
+      org.voidsink.anewjkuapp.prefs.MAIN:
+        3b5f4cd org.voidsink.anewjkuapp/.activity.SyncSettingsActivity filter 89de182
+          Action: "org.voidsink.anewjkuapp.prefs.MAIN"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        d15fbf6 org.voidsink.anewjkuapp/.activity.MainActivity filter 91e6a64
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        fc9f085 org.voidsink.anewjkuapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c221eda
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        b77e2ef org.voidsink.anewjkuapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d0aa1fc
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        689bf0b org.voidsink.anewjkuapp/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e5de1e8
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        a3e1001 org.voidsink.anewjkuapp/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 7134ea6
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        689bf0b org.voidsink.anewjkuapp/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e5de1e8
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        fc9f085 org.voidsink.anewjkuapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c221eda
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        f9340e7 org.voidsink.anewjkuapp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9233494
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        f9340e7 org.voidsink.anewjkuapp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9233494
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        cba10c9 org.voidsink.anewjkuapp/.utils.BootReceiver filter cc93ce
+          Action: "android.intent.action.BOOT_COMPLETED"
+        f9340e7 org.voidsink.anewjkuapp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9233494
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        b77e2ef org.voidsink.anewjkuapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d0aa1fc
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        c7aab3d org.voidsink.anewjkuapp/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter e95af32
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.content.SyncAdapter:
+        eebbe39 org.voidsink.anewjkuapp/.service.KusssCalendarSyncService filter 76b8c7e
+          Action: "android.content.SyncAdapter"
+        50d65df org.voidsink.anewjkuapp/.service.KusssSyncService filter 538822c
+          Action: "android.content.SyncAdapter"
+      com.google.android.apps.dashclock.Extension:
+        ac104f5 org.voidsink.anewjkuapp/.dashclock.MensaDashclockExtension filter e2ff28a permission com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA
+          Action: "com.google.android.apps.dashclock.Extension"
+      android.accounts.AccountAuthenticator:
+        3c90483 org.voidsink.anewjkuapp/.service.KusssAuthenticatorService filter c490600 permission android.permission.AUTHENTICATE_ACCOUNTS
+          Action: "android.accounts.AccountAuthenticator"
+
+Domain verification status:
+
+Registered ContentProviders:
+  org.voidsink.anewjkuapp/.provider.PoiContentProvider:
+    Provider{49ac235 org.voidsink.anewjkuapp/.provider.PoiContentProvider}
+  org.voidsink.anewjkuapp/.provider.KusssContentProvider:
+    Provider{70f06ca org.voidsink.anewjkuapp/.provider.KusssContentProvider}
+
+ContentProvider Authorities:
+  [org.voidsink.anewjkuapp.provider]:
+    Provider{70f06ca org.voidsink.anewjkuapp/.provider.KusssContentProvider}
+      applicationInfo=ApplicationInfo{f8a47ef org.voidsink.anewjkuapp}
+  [org.voidsink.anewjkuapp.provider.poi]:
+    Provider{49ac235 org.voidsink.anewjkuapp/.provider.PoiContentProvider}
+      applicationInfo=ApplicationInfo{1a5a2fc org.voidsink.anewjkuapp}
+
+Key Set Manager:
+  [org.voidsink.anewjkuapp]
+      Signing KeySets: 6967
+
+Packages:
+  Package [org.voidsink.anewjkuapp] (6175d85):
+    userId=10875
+    pkg=Package{77ec596 org.voidsink.anewjkuapp}
+    codePath=/data/app/~~nZ14tWe7I4YJCfOr365c_g==/org.voidsink.anewjkuapp-98fk_Tpb9WhJxD9DxiaR9g==
+    resourcePath=/data/app/~~nZ14tWe7I4YJCfOr365c_g==/org.voidsink.anewjkuapp-98fk_Tpb9WhJxD9DxiaR9g==
+    legacyNativeLibraryDir=/data/app/~~nZ14tWe7I4YJCfOr365c_g==/org.voidsink.anewjkuapp-98fk_Tpb9WhJxD9DxiaR9g==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=140078 minSdk=16 targetSdk=29
+    minExtensionVersions=[]
+    versionName=0.52.5
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/org.voidsink.anewjkuapp
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 21:26:58
+    lastUpdateTime=2022-11-30 21:27:00
+    packageSource=0
+    signatures=PackageSignatures{9320517 version:1, signatures:[6f91dd41], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.READ_SYNC_STATS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.READ_CALENDAR
+      android.permission.WRITE_CALENDAR
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=105111 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 21:27:00
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.diagnosticstool:
+      org.voidsink.anewjkuapp
+    com.google.android.settings.intelligence:
+      org.voidsink.anewjkuapp
+    com.google.android.GoogleCamera:
+      org.voidsink.anewjkuapp
+    com.google.android.contacts:
+      org.voidsink.anewjkuapp
+    com.google.android.apps.accessibility.voiceaccess:
+      org.voidsink.anewjkuapp
+    com.zhiliaoapp.musically:
+      org.voidsink.anewjkuapp
+    com.truecaller:
+      org.voidsink.anewjkuapp
+    com.dv.adm:
+      org.voidsink.anewjkuapp
+    com.zappcues.gamingmode:
+      org.voidsink.anewjkuapp
+    com.jio.myjio:
+      org.voidsink.anewjkuapp
+  queryable via interaction:
+    User 0:
+      [com.android.location.fused,com.android.localtransport,com.google.android.iwlan,com.android.wallpaperbackup,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem,com.android.settings,com.android.server.telecom,com.android.inputdevices,android,com.android.providers.settings,com.google.SSRestartDetector,com.android.keychain,com.android.qns]:
+        org.voidsink.anewjkuapp
+      com.google.android.webview:
+        org.voidsink.anewjkuapp
+      org.voidsink.anewjkuapp:
+        com.google.android.webview
+  queryable via uses-library:
+
+Dexopt state:
+  [org.voidsink.anewjkuapp]
+    path: /data/app/~~nZ14tWe7I4YJCfOr365c_g==/org.voidsink.anewjkuapp-98fk_Tpb9WhJxD9DxiaR9g==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:2035111
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [org.voidsink.anewjkuapp]
+     base.apk - 253

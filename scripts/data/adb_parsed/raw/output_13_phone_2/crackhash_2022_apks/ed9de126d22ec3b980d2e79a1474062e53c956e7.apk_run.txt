@@ -1,0 +1,312 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        eb51fa9 se.perigee.android.seven/com.perigee.seven.ui.activity.MainActivity filter 87a292e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          Authority: "invite.seven.app": -1
+          Authority: "deeplink.seven.app": -1
+          Authority: "deeplink.sevenworkouts.com": -1
+          Authority: "challenge.seven.app": -1
+          Path: "PatternMatcher{LITERAL: /*}"
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{LITERAL: /open-notifications-tab}"
+          Path: "PatternMatcher{LITERAL: /}"
+          AutoVerify=true
+        c23bccf se.perigee.android.seven/com.perigee.seven.ui.activity.WorkoutBrowsableActivity filter 5d8a65c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "deeplink.sevenworkouts.com": -1
+          Authority: "deeplink.sevenworkouts.com": -1
+          Path: "PatternMatcher{LITERAL: /verify-email}"
+          Path: "PatternMatcher{LITERAL: /change-email}"
+          AutoVerify=true
+      fbconnect:
+        7170d65 se.perigee.android.seven/com.facebook.CustomTabActivity filter e4956eb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.se.perigee.android.seven": -1
+      fb1988800511356525:
+        7170d65 se.perigee.android.seven/com.facebook.CustomTabActivity filter c03aa3a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb1988800511356525"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        672cc73 se.perigee.android.seven/com.perigee.seven.ui.activity.SplashActivity filter d1e4730
+          Action: "android.intent.action.MAIN"
+          Action: "com.perigee.seven.SHORTCUT_LAUNCH"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+      com.perigee.seven.SHORTCUT_LAUNCH:
+        672cc73 se.perigee.android.seven/com.perigee.seven.ui.activity.SplashActivity filter d1e4730
+          Action: "android.intent.action.MAIN"
+          Action: "com.perigee.seven.SHORTCUT_LAUNCH"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        b405e8c se.perigee.android.seven/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 37f19d5
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        fd939de se.perigee.android.seven/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter ed377bf
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        6bb15ea se.perigee.android.seven/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b51d0db
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        277cc48 se.perigee.android.seven/com.perigee.seven.service.broadcastReceivers.NetworkConnectivityReceiver filter 4f01ae1
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        3dad778 se.perigee.android.seven/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter a47e51
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        4f14692 se.perigee.android.seven/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 527b863
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        6bb15ea se.perigee.android.seven/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b51d0db
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        ba9dc60 se.perigee.android.seven/com.google.firebase.iid.FirebaseInstanceIdReceiver filter ab84519
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        b405e8c se.perigee.android.seven/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 37f19d5
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        86164f4 se.perigee.android.seven/com.perigee.seven.service.broadcastReceivers.TimeChangedReceiver filter 6f2841d
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        82ca6b6 se.perigee.android.seven/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c929fb7
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        86164f4 se.perigee.android.seven/com.perigee.seven.service.broadcastReceivers.TimeChangedReceiver filter 6f2841d
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        82ca6b6 se.perigee.android.seven/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c929fb7
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        d723006 se.perigee.android.seven/com.perigee.seven.service.broadcastReceivers.OnBootReceiver filter ee476c7
+          Action: "android.intent.action.BOOT_COMPLETED"
+        82ca6b6 se.perigee.android.seven/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c929fb7
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        fd939de se.perigee.android.seven/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter ed377bf
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        4547842 se.perigee.android.seven/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 9a78053
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        5a1f324 se.perigee.android.seven/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter fe1ae8d
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        535d68e se.perigee.android.seven/com.perigee.seven.wearable.DataLayerListenerServiceForRefreshingData filter f1fceaf
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{LITERAL: /refresh_data}"
+
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        89d1d90 se.perigee.android.seven/com.perigee.seven.service.notifications.pushnotification.SevenFirebaseMessagingService filter 747a689
+          Action: "com.google.firebase.MESSAGING_EVENT"
+
+Domain verification status:
+  se.perigee.android.seven:
+    ID: f1b38c39-377b-458d-af66-dfaff1f4ea3f
+    Signatures: [0C:FB:46:63:83:1A:0F:B8:D6:97:3A:AD:44:E2:21:A8:BA:78:F7:F6:84:BD:0B:17:D3:B4:4B:EC:82:31:64:84]
+    Domain verification state:
+      deeplink.sevenworkouts.com: none
+      invite.seven.app: none
+      challenge.seven.app: none
+      deeplink.seven.app: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          deeplink.sevenworkouts.com
+          invite.seven.app
+          challenge.seven.app
+          deeplink.seven.app
+
+Registered ContentProviders:
+  se.perigee.android.seven/androidx.core.content.FileProvider:
+    Provider{6da171 se.perigee.android.seven/androidx.core.content.FileProvider}
+  se.perigee.android.seven/com.squareup.picasso.PicassoProvider:
+    Provider{4445b56 se.perigee.android.seven/com.squareup.picasso.PicassoProvider}
+  se.perigee.android.seven/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{f7347d7 se.perigee.android.seven/com.google.firebase.provider.FirebaseInitProvider}
+  se.perigee.android.seven/com.facebook.internal.FacebookInitProvider:
+    Provider{b4348c4 se.perigee.android.seven/com.facebook.internal.FacebookInitProvider}
+  se.perigee.android.seven/androidx.startup.InitializationProvider:
+    Provider{769e3ad se.perigee.android.seven/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [se.perigee.android.seven.firebaseinitprovider]:
+    Provider{f7347d7 se.perigee.android.seven/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{2653eb0 se.perigee.android.seven}
+  [se.perigee.android.seven.FacebookInitProvider]:
+    Provider{b4348c4 se.perigee.android.seven/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{a558129 se.perigee.android.seven}
+  [com.perigee.seven.fileprovider]:
+    Provider{6da171 se.perigee.android.seven/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{278acae se.perigee.android.seven}
+  [se.perigee.android.seven.androidx-startup]:
+    Provider{769e3ad se.perigee.android.seven/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{e92ba4f se.perigee.android.seven}
+  [se.perigee.android.seven.com.squareup.picasso]:
+    Provider{4445b56 se.perigee.android.seven/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{15795dc se.perigee.android.seven}
+
+Key Set Manager:
+  [se.perigee.android.seven]
+      Signing KeySets: 4656
+
+Packages:
+  Package [se.perigee.android.seven] (61c06e5):
+    userId=10300
+    pkg=Package{a60ec5c se.perigee.android.seven}
+    codePath=/data/app/~~zWg1OIxXTjyvq5dmYmUpwA==/se.perigee.android.seven-SNThLAnk0NcgqShIj2pCrA==
+    resourcePath=/data/app/~~zWg1OIxXTjyvq5dmYmUpwA==/se.perigee.android.seven-SNThLAnk0NcgqShIj2pCrA==
+    legacyNativeLibraryDir=/data/app/~~zWg1OIxXTjyvq5dmYmUpwA==/se.perigee.android.seven-SNThLAnk0NcgqShIj2pCrA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=912509 minSdk=21 targetSdk=31
+    minExtensionVersions=[]
+    versionName=9.12.5
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.PICK dat=content://*/... typ=image/* }]
+    dataDir=/data/user/0/se.perigee.android.seven
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 15:16:59
+    lastUpdateTime=2022-11-30 15:17:02
+    packageSource=0
+    signatures=PackageSignatures{e70db65 version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SCHEDULE_EXACT_ALARM: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=62488 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:17:02
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      se.perigee.android.seven
+    com.google.android.apps.diagnosticstool:
+      se.perigee.android.seven
+    com.google.android.settings.intelligence:
+      se.perigee.android.seven
+    com.google.android.apps.accessibility.voiceaccess:
+      se.perigee.android.seven
+    com.truecaller:
+      se.perigee.android.seven
+    se.perigee.android.seven:
+      com.google.android.GoogleCamera
+      com.google.android.apps.photos
+      com.cam001.selfie
+      com.unvoid.borealis
+      com.osheden.azulox
+    com.dv.adm:
+      se.perigee.android.seven
+    com.zappcues.gamingmode:
+      se.perigee.android.seven
+    com.jio.myjio:
+      se.perigee.android.seven
+  queryable via interaction:
+    User 0:
+      [com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.android.inputdevices,com.android.settings,com.android.localtransport,com.android.location.fused,com.google.android.iwlan,com.android.keychain,com.android.wallpaperbackup,com.android.dynsystem,com.android.qns,com.android.providers.settings,android,com.google.SSRestartDetector]:
+        se.perigee.android.seven
+      [com.google.android.gms,com.google.android.gsf]:
+        se.perigee.android.seven
+  queryable via uses-library:
+
+Dexopt state:
+  [se.perigee.android.seven]
+    path: /data/app/~~zWg1OIxXTjyvq5dmYmUpwA==/se.perigee.android.seven-SNThLAnk0NcgqShIj2pCrA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:371221
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [se.perigee.android.seven]
+     base.apk - 713

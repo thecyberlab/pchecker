@@ -1,0 +1,259 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        b7a80fd com.acowboys.oldmovies/com.iart.chromecastapps.ScreenFullPost filter 72431f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "oldmovies.fun": -1
+          Path: "PatternMatcher{PREFIX: /}"
+        b7a80fd com.acowboys.oldmovies/com.iart.chromecastapps.ScreenFullPost filter 4cd3043
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "oldmovies.fun": -1
+      hwpps:
+        344eeec com.acowboys.oldmovies/com.huawei.openalliance.ad.activity.PPSLauncherActivity filter badd2b5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "hwpps"
+          Authority: "com.acowboys.oldmovies": -1
+      genericidp:
+        6e426c0 com.acowboys.oldmovies/com.google.firebase.auth.internal.GenericIdpActivity filter b732ff9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        c3f7b3e com.acowboys.oldmovies/com.google.firebase.auth.internal.RecaptchaActivity filter e888d9f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      com.acowboys.oldmovies:
+        c3809c1 com.acowboys.oldmovies/com.iart.chromecastapps.billing.BillingActivity filter 31b2566
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.acowboys.oldmovies"
+          Authority: "billingactivity": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        ca3ce45 com.acowboys.oldmovies/com.iart.chromecastapps.atv.ATVOnBoarding filter 8f6099a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+        ad830a7 com.acowboys.oldmovies/com.iart.chromecastapps.onboarding.OnBoardingActivity filter 509c954
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.SEARCH:
+        ecb32cb com.acowboys.oldmovies/com.iart.chromecastapps.atv.VideoDetailsActivity filter a00aaa8
+          Action: "android.intent.action.SEARCH"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        c340d4a com.acowboys.oldmovies/com.iart.chromecastapps.MyFirebaseMessagingService filter f7264bb
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        42db416 com.acowboys.oldmovies/com.google.firebase.messaging.FirebaseMessagingService filter 3589197
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.auth.api.gms.service.START:
+        2080dd8 com.acowboys.oldmovies/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter eb5e531
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          oldmovies.fun
+
+Registered ContentProviders:
+  com.acowboys.oldmovies/com.squareup.picasso.PicassoProvider:
+    Provider{cd6b16d com.acowboys.oldmovies/com.squareup.picasso.PicassoProvider}
+  com.acowboys.oldmovies/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{8c6f1a2 com.acowboys.oldmovies/com.google.firebase.provider.FirebaseInitProvider}
+  com.acowboys.oldmovies/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{fa06e33 com.acowboys.oldmovies/com.facebook.ads.AudienceNetworkContentProvider}
+  com.acowboys.oldmovies/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{754a5f0 com.acowboys.oldmovies/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.acowboys.oldmovies/androidx.work.impl.WorkManagerInitializer:
+    Provider{139f769 com.acowboys.oldmovies/androidx.work.impl.WorkManagerInitializer}
+
+ContentProvider Authorities:
+  [com.acowboys.oldmovies.firebaseinitprovider]:
+    Provider{8c6f1a2 com.acowboys.oldmovies/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{34685ee com.acowboys.oldmovies}
+  [com.acowboys.oldmovies.workmanager-init]:
+    Provider{139f769 com.acowboys.oldmovies/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{4f6311c com.acowboys.oldmovies}
+  [com.acowboys.oldmovies.mobileadsinitprovider]:
+    Provider{754a5f0 com.acowboys.oldmovies/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{771a125 com.acowboys.oldmovies}
+  [com.acowboys.oldmovies.AudienceNetworkContentProvider]:
+    Provider{fa06e33 com.acowboys.oldmovies/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{21912fa com.acowboys.oldmovies}
+  [com.acowboys.oldmovies.com.squareup.picasso]:
+    Provider{cd6b16d com.acowboys.oldmovies/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{fd170ab com.acowboys.oldmovies}
+
+Key Set Manager:
+  [com.acowboys.oldmovies]
+      Signing KeySets: 5874
+
+Packages:
+  Package [com.acowboys.oldmovies] (bc34308):
+    userId=10270
+    pkg=Package{c02aa1 com.acowboys.oldmovies}
+    codePath=/data/app/~~Vw81xXsaGnn0nNSim-WjvA==/com.acowboys.oldmovies-VXuGUWuyFTXii0IYbtNuqg==
+    resourcePath=/data/app/~~Vw81xXsaGnn0nNSim-WjvA==/com.acowboys.oldmovies-VXuGUWuyFTXii0IYbtNuqg==
+    legacyNativeLibraryDir=/data/app/~~Vw81xXsaGnn0nNSim-WjvA==/com.acowboys.oldmovies-VXuGUWuyFTXii0IYbtNuqg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1016 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.14.18
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.facebook.katana]
+    queriesIntents=[Intent { act=androidx.browser.customtabs.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }, Intent { act=android.intent.action.VIEW dat=market:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.media.browse.MediaBrowserService }, Intent { act=androidx.media2.session.MediaSessionService }, Intent { act=androidx.media2.session.MediaLibraryService }]
+    dataDir=/data/user/0/com.acowboys.oldmovies
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 16:34:17
+    lastUpdateTime=2022-11-30 16:34:18
+    packageSource=0
+    signatures=PackageSignatures{8346c87 version:2, signatures:[85bcdd46], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      com.android.vending.BILLING
+      android.permission.RECORD_AUDIO
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.VIBRATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_PHONE_STATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.gms.permission.AD_ID
+      android.permission.BROADCAST_STICKY
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=74873 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 16:34:18
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.acowboys.oldmovies
+    com.google.android.apps.diagnosticstool:
+      com.acowboys.oldmovies
+    com.google.android.settings.intelligence:
+      com.acowboys.oldmovies
+    com.google.android.GoogleCamera:
+      com.acowboys.oldmovies
+    com.google.android.apps.accessibility.voiceaccess:
+      com.acowboys.oldmovies
+    com.truecaller:
+      com.acowboys.oldmovies
+    com.acowboys.oldmovies:
+      [com.google.android.bluetooth.services,com.android.bluetooth]
+      com.google.android.googlequicksearchbox
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.youtube
+      com.google.android.apps.docs
+      com.google.android.apps.youtube.music
+      radiotime.player
+      com.dv.adm
+      com.hungama.myplay.activity
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+    com.dv.adm:
+      com.acowboys.oldmovies
+    com.zappcues.gamingmode:
+      com.acowboys.oldmovies
+    com.jio.myjio:
+      com.acowboys.oldmovies
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.acowboys.oldmovies]
+    path: /data/app/~~Vw81xXsaGnn0nNSim-WjvA==/com.acowboys.oldmovies-VXuGUWuyFTXii0IYbtNuqg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:104793
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.acowboys.oldmovies]
+     base.apk - 957

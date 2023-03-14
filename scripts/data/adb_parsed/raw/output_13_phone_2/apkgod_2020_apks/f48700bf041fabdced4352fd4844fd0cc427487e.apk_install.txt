@@ -1,0 +1,332 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        796a549 com.pextor.batterychargeralarm/.FullBatteryAlarm filter a45cb6f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.fullbatterytheftalarm.com": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        796a549 com.pextor.batterychargeralarm/.FullBatteryAlarm filter f6ce4e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.BROWSABLE"
+      com.pextor.batterychargeralarm.ABOUT:
+        a8da07c com.pextor.batterychargeralarm/.About filter 11b4d05
+          Action: "com.pextor.batterychargeralarm.ABOUT"
+          Category: "android.intent.category.DEFAULT"
+      com.pextor.batterychargeralarm.CHARGE_HISTORY:
+        f5815a com.pextor.batterychargeralarm/.ChargeHistory filter b8daf8b
+          Action: "com.pextor.batterychargeralarm.CHARGE_HISTORY"
+          Category: "android.intent.category.DEFAULT"
+      com.pextor.batterychargeralarm.PASSWORDSCREEN:
+        7524868 com.pextor.batterychargeralarm/.PasswordScreen filter 888b481
+          Action: "com.pextor.batterychargeralarm.PASSWORDSCREEN"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        7378314 com.pextor.batterychargeralarm/.services.BatteryControlReceiver filter 20b17bd
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BATTERY_LOW"
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "com.pextor.batterychargeralarm.RestartBatteryService"
+        5d966fe com.pextor.batterychargeralarm/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1666e5f
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        7378314 com.pextor.batterychargeralarm/.services.BatteryControlReceiver filter 20b17bd
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BATTERY_LOW"
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "com.pextor.batterychargeralarm.RestartBatteryService"
+        593bc80 com.pextor.batterychargeralarm/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e5672b9
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        ab820ac com.pextor.batterychargeralarm/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b628175
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        1e0f50a com.pextor.batterychargeralarm/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 72d917b
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        ab820ac com.pextor.batterychargeralarm/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b628175
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        922e1b2 com.pextor.batterychargeralarm/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 64a8503
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        7378314 com.pextor.batterychargeralarm/.services.BatteryControlReceiver filter 20b17bd
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BATTERY_LOW"
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "com.pextor.batterychargeralarm.RestartBatteryService"
+        5d966fe com.pextor.batterychargeralarm/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1666e5f
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        dc9b98 com.pextor.batterychargeralarm/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4e6bff1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        dc9b98 com.pextor.batterychargeralarm/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4e6bff1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.pextor.batterychargeralarm.RestartBatteryService:
+        7378314 com.pextor.batterychargeralarm/.services.BatteryControlReceiver filter 20b17bd
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BATTERY_LOW"
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "com.pextor.batterychargeralarm.RestartBatteryService"
+      android.intent.action.BOOT_COMPLETED:
+        5fa5926 com.pextor.batterychargeralarm/.services.StartAtBoot filter c25b967
+          Action: "android.intent.action.BOOT_COMPLETED"
+        dc9b98 com.pextor.batterychargeralarm/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4e6bff1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        7378314 com.pextor.batterychargeralarm/.services.BatteryControlReceiver filter 20b17bd
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BATTERY_LOW"
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "com.pextor.batterychargeralarm.RestartBatteryService"
+        593bc80 com.pextor.batterychargeralarm/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e5672b9
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        7378314 com.pextor.batterychargeralarm/.services.BatteryControlReceiver filter 20b17bd
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BATTERY_LOW"
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "com.pextor.batterychargeralarm.RestartBatteryService"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        a2157d6 com.pextor.batterychargeralarm/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter e79ca57
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        bcbd944 com.pextor.batterychargeralarm/.services.BatteryService filter 966a2d
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /reply_path}"
+        bcbd944 com.pextor.batterychargeralarm/.services.BatteryService filter 331b62
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /level}"
+          Path: "PatternMatcher{PREFIX: /notified_path}"
+          Path: "PatternMatcher{PREFIX: /reply_path}"
+
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        7e6b4f3 com.pextor.batterychargeralarm/.services.MyFirebaseMessagingService filter f4f45b0
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        21c7c29 com.pextor.batterychargeralarm/com.google.firebase.messaging.FirebaseMessagingService filter 4ab8bae
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.fullbatterytheftalarm.com
+
+Registered ContentProviders:
+  com.pextor.batterychargeralarm/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{674addd com.pextor.batterychargeralarm/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.pextor.batterychargeralarm/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{2958d52 com.pextor.batterychargeralarm/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.pextor.batterychargeralarm/androidx.core.content.FileProvider:
+    Provider{a285823 com.pextor.batterychargeralarm/androidx.core.content.FileProvider}
+  com.pextor.batterychargeralarm/androidx.work.impl.WorkManagerInitializer:
+    Provider{c1a6120 com.pextor.batterychargeralarm/androidx.work.impl.WorkManagerInitializer}
+  com.pextor.batterychargeralarm/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{f934ad9 com.pextor.batterychargeralarm/com.crashlytics.android.CrashlyticsInitProvider}
+  com.pextor.batterychargeralarm/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{19e537f com.pextor.batterychargeralarm/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.pextor.batterychargeralarm/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{1146f4c com.pextor.batterychargeralarm/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.pextor.batterychargeralarm.fileprovider]:
+    Provider{a285823 com.pextor.batterychargeralarm/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{64bb95 com.pextor.batterychargeralarm}
+  [com.pextor.batterychargeralarm.firebaseinitprovider]:
+    Provider{1146f4c com.pextor.batterychargeralarm/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{64974aa com.pextor.batterychargeralarm}
+  [com.pextor.batterychargeralarm.lifecycle-process]:
+    Provider{674addd com.pextor.batterychargeralarm/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{44ea89b com.pextor.batterychargeralarm}
+  [com.pextor.batterychargeralarm.workmanager-init]:
+    Provider{c1a6120 com.pextor.batterychargeralarm/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{fbf3438 com.pextor.batterychargeralarm}
+  [com.pextor.batterychargeralarm.firebaseperfprovider]:
+    Provider{19e537f com.pextor.batterychargeralarm/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{1a27c11 com.pextor.batterychargeralarm}
+  [com.pextor.batterychargeralarm.crashlyticsinitprovider]:
+    Provider{f934ad9 com.pextor.batterychargeralarm/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{a223176 com.pextor.batterychargeralarm}
+  [com.pextor.batterychargeralarm.mobileadsinitprovider]:
+    Provider{2958d52 com.pextor.batterychargeralarm/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{2e53377 com.pextor.batterychargeralarm}
+
+Key Set Manager:
+  [com.pextor.batterychargeralarm]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.pextor.batterychargeralarm] (64f5be4):
+    userId=10251
+    pkg=Package{421c84d com.pextor.batterychargeralarm}
+    codePath=/data/app/~~ctjp_0bWseNIyij_d5tGZg==/com.pextor.batterychargeralarm-au1ciJSXHuoAXQoxjGyDWg==
+    resourcePath=/data/app/~~ctjp_0bWseNIyij_d5tGZg==/com.pextor.batterychargeralarm-au1ciJSXHuoAXQoxjGyDWg==
+    legacyNativeLibraryDir=/data/app/~~ctjp_0bWseNIyij_d5tGZg==/com.pextor.batterychargeralarm-au1ciJSXHuoAXQoxjGyDWg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=360 minSdk=16 targetSdk=29
+    minExtensionVersions=[]
+    versionName=5.4.7r360
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.pextor.batterychargeralarm
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      com.google.android.wearable
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 11:21:03
+    lastUpdateTime=2022-11-30 11:21:04
+    packageSource=0
+    signatures=PackageSignatures{5f7ef02 version:1, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.VIBRATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      com.android.vending.BILLING
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.USE_FULL_SCREEN_INTENT
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=46269 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 11:21:04
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.pextor.batterychargeralarm
+    com.google.android.apps.diagnosticstool:
+      com.pextor.batterychargeralarm
+    com.google.android.settings.intelligence:
+      com.pextor.batterychargeralarm
+    com.google.android.apps.accessibility.voiceaccess:
+      com.pextor.batterychargeralarm
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.pextor.batterychargeralarm]
+    path: /data/app/~~ctjp_0bWseNIyij_d5tGZg==/com.pextor.batterychargeralarm-au1ciJSXHuoAXQoxjGyDWg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:71865
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.pextor.batterychargeralarm]
+     base.apk - 383

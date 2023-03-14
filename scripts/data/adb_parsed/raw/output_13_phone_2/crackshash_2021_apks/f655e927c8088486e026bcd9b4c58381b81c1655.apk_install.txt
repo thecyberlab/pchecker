@@ -1,0 +1,260 @@
+Activity Resolver Table:
+  Schemes:
+      elevateapp:
+        84c2536 com.wonder/com.pegasus.ui.activities.LaunchActivity filter b8c1f0d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "elevateapp"
+      http:
+        84c2536 com.wonder/com.pegasus.ui.activities.LaunchActivity filter 1a5d5a4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.elevateapp.com": -1
+          Path: "PatternMatcher{PREFIX: /pro}"
+          AutoVerify=true
+      https:
+        84c2536 com.wonder/com.pegasus.ui.activities.LaunchActivity filter 1a5d5a4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.elevateapp.com": -1
+          Path: "PatternMatcher{PREFIX: /pro}"
+          AutoVerify=true
+      fbconnect:
+        d2d5ec2 com.wonder/com.facebook.CustomTabActivity filter b3ca4d3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.wonder": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        84c2536 com.wonder/com.pegasus.ui.activities.LaunchActivity filter 9867c37
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.QUICKBOOT_POWERON:
+        32c353c com.wonder/com.evernote.android.job.JobBootReceiver filter a7322c5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        32c353c com.wonder/com.evernote.android.job.JobBootReceiver filter a7322c5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        13ca810 com.wonder/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter e689f09
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.evernote.android.job.v14.RUN_JOB:
+        cf6a50e com.wonder/com.evernote.android.job.v14.PlatformAlarmReceiver filter 222bb2f
+          Action: "com.evernote.android.job.v14.RUN_JOB"
+          Action: "net.vrallev.android.job.v14.RUN_JOB"
+      android.intent.action.BOOT_COMPLETED:
+        32c353c com.wonder/com.evernote.android.job.JobBootReceiver filter a7322c5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        32c353c com.wonder/com.evernote.android.job.JobBootReceiver filter a7322c5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      net.vrallev.android.job.v14.RUN_JOB:
+        cf6a50e com.wonder/com.evernote.android.job.v14.PlatformAlarmReceiver filter 222bb2f
+          Action: "com.evernote.android.job.v14.RUN_JOB"
+          Action: "net.vrallev.android.job.v14.RUN_JOB"
+
+Domain verification status:
+  com.wonder:
+    ID: 74ad1409-3332-4846-a8a1-494666575458
+    Signatures: [0C:FB:46:63:83:1A:0F:B8:D6:97:3A:AD:44:E2:21:A8:BA:78:F7:F6:84:BD:0B:17:D3:B4:4B:EC:82:31:64:84]
+    Domain verification state:
+      www.elevateapp.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.elevateapp.com
+
+Registered ContentProviders:
+  com.wonder/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{1c7ad5d com.wonder/com.google.firebase.provider.FirebaseInitProvider}
+  com.wonder/com.facebook.internal.FacebookInitProvider:
+    Provider{bc556d2 com.wonder/com.facebook.internal.FacebookInitProvider}
+  com.wonder/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{be623a3 com.wonder/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.wonder/androidx.core.content.FileProvider:
+    Provider{9d6c259 com.wonder/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.wonder.lifecycle-process]:
+    Provider{be623a3 com.wonder/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{97e0e1e com.wonder}
+  [com.wonder.firebaseinitprovider]:
+    Provider{1c7ad5d com.wonder/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{c2d56ff com.wonder}
+  [com.wonder.FacebookInitProvider]:
+    Provider{bc556d2 com.wonder/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{809eccc com.wonder}
+  [com.wonder.PegasusFileProvider]:
+    Provider{9d6c259 com.wonder/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{4282b15 com.wonder}
+
+Key Set Manager:
+  [com.wonder]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.wonder] (4f09b8):
+    userId=10318
+    pkg=Package{2ed6391 com.wonder}
+    codePath=/data/app/~~Y3BEVioC0IRxORdIyycDEg==/com.wonder-OKLzPMy1udAb1Auei5Z72g==
+    resourcePath=/data/app/~~Y3BEVioC0IRxORdIyycDEg==/com.wonder-OKLzPMy1udAb1Auei5Z72g==
+    legacyNativeLibraryDir=/data/app/~~Y3BEVioC0IRxORdIyycDEg==/com.wonder-OKLzPMy1udAb1Auei5Z72g==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2198 minSdk=19 targetSdk=30
+    minExtensionVersions=[]
+    versionName=5.45.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.wonder
+    supportsScreens=[medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 20:12:45
+    lastUpdateTime=2022-11-30 20:12:47
+    packageSource=0
+    signatures=PackageSignatures{ff3a7cd version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.USE_CREDENTIALS
+      android.permission.VIBRATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECORD_AUDIO
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=102711 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 20:12:47
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.RECORD_AUDIO: granted=false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.wonder
+    com.google.android.apps.diagnosticstool:
+      com.wonder
+    com.google.android.settings.intelligence:
+      com.wonder
+    com.google.android.apps.accessibility.voiceaccess:
+      com.wonder
+    com.zhiliaoapp.musically:
+      com.wonder
+    com.truecaller:
+      com.wonder
+    com.dv.adm:
+      com.wonder
+    com.zappcues.gamingmode:
+      com.wonder
+    com.jio.myjio:
+      com.wonder
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.wonder]
+    path: /data/app/~~Y3BEVioC0IRxORdIyycDEg==/com.wonder-OKLzPMy1udAb1Auei5Z72g==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:825134
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.wonder]
+     base.apk - 483

@@ -1,0 +1,245 @@
+Activity Resolver Table:
+  Schemes:
+      fb706604146088688:
+        f5ba4fe com.freeit.java/com.facebook.CustomTabActivity filter bed45f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb706604146088688"
+      prohub:
+        b104a80 com.freeit.java/.modules.pro.ProActivityV2 filter ba2e8b9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "prohub"
+          Authority: "sponsored": -1
+          Path: "PatternMatcher{GLOB: /..*}"
+      https:
+        c5c2dbd com.freeit.java/.modules.onboarding.OnBoardingActivity filter 4c88b03
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "programminghub.io": -1
+          AutoVerify=true
+      fbconnect:
+        f5ba4fe com.freeit.java/com.facebook.CustomTabActivity filter 66f8eac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.freeit.java": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        c5c2dbd com.freeit.java/.modules.onboarding.OnBoardingActivity filter 65d3fb2
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.QUICKBOOT_POWERON:
+        5775 com.freeit.java/.modules.notification.BootBroadcastReceiver filter 449130a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        48bf5f1 com.freeit.java/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter ded55d6
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        aa6577b com.freeit.java/com.google.firebase.iid.FirebaseInstanceIdReceiver filter b9ce998
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        5775 com.freeit.java/.modules.notification.BootBroadcastReceiver filter 449130a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        7b8f057 com.freeit.java/.modules.notification.MyFirebaseMessagingService filter d430744
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        cf23af3 com.freeit.java/com.google.firebase.messaging.FirebaseMessagingService filter c0b53b0
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.clevertap.BG_EVENT:
+        459002d com.freeit.java/com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService filter 7c0f962 permission android.permission.BIND_JOB_SERVICE
+          Action: "com.clevertap.BG_EVENT"
+
+Domain verification status:
+  com.freeit.java:
+    ID: 78d110b3-2d22-4fe1-8546-483d5c344dcc
+    Signatures: [02:2A:1E:D9:FE:B0:E6:C9:82:6D:F9:9C:58:35:0B:77:89:A7:1A:D5:1F:14:2F:40:44:9F:91:D5:8C:02:78:C1]
+    Domain verification state:
+      programminghub.io: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          programminghub.io
+
+Registered ContentProviders:
+  com.freeit.java/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{b7219f3 com.freeit.java/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.freeit.java/androidx.core.content.FileProvider:
+    Provider{86f46b0 com.freeit.java/androidx.core.content.FileProvider}
+  com.freeit.java/com.facebook.FacebookContentProvider:
+    Provider{b0ae929 com.freeit.java/com.facebook.FacebookContentProvider}
+  com.freeit.java/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{565f4ae com.freeit.java/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.freeit.java/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{98a624f com.freeit.java/com.google.firebase.provider.FirebaseInitProvider}
+  com.freeit.java/com.facebook.internal.FacebookInitProvider:
+    Provider{1fa1ddc com.freeit.java/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.freeit.java.com.facebook.app.FacebookContentProvider@string/facebook_app_id]:
+    Provider{b0ae929 com.freeit.java/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{9d9098a com.freeit.java}
+  [com.freeit.java.lifecycle-process]:
+    Provider{b7219f3 com.freeit.java/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{d0d4bfb com.freeit.java}
+  [com.freeit.java.fileprovider]:
+    Provider{86f46b0 com.freeit.java/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{af20418 com.freeit.java}
+  [com.freeit.java.firebaseperfprovider]:
+    Provider{565f4ae com.freeit.java/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{8db3e71 com.freeit.java}
+  [com.freeit.java.firebaseinitprovider]:
+    Provider{98a624f com.freeit.java/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{ec63456 com.freeit.java}
+  [com.freeit.java.FacebookInitProvider]:
+    Provider{1fa1ddc com.freeit.java/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{edaacd7 com.freeit.java}
+
+Key Set Manager:
+  [com.freeit.java]
+      Signing KeySets: 5962
+
+Packages:
+  Package [com.freeit.java] (90f49c4):
+    userId=10378
+    pkg=Package{ebb3a12 com.freeit.java}
+    codePath=/data/app/~~ZopB7pCvamlqOHXsOFogqg==/com.freeit.java-pnmWKRy_LBDUAGMvdoNSiQ==
+    resourcePath=/data/app/~~ZopB7pCvamlqOHXsOFogqg==/com.freeit.java-pnmWKRy_LBDUAGMvdoNSiQ==
+    legacyNativeLibraryDir=/data/app/~~ZopB7pCvamlqOHXsOFogqg==/com.freeit.java-pnmWKRy_LBDUAGMvdoNSiQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=246 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=5.1.46
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.freeit.java
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 17:24:30
+    lastUpdateTime=2022-11-30 17:24:31
+    packageSource=0
+    signatures=PackageSignatures{2f9bbe0 version:2, signatures:[2b3ca9a9], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.WRITE_EXTERNAL_STORAGE
+      com.android.vending.BILLING
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.WAKE_LOCK
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=85060 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 17:24:31
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.freeit.java
+    com.google.android.apps.diagnosticstool:
+      com.freeit.java
+    com.google.android.settings.intelligence:
+      com.freeit.java
+    com.google.android.apps.accessibility.voiceaccess:
+      com.freeit.java
+    com.truecaller:
+      com.freeit.java
+    com.dv.adm:
+      com.freeit.java
+    com.zappcues.gamingmode:
+      com.freeit.java
+    com.jio.myjio:
+      com.freeit.java
+  queryable via interaction:
+    User 0:
+      [com.android.keychain,com.android.location.fused,com.android.qns,com.android.providers.settings,com.google.android.settings.future.biometrics.faceenroll,com.android.localtransport,com.google.android.iwlan,com.android.server.telecom,com.android.inputdevices,com.android.settings,com.android.wallpaperbackup,android,com.android.dynsystem,com.google.SSRestartDetector]:
+        com.freeit.java
+      [com.google.android.gsf,com.google.android.gms]:
+        com.freeit.java
+  queryable via uses-library:
+
+Dexopt state:
+  [com.freeit.java]
+    path: /data/app/~~ZopB7pCvamlqOHXsOFogqg==/com.freeit.java-pnmWKRy_LBDUAGMvdoNSiQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1159115
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.freeit.java]
+     base.apk - 524

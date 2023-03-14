@@ -1,0 +1,329 @@
+Activity Resolver Table:
+  Schemes:
+      myapp:
+        9b7c767 ins.story.unfold/com.ufotosoft.vibe.SplashActivity filter 2ab7914
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "myapp"
+          Authority: "ufoto.app": -1
+          Path: "PatternMatcher{PREFIX: /vidos}"
+      fbconnect:
+        9aec7b2 ins.story.unfold/com.facebook.CustomTabActivity filter 5ef7303
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.ins.story.unfold": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        9b7c767 ins.story.unfold/com.ufotosoft.vibe.SplashActivity filter b5ed5bd
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        22eb198 ins.story.unfold/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b8e1df1
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        f439b0a ins.story.unfold/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter cc23f7b
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        2085dd6 ins.story.unfold/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 3ab5857
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        a3dacfe ins.story.unfold/com.vungle.warren.NetworkProviderReceiver filter 16c3c5f
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Category: "android.intent.category.DEFAULT"
+        f294f44 ins.story.unfold/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter d55a82d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        5ad51ae ins.story.unfold/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 442fb4f
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        2085dd6 ins.story.unfold/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 3ab5857
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        3511280 ins.story.unfold/com.adjust.sdk.AdjustReferrerReceiver filter c2810b9
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        5f4d6ac ins.story.unfold/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 7afff75
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        22eb198 ins.story.unfold/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b8e1df1
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        6848162 ins.story.unfold/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9a322f3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        6848162 ins.story.unfold/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9a322f3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        6848162 ins.story.unfold/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9a322f3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        f439b0a ins.story.unfold/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter cc23f7b
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        a0e1bb0 ins.story.unfold/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter e919a29
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      ins.story.unfold.messenger:
+        80daba ins.story.unfold/com.blankj.utilcode.util.MessengerUtils$ServerService filter f5dfd6b
+          Action: "ins.story.unfold.messenger"
+      com.google.firebase.INSTANCE_ID_EVENT:
+        9fdb0c8 ins.story.unfold/com.ufotosoft.common.push.pushCore.MyFireBaseInstanceIdService filter f916561
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+      moc.ofu.capacity.service:
+        fa11174 ins.story.unfold/com.ufotosoft.slideplayersdk.aidl.service.CapacityService filter e9df69d
+          Action: "moc.ofu.capacity.service"
+      com.google.firebase.MESSAGING_EVENT:
+        73142dc ins.story.unfold/com.ufotosoft.vibe.push.firebase.MyFirebaseMessagingService filter 480afe5
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        7d1e886 ins.story.unfold/com.google.firebase.messaging.FirebaseMessagingService filter 6dd0547
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+
+Registered ContentProviders:
+  ins.story.unfold/com.ironsource.lifecycle.IronsourceLifecycleProvider:
+    Provider{93838b3 ins.story.unfold/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+  ins.story.unfold/com.blankj.utilcode.util.UtilsFileProvider:
+    Provider{ba8de70 ins.story.unfold/com.blankj.utilcode.util.UtilsFileProvider}
+  ins.story.unfold/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{54d05e9 ins.story.unfold/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  ins.story.unfold/com.vungle.warren.utility.VungleProvider:
+    Provider{4ceb26e ins.story.unfold/com.vungle.warren.utility.VungleProvider}
+  ins.story.unfold/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{573ad0f ins.story.unfold/com.google.android.gms.ads.MobileAdsInitProvider}
+  ins.story.unfold/androidx.core.content.FileProvider:
+    Provider{995719c ins.story.unfold/androidx.core.content.FileProvider}
+  ins.story.unfold/com.facebook.FacebookContentProvider:
+    Provider{7e717a5 ins.story.unfold/com.facebook.FacebookContentProvider}
+  ins.story.unfold/androidx.work.impl.WorkManagerInitializer:
+    Provider{537877a ins.story.unfold/androidx.work.impl.WorkManagerInitializer}
+  ins.story.unfold/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{6480b2b ins.story.unfold/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer}
+  ins.story.unfold/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{5568921 ins.story.unfold/com.google.firebase.perf.provider.FirebasePerfProvider}
+  ins.story.unfold/com.squareup.picasso.PicassoProvider:
+    Provider{426a146 ins.story.unfold/com.squareup.picasso.PicassoProvider}
+  ins.story.unfold/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{bba2f07 ins.story.unfold/com.google.firebase.provider.FirebaseInitProvider}
+  ins.story.unfold/com.facebook.internal.FacebookInitProvider:
+    Provider{f045834 ins.story.unfold/com.facebook.internal.FacebookInitProvider}
+  ins.story.unfold/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider:
+    Provider{29b8bd2 ins.story.unfold/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+  ins.story.unfold/com.smaato.sdk.sys.LifecycleProvider:
+    Provider{740b4a3 ins.story.unfold/com.smaato.sdk.sys.LifecycleProvider}
+  ins.story.unfold/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{6a8c3a0 ins.story.unfold/com.facebook.ads.AudienceNetworkContentProvider}
+  ins.story.unfold/com.applovin.sdk.AppLovinInitProvider:
+    Provider{f363b59 ins.story.unfold/com.applovin.sdk.AppLovinInitProvider}
+
+ContentProvider Authorities:
+  [ins.story.unfold.smaato-lifecycling]:
+    Provider{740b4a3 ins.story.unfold/com.smaato.sdk.sys.LifecycleProvider}
+      applicationInfo=ApplicationInfo{11ff7ff ins.story.unfold}
+  [ins.story.unfold.applovincontentprovider]:
+    Provider{f363b59 ins.story.unfold/com.applovin.sdk.AppLovinInitProvider}
+      applicationInfo=ApplicationInfo{66679cc ins.story.unfold}
+  [ins.story.unfold.mobileadsinitprovider]:
+    Provider{573ad0f ins.story.unfold/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{2863415 ins.story.unfold}
+  [ins.story.unfold.lifecycle-process]:
+    Provider{54d05e9 ins.story.unfold/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{440c32a ins.story.unfold}
+  [ins.story.unfold.firebaseinitprovider]:
+    Provider{bba2f07 ins.story.unfold/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{786151b ins.story.unfold}
+  [ins.story.unfold.utilcode.provider]:
+    Provider{ba8de70 ins.story.unfold/com.blankj.utilcode.util.UtilsFileProvider}
+      applicationInfo=ApplicationInfo{c6766b8 ins.story.unfold}
+  [ins.story.unfold.FacebookInitProvider]:
+    Provider{f045834 ins.story.unfold/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{3a2fc91 ins.story.unfold}
+  [ins.story.unfold.TTMultiProvider]:
+    Provider{29b8bd2 ins.story.unfold/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+      applicationInfo=ApplicationInfo{366e7f7 ins.story.unfold}
+  [ins.story.unfold.provider]:
+    Provider{995719c ins.story.unfold/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{d883664 ins.story.unfold}
+  [ins.story.unfold.IronsourceLifecycleProvider]:
+    Provider{93838b3 ins.story.unfold/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+      applicationInfo=ApplicationInfo{8e9d0cd ins.story.unfold}
+  [com.facebook.app.FacebookContentProvider305997327462303]:
+    Provider{7e717a5 ins.story.unfold/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{4ba8d82 ins.story.unfold}
+  [ins.story.unfold.workmanager-init]:
+    Provider{537877a ins.story.unfold/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{f180c93 ins.story.unfold}
+  [ins.story.unfold.firebaseperfprovider]:
+    Provider{5568921 ins.story.unfold/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{74facc9 ins.story.unfold}
+  [ins.story.unfold.AudienceNetworkContentProvider]:
+    Provider{6a8c3a0 ins.story.unfold/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{7ffce ins.story.unfold}
+  [ins.story.unfold.com.squareup.picasso]:
+    Provider{426a146 ins.story.unfold/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{aacdeef ins.story.unfold}
+  [ins.story.unfold.vungle-provider]:
+    Provider{4ceb26e ins.story.unfold/com.vungle.warren.utility.VungleProvider}
+      applicationInfo=ApplicationInfo{361edfc ins.story.unfold}
+  [ins.story.unfold.smaato-lifecycle-process]:
+    Provider{6480b2b ins.story.unfold/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{41d4c85 ins.story.unfold}
+
+Key Set Manager:
+  [ins.story.unfold]
+      Signing KeySets: 5622
+
+Packages:
+  Package [ins.story.unfold] (66b2c01):
+    userId=10386
+    pkg=Package{cd03aa6 ins.story.unfold}
+    codePath=/data/app/~~t6IPAkW_sq_6uuYESie-AQ==/ins.story.unfold-Fkk77RuVQKeU5as60W04MA==
+    resourcePath=/data/app/~~t6IPAkW_sq_6uuYESie-AQ==/ins.story.unfold-Fkk77RuVQKeU5as60W04MA==
+    legacyNativeLibraryDir=/data/app/~~t6IPAkW_sq_6uuYESie-AQ==/ins.story.unfold-Fkk77RuVQKeU5as60W04MA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=329 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=2.36.329
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.android.chrome]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=androidx.browser.customtabs.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }]
+    dataDir=/data/user/0/ins.story.unfold
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 15:23:27
+    lastUpdateTime=2022-11-30 15:23:29
+    packageSource=0
+    signatures=PackageSignatures{45d873d version:2, signatures:[a7e27cb5], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_NETWORK_STATE
+      com.android.vending.BILLING
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.gms.permission.AD_ID
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=63326 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:23:29
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    ins.story.unfold:
+      com.android.chrome
+  queries via component:
+    com.google.android.apps.messaging:
+      ins.story.unfold
+    com.google.android.apps.diagnosticstool:
+      ins.story.unfold
+    com.google.android.settings.intelligence:
+      ins.story.unfold
+    com.google.android.apps.accessibility.voiceaccess:
+      ins.story.unfold
+    com.truecaller:
+      ins.story.unfold
+    com.dv.adm:
+      ins.story.unfold
+    com.zappcues.gamingmode:
+      ins.story.unfold
+    ins.story.unfold:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      com.dv.adm
+      com.utorrent.client.pro
+    com.jio.myjio:
+      ins.story.unfold
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [ins.story.unfold]
+    path: /data/app/~~t6IPAkW_sq_6uuYESie-AQ==/ins.story.unfold-Fkk77RuVQKeU5as60W04MA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:758029
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [ins.story.unfold]
+     base.apk - 1067

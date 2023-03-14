@@ -1,0 +1,267 @@
+Activity Resolver Table:
+  Schemes:
+      tagmanager.c.com.liquidum.rocketvpn:
+        48a21db com.liquidum.rocketvpn/com.google.android.gms.tagmanager.PreviewActivity filter 307b26d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tagmanager.c.com.liquidum.rocketvpn"
+      http:
+        f835478 com.liquidum.rocketvpn/.activities.HomeActivity filter ef6e716
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+      https:
+        f835478 com.liquidum.rocketvpn/.activities.HomeActivity filter a8d4897
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        b77b751 com.liquidum.rocketvpn/.Launcher filter 6101a84
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.finalwave.openvpn.VPN_STATUS:
+        579ebb6 com.liquidum.rocketvpn/.broadcastreceivers.NotificationsAlarmReceiver filter 1b65af0
+          Action: "com.finalwave.openvpn.VPN_STATUS"
+      android.location.PROVIDERS_CHANGED:
+        f7f00b7 com.liquidum.rocketvpn/com.batch.android.ProvidersChangedBroadcastReceiver filter ba51ffa
+          Action: "android.location.PROVIDERS_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        fd54024 com.liquidum.rocketvpn/com.appsflyer.MultipleInstallBroadcastReceiver filter ff25ea2
+          Action: "com.android.vending.INSTALL_REFERRER"
+        72f778d com.liquidum.rocketvpn/com.google.android.gms.analytics.CampaignTrackingReceiver filter 653d733
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        9b10d42 com.liquidum.rocketvpn/com.batch.android.BatchPushReceiver filter 63bc2ee
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.liquidum.rocketvpn"
+        578f153 com.liquidum.rocketvpn/com.google.android.gms.gcm.GcmReceiver filter eeab38f
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.liquidum.rocketvpn.gcm"
+        7383a90 com.liquidum.rocketvpn/com.google.firebase.iid.FirebaseInstanceIdReceiver filter c3e361c
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+        28ff89 com.liquidum.rocketvpn/com.batch.android.BatchPushMessageReceiver filter a1c225
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.liquidum.rocketvpn"
+      android.intent.action.BOOT_COMPLETED:
+        c46bb8e com.liquidum.rocketvpn/.broadcastreceivers.BootReceiver filter ffa0869
+          Action: "android.intent.action.BOOT_COMPLETED"
+        5174faf com.liquidum.rocketvpn/com.batch.android.BootCompletedBroadcastReceiver filter a68f9ab
+          Action: "android.intent.action.BOOT_COMPLETED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.net.VpnService:
+        58e6fbc com.liquidum.rocketvpn/com.anchorfree.vpnsdk.vpnservice.AFVpnService filter 31541c6 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+      com.google.android.c2dm.intent.RECEIVE:
+        b190b45 com.liquidum.rocketvpn/.gcm.ServiceGCM filter 69808
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.google.android.gms.iid.InstanceID:
+        777029a com.liquidum.rocketvpn/.gcm.GcmInstanceIDListenerService filter 3515ba1
+          Action: "com.google.android.gms.iid.InstanceID"
+
+Permissions:
+  Permission [com.liquidum.rocketvpn.permission.C2D_MESSAGE] (d9337cb):
+    sourcePackage=com.liquidum.rocketvpn
+    uid=10180 gids=null type=0 prot=signature
+    perm=Permission{4b0cba8 com.liquidum.rocketvpn.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{94416c1 com.liquidum.rocketvpn/10180}
+
+Permissions:
+  Permission [com.liquidum.rocketvpn.batch.permission.INTERNAL_BROADCAST] (b32ae66):
+    sourcePackage=com.liquidum.rocketvpn
+    uid=10180 gids=null type=0 prot=signature
+    perm=Permission{e9b85a7 com.liquidum.rocketvpn.batch.permission.INTERNAL_BROADCAST}
+    packageSetting=PackageSetting{94416c1 com.liquidum.rocketvpn/10180}
+
+Registered ContentProviders:
+  com.liquidum.rocketvpn/com.anchorfree.sdk.UnifiedSDKInitProviderVpn:
+    Provider{11afa54 com.liquidum.rocketvpn/com.anchorfree.sdk.UnifiedSDKInitProviderVpn}
+  com.liquidum.rocketvpn/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{1ba5dfd com.liquidum.rocketvpn/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.liquidum.rocketvpn/com.anchorfree.ucr.UCRContentProvider:
+    Provider{3ab4af2 com.liquidum.rocketvpn/com.anchorfree.ucr.UCRContentProvider}
+  com.liquidum.rocketvpn/com.anchorfree.sdk.HydraTransportInitProvider:
+    Provider{9f0d543 com.liquidum.rocketvpn/com.anchorfree.sdk.HydraTransportInitProvider}
+  com.liquidum.rocketvpn/com.anchorfree.sdk.UnifiedSDKInitProviderMain:
+    Provider{15767c0 com.liquidum.rocketvpn/com.anchorfree.sdk.UnifiedSDKInitProviderMain}
+  com.liquidum.rocketvpn/com.anchorfree.sdk.DBProvider:
+    Provider{253dcf9 com.liquidum.rocketvpn/com.anchorfree.sdk.DBProvider}
+  com.liquidum.rocketvpn/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{c9f243e com.liquidum.rocketvpn/com.google.firebase.provider.FirebaseInitProvider}
+  com.liquidum.rocketvpn/com.anchorfree.vpnsdk.vpnservice.config.VpnConfigProvider:
+    Provider{2c1829f com.liquidum.rocketvpn/com.anchorfree.vpnsdk.vpnservice.config.VpnConfigProvider}
+  com.liquidum.rocketvpn/com.anchorfree.vpnsdk.vpnservice.credentials.CredentialsContentProvider:
+    Provider{82b3fec com.liquidum.rocketvpn/com.anchorfree.vpnsdk.vpnservice.credentials.CredentialsContentProvider}
+
+ContentProvider Authorities:
+  [com.liquidum.rocketvpn.vpn_config]:
+    Provider{2c1829f com.liquidum.rocketvpn/com.anchorfree.vpnsdk.vpnservice.config.VpnConfigProvider}
+      applicationInfo=ApplicationInfo{46c4fb5 com.liquidum.rocketvpn}
+  [com.liquidum.rocketvpn.credentials]:
+    Provider{82b3fec com.liquidum.rocketvpn/com.anchorfree.vpnsdk.vpnservice.credentials.CredentialsContentProvider}
+      applicationInfo=ApplicationInfo{46c4fb5 com.liquidum.rocketvpn}
+  [com.liquidum.rocketvpn.mobileadsinitprovider]:
+    Provider{1ba5dfd com.liquidum.rocketvpn/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{46c4fb5 com.liquidum.rocketvpn}
+  [com.liquidum.rocketvpn.firebaseinitprovider]:
+    Provider{c9f243e com.liquidum.rocketvpn/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{46c4fb5 com.liquidum.rocketvpn}
+  [com.liquidum.rocketvpn.anchorfree.sdk.init.provider.vpn]:
+    Provider{11afa54 com.liquidum.rocketvpn/com.anchorfree.sdk.UnifiedSDKInitProviderVpn}
+      applicationInfo=ApplicationInfo{46c4fb5 com.liquidum.rocketvpn}
+  [com.liquidum.rocketvpn.sdk.transport.hydra]:
+    Provider{9f0d543 com.liquidum.rocketvpn/com.anchorfree.sdk.HydraTransportInitProvider}
+      applicationInfo=ApplicationInfo{46c4fb5 com.liquidum.rocketvpn}
+  [com.liquidum.rocketvpn.hydra.sdk.db.provider]:
+    Provider{253dcf9 com.liquidum.rocketvpn/com.anchorfree.sdk.DBProvider}
+      applicationInfo=ApplicationInfo{46c4fb5 com.liquidum.rocketvpn}
+  [com.liquidum.rocketvpn.anchorfree.sdk.init.provider]:
+    Provider{15767c0 com.liquidum.rocketvpn/com.anchorfree.sdk.UnifiedSDKInitProviderMain}
+      applicationInfo=ApplicationInfo{46c4fb5 com.liquidum.rocketvpn}
+  [com.liquidum.rocketvpn.ucr.provider]:
+    Provider{3ab4af2 com.liquidum.rocketvpn/com.anchorfree.ucr.UCRContentProvider}
+      applicationInfo=ApplicationInfo{46c4fb5 com.liquidum.rocketvpn}
+
+Key Set Manager:
+  [com.liquidum.rocketvpn]
+      Signing KeySets: 353
+
+Packages:
+  Package [com.liquidum.rocketvpn] (94416c1):
+    userId=10180
+    pkg=Package{ce80431 com.liquidum.rocketvpn}
+    codePath=/data/app/com.liquidum.rocketvpn-kJ2L4wZItjxIuq6CRCjUkQ==
+    resourcePath=/data/app/com.liquidum.rocketvpn-kJ2L4wZItjxIuq6CRCjUkQ==
+    legacyNativeLibraryDir=/data/app/com.liquidum.rocketvpn-kJ2L4wZItjxIuq6CRCjUkQ==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=318 minSdk=19 targetSdk=29
+    versionName=1.28
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{46c4fb5 com.liquidum.rocketvpn}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.liquidum.rocketvpn
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 08:24:52
+    firstInstallTime=2021-03-06 08:24:53
+    lastUpdateTime=2021-03-06 08:24:53
+    signatures=PackageSignatures{d65464a version:2, signatures:[d5515d89], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    declared permissions:
+      com.liquidum.rocketvpn.permission.C2D_MESSAGE: prot=signature, INSTALLED
+      com.liquidum.rocketvpn.batch.permission.INTERNAL_BROADCAST: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_CREDENTIALS
+      com.android.vending.BILLING
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      android.permission.VIBRATE
+      com.google.android.c2dm.permission.RECEIVE
+      com.liquidum.rocketvpn.permission.C2D_MESSAGE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.liquidum.rocketvpn.batch.permission.INTERNAL_BROADCAST
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.liquidum.rocketvpn.permission.C2D_MESSAGE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.liquidum.rocketvpn.batch.permission.INTERNAL_BROADCAST: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=12086 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=85
+  User 0:
+    seq=1, package=com.studioeleven.windfinder
+    seq=8, package=com.google.android.gms
+    seq=9, package=de.motain.iliga
+    seq=11, package=com.microsoft.office.word
+    seq=13, package=video.like
+    seq=15, package=com.netflix.mediaclient
+    seq=19, package=com.agilebits.onepassword
+    seq=21, package=com.rayark.valkyrie
+    seq=23, package=com.aa.generaladaptiveapps
+    seq=25, package=com.ea.gp.fifamobile
+    seq=27, package=com.instagram.igtv
+    seq=29, package=deezer.android.app
+    seq=31, package=com.square_enix.android_googleplay.FFBEWW
+    seq=33, package=com.google.android.calculator
+    seq=35, package=com.gamevilusa.mlbpilive.android.google.global.normal
+    seq=37, package=com.kabam.bigrobot
+    seq=39, package=io.enpass.app
+    seq=41, package=com.adobe.lrmobile
+    seq=43, package=com.vng.g6.a.zombie
+    seq=45, package=com.microblink.photomath
+    seq=47, package=com.scopely.whiplash
+    seq=49, package=com.iudesk.android.photo.editor
+    seq=51, package=com.microsoft.office.officehubrow
+    seq=53, package=com.whatsapp
+    seq=55, package=com.joeware.android.gpulumera
+    seq=57, package=com.anslayer
+    seq=59, package=com.apkupdater
+    seq=62, package=com.android.vending
+    seq=63, package=com.google.android.wearable.app
+    seq=65, package=com.zqlabs.filechef
+    seq=67, package=com.wondershare.filmorago
+    seq=69, package=com.outfit7.mytalkingangelafree
+    seq=71, package=com.truecaller
+    seq=73, package=com.ea.games.r3_row
+    seq=75, package=com.google.ar.lens
+    seq=77, package=com.fusionmedia.investing
+    seq=79, package=com.king.candycrushsodasaga
+    seq=81, package=com.seleuco.mame4droid
+    seq=83, package=com.Slack
+    seq=84, package=com.liquidum.rocketvpn
+
+
+Dexopt state:
+  [com.liquidum.rocketvpn]
+    path: /data/app/com.liquidum.rocketvpn-kJ2L4wZItjxIuq6CRCjUkQ==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.liquidum.rocketvpn]
+     base.apk - 6914
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

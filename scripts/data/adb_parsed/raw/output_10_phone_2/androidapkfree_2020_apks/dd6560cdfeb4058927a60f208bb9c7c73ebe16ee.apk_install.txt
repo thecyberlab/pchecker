@@ -1,0 +1,220 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        9b06744 com.rsupport.mvagent/.ui.activity.splash.SplashActivity filter b19074b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        22ae02d com.rsupport.mvagent/com.rsupport.mobizen.premium.notification.UserEndNotiBroadcastReceiver filter f0ed872
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.rsupport.mvagent.action.USER_END_NOTI"
+          Scheme: "package"
+      file:
+        c5d5962 com.rsupport.mvagent/com.rsupport.mobizen.ui.receiver.SDCardReceiver filter 36ecd27
+          Action: "android.intent.action.MEDIA_UNMOUNTED"
+          Scheme: "file"
+
+  Non-Data Actions:
+      android.net.conn.CONNECTIVITY_CHANGE:
+        8c71af3 com.rsupport.mvagent/com.vungle.warren.NetworkProviderReceiver filter 97114c3
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Category: "android.intent.category.DEFAULT"
+      com.rsupport.mvagent.PUSH_EVENT_BROADCAST:
+        1eeb3b0 com.rsupport.mvagent/com.rsupport.mobizen.ui.push.event.PushEventBroadcastReceiver filter bd96bd4
+          Action: "com.rsupport.mvagent.PUSH_EVENT_BROADCAST"
+      com.google.android.gms.analytics.ANALYTICS_DISPATCH:
+        7825229 com.rsupport.mvagent/com.google.android.gms.analytics.AnalyticsReceiver filter 8e32528
+          Action: "com.google.android.gms.analytics.ANALYTICS_DISPATCH"
+      com.android.vending.INSTALL_REFERRER:
+        c3ba9ae com.rsupport.mvagent/com.google.android.gms.analytics.CampaignTrackingReceiver filter 2f93241
+          Action: "com.android.vending.INSTALL_REFERRER"
+        dae734f com.rsupport.mvagent/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 320e879
+          Action: "com.android.vending.INSTALL_REFERRER"
+      edm.intent.action.knox_license.status:
+        8835adc com.rsupport.mvagent/com.samsung.android.knox.IntentConverterReceiver filter 26e09be
+          Action: "edm.intent.action.knox_license.status"
+          Action: "edm.intent.action.license.status"
+      edm.intent.action.license.status:
+        8835adc com.rsupport.mvagent/com.samsung.android.knox.IntentConverterReceiver filter 26e09be
+          Action: "edm.intent.action.knox_license.status"
+          Action: "edm.intent.action.license.status"
+      com.google.android.c2dm.intent.RECEIVE:
+        7c4e7e5 com.rsupport.mvagent/com.google.firebase.iid.FirebaseInstanceIdReceiver filter b4b7140
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.rsupport.mvagent.action.ACTION_APP_LAUNCH:
+        d9cb2ba com.rsupport.mvagent/com.rsupport.mobizen.common.receiver.MobizenAdReceiver filter b063e6
+          Action: "com.rsupport.mvagent.action.GO_TO_MARKET"
+          Action: "com.rsupport.mvagent.action.ACTION_APP_LAUNCH"
+      com.rsupport.mvagent.PUSH_RECEIVED_BROADCAST:
+        8f56b com.rsupport.mvagent/com.rsupport.mobizen.ui.push.PushMessageBroadcastReceiver filter 465b17d
+          Action: "com.rsupport.mvagent.PUSH_RECEIVED_BROADCAST"
+      com.rsupport.mvagent.action.GO_TO_MARKET:
+        d9cb2ba com.rsupport.mvagent/com.rsupport.mobizen.common.receiver.MobizenAdReceiver filter b063e6
+          Action: "com.rsupport.mvagent.action.GO_TO_MARKET"
+          Action: "com.rsupport.mvagent.action.ACTION_APP_LAUNCH"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        a5948c8 com.rsupport.mvagent/com.rsupport.mobizen.ui.push.firebase.FCMMessagingService filter 6c63a1f
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        ee11d61 com.rsupport.mvagent/com.google.firebase.messaging.FirebaseMessagingService filter b16616c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+
+Registered ContentProviders:
+  com.rsupport.mvagent/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{6d34086 com.rsupport.mvagent/com.crashlytics.android.CrashlyticsInitProvider}
+  com.rsupport.mvagent/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{33f7d47 com.rsupport.mvagent/com.google.firebase.provider.FirebaseInitProvider}
+  com.rsupport.mvagent/com.rsupport.mobizen.core.client.api.UIProvider:
+    Provider{61e2974 com.rsupport.mvagent/com.rsupport.mobizen.core.client.api.UIProvider}
+  com.rsupport.mvagent/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{f312e9d com.rsupport.mvagent/com.facebook.ads.AudienceNetworkContentProvider}
+  com.rsupport.mvagent/com.rsupport.mobizen.core.client.api.MobizenProvider:
+    Provider{e92df12 com.rsupport.mvagent/com.rsupport.mobizen.core.client.api.MobizenProvider}
+  com.rsupport.mvagent/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{e6ca6e3 com.rsupport.mvagent/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.rsupport.mvagent/androidx.core.content.FileProvider:
+    Provider{5ae68e0 com.rsupport.mvagent/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.rsupport.mvagent.firebaseinitprovider]:
+    Provider{33f7d47 com.rsupport.mvagent/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{c771799 com.rsupport.mvagent}
+  [com.rsupport.mvagent.crashlyticsinitprovider]:
+    Provider{6d34086 com.rsupport.mvagent/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{c771799 com.rsupport.mvagent}
+  [com.rsupport.mvagent.AudienceNetworkContentProvider]:
+    Provider{f312e9d com.rsupport.mvagent/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{c771799 com.rsupport.mvagent}
+  [com.rsupport.mvagent.mobileadsinitprovider]:
+    Provider{e6ca6e3 com.rsupport.mvagent/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{c771799 com.rsupport.mvagent}
+  [com.rsupport.mvagent.uiprovider]:
+    Provider{61e2974 com.rsupport.mvagent/com.rsupport.mobizen.core.client.api.UIProvider}
+      applicationInfo=ApplicationInfo{c771799 com.rsupport.mvagent}
+  [com.rsupport.mvagent]:
+    Provider{e92df12 com.rsupport.mvagent/com.rsupport.mobizen.core.client.api.MobizenProvider}
+      applicationInfo=ApplicationInfo{c771799 com.rsupport.mvagent}
+  [com.rsupport.mvagent.fileprovider]:
+    Provider{5ae68e0 com.rsupport.mvagent/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{c771799 com.rsupport.mvagent}
+
+Key Set Manager:
+  [com.rsupport.mvagent]
+      Signing KeySets: 437
+
+Packages:
+  Package [com.rsupport.mvagent] (13bda5e):
+    userId=10153
+    pkg=Package{63c601a com.rsupport.mvagent}
+    codePath=/data/app/com.rsupport.mvagent-SOiCVWAOG8pOWC3nImJ23Q==
+    resourcePath=/data/app/com.rsupport.mvagent-SOiCVWAOG8pOWC3nImJ23Q==
+    legacyNativeLibraryDir=/data/app/com.rsupport.mvagent-SOiCVWAOG8pOWC3nImJ23Q==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=170300823 minSdk=19 targetSdk=29
+    versionName=3.8.0.13
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{c771799 com.rsupport.mvagent}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.rsupport.mvagent
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 08:46:22
+    firstInstallTime=2021-03-06 08:46:23
+    lastUpdateTime=2021-03-06 08:46:23
+    signatures=PackageSignatures{5b8ce3f version:3, signatures:[39e0a536], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    requested permissions:
+      com.android.vending.BILLING
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.WRITE_SETTINGS
+      android.permission.WAKE_LOCK
+      android.permission.VIBRATE
+      android.permission.INTERNET
+      android.permission.GET_TASKS
+      android.permission.KILL_BACKGROUND_PROCESSES
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_STATE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      com.android.launcher.permission.UNINSTALL_SHORTCUT
+      android.permission.CAMERA
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECORD_AUDIO
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.launcher.permission.UNINSTALL_SHORTCUT: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=18185 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=31
+  User 0:
+    seq=2, package=com.yahoo.mobile.client.android.weather
+    seq=9, package=com.google.android.gms
+    seq=11, package=com.psiphon3.subscription
+    seq=13, package=com.tumblr
+    seq=16, package=com.google.android.apps.docs.editors.sheets
+    seq=17, package=com.google.android.apps.docs
+    seq=19, package=com.emoji.coolkeyboard
+    seq=21, package=com.ea.game.starwarscapital_row
+    seq=23, package=com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish
+    seq=25, package=com.virtualapplications.play
+    seq=27, package=com.appsomniacs.da2
+    seq=29, package=com.king.farmheroessupersaga
+    seq=30, package=com.rsupport.mvagent
+
+
+Dexopt state:
+  [com.rsupport.mvagent]
+    path: /data/app/com.rsupport.mvagent-SOiCVWAOG8pOWC3nImJ23Q==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.rsupport.mvagent]
+     base.apk - 6628
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

@@ -1,0 +1,232 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d8b269d net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.ActivityMain filter 4717712
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.MANAGE_NETWORK_USAGE:
+        d8b269d net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.ActivityMain filter 835ee3
+          Action: "android.intent.action.MANAGE_NETWORK_USAGE"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.APPLICATION_PREFERENCES:
+        56ac0e0 net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.ActivitySettings filter 26bf25e
+          Action: "android.intent.action.APPLICATION_PREFERENCES"
+          Category: "android.intent.category.DEFAULT"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        56ac0e0 net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.ActivitySettings filter 2788f99
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        4abc75b net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.ReceiverPackageRemoved filter f43cbf8
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      net.kollnig.missioncontrol.PAUSE:
+        e83063f net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.WidgetAdmin filter d6b0b0c
+          Action: "net.kollnig.missioncontrol.ON"
+          Action: "net.kollnig.missioncontrol.PAUSE"
+          Action: "net.kollnig.missioncontrol.OFF"
+      net.kollnig.missioncontrol.ON:
+        e83063f net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.WidgetAdmin filter d6b0b0c
+          Action: "net.kollnig.missioncontrol.ON"
+          Action: "net.kollnig.missioncontrol.PAUSE"
+          Action: "net.kollnig.missioncontrol.OFF"
+      android.intent.action.BOOT_COMPLETED:
+        b398c55 net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.ReceiverAutostart filter f00d66a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      net.kollnig.missioncontrol.OFF:
+        e83063f net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.WidgetAdmin filter d6b0b0c
+          Action: "net.kollnig.missioncontrol.ON"
+          Action: "net.kollnig.missioncontrol.PAUSE"
+          Action: "net.kollnig.missioncontrol.OFF"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        1d398d1 net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.WidgetMain filter 24def36
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        b398c55 net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.ReceiverAutostart filter f00d66a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        879c6d3 net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.ServiceTileMain filter a02210 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.net.VpnService:
+        3d57e37 net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.ServiceSinkhole filter 3e5afa4 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+      net.kollnig.missioncontrol.DOWNLOAD_HOSTS_FILE:
+        127f10d net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.ServiceExternal filter 681c8c2
+          Action: "net.kollnig.missioncontrol.DOWNLOAD_HOSTS_FILE"
+
+Domain verification status:
+
+Permissions:
+  Permission [net.kollnig.missioncontrol.permission.fdroid.ADMIN] (1527e7d):
+    sourcePackage=net.kollnig.missioncontrol.fdroid
+    uid=10482 gids=[] type=0 prot=signature
+    perm=PermissionInfo{4582172 net.kollnig.missioncontrol.permission.fdroid.ADMIN}
+
+Registered ContentProviders:
+  net.kollnig.missioncontrol.fdroid/androidx.core.content.FileProvider:
+    Provider{3e329c3 net.kollnig.missioncontrol.fdroid/androidx.core.content.FileProvider}
+  net.kollnig.missioncontrol.fdroid/org.acra.attachment.AcraContentProvider:
+    Provider{e446240 net.kollnig.missioncontrol.fdroid/org.acra.attachment.AcraContentProvider}
+
+ContentProvider Authorities:
+  [net.kollnig.missioncontrol.fdroid.acra]:
+    Provider{e446240 net.kollnig.missioncontrol.fdroid/org.acra.attachment.AcraContentProvider}
+      applicationInfo=ApplicationInfo{d82e2be net.kollnig.missioncontrol.fdroid}
+  [net.kollnig.missioncontrol.fdroid.provider]:
+    Provider{3e329c3 net.kollnig.missioncontrol.fdroid/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{ec49f1f net.kollnig.missioncontrol.fdroid}
+
+Key Set Manager:
+  [net.kollnig.missioncontrol.fdroid]
+      Signing KeySets: 6580
+
+Packages:
+  Package [net.kollnig.missioncontrol.fdroid] (9d80035):
+    userId=10482
+    pkg=Package{f066cca net.kollnig.missioncontrol.fdroid}
+    codePath=/data/app/~~I2NJiI1mjdlpncSn1_sWgQ==/net.kollnig.missioncontrol.fdroid-NnTq34CgXAtttwnqo1SkGA==
+    resourcePath=/data/app/~~I2NJiI1mjdlpncSn1_sWgQ==/net.kollnig.missioncontrol.fdroid-NnTq34CgXAtttwnqo1SkGA==
+    legacyNativeLibraryDir=/data/app/~~I2NJiI1mjdlpncSn1_sWgQ==/net.kollnig.missioncontrol.fdroid-NnTq34CgXAtttwnqo1SkGA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2020091001 minSdk=22 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2020.09.10-fdroid
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.SEND dat=content://*/... typ=message/rfc822 }, Intent { act=android.intent.action.SEND_MULTIPLE dat=content://*/... typ=message/rfc822 }, Intent { act=android.intent.action.SENDTO }]
+    dataDir=/data/user/0/net.kollnig.missioncontrol.fdroid
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 21:01:44
+    lastUpdateTime=2022-11-30 21:01:45
+    packageSource=0
+    signatures=PackageSignatures{91e0e3b version:1, signatures:[2f617640], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      net.kollnig.missioncontrol.permission.fdroid.ADMIN: prot=signature, INSTALLED
+    requested permissions:
+      net.kollnig.missioncontrol.fdroid.permission.ADMIN
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      com.android.vending.BILLING
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=106438 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 21:01:45
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.diagnosticstool:
+      net.kollnig.missioncontrol.fdroid
+    com.google.android.settings.intelligence:
+      net.kollnig.missioncontrol.fdroid
+    com.google.android.apps.accessibility.voiceaccess:
+      net.kollnig.missioncontrol.fdroid
+    com.zhiliaoapp.musically:
+      net.kollnig.missioncontrol.fdroid
+    com.truecaller:
+      net.kollnig.missioncontrol.fdroid
+    com.dv.adm:
+      net.kollnig.missioncontrol.fdroid
+    com.zappcues.gamingmode:
+      net.kollnig.missioncontrol.fdroid
+    com.jio.myjio:
+      net.kollnig.missioncontrol.fdroid
+    net.kollnig.missioncontrol.fdroid:
+      com.google.android.apps.docs
+      com.google.android.gm
+      com.android.cts.priv.ctsshim
+      com.android.cts.ctsshim
+      cn.wps.moffice_eng
+      com.fourchars.lmpfree
+      easynotes.notes.notepad.notebook.privatenotes.note
+      com.dv.adm
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [net.kollnig.missioncontrol.fdroid]
+    path: /data/app/~~I2NJiI1mjdlpncSn1_sWgQ==/net.kollnig.missioncontrol.fdroid-NnTq34CgXAtttwnqo1SkGA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:519466
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [net.kollnig.missioncontrol.fdroid]
+     base.apk - 384

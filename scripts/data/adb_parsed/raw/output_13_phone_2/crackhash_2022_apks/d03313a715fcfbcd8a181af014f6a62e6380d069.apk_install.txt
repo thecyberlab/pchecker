@@ -1,0 +1,450 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        80e9e53 com.avast.android.antivirus.one/com.avast.android.one.base.ui.scamprotection.scan.UrlScanActivity filter 9a8e390
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+        fdaccaf com.avast.android.antivirus.one/com.avast.android.one.base.ui.dynamiclink.DynamicLinkActivity filter 8e0a8bc
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "avastone.page.link": -1
+          Authority: "avastone.page.link": -1
+          AutoVerify=true
+      https:
+        80e9e53 com.avast.android.antivirus.one/com.avast.android.one.base.ui.scamprotection.scan.UrlScanActivity filter 9a8e390
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+        fdaccaf com.avast.android.antivirus.one/com.avast.android.one.base.ui.dynamiclink.DynamicLinkActivity filter 8e0a8bc
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "avastone.page.link": -1
+          Authority: "avastone.page.link": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      com.avast.android.campaigns.ACTION_PURCHASE_SCREEN:
+        1c01c8d com.avast.android.antivirus.one/com.avast.android.one.base.ui.campaigns.CampaignsRouterActivity filter 98d4e42
+          Action: "com.avast.android.campaigns.ACTION_MAIN_SCREEN"
+          Action: "com.avast.android.campaigns.ACTION_PURCHASE_SCREEN"
+          Action: "com.avast.android.campaigns.action.SHOW_OVERLAY"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        7d80c51 com.avast.android.antivirus.one/com.avast.android.one.base.ui.main.MainActivity filter 2641cb6
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+      com.avast.android.one.action.PURCHASE_SUCCESS:
+        39ef489 com.avast.android.antivirus.one/com.avast.android.one.base.ui.subscription.LinkLicenseDialogActivity filter 4260c8e
+          Action: "com.avast.android.one.action.PURCHASE_SUCCESS"
+          Category: "android.intent.category.DEFAULT"
+      com.avast.android.campaigns.ACTION_MAIN_SCREEN:
+        1c01c8d com.avast.android.antivirus.one/com.avast.android.one.base.ui.campaigns.CampaignsRouterActivity filter 98d4e42
+          Action: "com.avast.android.campaigns.ACTION_MAIN_SCREEN"
+          Action: "com.avast.android.campaigns.ACTION_PURCHASE_SCREEN"
+          Action: "com.avast.android.campaigns.action.SHOW_OVERLAY"
+          Category: "android.intent.category.DEFAULT"
+      com.avast.android.campaigns.action.SHOW_OVERLAY:
+        1c01c8d com.avast.android.antivirus.one/com.avast.android.one.base.ui.campaigns.CampaignsRouterActivity filter 98d4e42
+          Action: "com.avast.android.campaigns.ACTION_MAIN_SCREEN"
+          Action: "com.avast.android.campaigns.ACTION_PURCHASE_SCREEN"
+          Action: "com.avast.android.campaigns.action.SHOW_OVERLAY"
+          Category: "android.intent.category.DEFAULT"
+      com.avast.android.one.action.ALREADY_PURCHASED:
+        23ddb7 com.avast.android.antivirus.one/com.avast.android.one.vanilla.ui.billing.AlreadyPurchasedActivity filter f5d5924
+          Action: "com.avast.android.one.action.ALREADY_PURCHASED"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        db111f9 com.avast.android.antivirus.one/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 774b53e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        7cbc243 com.avast.android.antivirus.one/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9c450c0
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        7de3f9f com.avast.android.antivirus.one/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4fdb8ec
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        e7d4b5 com.avast.android.antivirus.one/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter e82e74a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        8795045 com.avast.android.antivirus.one/com.avast.android.account.internal.account.AccountChangedReceiver filter c7a639a
+          Action: "com.avast.android.account.ACCOUNTS_CHANGED"
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        7de3f9f com.avast.android.antivirus.one/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4fdb8ec
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.avast.android.utils.common.IDS_REQUEST:
+        4b1a2a7 com.avast.android.antivirus.one/com.avast.android.utils.common.internal.IdsRequestReceiver filter 35b5354
+          Action: "com.avast.android.utils.common.IDS_REQUEST"
+      android.intent.action.LOCALE_CHANGED:
+        ce3abc1 com.avast.android.antivirus.one/com.avast.android.push.receiver.LocaleReceiver filter 38b1f66
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        83e42fd com.avast.android.antivirus.one/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 799cbf2
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        db111f9 com.avast.android.antivirus.one/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 774b53e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        d7136bb com.avast.android.antivirus.one/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 78377d8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        d7136bb com.avast.android.antivirus.one/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 78377d8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        d7136bb com.avast.android.antivirus.one/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 78377d8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.avast.android.account.ACCOUNTS_CHANGED:
+        8795045 com.avast.android.antivirus.one/com.avast.android.account.internal.account.AccountChangedReceiver filter c7a639a
+          Action: "com.avast.android.account.ACCOUNTS_CHANGED"
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        7cbc243 com.avast.android.antivirus.one/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9c450c0
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.avast.android.shepherd2.UPDATE_ATTEMPT_FINISHED:
+        d9184cb com.avast.android.antivirus.one/com.avast.android.shepherd2.Shepherd2UpdateAttemptFinishedReceiver filter d6d94a8
+          Action: "com.avast.android.shepherd2.UPDATE_ATTEMPT_FINISHED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        7728397 com.avast.android.antivirus.one/androidx.work.impl.diagnostics.DiagnosticsReceiver filter da43984
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        a8e0731 com.avast.android.antivirus.one/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 5902e16
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.avast.android.sdk.vpn.shut_down:
+        5dc4e8f com.avast.android.antivirus.one/com.avast.android.sdk.vpn.MasterVpnService filter 57351c permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+          Action: "com.avast.android.sdk.vpn.start"
+          Action: "com.avast.android.sdk.vpn.stop"
+          Action: "com.avast.android.sdk.vpn.wake_up"
+          Action: "com.avast.android.sdk.vpn.shut_down"
+          Action: "com.avast.android.sdk.vpn.custom_action"
+      com.avast.android.sdk.vpn.custom_action:
+        5dc4e8f com.avast.android.antivirus.one/com.avast.android.sdk.vpn.MasterVpnService filter 57351c permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+          Action: "com.avast.android.sdk.vpn.start"
+          Action: "com.avast.android.sdk.vpn.stop"
+          Action: "com.avast.android.sdk.vpn.wake_up"
+          Action: "com.avast.android.sdk.vpn.shut_down"
+          Action: "com.avast.android.sdk.vpn.custom_action"
+      com.avast.android.sdk.vpn.wake_up:
+        5dc4e8f com.avast.android.antivirus.one/com.avast.android.sdk.vpn.MasterVpnService filter 57351c permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+          Action: "com.avast.android.sdk.vpn.start"
+          Action: "com.avast.android.sdk.vpn.stop"
+          Action: "com.avast.android.sdk.vpn.wake_up"
+          Action: "com.avast.android.sdk.vpn.shut_down"
+          Action: "com.avast.android.sdk.vpn.custom_action"
+      android.net.VpnService:
+        5dc4e8f com.avast.android.antivirus.one/com.avast.android.sdk.vpn.MasterVpnService filter 57351c permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+          Action: "com.avast.android.sdk.vpn.start"
+          Action: "com.avast.android.sdk.vpn.stop"
+          Action: "com.avast.android.sdk.vpn.wake_up"
+          Action: "com.avast.android.sdk.vpn.shut_down"
+          Action: "com.avast.android.sdk.vpn.custom_action"
+      com.google.firebase.MESSAGING_EVENT:
+        5fd6b69 com.avast.android.antivirus.one/com.avast.android.push.PushFirebaseMessagingService filter fd6e9ee
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        6f85525 com.avast.android.antivirus.one/com.google.firebase.messaging.FirebaseMessagingService filter 14bb6fa
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.accounts.AccountAuthenticator:
+        bd1c233 com.avast.android.antivirus.one/com.avast.android.ffl2.account.AuthenticatorService filter 7ed69f0
+          Action: "android.accounts.AccountAuthenticator"
+      android.accessibilityservice.AccessibilityService:
+        88ae56d com.avast.android.antivirus.one/com.avast.android.one.avengine.internal.shields.webshield.service.WebShieldAccessibilityService filter 45915a2 permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+      com.avast.android.sdk.vpn.start:
+        5dc4e8f com.avast.android.antivirus.one/com.avast.android.sdk.vpn.MasterVpnService filter 57351c permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+          Action: "com.avast.android.sdk.vpn.start"
+          Action: "com.avast.android.sdk.vpn.stop"
+          Action: "com.avast.android.sdk.vpn.wake_up"
+          Action: "com.avast.android.sdk.vpn.shut_down"
+          Action: "com.avast.android.sdk.vpn.custom_action"
+      com.avast.android.sdk.vpn.stop:
+        5dc4e8f com.avast.android.antivirus.one/com.avast.android.sdk.vpn.MasterVpnService filter 57351c permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+          Action: "com.avast.android.sdk.vpn.start"
+          Action: "com.avast.android.sdk.vpn.stop"
+          Action: "com.avast.android.sdk.vpn.wake_up"
+          Action: "com.avast.android.sdk.vpn.shut_down"
+          Action: "com.avast.android.sdk.vpn.custom_action"
+
+Domain verification status:
+  com.avast.android.antivirus.one:
+    ID: 08354842-c372-4e8a-a03b-3d2f5873a698
+    Signatures: [66:92:05:77:93:26:81:08:D3:91:AA:71:20:3E:26:C5:2F:E6:E4:FD:EA:81:FE:E7:79:AB:1B:BC:05:BA:4E:27]
+    Domain verification state:
+      avastone.page.link: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          avastone.page.link
+
+Permissions:
+  Permission [com.avast.android.account.ACCOUNT_PERMISSION] (7042f87):
+    sourcePackage=com.avast.android.antivirus.one
+    uid=10290 gids=[] type=0 prot=signature
+    perm=PermissionInfo{cad8eb4 com.avast.android.account.ACCOUNT_PERMISSION}
+
+Permissions:
+  Permission [com.avast.android.utils.common.IDS_PERMISSION] (a98cadd):
+    sourcePackage=com.avast.android.antivirus.one
+    uid=10290 gids=[] type=0 prot=signature
+    perm=PermissionInfo{4cbe652 com.avast.android.utils.common.IDS_PERMISSION}
+
+Registered ContentProviders:
+  com.avast.android.antivirus.one/androidx.startup.InitializationProvider:
+    Provider{6a3d23 com.avast.android.antivirus.one/androidx.startup.InitializationProvider}
+  com.avast.android.antivirus.one/androidx.core.content.FileProvider:
+    Provider{7eee220 com.avast.android.antivirus.one/androidx.core.content.FileProvider}
+  com.avast.android.antivirus.one/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{e5c37d9 com.avast.android.antivirus.one/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.avast.android.antivirus.one.firebaseinitprovider]:
+    Provider{e5c37d9 com.avast.android.antivirus.one/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{11e159e com.avast.android.antivirus.one}
+  [com.avast.android.antivirus.one.androidx-startup]:
+    Provider{6a3d23 com.avast.android.antivirus.one/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{a99887f com.avast.android.antivirus.one}
+  [com.avast.android.antivirus.one]:
+    Provider{7eee220 com.avast.android.antivirus.one/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{c30004c com.avast.android.antivirus.one}
+
+Key Set Manager:
+  [com.avast.android.antivirus.one]
+      Signing KeySets: 5699
+
+Packages:
+  Package [com.avast.android.antivirus.one] (bd1edaa):
+    userId=10290
+    pkg=Package{a482d9b com.avast.android.antivirus.one}
+    codePath=/data/app/~~0Z5K1ElZRePHwppnrn4M_A==/com.avast.android.antivirus.one-hIKZ_SqhtDxU3O8vgn2kEQ==
+    resourcePath=/data/app/~~0Z5K1ElZRePHwppnrn4M_A==/com.avast.android.antivirus.one-hIKZ_SqhtDxU3O8vgn2kEQ==
+    legacyNativeLibraryDir=/data/app/~~0Z5K1ElZRePHwppnrn4M_A==/com.avast.android.antivirus.one-hIKZ_SqhtDxU3O8vgn2kEQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2601 minSdk=23 targetSdk=30
+    minExtensionVersions=[]
+    versionName=2.5.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.avast.android.antivirus.one
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 15:02:15
+    lastUpdateTime=2022-11-30 15:02:16
+    packageSource=0
+    signatures=PackageSignatures{8fc0911 version:3, signatures:[1f09083b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.avast.android.account.ACCOUNT_PERMISSION: prot=signature, INSTALLED
+      com.avast.android.utils.common.IDS_PERMISSION: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.WAKE_LOCK
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.MANAGE_EXTERNAL_STORAGE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.KILL_BACKGROUND_PROCESSES
+      android.permission.ACCESS_FINE_LOCATION
+      com.avast.android.account.ACCOUNT_PERMISSION
+      android.permission.GET_ACCOUNTS
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.USE_CREDENTIALS
+      android.permission.ACCESS_COARSE_LOCATION
+      com.avast.android.utils.common.IDS_PERMISSION
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.PACKAGE_USAGE_STATS
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.avast.android.account.ACCOUNT_PERMISSION: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      com.avast.android.utils.common.IDS_PERMISSION: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=60770 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:02:16
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false
+        android.permission.READ_PHONE_STATE: granted=false
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.GET_ACCOUNTS: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.nbu.files:
+      com.avast.android.antivirus.one
+    [com.google.android.gsf,com.google.android.gms]:
+      com.avast.android.antivirus.one
+    com.google.android.apps.messaging:
+      com.avast.android.antivirus.one
+    com.google.android.apps.safetyhub:
+      com.avast.android.antivirus.one
+    com.android.vending:
+      com.avast.android.antivirus.one
+    com.google.android.apps.restore:
+      com.avast.android.antivirus.one
+    com.google.android.apps.diagnosticstool:
+      com.avast.android.antivirus.one
+    com.google.android.dialer:
+      com.avast.android.antivirus.one
+    com.google.android.apps.wellbeing:
+      com.avast.android.antivirus.one
+    com.google.android.settings.intelligence:
+      com.avast.android.antivirus.one
+    com.google.android.GoogleCamera:
+      com.avast.android.antivirus.one
+    com.google.android.calendar:
+      com.avast.android.antivirus.one
+    com.google.android.youtube:
+      com.avast.android.antivirus.one
+    com.google.android.contacts:
+      com.avast.android.antivirus.one
+    com.google.android.apps.docs:
+      com.avast.android.antivirus.one
+    com.google.android.apps.accessibility.voiceaccess:
+      com.avast.android.antivirus.one
+    com.google.android.apps.youtube.music:
+      com.avast.android.antivirus.one
+    com.google.android.gm:
+      com.avast.android.antivirus.one
+    com.google.android.apps.wallpaper:
+      com.avast.android.antivirus.one
+    com.pandavideocompressor:
+      com.avast.android.antivirus.one
+    radiotime.player:
+      com.avast.android.antivirus.one
+    com.truecaller:
+      com.avast.android.antivirus.one
+    com.darinsoft.vimo:
+      com.avast.android.antivirus.one
+    com.ninegag.android.app:
+      com.avast.android.antivirus.one
+    com.mxtech.videoplayer.television:
+      com.avast.android.antivirus.one
+    com.fourchars.lmpfree:
+      com.avast.android.antivirus.one
+    com.lyrebirdstudio.photo_editor_pro:
+      com.avast.android.antivirus.one
+    com.mobisystems.office:
+      com.avast.android.antivirus.one
+    com.zappcues.gamingmode:
+      com.avast.android.antivirus.one
+    com.cam001.selfie:
+      com.avast.android.antivirus.one
+    com.jio.myjio:
+      com.avast.android.antivirus.one
+    com.clearchannel.iheartradio.controller:
+      com.avast.android.antivirus.one
+    com.utorrent.client.pro:
+      com.avast.android.antivirus.one
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.avast.android.antivirus.one]
+    path: /data/app/~~0Z5K1ElZRePHwppnrn4M_A==/com.avast.android.antivirus.one-hIKZ_SqhtDxU3O8vgn2kEQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:529697
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.avast.android.antivirus.one]
+     base.apk - 622

@@ -1,0 +1,292 @@
+Activity Resolver Table:
+  Full MIME Types:
+      text/plain:
+        31c6e7e com.battlelancer.seriesguide/.ui.SearchActivity filter ec8cef5
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Base MIME Types:
+      text:
+        31c6e7e com.battlelancer.seriesguide/.ui.SearchActivity filter ec8cef5
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Schemes:
+      fb_your_app_id:
+        5c8e7ad com.battlelancer.seriesguide/com.facebook.CustomTabActivity filter 9ef8ae2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb_your_app_id"
+      genericidp:
+        41b2e73 com.battlelancer.seriesguide/com.google.firebase.auth.internal.GenericIdpActivity filter 7ac0130
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        7b951a9 com.battlelancer.seriesguide/com.google.firebase.auth.internal.RecaptchaActivity filter 27f732e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      sgoauth:
+        246571 com.battlelancer.seriesguide/.traktapi.TraktAuthActivity filter ccdcf56
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sgoauth"
+
+  Non-Data Actions:
+      com.battlelancer.seriesguide.api.action.VIEW_SHOW:
+        2c59e83 com.battlelancer.seriesguide/.ui.ShowsActivity filter d2ae839
+          Action: "com.battlelancer.seriesguide.api.action.VIEW_EPISODE"
+          Action: "com.battlelancer.seriesguide.api.action.VIEW_SHOW"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        2c59e83 com.battlelancer.seriesguide/.ui.ShowsActivity filter c29800
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        10cf48a com.battlelancer.seriesguide/.ui.SeriesGuidePreferences filter 9b6718
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+      com.google.android.gms.actions.SEARCH_ACTION:
+        31c6e7e com.battlelancer.seriesguide/.ui.SearchActivity filter cb9342c
+          Action: "com.google.android.gms.actions.SEARCH_ACTION"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MANAGE_NETWORK_USAGE:
+        10cf48a com.battlelancer.seriesguide/.ui.SeriesGuidePreferences filter 1c25afb
+          Action: "android.intent.action.MANAGE_NETWORK_USAGE"
+          Category: "android.intent.category.DEFAULT"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        b51abd7 com.battlelancer.seriesguide/.appwidget.ListWidgetPreferenceActivity filter 36bdcc4
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      com.battlelancer.seriesguide.api.action.VIEW_EPISODE:
+        2c59e83 com.battlelancer.seriesguide/.ui.ShowsActivity filter d2ae839
+          Action: "com.battlelancer.seriesguide.api.action.VIEW_EPISODE"
+          Action: "com.battlelancer.seriesguide.api.action.VIEW_SHOW"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        31c6e7e com.battlelancer.seriesguide/.ui.SearchActivity filter 399fdf
+          Action: "android.intent.action.SEARCH"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        31c6e7e com.battlelancer.seriesguide/.ui.SearchActivity filter ec8cef5
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BOOT_COMPLETED:
+        12c5f65 com.battlelancer.seriesguide/.service.NotificationAlarmReceiver filter 213943a
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.battlelancer.seriesguide.appwidget.UPDATE:
+        85bf8eb com.battlelancer.seriesguide/.appwidget.ListWidgetProvider filter 88ce1
+          Action: "com.battlelancer.seriesguide.appwidget.UPDATE"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        85bf8eb com.battlelancer.seriesguide/.appwidget.ListWidgetProvider filter 5c2c648
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      com.battlelancer.seriesguide.api.SeriesGuideExtension:
+        8f03ecf com.battlelancer.seriesguide/.extensions.GooglePlayExtensionReceiver filter 488005c
+          Action: "com.battlelancer.seriesguide.api.SeriesGuideExtension"
+        596ba06 com.battlelancer.seriesguide/.extensions.AmazonExtensionReceiver filter 47f38c7
+          Action: "com.battlelancer.seriesguide.api.SeriesGuideExtension"
+        e61fef4 com.battlelancer.seriesguide/.extensions.YouTubeExtensionReceiver filter 20161d
+          Action: "com.battlelancer.seriesguide.api.SeriesGuideExtension"
+        bd47092 com.battlelancer.seriesguide/.extensions.VodsterExtensionReceiver filter 6ac9a63
+          Action: "com.battlelancer.seriesguide.api.SeriesGuideExtension"
+        a1a1660 com.battlelancer.seriesguide/.extensions.WebSearchExtensionReceiver filter e2cf719
+          Action: "com.battlelancer.seriesguide.api.SeriesGuideExtension"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.content.SyncAdapter:
+        97a388c com.battlelancer.seriesguide/.sync.SgSyncService filter e8cebd5
+          Action: "android.content.SyncAdapter"
+      android.accounts.AccountAuthenticator:
+        2c503de com.battlelancer.seriesguide/.sync.SgAuthenticationService filter c479bf
+          Action: "android.accounts.AccountAuthenticator"
+      com.google.firebase.auth.api.gms.service.START:
+        d997fea com.battlelancer.seriesguide/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 850f2db
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.battlelancer.seriesguide/androidx.startup.InitializationProvider:
+    Provider{9ec695a com.battlelancer.seriesguide/androidx.startup.InitializationProvider}
+  com.battlelancer.seriesguide/androidx.core.content.FileProvider:
+    Provider{75e778b com.battlelancer.seriesguide/androidx.core.content.FileProvider}
+  com.battlelancer.seriesguide/.provider.SeriesGuideProvider:
+    Provider{c277068 com.battlelancer.seriesguide/.provider.SeriesGuideProvider}
+  com.battlelancer.seriesguide/com.firebase.ui.auth.data.client.AuthUiInitProvider:
+    Provider{97abc81 com.battlelancer.seriesguide/com.firebase.ui.auth.data.client.AuthUiInitProvider}
+  com.battlelancer.seriesguide/com.squareup.picasso.PicassoProvider:
+    Provider{b77c126 com.battlelancer.seriesguide/com.squareup.picasso.PicassoProvider}
+  com.battlelancer.seriesguide/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{83b0167 com.battlelancer.seriesguide/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.battlelancer.seriesguide.provider]:
+    Provider{c277068 com.battlelancer.seriesguide/.provider.SeriesGuideProvider}
+      applicationInfo=ApplicationInfo{839f98e com.battlelancer.seriesguide}
+  [com.battlelancer.seriesguide.com.squareup.picasso]:
+    Provider{b77c126 com.battlelancer.seriesguide/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{c8cb5af com.battlelancer.seriesguide}
+  [com.battlelancer.seriesguide.firebaseinitprovider]:
+    Provider{83b0167 com.battlelancer.seriesguide/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{b9eddbc com.battlelancer.seriesguide}
+  [com.battlelancer.seriesguide.androidx-startup]:
+    Provider{9ec695a com.battlelancer.seriesguide/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{260209a com.battlelancer.seriesguide}
+  [com.battlelancer.seriesguide.fileprovider]:
+    Provider{75e778b com.battlelancer.seriesguide/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{df8fdcb com.battlelancer.seriesguide}
+  [com.battlelancer.seriesguide.authuiinitprovider]:
+    Provider{97abc81 com.battlelancer.seriesguide/com.firebase.ui.auth.data.client.AuthUiInitProvider}
+      applicationInfo=ApplicationInfo{65a19a8 com.battlelancer.seriesguide}
+
+Key Set Manager:
+  [com.battlelancer.seriesguide]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.battlelancer.seriesguide] (81e4cc1):
+    userId=10688
+    pkg=Package{3360975 com.battlelancer.seriesguide}
+    codePath=/data/app/~~7L3uw_2V4GuwaXO74Or2NQ==/com.battlelancer.seriesguide-gVvZdOLGZj22ajNg5X17_g==
+    resourcePath=/data/app/~~7L3uw_2V4GuwaXO74Or2NQ==/com.battlelancer.seriesguide-gVvZdOLGZj22ajNg5X17_g==
+    legacyNativeLibraryDir=/data/app/~~7L3uw_2V4GuwaXO74Or2NQ==/com.battlelancer.seriesguide-gVvZdOLGZj22ajNg5X17_g==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2106305 minSdk=21 targetSdk=31
+    minExtensionVersions=[]
+    versionName=63
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.battlelancer.seriesguide.x]
+    queriesIntents=[Intent { act=com.battlelancer.seriesguide.api.SeriesGuideExtension }]
+    dataDir=/data/user/0/com.battlelancer.seriesguide
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.test.base
+      android.test.mock
+      android.test.runner
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/android.test.mock.jar
+      /system/framework/android.test.runner.jar
+    timeStamp=2022-11-30 12:46:47
+    lastUpdateTime=2022-11-30 12:46:48
+    packageSource=0
+    signatures=PackageSignatures{a61dd0a version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      disabled_com.android.vending.BILLING
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.VIBRATE
+      android.permission.READ_SYNC_STATS
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.SCHEDULE_EXACT_ALARM: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+    User 0: ceDataInode=49700 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 12:46:48
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.battlelancer.seriesguide
+    com.google.android.apps.diagnosticstool:
+      com.battlelancer.seriesguide
+    com.google.android.settings.intelligence:
+      com.battlelancer.seriesguide
+    com.google.android.GoogleCamera:
+      com.battlelancer.seriesguide
+    com.google.android.apps.maps:
+      com.battlelancer.seriesguide
+    com.google.android.apps.photos:
+      com.battlelancer.seriesguide
+    com.google.android.youtube:
+      com.battlelancer.seriesguide
+    com.google.android.contacts:
+      com.battlelancer.seriesguide
+    com.google.android.apps.accessibility.voiceaccess:
+      com.battlelancer.seriesguide
+    com.google.android.apps.youtube.music:
+      com.battlelancer.seriesguide
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.localtransport,com.android.qns,com.android.keychain,com.android.providers.settings,com.android.location.fused,com.android.wallpaperbackup,com.google.android.iwlan,com.android.inputdevices,com.android.settings,android,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem]:
+        com.battlelancer.seriesguide
+      [com.google.android.gms,com.google.android.gsf]:
+        com.battlelancer.seriesguide
+      com.battlelancer.seriesguide:
+        [com.google.SSRestartDetector,com.android.localtransport,com.android.qns,com.android.keychain,com.android.providers.settings,com.android.location.fused,com.android.wallpaperbackup,com.google.android.iwlan,com.android.inputdevices,com.android.settings,android,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem]
+  queryable via uses-library:
+
+Dexopt state:
+  [com.battlelancer.seriesguide]
+    path: /data/app/~~7L3uw_2V4GuwaXO74Or2NQ==/com.battlelancer.seriesguide-gVvZdOLGZj22ajNg5X17_g==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:2954601
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.battlelancer.seriesguide]
+     base.apk - 466

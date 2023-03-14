@@ -1,0 +1,347 @@
+Activity Resolver Table:
+  Schemes:
+      tagmanager.c.com.osn.go:
+        6d4bb2f com.osn.go/com.google.android.gms.tagmanager.TagManagerPreviewActivity filter ef6353c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tagmanager.c.com.osn.go"
+      wavo:
+        1d41d99 com.osn.go/.activities.SplashActivity filter fbffa55
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "wavo"
+        1d41d99 com.osn.go/.activities.SplashActivity filter 5c1ac6a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "wavo"
+          Authority: "open": -1
+      https:
+        1d41d99 com.osn.go/.activities.SplashActivity filter b6e710c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.wavo.com": -1
+          Authority: "wavo.com": -1
+          Authority: "www.stream.osn.com": -1
+          Authority: "stream.osn.com": -1
+          Path: "PatternMatcher{LITERAL: /home}"
+          Path: "PatternMatcher{LITERAL: /category/movies}"
+          Path: "PatternMatcher{LITERAL: /category/tvshows}"
+          Path: "PatternMatcher{LITERAL: /category/arabic}"
+          Path: "PatternMatcher{LITERAL: /category/disneyplus}"
+          Path: "PatternMatcher{LITERAL: /category/hbo}"
+          Path: "PatternMatcher{LITERAL: /category/living}"
+          Path: "PatternMatcher{LITERAL: /category/kids}"
+          Path: "PatternMatcher{LITERAL: /channels}"
+          Path: "PatternMatcher{LITERAL: /search}"
+          Path: "PatternMatcher{LITERAL: /login}"
+          Path: "PatternMatcher{LITERAL: /settings}"
+          Path: "PatternMatcher{LITERAL: /settings/parentalrating}"
+          Path: "PatternMatcher{GLOB: /video/.*}"
+          Path: "PatternMatcher{GLOB: /category/.*}"
+          Path: "PatternMatcher{GLOB: /channel/.*}"
+          AutoVerify=true
+      fbconnect:
+        34a9f09 com.osn.go/com.facebook.CustomTabActivity filter d30a50e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.osn.go": -1
+      pw-8B195-CE93B:
+        1f87c37 com.osn.go/com.pushwoosh.DeepLinkActivity filter 62fd5a4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "pw-8B195-CE93B"
+      osnstream:
+        1d41d99 com.osn.go/.activities.SplashActivity filter 9fae55b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "osnstream"
+        1d41d99 com.osn.go/.activities.SplashActivity filter 11791f8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "osnstream"
+          Authority: "open": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        1d41d99 com.osn.go/.activities.SplashActivity filter 5ab685e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        1d41d99 com.osn.go/.activities.SplashActivity filter a7c443f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+        352e6d1 com.osn.go/.cast.ExpandedControlsActivity filter 3462536
+          Action: "android.intent.action.MAIN"
+        64e1f0d com.osn.go/com.neulion.android.chromecast.ui.activity.NLCastPlaylistViewActivity filter dc75ec2
+          Action: "android.intent.action.MAIN"
+        8cea4d3 com.osn.go/com.neulion.android.chromecast.ui.activity.NLCastVideoControllerActivity filter 466a810
+          Action: "android.intent.action.MAIN"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        c0a2641 com.osn.go/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f4047e6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        87bdb4b com.osn.go/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 8f6928
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        62ae127 com.osn.go/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter c05efd4
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        f91e57d com.osn.go/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter b8fc72
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        f8821b1 com.osn.go/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 7207696
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        62ae127 com.osn.go/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter c05efd4
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        4de2d3b com.osn.go/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter b036c58
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        5bd4735 com.osn.go/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 547a7ca
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        c0a2641 com.osn.go/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f4047e6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        dda68c3 com.osn.go/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bbc3540
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        dda68c3 com.osn.go/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bbc3540
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        b7522c5 com.osn.go/com.pushwoosh.BootReceiver filter ad6041a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Category: "android.intent.category.DEFAULT"
+        dda68c3 com.osn.go/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bbc3540
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        87bdb4b com.osn.go/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 8f6928
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        a70ce1f com.osn.go/androidx.work.impl.diagnostics.DiagnosticsReceiver filter bcf656c
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        6dc5c79 com.osn.go/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter e966dbe
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        af86217 com.osn.go/com.pushwoosh.FcmRegistrationService filter e6ef604
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+      com.google.firebase.MESSAGING_EVENT:
+        f4c27ed com.osn.go/com.pushwoosh.PushFcmIntentService filter 5e56622
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        81708b3 com.osn.go/com.google.firebase.messaging.FirebaseMessagingService filter 3e76e70
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.osn.go:
+    ID: 17a12405-d15d-44fe-84df-4fb78327156d
+    Signatures: [26:1F:87:8C:72:AD:F6:D6:0F:B4:97:00:9C:8B:ED:BF:3E:66:7A:ED:49:C0:D2:0C:A8:FB:46:E5:5C:C0:2A:36]
+    Domain verification state:
+      www.stream.osn.com: none
+      stream.osn.com: none
+      www.wavo.com: none
+      wavo.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.stream.osn.com
+          stream.osn.com
+          www.wavo.com
+          wavo.com
+
+Registered ContentProviders:
+  com.osn.go/hu.accedo.commons.logging.VdkAnalytics:
+    Provider{71a4812 com.osn.go/hu.accedo.commons.logging.VdkAnalytics}
+  com.osn.go/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{8125be3 com.osn.go/com.google.firebase.provider.FirebaseInitProvider}
+  com.osn.go/com.facebook.internal.FacebookInitProvider:
+    Provider{c6279e0 com.osn.go/com.facebook.internal.FacebookInitProvider}
+  com.osn.go/com.pushwoosh.PushwooshInitProvider:
+    Provider{a505499 com.osn.go/com.pushwoosh.PushwooshInitProvider}
+  com.osn.go/com.pushwoosh.PushwooshSharedDataProvider:
+    Provider{550d35e com.osn.go/com.pushwoosh.PushwooshSharedDataProvider}
+  com.osn.go/com.pushwoosh.internal.fileprovider.PWFileProvider:
+    Provider{c84d33f com.osn.go/com.pushwoosh.internal.fileprovider.PWFileProvider}
+  com.osn.go/androidx.work.impl.WorkManagerInitializer:
+    Provider{ea5540c com.osn.go/androidx.work.impl.WorkManagerInitializer}
+
+ContentProvider Authorities:
+  [com.osn.go.VdkAnalytics]:
+    Provider{71a4812 com.osn.go/hu.accedo.commons.logging.VdkAnalytics}
+      applicationInfo=ApplicationInfo{948a155 com.osn.go}
+  [com.osn.go.PushwooshSharedDataProvider]:
+    Provider{550d35e com.osn.go/com.pushwoosh.PushwooshSharedDataProvider}
+      applicationInfo=ApplicationInfo{1d2c76a com.osn.go}
+  [com.osn.go.firebaseinitprovider]:
+    Provider{8125be3 com.osn.go/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{57d645b com.osn.go}
+  [com.osn.go.FacebookInitProvider]:
+    Provider{c6279e0 com.osn.go/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{459a4f8 com.osn.go}
+  [com.osn.go.workmanager-init]:
+    Provider{ea5540c com.osn.go/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{a3efdd1 com.osn.go}
+  [com.osn.go.provider]:
+    Provider{c84d33f com.osn.go/com.pushwoosh.internal.fileprovider.PWFileProvider}
+      applicationInfo=ApplicationInfo{ecdf036 com.osn.go}
+  [com.osn.go.pushwooshinitprovider]:
+    Provider{a505499 com.osn.go/com.pushwoosh.PushwooshInitProvider}
+      applicationInfo=ApplicationInfo{ca3eb37 com.osn.go}
+
+Key Set Manager:
+  [com.osn.go]
+      Signing KeySets: 5228
+
+Packages:
+  Package [com.osn.go] (70018a4):
+    userId=10287
+    pkg=Package{564a60d com.osn.go}
+    codePath=/data/app/~~QVQ5iwlaOfajvcwN32Ybeg==/com.osn.go-MYZefYgDJ9c45uQ-f1IJXQ==
+    resourcePath=/data/app/~~QVQ5iwlaOfajvcwN32Ybeg==/com.osn.go-MYZefYgDJ9c45uQ-f1IJXQ==
+    legacyNativeLibraryDir=/data/app/~~QVQ5iwlaOfajvcwN32Ybeg==/com.osn.go-MYZefYgDJ9c45uQ-f1IJXQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1000089 minSdk=18 targetSdk=29
+    minExtensionVersions=[]
+    versionName=6.32.7
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.osn.go
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      android.test.mock
+      android.test.runner
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/android.test.mock.jar
+      /system/framework/android.test.runner.jar
+    timeStamp=2022-11-30 12:00:25
+    lastUpdateTime=2022-11-30 12:00:27
+    packageSource=0
+    signatures=PackageSignatures{180d9c2 version:2, signatures:[59b22865], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.VIBRATE
+      android.permission.READ_PHONE_STATE
+      com.android.vending.BILLING
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=54393 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 12:00:27
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.osn.go
+    com.google.android.apps.diagnosticstool:
+      com.osn.go
+    com.google.android.settings.intelligence:
+      com.osn.go
+    com.google.android.apps.accessibility.voiceaccess:
+      com.osn.go
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.osn.go]
+    path: /data/app/~~QVQ5iwlaOfajvcwN32Ybeg==/com.osn.go-MYZefYgDJ9c45uQ-f1IJXQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:172290
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.osn.go]
+     base.apk - 656

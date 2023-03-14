@@ -1,0 +1,380 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        a13ac80 com.tempo.video.edit/.LinkHandleActivity filter 4b2d6fe
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "api-sgp.tempoedit.com": -1
+          Path: "PatternMatcher{LITERAL: /api/rest/report/tempo/penetrate}"
+          AutoVerify=true
+        a13ac80 com.tempo.video.edit/.LinkHandleActivity filter 41b1e5f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "medi.dxzzywxk.top": -1
+          Path: "PatternMatcher{LITERAL: /api/rest/report/tempo/penetrate}"
+          AutoVerify=true
+        a13ac80 com.tempo.video.edit/.LinkHandleActivity filter f4710ac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "api-use.tempoedit.com": -1
+          Path: "PatternMatcher{LITERAL: /api/rest/report/tempo/penetrate}"
+          AutoVerify=true
+        a13ac80 com.tempo.video.edit/.LinkHandleActivity filter 95eb175
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "api-fra.tempoedit.com": -1
+          Path: "PatternMatcher{LITERAL: /api/rest/report/tempo/penetrate}"
+          AutoVerify=true
+        a13ac80 com.tempo.video.edit/.LinkHandleActivity filter ce1650a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "medi-qa.rthdo.com": -1
+          Path: "PatternMatcher{LITERAL: /api/rest/report/tempo/penetrate}"
+          AutoVerify=true
+      tempo:
+        a13ac80 com.tempo.video.edit/.LinkHandleActivity filter 3efa2b9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tempo"
+          Path: "PatternMatcher{LITERAL: /penetrate}"
+          AutoVerify=true
+      vivapush:
+        d147a57 com.tempo.video.edit/com.quvideo.mobile.component.push.NotifyOpenActivity filter 548c944
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "vivapush"
+          Authority: "com.tempo.video.edit": -1
+          Path: "PatternMatcher{LITERAL: /notify_open}"
+
+  Non-Data Actions:
+      com.meitu.mp.sdk.action.ACTION_SDK_RESP_ACTIVITY:
+        be89a2d com.tempo.video.edit/com.quvideo.share.SnsSdkShareActivity filter cd18b62
+          Action: "com.meitu.mp.sdk.action.ACTION_SDK_RESP_ACTIVITY"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        87d417b com.tempo.video.edit/.splash.SplashActivity filter 76a8b98
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        e75eff1 com.tempo.video.edit/.push.PushDispatcherActivity filter cb8c7d6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        3fe1e5 com.tempo.video.edit/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter e2524ba
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        96e5d4f com.tempo.video.edit/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e85fcdc
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        8dd7f6b com.tempo.video.edit/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ae40ac8
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        d11b761 com.tempo.video.edit/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter c70d286
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        d7c64f3 com.tempo.video.edit/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter bab35b0
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        8dd7f6b com.tempo.video.edit/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ae40ac8
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        861ac29 com.tempo.video.edit/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 4c0fbae
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        3fe1e5 com.tempo.video.edit/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter e2524ba
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        5d2a747 com.tempo.video.edit/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1930b74
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        5d2a747 com.tempo.video.edit/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1930b74
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        5d2a747 com.tempo.video.edit/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1930b74
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        96e5d4f com.tempo.video.edit/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e85fcdc
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        8d1689d com.tempo.video.edit/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 5779112
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.quvideo.vivacut.services.action.SaveProject:
+        80870e3 com.tempo.video.edit/com.quvideo.xiaoying.sdk.engine.ProjectService filter 8f6ae0
+          Action: "com.quvideo.vivacut.services.action.ScanProject"
+          Action: "com.quvideo.vivacut.services.action.LoadProject"
+          Action: "com.quvideo.vivacut.services.action.SaveProject"
+      com.quvideo.vivacut.services.action.ScanProject:
+        80870e3 com.tempo.video.edit/com.quvideo.xiaoying.sdk.engine.ProjectService filter 8f6ae0
+          Action: "com.quvideo.vivacut.services.action.ScanProject"
+          Action: "com.quvideo.vivacut.services.action.LoadProject"
+          Action: "com.quvideo.vivacut.services.action.SaveProject"
+      com.google.firebase.MESSAGING_EVENT:
+        8e0f199 com.tempo.video.edit/com.quvideo.mobile.platform.push.fcm.XYFirebaseMessagingService filter 6b9ac5e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        e47383f com.tempo.video.edit/com.google.firebase.messaging.FirebaseMessagingService filter 730550c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.quvideo.vivacut.services.action.LoadProject:
+        80870e3 com.tempo.video.edit/com.quvideo.xiaoying.sdk.engine.ProjectService filter 8f6ae0
+          Action: "com.quvideo.vivacut.services.action.ScanProject"
+          Action: "com.quvideo.vivacut.services.action.LoadProject"
+          Action: "com.quvideo.vivacut.services.action.SaveProject"
+
+Domain verification status:
+  com.tempo.video.edit:
+    ID: 477aefc4-afa6-4824-aaed-fda221642caf
+    Signatures: [A9:59:54:C3:B2:C9:87:D8:8E:95:8A:7E:F5:6F:90:F8:25:12:AC:74:44:0F:D4:F0:09:A6:D2:6A:57:EA:85:2C]
+    Domain verification state:
+      api-sgp.tempoedit.com: none
+      medi-qa.rthdo.com: none
+      api-fra.tempoedit.com: none
+      api-use.tempoedit.com: none
+      medi.dxzzywxk.top: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          api-sgp.tempoedit.com
+          medi-qa.rthdo.com
+          api-fra.tempoedit.com
+          api-use.tempoedit.com
+          medi.dxzzywxk.top
+
+Registered ContentProviders:
+  com.tempo.video.edit/com.quvideo.mobile.component.push.base.PushInitProvider:
+    Provider{d12a82d com.tempo.video.edit/com.quvideo.mobile.component.push.base.PushInitProvider}
+  com.tempo.video.edit/com.my.target.common.MyTargetContentProvider:
+    Provider{ffd8162 com.tempo.video.edit/com.my.target.common.MyTargetContentProvider}
+  com.tempo.video.edit/.ads.provider.XYMobileAdsInitProvider:
+    Provider{2822f3 com.tempo.video.edit/.ads.provider.XYMobileAdsInitProvider}
+  com.tempo.video.edit/.ads.provider.XYAudienceNetworkContentProvider:
+    Provider{6af1bb0 com.tempo.video.edit/.ads.provider.XYAudienceNetworkContentProvider}
+  com.tempo.video.edit/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{d1e9a29 com.tempo.video.edit/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.tempo.video.edit/androidx.core.content.FileProvider:
+    Provider{db651ae com.tempo.video.edit/androidx.core.content.FileProvider}
+  com.tempo.video.edit/androidx.work.impl.WorkManagerInitializer:
+    Provider{e17fb4f com.tempo.video.edit/androidx.work.impl.WorkManagerInitializer}
+  com.tempo.video.edit/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{ce242dc com.tempo.video.edit/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.tempo.video.edit/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{eddafe5 com.tempo.video.edit/com.google.firebase.provider.FirebaseInitProvider}
+  com.tempo.video.edit/androidx.startup.InitializationProvider:
+    Provider{19daba com.tempo.video.edit/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.tempo.video.edit.mobileadsinitprovider]:
+    Provider{2822f3 com.tempo.video.edit/.ads.provider.XYMobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{182fd6b com.tempo.video.edit}
+  [com.tempo.video.edit.androidx-startup]:
+    Provider{19daba com.tempo.video.edit/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{9beb0c8 com.tempo.video.edit}
+  [com.tempo.video.edit.AudienceNetworkContentProvider]:
+    Provider{6af1bb0 com.tempo.video.edit/.ads.provider.XYAudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{2be6561 com.tempo.video.edit}
+  [com.tempo.video.edit.provider]:
+    Provider{db651ae com.tempo.video.edit/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{7fae886 com.tempo.video.edit}
+  [com.tempo.video.edit.firebaseperfprovider]:
+    Provider{ce242dc com.tempo.video.edit/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{6520547 com.tempo.video.edit}
+  [com.tempo.video.edit.mytargetcontentprovider]:
+    Provider{ffd8162 com.tempo.video.edit/com.my.target.common.MyTargetContentProvider}
+      applicationInfo=ApplicationInfo{a721174 com.tempo.video.edit}
+  [com.tempo.video.edit.push_provider]:
+    Provider{d12a82d com.tempo.video.edit/com.quvideo.mobile.component.push.base.PushInitProvider}
+      applicationInfo=ApplicationInfo{79af69d com.tempo.video.edit}
+  [com.tempo.video.edit.workmanager-init]:
+    Provider{e17fb4f com.tempo.video.edit/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{e8d0712 com.tempo.video.edit}
+  [com.tempo.video.edit.firebaseinitprovider]:
+    Provider{eddafe5 com.tempo.video.edit/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{41faee3 com.tempo.video.edit}
+  [com.tempo.video.edit.lifecycle-process]:
+    Provider{d1e9a29 com.tempo.video.edit/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{f58d0e0 com.tempo.video.edit}
+
+Key Set Manager:
+  [com.tempo.video.edit]
+      Signing KeySets: 5622
+
+Packages:
+  Package [com.tempo.video.edit] (ab0825e):
+    userId=10254
+    pkg=Package{794563f com.tempo.video.edit}
+    codePath=/data/app/~~RZJ6R9tsYIJNanIBSzjPDg==/com.tempo.video.edit-8fIl_7pL2Jq7vD7tb-54bQ==
+    resourcePath=/data/app/~~RZJ6R9tsYIJNanIBSzjPDg==/com.tempo.video.edit-8fIl_7pL2Jq7vD7tb-54bQ==
+    legacyNativeLibraryDir=/data/app/~~RZJ6R9tsYIJNanIBSzjPDg==/com.tempo.video.edit-8fIl_7pL2Jq7vD7tb-54bQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=6203061 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=2.3.6
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    hasPreserveLegacyExternalStorage=true
+    forceQueryable=false
+    queriesPackages=[com.ss.android.ugc.trill, com.zhiliaoapp.musically, com.zhiliaoapp.musically.go, com.ss.android.ugc.trill.go, com.whatsapp, com.instagram.android, com.discord, com.snapchat.android, com.facebook.katana, com.google.android.youtube, com.facebook.orca, com.vkontakte.android, video.like, jp.naver.line.android, co.vtube.fvtech, ru.ok.android, org.telegram.messenger, com.viber.voip, com.android.chrome, com.quvideo.xiaoying.vivasetting]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.tempo.video.edit
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 18:53:31
+    lastUpdateTime=2022-11-30 18:53:32
+    packageSource=0
+    signatures=PackageSignatures{d735c55 version:2, signatures:[a7e27cb5], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      com.android.vending.BILLING
+      android.permission.VIBRATE
+      android.permission.CAMERA
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      com.vivavideo.mobile.settings.READ
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=91286 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 18:53:32
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.tempo.video.edit:
+      com.android.chrome
+      com.google.android.youtube
+      com.zhiliaoapp.musically
+  queries via component:
+    com.google.android.apps.messaging:
+      com.tempo.video.edit
+    com.google.android.apps.diagnosticstool:
+      com.tempo.video.edit
+    com.google.android.settings.intelligence:
+      com.tempo.video.edit
+    com.google.android.youtube:
+      com.tempo.video.edit
+    com.google.android.contacts:
+      com.tempo.video.edit
+    com.google.android.apps.accessibility.voiceaccess:
+      com.tempo.video.edit
+    com.google.android.gm:
+      com.tempo.video.edit
+    com.zhiliaoapp.musically:
+      com.tempo.video.edit
+    com.truecaller:
+      com.tempo.video.edit
+    com.tempo.video.edit:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      ru.iptvremote.android.iptv.pro
+      com.dv.adm
+      com.utorrent.client.pro
+    com.dv.adm:
+      com.tempo.video.edit
+    com.zappcues.gamingmode:
+      com.tempo.video.edit
+    com.jio.myjio:
+      com.tempo.video.edit
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.tempo.video.edit]
+    path: /data/app/~~RZJ6R9tsYIJNanIBSzjPDg==/com.tempo.video.edit-8fIl_7pL2Jq7vD7tb-54bQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:44847
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.tempo.video.edit]
+     base.apk - 1282

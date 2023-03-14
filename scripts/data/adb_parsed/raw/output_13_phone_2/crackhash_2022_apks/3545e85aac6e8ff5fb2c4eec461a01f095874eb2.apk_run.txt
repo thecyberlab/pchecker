@@ -1,0 +1,318 @@
+Activity Resolver Table:
+  Schemes:
+      genericidp:
+        e6789d7 com.womboai.wombo/com.google.firebase.auth.internal.GenericIdpActivity filter 15f62c4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        d4cf5ad com.womboai.wombo/com.google.firebase.auth.internal.RecaptchaActivity filter d6d80e2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        89658fb com.womboai.wombo/.MainActivity filter 4428d18
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        fe39371 com.womboai.wombo/com.onesignal.NotificationOpenedActivityHMS filter 5386556
+          Action: "android.intent.action.VIEW"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        32b76eb com.womboai.wombo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c7f6c48
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        7642d65 com.womboai.wombo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c9a4a3a
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        e703fa9 com.womboai.wombo/com.onesignal.BootUpReceiver filter ee6c92e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        cef3ae1 com.womboai.wombo/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d2d006
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        fc896c7 com.womboai.wombo/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter b4304f4
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        cef3ae1 com.womboai.wombo/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d2d006
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        15439d5 com.womboai.wombo/androidx.profileinstaller.ProfileInstallReceiver filter a39b5ea
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        5b0ec73 com.womboai.wombo/com.onesignal.FCMBroadcastReceiver filter 851e730
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.womboai.wombo"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        41b97bf com.womboai.wombo/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 4b5fe8c
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        32b76eb com.womboai.wombo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c7f6c48
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        fc3a41d com.womboai.wombo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter dbbe692
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        fc3a41d com.womboai.wombo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter dbbe692
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        e703fa9 com.womboai.wombo/com.onesignal.BootUpReceiver filter ee6c92e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+        fc3a41d com.womboai.wombo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter dbbe692
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        7642d65 com.womboai.wombo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c9a4a3a
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        f7b6519 com.womboai.wombo/androidx.work.impl.diagnostics.DiagnosticsReceiver filter aadd9de
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        123dccf com.womboai.wombo/com.onesignal.UpgradeReceiver filter a6465c
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        2dd863 com.womboai.wombo/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter b057c60
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        6ab9e51 com.womboai.wombo/com.google.firebase.messaging.FirebaseMessagingService filter 4f546b6
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.auth.api.gms.service.START:
+        ebebfb7 com.womboai.wombo/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 42b9324
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+      com.huawei.push.action.MESSAGING_EVENT:
+        cfbf0db com.womboai.wombo/com.onesignal.HmsMessageServiceOneSignal filter f0a7778
+          Action: "com.huawei.push.action.MESSAGING_EVENT"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.womboai.wombo.permission.C2D_MESSAGE] (738ba0e):
+    sourcePackage=com.womboai.wombo
+    uid=10725 gids=[] type=0 prot=signature
+    perm=PermissionInfo{ffdff9e com.womboai.wombo.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.womboai.wombo/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{ccafa4c com.womboai.wombo/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.womboai.wombo/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{d77ea95 com.womboai.wombo/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.womboai.wombo/androidx.core.content.FileProvider:
+    Provider{9c677aa com.womboai.wombo/androidx.core.content.FileProvider}
+  com.womboai.wombo/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{972ef9b com.womboai.wombo/com.google.firebase.provider.FirebaseInitProvider}
+  com.womboai.wombo/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{7d36f38 com.womboai.wombo/com.facebook.ads.AudienceNetworkContentProvider}
+  com.womboai.wombo/androidx.startup.InitializationProvider:
+    Provider{e399b11 com.womboai.wombo/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.womboai.wombo.firebaseinitprovider]:
+    Provider{972ef9b com.womboai.wombo/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{abac2f com.womboai.wombo}
+  [com.womboai.wombo.androidx-startup]:
+    Provider{e399b11 com.womboai.wombo/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{2e8d23c com.womboai.wombo}
+  [com.womboai.wombo.fileprovider]:
+    Provider{9c677aa com.womboai.wombo/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{397fbc5 com.womboai.wombo}
+  [com.womboai.wombo.AudienceNetworkContentProvider]:
+    Provider{7d36f38 com.womboai.wombo/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{5ca691a com.womboai.wombo}
+  [com.womboai.wombo.mobileadsinitprovider]:
+    Provider{d77ea95 com.womboai.wombo/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{750dc4b com.womboai.wombo}
+  [com.womboai.wombo.lifecycle-process]:
+    Provider{ccafa4c com.womboai.wombo/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{d8ed628 com.womboai.wombo}
+
+Key Set Manager:
+  [com.womboai.wombo]
+      Signing KeySets: 5571
+
+Packages:
+  Package [com.womboai.wombo] (6018f41):
+    userId=10725
+    pkg=Package{97ab16f com.womboai.wombo}
+    codePath=/data/app/~~oSDkXNRO9gNNhLchresXZQ==/com.womboai.wombo-zDCp9vTINtYIyS-LH2z3GQ==
+    resourcePath=/data/app/~~oSDkXNRO9gNNhLchresXZQ==/com.womboai.wombo-zDCp9vTINtYIyS-LH2z3GQ==
+    legacyNativeLibraryDir=/data/app/~~oSDkXNRO9gNNhLchresXZQ==/com.womboai.wombo-zDCp9vTINtYIyS-LH2z3GQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=70 minSdk=22 targetSdk=31
+    minExtensionVersions=[]
+    versionName=3.0.9
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.facebook.katana]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.womboai.wombo
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 12:50:00
+    lastUpdateTime=2022-11-30 12:50:01
+    packageSource=0
+    signatures=PackageSignatures{2af58b version:2, signatures:[a7e27cb5], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.womboai.wombo.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.FOREGROUND_SERVICE
+      com.android.vending.BILLING
+      android.permission.CAMERA
+      com.womboai.wombo.permission.C2D_MESSAGE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.WAKE_LOCK
+      android.permission.VIBRATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      com.google.android.gms.permission.AD_ID
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      com.womboai.wombo.permission.C2D_MESSAGE: granted=true
+    User 0: ceDataInode=55049 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 12:50:01
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.womboai.wombo
+    com.google.android.apps.diagnosticstool:
+      com.womboai.wombo
+    com.google.android.settings.intelligence:
+      com.womboai.wombo
+    com.google.android.youtube:
+      com.womboai.wombo
+    com.google.android.contacts:
+      com.womboai.wombo
+    com.google.android.apps.accessibility.voiceaccess:
+      com.womboai.wombo
+    com.google.android.gm:
+      com.womboai.wombo
+    com.womboai.wombo:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.localtransport,com.android.qns,com.android.keychain,com.android.providers.settings,com.android.location.fused,com.android.wallpaperbackup,com.google.android.iwlan,com.android.inputdevices,com.android.settings,android,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem]:
+        com.womboai.wombo
+      [com.google.android.gms,com.google.android.gsf]:
+        com.womboai.wombo
+      com.google.android.permissioncontroller:
+        com.womboai.wombo
+      com.womboai.wombo:
+        [com.google.SSRestartDetector,com.android.localtransport,com.android.qns,com.android.keychain,com.android.providers.settings,com.android.location.fused,com.android.wallpaperbackup,com.google.android.iwlan,com.android.inputdevices,com.android.settings,android,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem]
+  queryable via uses-library:
+
+Dexopt state:
+  [com.womboai.wombo]
+    path: /data/app/~~oSDkXNRO9gNNhLchresXZQ==/com.womboai.wombo-zDCp9vTINtYIyS-LH2z3GQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:3148226
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.womboai.wombo]
+     base.apk - 1134

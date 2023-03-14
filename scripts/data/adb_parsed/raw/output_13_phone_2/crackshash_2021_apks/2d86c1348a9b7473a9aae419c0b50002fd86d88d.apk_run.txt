@@ -1,0 +1,580 @@
+Activity Resolver Table:
+  Schemes:
+      kisa:
+        3e3e20a com.kms.free/com.kms.gui.ShareItActivity filter 4a27a7b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kisa"
+          Authority: "kaspersky_shareit.com": -1
+        de614d6 com.kms.free/com.kms.privacyprotection.gui.FakeActivity filter 8d44357
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kisa"
+          Authority: "kaspersky_loadmore.com": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        b2f5e44 com.kms.free/.PermissionsActivityLauncher filter e7c0b2d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+          Category: "miui.intent.category.SYSAPP_RECOMMEND"
+      android.intent.action.VIEW:
+        a1d098 com.kms.free/com.kms.custom.webcontrol.gui.WebFilterEditItemActivity filter 450f1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        7959228 com.kms.free/com.kavsdk.AppInstallationReceiver filter 279b41
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Action: "android.intent.action.PACKAGE_REMOVED"
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Scheme: "package"
+        ff05ebe com.kms.free/com.kaspersky.remote.security_service.base.KsUninstallReceiver filter b2a6b1f
+          Action: "android.intent.action.PACKAGE_REMOVED"
+          Scheme: "package"
+      sms:
+        806a862 com.kms.free/com.kms.kmsdaemon.SMSReceiver filter 1e61ab0
+          Action: "android.intent.action.DATA_SMS_RECEIVED"
+          Scheme: "sms"
+          Authority: "localhost": -1
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        e27409 com.kms.free/com.kavsdk.shared.cellmon.SMSReceiver filter a3d182f
+          Action: "android.intent.action.DATA_SMS_RECEIVED"
+          Scheme: "sms"
+          Authority: "localhost": 1100
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        cfa8ca com.kms.free/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 4149a3b
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        6ad3e6c com.kms.free/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 450ac35
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        f3b2d29 com.kms.free/com.kms.kmsdaemon.BootReceiver filter e0a31dc
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        cbbce3c com.kms.free/com.kavsdk.StartReceiver filter 68d084b
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      com.kms.broadcast.sentsms.v1:
+        e8409e3 com.kms.free/com.kms.kmsdaemon.SmsSentReceiverV1 filter 1cd8fe0
+          Action: "com.kms.broadcast.sentsms.v1"
+      com.kms.broadcast.sentsms.v2:
+        d9cb299 com.kms.free/com.kms.kmsdaemon.SmsSentReceiverV2 filter 578d95e
+          Action: "com.kms.broadcast.sentsms.v2"
+      com.huawei.android.push.intent.REGISTRATION:
+        db31a9c com.kms.free/com.huawei.hms.support.api.push.PushReceiver filter 8060ca5
+          Action: "com.huawei.android.push.intent.REGISTRATION"
+          Action: "com.huawei.android.push.intent.RECEIVE"
+      android.intent.action.PHONE_STATE:
+        2a2a40d com.kms.free/com.kaspersky.whocalls.services.IncomingCallReceiver filter c49ffc2
+          Action: "android.intent.action.PHONE_STATE"
+      com.kms.LAUNCH:
+        f3b2d29 com.kms.free/com.kms.kmsdaemon.BootReceiver filter 23e464f
+          Action: "com.kms.LAUNCH"
+      android.location.PROVIDERS_CHANGED:
+        942f86b com.kms.free/com.kaspersky.kts.antitheft.GpsStateNotifier filter 6f68fc8
+          Action: "android.location.PROVIDERS_CHANGED"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        865d558 com.kms.free/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 46cd6b1
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        9a78796 com.kms.free/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter ba89f17
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.huawei.intent.action.PUSH_DELAY_NOTIFY:
+        14ff36e com.kms.free/com.huawei.hms.support.api.push.PushMsgReceiver filter 4a5a0f
+          Action: "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+          Action: "com.huawei.intent.action.PUSH"
+      android.provider.Telephony.GSM_SMS_RECEIVED:
+        806a862 com.kms.free/com.kms.kmsdaemon.SMSReceiver filter fefbdf3
+          Action: "android.provider.Telephony.SMS_RECEIVED"
+          Action: "android.provider.Telephony.GSM_SMS_RECEIVED"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        e27409 com.kms.free/com.kavsdk.shared.cellmon.SMSReceiver filter 7bc560e
+          Action: "android.provider.Telephony.SMS_RECEIVED"
+          Action: "android.provider.Telephony.GSM_SMS_RECEIVED"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      NEW_APPLICATION_SCAN:
+        1b072e5 com.kms.free/com.kaspersky_clean.domain.antivirus.newapp.NewApplicationBroadcastReceiver filter d40e1ba
+          Action: "NEW_APPLICATION_SCAN"
+      android.intent.action.DEVICE_STORAGE_OK:
+        865d558 com.kms.free/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 46cd6b1
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.app.action.DEVICE_ADMIN_ENABLED:
+        3a3199d com.kms.free/com.kms.selfprotection.DeviceAdmin filter aadee12
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+      com.huawei.hms.analytics.pps.event:
+        63e7e40 com.kms.free/com.huawei.hms.analytics.receiver.HiAnalyticsSvcEvtReceiver filter 8937179
+          Action: "com.huawei.hms.analytics.pps.event"
+      com.android.vending.INSTALL_REFERRER:
+        7fcdf55 com.kms.free/com.appsflyer.MultipleInstallBroadcastReceiver filter 3752d6a
+          Action: "com.android.vending.INSTALL_REFERRER"
+        6b6d25b com.kms.free/com.kms.InstallReferrerReceiver filter d517af8
+          Action: "com.android.vending.INSTALL_REFERRER"
+        97b31d3 com.kms.free/com.my.tracker.campaign.CampaignReceiver filter ed4b110
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.avsdk.LAUNCH:
+        3063937 com.kms.free/com.kms.kmsdaemon.WatchDogReceiver filter 69f4ea4
+          Action: "com.avsdk.READY"
+          Action: "com.avsdk.LAUNCH"
+        cbbce3c com.kms.free/com.kavsdk.StartReceiver filter 33547c5
+          Action: "com.avsdk.READY"
+          Action: "com.avsdk.LAUNCH"
+      android.intent.action.SIM_STATE_CHANGED:
+        77118e6 com.kms.free/com.kavsdk.simwatch.generic.SimStateChangedBroadcastReceiver filter 8a1de27
+          Action: "android.intent.action.SIM_STATE_CHANGED"
+      com.huawei.android.push.intent.RECEIVE:
+        db31a9c com.kms.free/com.huawei.hms.support.api.push.PushReceiver filter 8060ca5
+          Action: "com.huawei.android.push.intent.REGISTRATION"
+          Action: "com.huawei.android.push.intent.RECEIVE"
+      android.intent.action.LOCALE_CHANGED:
+        2f91bd1 com.kms.free/com.kms.LocaleChangedReceiver filter f30b636
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        9a5dd72 com.kms.free/com.google.firebase.iid.FirebaseInstanceIdReceiver filter d4435c3
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        cfa8ca com.kms.free/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 4149a3b
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        a0eef04 com.kms.free/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6472ced
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        37a5861 com.kms.free/com.kms.kmsdaemon.TimeUpdatedReceiver filter e0b5f86
+          Action: "android.intent.action.TIME_SET"
+          Category: "android.intent.category.DEFAULT"
+        a0eef04 com.kms.free/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6472ced
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        f3b2d29 com.kms.free/com.kms.kmsdaemon.BootReceiver filter aaae8ae
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Category: "android.intent.category.DEFAULT"
+        cbbce3c com.kms.free/com.kavsdk.StartReceiver filter ebc51a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Category: "android.intent.category.DEFAULT"
+        a0eef04 com.kms.free/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6472ced
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.USER_PRESENT:
+        996b047 com.kms.free/com.kms.kmsdaemon.UserPresentReceiver filter cc8e074
+          Action: "android.intent.action.USER_PRESENT"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        6ad3e6c com.kms.free/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 450ac35
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.kms.broadcast.deliveredsms:
+        363613f com.kms.free/com.kms.kmsdaemon.DeliveredSmsReceiver filter eabca0c
+          Action: "com.kms.broadcast.deliveredsms"
+      com.avsdk.READY:
+        3063937 com.kms.free/com.kms.kmsdaemon.WatchDogReceiver filter 69f4ea4
+          Action: "com.avsdk.READY"
+          Action: "com.avsdk.LAUNCH"
+        cbbce3c com.kms.free/com.kavsdk.StartReceiver filter 33547c5
+          Action: "com.avsdk.READY"
+          Action: "com.avsdk.LAUNCH"
+      android.provider.Telephony.SMS_RECEIVED:
+        806a862 com.kms.free/com.kms.kmsdaemon.SMSReceiver filter fefbdf3
+          Action: "android.provider.Telephony.SMS_RECEIVED"
+          Action: "android.provider.Telephony.GSM_SMS_RECEIVED"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        e27409 com.kms.free/com.kavsdk.shared.cellmon.SMSReceiver filter 7bc560e
+          Action: "android.provider.Telephony.SMS_RECEIVED"
+          Action: "android.provider.Telephony.GSM_SMS_RECEIVED"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.kaspersky.nhdp.ACTION_PENDING_INTENT_RECEIVER:
+        7c5a8d4 com.kms.free/com.kaspersky.nhdp.data.NhdpNotificationsIntentReceiver filter 91aa7d
+          Action: "com.kaspersky.nhdp.ACTION_PENDING_INTENT_RECEIVER"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        c0df770 com.kms.free/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 3f6aae9
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.huawei.intent.action.PUSH:
+        14ff36e com.kms.free/com.huawei.hms.support.api.push.PushMsgReceiver filter 4a5a0f
+          Action: "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+          Action: "com.huawei.intent.action.PUSH"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        84c8722 com.kms.free/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter e15b3
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.kaspersky.kashell.remote.IKashellRemoteService:
+        1254488 com.kms.free/com.kaspersky.kashell.remote.KashellRemoteService filter efce21 permission com.kaspersky.kashell.permission_kisa
+          Action: "com.kaspersky.kashell.remote.IKashellRemoteService"
+      com.huawei.push.msg.NOTIFY_MSG:
+        84b542a com.kms.free/com.huawei.hms.support.api.push.service.HmsMsgService filter e33d21b
+          Action: "com.huawei.push.msg.NOTIFY_MSG"
+          Action: "com.huawei.push.msg.PASSBY_MSG"
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        5c062cc com.kms.free/com.firebase.jobdispatcher.GooglePlayReceiver filter 6cc6915 permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        688fcd2 com.kms.free/com.kaspersky.data.fcm.FirebaseMessagingService filter 1c7d1a3
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        3d6141e com.kms.free/com.google.firebase.messaging.FirebaseMessagingService filter 97be4ff
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.firebase.jobdispatcher.ACTION_EXECUTE:
+        20e2134 com.kms.free/com.kaspersky_clean.data.repositories.antivirus.scan.weekly.service.WeeklyFullScanServiceV16 filter 5a2b5d
+          Action: "com.firebase.jobdispatcher.ACTION_EXECUTE"
+      com.huawei.push.msg.PASSBY_MSG:
+        84b542a com.kms.free/com.huawei.hms.support.api.push.service.HmsMsgService filter e33d21b
+          Action: "com.huawei.push.msg.NOTIFY_MSG"
+          Action: "com.huawei.push.msg.PASSBY_MSG"
+      android.accessibilityservice.AccessibilityService:
+        f0bd87a com.kms.free/com.kaspersky.components.accessibility.KasperskyAccessibility filter c5c882b permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+      com.google.android.gms.wearable.BIND_LISTENER:
+        56f0246 com.kms.free/com.kms.wear.WearableActionService filter b197c07
+          Action: "com.google.android.gms.wearable.BIND_LISTENER"
+      com.huawei.push.action.MESSAGING_EVENT:
+        b061ca0 com.kms.free/com.kaspersky.data.hms.PushKitMessagingService filter 2132059
+          Action: "com.huawei.push.action.MESSAGING_EVENT"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.kms.free.permission.PUSH_WRITE_PROVIDER] (f6e7d59):
+    sourcePackage=com.kms.free
+    uid=10278 gids=[] type=0 prot=signature
+    perm=PermissionInfo{c6bb76b com.kms.free.permission.PUSH_WRITE_PROVIDER}
+
+Permissions:
+  Permission [com.kms.free.permission.PROCESS_PUSH_MSG] (812ad1e):
+    sourcePackage=com.kms.free
+    uid=10278 gids=[] type=0 prot=signature
+    perm=PermissionInfo{16af61 com.kms.free.permission.PROCESS_PUSH_MSG}
+
+Permissions:
+  Permission [com.kms.free.permission.PUSH_PROVIDER] (3e709ff):
+    sourcePackage=com.kms.free
+    uid=10278 gids=[] type=0 prot=signature
+    perm=PermissionInfo{c5f47 com.kms.free.permission.PUSH_PROVIDER}
+
+Permissions:
+  Permission [com.kaspersky.kashell.permission_kisa] (8a523cc):
+    sourcePackage=com.kms.free
+    uid=10278 gids=[] type=0 prot=signature
+    perm=PermissionInfo{32de09d com.kaspersky.kashell.permission_kisa}
+
+Registered ContentProviders:
+  com.kms.free/com.huawei.agconnect.core.provider.AGConnectInitializeProvider:
+    Provider{b66a912 com.kms.free/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+  com.kms.free/com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider:
+    Provider{825a8e3 com.kms.free/com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider}
+  com.kms.free/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{41042e0 com.kms.free/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.kms.free/com.huawei.hms.device.provider.CheckHmsProvider:
+    Provider{88ce999 com.kms.free/com.huawei.hms.device.provider.CheckHmsProvider}
+  com.kms.free/androidx.core.content.FileProvider:
+    Provider{882445e com.kms.free/androidx.core.content.FileProvider}
+  com.kms.free/com.huawei.hms.update.provider.UpdateProvider:
+    Provider{efff03f com.kms.free/com.huawei.hms.update.provider.UpdateProvider}
+  com.kms.free/com.kavsdk.httpbridge.HttpContentProvider:
+    Provider{de6ad0c com.kms.free/com.kavsdk.httpbridge.HttpContentProvider}
+  com.kms.free/com.huawei.hms.support.api.push.PushProvider:
+    Provider{7398655 com.kms.free/com.huawei.hms.support.api.push.PushProvider}
+  com.kms.free/com.huawei.hms.mlsdk.common.provider.MLInitializerProvider:
+    Provider{52a486a com.kms.free/com.huawei.hms.mlsdk.common.provider.MLInitializerProvider}
+  com.kms.free/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{10d515b com.kms.free/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.kms.free/com.huawei.hms.aaid.InitProvider:
+    Provider{8d78df8 com.kms.free/com.huawei.hms.aaid.InitProvider}
+  com.kms.free/com.squareup.picasso.PicassoProvider:
+    Provider{6d932d1 com.kms.free/com.squareup.picasso.PicassoProvider}
+  com.kms.free/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{69c8136 com.kms.free/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.kms.free.firebaseperfprovider]:
+    Provider{10d515b com.kms.free/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{b009615 com.kms.free}
+  [com.kms.free.com.squareup.picasso]:
+    Provider{6d932d1 com.kms.free/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{6387d2a com.kms.free}
+  [com.kms.free.provider]:
+    Provider{882445e com.kms.free/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{4ac471b com.kms.free}
+  [com.kms.free.AGCInitializeProvider]:
+    Provider{b66a912 com.kms.free/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+      applicationInfo=ApplicationInfo{4e6b0b8 com.kms.free}
+  [com.kms.free.updateSdk.fileProvider]:
+    Provider{825a8e3 com.kms.free/com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider}
+      applicationInfo=ApplicationInfo{6617e91 com.kms.free}
+  [com.kms.free.huawei.push.provider]:
+    Provider{7398655 com.kms.free/com.huawei.hms.support.api.push.PushProvider}
+      applicationInfo=ApplicationInfo{13941f6 com.kms.free}
+  [com.kms.free.MLInitializerProvider]:
+    Provider{52a486a com.kms.free/com.huawei.hms.mlsdk.common.provider.MLInitializerProvider}
+      applicationInfo=ApplicationInfo{1be39f7 com.kms.free}
+  [com.kms.free.aaidinitprovider]:
+    Provider{8d78df8 com.kms.free/com.huawei.hms.aaid.InitProvider}
+      applicationInfo=ApplicationInfo{fb22064 com.kms.free}
+  [com.kms.free.kavsdk.httpbridge]:
+    Provider{de6ad0c com.kms.free/com.kavsdk.httpbridge.HttpContentProvider}
+      applicationInfo=ApplicationInfo{60e72cd com.kms.free}
+  [com.kms.free.hms.device.validate.spoofprovider]:
+    Provider{88ce999 com.kms.free/com.huawei.hms.device.provider.CheckHmsProvider}
+      applicationInfo=ApplicationInfo{2af8782 com.kms.free}
+  [com.kms.free.lifecycle-process]:
+    Provider{41042e0 com.kms.free/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{927e93 com.kms.free}
+  [com.kms.free.firebaseinitprovider]:
+    Provider{69c8136 com.kms.free/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{9a2ded0 com.kms.free}
+  [com.kms.free.hms.update.provider]:
+    Provider{efff03f com.kms.free/com.huawei.hms.update.provider.UpdateProvider}
+      applicationInfo=ApplicationInfo{f1c6ec9 com.kms.free}
+
+Key Set Manager:
+  [com.kms.free]
+      Signing KeySets: 5882
+
+Packages:
+  Package [com.kms.free] (15299ce):
+    userId=10278
+    pkg=Package{d9b0d27 com.kms.free}
+    codePath=/data/app/~~RD2822Hxl2tqmLF-ocHxFQ==/com.kms.free-_n_4gFYar05RIl813OXnng==
+    resourcePath=/data/app/~~RD2822Hxl2tqmLF-ocHxFQ==/com.kms.free-_n_4gFYar05RIl813OXnng==
+    legacyNativeLibraryDir=/data/app/~~RD2822Hxl2tqmLF-ocHxFQ==/com.kms.free-_n_4gFYar05RIl813OXnng==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=30429 minSdk=19 targetSdk=29
+    minExtensionVersions=[]
+    versionName=11.76.4.6357
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.VIEW dat=https:/... }]
+    dataDir=/data/user/0/com.kms.free
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 16:34:42
+    lastUpdateTime=2022-11-30 16:34:45
+    packageSource=0
+    signatures=PackageSignatures{9d6b140 version:1, signatures:[8a9a359d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.kaspersky.kashell.permission_kisa: prot=signature, INSTALLED
+      com.kms.free.permission.PROCESS_PUSH_MSG: prot=signature, INSTALLED
+      com.kms.free.permission.PUSH_PROVIDER: prot=signature, INSTALLED
+      com.kms.free.permission.PUSH_WRITE_PROVIDER: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.READ_SMS
+      android.permission.WRITE_SMS
+      android.permission.RECEIVE_SMS
+      android.permission.READ_CONTACTS
+      android.permission.WRITE_CONTACTS
+      android.permission.READ_PHONE_STATE
+      android.permission.CALL_PHONE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.SUBSCRIBED_FEEDS_READ
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.WRITE_SETTINGS
+      android.permission.INTERNET
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.SET_PREFERRED_APPLICATIONS
+      android.permission.KILL_BACKGROUND_PROCESSES
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.RESTART_PACKAGES
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.GET_ACCOUNTS
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.VIBRATE
+      android.permission.READ_LOGS
+      android.permission.GET_TASKS
+      android.permission.EXPAND_STATUS_BAR
+      com.android.browser.permission.READ_HISTORY_BOOKMARKS
+      com.android.browser.permission.WRITE_HISTORY_BOOKMARKS
+      android.permission.CAMERA
+      android.permission.USE_FACERECOGNITION
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      android.permission.BATTERY_STATS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.USE_FINGERPRINT
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.REORDER_TASKS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.GET_PACKAGE_SIZE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+      com.kms.free.permission.PROCESS_PUSH_MSG
+      com.kms.free.permission.PUSH_PROVIDER
+      com.android.vending.BILLING
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.RESTART_PACKAGES: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.SUBSCRIBED_FEEDS_READ: granted=true
+      android.permission.EXPAND_STATUS_BAR: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      com.kms.free.permission.PROCESS_PUSH_MSG: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.android.browser.permission.READ_HISTORY_BOOKMARKS: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.WRITE_SMS: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      com.kms.free.permission.PUSH_PROVIDER: granted=true
+      com.android.browser.permission.WRITE_HISTORY_BOOKMARKS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=72015 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 16:34:45
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECEIVE_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        com.kaspersky.whocalls.services.WhoCallsService
+        com.kaspersky.whocalls.services.IncomingCallReceiver
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.kms.free
+    com.google.android.apps.diagnosticstool:
+      com.kms.free
+    com.google.android.settings.intelligence:
+      com.kms.free
+    com.google.android.youtube:
+      com.kms.free
+    com.google.android.contacts:
+      com.kms.free
+    com.google.android.apps.accessibility.voiceaccess:
+      com.kms.free
+    com.google.android.gm:
+      com.kms.free
+    com.truecaller:
+      com.kms.free
+    com.kms.free:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      com.mobisystems.office
+      com.dv.adm
+      com.utorrent.client.pro
+    com.dv.adm:
+      com.kms.free
+    com.zappcues.gamingmode:
+      com.kms.free
+    com.jio.myjio:
+      com.kms.free
+  queryable via interaction:
+    User 0:
+      [com.android.wallpaperbackup,com.android.location.fused,com.android.keychain,android,com.android.qns,com.google.SSRestartDetector,com.android.providers.settings,com.android.inputdevices,com.android.server.telecom,com.android.settings,com.android.dynsystem,com.android.localtransport,com.google.android.iwlan,com.google.android.settings.future.biometrics.faceenroll]:
+        com.kms.free
+      [com.google.android.gms,com.google.android.gsf]:
+        com.kms.free
+  queryable via uses-library:
+
+Dexopt state:
+  [com.kms.free]
+    path: /data/app/~~RD2822Hxl2tqmLF-ocHxFQ==/com.kms.free-_n_4gFYar05RIl813OXnng==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:133513
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.kms.free]
+     base.apk - 1134

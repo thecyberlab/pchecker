@@ -1,0 +1,266 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        22dee6d com.flightradar24free/.links.DeepLinksActivity filter 181eaa2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.fr24.com": -1
+          Authority: "fr24.com": -1
+          Authority: "www.flightradar24.com": -1
+          Path: "PatternMatcher{PREFIX: /}"
+          AutoVerify=true
+      https:
+        22dee6d com.flightradar24free/.links.DeepLinksActivity filter 181eaa2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.fr24.com": -1
+          Authority: "fr24.com": -1
+          Authority: "www.flightradar24.com": -1
+          Path: "PatternMatcher{PREFIX: /}"
+          AutoVerify=true
+      fbconnect:
+        51a7333 com.flightradar24free/com.facebook.CustomTabActivity filter 7cec6f0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.flightradar24free": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        2e22497 com.flightradar24free/.SplashActivity filter 539c684
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.SEARCH:
+        e28031 com.flightradar24free/.MainActivity filter a65b316
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        fe715ab com.flightradar24free/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter b408408
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        ed37e25 com.flightradar24free/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 61a2bfa
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.flightradar24.DELETE_NOTIFICATIONS_INTENT:
+        1480469 com.flightradar24free/.gcm.DeleteAlertReceiver filter f380eee
+          Action: "com.flightradar24.DELETE_NOTIFICATIONS_INTENT"
+      android.intent.action.BOOT_COMPLETED:
+        97f0f8f com.flightradar24free/.service.geofence.GeofenceUpdateReceiver filter 971621c
+          Action: "android.intent.action.BOOT_COMPLETED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        8e2d7a1 com.flightradar24free/.gcm.FCMReceiver filter dcf0dc6
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        47f6187 com.flightradar24free/com.google.firebase.messaging.FirebaseMessagingService filter f5dd8b4
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.flightradar24free:
+    ID: f31081cc-b164-4277-847c-53297b218a4f
+    Signatures: [46:48:13:2F:A0:A6:F2:68:71:7A:A3:D2:43:6F:75:0A:63:C5:27:2A:50:E7:6D:D7:18:95:91:F8:37:07:DF:EC]
+    Domain verification state:
+      www.flightradar24.com: none
+      www.fr24.com: none
+      fr24.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.flightradar24.com
+          www.fr24.com
+          fr24.com
+
+Registered ContentProviders:
+  com.flightradar24free/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{8fca46b com.flightradar24free/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.flightradar24free/androidx.core.content.FileProvider:
+    Provider{36ccbc8 com.flightradar24free/androidx.core.content.FileProvider}
+  com.flightradar24free/.contentproviders.SearchSuggestionContentProvider:
+    Provider{19e461 com.flightradar24free/.contentproviders.SearchSuggestionContentProvider}
+  com.flightradar24free/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{2a1fb86 com.flightradar24free/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.flightradar24free/com.squareup.picasso.PicassoProvider:
+    Provider{93f1c47 com.flightradar24free/com.squareup.picasso.PicassoProvider}
+  com.flightradar24free/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{66dc74 com.flightradar24free/com.google.firebase.provider.FirebaseInitProvider}
+  com.flightradar24free/com.facebook.internal.FacebookInitProvider:
+    Provider{8af659d com.flightradar24free/com.facebook.internal.FacebookInitProvider}
+  com.flightradar24free/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{8124a12 com.flightradar24free/com.facebook.ads.AudienceNetworkContentProvider}
+
+ContentProvider Authorities:
+  [com.flightradar24free.firebaseperfprovider]:
+    Provider{2a1fb86 com.flightradar24free/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{e4735e3 com.flightradar24free}
+  [com.flightradar24free.com.squareup.picasso]:
+    Provider{93f1c47 com.flightradar24free/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{74f4be0 com.flightradar24free}
+  [com.flightradar24free.AudienceNetworkContentProvider]:
+    Provider{8124a12 com.flightradar24free/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{521be99 com.flightradar24free}
+  [com.flightradar24.fileprovider]:
+    Provider{36ccbc8 com.flightradar24free/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{ac6f55e com.flightradar24free}
+  [com.flightradar24free.firebaseinitprovider]:
+    Provider{66dc74 com.flightradar24free/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{a2d4d3f com.flightradar24free}
+  [com.flightradar24free.FacebookInitProvider]:
+    Provider{8af659d com.flightradar24free/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{8d460c com.flightradar24free}
+  [com.flightradar24free.contentproviders.SearchSuggestionContentProvider]:
+    Provider{19e461 com.flightradar24free/.contentproviders.SearchSuggestionContentProvider}
+      applicationInfo=ApplicationInfo{c6ab55 com.flightradar24free}
+  [com.flightradar24free.mobileadsinitprovider]:
+    Provider{8fca46b com.flightradar24free/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{589096a com.flightradar24free}
+
+Key Set Manager:
+  [com.flightradar24free]
+      Signing KeySets: 4835
+
+Packages:
+  Package [com.flightradar24free] (1ceb6f8):
+    userId=10254
+    pkg=Package{c93a7d1 com.flightradar24free}
+    codePath=/data/app/~~ICZVuVV58jLDstgX8gbbzQ==/com.flightradar24free-PzPsk0sTE2t5dgxJDzMQqw==
+    resourcePath=/data/app/~~ICZVuVV58jLDstgX8gbbzQ==/com.flightradar24free-PzPsk0sTE2t5dgxJDzMQqw==
+    legacyNativeLibraryDir=/data/app/~~ICZVuVV58jLDstgX8gbbzQ==/com.flightradar24free-PzPsk0sTE2t5dgxJDzMQqw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=81020961 minSdk=19 targetSdk=29
+    minExtensionVersions=[]
+    versionName=8.10.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.flightradar24free
+    supportsScreens=[medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 10:14:52
+    lastUpdateTime=2022-11-30 10:14:53
+    packageSource=0
+    signatures=PackageSignatures{3a1a537 version:2, signatures:[cb28d00d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.CAMERA
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_STATE
+      com.android.vending.BILLING
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.ACCESS_COARSE_LOCATION
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=44608 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 10:14:53
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.flightradar24free
+    com.google.android.apps.diagnosticstool:
+      com.flightradar24free
+    com.google.android.settings.intelligence:
+      com.flightradar24free
+    com.google.android.GoogleCamera:
+      com.flightradar24free
+    com.google.android.apps.accessibility.voiceaccess:
+      com.flightradar24free
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.flightradar24free]
+    path: /data/app/~~ICZVuVV58jLDstgX8gbbzQ==/com.flightradar24free-PzPsk0sTE2t5dgxJDzMQqw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:483073
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.flightradar24free]
+     base.apk - 594

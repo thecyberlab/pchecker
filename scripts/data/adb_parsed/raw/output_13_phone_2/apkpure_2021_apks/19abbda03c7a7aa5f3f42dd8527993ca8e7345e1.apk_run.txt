@@ -1,0 +1,278 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        92a854d my.trevo.trevoapp/.MainActivity filter f371513
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "branch.trevo.my": -1
+          Authority: "go.trevo.my": -1
+          Authority: "75r8-alternate.app.link": -1
+          AutoVerify=true
+      trevo:
+        92a854d my.trevo.trevoapp/.MainActivity filter 291f350
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "trevo"
+          Authority: "open": -1
+      fbconnect:
+        272949 my.trevo.trevoapp/com.facebook.CustomTabActivity filter 6b7024e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.my.trevo.trevoapp": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        92a854d my.trevo.trevoapp/.MainActivity filter 2466802
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.QUICKBOOT_POWERON:
+        cfa138b my.trevo.trevoapp/com.onesignal.BootUpReceiver filter f0dc68
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        a745bbd my.trevo.trevoapp/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 8acd5b2
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        4f3ef6f my.trevo.trevoapp/com.learnium.RNDeviceInfo.RNDeviceReceiver filter daaf47c
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        c301105 my.trevo.trevoapp/com.onesignal.GcmBroadcastReceiver filter 484f55a
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "my.trevo.trevoapp"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        1f45d67 my.trevo.trevoapp/com.google.firebase.iid.FirebaseInstanceIdReceiver filter e2b5714
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        cfa138b my.trevo.trevoapp/com.onesignal.BootUpReceiver filter f0dc68
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        a25b881 my.trevo.trevoapp/com.onesignal.UpgradeReceiver filter 50d0d26
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        45f6903 my.trevo.trevoapp/com.google.firebase.messaging.FirebaseMessagingService filter 9f0d080
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  my.trevo.trevoapp:
+    ID: aef904f3-9969-40d3-b8f5-97c90bee098b
+    Signatures: [C8:9A:C3:FB:F8:56:81:07:BC:BB:6D:48:F7:E7:94:64:FD:8C:A6:4B:9F:73:FF:CD:2C:93:12:6D:8A:2E:66:B3]
+    Domain verification state:
+      go.trevo.my: 1024
+      75r8-alternate.app.link: 1024
+      branch.trevo.my: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          go.trevo.my
+          75r8-alternate.app.link
+          branch.trevo.my
+
+Permissions:
+  Permission [my.trevo.trevoapp.permission.C2D_MESSAGE] (d66c48f):
+    sourcePackage=my.trevo.trevoapp
+    uid=10247 gids=[] type=0 prot=signature
+    perm=PermissionInfo{6a3e8aa my.trevo.trevoapp.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  my.trevo.trevoapp/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{22a0c9b my.trevo.trevoapp/com.crashlytics.android.CrashlyticsInitProvider}
+  my.trevo.trevoapp/com.imagepicker.FileProvider:
+    Provider{6a0c838 my.trevo.trevoapp/com.imagepicker.FileProvider}
+  my.trevo.trevoapp/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{2c68011 my.trevo.trevoapp/com.google.firebase.provider.FirebaseInitProvider}
+  my.trevo.trevoapp/com.facebook.internal.FacebookInitProvider:
+    Provider{7afe576 my.trevo.trevoapp/com.facebook.internal.FacebookInitProvider}
+  my.trevo.trevoapp/com.reactnativecommunity.webview.RNCWebViewFileProvider:
+    Provider{d12d777 my.trevo.trevoapp/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+  my.trevo.trevoapp/io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider:
+    Provider{bb62fe4 my.trevo.trevoapp/io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider}
+  my.trevo.trevoapp/androidx.core.content.FileProvider:
+    Provider{d820c4d my.trevo.trevoapp/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [my.trevo.trevoapp.provider]:
+    Provider{6a0c838 my.trevo.trevoapp/com.imagepicker.FileProvider}
+      applicationInfo=ApplicationInfo{a3f731c my.trevo.trevoapp}
+  [my.trevo.trevoapp.crashlyticsinitprovider]:
+    Provider{22a0c9b my.trevo.trevoapp/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{5bebb25 my.trevo.trevoapp}
+  [my.trevo.trevoapp.reactnativefirebasecrashlyticsinitprovider]:
+    Provider{bb62fe4 my.trevo.trevoapp/io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{2d924fa my.trevo.trevoapp}
+  [my.trevo.trevoapp.fileprovider]:
+    Provider{d12d777 my.trevo.trevoapp/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+      applicationInfo=ApplicationInfo{3151aab my.trevo.trevoapp}
+  [my.trevo.trevoapp.firebaseinitprovider]:
+    Provider{2c68011 my.trevo.trevoapp/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{95ea508 my.trevo.trevoapp}
+  [my.trevo.trevoapp.FacebookInitProvider]:
+    Provider{7afe576 my.trevo.trevoapp/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{fc4e4a1 my.trevo.trevoapp}
+
+Key Set Manager:
+  [my.trevo.trevoapp]
+      Signing KeySets: 5193
+
+Packages:
+  Package [my.trevo.trevoapp] (a0496c6):
+    userId=10247
+    pkg=Package{5117805 my.trevo.trevoapp}
+    codePath=/data/app/~~WFFaM7Mr3dZFvPBMF2OgBA==/my.trevo.trevoapp-H0HpgweqMkb7R-jZwzxSvg==
+    resourcePath=/data/app/~~WFFaM7Mr3dZFvPBMF2OgBA==/my.trevo.trevoapp-H0HpgweqMkb7R-jZwzxSvg==
+    legacyNativeLibraryDir=/data/app/~~WFFaM7Mr3dZFvPBMF2OgBA==/my.trevo.trevoapp-H0HpgweqMkb7R-jZwzxSvg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=85 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=1.3.5
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/my.trevo.trevoapp
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 11:58:30
+    lastUpdateTime=2022-11-30 11:58:31
+    packageSource=0
+    signatures=PackageSignatures{3dfd05a version:2, signatures:[d6607d4e], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      my.trevo.trevoapp.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.CAMERA
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.c2dm.permission.RECEIVE
+      my.trevo.trevoapp.permission.C2D_MESSAGE
+      android.permission.WAKE_LOCK
+      android.permission.VIBRATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_PHONE_STATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      my.trevo.trevoapp.permission.C2D_MESSAGE: granted=true
+    User 0: ceDataInode=54629 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 11:58:31
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      my.trevo.trevoapp
+    com.google.android.apps.diagnosticstool:
+      my.trevo.trevoapp
+    com.google.android.settings.intelligence:
+      my.trevo.trevoapp
+    com.google.android.apps.accessibility.voiceaccess:
+      my.trevo.trevoapp
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.localtransport,com.android.qns,com.android.keychain,com.android.providers.settings,com.android.location.fused,com.android.wallpaperbackup,com.google.android.iwlan,com.android.inputdevices,com.android.settings,android,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem]:
+        my.trevo.trevoapp
+      [com.google.android.gms,com.google.android.gsf]:
+        my.trevo.trevoapp
+  queryable via uses-library:
+
+Dexopt state:
+  [my.trevo.trevoapp]
+    path: /data/app/~~WFFaM7Mr3dZFvPBMF2OgBA==/my.trevo.trevoapp-H0HpgweqMkb7R-jZwzxSvg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:57045
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [my.trevo.trevoapp]
+     base.apk - 565

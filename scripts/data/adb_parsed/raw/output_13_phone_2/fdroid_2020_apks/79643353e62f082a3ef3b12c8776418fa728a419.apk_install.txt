@@ -1,0 +1,308 @@
+Activity Resolver Table:
+  Full MIME Types:
+      text/*:
+        35ffd44 it.niedermann.owncloud.notes/.AppendToNoteActivity filter 5a1be2d
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        19ddf62 it.niedermann.owncloud.notes/.edit.EditNoteActivity filter e891029
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      text/plain:
+        19ddf62 it.niedermann.owncloud.notes/.edit.EditNoteActivity filter 21428f3
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        19ddf62 it.niedermann.owncloud.notes/.edit.EditNoteActivity filter 601a9b0
+          Action: "com.google.android.gm.action.AUTO_SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Base MIME Types:
+      text:
+        19ddf62 it.niedermann.owncloud.notes/.edit.EditNoteActivity filter 21428f3
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        19ddf62 it.niedermann.owncloud.notes/.edit.EditNoteActivity filter 601a9b0
+          Action: "com.google.android.gm.action.AUTO_SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Wild MIME Types:
+      text:
+        35ffd44 it.niedermann.owncloud.notes/.AppendToNoteActivity filter 5a1be2d
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        19ddf62 it.niedermann.owncloud.notes/.edit.EditNoteActivity filter e891029
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      content:
+        19ddf62 it.niedermann.owncloud.notes/.edit.EditNoteActivity filter e891029
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        ab67f98 it.niedermann.owncloud.notes/.SplashscreenActivity filter 224d3f1
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        bfe8fae it.niedermann.owncloud.notes/.widget.singlenote.SingleNoteWidgetConfigurationActivity filter 9be614f
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        9cfb0dc it.niedermann.owncloud.notes/.widget.notelist.NoteListWidgetConfigurationActivity filter b7985e5
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      android.intent.action.SEARCH:
+        fa7dbd6 it.niedermann.owncloud.notes/.main.MainActivity filter cf7fe57
+          Action: "android.intent.action.SEARCH"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        35ffd44 it.niedermann.owncloud.notes/.AppendToNoteActivity filter 5a1be2d
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        19ddf62 it.niedermann.owncloud.notes/.edit.EditNoteActivity filter 21428f3
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+      android.intent.action.VIEW:
+        19ddf62 it.niedermann.owncloud.notes/.edit.EditNoteActivity filter e891029
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      com.google.android.gm.action.AUTO_SEND:
+        19ddf62 it.niedermann.owncloud.notes/.edit.EditNoteActivity filter 601a9b0
+          Action: "com.google.android.gm.action.AUTO_SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        e512 it.niedermann.owncloud.notes/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 41934e3
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        ddf3f74 it.niedermann.owncloud.notes/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 51b8c9d
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        76adee0 it.niedermann.owncloud.notes/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 9a95599
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        284405e it.niedermann.owncloud.notes/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 4a03c3f
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        76adee0 it.niedermann.owncloud.notes/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 9a95599
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        e512 it.niedermann.owncloud.notes/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 41934e3
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        24f090c it.niedermann.owncloud.notes/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bb0b255
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        24f090c it.niedermann.owncloud.notes/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bb0b255
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        24f090c it.niedermann.owncloud.notes/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bb0b255
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        ddf3f74 it.niedermann.owncloud.notes/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 51b8c9d
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        da7f8ba it.niedermann.owncloud.notes/.widget.createnote.CreateNoteWidget filter 829c36b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        314fec8 it.niedermann.owncloud.notes/.widget.singlenote.SingleNoteWidget filter c419b61
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        34ce686 it.niedermann.owncloud.notes/.widget.notelist.NoteListWidget filter 79f2b47
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        350046a it.niedermann.owncloud.notes/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter e665d5b
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        169a9f8 it.niedermann.owncloud.notes/.quicksettings.NewNoteTileService filter 9971ed1 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+
+Domain verification status:
+
+Registered ContentProviders:
+  it.niedermann.owncloud.notes/androidx.work.impl.WorkManagerInitializer:
+    Provider{c4cd51f it.niedermann.owncloud.notes/androidx.work.impl.WorkManagerInitializer}
+
+ContentProvider Authorities:
+  [it.niedermann.owncloud.notes.workmanager-init]:
+    Provider{c4cd51f it.niedermann.owncloud.notes/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{aa0606c it.niedermann.owncloud.notes}
+
+Key Set Manager:
+  [it.niedermann.owncloud.notes]
+      Signing KeySets: 6733
+
+Packages:
+  Package [it.niedermann.owncloud.notes] (3322635):
+    userId=10639
+    pkg=Package{5fc9aca it.niedermann.owncloud.notes}
+    codePath=/data/app/~~5a0zL95vsoKCzFnuQJo_BQ==/it.niedermann.owncloud.notes-7qH-Wq7BTGjTkVtdkdLR8Q==
+    resourcePath=/data/app/~~5a0zL95vsoKCzFnuQJo_BQ==/it.niedermann.owncloud.notes-7qH-Wq7BTGjTkVtdkdLR8Q==
+    legacyNativeLibraryDir=/data/app/~~5a0zL95vsoKCzFnuQJo_BQ==/it.niedermann.owncloud.notes-7qH-Wq7BTGjTkVtdkdLR8Q==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2016004 minSdk=17 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2.16.4
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/it.niedermann.owncloud.notes
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 21:09:21
+    lastUpdateTime=2022-11-30 21:09:22
+    packageSource=0
+    signatures=PackageSignatures{5f3a43b version:1, signatures:[a492fa60], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.GET_ACCOUNTS
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=103812 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 21:09:22
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.diagnosticstool:
+      it.niedermann.owncloud.notes
+    com.google.android.settings.intelligence:
+      it.niedermann.owncloud.notes
+    com.google.android.GoogleCamera:
+      it.niedermann.owncloud.notes
+    com.google.android.apps.maps:
+      it.niedermann.owncloud.notes
+    com.google.android.apps.photos:
+      it.niedermann.owncloud.notes
+    com.google.android.youtube:
+      it.niedermann.owncloud.notes
+    com.google.android.apps.docs:
+      it.niedermann.owncloud.notes
+    com.google.android.apps.accessibility.voiceaccess:
+      it.niedermann.owncloud.notes
+    com.google.android.apps.youtube.music:
+      it.niedermann.owncloud.notes
+    com.google.android.gm:
+      it.niedermann.owncloud.notes
+    com.zhiliaoapp.musically:
+      it.niedermann.owncloud.notes
+    com.truecaller:
+      it.niedermann.owncloud.notes
+    deezer.android.app:
+      it.niedermann.owncloud.notes
+    com.duolingo:
+      it.niedermann.owncloud.notes
+    vsin.t16_funny_photo:
+      it.niedermann.owncloud.notes
+    com.shazam.android:
+      it.niedermann.owncloud.notes
+    com.dv.adm:
+      it.niedermann.owncloud.notes
+    com.zappcues.gamingmode:
+      it.niedermann.owncloud.notes
+    com.cam001.selfie:
+      it.niedermann.owncloud.notes
+    com.jio.myjio:
+      it.niedermann.owncloud.notes
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [it.niedermann.owncloud.notes]
+    path: /data/app/~~5a0zL95vsoKCzFnuQJo_BQ==/it.niedermann.owncloud.notes-7qH-Wq7BTGjTkVtdkdLR8Q==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:976166
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [it.niedermann.owncloud.notes]
+     base.apk - 359

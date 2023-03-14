@@ -1,0 +1,294 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        7cf82d0 uk.co.eyms/com.wearebase.puffin.mobileticketingui.features.vouchers.activity.VoucherRedeemActivity filter a1642c9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.eastyorkshirebuses.co.uk": -1
+          Path: "PatternMatcher{PREFIX: /redeem-voucher}"
+          AutoVerify=true
+      https:
+        7cf82d0 uk.co.eyms/com.wearebase.puffin.mobileticketingui.features.vouchers.activity.VoucherRedeemActivity filter a1642c9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.eastyorkshirebuses.co.uk": -1
+          Path: "PatternMatcher{PREFIX: /redeem-voucher}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        232d4b8 uk.co.eyms/com.passenger.LaunchActivity filter ac4d291
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        df1fbfc uk.co.eyms/com.wearebase.framework.ui.DesignDemoActivity filter bb74285
+          Action: "android.intent.action.MAIN"
+        b2a08da uk.co.eyms/com.wearebase.framework.navigationdrawer.about.AboutActivity filter 234610b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        b1c05f6 uk.co.eyms/com.wearebase.moose.mooseui.features.widget.favouritestop.FavouriteStopWidgetConfigureActivity filter 703adf7
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        f9c8464 uk.co.eyms/com.wearebase.moose.mooseui.features.widget.savedjourney.SavedJourneyWidgetConfigureActivity filter f5306cd
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        1fa8b82 uk.co.eyms/com.wearebase.moose.mooseui.features.widget.timetable.FavouriteTimetableWidgetConfigureActivity filter 6bb3293
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        449ddce uk.co.eyms/com.wearebase.puffin.mobileticketingui.features.widget.tickets.TicketWidgetConfigureActivity filter 5c64ef
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.android.vending.INSTALL_REFERRER:
+        1cf567e uk.co.eyms/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 51667df
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        3aa5c2c uk.co.eyms/com.google.firebase.iid.FirebaseInstanceIdReceiver filter da6d6f5
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        f60dbe8 uk.co.eyms/com.wearebase.moose.mooseui.features.notifications.MooseBackgroundServiceStarter filter cae8201
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Category: "android.intent.category.DEFAULT"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        fafd8a6 uk.co.eyms/com.wearebase.moose.mooseui.features.widget.favouritestop.FavouriteStopWidgetProvider filter 84602e7
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        5bce94 uk.co.eyms/com.wearebase.moose.mooseui.features.widget.savedjourney.SavedJourneyWidgetProvider filter a803d3d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        570d932 uk.co.eyms/com.wearebase.moose.mooseui.features.widget.timetable.FavouriteTimetableWidgetProvider filter 1e5e683
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        7714000 uk.co.eyms/com.wearebase.puffin.mobileticketingui.features.widget.tickets.TicketWidgetProvider filter cb87039
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        c065c8a uk.co.eyms/com.wearebase.moose.watchapi.service.WatchListenerService filter ba3a2fb
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /moose/request/favourite_stops}"
+        c065c8a uk.co.eyms/com.wearebase.moose.watchapi.service.WatchListenerService filter 9770f18
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /moose/request/nearby_stops}"
+        c065c8a uk.co.eyms/com.wearebase.moose.watchapi.service.WatchListenerService filter 2daed71
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /moose/request/departures}"
+        1f5b756 uk.co.eyms/com.wearebase.moose.watchapi.service.PhoneListenerService filter 5ff73d7
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /moose/request/error}"
+        1f5b756 uk.co.eyms/com.wearebase.moose.watchapi.service.PhoneListenerService filter 25a04c4
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /moose/request/proximity_notification}"
+        1f5b756 uk.co.eyms/com.wearebase.moose.watchapi.service.PhoneListenerService filter 15fefad
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /moose/response/favourite_stops}"
+        1f5b756 uk.co.eyms/com.wearebase.moose.watchapi.service.PhoneListenerService filter dadf2e2
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /moose/response/nearby_stops}"
+        1f5b756 uk.co.eyms/com.wearebase.moose.watchapi.service.PhoneListenerService filter fdd7673
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /moose/response/departures}"
+        1f5b756 uk.co.eyms/com.wearebase.moose.watchapi.service.PhoneListenerService filter b54a930
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /moose/response/stop}"
+
+  Non-Data Actions:
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        11f40eb uk.co.eyms/com.firebase.jobdispatcher.GooglePlayReceiver filter d86e48 permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.firebase.jobdispatcher.ACTION_EXECUTE:
+        9b8d9a9 uk.co.eyms/com.wearebase.puffin.mobileticketingui.features.notifications.tickets.HeartbeatJobService filter 7bc5b2e
+          Action: "com.firebase.jobdispatcher.ACTION_EXECUTE"
+        28f06cf uk.co.eyms/com.wearebase.puffin.mobileticketingui.features.notifications.tickets.ExpiredTicketNotificationJobService filter e13285c
+          Action: "com.firebase.jobdispatcher.ACTION_EXECUTE"
+        79c6765 uk.co.eyms/com.wearebase.puffin.mobileticketingui.features.notifications.tickets.HeartbeatNotificationJobService filter 236fc3a
+          Action: "com.firebase.jobdispatcher.ACTION_EXECUTE"
+
+Domain verification status:
+  uk.co.eyms:
+    ID: 3b2007e8-f8e7-4c48-8c5c-0065a26c2a9f
+    Signatures: [AA:BB:26:6C:0B:A6:47:12:05:E9:BD:01:11:67:0F:4E:DB:46:05:52:0E:9D:B4:AB:0E:F0:BC:B7:9E:49:C1:6F]
+    Domain verification state:
+      www.eastyorkshirebuses.co.uk: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.eastyorkshirebuses.co.uk
+
+Registered ContentProviders:
+  uk.co.eyms/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{c15cdfa uk.co.eyms/com.crashlytics.android.CrashlyticsInitProvider}
+  uk.co.eyms/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{3670fab uk.co.eyms/com.google.firebase.provider.FirebaseInitProvider}
+  uk.co.eyms/com.readystatesoftware.chuck.internal.data.ChuckContentProvider:
+    Provider{2e9f608 uk.co.eyms/com.readystatesoftware.chuck.internal.data.ChuckContentProvider}
+
+ContentProvider Authorities:
+  [uk.co.eyms.chuck.provider]:
+    Provider{2e9f608 uk.co.eyms/com.readystatesoftware.chuck.internal.data.ChuckContentProvider}
+      applicationInfo=ApplicationInfo{8c461a1 uk.co.eyms}
+  [uk.co.eyms.crashlyticsinitprovider]:
+    Provider{c15cdfa uk.co.eyms/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{4e2cfc6 uk.co.eyms}
+  [uk.co.eyms.firebaseinitprovider]:
+    Provider{3670fab uk.co.eyms/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{904fb87 uk.co.eyms}
+
+Key Set Manager:
+  [uk.co.eyms]
+      Signing KeySets: 5078
+
+Packages:
+  Package [uk.co.eyms] (12c2252):
+    userId=10248
+    pkg=Package{fabc923 uk.co.eyms}
+    codePath=/data/app/~~p_pPZ5PdEEXus0r7dCtQxA==/uk.co.eyms-G3jhv1WAvbqPPK5AZPcCuA==
+    resourcePath=/data/app/~~p_pPZ5PdEEXus0r7dCtQxA==/uk.co.eyms-G3jhv1WAvbqPPK5AZPcCuA==
+    legacyNativeLibraryDir=/data/app/~~p_pPZ5PdEEXus0r7dCtQxA==/uk.co.eyms-G3jhv1WAvbqPPK5AZPcCuA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=5226 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=30.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/uk.co.eyms
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      com.google.android.wearable
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 11:46:31
+    lastUpdateTime=2022-11-30 11:46:32
+    packageSource=0
+    signatures=PackageSignatures{676a3d9 version:2, signatures:[fa698bfa], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.NFC
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.CAMERA
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.VIBRATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+    User 0: ceDataInode=52155 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 11:46:32
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      uk.co.eyms
+    com.google.android.apps.diagnosticstool:
+      uk.co.eyms
+    com.google.android.settings.intelligence:
+      uk.co.eyms
+    com.google.android.apps.accessibility.voiceaccess:
+      uk.co.eyms
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [uk.co.eyms]
+    path: /data/app/~~p_pPZ5PdEEXus0r7dCtQxA==/uk.co.eyms-G3jhv1WAvbqPPK5AZPcCuA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:57901
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [uk.co.eyms]
+     base.apk - 564

@@ -1,0 +1,202 @@
+Activity Resolver Table:
+  Schemes:
+      npf6557cf629b753d86:
+        24d75ee com.nintendo.zaba/com.nintendo.npf.sdk.internal.app.NintendoAccountActivity filter 4c7563e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "npf6557cf629b753d86"
+          Authority: "auth": -1
+        b2ea11c com.nintendo.zaba/com.nintendo.npf.sdk.internal.app.MiiStudioActivity filter 2bbc1ec
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "npf6557cf629b753d86"
+          Authority: "mii_studio": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f995125 com.nintendo.zaba/org.cocos2dx.cpp.AppActivity filter 883c9c0
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        24d75ee com.nintendo.zaba/com.nintendo.npf.sdk.internal.app.NintendoAccountActivity filter 21596f9
+          Action: "android.intent.action.MAIN"
+        b2ea11c com.nintendo.zaba/com.nintendo.npf.sdk.internal.app.MiiStudioActivity filter 71acc9f
+          Action: "android.intent.action.MAIN"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.android.vending.INSTALL_REFERRER:
+        29f02fa com.nintendo.zaba/com.adjust.sdk.AdjustReferrerReceiver filter 78fa9b5
+          Action: "com.android.vending.INSTALL_REFERRER"
+        7f8a0ab com.nintendo.zaba/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 4de984a
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        512b308 com.nintendo.zaba/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 86993bb
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.nintendo.zaba"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        bb2daa1 com.nintendo.zaba/com.google.firebase.iid.FirebaseInstanceIdService filter c5e2c31
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+        34a54c6 com.nintendo.zaba/com.google.firebase.messaging.cpp.FcmInstanceIDListenerService filter 613b097
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+      com.google.firebase.MESSAGING_EVENT:
+        39e9c87 com.nintendo.zaba/com.google.firebase.messaging.FirebaseMessagingService filter d9910d8
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+        5a3f7b4 com.nintendo.zaba/com.google.firebase.messaging.cpp.ListenerService filter 475ef16
+          Action: "com.google.firebase.MESSAGING_EVENT"
+
+Permissions:
+  Permission [com.nintendo.zaba.permission.C2D_MESSAGE] (5817fdd):
+    sourcePackage=com.nintendo.zaba
+    uid=10188 gids=null type=0 prot=signature
+    perm=Permission{f06f752 com.nintendo.zaba.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{be7a23 com.nintendo.zaba/10188}
+
+Registered ContentProviders:
+  com.nintendo.zaba/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{462db20 com.nintendo.zaba/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.nintendo.zaba.firebaseinitprovider]:
+    Provider{462db20 com.nintendo.zaba/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{79b3cd9 com.nintendo.zaba}
+
+Key Set Manager:
+  [com.nintendo.zaba]
+      Signing KeySets: 361
+
+Packages:
+  Package [com.nintendo.zaba] (be7a23):
+    userId=10188
+    pkg=Package{e697f43 com.nintendo.zaba}
+    codePath=/data/app/com.nintendo.zaba-gyQmWZbzi79Yzo7N8IW1wQ==
+    resourcePath=/data/app/com.nintendo.zaba-gyQmWZbzi79Yzo7N8IW1wQ==
+    legacyNativeLibraryDir=/data/app/com.nintendo.zaba-gyQmWZbzi79Yzo7N8IW1wQ==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=566291 minSdk=19 targetSdk=29
+    versionName=4.9.0
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{79b3cd9 com.nintendo.zaba}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE ]
+    dataDir=/data/user/0/com.nintendo.zaba
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.test.mock
+      android.test.runner
+    usesLibraryFiles:
+      /system/framework/android.test.mock.jar
+      /system/framework/android.test.runner.jar
+    timeStamp=2021-03-06 08:26:43
+    firstInstallTime=2021-03-06 08:26:46
+    lastUpdateTime=2021-03-06 08:26:46
+    signatures=PackageSignatures{279369e version:1, signatures:[6743904c], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      com.nintendo.zaba.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      com.android.vending.BILLING
+      com.android.vending.CHECK_LICENSE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.nintendo.zaba.permission.C2D_MESSAGE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.nintendo.zaba.permission.C2D_MESSAGE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=12848 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+
+Package Changes:
+  Sequence number=101
+  User 0:
+    seq=1, package=com.studioeleven.windfinder
+    seq=8, package=com.google.android.gms
+    seq=9, package=de.motain.iliga
+    seq=11, package=com.microsoft.office.word
+    seq=13, package=video.like
+    seq=15, package=com.netflix.mediaclient
+    seq=19, package=com.agilebits.onepassword
+    seq=21, package=com.rayark.valkyrie
+    seq=23, package=com.aa.generaladaptiveapps
+    seq=25, package=com.ea.gp.fifamobile
+    seq=27, package=com.instagram.igtv
+    seq=29, package=deezer.android.app
+    seq=31, package=com.square_enix.android_googleplay.FFBEWW
+    seq=33, package=com.google.android.calculator
+    seq=35, package=com.gamevilusa.mlbpilive.android.google.global.normal
+    seq=37, package=com.kabam.bigrobot
+    seq=39, package=io.enpass.app
+    seq=41, package=com.adobe.lrmobile
+    seq=43, package=com.vng.g6.a.zombie
+    seq=45, package=com.microblink.photomath
+    seq=47, package=com.scopely.whiplash
+    seq=49, package=com.iudesk.android.photo.editor
+    seq=51, package=com.microsoft.office.officehubrow
+    seq=53, package=com.whatsapp
+    seq=55, package=com.joeware.android.gpulumera
+    seq=57, package=com.anslayer
+    seq=59, package=com.apkupdater
+    seq=62, package=com.android.vending
+    seq=63, package=com.google.android.wearable.app
+    seq=65, package=com.zqlabs.filechef
+    seq=67, package=com.wondershare.filmorago
+    seq=69, package=com.outfit7.mytalkingangelafree
+    seq=71, package=com.truecaller
+    seq=73, package=com.ea.games.r3_row
+    seq=75, package=com.google.ar.lens
+    seq=77, package=com.fusionmedia.investing
+    seq=79, package=com.king.candycrushsodasaga
+    seq=81, package=com.seleuco.mame4droid
+    seq=83, package=com.Slack
+    seq=85, package=com.liquidum.rocketvpn
+    seq=87, package=com.sec.android.easyMover
+    seq=89, package=com.fingersoft.hillclimb
+    seq=91, package=com.cpuid.cpu_z
+    seq=93, package=com.piriform.ccleaner
+    seq=95, package=com.tencent.ibg.joox
+    seq=97, package=com.netease.lztgglobal
+    seq=99, package=com.youthhr.phonto
+    seq=100, package=com.nintendo.zaba
+
+
+Dexopt state:
+  [com.nintendo.zaba]
+    path: /data/app/com.nintendo.zaba-gyQmWZbzi79Yzo7N8IW1wQ==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.nintendo.zaba]
+     base.apk - 4497
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

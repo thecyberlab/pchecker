@@ -1,0 +1,272 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        a30cf23 com.a0soft.gphone.app2sd.pro/.MainWnd filter df70c20
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+        8a219d9 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.wnd.PrefWnd filter 7bb4f9e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        f373a7f com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.widget.circle.WidgetCircleConfWnd filter b90ca4c
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        d117a95 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.widget.group.WidgetGroupConfWnd filter 808c7aa
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        5dc2b11 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.main.PkgChgMgr.PkgChgRecv filter 403b476
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Action: "android.intent.action.PACKAGE_REMOVED"
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Scheme: "package"
+      file:
+        fd3fa77 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.main.SysRecv filter 3c7674d
+          Action: "android.intent.action.MEDIA_MOUNTED"
+          Scheme: "file"
+        fd3fa77 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.main.SysRecv filter feea202
+          Action: "android.intent.action.MEDIA_UNMOUNTED"
+          Scheme: "file"
+        4b02b49 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.widget.circle.WidgetCircleProvider filter 59c16f
+          Action: "android.intent.action.MEDIA_MOUNTED"
+          Scheme: "file"
+        4b02b49 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.widget.circle.WidgetCircleProvider filter a015e7c
+          Action: "android.intent.action.MEDIA_UNMOUNTED"
+          Scheme: "file"
+        4b02b49 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.widget.circle.WidgetCircleProvider filter d473305
+          Action: "android.intent.action.MEDIA_REMOVED"
+          Scheme: "file"
+
+  Non-Data Actions:
+      android.intent.action.QUICKBOOT_POWERON:
+        da50114 com.a0soft.gphone.app2sd.pro/com.evernote.android.job.JobBootReceiver filter f0dbdbd
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        da50114 com.a0soft.gphone.app2sd.pro/com.evernote.android.job.JobBootReceiver filter f0dbdbd
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.a0soft.gphone.app2sd.ActionClearAppCachesFinished:
+        d83c713 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.widget.WidgetProvider filter 375bd50
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.a0soft.gphone.app2sd.widget.AppMgrSrvc.ActionStatusUpdated"
+          Action: "com.a0soft.gphone.app2sd.widget.ActionRefresh"
+          Action: "com.a0soft.gphone.app2sd.ActionClearAppCachesFinished"
+      com.a0soft.gphone.app2sd.widget.AppMgrSrvc.ActionStatusUpdated:
+        d83c713 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.widget.WidgetProvider filter 375bd50
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.a0soft.gphone.app2sd.widget.AppMgrSrvc.ActionStatusUpdated"
+          Action: "com.a0soft.gphone.app2sd.widget.ActionRefresh"
+          Action: "com.a0soft.gphone.app2sd.ActionClearAppCachesFinished"
+        4b02b49 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.widget.circle.WidgetCircleProvider filter fa8dc4e
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.a0soft.gphone.app2sd.widget.AppMgrSrvc.ActionStatusUpdated"
+      com.evernote.android.job.v14.RUN_JOB:
+        b202726 com.a0soft.gphone.app2sd.pro/com.evernote.android.job.v14.PlatformAlarmReceiver filter 6026f67
+          Action: "com.evernote.android.job.v14.RUN_JOB"
+          Action: "net.vrallev.android.job.v14.RUN_JOB"
+      android.intent.action.BOOT_COMPLETED:
+        fd3fa77 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.main.SysRecv filter 29c16e4
+          Action: "android.intent.action.BOOT_COMPLETED"
+        da50114 com.a0soft.gphone.app2sd.pro/com.evernote.android.job.JobBootReceiver filter f0dbdbd
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.MY_PACKAGE_SUSPENDED:
+        5d78fb2 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.base.pm.blPackageStatusReceiver filter 3c9b03
+          Action: "android.intent.action.MY_PACKAGE_SUSPENDED"
+          Action: "android.intent.action.MY_PACKAGE_UNSUSPENDED"
+      com.a0soft.gphone.app2sd.widget.ActionRefresh:
+        d83c713 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.widget.WidgetProvider filter 375bd50
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.a0soft.gphone.app2sd.widget.AppMgrSrvc.ActionStatusUpdated"
+          Action: "com.a0soft.gphone.app2sd.widget.ActionRefresh"
+          Action: "com.a0soft.gphone.app2sd.ActionClearAppCachesFinished"
+      android.intent.action.MY_PACKAGE_UNSUSPENDED:
+        5d78fb2 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.base.pm.blPackageStatusReceiver filter 3c9b03
+          Action: "android.intent.action.MY_PACKAGE_SUSPENDED"
+          Action: "android.intent.action.MY_PACKAGE_UNSUSPENDED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        d83c713 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.widget.WidgetProvider filter 375bd50
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.a0soft.gphone.app2sd.widget.AppMgrSrvc.ActionStatusUpdated"
+          Action: "com.a0soft.gphone.app2sd.widget.ActionRefresh"
+          Action: "com.a0soft.gphone.app2sd.ActionClearAppCachesFinished"
+        4b02b49 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.widget.circle.WidgetCircleProvider filter fa8dc4e
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.a0soft.gphone.app2sd.widget.AppMgrSrvc.ActionStatusUpdated"
+        3ba6f5a com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.widget.group.WidgetGroupProvider filter deb058b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      com.evernote.android.job.ADD_JOB_CREATOR:
+        d43e668 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.base.AndroidJob.blAddJobCreatorReceiver filter 28cfa81
+          Action: "com.evernote.android.job.ADD_JOB_CREATOR"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        eff9b com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.base.content.blSelfPkgRecvV12 filter 5263f38
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        da50114 com.a0soft.gphone.app2sd.pro/com.evernote.android.job.JobBootReceiver filter f0dbdbd
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      net.vrallev.android.job.v14.RUN_JOB:
+        b202726 com.a0soft.gphone.app2sd.pro/com.evernote.android.job.v14.PlatformAlarmReceiver filter 6026f67
+          Action: "com.evernote.android.job.v14.RUN_JOB"
+          Action: "net.vrallev.android.job.v14.RUN_JOB"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.accessibilityservice.AccessibilityService:
+        85b1a80 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.acs.AutoAccessSrvc filter fdd78b9 permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.base.content.blFileProvider:
+    Provider{e6b9caf com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.base.content.blFileProvider}
+  com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.main.MultiProcessPreferencesManager:
+    Provider{efea045 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.main.MultiProcessPreferencesManager}
+  com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.bg.ipc.MyBpIpcProvider:
+    Provider{19d739a com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.bg.ipc.MyBpIpcProvider}
+
+ContentProvider Authorities:
+  [com.a0soft.gphone.app2sd.pro.BpIpcProvider]:
+    Provider{19d739a com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.bg.ipc.MyBpIpcProvider}
+      applicationInfo=ApplicationInfo{6f24a8 com.a0soft.gphone.app2sd.pro}
+  [com.a0soft.gphone.app2sd.pro.MultiProcessPreferencesProvider]:
+    Provider{efea045 com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.app2sd.main.MultiProcessPreferencesManager}
+      applicationInfo=ApplicationInfo{e6dfbc1 com.a0soft.gphone.app2sd.pro}
+  [com.a0soft.gphone.app2sd.pro.FileProvider]:
+    Provider{e6b9caf com.a0soft.gphone.app2sd.pro/com.a0soft.gphone.base.content.blFileProvider}
+      applicationInfo=ApplicationInfo{fcf2f66 com.a0soft.gphone.app2sd.pro}
+
+Key Set Manager:
+  [com.a0soft.gphone.app2sd.pro]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.a0soft.gphone.app2sd.pro] (ce5e354):
+    userId=10241
+    pkg=Package{1d92fd com.a0soft.gphone.app2sd.pro}
+    codePath=/data/app/~~dsgTDV94gV_8U-Y-AAVcqQ==/com.a0soft.gphone.app2sd.pro-aaWcAYCZ-kNWItwCL-H2hg==
+    resourcePath=/data/app/~~dsgTDV94gV_8U-Y-AAVcqQ==/com.a0soft.gphone.app2sd.pro-aaWcAYCZ-kNWItwCL-H2hg==
+    legacyNativeLibraryDir=/data/app/~~dsgTDV94gV_8U-Y-AAVcqQ==/com.a0soft.gphone.app2sd.pro-aaWcAYCZ-kNWItwCL-H2hg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=160005319 minSdk=16 targetSdk=30
+    minExtensionVersions=[]
+    versionName=5.31
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.miui.securitycenter, com.miui.permcenter, com.letv.android.letvsafe, com.asus.mobilemanager, com.huawei.systemmanager, com.coloros.safecenter, com.oppo.safe, com.iqoo.secure, com.vivo.permissionmanager, com.evenwell.powersaving, com.samsung.android, com.oneplus, com.android.settings]
+    queriesIntents=[Intent { act=com.a0soft.gphone.base.blEventBusExt.ActionRemoteEventReceiver }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.a0soft.gphone.app2sd.pro
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 19:39:57
+    lastUpdateTime=2022-11-30 19:39:58
+    packageSource=0
+    signatures=PackageSignatures{34a48ec version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.WAKE_LOCK
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.VIBRATE
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.CLEAR_APP_CACHE
+      android.permission.DELETE_CACHE_FILES
+      android.permission.MOVE_PACKAGE
+      android.permission.WRITE_SETTINGS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=94003 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 19:39:58
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.diagnosticstool:
+      com.a0soft.gphone.app2sd.pro
+    com.google.android.settings.intelligence:
+      com.a0soft.gphone.app2sd.pro
+    com.google.android.apps.accessibility.voiceaccess:
+      com.a0soft.gphone.app2sd.pro
+    com.a0soft.gphone.app2sd.pro:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      ru.iptvremote.android.iptv.pro
+      com.mycompany.app.soulbrowser
+      com.dv.adm
+      com.utorrent.client.pro
+    com.zhiliaoapp.musically:
+      com.a0soft.gphone.app2sd.pro
+    com.truecaller:
+      com.a0soft.gphone.app2sd.pro
+    com.dv.adm:
+      com.a0soft.gphone.app2sd.pro
+    com.zappcues.gamingmode:
+      com.a0soft.gphone.app2sd.pro
+    com.jio.myjio:
+      com.a0soft.gphone.app2sd.pro
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.a0soft.gphone.app2sd.pro]
+    path: /data/app/~~dsgTDV94gV_8U-Y-AAVcqQ==/com.a0soft.gphone.app2sd.pro-aaWcAYCZ-kNWItwCL-H2hg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:38645
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.a0soft.gphone.app2sd.pro]
+     base.apk - 291

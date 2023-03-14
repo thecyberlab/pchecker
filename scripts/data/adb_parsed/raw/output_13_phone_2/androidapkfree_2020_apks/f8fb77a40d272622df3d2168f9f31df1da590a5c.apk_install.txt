@@ -1,0 +1,541 @@
+Activity Resolver Table:
+  Full MIME Types:
+      application/epub+zip:
+        92e3b88 com.google.android.apps.books/com.google.android.apps.play.books.upload.UploadActivityEpub filter 202f921
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "application/epub+zip"
+      application/pdf:
+        49b75e9 com.google.android.apps.books/com.google.android.apps.play.books.app.UploadsActivityAliasPdf filter f54626e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "application/pdf"
+      */*:
+        49b75e9 com.google.android.apps.books/com.google.android.apps.play.books.app.UploadsActivityAliasPdf filter bff9d0f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: /.*\.pdf}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        92e3b88 com.google.android.apps.books/com.google.android.apps.play.books.upload.UploadActivityEpub filter 3b25146
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: /.*\.epub}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Base MIME Types:
+      application:
+        49b75e9 com.google.android.apps.books/com.google.android.apps.play.books.app.UploadsActivityAliasPdf filter f54626e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "application/pdf"
+        92e3b88 com.google.android.apps.books/com.google.android.apps.play.books.upload.UploadActivityEpub filter 202f921
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "application/epub+zip"
+
+  Wild MIME Types:
+      *:
+        49b75e9 com.google.android.apps.books/com.google.android.apps.play.books.app.UploadsActivityAliasPdf filter bff9d0f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: /.*\.pdf}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        92e3b88 com.google.android.apps.books/com.google.android.apps.play.books.upload.UploadActivityEpub filter 3b25146
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: /.*\.epub}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      googlebooks:
+        f884d3b com.google.android.apps.books/com.google.android.apps.play.books.ebook.activity.ReadingActivity filter 68f41b1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlebooks"
+      file:
+        49b75e9 com.google.android.apps.books/com.google.android.apps.play.books.app.UploadsActivityAliasPdf filter bff9d0f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: /.*\.pdf}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        92e3b88 com.google.android.apps.books/com.google.android.apps.play.books.upload.UploadActivityEpub filter 3b25146
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: /.*\.epub}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      http:
+        1f89604 com.google.android.apps.books/com.google.android.apps.play.books.home.HomeActivity filter fa547ed
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Path: "PatternMatcher{LITERAL: /books}"
+          Path: "PatternMatcher{LITERAL: /books/}"
+          Path: "PatternMatcher{LITERAL: /books/home/onboarding}"
+          Path: "PatternMatcher{LITERAL: /books/shop}"
+          Path: "PatternMatcher{LITERAL: /books/shop}"
+          Path: "PatternMatcher{LITERAL: /books/getapp}"
+          Path: "PatternMatcher{LITERAL: /books/getapp}"
+          Path: "PatternMatcher{LITERAL: /books/getapp2}"
+          Path: "PatternMatcher{LITERAL: /books/getapp2}"
+          AutoVerify=true
+        64aa19c com.google.android.apps.books/com.google.android.apps.play.books.onboard.BooksOnboardHostActivity filter 5ac87a5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Authority: "play.google.com": -1
+          Path: "PatternMatcher{LITERAL: /books/onboarding}"
+          AutoVerify=true
+      https:
+        8b8ee1f com.google.android.apps.books/com.google.android.apps.play.books.audiobook.ui.AudiobookActivity filter a45056c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "play.google.com": -1
+          Path: "PatternMatcher{PREFIX: /books/listen}"
+          AutoVerify=true
+        4926735 com.google.android.apps.books/com.google.android.apps.play.books.audiobook.ui.AudiobookTrampolineActivity filter 5c647ca
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Path: "PatternMatcher{PREFIX: /books/ab}"
+          Path: "PatternMatcher{PREFIX: /books/absample}"
+          AutoVerify=true
+        f884d3b com.google.android.apps.books/com.google.android.apps.play.books.ebook.activity.ReadingActivity filter b330c58
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "play.google.com": -1
+          Path: "PatternMatcher{PREFIX: /books/reader}"
+          AutoVerify=true
+        1f89604 com.google.android.apps.books/com.google.android.apps.play.books.home.HomeActivity filter fa547ed
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+          Path: "PatternMatcher{LITERAL: /books}"
+          Path: "PatternMatcher{LITERAL: /books/}"
+          Path: "PatternMatcher{LITERAL: /books/home/onboarding}"
+          Path: "PatternMatcher{LITERAL: /books/shop}"
+          Path: "PatternMatcher{LITERAL: /books/shop}"
+          Path: "PatternMatcher{LITERAL: /books/getapp}"
+          Path: "PatternMatcher{LITERAL: /books/getapp}"
+          Path: "PatternMatcher{LITERAL: /books/getapp2}"
+          Path: "PatternMatcher{LITERAL: /books/getapp2}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        e91696 com.google.android.apps.books/.app.BooksActivity filter 6248217
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.APPLICATION_PREFERENCES:
+        a68377a com.google.android.apps.books/com.google.android.apps.play.books.settings.AppSettingsActivity filter 1a2fb2b
+          Action: "android.intent.action.APPLICATION_PREFERENCES"
+      android.media.action.MEDIA_PLAY_FROM_SEARCH:
+        1f89604 com.google.android.apps.books/com.google.android.apps.play.books.home.HomeActivity filter 3980622
+          Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.CREATE_SHORTCUT:
+        9e528b3 com.google.android.apps.books/com.google.android.apps.play.books.home.BooksShortcutActivity filter 66b0e70
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.VIEW:
+        49b75e9 com.google.android.apps.books/com.google.android.apps.play.books.app.UploadsActivityAliasPdf filter f54626e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "application/pdf"
+        49b75e9 com.google.android.apps.books/com.google.android.apps.play.books.app.UploadsActivityAliasPdf filter bff9d0f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: /.*\.pdf}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        92e3b88 com.google.android.apps.books/com.google.android.apps.play.books.upload.UploadActivityEpub filter 202f921
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "application/epub+zip"
+        92e3b88 com.google.android.apps.books/com.google.android.apps.play.books.upload.UploadActivityEpub filter 3b25146
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: /.*\.epub}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        e961cc9 com.google.android.apps.books/com.google.android.libraries.phenotype.client.stable.PhenotypeStickyAccount$AccountRemovedBroadcastReceiver filter f25afce
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        20f9c01 com.google.android.apps.books/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter bf3eaa6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        da56b0b com.google.android.apps.books/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b8e1de8
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.google.firebase.appindexing.UPDATE_INDEX:
+        700ab59 com.google.android.apps.books/com.google.android.apps.play.books.appindexing.UpdateIndexReceiver filter f54431e
+          Action: "com.google.firebase.appindexing.UPDATE_INDEX"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        abdace7 com.google.android.apps.books/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter f1b3094
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        dd8f73d com.google.android.apps.books/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 6e40b32
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        6f5065d com.google.android.apps.books/com.google.android.apps.play.books.app.AccountsReceiver filter 7323bd2
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+        a87e7ff com.google.android.apps.books/com.google.android.libraries.notifications.entrypoints.accountchanged.AccountChangedReceiver filter 2c7a9cc
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        abdace7 com.google.android.apps.books/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter f1b3094
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.LOCALE_CHANGED:
+        c4b6c91 com.google.android.apps.books/com.google.android.libraries.notifications.entrypoints.localechanged.LocaleChangedReceiver filter 5797f6
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        77d051b com.google.android.apps.books/com.google.android.libraries.notifications.entrypoints.gcm.GcmBroadcastReceiver filter 5ab96b8
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          mPriority=99, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        15abc85 com.google.android.apps.books/com.google.firebase.iid.FirebaseInstanceIdReceiver filter cf0fada
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        487a415 com.google.android.apps.books/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter efd732a
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      android.intent.action.BATTERY_LOW:
+        20f9c01 com.google.android.apps.books/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter bf3eaa6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        8fcfc93 com.google.android.apps.books/com.google.android.libraries.notifications.entrypoints.timezonechanged.TimezoneChangedReceiver filter 55e84d0
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        52e3083 com.google.android.apps.books/androidx.work.impl.background.systemalarm.RescheduleReceiver filter fc4c200
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        52e3083 com.google.android.apps.books/androidx.work.impl.background.systemalarm.RescheduleReceiver filter fc4c200
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        ba940cd com.google.android.apps.books/com.google.android.libraries.notifications.entrypoints.restart.RestartReceiver filter 45d3d82
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        52e3083 com.google.android.apps.books/androidx.work.impl.background.systemalarm.RescheduleReceiver filter fc4c200
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        487a415 com.google.android.apps.books/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter efd732a
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        da56b0b com.google.android.apps.books/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b8e1de8
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        487a415 com.google.android.apps.books/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter efd732a
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        509a4a3 com.google.android.apps.books/.appwidget.BooksAppWidgetProvider filter e56f3a0
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        59951df com.google.android.apps.books/androidx.work.impl.diagnostics.DiagnosticsReceiver filter ab3fe2c
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        ba940cd com.google.android.apps.books/com.google.android.libraries.notifications.entrypoints.restart.RestartReceiver filter 45d3d82
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        5e2ca39 com.google.android.apps.books/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter c43a87e
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.MEDIA_BUTTON:
+        9d41f07 com.google.android.apps.books/com.google.android.apps.play.books.audio.BooksMediaButtonReceiver filter 72f8834
+          Action: "android.intent.action.MEDIA_BUTTON"
+      com.google.android.gms.phenotype.UPDATE:
+        3dcd7f7 com.google.android.apps.books/com.google.android.libraries.notifications.entrypoints.phenotype.PhenotypeUpdateReceiver filter edf6664
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        5f0ceef com.google.android.apps.books/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBroadcastReceiver filter 26f1dfc
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.content.SyncAdapter:
+        2b59dd7 com.google.android.apps.books/com.google.android.apps.play.books.service.SyncService filter 8b5e6c4
+          Action: "android.content.SyncAdapter"
+      com.google.firebase.MESSAGING_EVENT:
+        7b68771 com.google.android.apps.books/com.google.android.apps.play.books.gcm.BooksFcmListenerService filter 8624956
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        15b29ad com.google.android.apps.books/com.google.firebase.messaging.FirebaseMessagingService filter 351a4e2
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        81cd0f5 com.google.android.apps.books/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter e6dce8a
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+      android.media.browse.MediaBrowserService:
+        26b2cfb com.google.android.apps.books/com.google.android.apps.play.books.audio.BooksMediaBrowseService filter 478d118
+          Action: "android.media.browse.MediaBrowserService"
+          Action: "android.intent.action.MEDIA_BUTTON"
+      android.intent.action.MEDIA_BUTTON:
+        26b2cfb com.google.android.apps.books/com.google.android.apps.play.books.audio.BooksMediaBrowseService filter 478d118
+          Action: "android.media.browse.MediaBrowserService"
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Domain verification status:
+  com.google.android.apps.books:
+    ID: 32ccd416-32a7-419d-a83d-3e5cbd027010
+    Signatures: [F0:FD:6C:5B:41:0F:25:CB:25:C3:B5:33:46:C8:97:2F:AE:30:F8:EE:74:11:DF:91:04:80:AD:6B:2D:60:DB:83]
+    Domain verification state:
+      play.google.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          play.google.com
+
+Permissions:
+  Permission [com.google.android.apps.books.permission.C2D_MESSAGE] (9ee4f83):
+    sourcePackage=com.google.android.apps.books
+    uid=10275 gids=[] type=0 prot=signature
+    perm=PermissionInfo{903f500 com.google.android.apps.books.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.google.android.apps.books/androidx.work.impl.WorkManagerInitializer:
+    Provider{9558139 com.google.android.apps.books/androidx.work.impl.WorkManagerInitializer}
+  com.google.android.apps.books/com.google.android.apps.play.books.database.main.BooksProvider$PublicProvider:
+    Provider{1dd937e com.google.android.apps.books/com.google.android.apps.play.books.database.main.BooksProvider$PublicProvider}
+  com.google.android.apps.books/com.google.android.apps.play.books.database.main.BooksProvider:
+    Provider{433612c com.google.android.apps.books/com.google.android.apps.play.books.database.main.BooksProvider}
+  com.google.android.apps.books/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{583f7f5 com.google.android.apps.books/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+
+ContentProvider Authorities:
+  [com.google.android.apps.books.lifecycle-process]:
+    Provider{583f7f5 com.google.android.apps.books/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{b3b698a com.google.android.apps.books}
+  [com.google.android.apps.books.public]:
+    Provider{1dd937e com.google.android.apps.books/com.google.android.apps.play.books.database.main.BooksProvider$PublicProvider}
+      applicationInfo=ApplicationInfo{d302bfb com.google.android.apps.books}
+  [com.google.android.apps.books]:
+    Provider{433612c com.google.android.apps.books/com.google.android.apps.play.books.database.main.BooksProvider}
+      applicationInfo=ApplicationInfo{a0b6418 com.google.android.apps.books}
+  [com.google.android.apps.books.workmanager-init]:
+    Provider{9558139 com.google.android.apps.books/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{1e91e71 com.google.android.apps.books}
+
+Key Set Manager:
+  [com.google.android.apps.books]
+      Signing KeySets: 6
+
+Packages:
+  Package [com.google.android.apps.books] (3ee9456):
+    userId=10275
+    pkg=Package{e4b8cd7 com.google.android.apps.books}
+    codePath=/data/app/~~yMzE2up-tNxDc8YqkJUMfA==/com.google.android.apps.books-hRXw5WZcFUOh9SfASDxCmw==
+    resourcePath=/data/app/~~yMzE2up-tNxDc8YqkJUMfA==/com.google.android.apps.books-hRXw5WZcFUOh9SfASDxCmw==
+    legacyNativeLibraryDir=/data/app/~~yMzE2up-tNxDc8YqkJUMfA==/com.google.android.apps.books-hRXw5WZcFUOh9SfASDxCmw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=105116 minSdk=19 targetSdk=29
+    minExtensionVersions=[]
+    versionName=5.11.10_RC05.329522964
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.speech.action.RECOGNIZE_SPEECH }, Intent { act=android.intent.action.WEB_SEARCH }, Intent { act=android.intent.action.VIEW dat=content://*/... typ=application/pdf }, Intent { act=android.speech.tts.engine.INSTALL_TTS_DATA }]
+    dataDir=/data/user/0/com.google.android.apps.books
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 10:17:42
+    lastUpdateTime=2022-11-30 10:17:43
+    packageSource=0
+    signatures=PackageSignatures{5ea9c4 version:3, signatures:[e3ca78d8], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.google.android.apps.books.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.USE_CREDENTIALS
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.SUBSCRIBED_FEEDS_READ
+      android.permission.SUBSCRIBED_FEEDS_WRITE
+      android.permission.WAKE_LOCK
+      android.permission.GET_PACKAGE_SIZE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.apps.books.permission.C2D_MESSAGE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      com.google.android.apps.books.permission.C2D_MESSAGE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.SUBSCRIBED_FEEDS_READ: granted=true
+      android.permission.SUBSCRIBED_FEEDS_WRITE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=46937 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 10:17:43
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.maps:
+      com.google.android.apps.books
+  queries via component:
+    com.google.android.apps.messaging:
+      com.google.android.apps.books
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.books
+    com.google.android.settings.intelligence:
+      com.google.android.apps.books
+    com.google.android.deskclock:
+      com.google.android.apps.books
+    com.google.android.apps.docs:
+      com.google.android.apps.books
+    com.google.android.apps.accessibility.voiceaccess:
+      com.google.android.apps.books
+    com.google.android.gm:
+      com.google.android.apps.books
+    com.google.android.apps.books:
+      com.google.android.apps.nbu.files
+      com.google.android.googlequicksearchbox
+      com.google.android.setupwizard
+      com.google.android.apps.docs
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.books]
+    path: /data/app/~~yMzE2up-tNxDc8YqkJUMfA==/com.google.android.apps.books-hRXw5WZcFUOh9SfASDxCmw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:652816
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.google.android.apps.books]
+     base.apk - 637

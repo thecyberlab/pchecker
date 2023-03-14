@@ -1,0 +1,285 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        e9ddda2 com.kpstv.yts/.ui.activities.StartActivity filter e7371f0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "yts.mx": -1
+          Path: "PatternMatcher{PREFIX: /movies}"
+      genericidp:
+        87ff68f com.kpstv.yts/com.google.firebase.auth.internal.GenericIdpActivity filter d35bd1c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        f283d25 com.kpstv.yts/com.google.firebase.auth.internal.RecaptchaActivity filter 6617efa
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        e9ddda2 com.kpstv.yts/.ui.activities.StartActivity filter aea33
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        37ed369 com.kpstv.yts/.cast.ui.ExpandedControlsActivity filter da031ee
+          Action: "android.intent.action.MAIN"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.kpstv.yts.ADD_ONLY_JOB:
+        b8f6cab com.kpstv.yts/.receivers.CommonBroadCast filter 66f8f08
+          Action: "com.kpstv.yts.STOP_SERVICE"
+          Action: "com.kpstv.yts.TORRENT_NOT_SUPPORTED"
+          Action: "com.kpstv.yts.ADD_ONLY_JOB"
+      android.intent.action.BATTERY_OKAY:
+        7d62887 com.kpstv.yts/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 5f293b4
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        34486a1 com.kpstv.yts/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 6b890c6
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.kpstv.yts.STOP_SERVICE:
+        b8f6cab com.kpstv.yts/.receivers.CommonBroadCast filter 66f8f08
+          Action: "com.kpstv.yts.STOP_SERVICE"
+          Action: "com.kpstv.yts.TORRENT_NOT_SUPPORTED"
+          Action: "com.kpstv.yts.ADD_ONLY_JOB"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        281ebdd com.kpstv.yts/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 11cf352
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        ee2c623 com.kpstv.yts/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter ff3720
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        281ebdd com.kpstv.yts/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 11cf352
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        7d62887 com.kpstv.yts/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 5f293b4
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        23668d9 com.kpstv.yts/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5f2f29e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        23668d9 com.kpstv.yts/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5f2f29e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        23668d9 com.kpstv.yts/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5f2f29e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        34486a1 com.kpstv.yts/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 6b890c6
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        d1bb995 com.kpstv.yts/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 5979aaa
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.kpstv.yts.TORRENT_NOT_SUPPORTED:
+        b8f6cab com.kpstv.yts/.receivers.CommonBroadCast filter 66f8f08
+          Action: "com.kpstv.yts.STOP_SERVICE"
+          Action: "com.kpstv.yts.TORRENT_NOT_SUPPORTED"
+          Action: "com.kpstv.yts.ADD_ONLY_JOB"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        291a17f com.kpstv.yts/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter e70a54c
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.auth.api.gms.service.START:
+        c28d69b com.kpstv.yts/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 5a8ca38
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          yts.mx
+
+Registered ContentProviders:
+  com.kpstv.yts/cat.ereza.customactivityoncrash.provider.CaocInitProvider:
+    Provider{15e633a com.kpstv.yts/cat.ereza.customactivityoncrash.provider.CaocInitProvider}
+  com.kpstv.yts/androidx.core.content.FileProvider:
+    Provider{481beb com.kpstv.yts/androidx.core.content.FileProvider}
+  com.kpstv.yts/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{9f7ad48 com.kpstv.yts/com.google.firebase.provider.FirebaseInitProvider}
+  com.kpstv.yts/androidx.startup.InitializationProvider:
+    Provider{2f0e7e1 com.kpstv.yts/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.kpstv.yts.firebaseinitprovider]:
+    Provider{9f7ad48 com.kpstv.yts/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{c6a50f com.kpstv.yts}
+  [com.kpstv.yts.provider]:
+    Provider{481beb com.kpstv.yts/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{379099c com.kpstv.yts}
+  [com.kpstv.yts.androidx-startup]:
+    Provider{2f0e7e1 com.kpstv.yts/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{61ecfa5 com.kpstv.yts}
+  [com.kpstv.yts.customactivityoncrashinitprovider]:
+    Provider{15e633a com.kpstv.yts/cat.ereza.customactivityoncrash.provider.CaocInitProvider}
+      applicationInfo=ApplicationInfo{d00df7a com.kpstv.yts}
+
+Key Set Manager:
+  [com.kpstv.yts]
+      Signing KeySets: 5804
+
+Packages:
+  Package [com.kpstv.yts] (fd2832b):
+    userId=10452
+    pkg=Package{59a1d63 com.kpstv.yts}
+    codePath=/data/app/~~7JfjoEYR64r27ij91sZqHA==/com.kpstv.yts-DeLI18OiVtr8Axuid2IWog==
+    resourcePath=/data/app/~~7JfjoEYR64r27ij91sZqHA==/com.kpstv.yts-DeLI18OiVtr8Axuid2IWog==
+    legacyNativeLibraryDir=/data/app/~~7JfjoEYR64r27ij91sZqHA==/com.kpstv.yts-DeLI18OiVtr8Axuid2IWog==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=8 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=1.7
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.kpstv.yts
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 15:28:10
+    lastUpdateTime=2022-11-30 15:28:11
+    packageSource=0
+    signatures=PackageSignatures{524dd60 version:2, signatures:[9c12e809], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.BLUETOOTH
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.MANAGE_EXTERNAL_STORAGE
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.GET_ACCOUNTS
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.READ_PHONE_STATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=65192 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:28:11
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.kpstv.yts
+    com.google.android.apps.diagnosticstool:
+      com.kpstv.yts
+    com.google.android.settings.intelligence:
+      com.kpstv.yts
+    com.google.android.apps.accessibility.voiceaccess:
+      com.kpstv.yts
+    com.truecaller:
+      com.kpstv.yts
+    com.dv.adm:
+      com.kpstv.yts
+    com.zappcues.gamingmode:
+      com.kpstv.yts
+    com.jio.myjio:
+      com.kpstv.yts
+  queryable via interaction:
+    User 0:
+      [com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.android.inputdevices,com.android.settings,com.android.localtransport,com.android.location.fused,com.google.android.iwlan,com.android.keychain,com.android.wallpaperbackup,com.android.dynsystem,com.android.qns,com.android.providers.settings,android,com.google.SSRestartDetector]:
+        com.kpstv.yts
+      [com.google.android.gms,com.google.android.gsf]:
+        com.kpstv.yts
+  queryable via uses-library:
+
+Dexopt state:
+  [com.kpstv.yts]
+    path: /data/app/~~7JfjoEYR64r27ij91sZqHA==/com.kpstv.yts-DeLI18OiVtr8Axuid2IWog==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1040801
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.kpstv.yts]
+     base.apk - 978

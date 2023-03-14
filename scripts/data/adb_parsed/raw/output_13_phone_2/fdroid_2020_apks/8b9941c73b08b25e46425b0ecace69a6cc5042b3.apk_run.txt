@@ -1,0 +1,290 @@
+Activity Resolver Table:
+  Full MIME Types:
+      vnd.android.cursor.item/event:
+        af93b3d org.totschnig.myexpenses/.activity.ManageTemplates filter a58ff32
+          Action: "android.provider.calendar.action.HANDLE_CUSTOM_EVENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/event"
+
+  Base MIME Types:
+      vnd.android.cursor.item:
+        af93b3d org.totschnig.myexpenses/.activity.ManageTemplates filter a58ff32
+          Action: "android.provider.calendar.action.HANDLE_CUSTOM_EVENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/event"
+
+  Schemes:
+      https:
+        75f71fc org.totschnig.myexpenses/.activity.DeepLinkActivity filter d468085
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.myexpenses.mobi": -1
+          Authority: "www.myexpenses.mobi": -1
+          Path: "PatternMatcher{LITERAL: /callback2.html}"
+          Path: "PatternMatcher{LITERAL: /callback.html}"
+          AutoVerify=true
+      content:
+        e0b6eda org.totschnig.myexpenses/.activity.ExpenseEdit filter 12fb1e8
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "org.totschnig.myexpenses": -1
+          Path: "PatternMatcher{LITERAL: /transactions}"
+      db-09ctg08r5gnsh5c:
+        661522c org.totschnig.myexpenses/com.dropbox.core.android.AuthActivity filter 88194f5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "db-09ctg08r5gnsh5c"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        fc0e3ce org.totschnig.myexpenses/.activity.SplashActivity filter 9ddf2ef
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.MULTIWINDOW_LAUNCHER"
+        e0b6eda org.totschnig.myexpenses/.activity.ExpenseEdit filter d40cf0b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+        af3a001 org.totschnig.myexpenses/.activity.MyPreferenceActivity filter 6419ea6
+          Action: "android.intent.action.MAIN"
+        2ab50e7 org.totschnig.myexpenses/.activity.Help filter f420494
+          Action: "android.intent.action.MAIN"
+        af93b3d org.totschnig.myexpenses/.activity.ManageTemplates filter 8521483
+          Action: "android.intent.action.MAIN"
+        d84d600 org.totschnig.myexpenses/.activity.CalculatorInput filter ec34e39
+          Action: "android.intent.action.MAIN"
+        413dc7e org.totschnig.myexpenses/.activity.ContribInfoDialogActivity filter 11775df
+          Action: "android.intent.action.MAIN"
+        50d428a org.totschnig.myexpenses/.activity.SimpleToastActivity filter 1a790fb
+          Action: "android.intent.action.MAIN"
+
+  MIME Typed Actions:
+      android.provider.calendar.action.HANDLE_CUSTOM_EVENT:
+        af93b3d org.totschnig.myexpenses/.activity.ManageTemplates filter a58ff32
+          Action: "android.provider.calendar.action.HANDLE_CUSTOM_EVENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/event"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        fa76518 org.totschnig.myexpenses/.service.GenericAlarmReceiver filter 3a38b71
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        fa76518 org.totschnig.myexpenses/.service.GenericAlarmReceiver filter 3a38b71
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        b84fd56 org.totschnig.myexpenses/.widget.AccountWidget filter 35441d7
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        a39bac4 org.totschnig.myexpenses/.widget.TemplateWidget filter 9146dad
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.content.SyncAdapter:
+        f739e5c org.totschnig.myexpenses/.sync.SyncService filter 5a2a565
+          Action: "android.content.SyncAdapter"
+      org.totschnig.myexpenses.ACTION_SCHEDULE_AUTO_BACKUP:
+        79bf30 org.totschnig.myexpenses/.service.AutoBackupService filter b3737a9 permission android.permission.BIND_JOB_SERVICE
+          Action: "org.totschnig.myexpenses.ACTION_SCHEDULE_AUTO_BACKUP"
+          Action: "org.totschnig.myexpenses.ACTION_AUTO_BACKUP"
+      org.totschnig.myexpenses.ACTION_EXECUTE_PLANS:
+        7eb98e2 org.totschnig.myexpenses/.service.PlanExecutor filter 8b12473 permission android.permission.BIND_JOB_SERVICE
+          Action: "org.totschnig.myexpenses.ACTION_SCHEDULE_EXECUTE_PLANS"
+          Action: "org.totschnig.myexpenses.ACTION_EXECUTE_PLANS"
+      android.accounts.AccountAuthenticator:
+        f2e612e org.totschnig.myexpenses/.sync.GenericAccountService filter fef94cf
+          Action: "android.accounts.AccountAuthenticator"
+      org.totschnig.myexpenses.ACTION_AUTO_BACKUP:
+        79bf30 org.totschnig.myexpenses/.service.AutoBackupService filter b3737a9 permission android.permission.BIND_JOB_SERVICE
+          Action: "org.totschnig.myexpenses.ACTION_SCHEDULE_AUTO_BACKUP"
+          Action: "org.totschnig.myexpenses.ACTION_AUTO_BACKUP"
+      org.totschnig.myexpenses.ACTION_SCHEDULE_EXECUTE_PLANS:
+        7eb98e2 org.totschnig.myexpenses/.service.PlanExecutor filter 8b12473 permission android.permission.BIND_JOB_SERVICE
+          Action: "org.totschnig.myexpenses.ACTION_SCHEDULE_EXECUTE_PLANS"
+          Action: "org.totschnig.myexpenses.ACTION_EXECUTE_PLANS"
+
+Domain verification status:
+  org.totschnig.myexpenses:
+    ID: 9018e9a9-1703-4ffc-a453-b8c56ee53e11
+    Signatures: [CC:73:D1:AF:73:2C:D0:2B:84:A9:C7:D5:6B:7B:64:B9:D6:9D:47:A2:65:EC:34:B0:88:D6:85:7D:9F:BF:97:CE]
+    Domain verification state:
+      www.myexpenses.mobi: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.myexpenses.mobi
+
+Registered ContentProviders:
+  org.totschnig.myexpenses/com.squareup.picasso.PicassoProvider:
+    Provider{8318c65 org.totschnig.myexpenses/com.squareup.picasso.PicassoProvider}
+  org.totschnig.myexpenses/.provider.TransactionProvider:
+    Provider{fdbd3a org.totschnig.myexpenses/.provider.TransactionProvider}
+  org.totschnig.myexpenses/.provider.CalendarProviderProxy:
+    Provider{8d6deb org.totschnig.myexpenses/.provider.CalendarProviderProxy}
+  org.totschnig.myexpenses/org.acra.attachment.AcraContentProvider:
+    Provider{2779748 org.totschnig.myexpenses/org.acra.attachment.AcraContentProvider}
+  org.totschnig.myexpenses/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{6b389e1 org.totschnig.myexpenses/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  org.totschnig.myexpenses/androidx.core.content.FileProvider:
+    Provider{6d2fdc7 org.totschnig.myexpenses/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [org.totschnig.myexpenses.fileprovider]:
+    Provider{6d2fdc7 org.totschnig.myexpenses/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{72e8dda org.totschnig.myexpenses}
+  [org.totschnig.myexpenses.calendarinstances]:
+    Provider{8d6deb org.totschnig.myexpenses/.provider.CalendarProviderProxy}
+      applicationInfo=ApplicationInfo{ea7020b org.totschnig.myexpenses}
+  [org.totschnig.myexpenses.com.squareup.picasso]:
+    Provider{8318c65 org.totschnig.myexpenses/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{f3d68e8 org.totschnig.myexpenses}
+  [org.totschnig.myexpenses.acra]:
+    Provider{2779748 org.totschnig.myexpenses/org.acra.attachment.AcraContentProvider}
+      applicationInfo=ApplicationInfo{e8c8b01 org.totschnig.myexpenses}
+  [org.totschnig.myexpenses.lifecycle-process]:
+    Provider{6b389e1 org.totschnig.myexpenses/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{7f7ada6 org.totschnig.myexpenses}
+  [org.totschnig.myexpenses]:
+    Provider{fdbd3a org.totschnig.myexpenses/.provider.TransactionProvider}
+      applicationInfo=ApplicationInfo{fc1b3e7 org.totschnig.myexpenses}
+
+Key Set Manager:
+  [org.totschnig.myexpenses]
+      Signing KeySets: 6805
+
+Packages:
+  Package [org.totschnig.myexpenses] (5f42b94):
+    userId=10711
+    pkg=Package{bb758d5 org.totschnig.myexpenses}
+    codePath=/data/app/~~jGjFPZ9UmQg_34eB7LbqPg==/org.totschnig.myexpenses-sWtL5HVw47D863GwEcK1XA==
+    resourcePath=/data/app/~~jGjFPZ9UmQg_34eB7LbqPg==/org.totschnig.myexpenses-sWtL5HVw47D863GwEcK1XA==
+    legacyNativeLibraryDir=/data/app/~~jGjFPZ9UmQg_34eB7LbqPg==/org.totschnig.myexpenses-sWtL5HVw47D863GwEcK1XA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=410 minSdk=16 targetSdk=29
+    minExtensionVersions=[]
+    versionName=3.1.1.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/org.totschnig.myexpenses
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 21:17:55
+    lastUpdateTime=2022-11-30 21:17:56
+    packageSource=0
+    signatures=PackageSignatures{4e36278 version:1, signatures:[7b7eb3f2], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.READ_SYNC_STATS
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.WRITE_CALENDAR
+      android.permission.READ_CALENDAR
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+    User 0: ceDataInode=104189 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 21:17:56
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      org.totschnig.myexpenses
+    com.google.android.apps.diagnosticstool:
+      org.totschnig.myexpenses
+    com.google.android.settings.intelligence:
+      org.totschnig.myexpenses
+    com.google.android.apps.accessibility.voiceaccess:
+      org.totschnig.myexpenses
+    com.zhiliaoapp.musically:
+      org.totschnig.myexpenses
+    com.truecaller:
+      org.totschnig.myexpenses
+    com.dv.adm:
+      org.totschnig.myexpenses
+    com.zappcues.gamingmode:
+      org.totschnig.myexpenses
+    com.jio.myjio:
+      org.totschnig.myexpenses
+  queryable via interaction:
+    User 0:
+      [com.android.location.fused,com.android.localtransport,com.google.android.iwlan,com.android.wallpaperbackup,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem,com.android.settings,com.android.server.telecom,com.android.inputdevices,android,com.android.providers.settings,com.google.SSRestartDetector,com.android.keychain,com.android.qns]:
+        org.totschnig.myexpenses
+  queryable via uses-library:
+
+Dexopt state:
+  [org.totschnig.myexpenses]
+    path: /data/app/~~jGjFPZ9UmQg_34eB7LbqPg==/org.totschnig.myexpenses-sWtL5HVw47D863GwEcK1XA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1491403
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [org.totschnig.myexpenses]
+     base.apk - 368

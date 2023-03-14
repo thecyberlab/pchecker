@@ -1,0 +1,369 @@
+Activity Resolver Table:
+  Schemes:
+      genericidp:
+        da641bd com.wemagineai.voila/com.google.firebase.auth.internal.GenericIdpActivity filter cffc3b2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        432bf03 com.wemagineai.voila/com.google.firebase.auth.internal.RecaptchaActivity filter f206e80
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        9e53e81 com.wemagineai.voila/.ui.WorldwideActivity filter 86d1b26
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        a1e5367 com.wemagineai.voila/com.onesignal.NotificationOpenedActivityHMS filter 4fd1514
+          Action: "android.intent.action.VIEW"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        650142d com.wemagineai.voila/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter e0c7d62
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        cce457 com.wemagineai.voila/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 719eb44
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        5f8eb75 com.wemagineai.voila/com.onesignal.BootUpReceiver filter 438170a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        5516ef3 com.wemagineai.voila/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 66c77b0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        ac6c629 com.wemagineai.voila/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 3b90dae
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        fc01161 com.wemagineai.voila/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter c192486
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        5516ef3 com.wemagineai.voila/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 66c77b0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        e98485f com.wemagineai.voila/com.onesignal.FCMBroadcastReceiver filter 55df2ac
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.wemagineai.voila"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        379c9f1 com.wemagineai.voila/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 7c899d6
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      zendesk.support:
+        97a3cb9 com.wemagineai.voila/zendesk.support.DeepLinkingBroadcastReceiver filter 7a268fe
+          Action: "zendesk.support"
+      android.intent.action.BATTERY_LOW:
+        650142d com.wemagineai.voila/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter e0c7d62
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        a8a074f com.wemagineai.voila/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1195edc
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        a8a074f com.wemagineai.voila/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1195edc
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        5f8eb75 com.wemagineai.voila/com.onesignal.BootUpReceiver filter 438170a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+        a8a074f com.wemagineai.voila/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1195edc
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        cce457 com.wemagineai.voila/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 719eb44
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        109c96b com.wemagineai.voila/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 4b8cc8
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        ea30b7b com.wemagineai.voila/com.onesignal.UpgradeReceiver filter 50d8d98
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        cdc9be5 com.wemagineai.voila/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 98c56ba
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        10b629d com.wemagineai.voila/com.google.firebase.messaging.FirebaseMessagingService filter c530312
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.auth.api.gms.service.START:
+        c33fae3 com.wemagineai.voila/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 7252ce0
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+      com.huawei.push.action.MESSAGING_EVENT:
+        5799147 com.wemagineai.voila/com.onesignal.HmsMessageServiceOneSignal filter 2f0ad74
+          Action: "com.huawei.push.action.MESSAGING_EVENT"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.wemagineai.voila.permission.C2D_MESSAGE] (9067c08):
+    sourcePackage=com.wemagineai.voila
+    uid=10241 gids=[] type=0 prot=signature
+    perm=PermissionInfo{dc55e19 com.wemagineai.voila.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.wemagineai.voila/com.ironsource.lifecycle.IronsourceLifecycleProvider:
+    Provider{adede com.wemagineai.voila/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+  com.wemagineai.voila/com.vungle.warren.utility.VungleProvider:
+    Provider{6df0b8c com.wemagineai.voila/com.vungle.warren.utility.VungleProvider}
+  com.wemagineai.voila/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{cc4c2d5 com.wemagineai.voila/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.wemagineai.voila/androidx.core.content.FileProvider:
+    Provider{8e20aea com.wemagineai.voila/androidx.core.content.FileProvider}
+  com.wemagineai.voila/zendesk.support.SupportSdkStartupProvider:
+    Provider{28e21db com.wemagineai.voila/zendesk.support.SupportSdkStartupProvider}
+  com.wemagineai.voila/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{bc50d42 com.wemagineai.voila/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.wemagineai.voila/zendesk.support.guide.GuideSdkStartupProvider:
+    Provider{ffcf153 com.wemagineai.voila/zendesk.support.guide.GuideSdkStartupProvider}
+  com.wemagineai.voila/com.squareup.picasso.PicassoProvider:
+    Provider{96c3a90 com.wemagineai.voila/com.squareup.picasso.PicassoProvider}
+  com.wemagineai.voila/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{84cff89 com.wemagineai.voila/com.google.firebase.provider.FirebaseInitProvider}
+  com.wemagineai.voila/com.facebook.internal.FacebookInitProvider:
+    Provider{b9abb8e com.wemagineai.voila/com.facebook.internal.FacebookInitProvider}
+  com.wemagineai.voila/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider:
+    Provider{3db4faf com.wemagineai.voila/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+  com.wemagineai.voila/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{7026fbc com.wemagineai.voila/com.facebook.ads.AudienceNetworkContentProvider}
+  com.wemagineai.voila/com.applovin.sdk.AppLovinInitProvider:
+    Provider{17d0b45 com.wemagineai.voila/com.applovin.sdk.AppLovinInitProvider}
+  com.wemagineai.voila/zendesk.belvedere.BelvedereFileProvider:
+    Provider{80b029a com.wemagineai.voila/zendesk.belvedere.BelvedereFileProvider}
+  com.wemagineai.voila/androidx.startup.InitializationProvider:
+    Provider{49737cb com.wemagineai.voila/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.wemagineai.voila.androidx-startup]:
+    Provider{49737cb com.wemagineai.voila/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{f8b50b4 com.wemagineai.voila}
+  [com.wemagineai.voila.belvedere2.attachments]:
+    Provider{80b029a com.wemagineai.voila/zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{2064dd com.wemagineai.voila}
+  [com.wemagineai.voila.TTMultiProvider]:
+    Provider{3db4faf com.wemagineai.voila/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+      applicationInfo=ApplicationInfo{c747852 com.wemagineai.voila}
+  [com.wemagineai.voila.mobileadsinitprovider]:
+    Provider{cc4c2d5 com.wemagineai.voila/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{bac6723 com.wemagineai.voila}
+  [com.wemagineai.voila.AudienceNetworkContentProvider]:
+    Provider{7026fbc com.wemagineai.voila/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{7e6c420 com.wemagineai.voila}
+  [com.wemagineai.voila.firebaseinitprovider]:
+    Provider{84cff89 com.wemagineai.voila/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{dc371d9 com.wemagineai.voila}
+  [com.wemagineai.voila.vungle-provider]:
+    Provider{6df0b8c com.wemagineai.voila/com.vungle.warren.utility.VungleProvider}
+      applicationInfo=ApplicationInfo{fbdc79e com.wemagineai.voila}
+  [com.wemagineai.voila.FacebookInitProvider]:
+    Provider{b9abb8e com.wemagineai.voila/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{8d4527f com.wemagineai.voila}
+  [com.wemagineai.voila.IronsourceLifecycleProvider]:
+    Provider{adede com.wemagineai.voila/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+      applicationInfo=ApplicationInfo{c4024c com.wemagineai.voila}
+  [com.wemagineai.voila.provider]:
+    Provider{8e20aea com.wemagineai.voila/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{ef05295 com.wemagineai.voila}
+  [com.wemagineai.voila.zendesk.support.SupportSdkStartupProvider]:
+    Provider{28e21db com.wemagineai.voila/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{9babfaa com.wemagineai.voila}
+  [com.wemagineai.voila.mlkitinitprovider]:
+    Provider{bc50d42 com.wemagineai.voila/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{265979b com.wemagineai.voila}
+  [com.wemagineai.voila.com.squareup.picasso]:
+    Provider{96c3a90 com.wemagineai.voila/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{654f738 com.wemagineai.voila}
+  [com.wemagineai.voila.zendesk.support.GuideSdkStartupProvider]:
+    Provider{ffcf153 com.wemagineai.voila/zendesk.support.guide.GuideSdkStartupProvider}
+      applicationInfo=ApplicationInfo{2d08311 com.wemagineai.voila}
+  [com.wemagineai.voila.applovincontentprovider]:
+    Provider{17d0b45 com.wemagineai.voila/com.applovin.sdk.AppLovinInitProvider}
+      applicationInfo=ApplicationInfo{add2c76 com.wemagineai.voila}
+
+Key Set Manager:
+  [com.wemagineai.voila]
+      Signing KeySets: 5699
+
+Packages:
+  Package [com.wemagineai.voila] (cfc1277):
+    userId=10241
+    pkg=Package{7366ed8 com.wemagineai.voila}
+    codePath=/data/app/~~dSSIzoaISTGjg1QiW9t9FQ==/com.wemagineai.voila-XX_BTMRQbsbY8WHfLt_gcA==
+    resourcePath=/data/app/~~dSSIzoaISTGjg1QiW9t9FQ==/com.wemagineai.voila-XX_BTMRQbsbY8WHfLt_gcA==
+    legacyNativeLibraryDir=/data/app/~~dSSIzoaISTGjg1QiW9t9FQ==/com.wemagineai.voila-XX_BTMRQbsbY8WHfLt_gcA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=163 minSdk=21 targetSdk=31
+    minExtensionVersions=[]
+    versionName=1.4.0 (163)
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.instagram.android, com.facebook.katana, com.whatsapp]
+    queriesIntents=[Intent { act=android.intent.action.SENDTO dat=mailto:xx }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.wemagineai.voila
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 13:59:58
+    lastUpdateTime=2022-11-30 13:59:59
+    packageSource=0
+    signatures=PackageSignatures{2a7c06d version:2, signatures:[1f09083b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.wemagineai.voila.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.CAMERA
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.gms.permission.AD_ID
+      com.android.vending.BILLING
+      android.permission.FOREGROUND_SERVICE
+      com.wemagineai.voila.permission.C2D_MESSAGE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      android.permission.READ_EXTERNAL_STORAGE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.wemagineai.voila.permission.C2D_MESSAGE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=50116 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 13:59:59
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.wemagineai.voila
+    com.google.android.apps.diagnosticstool:
+      com.wemagineai.voila
+    com.google.android.settings.intelligence:
+      com.wemagineai.voila
+    com.google.android.youtube:
+      com.wemagineai.voila
+    com.google.android.contacts:
+      com.wemagineai.voila
+    com.google.android.apps.accessibility.voiceaccess:
+      com.wemagineai.voila
+    com.google.android.gm:
+      com.wemagineai.voila
+    com.wemagineai.voila:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      com.google.android.gm
+      com.utorrent.client.pro
+    com.zappcues.gamingmode:
+      com.wemagineai.voila
+    com.jio.myjio:
+      com.wemagineai.voila
+  queryable via interaction:
+    User 0:
+      [com.android.dynsystem,com.android.location.fused,com.android.settings,android,com.android.keychain,com.android.server.telecom,com.android.localtransport,com.android.wallpaperbackup,com.android.inputdevices,com.google.SSRestartDetector,com.android.qns,com.google.android.iwlan,com.google.android.settings.future.biometrics.faceenroll,com.android.providers.settings]:
+        com.wemagineai.voila
+      [com.google.android.gms,com.google.android.gsf]:
+        com.wemagineai.voila
+  queryable via uses-library:
+
+Dexopt state:
+  [com.wemagineai.voila]
+    path: /data/app/~~dSSIzoaISTGjg1QiW9t9FQ==/com.wemagineai.voila-XX_BTMRQbsbY8WHfLt_gcA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:41516
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.wemagineai.voila]
+     base.apk - 759

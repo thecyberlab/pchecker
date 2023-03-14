@@ -1,0 +1,355 @@
+Activity Resolver Table:
+  Schemes:
+      tgcplus:
+        68c7364 com.tgc.greatcoursesplus/com.teachco.tgcplus.teachcoplus.activities.DeepLinkListener filter 84dc9cd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tgcplus"
+          Authority: "prodplus.tgcmag.com": -1
+      genericidp:
+        e299282 com.tgc.greatcoursesplus/com.google.firebase.auth.internal.GenericIdpActivity filter 4e32d93
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        f4f61d0 com.tgc.greatcoursesplus/com.google.firebase.auth.internal.RecaptchaActivity filter b7a35c9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        6989cf6 com.tgc.greatcoursesplus/com.teachco.tgcplus.teachcoplus.activities.LoginActivity filter b11f8f7
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Schemes:
+      file:
+        d1d9ae8 com.tgc.greatcoursesplus/com.novoda.downloadmanager.lib.DownloadReceiver filter b002fa6
+          Action: "android.intent.action.MEDIA_MOUNTED"
+          Scheme: "file"
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        382a183 com.tgc.greatcoursesplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter a26df00
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        531c03d com.tgc.greatcoursesplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter aefa032
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.tgc.greatcoursesplus.plot.FilterNotifications:
+        90f3ed7 com.tgc.greatcoursesplus/com.selligent.sdk.SMPlotNotificationFilter filter 1ed73c4
+          Action: "com.tgc.greatcoursesplus.plot.FilterNotifications"
+      com.novoda.downloadmanager.action.BATCH_FIRST_TIME_START:
+        1e254ce com.tgc.greatcoursesplus/com.teachco.tgcplus.teachcoplus.download.DownloadListenerService filter 8890fef
+          Action: "com.novoda.downloadmanager.action.BATCH_COMPLETE"
+          Action: "com.novoda.downloadmanager.action.BATCH_FAILED"
+          Action: "com.novoda.downloadmanager.action.BATCH_STATE_EVENT"
+          Action: "com.novoda.downloadmanager.action.BATCH_FIRST_TIME_START"
+          Action: "android.intent.action.DOWNLOAD_CANCEL"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        47f2339 com.tgc.greatcoursesplus/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter df38d7e
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        d1d9ae8 com.tgc.greatcoursesplus/com.novoda.downloadmanager.lib.DownloadReceiver filter 23dd501
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        343d2df com.tgc.greatcoursesplus/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 59aeb2c
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.novoda.downloadmanager.action.BATCH_FAILED:
+        1e254ce com.tgc.greatcoursesplus/com.teachco.tgcplus.teachcoplus.download.DownloadListenerService filter 8890fef
+          Action: "com.novoda.downloadmanager.action.BATCH_COMPLETE"
+          Action: "com.novoda.downloadmanager.action.BATCH_FAILED"
+          Action: "com.novoda.downloadmanager.action.BATCH_STATE_EVENT"
+          Action: "com.novoda.downloadmanager.action.BATCH_FIRST_TIME_START"
+          Action: "android.intent.action.DOWNLOAD_CANCEL"
+      android.intent.action.DEVICE_STORAGE_OK:
+        47f2339 com.tgc.greatcoursesplus/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter df38d7e
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        710cafc com.tgc.greatcoursesplus/com.teachco.tgcplus.teachcoplus.services.InstallReferrerReceiver filter ae76585
+          Action: "com.android.vending.INSTALL_REFERRER"
+        f52efda com.tgc.greatcoursesplus/com.appsflyer.SingleInstallBroadcastReceiver filter 800bc0b
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.novoda.downloadmanager.action.BATCH_COMPLETE:
+        1e254ce com.tgc.greatcoursesplus/com.teachco.tgcplus.teachcoplus.download.DownloadListenerService filter 8890fef
+          Action: "com.novoda.downloadmanager.action.BATCH_COMPLETE"
+          Action: "com.novoda.downloadmanager.action.BATCH_FAILED"
+          Action: "com.novoda.downloadmanager.action.BATCH_STATE_EVENT"
+          Action: "com.novoda.downloadmanager.action.BATCH_FIRST_TIME_START"
+          Action: "android.intent.action.DOWNLOAD_CANCEL"
+      com.google.android.c2dm.intent.RECEIVE:
+        dfd0de7 com.tgc.greatcoursesplus/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 6a57d94
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+        b9ef173 com.tgc.greatcoursesplus/com.selligent.sdk.SMBackgroundGcmBroadcastReceiver filter 2300830
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Action: "com.google.android.c2dm.intent.REGISTRATION"
+          Category: "com.selligent.sdk"
+      com.tgc.greatcoursesplus.plot.OpenedNotification:
+        8f832ad com.tgc.greatcoursesplus/com.selligent.sdk.SMPlotNotificationEventReceiver filter fec79e2
+          Action: "com.tgc.greatcoursesplus.plot.SentNotification"
+          Action: "com.tgc.greatcoursesplus.plot.OpenedNotification"
+      android.intent.action.BATTERY_LOW:
+        382a183 com.tgc.greatcoursesplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter a26df00
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        6a5b9f5 com.tgc.greatcoursesplus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bb7038a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        6a5b9f5 com.tgc.greatcoursesplus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bb7038a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.tgc.greatcoursesplus.plot.SentNotification:
+        8f832ad com.tgc.greatcoursesplus/com.selligent.sdk.SMPlotNotificationEventReceiver filter fec79e2
+          Action: "com.tgc.greatcoursesplus.plot.SentNotification"
+          Action: "com.tgc.greatcoursesplus.plot.OpenedNotification"
+      android.intent.action.BOOT_COMPLETED:
+        d1d9ae8 com.tgc.greatcoursesplus/com.novoda.downloadmanager.lib.DownloadReceiver filter 23dd501
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        6a5b9f5 com.tgc.greatcoursesplus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bb7038a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        531c03d com.tgc.greatcoursesplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter aefa032
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.novoda.downloadmanager.action.BATCH_STATE_EVENT:
+        1e254ce com.tgc.greatcoursesplus/com.teachco.tgcplus.teachcoplus.download.DownloadListenerService filter 8890fef
+          Action: "com.novoda.downloadmanager.action.BATCH_COMPLETE"
+          Action: "com.novoda.downloadmanager.action.BATCH_FAILED"
+          Action: "com.novoda.downloadmanager.action.BATCH_STATE_EVENT"
+          Action: "com.novoda.downloadmanager.action.BATCH_FIRST_TIME_START"
+          Action: "android.intent.action.DOWNLOAD_CANCEL"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        650071 com.tgc.greatcoursesplus/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 989ce56
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.google.android.c2dm.intent.REGISTRATION:
+        b9ef173 com.tgc.greatcoursesplus/com.selligent.sdk.SMBackgroundGcmBroadcastReceiver filter 2300830
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Action: "com.google.android.c2dm.intent.REGISTRATION"
+          Category: "com.selligent.sdk"
+      android.intent.action.DOWNLOAD_CANCEL:
+        1e254ce com.tgc.greatcoursesplus/com.teachco.tgcplus.teachcoplus.download.DownloadListenerService filter 8890fef
+          Action: "com.novoda.downloadmanager.action.BATCH_COMPLETE"
+          Action: "com.novoda.downloadmanager.action.BATCH_FAILED"
+          Action: "com.novoda.downloadmanager.action.BATCH_STATE_EVENT"
+          Action: "com.novoda.downloadmanager.action.BATCH_FIRST_TIME_START"
+          Action: "android.intent.action.DOWNLOAD_CANCEL"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        6bcbdfb com.tgc.greatcoursesplus/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter b618e18
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        6124ca9 com.tgc.greatcoursesplus/com.google.firebase.messaging.FirebaseMessagingService filter cdc522e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        b9a0a65 com.tgc.greatcoursesplus/com.selligent.sdk.SMMessagingService filter edf633a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+      com.google.firebase.auth.api.gms.service.START:
+        86d31cf com.tgc.greatcoursesplus/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter c5775c
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.tgc.greatcoursesplus/com.squareup.picasso.PicassoProvider:
+    Provider{6ff0215 com.tgc.greatcoursesplus/com.squareup.picasso.PicassoProvider}
+  com.tgc.greatcoursesplus/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{e74792a com.tgc.greatcoursesplus/com.google.firebase.provider.FirebaseInitProvider}
+  com.tgc.greatcoursesplus/com.pdftron.pdf.utils.PDFTronToolsInitializer:
+    Provider{4fe931b com.tgc.greatcoursesplus/com.pdftron.pdf.utils.PDFTronToolsInitializer}
+  com.tgc.greatcoursesplus/com.novoda.downloadmanager.lib.DownloadProvider:
+    Provider{3190cb8 com.tgc.greatcoursesplus/com.novoda.downloadmanager.lib.DownloadProvider}
+  com.tgc.greatcoursesplus/com.pdftron.pdf.utils.ShareProvider:
+    Provider{1daaa91 com.tgc.greatcoursesplus/com.pdftron.pdf.utils.ShareProvider}
+  com.tgc.greatcoursesplus/com.apptentive.android.sdk.debug.ApptentiveAttachmentFileProvider:
+    Provider{2e945f7 com.tgc.greatcoursesplus/com.apptentive.android.sdk.debug.ApptentiveAttachmentFileProvider}
+  com.tgc.greatcoursesplus/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{4ae3c64 com.tgc.greatcoursesplus/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.tgc.greatcoursesplus/androidx.work.impl.WorkManagerInitializer:
+    Provider{dee5ecd com.tgc.greatcoursesplus/androidx.work.impl.WorkManagerInitializer}
+
+ContentProvider Authorities:
+  [com.tgc.greatcoursesplus.firebaseinitprovider]:
+    Provider{e74792a com.tgc.greatcoursesplus/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{7624a93 com.tgc.greatcoursesplus}
+  [com.tgc.greatcoursesplus.ApptentiveAttachmentFileProvider]:
+    Provider{2e945f7 com.tgc.greatcoursesplus/com.apptentive.android.sdk.debug.ApptentiveAttachmentFileProvider}
+      applicationInfo=ApplicationInfo{844bad0 com.tgc.greatcoursesplus}
+  [com.tgc.greatcoursesplus.pdftron.fileprovider]:
+    Provider{1daaa91 com.tgc.greatcoursesplus/com.pdftron.pdf.utils.ShareProvider}
+      applicationInfo=ApplicationInfo{30f1ac9 com.tgc.greatcoursesplus}
+  [com.tgc.greatcoursesplus.lifecycle-process]:
+    Provider{4ae3c64 com.tgc.greatcoursesplus/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{80dd5ce com.tgc.greatcoursesplus}
+  [com.tgc.greatcoursesplus]:
+    Provider{3190cb8 com.tgc.greatcoursesplus/com.novoda.downloadmanager.lib.DownloadProvider}
+      applicationInfo=ApplicationInfo{5cfcef com.tgc.greatcoursesplus}
+  [com.tgc.greatcoursesplus.workmanager-init]:
+    Provider{dee5ecd com.tgc.greatcoursesplus/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{c82b3fc com.tgc.greatcoursesplus}
+  [com.tgc.greatcoursesplus.com.squareup.picasso]:
+    Provider{6ff0215 com.tgc.greatcoursesplus/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{7659a85 com.tgc.greatcoursesplus}
+  [com.tgc.greatcoursesplus.pdftron-tools]:
+    Provider{4fe931b com.tgc.greatcoursesplus/com.pdftron.pdf.utils.PDFTronToolsInitializer}
+      applicationInfo=ApplicationInfo{33580da com.tgc.greatcoursesplus}
+
+Key Set Manager:
+  [com.tgc.greatcoursesplus]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.tgc.greatcoursesplus] (8fad0a6):
+    userId=10353
+    pkg=Package{4c19ae7 com.tgc.greatcoursesplus}
+    codePath=/data/app/~~XbnpHo6Rt-J0MqiKTHsMpg==/com.tgc.greatcoursesplus-hG1Nub4nIZkjlhbtF7TBUA==
+    resourcePath=/data/app/~~XbnpHo6Rt-J0MqiKTHsMpg==/com.tgc.greatcoursesplus-hG1Nub4nIZkjlhbtF7TBUA==
+    legacyNativeLibraryDir=/data/app/~~XbnpHo6Rt-J0MqiKTHsMpg==/com.tgc.greatcoursesplus-hG1Nub4nIZkjlhbtF7TBUA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=432 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=6.0.7
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_TASK_REPARENTING ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.tgc.greatcoursesplus
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 16:14:26
+    lastUpdateTime=2022-11-30 16:14:28
+    packageSource=0
+    signatures=PackageSignatures{26cffdf version:2, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      com.android.vending.BILLING
+      android.permission.BLUETOOTH
+      android.permission.READ_PHONE_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=69171 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 16:14:28
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.tgc.greatcoursesplus
+    com.google.android.apps.diagnosticstool:
+      com.tgc.greatcoursesplus
+    com.google.android.settings.intelligence:
+      com.tgc.greatcoursesplus
+    com.google.android.apps.accessibility.voiceaccess:
+      com.tgc.greatcoursesplus
+    com.truecaller:
+      com.tgc.greatcoursesplus
+    com.dv.adm:
+      com.tgc.greatcoursesplus
+    com.zappcues.gamingmode:
+      com.tgc.greatcoursesplus
+    com.jio.myjio:
+      com.tgc.greatcoursesplus
+    com.zombodroid.MemeGeneratorFullGplay:
+      com.tgc.greatcoursesplus
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.tgc.greatcoursesplus]
+    path: /data/app/~~XbnpHo6Rt-J0MqiKTHsMpg==/com.tgc.greatcoursesplus-hG1Nub4nIZkjlhbtF7TBUA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:735357
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.tgc.greatcoursesplus]
+     base.apk - 677

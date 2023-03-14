@@ -1,0 +1,248 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d93ef24 com.skytesla.vpn/com.skyfirepro.vpn.activity.SplashActivity filter 4b1fa8d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.QUICKBOOT_POWERON:
+        2cd442 com.skytesla.vpn/com.skyfirepro.vpn.service.BootCompletedReceiver filter 8ceac53
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+        c37f28e com.skytesla.vpn/com.onesignal.BootUpReceiver filter 78dbaaf
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      com.android.vending.INSTALL_REFERRER:
+        ac4a99a com.skytesla.vpn/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 88552cb
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        3b2d990 com.skytesla.vpn/com.onesignal.GcmBroadcastReceiver filter 6d0b289
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.skytesla.vpn"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        4004aa8 com.skytesla.vpn/com.google.firebase.iid.FirebaseInstanceIdReceiver filter cf29c1
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        2cd442 com.skytesla.vpn/com.skyfirepro.vpn.service.BootCompletedReceiver filter 8ceac53
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+        c37f28e com.skytesla.vpn/com.onesignal.BootUpReceiver filter 78dbaaf
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        893febc com.skytesla.vpn/com.onesignal.UpgradeReceiver filter 8ee45
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.net.VpnService:
+        26d1f2 com.skytesla.vpn/com.anchorfree.vpnsdk.vpnservice.AFVpnService filter 7ab5043 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+      androidsrc.intent.action.PICK_PLUGIN:
+        f636954 com.skytesla.vpn/com.skyfirepro.vpn.service.MyService filter 263a0fd
+          Action: "androidsrc.intent.action.PICK_PLUGIN"
+          Category: "androidsrc.intent.category.ADD_PLUGIN"
+      com.onesignal.NotificationExtender:
+        333c566 com.skytesla.vpn/com.skyfirepro.vpn.OneSignal.MyNotificationExtenderService filter 61450a7 permission android.permission.BIND_JOB_SERVICE
+          Action: "com.onesignal.NotificationExtender"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.skytesla.vpn.permission.C2D_MESSAGE] (ca20375):
+    sourcePackage=com.skytesla.vpn
+    uid=10303 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f874f0a com.skytesla.vpn.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.skytesla.vpn/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{26de37b com.skytesla.vpn/com.facebook.ads.AudienceNetworkContentProvider}
+  com.skytesla.vpn/com.anchorfree.vpnsdk.vpnservice.config.VpnConfigProvider:
+    Provider{3b8598 com.skytesla.vpn/com.anchorfree.vpnsdk.vpnservice.config.VpnConfigProvider}
+  com.skytesla.vpn/com.anchorfree.vpnsdk.vpnservice.credentials.CredentialsContentProvider:
+    Provider{79c61f1 com.skytesla.vpn/com.anchorfree.vpnsdk.vpnservice.credentials.CredentialsContentProvider}
+  com.skytesla.vpn/com.anchorfree.sdk.UnifiedSDKInitProviderVpn:
+    Provider{4d351d6 com.skytesla.vpn/com.anchorfree.sdk.UnifiedSDKInitProviderVpn}
+  com.skytesla.vpn/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{26d3c57 com.skytesla.vpn/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.skytesla.vpn/com.anchorfree.ucr.UCRContentProvider:
+    Provider{32f6344 com.skytesla.vpn/com.anchorfree.ucr.UCRContentProvider}
+  com.skytesla.vpn/com.anchorfree.sdk.HydraTransportInitProvider:
+    Provider{6042c2d com.skytesla.vpn/com.anchorfree.sdk.HydraTransportInitProvider}
+  com.skytesla.vpn/com.anchorfree.sdk.UnifiedSDKInitProviderMain:
+    Provider{d0ab562 com.skytesla.vpn/com.anchorfree.sdk.UnifiedSDKInitProviderMain}
+  com.skytesla.vpn/com.anchorfree.sdk.DBProvider:
+    Provider{c9f46f3 com.skytesla.vpn/com.anchorfree.sdk.DBProvider}
+  com.skytesla.vpn/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{a616fb0 com.skytesla.vpn/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.skytesla.vpn.anchorfree.sdk.init.provider.vpn]:
+    Provider{4d351d6 com.skytesla.vpn/com.anchorfree.sdk.UnifiedSDKInitProviderVpn}
+      applicationInfo=ApplicationInfo{da45e29 com.skytesla.vpn}
+  [com.skytesla.vpn.mobileadsinitprovider]:
+    Provider{26d3c57 com.skytesla.vpn/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{62c5ae com.skytesla.vpn}
+  [com.skytesla.vpn.credentials]:
+    Provider{79c61f1 com.skytesla.vpn/com.anchorfree.vpnsdk.vpnservice.credentials.CredentialsContentProvider}
+      applicationInfo=ApplicationInfo{4dd5f4f com.skytesla.vpn}
+  [com.skytesla.vpn.AudienceNetworkContentProvider]:
+    Provider{26de37b com.skytesla.vpn/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{b65d6dc com.skytesla.vpn}
+  [com.skytesla.vpn.vpn_config]:
+    Provider{3b8598 com.skytesla.vpn/com.anchorfree.vpnsdk.vpnservice.config.VpnConfigProvider}
+      applicationInfo=ApplicationInfo{bfbb3e5 com.skytesla.vpn}
+  [com.skytesla.vpn.hydra.sdk.db.provider]:
+    Provider{c9f46f3 com.skytesla.vpn/com.anchorfree.sdk.DBProvider}
+      applicationInfo=ApplicationInfo{3198eba com.skytesla.vpn}
+  [com.skytesla.vpn.ucr.provider]:
+    Provider{32f6344 com.skytesla.vpn/com.anchorfree.ucr.UCRContentProvider}
+      applicationInfo=ApplicationInfo{93aa16b com.skytesla.vpn}
+  [com.skytesla.vpn.sdk.transport.hydra]:
+    Provider{6042c2d com.skytesla.vpn/com.anchorfree.sdk.HydraTransportInitProvider}
+      applicationInfo=ApplicationInfo{ee784c8 com.skytesla.vpn}
+  [com.skytesla.vpn.anchorfree.sdk.init.provider]:
+    Provider{d0ab562 com.skytesla.vpn/com.anchorfree.sdk.UnifiedSDKInitProviderMain}
+      applicationInfo=ApplicationInfo{db8a961 com.skytesla.vpn}
+  [com.skytesla.vpn.firebaseinitprovider]:
+    Provider{a616fb0 com.skytesla.vpn/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{d41dc86 com.skytesla.vpn}
+
+Key Set Manager:
+  [com.skytesla.vpn]
+      Signing KeySets: 5763
+
+Packages:
+  Package [com.skytesla.vpn] (b542574):
+    userId=10303
+    pkg=Package{34f3b12 com.skytesla.vpn}
+    codePath=/data/app/~~3FHUuYaizWn_9WORDnDo6g==/com.skytesla.vpn-nvwq2PFt_gHpSa3QBdvaAQ==
+    resourcePath=/data/app/~~3FHUuYaizWn_9WORDnDo6g==/com.skytesla.vpn-nvwq2PFt_gHpSa3QBdvaAQ==
+    legacyNativeLibraryDir=/data/app/~~3FHUuYaizWn_9WORDnDo6g==/com.skytesla.vpn-nvwq2PFt_gHpSa3QBdvaAQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=40 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=3.1.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.skytesla.vpn
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 15:03:11
+    lastUpdateTime=2022-11-30 15:03:13
+    packageSource=0
+    signatures=PackageSignatures{1a6055 version:3, signatures:[85e1e79b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.skytesla.vpn.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      com.android.vending.BILLING
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      oppo.permission.OPPO_COMPONENT_SAFE
+      com.huawei.permission.external_app_settings.USE_COMPONENT
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.skytesla.vpn.permission.C2D_MESSAGE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.WAKE_LOCK
+      android.permission.VIBRATE
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      com.skytesla.vpn.permission.C2D_MESSAGE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=58353 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:03:13
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.diagnosticstool:
+      com.skytesla.vpn
+    com.google.android.settings.intelligence:
+      com.skytesla.vpn
+    com.google.android.apps.accessibility.voiceaccess:
+      com.skytesla.vpn
+    com.truecaller:
+      com.skytesla.vpn
+    com.zappcues.gamingmode:
+      com.skytesla.vpn
+    com.jio.myjio:
+      com.skytesla.vpn
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.skytesla.vpn]
+    path: /data/app/~~3FHUuYaizWn_9WORDnDo6g==/com.skytesla.vpn-nvwq2PFt_gHpSa3QBdvaAQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:586075
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.skytesla.vpn]
+     base.apk - 450

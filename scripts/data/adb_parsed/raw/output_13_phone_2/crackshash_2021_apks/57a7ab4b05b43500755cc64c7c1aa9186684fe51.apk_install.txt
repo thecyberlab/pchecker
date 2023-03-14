@@ -1,0 +1,264 @@
+Activity Resolver Table:
+  Schemes:
+      tubitv:
+        3abcaf4 com.tubitv/.activities.MainActivity filter 3d11c92
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tubitv"
+          Authority: "media-details": -1
+          Authority: "media-playback": -1
+          Authority: "media-browse": -1
+          Authority: "open": -1
+          Authority: "registration": -1
+          Authority: "device": -1
+          Authority: "live-news": -1
+      http:
+        3abcaf4 com.tubitv/.activities.MainActivity filter 1a9d663
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "tubitv.com": -1
+      https:
+        3abcaf4 com.tubitv/.activities.MainActivity filter 1a9d663
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "tubitv.com": -1
+        3abcaf4 com.tubitv/.activities.MainActivity filter 834a260
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "link.tubi.tv": -1
+      fbconnect:
+        cb1848c com.tubitv/com.facebook.CustomTabActivity filter e4047d5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.tubitv": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        3abcaf4 com.tubitv/.activities.MainActivity filter 4b3f21d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+        be06fde com.tubitv/.activities.CastExpandedControllerActivity filter 45975bf
+          Action: "android.intent.action.MAIN"
+      android.intent.action.SEARCH:
+        3abcaf4 com.tubitv/.activities.MainActivity filter e229319
+          Action: "android.intent.action.SEARCH"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        affabea com.tubitv/.services.TubiFirebaseMessagingService filter 639aedb
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        2385d78 com.tubitv/com.google.firebase.messaging.FirebaseMessagingService filter 14a8c51
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          link.tubi.tv
+          tubitv.com
+
+Permissions:
+  Permission [com.tubitv.permission.C2D_MESSAGE] (1ea203e):
+    sourcePackage=com.tubitv
+    uid=10321 gids=[] type=0 prot=signature
+    perm=PermissionInfo{476ce9f com.tubitv.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.tubitv/androidx.work.impl.WorkManagerInitializer:
+    Provider{7849bec com.tubitv/androidx.work.impl.WorkManagerInitializer}
+  com.tubitv/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{f807bb5 com.tubitv/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.tubitv/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{264024a com.tubitv/com.google.firebase.provider.FirebaseInitProvider}
+  com.tubitv/com.facebook.internal.FacebookInitProvider:
+    Provider{c83b5bb com.tubitv/com.facebook.internal.FacebookInitProvider}
+  com.tubitv/zendesk.belvedere.BelvedereFileProvider:
+    Provider{f158ad8 com.tubitv/zendesk.belvedere.BelvedereFileProvider}
+  com.tubitv/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{78a1e31 com.tubitv/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.tubitv/.features.globalsearch.VoiceSearchProvider:
+    Provider{5e7f916 com.tubitv/.features.globalsearch.VoiceSearchProvider}
+  com.tubitv/zendesk.support.SupportSdkStartupProvider:
+    Provider{eadf297 com.tubitv/zendesk.support.SupportSdkStartupProvider}
+
+ContentProvider Authorities:
+  [com.tubitv.zendesk.support.SupportSdkStartupProvider]:
+    Provider{eadf297 com.tubitv/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{7c47c84 com.tubitv}
+  [com.tubitv.belvedere2.attachments]:
+    Provider{f158ad8 com.tubitv/zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{eb16c6d com.tubitv}
+  [com.tubitv.firebaseperfprovider]:
+    Provider{f807bb5 com.tubitv/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{9e290a2 com.tubitv}
+  [com.tubitv.lifecycle-process]:
+    Provider{78a1e31 com.tubitv/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{cd52133 com.tubitv}
+  [com.tubitv.workmanager-init]:
+    Provider{7849bec com.tubitv/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{74edcf0 com.tubitv}
+  [com.tubitv.firebaseinitprovider]:
+    Provider{264024a com.tubitv/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{5856269 com.tubitv}
+  [com.tubitv.FacebookInitProvider]:
+    Provider{c83b5bb com.tubitv/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{3fd14ee com.tubitv}
+  [com.tubitv]:
+    Provider{5e7f916 com.tubitv/.features.globalsearch.VoiceSearchProvider}
+      applicationInfo=ApplicationInfo{d369d8f com.tubitv}
+
+Key Set Manager:
+  [com.tubitv]
+      Signing KeySets: 5874
+
+Packages:
+  Package [com.tubitv] (c88bc25):
+    userId=10321
+    pkg=Package{92991fa com.tubitv}
+    codePath=/data/app/~~EJBSAVVG0MZBfULikcRIHw==/com.tubitv-NALuHpdYvwSPq13e2Q1NhA==
+    resourcePath=/data/app/~~EJBSAVVG0MZBfULikcRIHw==/com.tubitv-NALuHpdYvwSPq13e2Q1NhA==
+    legacyNativeLibraryDir=/data/app/~~EJBSAVVG0MZBfULikcRIHw==/com.tubitv-NALuHpdYvwSPq13e2Q1NhA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=623 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=4.16.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.tubitv
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 17:20:33
+    lastUpdateTime=2022-11-30 17:20:34
+    packageSource=0
+    signatures=PackageSignatures{bed5a08 version:2, signatures:[85bcdd46], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.tubitv.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.android.providers.tv.permission.READ_EPG_DATA
+      com.android.providers.tv.permission.WRITE_EPG_DATA
+      com.amazon.device.permission.COMRADE_CAPABILITIES
+      com.tubitv.permission.C2D_MESSAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.INTERNET: granted=true
+      com.tubitv.permission.C2D_MESSAGE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=80885 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 17:20:34
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.tubitv
+    com.google.android.apps.diagnosticstool:
+      com.tubitv
+    com.google.android.settings.intelligence:
+      com.tubitv
+    com.google.android.GoogleCamera:
+      com.tubitv
+    com.google.android.apps.accessibility.voiceaccess:
+      com.tubitv
+    com.truecaller:
+      com.tubitv
+    com.dv.adm:
+      com.tubitv
+    com.tubitv:
+      com.google.android.videos
+    com.zappcues.gamingmode:
+      com.tubitv
+    com.jio.myjio:
+      com.tubitv
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.tubitv]
+    path: /data/app/~~EJBSAVVG0MZBfULikcRIHw==/com.tubitv-NALuHpdYvwSPq13e2Q1NhA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:922451
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.tubitv]
+     base.apk - 879

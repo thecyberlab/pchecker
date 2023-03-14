@@ -1,0 +1,252 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        d5dab95 com.michaldrabik.showly2/.ui.main.MainActivity filter c00e438
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "imdb.com": -1
+          Authority: "www.imdb.com": -1
+          Authority: "m.imdb.com": -1
+          Path: "PatternMatcher{PREFIX: /title/tt}"
+        d5dab95 com.michaldrabik.showly2/.ui.main.MainActivity filter d3a6c11
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "themoviedb.org": -1
+          Authority: "www.themoviedb.org": -1
+          Path: "PatternMatcher{PREFIX: /tv/}"
+          Path: "PatternMatcher{PREFIX: /movie/}"
+        d5dab95 com.michaldrabik.showly2/.ui.main.MainActivity filter 4f36176
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "trakt.tv": -1
+          Authority: "www.trakt.tv": -1
+          Path: "PatternMatcher{PREFIX: /shows/}"
+          Path: "PatternMatcher{PREFIX: /movies/}"
+      showly2:
+        d5dab95 com.michaldrabik.showly2/.ui.main.MainActivity filter 6c9189b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "showly2"
+          Authority: "trakt": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d5dab95 com.michaldrabik.showly2/.ui.main.MainActivity filter 567a4aa
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        27d7b81 com.michaldrabik.showly2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1d51426
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        7dd5e8b com.michaldrabik.showly2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 691cb68
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        f415867 com.michaldrabik.showly2/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e6c3614
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        4054ebd com.michaldrabik.showly2/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 76e4cb2
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        f415867 com.michaldrabik.showly2/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e6c3614
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        581a405 com.michaldrabik.showly2/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 90a8c5a
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        27d7b81 com.michaldrabik.showly2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1d51426
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        9011403 com.michaldrabik.showly2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6e09f80
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        9011403 com.michaldrabik.showly2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6e09f80
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        9011403 com.michaldrabik.showly2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6e09f80
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        7dd5e8b com.michaldrabik.showly2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 691cb68
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        a96a377 com.michaldrabik.showly2/com.michaldrabik.ui_widgets.progress.ProgressWidgetProvider filter cfc0be4
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        948b84d com.michaldrabik.showly2/com.michaldrabik.ui_widgets.progress_movies.ProgressMoviesWidgetProvider filter 4ac1f02
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        c480013 com.michaldrabik.showly2/com.michaldrabik.ui_widgets.calendar.CalendarWidgetProvider filter c600250
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        f758c49 com.michaldrabik.showly2/com.michaldrabik.ui_widgets.calendar_movies.CalendarMoviesWidgetProvider filter f41294e
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        9a88a6f com.michaldrabik.showly2/com.michaldrabik.ui_widgets.search.SearchWidgetProvider filter 7caf37c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        a76ed5f com.michaldrabik.showly2/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 77033ac
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        b3d19b9 com.michaldrabik.showly2/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 4f081fe
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        d8c9875 com.michaldrabik.showly2/.fcm.NotificationsService filter acec00a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        a47007b com.michaldrabik.showly2/com.google.firebase.messaging.FirebaseMessagingService filter c82de98
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.imdb.com
+          imdb.com
+          www.themoviedb.org
+          themoviedb.org
+          www.trakt.tv
+          trakt.tv
+          m.imdb.com
+
+Registered ContentProviders:
+  com.michaldrabik.showly2/androidx.startup.InitializationProvider:
+    Provider{2420f44 com.michaldrabik.showly2/androidx.startup.InitializationProvider}
+  com.michaldrabik.showly2/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{95f682d com.michaldrabik.showly2/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.michaldrabik.showly2.firebaseinitprovider]:
+    Provider{95f682d com.michaldrabik.showly2/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{f2b4162 com.michaldrabik.showly2}
+  [com.michaldrabik.showly2.androidx-startup]:
+    Provider{2420f44 com.michaldrabik.showly2/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{722e2f3 com.michaldrabik.showly2}
+
+Key Set Manager:
+  [com.michaldrabik.showly2]
+      Signing KeySets: 5596
+
+Packages:
+  Package [com.michaldrabik.showly2] (5f2dbb0):
+    userId=10253
+    pkg=Package{1775a29 com.michaldrabik.showly2}
+    codePath=/data/app/~~8mVgWXdg79iz4AtsQDQWBw==/com.michaldrabik.showly2-9HmmvlHnN8S7Xv6WSCugDw==
+    resourcePath=/data/app/~~8mVgWXdg79iz4AtsQDQWBw==/com.michaldrabik.showly2-9HmmvlHnN8S7Xv6WSCugDw==
+    legacyNativeLibraryDir=/data/app/~~8mVgWXdg79iz4AtsQDQWBw==/com.michaldrabik.showly2-9HmmvlHnN8S7Xv6WSCugDw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=420 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=3.12.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.michaldrabik.showly2
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 13:04:56
+    lastUpdateTime=2022-11-30 13:04:57
+    packageSource=0
+    signatures=PackageSignatures{20011ae version:2, signatures:[89fa6125], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CHANGE_NETWORK_STATE
+      com.android.vending.BILLING
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=53388 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 13:04:57
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.michaldrabik.showly2
+    com.google.android.apps.diagnosticstool:
+      com.michaldrabik.showly2
+    com.google.android.settings.intelligence:
+      com.michaldrabik.showly2
+    com.google.android.apps.accessibility.voiceaccess:
+      com.michaldrabik.showly2
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.michaldrabik.showly2]
+    path: /data/app/~~8mVgWXdg79iz4AtsQDQWBw==/com.michaldrabik.showly2-9HmmvlHnN8S7Xv6WSCugDw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:82190
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.michaldrabik.showly2]
+     base.apk - 384

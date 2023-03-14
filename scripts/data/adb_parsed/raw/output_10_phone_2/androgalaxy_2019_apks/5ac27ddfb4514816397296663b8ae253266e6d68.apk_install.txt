@@ -1,0 +1,268 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        3b782f com.kimcy929.screenrecorder/.activity.MainActivity filter b6982ac
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        3b782f com.kimcy929.screenrecorder/.activity.MainActivity filter ec53b75
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        b4aae3c com.kimcy929.screenrecorder/.receiver.AppListener filter 396270a
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Action: "android.intent.action.PACKAGE_REMOVED"
+          Scheme: "package"
+          mPriority=1000, mOrder=0, mHasPartialTypes=false
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        e4aa7c5 com.kimcy929.screenrecorder/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6f7a9d6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        c45a51a com.kimcy929.screenrecorder/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4bb19f1
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        e11684b com.kimcy929.screenrecorder/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter eb6b457
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        327228 com.kimcy929.screenrecorder/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 1077b44
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        e11684b com.kimcy929.screenrecorder/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter eb6b457
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        732fb41 com.kimcy929.screenrecorder/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 28fdb7b
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        e88f8e6 com.kimcy929.screenrecorder/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 8421d98
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        e4aa7c5 com.kimcy929.screenrecorder/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6f7a9d6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        40c3e27 com.kimcy929.screenrecorder/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 256642d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        40c3e27 com.kimcy929.screenrecorder/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 256642d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        40c3e27 com.kimcy929.screenrecorder/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 256642d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        c45a51a com.kimcy929.screenrecorder/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4bb19f1
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        d5088d4 com.kimcy929.screenrecorder/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 91c8d62
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        cf30a7d com.kimcy929.screenrecorder/.service.toolbox.ToolBoxTileService filter 83ef3 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+        a5bbd72 com.kimcy929.screenrecorder/.service.RecorderTileService filter 9a307b0 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+        4f495c3 com.kimcy929.screenrecorder/.service.ScreenCaptureTileService filter 8e21629 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+
+Registered ContentProviders:
+  com.kimcy929.screenrecorder/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{9975e40 com.kimcy929.screenrecorder/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.kimcy929.screenrecorder/androidx.core.content.FileProvider:
+    Provider{9aad179 com.kimcy929.screenrecorder/androidx.core.content.FileProvider}
+  com.kimcy929.screenrecorder/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{6243ebe com.kimcy929.screenrecorder/com.crashlytics.android.CrashlyticsInitProvider}
+  com.kimcy929.screenrecorder/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{d80cb1f com.kimcy929.screenrecorder/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.kimcy929.screenrecorder.crashlyticsinitprovider]:
+    Provider{6243ebe com.kimcy929.screenrecorder/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{6b41e6c com.kimcy929.screenrecorder}
+  [com.kimcy929.screenrecorder.firebaseinitprovider]:
+    Provider{d80cb1f com.kimcy929.screenrecorder/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{6b41e6c com.kimcy929.screenrecorder}
+  [com.kimcy929.screenrecorder.provider]:
+    Provider{9aad179 com.kimcy929.screenrecorder/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{6b41e6c com.kimcy929.screenrecorder}
+  [com.kimcy929.screenrecorder.lifecycle-process]:
+    Provider{9975e40 com.kimcy929.screenrecorder/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{6b41e6c com.kimcy929.screenrecorder}
+
+Key Set Manager:
+  [com.kimcy929.screenrecorder]
+      Signing KeySets: 80
+
+Packages:
+  Package [com.kimcy929.screenrecorder] (f7e0c35):
+    userId=10241
+    pkg=Package{e58185f com.kimcy929.screenrecorder}
+    codePath=/data/app/com.kimcy929.screenrecorder-lL9lWd21y_OCXdfn4HQ6Ew==
+    resourcePath=/data/app/com.kimcy929.screenrecorder-lL9lWd21y_OCXdfn4HQ6Ew==
+    legacyNativeLibraryDir=/data/app/com.kimcy929.screenrecorder-lL9lWd21y_OCXdfn4HQ6Ew==/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=256 minSdk=21 targetSdk=29
+    versionName=1.2.1.1
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{6b41e6c com.kimcy929.screenrecorder}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE ]
+    dataDir=/data/user/0/com.kimcy929.screenrecorder
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 07:19:25
+    firstInstallTime=2021-03-06 07:19:25
+    lastUpdateTime=2021-03-06 07:19:25
+    signatures=PackageSignatures{66188ca version:2, signatures:[df695460], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    requested permissions:
+      android.permission.CAMERA
+      android.permission.RECORD_AUDIO
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.WRITE_SETTINGS
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.ACCESS_NETWORK_STATE
+      com.android.vending.BILLING
+      android.permission.FOREGROUND_SERVICE
+      android.permission.INTERNET
+      android.permission.WAKE_LOCK
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.RECEIVE_BOOT_COMPLETED
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=5028 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=213
+  User 0:
+    seq=5, package=com.google.android.gms
+    seq=11, package=com.kajda.fuelio
+    seq=16, package=me.piere.christmas
+    seq=18, package=ak.alizandro.smartaudiobookplayer
+    seq=20, package=amazing.three_d.icons
+    seq=22, package=com.first75.voicerecorder2pro
+    seq=24, package=digifit.virtuagym.client.android
+    seq=26, package=com.paget96.lspeed
+    seq=28, package=yo.app
+    seq=32, package=com.in.w3d
+    seq=34, package=com.luzapplications.alessio.wallooppro
+    seq=36, package=com.alesp.orologiomondiale.pro
+    seq=38, package=co.windyapp.android
+    seq=40, package=com.yuanwofei.cardemulator.pro
+    seq=44, package=com.lb.app_manager
+    seq=48, package=com.microblink.photomath
+    seq=50, package=studio14.application.caeluswhite
+    seq=52, package=com.david.android.languageswitch
+    seq=54, package=com.perfectapps.muviz
+    seq=58, package=net.xnano.android.ftpserver
+    seq=60, package=com.aezowie.mycalpro
+    seq=62, package=com.bialy.zonelauncher
+    seq=66, package=com.indigomadina.tabloid
+    seq=68, package=com.plexapp.android
+    seq=70, package=com.mixplorer
+    seq=72, package=com.mobilefootie.wc2010
+    seq=74, package=de.dwd.warnapp
+    seq=76, package=oos.dark.material
+    seq=78, package=com.intsig.camscanner
+    seq=82, package=com.indigomadina.spheroid
+    seq=84, package=com.footej.camera
+    seq=89, package=com.cray.software.justreminderpro
+    seq=91, package=com.sofascore.results
+    seq=97, package=pl.solidexplorer2
+    seq=103, package=jp.gr.java_conf.soboku.batterymeter
+    seq=105, package=com.iioannou.phototools.pro
+    seq=108, package=com.unvoid.borealis
+    seq=112, package=com.happening.studios.swipeforfacebookfree
+    seq=114, package=com.rookiestudio.perfectviewer
+    seq=117, package=com.osheden.azulox
+    seq=122, package=com.fullreader
+    seq=124, package=com.pakdata.easyurdu
+    seq=126, package=eu.faircode.netguard
+    seq=132, package=indigomadina.furatto.ui
+    seq=134, package=com.brit.swiftblack.layers
+    seq=138, package=o.o.joey
+    seq=140, package=at.bitfire.davdroid
+    seq=142, package=com.overlook.android.fing
+    seq=144, package=ru.involta.metro
+    seq=148, package=hastamev.oneuidark.com
+    seq=153, package=com.compscieddy.writeaday
+    seq=155, package=com.protectstar.ishredder.pro
+    seq=157, package=prism.kustom.pack
+    seq=161, package=com.protectstar.ishredder.mil
+    seq=163, package=com.androidev.xhafe.earthquakepro
+    seq=165, package=com.n7mobile.nplayer
+    seq=167, package=com.franco.doze
+    seq=169, package=com.mobisystems.fileman
+    seq=171, package=com.changemystyle.gentlewakeuppro
+    seq=173, package=com.ottplay.ottplay
+    seq=175, package=studio14.application.juno
+    seq=177, package=com.thegrammaruniversity.drfrench
+    seq=179, package=com.medisafe.android.client
+    seq=181, package=com.adguard.android
+    seq=183, package=com.shaiban.audioplayer.mplayer
+    seq=185, package=com.brit.swiftdark.substratum
+    seq=187, package=com.bergin_it.gpsscatterplot
+    seq=189, package=com.zemana.msecurity
+    seq=191, package=be.inet.rainwidget.donate
+    seq=193, package=com.bergin_it.gpsattitude
+    seq=195, package=ru.yandex.music
+    seq=197, package=com.roamingsquirrel.android.calculator_plus
+    seq=200, package=com.aathifmahir.iconpack.kora.free
+    seq=202, package=com.iudesk.android.photo.editor
+    seq=204, package=com.franco.kernel
+    seq=206, package=com.magdalm.wifimasterpassword
+    seq=209, package=com.nll.asr
+    seq=211, package=com.crypter.cryptocyrrency
+    seq=212, package=com.kimcy929.screenrecorder
+
+
+Dexopt state:
+  [com.kimcy929.screenrecorder]
+    path: /data/app/com.kimcy929.screenrecorder-lL9lWd21y_OCXdfn4HQ6Ew==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.kimcy929.screenrecorder]
+     base.apk - 2880
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

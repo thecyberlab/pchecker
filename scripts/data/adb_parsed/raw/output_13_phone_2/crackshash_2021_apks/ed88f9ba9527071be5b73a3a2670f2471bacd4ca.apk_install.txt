@@ -1,0 +1,320 @@
+Activity Resolver Table:
+  Schemes:
+      fbconnect:
+        a53cef2 com.youdao.hindict/com.facebook.CustomTabActivity filter fe90943
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.youdao.hindict": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        ac6de54 com.youdao.hindict/.activity.SplashActivity filter 76271fd
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        719d8a2 com.youdao.hindict/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 54ec933
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        8888484 com.youdao.hindict/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c98d46d
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        44b64f0 com.youdao.hindict/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e7b4a69
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        f4be83e com.youdao.hindict/.receiver.NetBroadcastReceiver filter 208f69f
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        160dcee com.youdao.hindict/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 7a2c58f
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        6839bc6 com.youdao.hindict/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter a3d787
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        44b64f0 com.youdao.hindict/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e7b4a69
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        ad816b4 com.youdao.hindict/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 824b2dd
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        719d8a2 com.youdao.hindict/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 54ec933
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        81a4a4a com.youdao.hindict/.receiver.TimezoneReceiver filter 5105dbb
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        419e01c com.youdao.hindict/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2f52425
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        419e01c com.youdao.hindict/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2f52425
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        6efa3ec com.youdao.hindict/.receiver.BootCompletedReceiver filter c82e3b5
+          Action: "android.intent.action.BOOT_COMPLETED"
+        419e01c com.youdao.hindict/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2f52425
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.USER_PRESENT:
+        3dd8bc0 com.youdao.hindict/.receiver.UserPresentReceiver filter c6930f9
+          Action: "android.intent.action.USER_PRESENT"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        8888484 com.youdao.hindict/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c98d46d
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DOWNLOAD_COMPLETE:
+        4bac116 com.youdao.hindict/.caidan.CaidanDownloadReceiver filter 75d1a97
+          Action: "android.intent.action.DOWNLOAD_COMPLETE"
+      com.youdao.hindict.UPDATE_VIP_STATUS:
+        e2912d8 com.youdao.hindict/.subscription.receiver.VipStatusReceiver filter 64b0631
+          Action: "com.youdao.hindict.UPDATE_VIP_STATUS"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        af2e208 com.youdao.hindict/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 478dda1
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        d01d9fa com.youdao.hindict/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter b902bab
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        239ea20 com.youdao.hindict/.push.MyFirebaseMessagingService filter cbe9fd9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        cb45d9e com.youdao.hindict/com.google.firebase.messaging.FirebaseMessagingService filter 386307f
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.accessibilityservice.AccessibilityService:
+        a0dae52 com.youdao.hindict/.service.MagicTranslationService filter 85c6523 permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.youdao.hindict/com.youdao.sdk.extra.common.AdDownloadProvider:
+    Provider{778258 com.youdao.hindict/com.youdao.sdk.extra.common.AdDownloadProvider}
+  com.youdao.hindict/com.huawei.agconnect.core.provider.AGConnectInitializeProvider:
+    Provider{4a97fb1 com.youdao.hindict/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+  com.youdao.hindict/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{4f97c96 com.youdao.hindict/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.youdao.hindict/androidx.core.content.FileProvider:
+    Provider{433f017 com.youdao.hindict/androidx.core.content.FileProvider}
+  com.youdao.hindict/com.huawei.hms.update.provider.UpdateProvider:
+    Provider{60e6c04 com.youdao.hindict/com.huawei.hms.update.provider.UpdateProvider}
+  com.youdao.hindict/com.youdao.admediationsdk.statistics.source.local.TrackerProvider:
+    Provider{82565ed com.youdao.hindict/com.youdao.admediationsdk.statistics.source.local.TrackerProvider}
+  com.youdao.hindict/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{f48cc22 com.youdao.hindict/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.youdao.hindict/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{47d76b3 com.youdao.hindict/com.google.firebase.provider.FirebaseInitProvider}
+  com.youdao.hindict/com.facebook.internal.FacebookInitProvider:
+    Provider{5084470 com.youdao.hindict/com.facebook.internal.FacebookInitProvider}
+  com.youdao.hindict/.common.ContextProvider:
+    Provider{7ff73e9 com.youdao.hindict/.common.ContextProvider}
+  com.youdao.hindict/androidx.startup.InitializationProvider:
+    Provider{c4b886e com.youdao.hindict/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.youdao.hindict.youdaosdk]:
+    Provider{778258 com.youdao.hindict/com.youdao.sdk.extra.common.AdDownloadProvider}
+      applicationInfo=ApplicationInfo{2cecb0f com.youdao.hindict}
+  [com.youdao.hindict.hms.update.provider]:
+    Provider{60e6c04 com.youdao.hindict/com.huawei.hms.update.provider.UpdateProvider}
+      applicationInfo=ApplicationInfo{e5265a5 com.youdao.hindict}
+  [com.youdao.hindict.AGCInitializeProvider]:
+    Provider{4a97fb1 com.youdao.hindict/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+      applicationInfo=ApplicationInfo{6abbd7a com.youdao.hindict}
+  [com.youdao.hindict.mediationSdk.TrackerProvider]:
+    Provider{82565ed com.youdao.hindict/com.youdao.admediationsdk.statistics.source.local.TrackerProvider}
+      applicationInfo=ApplicationInfo{137092b com.youdao.hindict}
+  [com.youdao.hindict.lifecycle-process]:
+    Provider{4f97c96 com.youdao.hindict/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{b7c3188 com.youdao.hindict}
+  [com.youdao.hindict.firebaseinitprovider]:
+    Provider{47d76b3 com.youdao.hindict/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{228b721 com.youdao.hindict}
+  [com.youdao.hindict.androidx-startup]:
+    Provider{c4b886e com.youdao.hindict/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{7a83746 com.youdao.hindict}
+  [com.youdao.hindict.FacebookInitProvider]:
+    Provider{5084470 com.youdao.hindict/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{99b0d07 com.youdao.hindict}
+  [com.youdao.hindict.context]:
+    Provider{7ff73e9 com.youdao.hindict/.common.ContextProvider}
+      applicationInfo=ApplicationInfo{f66de34 com.youdao.hindict}
+  [com.youdao.hindict.provider]:
+    Provider{433f017 com.youdao.hindict/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{6b8a45d com.youdao.hindict}
+  [com.youdao.hindict.firebaseperfprovider]:
+    Provider{f48cc22 com.youdao.hindict/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{ba081d2 com.youdao.hindict}
+
+Key Set Manager:
+  [com.youdao.hindict]
+      Signing KeySets: 5699
+
+Packages:
+  Package [com.youdao.hindict] (1ada9a0):
+    userId=10311
+    pkg=Package{2602959 com.youdao.hindict}
+    codePath=/data/app/~~bB1RFf3acCfVdYXaP0YWUA==/com.youdao.hindict-X_AnX-kJkHLL6z-USo6l6g==
+    resourcePath=/data/app/~~bB1RFf3acCfVdYXaP0YWUA==/com.youdao.hindict-X_AnX-kJkHLL6z-USo6l6g==
+    legacyNativeLibraryDir=/data/app/~~bB1RFf3acCfVdYXaP0YWUA==/com.youdao.hindict-X_AnX-kJkHLL6z-USo6l6g==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=231 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=5.0.20
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.facebook.katana]
+    queriesIntents=[Intent { act=android.speech.action.RECOGNIZE_SPEECH }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.youdao.hindict
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 19:50:36
+    lastUpdateTime=2022-11-30 19:50:37
+    packageSource=0
+    signatures=PackageSignatures{27e95ff version:2, signatures:[1f09083b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.ACCESS_WIFI_STATE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      com.android.launcher.permission.UNINSTALL_SHORTCUT
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.DISABLE_KEYGUARD
+      android.permission.CAMERA
+      android.permission.RECORD_AUDIO
+      android.permission.ACCESS_ALL_DOWNLOADS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.READ_EXTERNAL_STORAGE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.CHANGE_CONFIGURATION
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+      android.permission.REQUEST_INSTALL_PACKAGES
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.launcher.permission.UNINSTALL_SHORTCUT: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=93921 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 19:50:37
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.youdao.hindict
+    com.google.android.apps.diagnosticstool:
+      com.youdao.hindict
+    com.google.android.settings.intelligence:
+      com.youdao.hindict
+    com.google.android.apps.accessibility.voiceaccess:
+      com.youdao.hindict
+    com.zhiliaoapp.musically:
+      com.youdao.hindict
+    com.truecaller:
+      com.youdao.hindict
+    com.youdao.hindict:
+      com.google.android.googlequicksearchbox
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      ru.iptvremote.android.iptv.pro
+      com.mycompany.app.soulbrowser
+      com.dv.adm
+      com.utorrent.client.pro
+    com.dv.adm:
+      com.youdao.hindict
+    com.zappcues.gamingmode:
+      com.youdao.hindict
+    com.jio.myjio:
+      com.youdao.hindict
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.youdao.hindict]
+    path: /data/app/~~bB1RFf3acCfVdYXaP0YWUA==/com.youdao.hindict-X_AnX-kJkHLL6z-USo6l6g==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:419024
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.youdao.hindict]
+     base.apk - 883

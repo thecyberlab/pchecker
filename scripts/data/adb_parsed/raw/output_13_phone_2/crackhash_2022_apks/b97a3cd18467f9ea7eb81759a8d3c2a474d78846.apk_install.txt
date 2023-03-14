@@ -1,0 +1,436 @@
+Activity Resolver Table:
+  Schemes:
+      forest:
+        bbe2c06 cc.forestapp/.activities.main.MainActivity filter 406c2c7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "forest"
+          Authority: "join_room": -1
+        bbe2c06 cc.forestapp/.activities.main.MainActivity filter 323c0f4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "forest"
+          Authority: "contact": -1
+        bbbb01d cc.forestapp/.activities.news.NewsRoomActivity filter 2010292
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "forest"
+          Authority: "add_custom_phrase": -1
+          Path: "PatternMatcher{LITERAL: /planting}"
+        bbbb01d cc.forestapp/.activities.news.NewsRoomActivity filter 822c463
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "forest"
+          Authority: "add_custom_phrase": -1
+          Path: "PatternMatcher{LITERAL: /success}"
+        bbbb01d cc.forestapp/.activities.news.NewsRoomActivity filter 635f860
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "forest"
+          Authority: "add_custom_phrase": -1
+          Path: "PatternMatcher{LITERAL: /failure}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        a8c6848 cc.forestapp/.applications.SplashActivity filter 53e86e1
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        84e7378 cc.forestapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 765ea51
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        68651ea cc.forestapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9225cdb
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        73f5ebc cc.forestapp/com.evernote.android.job.JobBootReceiver filter 640ce45
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      io.intercom.android.sdk.INTERCOM_PUSH_OPENED:
+        e83119 cc.forestapp/io.intercom.android.sdk.push.IntercomPushBroadcastReceiver filter 428b5de
+          Action: "io.intercom.android.sdk.INTERCOM_PUSH_OPENED"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        73f5ebc cc.forestapp/com.evernote.android.job.JobBootReceiver filter 640ce45
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        f6fa2b6 cc.forestapp/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4dfebb7
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        3b34f24 cc.forestapp/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter f4dda8d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        f6fa2b6 cc.forestapp/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4dfebb7
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED:
+        e83119 cc.forestapp/io.intercom.android.sdk.push.IntercomPushBroadcastReceiver filter 47343bf
+          Action: "io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        6cf099a cc.forestapp/androidx.profileinstaller.ProfileInstallReceiver filter 23032cb
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        8723a8c cc.forestapp/com.google.firebase.iid.FirebaseInstanceIdReceiver filter ac1c5d5
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        84e7378 cc.forestapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 765ea51
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        2cb3442 cc.forestapp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 77d8c53
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        2cb3442 cc.forestapp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 77d8c53
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.evernote.android.job.v14.RUN_JOB:
+        a5c528e cc.forestapp/com.evernote.android.job.v14.PlatformAlarmReceiver filter 24a9aaf
+          Action: "com.evernote.android.job.v14.RUN_JOB"
+          Action: "net.vrallev.android.job.v14.RUN_JOB"
+      android.intent.action.BOOT_COMPLETED:
+        2cb3442 cc.forestapp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 77d8c53
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        73f5ebc cc.forestapp/com.evernote.android.job.JobBootReceiver filter 640ce45
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        68651ea cc.forestapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9225cdb
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        73f5ebc cc.forestapp/com.evernote.android.job.JobBootReceiver filter 640ce45
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        c683990 cc.forestapp/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter f4a9289
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      net.vrallev.android.job.v14.RUN_JOB:
+        a5c528e cc.forestapp/com.evernote.android.job.v14.PlatformAlarmReceiver filter 24a9aaf
+          Action: "com.evernote.android.job.v14.RUN_JOB"
+          Action: "net.vrallev.android.job.v14.RUN_JOB"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        71d31f2 cc.forestapp/com.evernote.android.job.gcm.PlatformGcmService filter fd23043 permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        201aaa8 cc.forestapp/.applications.YFFirebaseMessagingService filter 2a509c1
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        c1ac954 cc.forestapp/com.google.firebase.messaging.FirebaseMessagingService filter bb780fd
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.notification.NotificationListenerService:
+        5842566 cc.forestapp/.activities.main.growing.NotificationBlocker filter f8d30a7 permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+
+Domain verification status:
+
+Registered ContentProviders:
+  cc.forestapp/com.vungle.warren.utility.VungleProvider:
+    Provider{7b90b7e cc.forestapp/com.vungle.warren.utility.VungleProvider}
+  cc.forestapp/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{cbe78df cc.forestapp/com.google.android.gms.ads.MobileAdsInitProvider}
+  cc.forestapp/androidx.core.content.FileProvider:
+    Provider{167992c cc.forestapp/androidx.core.content.FileProvider}
+  cc.forestapp/androidx.work.impl.WorkManagerInitializer:
+    Provider{dcfcff5 cc.forestapp/androidx.work.impl.WorkManagerInitializer}
+  cc.forestapp/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{f56618a cc.forestapp/com.google.firebase.perf.provider.FirebasePerfProvider}
+  cc.forestapp/com.squareup.picasso.PicassoProvider:
+    Provider{43bc3fb cc.forestapp/com.squareup.picasso.PicassoProvider}
+  cc.forestapp/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{24b1c18 cc.forestapp/com.google.firebase.provider.FirebaseInitProvider}
+  cc.forestapp/net.grandcentrix.tray.provider.TrayContentProvider:
+    Provider{f1a7671 cc.forestapp/net.grandcentrix.tray.provider.TrayContentProvider}
+  cc.forestapp/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{ac10c56 cc.forestapp/com.facebook.ads.AudienceNetworkContentProvider}
+  cc.forestapp/com.applovin.sdk.AppLovinInitProvider:
+    Provider{678a4d7 cc.forestapp/com.applovin.sdk.AppLovinInitProvider}
+  cc.forestapp/androidx.startup.InitializationProvider:
+    Provider{8e1e1c4 cc.forestapp/androidx.startup.InitializationProvider}
+  cc.forestapp/io.intercom.android.sdk.IntercomInitializeContentProvider:
+    Provider{c8f08ad cc.forestapp/io.intercom.android.sdk.IntercomInitializeContentProvider}
+
+ContentProvider Authorities:
+  [cc.forestapp.firebaseperfprovider]:
+    Provider{f56618a cc.forestapp/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{5997e2 cc.forestapp}
+  [cc.forestapp.com.squareup.picasso]:
+    Provider{43bc3fb cc.forestapp/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{d38b773 cc.forestapp}
+  [cc.forestapp.workmanager-init]:
+    Provider{dcfcff5 cc.forestapp/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{efd5630 cc.forestapp}
+  [cc.forestapp.androidx-startup]:
+    Provider{8e1e1c4 cc.forestapp/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{b4082a9 cc.forestapp}
+  [cc.forestapp.fileProvider]:
+    Provider{167992c cc.forestapp/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{9fd502e cc.forestapp}
+  [cc.forestapp.AudienceNetworkContentProvider]:
+    Provider{ac10c56 cc.forestapp/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{dd57cf cc.forestapp}
+  [cc.forestapp.applovincontentprovider]:
+    Provider{678a4d7 cc.forestapp/com.applovin.sdk.AppLovinInitProvider}
+      applicationInfo=ApplicationInfo{819a55c cc.forestapp}
+  [cc.forestapp.firebaseinitprovider]:
+    Provider{24b1c18 cc.forestapp/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{475a065 cc.forestapp}
+  [cc.forestapp.mobileadsinitprovider]:
+    Provider{cbe78df cc.forestapp/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{12413a cc.forestapp}
+  [cc.forestapp.vungle-provider]:
+    Provider{7b90b7e cc.forestapp/com.vungle.warren.utility.VungleProvider}
+      applicationInfo=ApplicationInfo{481a1eb cc.forestapp}
+  [cc.forestapp.IntercomInitializeContentProvider]:
+    Provider{c8f08ad cc.forestapp/io.intercom.android.sdk.IntercomInitializeContentProvider}
+      applicationInfo=ApplicationInfo{149bb48 cc.forestapp}
+  [cc.forestapp.tray]:
+    Provider{f1a7671 cc.forestapp/net.grandcentrix.tray.provider.TrayContentProvider}
+      applicationInfo=ApplicationInfo{524dde1 cc.forestapp}
+
+Key Set Manager:
+  [cc.forestapp]
+      Signing KeySets: 5622
+
+Packages:
+  Package [cc.forestapp] (7d671c7):
+    userId=10297
+    pkg=Package{3e343f4 cc.forestapp}
+    codePath=/data/app/~~745a9m4h-h2s46QvqPwlhw==/cc.forestapp-DJnmhjijkLkZISSmEEhhtA==
+    resourcePath=/data/app/~~745a9m4h-h2s46QvqPwlhw==/cc.forestapp-DJnmhjijkLkZISSmEEhhtA==
+    legacyNativeLibraryDir=/data/app/~~745a9m4h-h2s46QvqPwlhw==/cc.forestapp-DJnmhjijkLkZISSmEEhhtA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=45100000 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=4.51.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.tencent.mm, com.facebook.katana, com.android.vending, com.amazon.venezia, com.sec.android.app.samsungapps, com.huawei.appmarket]
+    queriesIntents=[Intent { act=android.intent.action.MAIN }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=androidx.browser.customtabs.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }, Intent { act=android.intent.action.VIEW dat=market:/... }, Intent { act=android.media.browse.MediaBrowserService }, Intent { act=androidx.media2.session.MediaSessionService }, Intent { act=androidx.media2.session.MediaLibraryService }]
+    dataDir=/data/user/0/cc.forestapp
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 14:37:35
+    lastUpdateTime=2022-11-30 14:37:38
+    packageSource=0
+    signatures=PackageSignatures{abe6363 version:2, signatures:[a7e27cb5], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.GET_TASKS
+      android.permission.INTERNET
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_EXTERNAL_STORAGE
+      com.android.vending.BILLING
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.VIBRATE
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.SYSTEM_OVERLAY_WINDOW
+      android.permission.REORDER_TASKS
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.gms.permission.AD_ID
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=56854 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 14:37:38
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      cc.forestapp
+    com.google.android.apps.diagnosticstool:
+      cc.forestapp
+    com.google.android.settings.intelligence:
+      cc.forestapp
+    com.google.android.apps.accessibility.voiceaccess:
+      cc.forestapp
+    cc.forestapp:
+      [com.android.bluetooth,com.google.android.bluetooth.services]
+      com.google.android.documentsui
+      com.verizon.services
+      com.google.android.projection.gearhead
+      com.google.android.apps.nbu.files
+      com.google.android.apps.recorder
+      com.google.android.apps.tips
+      com.google.android.wfcactivation
+      com.google.android.tetheringentitlement
+      com.google.android.apps.messaging
+      com.google.android.apps.safetyhub
+      com.google.android.carrierlocation
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.restore
+      com.google.android.googlequicksearchbox
+      com.google.android.dialer
+      com.google.android.as
+      com.google.android.settings.intelligence
+      com.google.android.GoogleCamera
+      com.google.android.setupwizard
+      com.google.android.calculator
+      com.android.chrome
+      com.google.android.deskclock
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.calendar
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.marvin.talkback
+      com.google.android.contacts
+      com.google.android.apps.docs
+      com.google.android.videos
+      com.google.android.apps.accessibility.voiceaccess
+      com.google.android.inputmethod.latin
+      com.google.android.apps.youtube.music
+      com.google.android.gm
+      [app id 10195 not installed]
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.shannon.rcsservice
+      com.google.android.pixel.setupwizard
+      com.google.android.cellbroadcastreceiver
+      com.pandavideocompressor
+      net.eagin.software.android.dejaloYa
+      radiotime.player
+      org.malwarebytes.antimalware
+      com.kizeetech.newankaradesigns
+      com.zoho.assist.agent
+      com.darinsoft.vimo
+      com.ninegag.android.app
+      com.mxtech.videoplayer.television
+      com.mcdonalds.app
+      com.catdaddy.cat22
+      com.fourchars.lmpfree
+      com.lyrebirdstudio.photo_editor_pro
+      com.pikoo.app
+      com.mikewheelermedia
+      com.frankthebrilliant.app
+      com.brit.swift.minimal
+      com.zappcues.gamingmode
+      com.cam001.selfie
+      com.fitapp
+      com.brit.swiftdark.substratum
+      com.subsplashconsulting.s_NKSKD3
+      deepfinity.android
+      com.king.blossomblast
+      com.bitsmedia.android.muslimpro
+      com.yahoo.mobile.client.android.weather
+      com.simplehabit.simplehabitapp
+      com.ludia.jurassicworld
+      com.accuweather.android
+      com.cooyostudio.marble.blast
+      com.jio.myjio
+      com.getepic.Epic
+      com.pranavpandey.rotation
+      com.nikitadev.irregularverbspro
+      com.Wifi.lte5g.lte4g.lte3g.speedtest.Internetspeed
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+      com.unvoid.borealis
+      com.osheden.azulox
+    com.zappcues.gamingmode:
+      cc.forestapp
+    com.jio.myjio:
+      cc.forestapp
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [cc.forestapp]
+    path: /data/app/~~745a9m4h-h2s46QvqPwlhw==/cc.forestapp-DJnmhjijkLkZISSmEEhhtA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:578383
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [cc.forestapp]
+     base.apk - 1478

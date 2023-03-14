@@ -1,0 +1,271 @@
+Activity Resolver Table:
+  Schemes:
+      speedtest:
+        e7c82e7 org.zwanoo.android.speedtest/com.ookla.mobile4.screens.main.MainActivity filter fdabd3d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "speedtest"
+      http:
+        e7c82e7 org.zwanoo.android.speedtest/com.ookla.mobile4.screens.main.MainActivity filter 904e94
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.speedtest.net": -1
+          Authority: "www.speedtest.net": -1
+          Authority: "www.speedtest.net": -1
+          Authority: "www.speedtest.net": -1
+          Authority: "www.speedtest.net": -1
+          Authority: "www.speedtest.net": -1
+          Path: "PatternMatcher{LITERAL: }"
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{LITERAL: /vpn}"
+          Path: "PatternMatcher{LITERAL: /native-vpn}"
+          Path: "PatternMatcher{LITERAL: /test}"
+          Path: "PatternMatcher{LITERAL: /native-video}"
+          AutoVerify=true
+      https:
+        e7c82e7 org.zwanoo.android.speedtest/com.ookla.mobile4.screens.main.MainActivity filter 904e94
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.speedtest.net": -1
+          Authority: "www.speedtest.net": -1
+          Authority: "www.speedtest.net": -1
+          Authority: "www.speedtest.net": -1
+          Authority: "www.speedtest.net": -1
+          Authority: "www.speedtest.net": -1
+          Path: "PatternMatcher{LITERAL: }"
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{LITERAL: /vpn}"
+          Path: "PatternMatcher{LITERAL: /native-vpn}"
+          Path: "PatternMatcher{LITERAL: /test}"
+          Path: "PatternMatcher{LITERAL: /native-video}"
+          AutoVerify=true
+      speedtest-internal:
+        5046683 org.zwanoo.android.speedtest/com.ookla.mobile4.screens.main.MainViewActivity filter 66dc000
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "speedtest-internal"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        e7c82e7 org.zwanoo.android.speedtest/com.ookla.mobile4.screens.main.MainActivity filter ff95932
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.ookla.speedtestengine.reporting.ACTION_LOCATION:
+        d3af039 org.zwanoo.android.speedtest/com.ookla.speedtestengine.reporting.LocationMonitor$LocationReceiver filter c5fd67e
+          Action: "com.ookla.speedtestengine.reporting.ACTION_LOCATION"
+      android.intent.action.BOOT_COMPLETED:
+        b9ce7df org.zwanoo.android.speedtest/com.connectify.slsdk.receivers.StartupBroadcastReceiver filter 5eedc2c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.HOME"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        b9ce7df org.zwanoo.android.speedtest/com.connectify.slsdk.receivers.StartupBroadcastReceiver filter 5eedc2c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.HOME"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.net.VpnService:
+        3d156f5 org.zwanoo.android.speedtest/com.connectify.slsdk.vpn.ToyVpnService filter f1edc8a permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+        41222fb org.zwanoo.android.speedtest/com.gentlebreeze.vpn.module.openvpn.api.service.VPNModuleOpenVPNService filter b838f18 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+        12d6d71 org.zwanoo.android.speedtest/org.strongswan.android.logic.CharonVpnService filter e163756 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+
+Domain verification status:
+  org.zwanoo.android.speedtest:
+    ID: f94e0c0d-a4b4-4baf-8ba9-535c793da528
+    Signatures: [A4:0D:A8:0A:59:D1:70:CA:A9:50:CF:15:C1:8C:45:4D:47:A3:9B:26:98:9D:8B:64:0E:CD:74:5B:A7:1B:F5:DC]
+    Domain verification state:
+      www.speedtest.net: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.speedtest.net
+
+Registered ContentProviders:
+  org.zwanoo.android.speedtest/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{b3e7295 org.zwanoo.android.speedtest/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  org.zwanoo.android.speedtest/androidx.core.content.FileProvider:
+    Provider{4be5faa org.zwanoo.android.speedtest/androidx.core.content.FileProvider}
+  org.zwanoo.android.speedtest/com.squareup.picasso.PicassoProvider:
+    Provider{db0b79b org.zwanoo.android.speedtest/com.squareup.picasso.PicassoProvider}
+  org.zwanoo.android.speedtest/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{9119738 org.zwanoo.android.speedtest/com.google.firebase.provider.FirebaseInitProvider}
+  org.zwanoo.android.speedtest/com.connectify.slsdk.ipc.KeystoreProvider:
+    Provider{5e0a311 org.zwanoo.android.speedtest/com.connectify.slsdk.ipc.KeystoreProvider}
+
+ContentProvider Authorities:
+  [org.zwanoo.android.speedtest]:
+    Provider{4be5faa org.zwanoo.android.speedtest/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{27acc76 org.zwanoo.android.speedtest}
+  [org.zwanoo.android.speedtest.firebaseinitprovider]:
+    Provider{9119738 org.zwanoo.android.speedtest/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{1d93277 org.zwanoo.android.speedtest}
+  [org.zwanoo.android.speedtest.lifecycle-process]:
+    Provider{b3e7295 org.zwanoo.android.speedtest/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{5e4eee4 org.zwanoo.android.speedtest}
+  [org.zwanoo.android.speedtest.live.slsdk.content]:
+    Provider{5e0a311 org.zwanoo.android.speedtest/com.connectify.slsdk.ipc.KeystoreProvider}
+      applicationInfo=ApplicationInfo{36abd8b org.zwanoo.android.speedtest}
+  [org.zwanoo.android.speedtest.com.squareup.picasso]:
+    Provider{db0b79b org.zwanoo.android.speedtest/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{eb53e68 org.zwanoo.android.speedtest}
+
+Key Set Manager:
+  [org.zwanoo.android.speedtest]
+      Signing KeySets: 88
+
+Packages:
+  Package [org.zwanoo.android.speedtest] (18d3f26):
+    userId=10242
+    pkg=Package{7aab1ae org.zwanoo.android.speedtest}
+    codePath=/data/app/~~4Gy3qn2GcTZIirgUevDIgQ==/org.zwanoo.android.speedtest-ov_qgsjlbAEr373Xdhz-ew==
+    resourcePath=/data/app/~~4Gy3qn2GcTZIirgUevDIgQ==/org.zwanoo.android.speedtest-ov_qgsjlbAEr373Xdhz-ew==
+    legacyNativeLibraryDir=/data/app/~~4Gy3qn2GcTZIirgUevDIgQ==/org.zwanoo.android.speedtest-ov_qgsjlbAEr373Xdhz-ew==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=144838 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=4.6.9
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/org.zwanoo.android.speedtest
+    supportsScreens=[medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 19:00:03
+    lastUpdateTime=2022-11-30 19:00:04
+    packageSource=0
+    signatures=PackageSignatures{64db4f version:3, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.REQUEST_INSTALL_PACKAGES
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=91611 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 19:00:04
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false
+        android.permission.READ_PHONE_STATE: granted=false
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      org.zwanoo.android.speedtest
+    com.google.android.apps.diagnosticstool:
+      org.zwanoo.android.speedtest
+    com.google.android.settings.intelligence:
+      org.zwanoo.android.speedtest
+    com.google.android.apps.accessibility.voiceaccess:
+      org.zwanoo.android.speedtest
+    com.zhiliaoapp.musically:
+      org.zwanoo.android.speedtest
+    com.truecaller:
+      org.zwanoo.android.speedtest
+    com.dv.adm:
+      org.zwanoo.android.speedtest
+    com.zappcues.gamingmode:
+      org.zwanoo.android.speedtest
+    com.jio.myjio:
+      org.zwanoo.android.speedtest
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [org.zwanoo.android.speedtest]
+    path: /data/app/~~4Gy3qn2GcTZIirgUevDIgQ==/org.zwanoo.android.speedtest-ov_qgsjlbAEr373Xdhz-ew==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:46795
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [org.zwanoo.android.speedtest]
+     base.apk - 1378

@@ -1,0 +1,388 @@
+Activity Resolver Table:
+  Full MIME Types:
+      vnd.android.cursor.dir/audio:
+        8799cf4 com.jee.music/.ui.activity.SongPickerActivity filter 2525c1d
+          Action: "android.intent.action.PICK"
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "vnd.android.cursor.dir/audio"
+      audio/*:
+        a91a806 com.jee.music/.ui.activity.DialogPlayActivity filter bda8ec7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Base MIME Types:
+      vnd.android.cursor.dir:
+        8799cf4 com.jee.music/.ui.activity.SongPickerActivity filter 2525c1d
+          Action: "android.intent.action.PICK"
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "vnd.android.cursor.dir/audio"
+
+  Wild MIME Types:
+      audio:
+        a91a806 com.jee.music/.ui.activity.DialogPlayActivity filter bda8ec7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      file:
+        a91a806 com.jee.music/.ui.activity.DialogPlayActivity filter bda8ec7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      content:
+        a91a806 com.jee.music/.ui.activity.DialogPlayActivity filter bda8ec7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        6b3e565 com.jee.music/.ui.activity.IntroActivity filter b9ba23a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.media.action.MEDIA_PLAY_FROM_SEARCH:
+        f8deeeb com.jee.music/.ui.activity.SearchActivity filter d8272e1
+          Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        f8deeeb com.jee.music/.ui.activity.SearchActivity filter 2fc8448
+          Action: "android.intent.action.SEARCH"
+
+  MIME Typed Actions:
+      android.intent.action.PICK:
+        8799cf4 com.jee.music/.ui.activity.SongPickerActivity filter 2525c1d
+          Action: "android.intent.action.PICK"
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "vnd.android.cursor.dir/audio"
+      android.intent.action.VIEW:
+        a91a806 com.jee.music/.ui.activity.DialogPlayActivity filter bda8ec7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.GET_CONTENT:
+        8799cf4 com.jee.music/.ui.activity.SongPickerActivity filter 2525c1d
+          Action: "android.intent.action.PICK"
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "vnd.android.cursor.dir/audio"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        8410dea com.jee.music/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 2ec68db
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        f27968c com.jee.music/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1f1d5
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.jee.music.ACTION_WIDGET_REPEAT:
+        903e92 com.jee.music/.service.ActionReceiver filter 7675063
+          Action: "com.jee.music.ACTION_WIDGET_SHUFFLE"
+          Action: "com.jee.music.ACTION_WIDGET_REPEAT"
+          Action: "com.jee.music.ACTION_WIDGET_PLAY"
+          Action: "com.jee.music.ACTION_WIDGET_PAUSE"
+          Action: "com.jee.music.ACTION_WIDGET_SKIP_PREV"
+          Action: "com.jee.music.ACTION_WIDGET_SKIP_NEXT"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        afd8f78 com.jee.music/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e7cd651
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        81a1eb6 com.jee.music/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter f3eb7b7
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.jee.music.ACTION_WIDGET_PLAY:
+        903e92 com.jee.music/.service.ActionReceiver filter 7675063
+          Action: "com.jee.music.ACTION_WIDGET_SHUFFLE"
+          Action: "com.jee.music.ACTION_WIDGET_REPEAT"
+          Action: "com.jee.music.ACTION_WIDGET_PLAY"
+          Action: "com.jee.music.ACTION_WIDGET_PAUSE"
+          Action: "com.jee.music.ACTION_WIDGET_SKIP_PREV"
+          Action: "com.jee.music.ACTION_WIDGET_SKIP_NEXT"
+      com.jee.music.ACTION_WIDGET_SHUFFLE:
+        903e92 com.jee.music/.service.ActionReceiver filter 7675063
+          Action: "com.jee.music.ACTION_WIDGET_SHUFFLE"
+          Action: "com.jee.music.ACTION_WIDGET_REPEAT"
+          Action: "com.jee.music.ACTION_WIDGET_PLAY"
+          Action: "com.jee.music.ACTION_WIDGET_PAUSE"
+          Action: "com.jee.music.ACTION_WIDGET_SKIP_PREV"
+          Action: "com.jee.music.ACTION_WIDGET_SKIP_NEXT"
+      android.intent.action.DEVICE_STORAGE_OK:
+        afd8f78 com.jee.music/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e7cd651
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.jee.music.ACTION_WIDGET_PAUSE:
+        903e92 com.jee.music/.service.ActionReceiver filter 7675063
+          Action: "com.jee.music.ACTION_WIDGET_SHUFFLE"
+          Action: "com.jee.music.ACTION_WIDGET_REPEAT"
+          Action: "com.jee.music.ACTION_WIDGET_PLAY"
+          Action: "com.jee.music.ACTION_WIDGET_PAUSE"
+          Action: "com.jee.music.ACTION_WIDGET_SKIP_PREV"
+          Action: "com.jee.music.ACTION_WIDGET_SKIP_NEXT"
+      android.intent.action.BATTERY_LOW:
+        8410dea com.jee.music/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 2ec68db
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        8382b24 com.jee.music/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ee7868d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        8382b24 com.jee.music/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ee7868d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        8382b24 com.jee.music/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ee7868d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.jee.music.ACTION_WIDGET_SKIP_NEXT:
+        903e92 com.jee.music/.service.ActionReceiver filter 7675063
+          Action: "com.jee.music.ACTION_WIDGET_SHUFFLE"
+          Action: "com.jee.music.ACTION_WIDGET_REPEAT"
+          Action: "com.jee.music.ACTION_WIDGET_PLAY"
+          Action: "com.jee.music.ACTION_WIDGET_PAUSE"
+          Action: "com.jee.music.ACTION_WIDGET_SKIP_PREV"
+          Action: "com.jee.music.ACTION_WIDGET_SKIP_NEXT"
+      com.jee.music.ACTION_WIDGET_SKIP_PREV:
+        903e92 com.jee.music/.service.ActionReceiver filter 7675063
+          Action: "com.jee.music.ACTION_WIDGET_SHUFFLE"
+          Action: "com.jee.music.ACTION_WIDGET_REPEAT"
+          Action: "com.jee.music.ACTION_WIDGET_PLAY"
+          Action: "com.jee.music.ACTION_WIDGET_PAUSE"
+          Action: "com.jee.music.ACTION_WIDGET_SKIP_PREV"
+          Action: "com.jee.music.ACTION_WIDGET_SKIP_NEXT"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        f27968c com.jee.music/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1f1d5
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        10d9460 com.jee.music/.ui.appwidget.PlayerAppWidgetProvider filter 83d9d19
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        1a17042 com.jee.music/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 6fd1853
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.MEDIA_BUTTON:
+        26fb1de com.jee.music/androidx.media.session.MediaButtonReceiver filter 1748fbf
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.media.AUDIO_BECOMING_NOISY:
+        a5ed590 com.jee.music/.service.MediaPlayerService filter cd2fe89
+          Action: "android.intent.action.MEDIA_BUTTON"
+          Action: "android.media.AUDIO_BECOMING_NOISY"
+      android.intent.action.MEDIA_BUTTON:
+        a5ed590 com.jee.music/.service.MediaPlayerService filter cd2fe89
+          Action: "android.intent.action.MEDIA_BUTTON"
+          Action: "android.media.AUDIO_BECOMING_NOISY"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.jee.music/androidx.core.content.FileProvider:
+    Provider{d91ee3b com.jee.music/androidx.core.content.FileProvider}
+  com.jee.music/androidx.work.impl.WorkManagerInitializer:
+    Provider{a5a9958 com.jee.music/androidx.work.impl.WorkManagerInitializer}
+  com.jee.music/.core.MySuggestionProvider:
+    Provider{55c4ab1 com.jee.music/.core.MySuggestionProvider}
+  com.jee.music/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{cf3eb96 com.jee.music/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.jee.music.workmanager-init]:
+    Provider{a5a9958 com.jee.music/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{f659b5b com.jee.music}
+  [com.jee.music.fileprovider]:
+    Provider{d91ee3b com.jee.music/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{6fb0ff8 com.jee.music}
+  [com.jee.music.firebaseinitprovider]:
+    Provider{cf3eb96 com.jee.music/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{9938cd1 com.jee.music}
+  [com.jee.music.core.MySuggestionProvider]:
+    Provider{55c4ab1 com.jee.music/.core.MySuggestionProvider}
+      applicationInfo=ApplicationInfo{360d336 com.jee.music}
+
+Key Set Manager:
+  [com.jee.music]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.jee.music] (2589237):
+    userId=10285
+    pkg=Package{ce09ee9 com.jee.music}
+    codePath=/data/app/~~NAVFlsQZ5k8Gmqic5LTClw==/com.jee.music-kqMnTzP2fMhAa6u4xH4AoA==
+    resourcePath=/data/app/~~NAVFlsQZ5k8Gmqic5LTClw==/com.jee.music-kqMnTzP2fMhAa6u4xH4AoA==
+    legacyNativeLibraryDir=/data/app/~~NAVFlsQZ5k8Gmqic5LTClw==/com.jee.music-kqMnTzP2fMhAa6u4xH4AoA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=78 minSdk=19 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.0.18
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.SEND dat=content://*/... typ=audio/* }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }]
+    dataDir=/data/user/0/com.jee.music
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 18:42:06
+    lastUpdateTime=2022-11-30 18:42:07
+    packageSource=0
+    signatures=PackageSignatures{d44d76e version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=89394 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 18:42:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.diagnosticstool:
+      com.jee.music
+    com.google.android.settings.intelligence:
+      com.jee.music
+    com.google.android.GoogleCamera:
+      com.jee.music
+    com.google.android.apps.docs:
+      com.jee.music
+    com.google.android.apps.accessibility.voiceaccess:
+      com.jee.music
+    com.google.android.gm:
+      com.jee.music
+    com.zhiliaoapp.musically:
+      com.jee.music
+    com.getmimo:
+      com.jee.music
+    com.truecaller:
+      com.jee.music
+    com.jee.music:
+      [com.google.android.bluetooth.services,com.android.bluetooth]
+      com.google.android.apps.nbu.files
+      com.google.android.apps.messaging
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      com.google.android.gm
+      ru.iptvremote.android.iptv.pro
+      com.fourchars.lmpfree
+      ringtone.maker.mp3.cutter.audio
+      com.dv.adm
+      com.utorrent.client.pro
+    com.mobisystems.office:
+      com.jee.music
+    com.dv.adm:
+      com.jee.music
+    com.zappcues.gamingmode:
+      com.jee.music
+    com.jio.myjio:
+      com.jee.music
+    com.ledblinker.pro:
+      com.jee.music
+  queryable via interaction:
+    User 0:
+      [com.android.qns,com.android.settings,com.android.localtransport,com.android.location.fused,com.android.server.telecom,com.android.providers.settings,com.android.dynsystem,android,com.android.wallpaperbackup,com.android.keychain,com.google.android.iwlan,com.google.android.settings.future.biometrics.faceenroll,com.google.SSRestartDetector,com.android.inputdevices]:
+        com.jee.music
+      [com.google.android.gms,com.google.android.gsf]:
+        com.jee.music
+      com.google.android.permissioncontroller:
+        com.jee.music
+  queryable via uses-library:
+
+Dexopt state:
+  [com.jee.music]
+    path: /data/app/~~NAVFlsQZ5k8Gmqic5LTClw==/com.jee.music-kqMnTzP2fMhAa6u4xH4AoA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:469574
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.jee.music]
+     base.apk - 699

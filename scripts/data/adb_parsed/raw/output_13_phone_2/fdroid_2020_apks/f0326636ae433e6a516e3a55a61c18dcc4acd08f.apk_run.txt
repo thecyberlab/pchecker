@@ -1,0 +1,306 @@
+Activity Resolver Table:
+  Full MIME Types:
+      */*:
+        a72498c com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.SharePlugin.ShareActivity filter 35a28d5
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        a72498c com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.SharePlugin.ShareActivity filter f9278ea
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      *:
+        a72498c com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.SharePlugin.ShareActivity filter 35a28d5
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        a72498c com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.SharePlugin.ShareActivity filter f9278ea
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      zorinconnect:
+        2f06cde com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.RunCommandPlugin.RunCommandUrlActivity filter 33e2ebf
+          Action: "android.intent.action.VIEW"
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "zorinconnect"
+          Authority: "runcommand": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f031760 com.zorinos.zorin_connect/org.kde.kdeconnect.UserInterface.MainActivity filter 9b06419
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        a72498c com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.SharePlugin.ShareActivity filter 35a28d5
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.SEND_MULTIPLE:
+        a72498c com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.SharePlugin.ShareActivity filter f9278ea
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        130f7db com.zorinos.zorin_connect/org.kde.kdeconnect.KdeConnectBroadcastReceiver filter bc07278
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Scheme: "package"
+          Authority: "zorinconnect": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      RUN_COMMAND_ACTION:
+        58589 com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.RunCommandPlugin.RunCommandWidget filter b2645af
+          Action: "RUN_COMMAND_ACTION"
+      org.kde.kdeconnect.Plugins.FindMyPhonePlugin.foundIt:
+        2f9d8d com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.FindMyPhonePlugin.FindMyPhoneReceiver filter e553b42
+          Action: "org.kde.kdeconnect.Plugins.FindMyPhonePlugin.foundIt"
+      android.net.wifi.WIFI_STATE_CHANGED:
+        130f7db com.zorinos.zorin_connect/org.kde.kdeconnect.KdeConnectBroadcastReceiver filter 5c63e24
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        130f7db com.zorinos.zorin_connect/org.kde.kdeconnect.KdeConnectBroadcastReceiver filter ebd36b7
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      org.kde.kdeconnect.Plugins.SharePlugin.CancelShare:
+        ce12dbc com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.SharePlugin.ShareBroadcastReceiver filter 337f145
+          Action: "org.kde.kdeconnect.Plugins.SharePlugin.CancelShare"
+      android.intent.action.BOOT_COMPLETED:
+        130f7db com.zorinos.zorin_connect/org.kde.kdeconnect.KdeConnectBroadcastReceiver filter a9739b6
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        58589 com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.RunCommandPlugin.RunCommandWidget filter 1ffc98e
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        130f7db com.zorinos.zorin_connect/org.kde.kdeconnect.KdeConnectBroadcastReceiver filter 4a17d51
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.MEDIA_BUTTON:
+        9648753 com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.MprisPlugin.MprisMediaNotificationReceiver filter e3b1890
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.view.InputMethod:
+        ab2f09a com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.RemoteKeyboardPlugin.RemoteKeyboardService filter 49b8dcb permission android.permission.BIND_INPUT_METHOD
+          Action: "android.view.InputMethod"
+      android.service.notification.NotificationListenerService:
+        17169a8 com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.NotificationsPlugin.NotificationReceiver filter b6b5cc1 permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+      android.service.chooser.ChooserTargetService:
+        13f7c66 com.zorinos.zorin_connect/org.kde.kdeconnect.Plugins.SharePlugin.ShareChooserTargetService filter cd33ba7 permission android.permission.BIND_CHOOSER_TARGET_SERVICE
+          Action: "android.service.chooser.ChooserTargetService"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.zorinos.zorin_connect/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{5bdfc3b com.zorinos.zorin_connect/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.zorinos.zorin_connect/androidx.core.content.FileProvider:
+    Provider{5608f58 com.zorinos.zorin_connect/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.zorinos.zorin_connect.lifecycle-process]:
+    Provider{5bdfc3b com.zorinos.zorin_connect/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{597bae0 com.zorinos.zorin_connect}
+  [com.zorinos.zorin_connect.fileprovider]:
+    Provider{5608f58 com.zorinos.zorin_connect/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{5cb0199 com.zorinos.zorin_connect}
+
+Key Set Manager:
+  [com.zorinos.zorin_connect]
+      Signing KeySets: 7257
+
+Packages:
+  Package [com.zorinos.zorin_connect] (7427c5e):
+    userId=10325
+    pkg=Package{4fb4904 com.zorinos.zorin_connect}
+    codePath=/data/app/~~Hecj8_IFYZAOAlvOl9RSHA==/com.zorinos.zorin_connect-b6jWKUaDAMgd-4Hp75vG8w==
+    resourcePath=/data/app/~~Hecj8_IFYZAOAlvOl9RSHA==/com.zorinos.zorin_connect-b6jWKUaDAMgd-4Hp75vG8w==
+    legacyNativeLibraryDir=/data/app/~~Hecj8_IFYZAOAlvOl9RSHA==/com.zorinos.zorin_connect-b6jWKUaDAMgd-4Hp75vG8w==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=11422 minSdk=14 targetSdk=29
+    minExtensionVersions=[]
+    versionName=1.14.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.zorinos.zorin_connect
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 21:59:37
+    lastUpdateTime=2022-11-30 21:59:38
+    packageSource=0
+    signatures=PackageSignatures{c557eed version:1, signatures:[3aa643e4], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.READ_CONTACTS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_CALL_LOG
+      android.permission.RECEIVE_SMS
+      android.permission.SEND_SMS
+      android.permission.READ_SMS
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+    User 0: ceDataInode=110190 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 21:59:38
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CALL_LOG: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECEIVE_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.SEND_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.zorinos.zorin_connect
+    com.google.android.apps.diagnosticstool:
+      com.zorinos.zorin_connect
+    com.google.android.settings.intelligence:
+      com.zorinos.zorin_connect
+    com.google.android.GoogleCamera:
+      com.zorinos.zorin_connect
+    com.google.android.apps.maps:
+      com.zorinos.zorin_connect
+    com.google.android.apps.photos:
+      com.zorinos.zorin_connect
+    com.google.android.youtube:
+      com.zorinos.zorin_connect
+    com.google.android.apps.accessibility.voiceaccess:
+      com.zorinos.zorin_connect
+    com.google.android.apps.youtube.music:
+      com.zorinos.zorin_connect
+    com.zhiliaoapp.musically:
+      com.zorinos.zorin_connect
+    com.truecaller:
+      com.zorinos.zorin_connect
+    deezer.android.app:
+      com.zorinos.zorin_connect
+    com.duolingo:
+      com.zorinos.zorin_connect
+    com.darinsoft.vimo:
+      com.zorinos.zorin_connect
+    com.ninegag.android.app:
+      com.zorinos.zorin_connect
+    vsin.t16_funny_photo:
+      com.zorinos.zorin_connect
+    com.camerasideas.instashot:
+      com.zorinos.zorin_connect
+    com.mobisystems.office:
+      com.zorinos.zorin_connect
+    com.shazam.android:
+      com.zorinos.zorin_connect
+    com.dv.adm:
+      com.zorinos.zorin_connect
+    com.zappcues.gamingmode:
+      com.zorinos.zorin_connect
+    com.cam001.selfie:
+      com.zorinos.zorin_connect
+    com.cyberlink.powerdirector.DRA140225_01:
+      com.zorinos.zorin_connect
+    com.jio.myjio:
+      com.zorinos.zorin_connect
+    video.reface.app:
+      com.zorinos.zorin_connect
+    com.clearchannel.iheartradio.controller:
+      com.zorinos.zorin_connect
+  queryable via interaction:
+    User 0:
+      [android,com.android.keychain,com.android.providers.settings,com.android.settings,com.google.android.iwlan,com.google.SSRestartDetector,com.android.qns,com.android.location.fused,com.android.wallpaperbackup,com.android.dynsystem,com.android.server.telecom,com.android.localtransport,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll]:
+        com.zorinos.zorin_connect
+  queryable via uses-library:
+
+Dexopt state:
+  [com.zorinos.zorin_connect]
+    path: /data/app/~~Hecj8_IFYZAOAlvOl9RSHA==/com.zorinos.zorin_connect-b6jWKUaDAMgd-4Hp75vG8w==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:151441
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.zorinos.zorin_connect]
+     base.apk - 313

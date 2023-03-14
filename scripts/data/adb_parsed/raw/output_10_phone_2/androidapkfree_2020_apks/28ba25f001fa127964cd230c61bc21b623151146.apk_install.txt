@@ -1,0 +1,328 @@
+Activity Resolver Table:
+  Schemes:
+      wink_device:
+        9ebe676 com.quirky.android.wink.wink/com.quirky.android.wink.core.WinkActivity filter 3455308
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "wink_device"
+      http:
+        9ebe676 com.quirky.android.wink.wink/com.quirky.android.wink.core.WinkActivity filter 400faa1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "www.wink.com": -1
+          Authority: "www.wink.com": -1
+          Path: "PatternMatcher{PREFIX: /android_wink_device}"
+          Path: "PatternMatcher{PREFIX: /android_wink_device}"
+        eed4477 com.quirky.android.wink.wink/com.quirky.android.wink.core.DeepLinkRoutingActivity filter 2a49752
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "www.wink.com": -1
+          Path: "PatternMatcher{PREFIX: /premium-services/}"
+      https:
+        9ebe676 com.quirky.android.wink.wink/com.quirky.android.wink.core.WinkActivity filter 400faa1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "www.wink.com": -1
+          Authority: "www.wink.com": -1
+          Path: "PatternMatcher{PREFIX: /android_wink_device}"
+          Path: "PatternMatcher{PREFIX: /android_wink_device}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        9ebe676 com.quirky.android.wink.wink/com.quirky.android.wink.core.WinkActivity filter ad1c0ab
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.wink.push:
+        9ebe676 com.quirky.android.wink.wink/com.quirky.android.wink.core.WinkActivity filter a4df4c6
+          Action: "com.wink.push"
+          Category: "android.intent.category.DEFAULT"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        ec98e4 com.quirky.android.wink.wink/com.quirky.android.wink.core.widgets.shortcuts.ShortcutWidgetConfigureActivity filter ae9bc87
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        faac14d com.quirky.android.wink.wink/com.quirky.android.wink.core.widgets.shortcuts.MultiShortcutsWidgetConfigureActivity filter 46097b4
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      android.intent.action.SEARCH:
+        127f402 com.quirky.android.wink.wink/com.quirky.android.wink.core.devices.nimbus.activity.NimbusTimezoneActivity filter 4919fdd
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.quirky.android.wink.core.WIDGET_EDIT_SHORTCUT_ACTION:
+        5e7b113 com.quirky.android.wink.wink/com.quirky.android.wink.core.widgets.shortcuts.ShortcutWidgetProvider filter 19b9a23
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.quirky.android.wink.core.WIDGET_DELETE_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_EDIT_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_IN_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_OUT_ACTION"
+        34c5f50 com.quirky.android.wink.wink/com.quirky.android.wink.core.widgets.shortcuts.MultiShortcutsWidgetProvider filter 2497b20
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.quirky.android.wink.core.WIDGET_DELETE_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_EDIT_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_IN_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_OUT_ACTION"
+      com.android.vending.INSTALL_REFERRER:
+        46f2549 com.quirky.android.wink.wink/com.google.ads.conversiontracking.InstallReceiver filter a03b57f
+          Action: "com.android.vending.INSTALL_REFERRER"
+        254e4e com.quirky.android.wink.wink/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 41b294c
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.quirky.android.wink.core.WIDGET_DELETE_SHORTCUT_ACTION:
+        5e7b113 com.quirky.android.wink.wink/com.quirky.android.wink.core.widgets.shortcuts.ShortcutWidgetProvider filter 19b9a23
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.quirky.android.wink.core.WIDGET_DELETE_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_EDIT_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_IN_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_OUT_ACTION"
+        34c5f50 com.quirky.android.wink.wink/com.quirky.android.wink.core.widgets.shortcuts.MultiShortcutsWidgetProvider filter 2497b20
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.quirky.android.wink.core.WIDGET_DELETE_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_EDIT_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_IN_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_OUT_ACTION"
+      com.quirky.android.wink.core.WIDGET_USER_LOGGED_IN_ACTION:
+        5e7b113 com.quirky.android.wink.wink/com.quirky.android.wink.core.widgets.shortcuts.ShortcutWidgetProvider filter 19b9a23
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.quirky.android.wink.core.WIDGET_DELETE_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_EDIT_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_IN_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_OUT_ACTION"
+        34c5f50 com.quirky.android.wink.wink/com.quirky.android.wink.core.widgets.shortcuts.MultiShortcutsWidgetProvider filter 2497b20
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.quirky.android.wink.core.WIDGET_DELETE_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_EDIT_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_IN_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_OUT_ACTION"
+      com.google.android.c2dm.intent.RECEIVE:
+        c124b6f com.quirky.android.wink.wink/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 2eded95
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.quirky.android.wink.wink"
+      com.quirky.android.wink.core.WIDGET_USER_LOGGED_OUT_ACTION:
+        5e7b113 com.quirky.android.wink.wink/com.quirky.android.wink.core.widgets.shortcuts.ShortcutWidgetProvider filter 19b9a23
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.quirky.android.wink.core.WIDGET_DELETE_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_EDIT_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_IN_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_OUT_ACTION"
+        34c5f50 com.quirky.android.wink.wink/com.quirky.android.wink.core.widgets.shortcuts.MultiShortcutsWidgetProvider filter 2497b20
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.quirky.android.wink.core.WIDGET_DELETE_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_EDIT_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_IN_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_OUT_ACTION"
+      android.intent.action.BOOT_COMPLETED:
+        da0207c com.quirky.android.wink.wink/com.quirky.android.wink.core.fusion.BootReceiver filter 78d5cd9
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=100, mOrder=0, mHasPartialTypes=false
+        2fbcd05 com.quirky.android.wink.wink/com.quirky.android.wink.core.widgets.shortcuts.ShortcutWidgetBroadcastReceiver filter 250d69e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=100, mOrder=0, mHasPartialTypes=false
+      android.appwidget.action.APPWIDGET_UPDATE:
+        5e7b113 com.quirky.android.wink.wink/com.quirky.android.wink.core.widgets.shortcuts.ShortcutWidgetProvider filter 19b9a23
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.quirky.android.wink.core.WIDGET_DELETE_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_EDIT_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_IN_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_OUT_ACTION"
+        34c5f50 com.quirky.android.wink.wink/com.quirky.android.wink.core.widgets.shortcuts.MultiShortcutsWidgetProvider filter 2497b20
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.quirky.android.wink.core.WIDGET_DELETE_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_EDIT_SHORTCUT_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_IN_ACTION"
+          Action: "com.quirky.android.wink.core.WIDGET_USER_LOGGED_OUT_ACTION"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        48c015a com.quirky.android.wink.wink/com.quirky.android.wink.core.push_notifications.FirebaseIdService filter aa82a9b
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+        da22f8b com.quirky.android.wink.wink/com.google.firebase.iid.FirebaseInstanceIdService filter ce31b76
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        90cc868 com.quirky.android.wink.wink/com.quirky.android.wink.core.push_notifications.FcmListenerService filter 3efbeaa
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        7f13481 com.quirky.android.wink.wink/com.google.firebase.messaging.FirebaseMessagingService filter 88cce11
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      com.google.android.gms.wearable.BIND_LISTENER:
+        c78d926 com.quirky.android.wink.wink/com.quirky.android.wink.core.wearable.WinkWearableListenerService filter 5778e38
+          Action: "com.google.android.gms.wearable.BIND_LISTENER"
+
+Permissions:
+  Permission [com.quirky.android.wink.wink.permission.C2D_MESSAGE] (b023967):
+    sourcePackage=com.quirky.android.wink.wink
+    uid=10172 gids=null type=0 prot=signature
+    perm=Permission{a1a0314 com.quirky.android.wink.wink.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{f7b97bd com.quirky.android.wink.wink/10172}
+
+Registered ContentProviders:
+  com.quirky.android.wink.wink/com.quirky.android.wink.api.database.APIContentProvider:
+    Provider{90961b2 com.quirky.android.wink.wink/com.quirky.android.wink.api.database.APIContentProvider}
+  com.quirky.android.wink.wink/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{66f0503 com.quirky.android.wink.wink/com.crashlytics.android.CrashlyticsInitProvider}
+  com.quirky.android.wink.wink/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{41e3c80 com.quirky.android.wink.wink/com.google.firebase.provider.FirebaseInitProvider}
+  com.quirky.android.wink.wink/android.support.v4.content.FileProvider:
+    Provider{24ef2b9 com.quirky.android.wink.wink/android.support.v4.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.quirky.android.wink.wink.crashlyticsinitprovider]:
+    Provider{66f0503 com.quirky.android.wink.wink/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{da7e6fe com.quirky.android.wink.wink}
+  [com.quirky.android.wink.wink.provider]:
+    Provider{90961b2 com.quirky.android.wink.wink/com.quirky.android.wink.api.database.APIContentProvider}
+      applicationInfo=ApplicationInfo{da7e6fe com.quirky.android.wink.wink}
+  [com.quirky.android.wink.wink.firebaseinitprovider]:
+    Provider{41e3c80 com.quirky.android.wink.wink/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{da7e6fe com.quirky.android.wink.wink}
+  [com.quirky.android.wink.wink.logprovider]:
+    Provider{24ef2b9 com.quirky.android.wink.wink/android.support.v4.content.FileProvider}
+      applicationInfo=ApplicationInfo{da7e6fe com.quirky.android.wink.wink}
+
+Key Set Manager:
+  [com.quirky.android.wink.wink]
+      Signing KeySets: 224
+
+Packages:
+  Package [com.quirky.android.wink.wink] (f7b97bd):
+    userId=10172
+    pkg=Package{2a8a2fa com.quirky.android.wink.wink}
+    codePath=/data/app/com.quirky.android.wink.wink-g11drDnWNL0a5CUBqI6mUg==
+    resourcePath=/data/app/com.quirky.android.wink.wink-g11drDnWNL0a5CUBqI6mUg==
+    legacyNativeLibraryDir=/data/app/com.quirky.android.wink.wink-g11drDnWNL0a5CUBqI6mUg==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=70018531 minSdk=16 targetSdk=29
+    versionName=7.0.18.23531
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{da7e6fe com.quirky.android.wink.wink}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/com.quirky.android.wink.wink
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 07:52:23
+    firstInstallTime=2021-03-06 07:52:24
+    lastUpdateTime=2021-03-06 07:52:24
+    signatures=PackageSignatures{f52ee5f version:3, signatures:[ee8bef51], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      com.quirky.android.wink.wink.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.GET_TASKS
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.WAKE_LOCK
+      android.permission.VIBRATE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_BACKGROUND_LOCATION: restricted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.BLUETOOTH
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.CAMERA
+      android.permission.FLASHLIGHT
+      android.permission.CHANGE_NETWORK_STATE
+      com.android.launcher.action.INSTALL_SHORTCUT
+      android.permission.BROADCAST_STICKY
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      com.quirky.android.wink.wink.permission.C2D_MESSAGE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      com.quirky.android.wink.wink.permission.C2D_MESSAGE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=6256 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=68
+  User 0:
+    seq=6, package=com.google.android.gms
+    seq=7, package=com.ultimateguitar.tabs
+    seq=9, package=com.anddoes.launcher
+    seq=11, package=tv.twitch.android.app
+    seq=13, package=com.ludo.king
+    seq=15, package=net.zedge.android
+    seq=17, package=com.shazam.android
+    seq=19, package=com.whatsweb.app
+    seq=21, package=com.yahoo.mobile.client.android.finance
+    seq=23, package=com.yahoo.mobile.client.android.mail
+    seq=25, package=de.resolution.yf_android
+    seq=27, package=com.ninegag.android.app
+    seq=29, package=iflix.play
+    seq=31, package=com.gamestar.perfectpiano
+    seq=33, package=com.gbwhatsapp
+    seq=35, package=com.instagram.android
+    seq=37, package=com.opera.touch
+    seq=39, package=com.ea.game.pvzfree_row
+    seq=41, package=com.paget96.lspeed
+    seq=43, package=jp.konami.duellinks
+    seq=46, package=com.google.android.apps.walletnfcrel
+    seq=48, package=com.mufumbo.android.recipe.search
+    seq=51, package=com.google.android.apps.docs.editors.docs
+    seq=52, package=com.google.android.apps.docs
+    seq=54, package=io.friendly
+    seq=56, package=com.gamestar.pianoperfect
+    seq=58, package=com.bethsoft.falloutshelter
+    seq=60, package=com.midasplayer.apps.bubblewitchsaga2
+    seq=62, package=com.google.android.apps.adm
+    seq=64, package=it.medieval.blueftp
+    seq=66, package=com.bandainamcogames.dbzdokkanww
+    seq=67, package=com.quirky.android.wink.wink
+
+
+Dexopt state:
+  [com.quirky.android.wink.wink]
+    path: /data/app/com.quirky.android.wink.wink-g11drDnWNL0a5CUBqI6mUg==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.quirky.android.wink.wink]
+     base.apk - 4049
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

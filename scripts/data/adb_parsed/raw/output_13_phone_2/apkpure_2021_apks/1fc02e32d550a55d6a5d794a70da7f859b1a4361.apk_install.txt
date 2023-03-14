@@ -1,0 +1,369 @@
+Activity Resolver Table:
+  Schemes:
+      okauth:
+        65b483b com.iconjob.android/ru.ok.android.sdk.OkAuthActivity filter d81eb58
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "okauth"
+          Authority: "ok{1247177216}": -1
+      fb1742414406016346:
+        41634b1 com.iconjob.android/com.facebook.CustomTabActivity filter 3688d96
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb1742414406016346"
+      https:
+        d13f46c com.iconjob.android/.ui.activity.SplashActivity filter 66c4eca
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "worki"
+          Scheme: "https"
+          Authority: "worki.ru": -1
+          Authority: "worki.onelink.me": -1
+          Path: "PatternMatcher{PREFIX: /}"
+          Path: "PatternMatcher{PREFIX: /vacancy/}"
+          AutoVerify=true
+      worki:
+        d13f46c com.iconjob.android/.ui.activity.SplashActivity filter 66c4eca
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "worki"
+          Scheme: "https"
+          Authority: "worki.ru": -1
+          Authority: "worki.onelink.me": -1
+          Path: "PatternMatcher{PREFIX: /}"
+          Path: "PatternMatcher{PREFIX: /vacancy/}"
+          AutoVerify=true
+      fbconnect:
+        41634b1 com.iconjob.android/com.facebook.CustomTabActivity filter 6ac2d17
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.iconjob.android": -1
+      com.iconjob.android.mailoauth:
+        3d66504 com.iconjob.android/ru.mail.auth.sdk.RedirectReceiverActivity filter a286aed
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.iconjob.android.mailoauth"
+          Authority: "oauth2redirect": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d13f46c com.iconjob.android/.ui.activity.SplashActivity filter d802a35
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        872da88 com.iconjob.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 4acac21
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        1dfe7a com.iconjob.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter caab62b
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.google.android.gms.auth.api.phone.SMS_RETRIEVED:
+        417ed22 com.iconjob.android/.receiver.SMSBroadcastReceiver filter 2bc83b3
+          Action: "com.google.android.gms.auth.api.phone.SMS_RETRIEVED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        c7d8846 com.iconjob.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d1c8a07
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        f9f1734 com.iconjob.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 606e95d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        ad5f5b8 com.iconjob.android/ru.mail.notify.core.utils.network.NetworkStateReceiver filter 247df91
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        9ba18cc com.iconjob.android/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 192e715
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        c7d8846 com.iconjob.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d1c8a07
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        9d6cd70 com.iconjob.android/com.my.tracker.campaign.MultipleInstallReceiver filter 7adc8e9
+          Action: "com.android.vending.INSTALL_REFERRER"
+        56bb96e com.iconjob.android/com.appsflyer.MultipleInstallBroadcastReceiver filter a71a80f
+          Action: "com.android.vending.INSTALL_REFERRER"
+        e33509c com.iconjob.android/com.adjust.sdk.AdjustReferrerReceiver filter 3110aa5
+          Action: "com.android.vending.INSTALL_REFERRER"
+        d32fa2a com.iconjob.android/ru.mail.libnotify.utils.InstallReferrerReceiver filter d69801b
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        16f5a1e com.iconjob.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter b12b2ff
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        872da88 com.iconjob.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 4acac21
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        6f9e2d2 com.iconjob.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bedbfa3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        9de8ef6 com.iconjob.android/ru.mail.notify.core.utils.TimeChangeReceiver filter b9602f7
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.ACTION_DATE_CHANGED"
+      android.intent.action.TIME_SET:
+        6f9e2d2 com.iconjob.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bedbfa3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        9de8ef6 com.iconjob.android/ru.mail.notify.core.utils.TimeChangeReceiver filter b9602f7
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.ACTION_DATE_CHANGED"
+      android.intent.action.ACTION_DATE_CHANGED:
+        9de8ef6 com.iconjob.android/ru.mail.notify.core.utils.TimeChangeReceiver filter b9602f7
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.ACTION_DATE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        6f9e2d2 com.iconjob.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bedbfa3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        1dfe7a com.iconjob.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter caab62b
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        fb072a0 com.iconjob.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 8cdbe59
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        5d0b564 com.iconjob.android/.service.MyFirebaseMessagingService filter 79e3cd
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        4dca482 com.iconjob.android/com.google.firebase.messaging.FirebaseMessagingService filter a9dd793
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        b95c3d0 com.iconjob.android/ru.mail.notify.core.gcm.GcmMessageHandlerService filter 34defc9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          worki.onelink.me
+          worki.ru
+
+Registered ContentProviders:
+  com.iconjob.android/androidx.work.impl.WorkManagerInitializer:
+    Provider{e504fb2 com.iconjob.android/androidx.work.impl.WorkManagerInitializer}
+  com.iconjob.android/ru.mail.libnotify.utils.NotifyInitProvider:
+    Provider{6265b03 com.iconjob.android/ru.mail.libnotify.utils.NotifyInitProvider}
+  com.iconjob.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{561da80 com.iconjob.android/com.google.firebase.provider.FirebaseInitProvider}
+  com.iconjob.android/com.facebook.internal.FacebookInitProvider:
+    Provider{a3d38b9 com.iconjob.android/com.facebook.internal.FacebookInitProvider}
+  com.iconjob.android/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{b6fb4fe com.iconjob.android/com.facebook.ads.AudienceNetworkContentProvider}
+  com.iconjob.android/io.sentry.android.core.SentryInitProvider:
+    Provider{229a45f com.iconjob.android/io.sentry.android.core.SentryInitProvider}
+  com.iconjob.android/ru.mail.auth.sdk.MailIDInitProvider:
+    Provider{c4a1eac com.iconjob.android/ru.mail.auth.sdk.MailIDInitProvider}
+  com.iconjob.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{5efa775 com.iconjob.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.iconjob.android/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{58e230a com.iconjob.android/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.iconjob.android/androidx.core.content.FileProvider:
+    Provider{fee277b com.iconjob.android/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.iconjob.android.MailIDInitProvider]:
+    Provider{c4a1eac com.iconjob.android/ru.mail.auth.sdk.MailIDInitProvider}
+      applicationInfo=ApplicationInfo{c907998 com.iconjob.android}
+  [com.iconjob.android.provider]:
+    Provider{fee277b com.iconjob.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{22045f1 com.iconjob.android}
+  [com.iconjob.android.AudienceNetworkContentProvider]:
+    Provider{b6fb4fe com.iconjob.android/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{67365d6 com.iconjob.android}
+  [com.iconjob.android.notifyinitprovider]:
+    Provider{6265b03 com.iconjob.android/ru.mail.libnotify.utils.NotifyInitProvider}
+      applicationInfo=ApplicationInfo{1adc057 com.iconjob.android}
+  [com.iconjob.android.workmanager-init]:
+    Provider{e504fb2 com.iconjob.android/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{1df9744 com.iconjob.android}
+  [com.iconjob.android.firebaseinitprovider]:
+    Provider{561da80 com.iconjob.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{ee2502d com.iconjob.android}
+  [com.iconjob.android.lifecycle-process]:
+    Provider{5efa775 com.iconjob.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{a980962 com.iconjob.android}
+  [com.iconjob.android.FacebookInitProvider]:
+    Provider{a3d38b9 com.iconjob.android/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{9640af3 com.iconjob.android}
+  [com.iconjob.android.SentryInitProvider]:
+    Provider{229a45f com.iconjob.android/io.sentry.android.core.SentryInitProvider}
+      applicationInfo=ApplicationInfo{5e0e3b0 com.iconjob.android}
+  [com.iconjob.android.mobileadsinitprovider]:
+    Provider{58e230a com.iconjob.android/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{40c229 com.iconjob.android}
+
+Key Set Manager:
+  [com.iconjob.android]
+      Signing KeySets: 5244
+
+Packages:
+  Package [com.iconjob.android] (b7159ae):
+    userId=10306
+    pkg=Package{32a634f com.iconjob.android}
+    codePath=/data/app/~~v1EEK3rOJTsrPrjJQkWSZA==/com.iconjob.android-IPCBdvUIjFDiSghkJvRf9w==
+    resourcePath=/data/app/~~v1EEK3rOJTsrPrjJQkWSZA==/com.iconjob.android-IPCBdvUIjFDiSghkJvRf9w==
+    legacyNativeLibraryDir=/data/app/~~v1EEK3rOJTsrPrjJQkWSZA==/com.iconjob.android-IPCBdvUIjFDiSghkJvRf9w==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=577 minSdk=16 targetSdk=29
+    minExtensionVersions=[]
+    versionName=1.53.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.iconjob.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 12:01:17
+    lastUpdateTime=2022-11-30 12:01:18
+    packageSource=0
+    signatures=PackageSignatures{1688adc version:2, signatures:[105f77fd], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.VIBRATE
+      android.permission.CALL_PHONE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.CAMERA
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=54543 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 12:01:18
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.iconjob.android
+    com.google.android.apps.diagnosticstool:
+      com.iconjob.android
+    com.google.android.settings.intelligence:
+      com.iconjob.android
+    com.google.android.apps.accessibility.voiceaccess:
+      com.iconjob.android
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.iconjob.android]
+    path: /data/app/~~v1EEK3rOJTsrPrjJQkWSZA==/com.iconjob.android-IPCBdvUIjFDiSghkJvRf9w==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:223638
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.iconjob.android]
+     base.apk - 594

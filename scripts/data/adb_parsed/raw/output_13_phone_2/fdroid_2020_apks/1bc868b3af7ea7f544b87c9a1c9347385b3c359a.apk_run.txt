@@ -1,0 +1,223 @@
+Activity Resolver Table:
+  Schemes:
+      ethereum:
+        ae55df3 org.walleth/.intents.IntentHandlerActivity filter 33b3ab0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "ethereum"
+      wc:
+        ae55df3 org.walleth/.intents.IntentHandlerActivity filter 39cd29
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "wc"
+      org.walleth.licenses:
+        bd508ae org.walleth/.info.OpenSourceLicenseInfoActivity filter 6ede64f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "org.walleth.licenses"
+      vnd.android.nfc:
+        6ed01ba org.walleth/.nfc.NDEFTagHandlingActivity filter 94c986b
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "vnd.android.nfc"
+          Authority: "ext": -1
+          Path: "PatternMatcher{PREFIX: /android.com:pkg}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f9151dc org.walleth/.startup.StartupActivity filter 3f912e5
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        6597f86 org.walleth/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 9a5047
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        9cfafc8 org.walleth/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1acf861
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        4140074 org.walleth/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 25fb99d
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        9be0e12 org.walleth/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 221a9e3
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        4140074 org.walleth/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 25fb99d
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        6597f86 org.walleth/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 9a5047
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        2aaafe0 org.walleth/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b835299
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        2aaafe0 org.walleth/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b835299
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        2aaafe0 org.walleth/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b835299
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        9cfafc8 org.walleth/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1acf861
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        56af95e org.walleth/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 33b013f
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Domain verification status:
+
+Registered ContentProviders:
+  org.walleth/coil.util.CoilContentProvider:
+    Provider{664aeaf org.walleth/coil.util.CoilContentProvider}
+  org.walleth/.OnlineInitContentProvider:
+    Provider{71e2bc org.walleth/.OnlineInitContentProvider}
+  org.walleth/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{cfb0245 org.walleth/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  org.walleth/androidx.work.impl.WorkManagerInitializer:
+    Provider{7ef2d9a org.walleth/androidx.work.impl.WorkManagerInitializer}
+
+ContentProvider Authorities:
+  [org.walleth.coil]:
+    Provider{664aeaf org.walleth/coil.util.CoilContentProvider}
+      applicationInfo=ApplicationInfo{bcd969a org.walleth}
+  [org.walleth.lifecycle-process]:
+    Provider{cfb0245 org.walleth/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{f883bcb org.walleth}
+  [org.walleth.workmanager-init]:
+    Provider{7ef2d9a org.walleth/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{93b7fa8 org.walleth}
+  [org.walleth.providers.OnlineInitContentProvider]:
+    Provider{71e2bc org.walleth/.OnlineInitContentProvider}
+      applicationInfo=ApplicationInfo{32abac1 org.walleth}
+
+Key Set Manager:
+  [org.walleth]
+      Signing KeySets: 6286
+
+Packages:
+  Package [org.walleth] (5e8266):
+    userId=10406
+    pkg=Package{99cd54 org.walleth}
+    codePath=/data/app/~~CyzK7yYqMcRxYD4oePgXgw==/org.walleth-mg-Y24QzpYawWbVSSfRVKQ==
+    resourcePath=/data/app/~~CyzK7yYqMcRxYD4oePgXgw==/org.walleth-mg-Y24QzpYawWbVSSfRVKQ==
+    legacyNativeLibraryDir=/data/app/~~CyzK7yYqMcRxYD4oePgXgw==/org.walleth-mg-Y24QzpYawWbVSSfRVKQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=480 minSdk=16 targetSdk=29
+    minExtensionVersions=[]
+    versionName=0.48.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/org.walleth
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 20:47:23
+    lastUpdateTime=2022-11-30 20:47:24
+    packageSource=0
+    signatures=PackageSignatures{10434fd version:1, signatures:[ad86d6e3], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.CAMERA
+      android.permission.NFC
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=103389 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 20:47:24
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.diagnosticstool:
+      org.walleth
+    com.google.android.settings.intelligence:
+      org.walleth
+    com.google.android.apps.accessibility.voiceaccess:
+      org.walleth
+    com.zhiliaoapp.musically:
+      org.walleth
+    com.truecaller:
+      org.walleth
+    com.dv.adm:
+      org.walleth
+    com.zappcues.gamingmode:
+      org.walleth
+    com.jio.myjio:
+      org.walleth
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.localtransport,com.android.qns,com.google.android.iwlan,android,com.android.keychain,com.android.location.fused,com.android.wallpaperbackup,com.android.providers.settings,com.google.android.settings.future.biometrics.faceenroll,com.android.settings,com.android.server.telecom,com.android.inputdevices,com.android.dynsystem]:
+        org.walleth
+  queryable via uses-library:
+
+Dexopt state:
+  [org.walleth]
+    path: /data/app/~~CyzK7yYqMcRxYD4oePgXgw==/org.walleth-mg-Y24QzpYawWbVSSfRVKQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:630733
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [org.walleth]
+     base.apk - 535

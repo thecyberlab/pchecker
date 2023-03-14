@@ -1,0 +1,1085 @@
+Activity Resolver Table:
+  Schemes:
+      dualspace:
+        5948c73 com.ludashi.dualspace/.ui.activity.lock.StartAppTransitionActivity filter 10cdfa9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dualspace"
+          Authority: "open": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        15f95ad com.ludashi.dualspace/.MainActivity filter 61ba0e2
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.ludashi.dualspace.action.start.app:
+        5948c73 com.ludashi.dualspace/.ui.activity.lock.StartAppTransitionActivity filter 6fd0730
+          Action: "com.ludashi.dualspace.action.start.app"
+          Category: "android.intent.category.DEFAULT"
+      com.ludashi.dualspace.virtual.action.shortcut:
+        456e92e com.ludashi.dualspace/.util.ShortcutHandleActivity filter ba17ccf
+          Action: "com.ludashi.dualspace.virtual.action.shortcut"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        ee3665c com.ludashi.dualspace/.ui.AppUninstallReceiver filter 72acd65
+          Action: "android.intent.action.PACKAGE_REMOVED"
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        c65f9de com.ludashi.dualspace/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 94137bf
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        8ec6a3a com.ludashi.dualspace/.service.alive.receiver.DaemonReceiver filter 7e316eb
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        ab89c60 com.ludashi.dualspace/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 2800519
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      {applicationId}.Shortcut.autocreate:
+        26f006 com.ludashi.dualspace/.util.shortcut.AutoCreateBroadcastReceiver filter 85a36c7
+          Action: "{applicationId}.Shortcut.autocreate"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        c7b1e8c com.ludashi.dualspace/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 2d9d5
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        8ec6a3a com.ludashi.dualspace/.service.alive.receiver.DaemonReceiver filter 7e316eb
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        f53d5ea com.ludashi.dualspace/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter edb90db
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        e320692 com.ludashi.dualspace/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 397863
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        c7b1e8c com.ludashi.dualspace/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 2d9d5
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        16e8c48 com.ludashi.dualspace/.report.InstallReferrerReceiver filter 27fdae1
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.intent.action.BATTERY_LOW:
+        c65f9de com.ludashi.dualspace/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 94137bf
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        e019778 com.ludashi.dualspace/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1a43e51
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        e019778 com.ludashi.dualspace/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1a43e51
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        8ec6a3a com.ludashi.dualspace/.service.alive.receiver.DaemonReceiver filter 7e316eb
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        e019778 com.ludashi.dualspace/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1a43e51
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.USER_PRESENT:
+        8ec6a3a com.ludashi.dualspace/.service.alive.receiver.DaemonReceiver filter 7e316eb
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        8ec6a3a com.ludashi.dualspace/.service.alive.receiver.DaemonReceiver filter 7e316eb
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        ab89c60 com.ludashi.dualspace/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 2800519
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      {applicationId}.Shortcut.normalcreate:
+        424f4 com.ludashi.dualspace/.util.shortcut.NormalCreateBroadcastReceiver filter dbe441d
+          Action: "{applicationId}.Shortcut.normalcreate"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        19166b6 com.ludashi.dualspace/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter ef85fb7
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.content.SyncAdapter:
+        8dbdd90 com.ludashi.dualspace/.service.alive.accountsync.SyncService filter 7f6689
+          Action: "android.content.SyncAdapter"
+      com.ludashi.dualspace.servcice.action:
+        b74b324 com.ludashi.dualspace/.service.SuperBoostService filter 11d6e8d
+          Action: "com.ludashi.dualspace.servcice.action"
+      android.accounts.AccountAuthenticator:
+        f453842 com.ludashi.dualspace/.service.alive.accountsync.AuthenticatorService filter ca94053
+          Action: "android.accounts.AccountAuthenticator"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.ludashi.dualspace/androidx.core.content.FileProvider:
+    Provider{8b20e59 com.ludashi.dualspace/androidx.core.content.FileProvider}
+  com.ludashi.dualspace/.util.pref.SharedPrefProvider:
+    Provider{6056a1e com.ludashi.dualspace/.util.pref.SharedPrefProvider}
+  com.ludashi.dualspace/androidx.work.impl.WorkManagerInitializer:
+    Provider{7d782ff com.ludashi.dualspace/androidx.work.impl.WorkManagerInitializer}
+  com.ludashi.dualspace/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{e6a8cc com.ludashi.dualspace/com.google.firebase.provider.FirebaseInitProvider}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ProxyContentProvider:
+    Provider{36c3715 com.ludashi.dualspace/com.lody.virtual.client.stub.ProxyContentProvider}
+  com.ludashi.dualspace/com.facebook.internal.FacebookInitProvider:
+    Provider{d1a0a2a com.ludashi.dualspace/com.facebook.internal.FacebookInitProvider}
+  com.ludashi.dualspace/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider:
+    Provider{9ab501b com.ludashi.dualspace/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+  com.ludashi.dualspace/com.lody.virtual.server.BinderProvider:
+    Provider{3b85b8 com.ludashi.dualspace/com.lody.virtual.server.BinderProvider}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P0:
+    Provider{662f91 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P0}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P1:
+    Provider{9269ef6 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P1}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P2:
+    Provider{224d2f7 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P2}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P3:
+    Provider{3ff4564 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P3}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P4:
+    Provider{a2d33cd com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P4}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P5:
+    Provider{895b482 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P5}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P6:
+    Provider{349a793 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P6}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P7:
+    Provider{61d53d0 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P7}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P8:
+    Provider{ce63fc9 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P8}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P9:
+    Provider{3ee96ce com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P9}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P10:
+    Provider{fdd29ef com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P10}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P11:
+    Provider{1cbdcfc com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P11}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P12:
+    Provider{80a0f85 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P12}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P13:
+    Provider{2e151da com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P13}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P14:
+    Provider{97c760b com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P14}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P15:
+    Provider{d77cce8 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P15}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P16:
+    Provider{fe11f01 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P16}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P17:
+    Provider{612b1a6 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P17}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P18:
+    Provider{47a67e7 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P18}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P19:
+    Provider{770cf94 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P19}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P20:
+    Provider{abfaa3d com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P20}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P21:
+    Provider{1a84232 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P21}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P22:
+    Provider{d7b9b83 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P22}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P23:
+    Provider{1555100 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P23}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P24:
+    Provider{601ad39 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P24}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P25:
+    Provider{4944f7e com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P25}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P26:
+    Provider{cd26cdf com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P26}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P27:
+    Provider{63e7d2c com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P27}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P28:
+    Provider{ec6e3f5 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P28}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P29:
+    Provider{8a1e58a com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P29}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P30:
+    Provider{39af7fb com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P30}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P31:
+    Provider{7ac4018 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P31}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P32:
+    Provider{a6eca71 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P32}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P33:
+    Provider{740d056 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P33}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P34:
+    Provider{e9718d7 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P34}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P35:
+    Provider{d3145c4 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P35}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P36:
+    Provider{ad49cad com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P36}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P37:
+    Provider{f119be2 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P37}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P38:
+    Provider{aca6b73 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P38}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P39:
+    Provider{2defa30 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P39}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P40:
+    Provider{a4b56a9 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P40}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P41:
+    Provider{631942e com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P41}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P42:
+    Provider{7d64bcf com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P42}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P43:
+    Provider{271895c com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P43}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P44:
+    Provider{b59b465 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P44}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P45:
+    Provider{546c53a com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P45}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P46:
+    Provider{415d5eb com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P46}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P47:
+    Provider{33bdf48 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P47}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P48:
+    Provider{83631e1 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P48}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P49:
+    Provider{74bfb06 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P49}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P50:
+    Provider{e79e5c7 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P50}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P51:
+    Provider{cd3a7f4 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P51}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P52:
+    Provider{e030b1d com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P52}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P53:
+    Provider{a1cc192 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P53}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P54:
+    Provider{a251763 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P54}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P55:
+    Provider{87d4f60 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P55}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P56:
+    Provider{fca3c19 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P56}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P57:
+    Provider{bc164de com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P57}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P58:
+    Provider{fc7c6bf com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P58}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P59:
+    Provider{d58018c com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P59}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P60:
+    Provider{d3980d5 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P60}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P61:
+    Provider{7af0ea com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P61}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P62:
+    Provider{8bc0fdb com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P62}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P63:
+    Provider{349aa78 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P63}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P64:
+    Provider{91e5551 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P64}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P65:
+    Provider{d8f31b6 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P65}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P66:
+    Provider{fe1ceb7 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P66}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P67:
+    Provider{8aaf624 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P67}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P68:
+    Provider{ba1f58d com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P68}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P69:
+    Provider{4d4b342 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P69}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P70:
+    Provider{43a9f53 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P70}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P71:
+    Provider{6b35090 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P71}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P72:
+    Provider{c455d89 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P72}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P73:
+    Provider{cfec18e com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P73}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P74:
+    Provider{945ddaf com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P74}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P75:
+    Provider{a4e5bc com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P75}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P76:
+    Provider{f9d4945 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P76}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P77:
+    Provider{2a9689a com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P77}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P78:
+    Provider{11ca5cb com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P78}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P79:
+    Provider{9b8a1a8 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P79}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P80:
+    Provider{4ce34c1 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P80}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P81:
+    Provider{e257466 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P81}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P82:
+    Provider{c4dd3a7 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P82}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P83:
+    Provider{dca3054 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P83}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P84:
+    Provider{ec85bfd com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P84}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P85:
+    Provider{a0470f2 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P85}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P86:
+    Provider{b7a0343 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P86}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P87:
+    Provider{8c3fdc0 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P87}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P88:
+    Provider{543baf9 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P88}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P89:
+    Provider{664aa3e com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P89}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P90:
+    Provider{eaf909f com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P90}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P91:
+    Provider{8cb35ec com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P91}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P92:
+    Provider{97c0db5 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P92}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P93:
+    Provider{4fd2c4a com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P93}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P94:
+    Provider{e8697bb com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P94}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P95:
+    Provider{72bc4d8 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P95}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P96:
+    Provider{aacd031 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P96}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P97:
+    Provider{9e9c316 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P97}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P98:
+    Provider{afcf497 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P98}
+  com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P99:
+    Provider{4045684 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P99}
+  com.ludashi.dualspace/.service.alive.accountsync.StubProvider:
+    Provider{64d3e6d com.ludashi.dualspace/.service.alive.accountsync.StubProvider}
+
+ContentProvider Authorities:
+  [com.ludashi.dualspace.virtual.service.BinderProvider]:
+    Provider{3b85b8 com.ludashi.dualspace/com.lody.virtual.server.BinderProvider}
+      applicationInfo=ApplicationInfo{d36faa2 com.ludashi.dualspace}
+  [com.ludashi.dualspace.firebaseinitprovider]:
+    Provider{e6a8cc com.ludashi.dualspace/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{c124333 com.ludashi.dualspace}
+  [com.ludashi.dualspace.TTMultiProvider]:
+    Provider{9ab501b com.ludashi.dualspace/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+      applicationInfo=ApplicationInfo{b256f0 com.ludashi.dualspace}
+  [com.ludashi.dualspace.daemon.provider]:
+    Provider{64d3e6d com.ludashi.dualspace/.service.alive.accountsync.StubProvider}
+      applicationInfo=ApplicationInfo{c5469 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_10]:
+    Provider{fdd29ef com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P10}
+      applicationInfo=ApplicationInfo{92e1eee com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_11]:
+    Provider{1cbdcfc com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P11}
+      applicationInfo=ApplicationInfo{23df8f com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_12]:
+    Provider{80a0f85 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P12}
+      applicationInfo=ApplicationInfo{4fdf21c com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_13]:
+    Provider{2e151da com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P13}
+      applicationInfo=ApplicationInfo{d8cce25 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_14]:
+    Provider{97c760b com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P14}
+      applicationInfo=ApplicationInfo{1613bfa com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_15]:
+    Provider{d77cce8 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P15}
+      applicationInfo=ApplicationInfo{408e5ab com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_16]:
+    Provider{fe11f01 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P16}
+      applicationInfo=ApplicationInfo{b061408 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_17]:
+    Provider{612b1a6 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P17}
+      applicationInfo=ApplicationInfo{1e127a1 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_18]:
+    Provider{47a67e7 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P18}
+      applicationInfo=ApplicationInfo{e771dc6 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_19]:
+    Provider{770cf94 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P19}
+      applicationInfo=ApplicationInfo{ee3187 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_20]:
+    Provider{abfaa3d com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P20}
+      applicationInfo=ApplicationInfo{dec68b4 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_21]:
+    Provider{1a84232 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P21}
+      applicationInfo=ApplicationInfo{4c79cdd com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_22]:
+    Provider{d7b9b83 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P22}
+      applicationInfo=ApplicationInfo{ab75052 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_23]:
+    Provider{1555100 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P23}
+      applicationInfo=ApplicationInfo{bf25f23 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_24]:
+    Provider{601ad39 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P24}
+      applicationInfo=ApplicationInfo{7415c20 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_25]:
+    Provider{4944f7e com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P25}
+      applicationInfo=ApplicationInfo{1a629d9 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_26]:
+    Provider{cd26cdf com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P26}
+      applicationInfo=ApplicationInfo{b561f9e com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_27]:
+    Provider{63e7d2c com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P27}
+      applicationInfo=ApplicationInfo{381ca7f com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_28]:
+    Provider{ec6e3f5 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P28}
+      applicationInfo=ApplicationInfo{7301a4c com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_29]:
+    Provider{8a1e58a com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P29}
+      applicationInfo=ApplicationInfo{a468a95 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_30]:
+    Provider{39af7fb com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P30}
+      applicationInfo=ApplicationInfo{28097aa com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_31]:
+    Provider{7ac4018 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P31}
+      applicationInfo=ApplicationInfo{6728f9b com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_32]:
+    Provider{a6eca71 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P32}
+      applicationInfo=ApplicationInfo{36a8f38 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_33]:
+    Provider{740d056 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P33}
+      applicationInfo=ApplicationInfo{9523b11 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_34]:
+    Provider{e9718d7 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P34}
+      applicationInfo=ApplicationInfo{6288476 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_35]:
+    Provider{d3145c4 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P35}
+      applicationInfo=ApplicationInfo{e08a77 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_36]:
+    Provider{ad49cad com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P36}
+      applicationInfo=ApplicationInfo{8d566e4 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_37]:
+    Provider{f119be2 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P37}
+      applicationInfo=ApplicationInfo{8e774d com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_38]:
+    Provider{aca6b73 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P38}
+      applicationInfo=ApplicationInfo{7907202 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_39]:
+    Provider{2defa30 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P39}
+      applicationInfo=ApplicationInfo{ac95713 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_40]:
+    Provider{a4b56a9 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P40}
+      applicationInfo=ApplicationInfo{bf40d50 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_41]:
+    Provider{631942e com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P41}
+      applicationInfo=ApplicationInfo{ed83b49 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_42]:
+    Provider{7d64bcf com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P42}
+      applicationInfo=ApplicationInfo{797ac4e com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_43]:
+    Provider{271895c com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P43}
+      applicationInfo=ApplicationInfo{468516f com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_44]:
+    Provider{b59b465 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P44}
+      applicationInfo=ApplicationInfo{414ae7c com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_45]:
+    Provider{546c53a com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P45}
+      applicationInfo=ApplicationInfo{9e04305 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_46]:
+    Provider{415d5eb com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P46}
+      applicationInfo=ApplicationInfo{3c63f5a com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_47]:
+    Provider{33bdf48 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P47}
+      applicationInfo=ApplicationInfo{c52958b com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_48]:
+    Provider{83631e1 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P48}
+      applicationInfo=ApplicationInfo{d3c3668 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_49]:
+    Provider{74bfb06 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P49}
+      applicationInfo=ApplicationInfo{7a70a81 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_50]:
+    Provider{e79e5c7 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P50}
+      applicationInfo=ApplicationInfo{818f726 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_51]:
+    Provider{cd3a7f4 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P51}
+      applicationInfo=ApplicationInfo{b52ff67 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_52]:
+    Provider{e030b1d com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P52}
+      applicationInfo=ApplicationInfo{cd25114 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_53]:
+    Provider{a1cc192 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P53}
+      applicationInfo=ApplicationInfo{3b8cdbd com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_54]:
+    Provider{a251763 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P54}
+      applicationInfo=ApplicationInfo{18d5fb2 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_55]:
+    Provider{87d4f60 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P55}
+      applicationInfo=ApplicationInfo{2062b03 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_56]:
+    Provider{fca3c19 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P56}
+      applicationInfo=ApplicationInfo{50d6a80 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_57]:
+    Provider{bc164de com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P57}
+      applicationInfo=ApplicationInfo{c2988b9 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_58]:
+    Provider{fc7c6bf com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P58}
+      applicationInfo=ApplicationInfo{d6dc4fe com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_59]:
+    Provider{d58018c com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P59}
+      applicationInfo=ApplicationInfo{436745f com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_60]:
+    Provider{d3980d5 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P60}
+      applicationInfo=ApplicationInfo{31eaeac com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_61]:
+    Provider{7af0ea com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P61}
+      applicationInfo=ApplicationInfo{250f775 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_62]:
+    Provider{8bc0fdb com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P62}
+      applicationInfo=ApplicationInfo{15d330a com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_63]:
+    Provider{349aa78 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P63}
+      applicationInfo=ApplicationInfo{df7f77b com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_64]:
+    Provider{91e5551 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P64}
+      applicationInfo=ApplicationInfo{41e0998 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_65]:
+    Provider{d8f31b6 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P65}
+      applicationInfo=ApplicationInfo{b4695f1 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_66]:
+    Provider{fe1ceb7 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P66}
+      applicationInfo=ApplicationInfo{82375d6 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_67]:
+    Provider{8aaf624 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P67}
+      applicationInfo=ApplicationInfo{e849057 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_68]:
+    Provider{ba1f58d com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P68}
+      applicationInfo=ApplicationInfo{cb62744 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_69]:
+    Provider{4d4b342 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P69}
+      applicationInfo=ApplicationInfo{c1da02d com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_70]:
+    Provider{43a9f53 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P70}
+      applicationInfo=ApplicationInfo{f391962 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_71]:
+    Provider{6b35090 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P71}
+      applicationInfo=ApplicationInfo{4d7daf3 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_72]:
+    Provider{c455d89 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P72}
+      applicationInfo=ApplicationInfo{f9073b0 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_73]:
+    Provider{cfec18e com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P73}
+      applicationInfo=ApplicationInfo{de11229 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_74]:
+    Provider{945ddaf com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P74}
+      applicationInfo=ApplicationInfo{11369ae com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_75]:
+    Provider{a4e5bc com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P75}
+      applicationInfo=ApplicationInfo{a0b334f com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_76]:
+    Provider{f9d4945 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P76}
+      applicationInfo=ApplicationInfo{e811adc com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_77]:
+    Provider{2a9689a com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P77}
+      applicationInfo=ApplicationInfo{54fa7e5 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_78]:
+    Provider{11ca5cb com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P78}
+      applicationInfo=ApplicationInfo{83072ba com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_79]:
+    Provider{9b8a1a8 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P79}
+      applicationInfo=ApplicationInfo{571b56b com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_80]:
+    Provider{4ce34c1 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P80}
+      applicationInfo=ApplicationInfo{27308c8 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_81]:
+    Provider{e257466 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P81}
+      applicationInfo=ApplicationInfo{a57dd61 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_82]:
+    Provider{c4dd3a7 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P82}
+      applicationInfo=ApplicationInfo{6e30086 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_83]:
+    Provider{dca3054 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P83}
+      applicationInfo=ApplicationInfo{6743d47 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_84]:
+    Provider{ec85bfd com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P84}
+      applicationInfo=ApplicationInfo{613e974 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_85]:
+    Provider{a0470f2 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P85}
+      applicationInfo=ApplicationInfo{b53ee9d com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_86]:
+    Provider{b7a0343 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P86}
+      applicationInfo=ApplicationInfo{fde9f12 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_87]:
+    Provider{8c3fdc0 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P87}
+      applicationInfo=ApplicationInfo{2d66e3 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_88]:
+    Provider{543baf9 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P88}
+      applicationInfo=ApplicationInfo{f4028e0 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_89]:
+    Provider{664aa3e com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P89}
+      applicationInfo=ApplicationInfo{805d799 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_90]:
+    Provider{eaf909f com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P90}
+      applicationInfo=ApplicationInfo{b839a5e com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_91]:
+    Provider{8cb35ec com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P91}
+      applicationInfo=ApplicationInfo{2c58e3f com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_92]:
+    Provider{97c0db5 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P92}
+      applicationInfo=ApplicationInfo{32ef30c com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_93]:
+    Provider{4fd2c4a com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P93}
+      applicationInfo=ApplicationInfo{535455 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_94]:
+    Provider{e8697bb com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P94}
+      applicationInfo=ApplicationInfo{5eafe6a com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_95]:
+    Provider{72bc4d8 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P95}
+      applicationInfo=ApplicationInfo{e8ecf5b com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_96]:
+    Provider{aacd031 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P96}
+      applicationInfo=ApplicationInfo{15e33f8 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_97]:
+    Provider{9e9c316 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P97}
+      applicationInfo=ApplicationInfo{2c1e0d1 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_98]:
+    Provider{afcf497 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P98}
+      applicationInfo=ApplicationInfo{1b29736 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_99]:
+    Provider{4045684 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P99}
+      applicationInfo=ApplicationInfo{ce10637 com.ludashi.dualspace}
+  [com.ludashi.dualspace.FacebookInitProvider]:
+    Provider{d1a0a2a com.ludashi.dualspace/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{13e97a4 com.ludashi.dualspace}
+  [com.ludashi.dualspace.main.SharedPrefProvider]:
+    Provider{6056a1e com.ludashi.dualspace/.util.pref.SharedPrefProvider}
+      applicationInfo=ApplicationInfo{6b2b90d com.ludashi.dualspace}
+  [com.ludashi.dualspace.fileprovider]:
+    Provider{8b20e59 com.ludashi.dualspace/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{b88f0c2 com.ludashi.dualspace}
+  [com.ludashi.dualspace.workmanager-init]:
+    Provider{7d782ff com.ludashi.dualspace/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{ab5ced3 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual.fileprovider]:
+    Provider{36c3715 com.ludashi.dualspace/com.lody.virtual.client.stub.ProxyContentProvider}
+      applicationInfo=ApplicationInfo{e9f8a10 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_0]:
+    Provider{662f91 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P0}
+      applicationInfo=ApplicationInfo{e5ed909 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_1]:
+    Provider{9269ef6 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P1}
+      applicationInfo=ApplicationInfo{a79570e com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_2]:
+    Provider{224d2f7 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P2}
+      applicationInfo=ApplicationInfo{104852f com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_3]:
+    Provider{3ff4564 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P3}
+      applicationInfo=ApplicationInfo{db373c com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_4]:
+    Provider{a2d33cd com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P4}
+      applicationInfo=ApplicationInfo{c92fcc5 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_5]:
+    Provider{895b482 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P5}
+      applicationInfo=ApplicationInfo{8f7d61a com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_6]:
+    Provider{349a793 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P6}
+      applicationInfo=ApplicationInfo{6de454b com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_7]:
+    Provider{61d53d0 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P7}
+      applicationInfo=ApplicationInfo{8c28b28 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_8]:
+    Provider{ce63fc9 com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P8}
+      applicationInfo=ApplicationInfo{a2ba041 com.ludashi.dualspace}
+  [com.ludashi.dualspace.virtual_stub_9]:
+    Provider{3ee96ce com.ludashi.dualspace/com.lody.virtual.client.stub.ShadowContentProvider$P9}
+      applicationInfo=ApplicationInfo{2ad39e6 com.ludashi.dualspace}
+
+Key Set Manager:
+  [com.ludashi.dualspace]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.ludashi.dualspace] (14931d4):
+    userId=10267
+    pkg=Package{750ff7d com.ludashi.dualspace}
+    codePath=/data/app/~~HCWPzbePXWNQu_3s7W8tcg==/com.ludashi.dualspace-MetP-9iK777m9K1GrUMzow==
+    resourcePath=/data/app/~~HCWPzbePXWNQu_3s7W8tcg==/com.ludashi.dualspace-MetP-9iK777m9K1GrUMzow==
+    legacyNativeLibraryDir=/data/app/~~HCWPzbePXWNQu_3s7W8tcg==/com.ludashi.dualspace-MetP-9iK777m9K1GrUMzow==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=100 minSdk=16 targetSdk=29
+    minExtensionVersions=[]
+    versionName=4.0.8
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.ludashi.dualspace
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 16:34:07
+    lastUpdateTime=2022-11-30 16:34:07
+    packageSource=0
+    signatures=PackageSignatures{3030e72 version:3, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.WRITE_SOCIAL_STREAM
+      android.permission.READ_SOCIAL_STREAM
+      android.permission.READ_PROFILE
+      android.permission.WRITE_PROFILE
+      android.permission.READ_USER_DICTIONARY
+      android.permission.WRITE_USER_DICTIONARY
+      android.permission.USE_CREDENTIALS
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.ACCESS_MEDIA_LOCATION
+      com.samsung.svoice.sync.READ_DATABASE
+      com.samsung.svoice.sync.ACCESS_SERVICE
+      com.samsung.svoice.sync.WRITE_DATABASE
+      com.sec.android.app.voicenote.Controller
+      com.sec.android.permission.VOIP_INTERFACE
+      com.sec.android.permission.LAUNCH_PERSONAL_PAGE_SERVICE
+      com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY
+      com.samsung.android.providers.context.permission.READ_RECORD_AUDIO
+      com.samsung.android.providers.context.permission.WRITE_RECORD_AUDIO
+      com.sec.android.settings.permission.SOFT_RESET
+      sec.android.permission.READ_MSG_PREF
+      com.samsung.android.scloud.backup.lib.read
+      com.samsung.android.scloud.backup.lib.write
+      com.android.alarm.permission.SET_ALARM
+      com.android.voicemail.permission.ADD_VOICEMAIL
+      com.android.voicemail.permission.READ_WRITE_ALL_VOICEMAIL
+      com.huawei.authentication.HW_ACCESS_AUTH_SERVICE
+      com.android.vending.CHECK_LICENSE
+      com.google.android.providers.talk.permission.READ_ONLY
+      com.google.android.providers.talk.permission.WRITE_ONLY
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      com.google.android.gms.permission.AD_ID_NOTIFICATION
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.READ_APP_BADGE
+      com.google.android.launcher.permission.READ_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.teslacoilsw.launcher.permission.READ_SETTINGS
+      com.actionlauncher.playstore.permission.READ_SETTINGS
+      com.mx.launcher.permission.READ_SETTINGS
+      com.apusapps.launcher.permission.READ_SETTINGS
+      com.tsf.shell.permission.READ_SETTINGS
+      com.lenovo.launcher.permission.READ_SETTINGS
+      com.bbk.launcher2.permission.READ_SETTINGS
+      com.s.launcher.permission.READ_SETTINGS
+      cn.nubia.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      com.android.launcher.permission.UNINSTALL_SHORTCUT
+      com.android.launcher.permission.READ_SETTINGS
+      com.android.launcher.permission.WRITE_SETTINGS
+      com.android.launcher2.permission.READ_SETTINGS
+      com.android.launcher2.permission.WRITE_SETTINGS
+      com.android.launcher3.permission.READ_SETTINGS
+      com.android.launcher3.permission.WRITE_SETTINGS
+      org.adw.launcher.permission.READ_SETTINGS
+      org.adw.launcher.permission.WRITE_SETTINGS
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.WRITE_SETTINGS
+      com.qihoo360.launcher.permission.READ_SETTINGS
+      com.qihoo360.launcher.permission.WRITE_SETTINGS
+      com.lge.launcher.permission.READ_SETTINGS
+      com.lge.launcher.permission.WRITE_SETTINGS
+      net.qihoo.launcher.permission.READ_SETTINGS
+      net.qihoo.launcher.permission.WRITE_SETTINGS
+      org.adwfreak.launcher.permission.READ_SETTINGS
+      org.adwfreak.launcher.permission.WRITE_SETTINGS
+      org.adw.launcher_donut.permission.READ_SETTINGS
+      org.adw.launcher_donut.permission.WRITE_SETTINGS
+      com.huawei.launcher3.permission.READ_SETTINGS
+      com.huawei.launcher3.permission.WRITE_SETTINGS
+      com.fede.launcher.permission.READ_SETTINGS
+      com.fede.launcher.permission.WRITE_SETTINGS
+      com.sec.android.app.twlauncher.settings.READ_SETTINGS
+      com.sec.android.app.twlauncher.settings.WRITE_SETTINGS
+      com.anddoes.launcher.permission.READ_SETTINGS
+      com.anddoes.launcher.permission.WRITE_SETTINGS
+      com.tencent.qqlauncher.permission.READ_SETTINGS
+      com.tencent.qqlauncher.permission.WRITE_SETTINGS
+      com.huawei.launcher2.permission.READ_SETTINGS
+      com.huawei.launcher2.permission.WRITE_SETTINGS
+      com.android.mylauncher.permission.READ_SETTINGS
+      com.android.mylauncher.permission.WRITE_SETTINGS
+      com.ebproductions.android.launcher.permission.READ_SETTINGS
+      com.ebproductions.android.launcher.permission.WRITE_SETTINGS
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      com.miui.mihome2.permission.READ_SETTINGS
+      com.miui.mihome2.permission.WRITE_SETTINGS
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      telecom.mdesk.permission.READ_SETTINGS
+      telecom.mdesk.permission.WRITE_SETTINGS
+      dianxin.permission.ACCESS_LAUNCHER_DATA
+      android.permission.CAMERA
+      android.permission.FLASHLIGHT
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.BATTERY_STATS
+      android.permission.BODY_SENSORS
+      android.permission.BROADCAST_STICKY
+      android.permission.DISABLE_KEYGUARD
+      android.permission.EXPAND_STATUS_BAR
+      android.permission.GET_ACCOUNTS
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.READ_PHONE_STATE
+      android.permission.READ_PHONE_NUMBERS
+      android.permission.CHANGE_CONFIGURATION
+      android.permission.WRITE_SETTINGS
+      android.permission.GET_TASKS
+      android.permission.KILL_BACKGROUND_PROCESSES
+      android.permission.REORDER_TASKS
+      android.permission.PERSISTENT_ACTIVITY
+      android.permission.RECORD_AUDIO
+      android.permission.BLUETOOTH
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.NFC
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.VIBRATE
+      android.permission.USE_FINGERPRINT
+      com.android.browser.permission.READ_HISTORY_BOOKMARKS
+      com.android.browser.permission.WRITE_HISTORY_BOOKMARKS
+      android.permission.CLEAR_APP_CACHE
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.READ_SYNC_STATS
+      android.permission.SUBSCRIBED_FEEDS_READ
+      android.permission.SUBSCRIBED_FEEDS_WRITE
+      android.permission.WRITE_CALENDAR
+      android.permission.READ_CALENDAR
+      android.permission.READ_CONTACTS
+      android.permission.WRITE_CONTACTS
+      android.permission.READ_LOGS
+      android.permission.RESTART_PACKAGES
+      android.permission.SET_TIME
+      android.permission.SET_TIME_ZONE
+      android.permission.SET_WALLPAPER
+      android.permission.SET_WALLPAPER_HINTS
+      android.permission.TRANSMIT_IR
+      android.permission.USE_SIP
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.SYSTEM_OVERLAY_WINDOW
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.GET_INTENT_SENDER_INTENT
+      android.permission.BIND_DIRECTORY_SEARCH
+      android.permission.UPDATE_APP_OPS_STATS
+      android.permission.INSTALL_PACKAGES
+      android.permission.DELETE_PACKAGES
+      android.permission.CLEAR_APP_USER_DATA
+      android.permission.WRITE_MEDIA_STORAGE
+      android.permission.ACCESS_CACHE_FILESYSTEM
+      android.permission.DEVICE_POWER
+      android.permission.WRITE_APN_SETTINGS
+      android.permission.BIND_APPWIDGET
+      android.permission.ACCOUNT_MANAGER
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.READ_INSTALL_SESSIONS
+      android.permission.READ_OWNER_DATA
+      android.permission.READ_CELL_BROADCASTS
+      android.permission.WRITE_CLIPS
+      android.permission.READ_CLIPS
+      android.permission.GET_CLIPS
+      android.permission.WRITE_OWNER_DATA
+      android.permission.ACCESS_GPS
+      android.permission.ACCESS_WIMAX_STATE
+      android.permission.ACCESS_DOWNLOAD_MANAGER
+      android.permission.CHANGE_WIMAX_STATE
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.CALL_PHONE
+      com.google.android.googleapps.permission.GOOGLE_AUTH
+      com.google.android.googleapps.permission.GOOGLE_AUTH.OTHER_SERVICES
+      com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.BODY_SENSORS_BACKGROUND
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.RESTART_PACKAGES: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.NFC: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.PERSISTENT_ACTIVITY: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.SUBSCRIBED_FEEDS_READ: granted=true
+      android.permission.EXPAND_STATUS_BAR: granted=true
+      com.android.launcher.permission.UNINSTALL_SHORTCUT: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      com.google.android.gms.permission.AD_ID_NOTIFICATION: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.SUBSCRIBED_FEEDS_WRITE: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      android.permission.TRANSMIT_IR: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.android.browser.permission.READ_HISTORY_BOOKMARKS: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.WRITE_SOCIAL_STREAM: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.WRITE_PROFILE: granted=true
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.READ_INSTALL_SESSIONS: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.WRITE_USER_DICTIONARY: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.SET_WALLPAPER_HINTS: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      com.android.browser.permission.WRITE_HISTORY_BOOKMARKS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.READ_USER_DICTIONARY: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.READ_SOCIAL_STREAM: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=74311 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 16:34:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false
+        com.google.android.providers.talk.permission.WRITE_ONLY: granted=false
+        android.permission.BODY_SENSORS: granted=false
+        android.permission.READ_PHONE_NUMBERS: granted=false
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false
+        android.permission.READ_PHONE_STATE: granted=false
+        android.permission.CALL_PHONE: granted=false
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.WRITE_CONTACTS: granted=false
+        android.permission.BODY_SENSORS_BACKGROUND: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.CAMERA: granted=false
+        android.permission.WRITE_CALENDAR: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.USE_SIP: granted=false
+        android.permission.READ_CELL_BROADCASTS: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.GET_ACCOUNTS: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        com.google.android.providers.talk.permission.READ_ONLY: granted=false
+        android.permission.RECORD_AUDIO: granted=false
+        android.permission.READ_CONTACTS: granted=false
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.ACCESS_MEDIA_LOCATION: granted=false
+        com.android.voicemail.permission.ADD_VOICEMAIL: granted=false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.ludashi.dualspace
+    com.google.android.apps.diagnosticstool:
+      com.ludashi.dualspace
+    com.google.android.settings.intelligence:
+      com.ludashi.dualspace
+    com.google.android.contacts:
+      com.ludashi.dualspace
+    com.google.android.apps.accessibility.voiceaccess:
+      com.ludashi.dualspace
+    com.truecaller:
+      com.ludashi.dualspace
+    com.ludashi.dualspace:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      com.dv.adm
+      com.utorrent.client.pro
+    com.dv.adm:
+      com.ludashi.dualspace
+    com.zappcues.gamingmode:
+      com.ludashi.dualspace
+    com.jio.myjio:
+      com.ludashi.dualspace
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.ludashi.dualspace]
+    path: /data/app/~~HCWPzbePXWNQu_3s7W8tcg==/com.ludashi.dualspace-MetP-9iK777m9K1GrUMzow==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:94250
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.ludashi.dualspace]
+     base.apk - 671

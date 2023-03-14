@@ -1,0 +1,241 @@
+Activity Resolver Table:
+  Schemes:
+      fbconnect:
+        2a884d1 net.mobigame.zombietsunami/com.facebook.CustomTabActivity filter bf569c8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.net.mobigame.zombietsunami": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        4de6b36 net.mobigame.zombietsunami/.ZombieActivity filter decfa6b
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        4de6b36 net.mobigame.zombietsunami/.ZombieActivity filter decfa6b
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        9224a37 net.mobigame.zombietsunami/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter bded247
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        3c08ba4 net.mobigame.zombietsunami/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter db6c986
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        85f9d0d net.mobigame.zombietsunami/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter bdb5a74
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        79e04c2 net.mobigame.zombietsunami/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter bad0b9d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        3c752d3 net.mobigame.zombietsunami/com.vungle.warren.NetworkProviderReceiver filter 153c499
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Category: "android.intent.category.DEFAULT"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        94cbe10 net.mobigame.zombietsunami/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter de7835e
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        85f9d0d net.mobigame.zombietsunami/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter bdb5a74
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        7f5fd09 net.mobigame.zombietsunami/com.tenjin.android.TenjinReferrerReceiver filter 6692a61
+          Action: "com.android.vending.INSTALL_REFERRER"
+        4cbab0e net.mobigame.zombietsunami/com.tapjoy.InstallReferrerReceiver filter 88da9e0
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.intent.action.BATTERY_LOW:
+        9224a37 net.mobigame.zombietsunami/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter bded247
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        3aa492f net.mobigame.zombietsunami/androidx.work.impl.background.systemalarm.RescheduleReceiver filter aa5f812
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        3aa492f net.mobigame.zombietsunami/androidx.work.impl.background.systemalarm.RescheduleReceiver filter aa5f812
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        3aa492f net.mobigame.zombietsunami/androidx.work.impl.background.systemalarm.RescheduleReceiver filter aa5f812
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        3c08ba4 net.mobigame.zombietsunami/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter db6c986
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        b27ab3c net.mobigame.zombietsunami/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter a2c4be3
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Registered ContentProviders:
+  net.mobigame.zombietsunami/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{27860c5 net.mobigame.zombietsunami/com.google.android.gms.ads.MobileAdsInitProvider}
+  net.mobigame.zombietsunami/com.facebook.FacebookContentProvider:
+    Provider{81b6a1a net.mobigame.zombietsunami/com.facebook.FacebookContentProvider}
+  net.mobigame.zombietsunami/androidx.work.impl.WorkManagerInitializer:
+    Provider{81c494b net.mobigame.zombietsunami/androidx.work.impl.WorkManagerInitializer}
+  net.mobigame.zombietsunami/com.facebook.internal.FacebookInitProvider:
+    Provider{d623f28 net.mobigame.zombietsunami/com.facebook.internal.FacebookInitProvider}
+  net.mobigame.zombietsunami/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{3034441 net.mobigame.zombietsunami/com.facebook.ads.AudienceNetworkContentProvider}
+  net.mobigame.zombietsunami/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{2760de6 net.mobigame.zombietsunami/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+
+ContentProvider Authorities:
+  [net.mobigame.zombietsunami.AudienceNetworkContentProvider]:
+    Provider{3034441 net.mobigame.zombietsunami/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{a642f27 net.mobigame.zombietsunami}
+  [net.mobigame.zombietsunami.mobileadsinitprovider]:
+    Provider{27860c5 net.mobigame.zombietsunami/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{a642f27 net.mobigame.zombietsunami}
+  [net.mobigame.zombietsunami.lifecycle-process]:
+    Provider{2760de6 net.mobigame.zombietsunami/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{a642f27 net.mobigame.zombietsunami}
+  [com.facebook.app.FacebookContentProvider420980821284758]:
+    Provider{81b6a1a net.mobigame.zombietsunami/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{a642f27 net.mobigame.zombietsunami}
+  [net.mobigame.zombietsunami.workmanager-init]:
+    Provider{81c494b net.mobigame.zombietsunami/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{a642f27 net.mobigame.zombietsunami}
+  [net.mobigame.zombietsunami.FacebookInitProvider]:
+    Provider{d623f28 net.mobigame.zombietsunami/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{a642f27 net.mobigame.zombietsunami}
+
+Key Set Manager:
+  [net.mobigame.zombietsunami]
+      Signing KeySets: 454
+
+Packages:
+  Package [net.mobigame.zombietsunami] (23025d4):
+    userId=10173
+    pkg=Package{629abba net.mobigame.zombietsunami}
+    codePath=/data/app/net.mobigame.zombietsunami-l0zEtXws0oVx8v0yihFKAw==
+    resourcePath=/data/app/net.mobigame.zombietsunami-l0zEtXws0oVx8v0yihFKAw==
+    legacyNativeLibraryDir=/data/app/net.mobigame.zombietsunami-l0zEtXws0oVx8v0yihFKAw==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=134 minSdk=19 targetSdk=29
+    versionName=4.3.1
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{a642f27 net.mobigame.zombietsunami}
+    flags=[ HAS_CODE ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE ]
+    dataDir=/data/user/0/net.mobigame.zombietsunami
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 08:50:27
+    firstInstallTime=2021-03-06 08:50:27
+    lastUpdateTime=2021-03-06 08:50:27
+    signatures=PackageSignatures{ffee37d version:2, signatures:[4b5f80e3], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_BACKUP ]
+    requested permissions:
+      android.permission.WRITE_INTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.INTERNET
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.VIBRATE
+      com.android.vending.BILLING
+      com.android.alarm.permission.SET_ALARM
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.GET_TASKS
+      android.permission.WAKE_LOCK
+      android.permission.GET_ACCOUNTS
+      com.google.android.c2dm.permission.RECEIVE
+      net.mobigame.zombietsunami.permission.C2D_MESSAGE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=19980 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Package Changes:
+  Sequence number=73
+  User 0:
+    seq=2, package=com.yahoo.mobile.client.android.weather
+    seq=9, package=com.google.android.gms
+    seq=11, package=com.psiphon3.subscription
+    seq=13, package=com.tumblr
+    seq=16, package=com.google.android.apps.docs.editors.sheets
+    seq=17, package=com.google.android.apps.docs
+    seq=19, package=com.emoji.coolkeyboard
+    seq=21, package=com.ea.game.starwarscapital_row
+    seq=23, package=com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish
+    seq=25, package=com.virtualapplications.play
+    seq=27, package=com.appsomniacs.da2
+    seq=29, package=com.king.farmheroessupersaga
+    seq=31, package=com.rsupport.mvagent
+    seq=33, package=com.snkplaymore.android014
+    seq=35, package=com.intermedia.hq
+    seq=37, package=com.google.android.apps.adwords
+    seq=39, package=com.weheartit
+    seq=41, package=com.life360.android.safetymapd
+    seq=43, package=com.kabam.marvelbattle
+    seq=45, package=com.antutu.ABenchMark
+    seq=47, package=com.timehop
+    seq=49, package=com.flightradar24free
+    seq=51, package=com.dena.a12026418
+    seq=53, package=com.whatsapp
+    seq=55, package=com.feng.droid.tutu
+    seq=57, package=com.jsdev.instasize
+    seq=60, package=com.gombosdev.ampere
+    seq=62, package=com.sega.vtc
+    seq=64, package=com.google.android.street
+    seq=66, package=com.mobisystems.fileman
+    seq=68, package=com.secondarm.taptapdash
+    seq=70, package=com.kwai.global.video.social.kwaigo
+    seq=72, package=net.mobigame.zombietsunami
+
+
+Dexopt state:
+  [net.mobigame.zombietsunami]
+    path: /data/app/net.mobigame.zombietsunami-l0zEtXws0oVx8v0yihFKAw==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [net.mobigame.zombietsunami]
+     base.apk - 5723
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

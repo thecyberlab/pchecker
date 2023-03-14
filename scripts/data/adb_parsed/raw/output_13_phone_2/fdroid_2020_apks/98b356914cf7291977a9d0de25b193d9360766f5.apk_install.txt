@@ -1,0 +1,174 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        80a4e13 org.openobservatory.ooniprobe/.activity.OoniRunActivity filter 1138a49
+          Action: "android.intent.action.VIEW"
+          Action: "org.openobservatory.ooniprobe.nettest"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "run.ooni.io": -1
+          Path: "PatternMatcher{PREFIX: /nettest}"
+      ooni:
+        80a4e13 org.openobservatory.ooniprobe/.activity.OoniRunActivity filter 6ea4f4e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ooni"
+          Authority: "nettest": -1
+      https:
+        80a4e13 org.openobservatory.ooniprobe/.activity.OoniRunActivity filter 5df3850
+          Action: "android.intent.action.VIEW"
+          Action: "org.openobservatory.ooniprobe.nettest"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "run.ooni.io": -1
+          Path: "PatternMatcher{PREFIX: /nettest}"
+
+  Non-Data Actions:
+      org.openobservatory.ooniprobe.activity.InfoActivity:
+        b301177 org.openobservatory.ooniprobe/.activity.InfoActivity filter 1d3e1e4
+          Action: "org.openobservatory.ooniprobe.activity.InfoActivity"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        44eaa11 org.openobservatory.ooniprobe/.activity.MainActivity filter 775c776
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      org.openobservatory.ooniprobe.activity.CustomWebsiteActivity:
+        62d64d org.openobservatory.ooniprobe/.activity.CustomWebsiteActivity filter 3eee502
+          Action: "org.openobservatory.ooniprobe.activity.CustomWebsiteActivity"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          run.ooni.io
+
+Registered ContentProviders:
+  org.openobservatory.ooniprobe/localhost.toolkit.content.FileProvider:
+    Provider{b8f9830 org.openobservatory.ooniprobe/localhost.toolkit.content.FileProvider}
+
+ContentProvider Authorities:
+  [org.openobservatory.ooniprobe.localhost.provider]:
+    Provider{b8f9830 org.openobservatory.ooniprobe/localhost.toolkit.content.FileProvider}
+      applicationInfo=ApplicationInfo{6be01cf org.openobservatory.ooniprobe}
+
+Key Set Manager:
+  [org.openobservatory.ooniprobe]
+      Signing KeySets: 6864
+
+Packages:
+  Package [org.openobservatory.ooniprobe] (88e075c):
+    userId=10772
+    pkg=Package{7df5a65 org.openobservatory.ooniprobe}
+    codePath=/data/app/~~lP7ZdMs45K_EXkPGWce-DA==/org.openobservatory.ooniprobe-FHsrclQEvERIHZhcZoZ1-w==
+    resourcePath=/data/app/~~lP7ZdMs45K_EXkPGWce-DA==/org.openobservatory.ooniprobe-FHsrclQEvERIHZhcZoZ1-w==
+    legacyNativeLibraryDir=/data/app/~~lP7ZdMs45K_EXkPGWce-DA==/org.openobservatory.ooniprobe-FHsrclQEvERIHZhcZoZ1-w==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=62 minSdk=17 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2.5.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/org.openobservatory.ooniprobe
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 21:21:00
+    lastUpdateTime=2022-11-30 21:21:05
+    packageSource=0
+    signatures=PackageSignatures{6c2733a version:1, signatures:[a775b8ad], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+    User 0: ceDataInode=103873 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 21:21:05
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      org.openobservatory.ooniprobe
+    com.google.android.apps.diagnosticstool:
+      org.openobservatory.ooniprobe
+    com.google.android.settings.intelligence:
+      org.openobservatory.ooniprobe
+    com.google.android.apps.accessibility.voiceaccess:
+      org.openobservatory.ooniprobe
+    com.zhiliaoapp.musically:
+      org.openobservatory.ooniprobe
+    com.truecaller:
+      org.openobservatory.ooniprobe
+    com.dv.adm:
+      org.openobservatory.ooniprobe
+    com.zappcues.gamingmode:
+      org.openobservatory.ooniprobe
+    com.jio.myjio:
+      org.openobservatory.ooniprobe
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [org.openobservatory.ooniprobe]
+    path: /data/app/~~lP7ZdMs45K_EXkPGWce-DA==/org.openobservatory.ooniprobe-FHsrclQEvERIHZhcZoZ1-w==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1679430
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [org.openobservatory.ooniprobe]
+     base.apk - 310

@@ -1,0 +1,915 @@
+Activity Resolver Table:
+  Full MIME Types:
+      application/x-tar:
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter a634b3d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.tar}"
+          StaticType: "application/x-tar"
+      application/rar:
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter 872a483
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/rar"
+      application/zip:
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter ca5494
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/zip"
+      text/*:
+        492dec7 pl.solidexplorer2/pl.solidexplorer.plugins.texteditor.TextEditor filter 753acf4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      audio/*:
+        4c868e2 pl.solidexplorer2/pl.solidexplorer.plugins.musicplayer.MusicPlayer filter a15b473
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4c868e2 pl.solidexplorer2/pl.solidexplorer.plugins.musicplayer.MusicPlayer filter c2b0f30
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4c868e2 pl.solidexplorer2/pl.solidexplorer.plugins.musicplayer.MusicPlayer filter c1647a9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      */*:
+        ab105df pl.solidexplorer2/pl.solidexplorer.SolidExplorerPicker filter 6a3a22c
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.OPENABLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        34a20fb pl.solidexplorer2/pl.solidexplorer.SEDirectoryPicker filter 9beb518
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        34a20fb pl.solidexplorer2/pl.solidexplorer.SEDirectoryPicker filter 9f09b71
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        76a323a pl.solidexplorer2/pl.solidexplorer.WebActivity filter 6613eeb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      video/*:
+        508312e pl.solidexplorer2/pl.solidexplorer.plugins.videocast.VideoCast filter b0d24cf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        508312e pl.solidexplorer2/pl.solidexplorer.plugins.videocast.VideoCast filter ce9ee5c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        508312e pl.solidexplorer2/pl.solidexplorer.plugins.videocast.VideoCast filter d62b565
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      resource/folder:
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter 95d6ea6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "resource/folder"
+      application/x-gzip:
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter b61cf32
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.gz}"
+          StaticType: "application/x-gzip"
+      application/x-7z-compressed:
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter 7422600
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/x-7z-compressed"
+      image/*:
+        6760ac4 pl.solidexplorer2/pl.solidexplorer.plugins.imageviewer.ImageViewer filter f227dad
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Base MIME Types:
+      resource:
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter 95d6ea6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "resource/folder"
+      application:
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter ca5494
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/zip"
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter a634b3d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.tar}"
+          StaticType: "application/x-tar"
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter b61cf32
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.gz}"
+          StaticType: "application/x-gzip"
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter 872a483
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/rar"
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter 7422600
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/x-7z-compressed"
+
+  Wild MIME Types:
+      *:
+        ab105df pl.solidexplorer2/pl.solidexplorer.SolidExplorerPicker filter 6a3a22c
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.OPENABLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        34a20fb pl.solidexplorer2/pl.solidexplorer.SEDirectoryPicker filter 9beb518
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        34a20fb pl.solidexplorer2/pl.solidexplorer.SEDirectoryPicker filter 9f09b71
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        76a323a pl.solidexplorer2/pl.solidexplorer.WebActivity filter 6613eeb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      text:
+        492dec7 pl.solidexplorer2/pl.solidexplorer.plugins.texteditor.TextEditor filter 753acf4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      audio:
+        4c868e2 pl.solidexplorer2/pl.solidexplorer.plugins.musicplayer.MusicPlayer filter a15b473
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4c868e2 pl.solidexplorer2/pl.solidexplorer.plugins.musicplayer.MusicPlayer filter c2b0f30
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4c868e2 pl.solidexplorer2/pl.solidexplorer.plugins.musicplayer.MusicPlayer filter c1647a9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      image:
+        6760ac4 pl.solidexplorer2/pl.solidexplorer.plugins.imageviewer.ImageViewer filter f227dad
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      video:
+        508312e pl.solidexplorer2/pl.solidexplorer.plugins.videocast.VideoCast filter b0d24cf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        508312e pl.solidexplorer2/pl.solidexplorer.plugins.videocast.VideoCast filter ce9ee5c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        508312e pl.solidexplorer2/pl.solidexplorer.plugins.videocast.VideoCast filter d62b565
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      file:
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter ee2e0e7
+          Action: "org.openintents.action.VIEW_DIRECTORY"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+      http:
+        4c868e2 pl.solidexplorer2/pl.solidexplorer.plugins.musicplayer.MusicPlayer filter c2b0f30
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        508312e pl.solidexplorer2/pl.solidexplorer.plugins.videocast.VideoCast filter ce9ee5c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        76a323a pl.solidexplorer2/pl.solidexplorer.WebActivity filter 6613eeb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      https:
+        4c868e2 pl.solidexplorer2/pl.solidexplorer.plugins.musicplayer.MusicPlayer filter c1647a9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        508312e pl.solidexplorer2/pl.solidexplorer.plugins.videocast.VideoCast filter d62b565
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      android.intent.action.HTC_RINGTONE_PICKER:
+        ab105df pl.solidexplorer2/pl.solidexplorer.SolidExplorerPicker filter 460128a
+          Action: "android.intent.action.HTC_RINGTONE_PICKER"
+          Category: "android.intent.category.DEFAULT"
+      pl.solidexplorer.ACTION_OPEN_BOOKMARK:
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter 2be5e39
+          Action: "pl.solidexplorer.ACTION_OPEN_BOOKMARK"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter cdcb001
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.MULTIWINDOW_LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      android.intent.action.VIEW:
+        60b2c1d pl.solidexplorer2/pl.solidexplorer.plugins.apps.AppInfoViewer filter 5a0ce92
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+      pl.solidexplorer.ACTION_OPEN_STORAGE:
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter 4d9ac7e
+          Action: "pl.solidexplorer.ACTION_OPEN_STORAGE"
+          Category: "android.intent.category.DEFAULT"
+      pl.solidexplorer.plugin.LAUNCH:
+        d559448 pl.solidexplorer2/pl.solidexplorer.common.plugin.PluginActivity filter 84e42e1
+          Action: "pl.solidexplorer.plugin.LAUNCH"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.RINGTONE_PICKER:
+        ab105df pl.solidexplorer2/pl.solidexplorer.SolidExplorerPicker filter 91da4f5
+          Action: "android.intent.action.RINGTONE_PICKER"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.CREATE_SHORTCUT:
+        534cd56 pl.solidexplorer2/pl.solidexplorer.SEShortcutPicker filter 48fd1d7
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+      pl.solidexplorer.plugin.OPEN:
+        d559448 pl.solidexplorer2/pl.solidexplorer.common.plugin.PluginActivity filter cb93806
+          Action: "pl.solidexplorer.plugin.OPEN"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        34a20fb pl.solidexplorer2/pl.solidexplorer.SEDirectoryPicker filter 9beb518
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.VIEW:
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter 95d6ea6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "resource/folder"
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter ca5494
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/zip"
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter a634b3d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.tar}"
+          StaticType: "application/x-tar"
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter b61cf32
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.gz}"
+          StaticType: "application/x-gzip"
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter 872a483
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/rar"
+        3d301e8 pl.solidexplorer2/pl.solidexplorer.SolidExplorer filter 7422600
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/x-7z-compressed"
+        6760ac4 pl.solidexplorer2/pl.solidexplorer.plugins.imageviewer.ImageViewer filter f227dad
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4c868e2 pl.solidexplorer2/pl.solidexplorer.plugins.musicplayer.MusicPlayer filter a15b473
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4c868e2 pl.solidexplorer2/pl.solidexplorer.plugins.musicplayer.MusicPlayer filter c2b0f30
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4c868e2 pl.solidexplorer2/pl.solidexplorer.plugins.musicplayer.MusicPlayer filter c1647a9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        508312e pl.solidexplorer2/pl.solidexplorer.plugins.videocast.VideoCast filter b0d24cf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        508312e pl.solidexplorer2/pl.solidexplorer.plugins.videocast.VideoCast filter ce9ee5c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        508312e pl.solidexplorer2/pl.solidexplorer.plugins.videocast.VideoCast filter d62b565
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        76a323a pl.solidexplorer2/pl.solidexplorer.WebActivity filter 6613eeb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        492dec7 pl.solidexplorer2/pl.solidexplorer.plugins.texteditor.TextEditor filter 753acf4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.GET_CONTENT:
+        ab105df pl.solidexplorer2/pl.solidexplorer.SolidExplorerPicker filter 6a3a22c
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.OPENABLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.SEND_MULTIPLE:
+        34a20fb pl.solidexplorer2/pl.solidexplorer.SEDirectoryPicker filter 9f09b71
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.android.vending.INSTALL_REFERRER:
+        6b36d19 pl.solidexplorer2/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter ff941de
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        b54a063 pl.solidexplorer2/com.google.firebase.iid.FirebaseInstanceIdReceiver filter b78a460
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+
+Registered ContentProviders:
+  pl.solidexplorer2/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{c3bb035 pl.solidexplorer2/com.crashlytics.android.CrashlyticsInitProvider}
+  pl.solidexplorer2/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{3185cca pl.solidexplorer2/com.google.firebase.provider.FirebaseInitProvider}
+  pl.solidexplorer2/pl.solidexplorer.files.FileProvider:
+    Provider{be13e3b pl.solidexplorer2/pl.solidexplorer.files.FileProvider}
+  pl.solidexplorer2/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{c7fa958 pl.solidexplorer2/com.google.android.gms.ads.MobileAdsInitProvider}
+
+ContentProvider Authorities:
+  [pl.solidexplorer2.files]:
+    Provider{be13e3b pl.solidexplorer2/pl.solidexplorer.files.FileProvider}
+      applicationInfo=ApplicationInfo{a041ab1 pl.solidexplorer2}
+  [pl.solidexplorer2.firebaseinitprovider]:
+    Provider{3185cca pl.solidexplorer2/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{9c77b96 pl.solidexplorer2}
+  [pl.solidexplorer2.mobileadsinitprovider]:
+    Provider{c7fa958 pl.solidexplorer2/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{d9b8317 pl.solidexplorer2}
+  [pl.solidexplorer2.crashlyticsinitprovider]:
+    Provider{c3bb035 pl.solidexplorer2/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{7f20304 pl.solidexplorer2}
+
+Key Set Manager:
+  [pl.solidexplorer2]
+      Signing KeySets: 63
+
+Packages:
+  Package [pl.solidexplorer2] (80eb0ed):
+    userId=10281
+    pkg=Package{c77bb22 pl.solidexplorer2}
+    codePath=/data/app/~~UMNo6f5DQpO4VFgRbHixDg==/pl.solidexplorer2-qE4DwVxFrv-e6M1iRUgt5g==
+    resourcePath=/data/app/~~UMNo6f5DQpO4VFgRbHixDg==/pl.solidexplorer2-qE4DwVxFrv-e6M1iRUgt5g==
+    legacyNativeLibraryDir=/data/app/~~UMNo6f5DQpO4VFgRbHixDg==/pl.solidexplorer2-qE4DwVxFrv-e6M1iRUgt5g==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=200180 minSdk=16 targetSdk=29
+    versionName=2.7.6
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{c77bb22 pl.solidexplorer2}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[]
+    dataDir=/data/user/0/pl.solidexplorer2
+    supportsScreens=[medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      com.sec.android.app.multiwindow
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-02-23 19:01:29
+    firstInstallTime=2022-02-23 19:01:32
+    lastUpdateTime=2022-02-23 19:01:32
+    signatures=PackageSignatures{84b39b3 version:1, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WAKE_LOCK
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.VIBRATE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.GET_ACCOUNTS
+      android.permission.READ_PHONE_STATE
+      android.permission.SET_WALLPAPER
+      android.permission.NFC
+      com.android.vending.CHECK_LICENSE
+      com.android.vending.BILLING
+      android.permission.USE_FINGERPRINT
+      android.permission.WRITE_SETTINGS
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.REQUEST_DELETE_PACKAGES
+      com.sony.mobile.permission.SYSTEM_UI_VISIBILITY_EXTENSION
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=2755 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+    overlay paths:
+      /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+SkippingApks:
+  name : (eBay)idapk-1.0.0.47-2-DE-CS.apk
+  name : 100Game_MOVISTAR_4x3_KU84_2009_2.0.9.apk
+  name : ATTThanks_VPL_ATT.apk
+  name : AURA.apk
+  name : AccessTmobile_TMO.apk
+  name : Adalyst_ZTA.apk
+  name : AdaptClient.apk
+  name : AdvancedCalling.apk
+  name : AirtelStub.apk
+  name : AliveService.apk
+  name : AlticeMusic_2.3.apk
+  name : AmazonMDIP_CAN.apk
+  name : AmazonMDIP_USA.apk
+  name : AmazonShopping-32bit.apk
+  name : AmazonShopping_AIO.apk
+  name : AmazonShopping_CAN.apk
+  name : AmazonShopping_USA.apk
+  name : AmazonVideo_SPR_stub.apk
+  name : AmazonVideo_SWA.apk
+  name : Amazon_Shopping.apk
+  name : AppLock.apk
+  name : AppSelect_ATT.apk
+  name : AttIqi_ATT.apk
+  name : AttPersonalCloud_ATT.apk
+  name : AttSmartHelp_ATT.apk
+  name : Attribution.apk
+  name : BellMobileTV.apk
+  name : BellTVWidget.apk
+  name : Booking_SWA.apk
+  name : Byjus.apk
+  name : CLAROAPPS_STUB_1_0_0.apk
+  name : CallGuardian_uscc.apk
+  name : CallProtect_ATT.apk
+  name : CallingPlus.apk
+  name : CarrierDeviceManager.apk
+  name : CarrierDeviceManager_TMB.apk
+  name : CarrierSetupWizard.apk
+  name : Chameleon2.apk
+  name : ClaroContenedor_Full.apk
+  name : ClaroContenedor_Stub.apk
+  name : ClaroJuegos_Stub.apk
+  name : CnnPanel.apk
+  name : CombinedStarter_T29-12.02.00-build_4929-Release-signed-aligned-pd.apk
+  name : DMAT_Stub.apk
+  name : Dailyhunt.apk
+  name : DeviceCheckup_TLS.apk
+  name : DirectvNow_VPL_ATT.apk
+  name : DirectvRemote_ATT.apk
+  name : DriveMode_hvpl_ATT.apk
+  name : DumpCollector.apk
+  name : EWidgetATT.apk
+  name : Ebay_Carrier_ID_AT_TR.apk
+  name : Ebay_Carrier_ID_DE_CS.apk
+  name : EmergencyAlert.apk
+  name : EntelPlay_5.0.apk
+  name : EweMBMSServer_TEL.apk
+  name : EweMBMSServer_VZW.apk
+  name : Fast.apk
+  name : GPT_MobileTV_LTN_nuginga_release.apk
+  name : GoogleOne.apk
+  name : HPSClient.apk
+  name : Helo.apk
+  name : HpsAgreement.apk
+  name : HuxExtension.apk
+  name : IGNITE.apk
+  name : Ignite-Globe.apk
+  name : Ignite-Singtel.apk
+  name : Ignite-Tigo.apk
+  name : Ignite-attMexico.apk
+  name : Ignite-telefonica.apk
+  name : Ignite-uscc.apk
+  name : IgniteVerizon.apk
+  name : Ignite_AIO.apk
+  name : JanskySettings.apk
+  name : Josh.apk
+  name : KT114Provider.apk
+  name : KTAuth.apk
+  name : KTCustomerService.apk
+  name : KTHiddenMenu.apk
+  name : KTOneStore.apk
+  name : KTPushNotiService.apk
+  name : KTServiceAgent.apk
+  name : KTServiceMenu.apk
+  name : LGUGPSnWPS.apk
+  name : LGUHiddenMenu.apk
+  name : LGUMiniCustomerCenter.apk
+  name : LGUOZStore.apk
+  name : LGUplusTsmProxy.apk
+  name : LLKAgent.apk
+  name : LocationAgent.apk
+  name : LockScreenStories.apk
+  name : LogWriter.apk
+  name : LoginClientUnbranded.apk
+  name : LoginClientUnbranded_sku.apk
+  name : LookoutFull_SPR.apk
+  name : Lookout_ATT.apk
+  name : Lookout_MTR.apk
+  name : Lookout_TMO.apk
+  name : MDIP-SEAU-SingleSKU-Optus-Vodafone.apk
+  name : MDIP-TIMO-2uk-DTDE-DTAT-VFAU-optus-3IT.apk
+  name : MDIP.apk
+  name : MHSWrapperMTR.apk
+  name : MHSWrapperTMO.apk
+  name : MHSWrapperUSC.apk
+  name : MaftPreloadManagerAndroidApp-MovistarMX.apk
+  name : MaftPreloadManagerAndroidApp-TEF_LATAM.apk
+  name : MaftPreloadManagerAndroidApp-release-signed-tagged.apk
+  name : MemorySaver_O_Refresh.apk
+  name : MetroAppStore_MTR.apk
+  name : MetroZone_MTR.apk
+  name : MiClaro_CDR_v5.1.apk
+  name : MiClaro_CENAM_v2.0.1.apk
+  name : MiClaro_CTI_v1.2.0-111.apk
+  name : MiClaro_ECO_v3.6.1.apk
+  name : MiClaro_PCT_v1.5.3_build67.apk
+  name : MinhaClaro_v5.0.3-28.apk
+  name : MnoDmClient.apk
+  name : MnoDmViewer.apk
+  name : MobileID.apk
+  name : MobileID_TMB.apk
+  name : MobileInstaller.apk
+  name : MobileInstaller_TMB.apk
+  name : MobileKey_ATT.apk
+  name : MobileSecurity_ATT.apk
+  name : MyATT_VPL_ATT.apk
+  name : MyAccount_FMC.apk
+  name : MyAccount_GLW.apk
+  name : MyAccount_VMC.apk
+  name : MyApps-1.7.0-logoff-obson-prodSamsungRelease.apk
+  name : MyBell.apk
+  name : MyChatr.apk
+  name : MyCricket_AIO.apk
+  name : MyGalaxy.apk
+  name : MyGalaxyWidget.apk
+  name : MyGalaxyWidget_NEBANGS.apk
+  name : MyGalaxy_NEBANGS.apk
+  name : MyMetro_MTR.apk
+  name : MyRogers.apk
+  name : MySingtel.apk
+  name : MyTelus.apk
+  name : MyVerizonMobile.apk
+  name : MyVerizonService.apk
+  name : NameIDVPL_TMO.apk
+  name : NameID_MTR.apk
+  name : NaverV_N.apk
+  name : NetWise_AIO.apk
+  name : NextRadio_vpl_AIO.apk
+  name : OBDM_Permissions.apk
+  name : OPENMarketHiddenMenu.apk
+  name : OiAppsClub_Stub.apk
+  name : OmadmSpr.apk
+  name : OmadmSprHm.apk
+  name : Omc.apk
+  name : OnStart_Notification_V30.apk
+  name : OneStoreService.apk
+  name : OneTalkDialer.apk
+  name : Orange_Manual_Selector_samsung-release_V3.22.9.2.apk
+  name : PhoneInfo2.apk
+  name : PhonePe.apk
+  name : Portal_Stub.apk
+  name : PrefAct.apk
+  name : ProductSearch.apk
+  name : Push_To_Talk_BMC.apk
+  name : QAS_DVC_MSP_VZW.apk
+  name : QRAgent.apk
+  name : QoSIndicator_ATT.apk
+  name : RRO_NBS_stk1.apk
+  name : RRO_NBS_stk2.apk
+  name : RemoteSupport_ATT.apk
+  name : RogersNHL.apk
+  name : SEIOAgent.apk
+  name : SFRJeux-8.2.0-logoff-obson-samsungRelease.apk
+  name : SKTHiddenMenu.apk
+  name : SKTMemberShip.apk
+  name : SKTOneStore.apk
+  name : SNP_stub.apk
+  name : SYSdll.apk
+  name : SafetyCleaner.apk
+  name : SamsungClub_CTP_v1.0.apk
+  name : SamsungConcierge_stub.apk
+  name : SamsungPayStub.apk
+  name : SamsungPayStubMini.apk
+  name : SecVVM_dream.apk
+  name : SecVVM_v2.apk
+  name : SetupIndiaServicesTnC.apk
+  name : SimLock_MTR.apk
+  name : SimLock_TMO.apk
+  name : SktUsimService.apk
+  name : SmartHelp_ATT.apk
+  name : SmartPush.apk
+  name : SmartWifi_Stub_ATT.apk
+  name : Snapchat.apk
+  name : SpectrumCM.apk
+  name : SprWfc.apk
+  name : SprintAndroidExtension2.apk
+  name : SprintAndroidExtension2TMB.apk
+  name : SprintCallerID.apk
+  name : SprintCallerID02.apk
+  name : SprintHub.apk
+  name : SprintHub_TMB.apk
+  name : SprintZone.apk
+  name : TPhoneOnePackage.apk
+  name : TPhoneSetup.apk
+  name : TWorld.apk
+  name : TelcelContenedor_Full.apk
+  name : TmoVVM.apk
+  name : TmoWfcPrefV2.apk
+  name : UWT_STK_RRO_v1.1_20160113.apk
+  name : UnifiedSettingService.apk
+  name : UnifiedTetheringProvision.apk
+  name : UnifiedVVM.apk
+  name : Upday.apk
+  name : UserManual.apk
+  name : VMS_stub.apk
+  name : VZWAPNService_VZW.apk
+  name : VZWAPNService_sku.apk
+  name : VisualVoiceMail_CHA_stub.apk
+  name : VisualVoiceMail_HUX_CCT_stub.apk
+  name : VisualVoiceMail_TFN_stub.apk
+  name : VisualVoiceMail_VZW_stub.apk
+  name : VisualVoicemailSpr.apk
+  name : VivoAppsClube.apk
+  name : VivoMaisApps.apk
+  name : Vivo_Apps_Clube-v1.19.112-263-release.apk
+  name : Voicemail_AIO.apk
+  name : VzCloud.apk
+  name : VzwImsApiService.apk
+  name : WfcServiceV2.apk
+  name : Xfinity.apk
+  name : ZVV_STK2_RRO.apk
+  name : ZVV_STK_RRO.apk
+  name : app-a1telekomaustriaSamsung-1.0.73.108(841)-release.apk
+  name : app-center-5.8.8-prod-release-signed_6803.apk
+  name : appcloud_oobe.apk
+  name : appcloud_oobe_hutchison-release_V3.15.1.0.apk
+  name : appcloud_oobe_samsungVodafone-release_V4.3.4.5.apk
+  name : apps_brasil_signed_aligned.apk
+  name : canid_stub.apk
+  name : che_notification_6.apk
+  name : com.customermobile.preload.vzw.apk
+  name : custo_22523.apk
+  name : downloadsvivo-1-10-10-1.apk
+  name : embms_sec.apk
+  name : entel_peru-stub1.0.apk
+  name : idapk-1.0.0.43-92.apk
+  name : instagram-stub-BR.apk
+  name : instagram-stub_45-1-22.apk
+  name : instagram_stub.apk
+  name : kolbi_5.0.19.apk
+  name : koodo.apk
+  name : messenger-stub-BR.apk
+  name : messenger-stub_45-1-22.apk
+  name : messenger_stub.apk
+  name : miClaroPeru_Stub.apk
+  name : miClaro_COM_Stub.apk
+  name : miTelcel_Stub.apk
+  name : mySASKTEL-stub.apk
+  name : noticias_aro_146.apk
+  name : ready2Go_ATT.apk
+  name : rro_psn_stk1.apk
+  name : rro_uwt_srk1.apk
+  name : rro_uwt_stk2.apk
+  name : samsung_club_bo_4.3.4.apk
+  name : samsung_club_uy_access_release_v1_3.apk
+  name : samsungclub_py_3-7-1.apk
+  name : signatureClub.apk
+  name : talkback.apk
+  name : tickantel_1.0_stub.apk
+  name : trendy_aro_28.apk
+  name : tuapp_1.0_stub.apk
+  name : ubank_samsung.apk
+  name : veramas_1.0_stub.apk
+  name : veratv_1.0_stub.apk
+  name : videotron_usercentre_plus.apk
+  name : virginmobile_mybenefits.apk
+  name : vivo-maisapps-2.5.9.apk
+  name : wssyncmldm.apk
+  name : yandex-browser.apk
+  name : yandex-disk.apk
+  name : yandex-maps.apk
+  name : yandex.search.apk
+  name : SearchSelector.apk
+
+Queries:
+  updateEntireShouldFilterCacheAsync finished: true
+  update time for EntireShouldFilterCache: 736
+  user count at EntireShouldFilterCache: 1
+  settings size at EntireShouldFilterCache: 393
+  system apps queryable: false
+  queries via package name:
+  queries via intent:
+    com.samsung.android.dialer:
+      pl.solidexplorer2
+    com.samsung.android.app.contacts:
+      pl.solidexplorer2
+    com.samsung.android.messaging:
+      pl.solidexplorer2
+    com.microsoft.skydrive:
+      pl.solidexplorer2
+    com.google.android.apps.maps:
+      pl.solidexplorer2
+    com.google.android.youtube:
+      pl.solidexplorer2
+    com.google.android.gm:
+      pl.solidexplorer2
+  queryable via interaction:
+    User 0:
+
+Package Changes:
+  Sequence number=73
+  User 0:
+    seq=3, package=com.google.android.gms
+    seq=6, package=com.example.mysimpleapplication
+    seq=7, package=com.samsung.sree
+    seq=8, package=com.samsung.android.app.notes
+    seq=9, package=com.google.android.apps.youtube.music
+    seq=10, package=com.sec.android.app.popupcalculator
+    seq=11, package=com.netflix.mediaclient
+    seq=12, package=com.spotify.music
+    seq=13, package=com.facebook.katana
+    seq=14, package=com.facebook.appmanager
+    seq=15, package=com.samsung.android.voc
+    seq=16, package=com.sec.android.app.sbrowser
+    seq=17, package=com.sec.android.app.voicenote
+    seq=18, package=com.samsung.android.galaxy
+    seq=19, package=com.google.android.apps.photos
+    seq=20, package=com.google.android.videos
+    seq=21, package=com.google.android.apps.docs
+    seq=22, package=com.microsoft.office.outlook
+    seq=23, package=com.linkedin.android
+    seq=24, package=com.microsoft.office.officehubrow
+    seq=32, package=com.samsung.android.forest
+    seq=38, package=com.kajda.fuelio
+    seq=41, package=com.unvoid.borealis
+    seq=43, package=me.piere.christmas
+    seq=45, package=ak.alizandro.smartaudiobookplayer
+    seq=47, package=amazing.three_d.icons
+    seq=49, package=com.first75.voicerecorder2pro
+    seq=51, package=digifit.virtuagym.client.android
+    seq=53, package=com.paget96.lspeed
+    seq=55, package=yo.app
+    seq=59, package=com.in.w3d
+    seq=61, package=com.luzapplications.alessio.wallooppro
+    seq=63, package=com.alesp.orologiomondiale.pro
+    seq=65, package=co.windyapp.android
+    seq=67, package=com.yuanwofei.cardemulator.pro
+    seq=69, package=com.brit.swiftdark.substratum
+    seq=71, package=com.lb.app_manager
+    seq=72, package=pl.solidexplorer2
+
+
+Dexopt state:
+  [pl.solidexplorer2]
+    path: /data/app/~~UMNo6f5DQpO4VFgRbHixDg==/pl.solidexplorer2-qE4DwVxFrv-e6M1iRUgt5g==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+HeimdAllFS state:
+  [pl.solidexplorer2]
+    path: /data/app/~~UMNo6f5DQpO4VFgRbHixDg==/pl.solidexplorer2-qE4DwVxFrv-e6M1iRUgt5g==/base.apk
+    Compressed? False
+  [ Summary ]
+    # of apks: 1 / # of apks in DATA: 1
+    Compressed apks info - sum of orig size: 0 / sum of compr size : 0
+
+
+Compiler stats:
+  [pl.solidexplorer2]
+     base.apk - 3276
+
+APEX session state:
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+
+Historical install Logging info(9/10):
+  [com.alesp.orologiomondiale.pro]
+    1645617657524: "Ver":"39", "Session":"0", "Write":"1", "Commit":"392", "Stage":"15", "Init":"8", "Verified(Unknown)"
+    :"354", "Verified(Unknown)":"9", "Copy":"17", "Sign":"3", "DexOpt":"6", 
+  [com.luzapplications.alessio.wallooppro]
+    1645617653515: "Ver":"21", "Session":"0", "Write":"2", "Commit":"500", "Stage":"3", "Init":"11", "Verified(Unknown)"
+    :"452", "Verified(Unknown)":"11", "Copy":"26", "Sign":"3", "DexOpt":"1", 
+  [com.brit.swiftdark.substratum]
+    1645617673730: "Ver":"1000193", "Session":"0", "Write":"1", "Commit":"2369", "Stage":"11", "Init":"40", "Verified(Un
+    known)":"4568", "Verified(Unknown)":"8", "Copy":"37", "Sign":"3", "DexOpt":"11", 
+  [com.yuanwofei.cardemulator.pro]
+    1645617670289: "Ver":"603", "Session":"0", "Write":"10", "Commit":"169", "Stage":"4", "Init":"19", "Verified(Unknown
+    )":"305", "Verified(Unknown)":"5", "Copy":"12", "Sign":"2", "DexOpt":"0", 
+  [com.lb.app_manager]
+    1645617683596: "Ver":"350", "Session":"0", "Write":"5", "Commit":"539", "Stage":"3", "Init":"24", "Verified(Unknown)
+    ":"1148", "Verified(Unknown)":"11", "Copy":"27", "Sign":"4", "DexOpt":"2", 
+  [izzl.gruvy.pack]
+    1645617644309: "Ver":"108", "Session":"0", "Write":"1", "Commit":"1016", "Stage":"3", "Init":"11", "Verified(Unknown
+    )":"1223", 
+  [com.in.w3d]
+    1645617646718: "Ver":"338", "Session":"0", "Write":"1", "Commit":"855", "Stage":"34", "Init":"16", "Verified(Unknown
+    )":"537", "Verified(Unknown)":"7", "Copy":"33", "Sign":"4", "DexOpt":"6", 
+  [pl.solidexplorer2]
+    1645617688740: "Ver":"200180", "Session":"0", "Write":"3", "Commit":"1519", "Stage":"16", "Init":"21", "Verified(Unk
+    nown)":"2163", "Verified(Unknown)":"8", "Copy":"34", "Sign":"3", "DexOpt":"7", 
+  [co.windyapp.android]
+    1645617661089: "Ver":"391", "Session":"0", "Write":"1", "Commit":"2510", "Stage":"15", "Init":"7", "Verified(Unknown
+    )":"2229", "Verified(Unknown)":"8", "Copy":"28", "Sign":"3", "DexOpt":"6", 

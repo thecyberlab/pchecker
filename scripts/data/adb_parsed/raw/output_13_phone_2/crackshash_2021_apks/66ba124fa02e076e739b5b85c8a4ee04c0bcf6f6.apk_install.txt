@@ -1,0 +1,330 @@
+Activity Resolver Table:
+  Schemes:
+      myapp:
+        54e8304 com.picslab.neon.editor/com.ufotosoft.vibe.SplashActivity filter c683b22
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "myapp"
+          Authority: "ufoto.app": -1
+          Path: "PatternMatcher{PREFIX: /picslab}"
+      fbconnect:
+        8b1b9b3 com.picslab.neon.editor/com.facebook.CustomTabActivity filter db2cb70
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.picslab.neon.editor": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        54e8304 com.picslab.neon.editor/com.ufotosoft.vibe.SplashActivity filter 77130ed
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        d2be007 com.picslab.neon.editor/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 65ab534
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        6ba9221 com.picslab.neon.editor/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c7c7646
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        20d2f5d com.picslab.neon.editor/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 2f9b0d2
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        9843e0f com.picslab.neon.editor/com.vungle.warren.NetworkProviderReceiver filter 6d12e9c
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Category: "android.intent.category.DEFAULT"
+        c9c75a3 com.picslab.neon.editor/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 987f0a0
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        950ac2b com.picslab.neon.editor/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 109888
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        20d2f5d com.picslab.neon.editor/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 2f9b0d2
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        7bceee9 com.picslab.neon.editor/com.adjust.sdk.AdjustReferrerReceiver filter d72e76e
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        bec90a5 com.picslab.neon.editor/com.google.firebase.iid.FirebaseInstanceIdReceiver filter c6a0c7a
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        d2be007 com.picslab.neon.editor/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 65ab534
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        5f26459 com.picslab.neon.editor/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 89e081e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        5f26459 com.picslab.neon.editor/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 89e081e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        5f26459 com.picslab.neon.editor/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 89e081e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        6ba9221 com.picslab.neon.editor/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c7c7646
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        6f6c8ff com.picslab.neon.editor/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter c8b76cc
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        e9b4591 com.picslab.neon.editor/com.ufotosoft.common.push.pushCore.MyFireBaseInstanceIdService filter 674fcf6
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+      moc.ofu.capacity.service:
+        59da9cd com.picslab.neon.editor/com.ufotosoft.slideplayersdk.aidl.service.CapacityService filter f6bf282
+          Action: "moc.ofu.capacity.service"
+      com.google.firebase.MESSAGING_EVENT:
+        35bed15 com.picslab.neon.editor/com.ufotosoft.vibe.push.firebase.MyFirebaseMessagingService filter 39e882a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        126d8f7 com.picslab.neon.editor/com.google.firebase.messaging.FirebaseMessagingService filter 9afd364
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.picslab.neon.editor.messenger:
+        278f61b com.picslab.neon.editor/com.blankj.utilcode.util.MessengerUtils$ServerService filter c5f33b8
+          Action: "com.picslab.neon.editor.messenger"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.picslab.neon.editor/com.ironsource.lifecycle.IronsourceLifecycleProvider:
+    Provider{e033c7d com.picslab.neon.editor/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+  com.picslab.neon.editor/com.blankj.utilcode.util.UtilsFileProvider:
+    Provider{97d0772 com.picslab.neon.editor/com.blankj.utilcode.util.UtilsFileProvider}
+  com.picslab.neon.editor/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{6ad17c3 com.picslab.neon.editor/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.picslab.neon.editor/com.vungle.warren.utility.VungleProvider:
+    Provider{8c2b840 com.picslab.neon.editor/com.vungle.warren.utility.VungleProvider}
+  com.picslab.neon.editor/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{8c2379 com.picslab.neon.editor/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.picslab.neon.editor/androidx.core.content.FileProvider:
+    Provider{71028be com.picslab.neon.editor/androidx.core.content.FileProvider}
+  com.picslab.neon.editor/com.facebook.FacebookContentProvider:
+    Provider{f3f6d1f com.picslab.neon.editor/com.facebook.FacebookContentProvider}
+  com.picslab.neon.editor/androidx.work.impl.WorkManagerInitializer:
+    Provider{63b186c com.picslab.neon.editor/androidx.work.impl.WorkManagerInitializer}
+  com.picslab.neon.editor/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{8227e35 com.picslab.neon.editor/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.picslab.neon.editor/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{b2212ca com.picslab.neon.editor/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.picslab.neon.editor/com.squareup.picasso.PicassoProvider:
+    Provider{177bc3b com.picslab.neon.editor/com.squareup.picasso.PicassoProvider}
+  com.picslab.neon.editor/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{bf74f58 com.picslab.neon.editor/com.google.firebase.provider.FirebaseInitProvider}
+  com.picslab.neon.editor/com.facebook.internal.FacebookInitProvider:
+    Provider{889c8b1 com.picslab.neon.editor/com.facebook.internal.FacebookInitProvider}
+  com.picslab.neon.editor/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider:
+    Provider{7b69196 com.picslab.neon.editor/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+  com.picslab.neon.editor/com.smaato.sdk.sys.LifecycleProvider:
+    Provider{91be117 com.picslab.neon.editor/com.smaato.sdk.sys.LifecycleProvider}
+  com.picslab.neon.editor/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{e3e0904 com.picslab.neon.editor/com.facebook.ads.AudienceNetworkContentProvider}
+  com.picslab.neon.editor/com.applovin.sdk.AppLovinInitProvider:
+    Provider{4413eed com.picslab.neon.editor/com.applovin.sdk.AppLovinInitProvider}
+
+ContentProvider Authorities:
+  [com.picslab.neon.editor.AudienceNetworkContentProvider]:
+    Provider{e3e0904 com.picslab.neon.editor/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{9423122 com.picslab.neon.editor}
+  [com.picslab.neon.editor.smaato-lifecycle-process]:
+    Provider{8227e35 com.picslab.neon.editor/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{e7377b3 com.picslab.neon.editor}
+  [com.picslab.neon.editor.workmanager-init]:
+    Provider{63b186c com.picslab.neon.editor/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{d14b170 com.picslab.neon.editor}
+  [com.picslab.neon.editor.mobileadsinitprovider]:
+    Provider{8c2379 com.picslab.neon.editor/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{c7fdce9 com.picslab.neon.editor}
+  [com.picslab.neon.editor.firebaseinitprovider]:
+    Provider{bf74f58 com.picslab.neon.editor/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{cf63d6e com.picslab.neon.editor}
+  [com.picslab.neon.editor.vungle-provider]:
+    Provider{8c2b840 com.picslab.neon.editor/com.vungle.warren.utility.VungleProvider}
+      applicationInfo=ApplicationInfo{ca3dc0f com.picslab.neon.editor}
+  [com.picslab.neon.editor.FacebookInitProvider]:
+    Provider{889c8b1 com.picslab.neon.editor/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{16b749c com.picslab.neon.editor}
+  [com.picslab.neon.editor.IronsourceLifecycleProvider]:
+    Provider{e033c7d com.picslab.neon.editor/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+      applicationInfo=ApplicationInfo{4f05ea5 com.picslab.neon.editor}
+  [com.picslab.neon.editor.lifecycle-process]:
+    Provider{6ad17c3 com.picslab.neon.editor/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{fccc27a com.picslab.neon.editor}
+  [com.picslab.neon.editor.utilcode.provider]:
+    Provider{97d0772 com.picslab.neon.editor/com.blankj.utilcode.util.UtilsFileProvider}
+      applicationInfo=ApplicationInfo{1cc2a2b com.picslab.neon.editor}
+  [com.picslab.neon.editor.firebaseperfprovider]:
+    Provider{b2212ca com.picslab.neon.editor/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{1093e88 com.picslab.neon.editor}
+  [com.picslab.neon.editor.com.squareup.picasso]:
+    Provider{177bc3b com.picslab.neon.editor/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{72d4021 com.picslab.neon.editor}
+  [com.picslab.neon.editor.applovincontentprovider]:
+    Provider{4413eed com.picslab.neon.editor/com.applovin.sdk.AppLovinInitProvider}
+      applicationInfo=ApplicationInfo{2548c46 com.picslab.neon.editor}
+  [com.facebook.app.FacebookContentProvider305997327462304]:
+    Provider{f3f6d1f com.picslab.neon.editor/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{4e13e07 com.picslab.neon.editor}
+  [com.picslab.neon.editor.smaato-lifecycling]:
+    Provider{91be117 com.picslab.neon.editor/com.smaato.sdk.sys.LifecycleProvider}
+      applicationInfo=ApplicationInfo{537bb34 com.picslab.neon.editor}
+  [com.picslab.neon.editor.TTMultiProvider]:
+    Provider{7b69196 com.picslab.neon.editor/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+      applicationInfo=ApplicationInfo{1fcbd5d com.picslab.neon.editor}
+  [com.picslab.neon.editor.provider]:
+    Provider{71028be com.picslab.neon.editor/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{d3d26d2 com.picslab.neon.editor}
+
+Key Set Manager:
+  [com.picslab.neon.editor]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.picslab.neon.editor] (d49b3a3):
+    userId=10253
+    pkg=Package{2f56a0 com.picslab.neon.editor}
+    codePath=/data/app/~~f9OxLakRmAA3XgDf9gE73A==/com.picslab.neon.editor-r6WZVL5In209eqDMANnqAg==
+    resourcePath=/data/app/~~f9OxLakRmAA3XgDf9gE73A==/com.picslab.neon.editor-r6WZVL5In209eqDMANnqAg==
+    legacyNativeLibraryDir=/data/app/~~f9OxLakRmAA3XgDf9gE73A==/com.picslab.neon.editor-r6WZVL5In209eqDMANnqAg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=188 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.6.188
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.android.chrome]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=androidx.browser.customtabs.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }]
+    dataDir=/data/user/0/com.picslab.neon.editor
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 17:40:50
+    lastUpdateTime=2022-11-30 17:40:51
+    packageSource=0
+    signatures=PackageSignatures{4cd259 version:2, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_NETWORK_STATE
+      com.android.vending.BILLING
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.WAKE_LOCK
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=80027 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 17:40:51
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.picslab.neon.editor:
+      com.android.chrome
+  queries via component:
+    com.google.android.apps.messaging:
+      com.picslab.neon.editor
+    com.google.android.apps.diagnosticstool:
+      com.picslab.neon.editor
+    com.google.android.settings.intelligence:
+      com.picslab.neon.editor
+    com.google.android.apps.accessibility.voiceaccess:
+      com.picslab.neon.editor
+    com.truecaller:
+      com.picslab.neon.editor
+    com.picslab.neon.editor:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      ru.iptvremote.android.iptv.pro
+      com.dv.adm
+      com.utorrent.client.pro
+    com.dv.adm:
+      com.picslab.neon.editor
+    com.zappcues.gamingmode:
+      com.picslab.neon.editor
+    com.jio.myjio:
+      com.picslab.neon.editor
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.picslab.neon.editor]
+    path: /data/app/~~f9OxLakRmAA3XgDf9gE73A==/com.picslab.neon.editor-r6WZVL5In209eqDMANnqAg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:53490
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.picslab.neon.editor]
+     base.apk - 1097

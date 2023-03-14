@@ -1,0 +1,1223 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.dvtonder.chronus.watchface.CONFIG:
+        4a3803f com.dvtonder.chronus/.preference.WatchFacePreferencesActivity filter a6afd0c
+          Action: "com.dvtonder.chronus.watchface.CONFIG"
+          Category: "com.google.android.wearable.watchface.category.COMPANION_CONFIGURATION"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        301f999 com.dvtonder.chronus/.preference.PreferencesMain filter 73a145e
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        301f999 com.dvtonder.chronus/.preference.PreferencesMain filter 73a145e
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        3c784b3 com.dvtonder.chronus/.extensions.ExtensionManager$MultiplexerPackageChangeReceiver filter bd43a70
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Action: "android.intent.action.PACKAGE_CHANGED"
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_REMOVED"
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+      content:
+        8e042d1 com.dvtonder.chronus/.ClockWidgetProvider filter a4b3837
+          Action: "android.intent.action.PROVIDER_CHANGED"
+          Scheme: "content"
+          Authority: "com.android.calendar": -1
+        eb1e1a4 com.dvtonder.chronus/.widgets.FlexAnalogWidgetProvider filter e564ac2
+          Action: "android.intent.action.PROVIDER_CHANGED"
+          Scheme: "content"
+          Authority: "com.android.calendar": -1
+        742f72f com.dvtonder.chronus/.widgets.CalendarWidgetProvider filter c3bec5
+          Action: "android.intent.action.PROVIDER_CHANGED"
+          Scheme: "content"
+          Authority: "com.android.calendar": -1
+        5dea296 com.dvtonder.chronus/.widgets.Pixel2WidgetProvider filter 8e70204
+          Action: "android.intent.action.PROVIDER_CHANGED"
+          Scheme: "content"
+          Authority: "com.android.calendar": -1
+
+  Non-Data Actions:
+      com.dvtonder.chronus.action.SHOW_FORECAST:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+        8e042d1 com.dvtonder.chronus/.ClockWidgetProvider filter a7e5136
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        eb1e1a4 com.dvtonder.chronus/.widgets.FlexAnalogWidgetProvider filter d553b0d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        99120d3 com.dvtonder.chronus/.widgets.WeatherWidgetProvider filter fd7410
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        9a77b09 com.dvtonder.chronus/.widgets.ForecastWidgetProvider filter 5c2510e
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        9d2b858 com.dvtonder.chronus/.widgets.PixelWidgetProvider filter ef37db1
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        5dea296 com.dvtonder.chronus/.widgets.Pixel2WidgetProvider filter b591e17
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+      android.intent.action.BATTERY_OKAY:
+        7abb90f com.dvtonder.chronus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 71a8d9c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        5cb31e9 com.dvtonder.chronus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 3ef6e6e
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.dvtonder.chronus.action.SHOW_TASK_DETAILS:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      com.android.deskclock.NEXT_ALARM_TIME_SET:
+        742f72f com.dvtonder.chronus/.widgets.CalendarWidgetProvider filter c2dc13c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.android.deskclock.NEXT_ALARM_TIME_SET"
+      com.dvtonder.chronus.action.UPDATE_TASKS:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        1c03a5 com.dvtonder.chronus/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ba8037a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        1f4d72b com.dvtonder.chronus/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 510e788
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      com.dvtonder.chronus.action.UPDATE_STOCKS:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      com.dvtonder.chronus.action.UPDATE_WEATHER_NOTIFICATION:
+        559e15b com.dvtonder.chronus/.NotificationsReceiver filter 150ddf8
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_NOTIFICATION"
+          Action: "com.dvtonder.chronus.action.UPDATE_CALENDAR_NOTIFICATION"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS_NOTIFICATION"
+      android.intent.action.DEVICE_STORAGE_OK:
+        1c03a5 com.dvtonder.chronus/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ba8037a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.dvtonder.chronus.action.DELETE_TASK:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      com.dvtonder.chronus.action.UPDATE_NEWS:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      android.intent.action.LOCALE_CHANGED:
+        8e042d1 com.dvtonder.chronus/.ClockWidgetProvider filter a7e5136
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        eb1e1a4 com.dvtonder.chronus/.widgets.FlexAnalogWidgetProvider filter d553b0d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        99120d3 com.dvtonder.chronus/.widgets.WeatherWidgetProvider filter fd7410
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        9a77b09 com.dvtonder.chronus/.widgets.ForecastWidgetProvider filter 5c2510e
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        742f72f com.dvtonder.chronus/.widgets.CalendarWidgetProvider filter c2dc13c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.android.deskclock.NEXT_ALARM_TIME_SET"
+        8d6701a com.dvtonder.chronus/.widgets.ClockPlusWidgetProvider filter 791d74b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        7b3b528 com.dvtonder.chronus/.widgets.ClockPlusAnalogWidgetProvider filter da68241
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        adb73e6 com.dvtonder.chronus/.widgets.ClockPlusForecastWidgetProvider filter 6a49d27
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        f22fbd4 com.dvtonder.chronus/.widgets.ClockPlusWeatherWidgetProvider filter 498017d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        8dae872 com.dvtonder.chronus/.widgets.NewsWidgetProvider filter 233e4c3
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        19e0140 com.dvtonder.chronus/.widgets.ClockPlusExtensionsWidgetProvider filter c283879
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        4eb19be com.dvtonder.chronus/.widgets.ExtensionsWidgetProvider filter e60a1f
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        c01f16c com.dvtonder.chronus/.widgets.TasksWidgetProvider filter 9eae335
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        a3b13ca com.dvtonder.chronus/.widgets.StocksWidgetProvider filter 36b293b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        9d2b858 com.dvtonder.chronus/.widgets.PixelWidgetProvider filter ef37db1
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        5dea296 com.dvtonder.chronus/.widgets.Pixel2WidgetProvider filter b591e17
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        1143ed com.dvtonder.chronus/.widgets.FitnessWidgetProvider filter 5a5222
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.dvtonder.chronus.action.ON_QUARTER_HOUR:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      com.dvtonder.chronus.action.ACTION_JOB_PROXY:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      com.dvtonder.chronus.action.ACTION_WIDGET_ADDED:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      android.intent.action.BATTERY_LOW:
+        7abb90f com.dvtonder.chronus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 71a8d9c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        8e042d1 com.dvtonder.chronus/.ClockWidgetProvider filter a7e5136
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        eb1e1a4 com.dvtonder.chronus/.widgets.FlexAnalogWidgetProvider filter d553b0d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        99120d3 com.dvtonder.chronus/.widgets.WeatherWidgetProvider filter fd7410
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        9a77b09 com.dvtonder.chronus/.widgets.ForecastWidgetProvider filter 5c2510e
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        742f72f com.dvtonder.chronus/.widgets.CalendarWidgetProvider filter c2dc13c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.android.deskclock.NEXT_ALARM_TIME_SET"
+        8d6701a com.dvtonder.chronus/.widgets.ClockPlusWidgetProvider filter 791d74b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        7b3b528 com.dvtonder.chronus/.widgets.ClockPlusAnalogWidgetProvider filter da68241
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        adb73e6 com.dvtonder.chronus/.widgets.ClockPlusForecastWidgetProvider filter 6a49d27
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        f22fbd4 com.dvtonder.chronus/.widgets.ClockPlusWeatherWidgetProvider filter 498017d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        8dae872 com.dvtonder.chronus/.widgets.NewsWidgetProvider filter 233e4c3
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        19e0140 com.dvtonder.chronus/.widgets.ClockPlusExtensionsWidgetProvider filter c283879
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        4eb19be com.dvtonder.chronus/.widgets.ExtensionsWidgetProvider filter e60a1f
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        c01f16c com.dvtonder.chronus/.widgets.TasksWidgetProvider filter 9eae335
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        a3b13ca com.dvtonder.chronus/.widgets.StocksWidgetProvider filter 36b293b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        9d2b858 com.dvtonder.chronus/.widgets.PixelWidgetProvider filter ef37db1
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        5dea296 com.dvtonder.chronus/.widgets.Pixel2WidgetProvider filter b591e17
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        1143ed com.dvtonder.chronus/.widgets.FitnessWidgetProvider filter 5a5222
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        9ee3521 com.dvtonder.chronus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 722dd46
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        8e042d1 com.dvtonder.chronus/.ClockWidgetProvider filter a7e5136
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        eb1e1a4 com.dvtonder.chronus/.widgets.FlexAnalogWidgetProvider filter d553b0d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        99120d3 com.dvtonder.chronus/.widgets.WeatherWidgetProvider filter fd7410
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        9a77b09 com.dvtonder.chronus/.widgets.ForecastWidgetProvider filter 5c2510e
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        742f72f com.dvtonder.chronus/.widgets.CalendarWidgetProvider filter c2dc13c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.android.deskclock.NEXT_ALARM_TIME_SET"
+        8d6701a com.dvtonder.chronus/.widgets.ClockPlusWidgetProvider filter 791d74b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        7b3b528 com.dvtonder.chronus/.widgets.ClockPlusAnalogWidgetProvider filter da68241
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        adb73e6 com.dvtonder.chronus/.widgets.ClockPlusForecastWidgetProvider filter 6a49d27
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        f22fbd4 com.dvtonder.chronus/.widgets.ClockPlusWeatherWidgetProvider filter 498017d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        8dae872 com.dvtonder.chronus/.widgets.NewsWidgetProvider filter 233e4c3
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        19e0140 com.dvtonder.chronus/.widgets.ClockPlusExtensionsWidgetProvider filter c283879
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        4eb19be com.dvtonder.chronus/.widgets.ExtensionsWidgetProvider filter e60a1f
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        c01f16c com.dvtonder.chronus/.widgets.TasksWidgetProvider filter 9eae335
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        a3b13ca com.dvtonder.chronus/.widgets.StocksWidgetProvider filter 36b293b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        9d2b858 com.dvtonder.chronus/.widgets.PixelWidgetProvider filter ef37db1
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        5dea296 com.dvtonder.chronus/.widgets.Pixel2WidgetProvider filter b591e17
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        1143ed com.dvtonder.chronus/.widgets.FitnessWidgetProvider filter 5a5222
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        9ee3521 com.dvtonder.chronus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 722dd46
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.dvtonder.chronus.action.UPDATE_TASKS_NOTIFICATION:
+        559e15b com.dvtonder.chronus/.NotificationsReceiver filter 150ddf8
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_NOTIFICATION"
+          Action: "com.dvtonder.chronus.action.UPDATE_CALENDAR_NOTIFICATION"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS_NOTIFICATION"
+      com.dvtonder.chronus.action.TOGGLE_TASKS:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      android.intent.action.BOOT_COMPLETED:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+        9ee3521 com.dvtonder.chronus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 722dd46
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        5cb31e9 com.dvtonder.chronus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 3ef6e6e
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.dvtonder.chronus.action.UPDATE_WEATHER:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        8e042d1 com.dvtonder.chronus/.ClockWidgetProvider filter a7e5136
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        eb1e1a4 com.dvtonder.chronus/.widgets.FlexAnalogWidgetProvider filter d553b0d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        99120d3 com.dvtonder.chronus/.widgets.WeatherWidgetProvider filter fd7410
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        9a77b09 com.dvtonder.chronus/.widgets.ForecastWidgetProvider filter 5c2510e
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        742f72f com.dvtonder.chronus/.widgets.CalendarWidgetProvider filter c2dc13c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.android.deskclock.NEXT_ALARM_TIME_SET"
+        8d6701a com.dvtonder.chronus/.widgets.ClockPlusWidgetProvider filter 791d74b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        7b3b528 com.dvtonder.chronus/.widgets.ClockPlusAnalogWidgetProvider filter da68241
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        adb73e6 com.dvtonder.chronus/.widgets.ClockPlusForecastWidgetProvider filter 6a49d27
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        f22fbd4 com.dvtonder.chronus/.widgets.ClockPlusWeatherWidgetProvider filter 498017d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        8dae872 com.dvtonder.chronus/.widgets.NewsWidgetProvider filter 233e4c3
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        19e0140 com.dvtonder.chronus/.widgets.ClockPlusExtensionsWidgetProvider filter c283879
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        4eb19be com.dvtonder.chronus/.widgets.ExtensionsWidgetProvider filter e60a1f
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        c01f16c com.dvtonder.chronus/.widgets.TasksWidgetProvider filter 9eae335
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        a3b13ca com.dvtonder.chronus/.widgets.StocksWidgetProvider filter 36b293b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+        9d2b858 com.dvtonder.chronus/.widgets.PixelWidgetProvider filter ef37db1
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        5dea296 com.dvtonder.chronus/.widgets.Pixel2WidgetProvider filter b591e17
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+        1143ed com.dvtonder.chronus/.widgets.FitnessWidgetProvider filter 5a5222
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.LOCALE_CHANGED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        858025d com.dvtonder.chronus/androidx.work.impl.diagnostics.DiagnosticsReceiver filter f1f87d2
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        bef9655 com.dvtonder.chronus/.WidgetUpdateReceiver filter f8f186a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.dvtonder.chronus.action.ON_QUARTER_HOUR"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER"
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_FORCED"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS"
+          Action: "com.dvtonder.chronus.action.UPDATE_NEWS"
+          Action: "com.dvtonder.chronus.action.UPDATE_STOCKS"
+          Action: "com.dvtonder.chronus.action.MARK_ALL_NEWS_AS_READ"
+          Action: "com.dvtonder.chronus.action.NEWS_FEED_UPDATE_FINISHED"
+          Action: "com.dvtonder.chronus.action.SHOW_GOOGLE_WEATHER"
+          Action: "com.dvtonder.chronus.action.SHOW_FORECAST"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASK_COMPLETED"
+          Action: "com.dvtonder.chronus.action.SHOW_TASK_DETAILS"
+          Action: "com.dvtonder.chronus.action.DELETE_TASK"
+          Action: "com.dvtonder.chronus.action.TOGGLE_TASKS"
+          Action: "com.dvtonder.chronus.action.ACTION_WIDGET_ADDED"
+          Action: "com.dvtonder.chronus.action.ACTION_JOB_PROXY"
+      com.dvtonder.chronus.action.UPDATE_CALENDAR_NOTIFICATION:
+        559e15b com.dvtonder.chronus/.NotificationsReceiver filter 150ddf8
+          Action: "com.dvtonder.chronus.action.UPDATE_WEATHER_NOTIFICATION"
+          Action: "com.dvtonder.chronus.action.UPDATE_CALENDAR_NOTIFICATION"
+          Action: "com.dvtonder.chronus.action.UPDATE_TASKS_NOTIFICATION"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        367bb07 com.dvtonder.chronus/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter c90f434
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        9c33ccd com.dvtonder.chronus/.wearable.DataListenerService filter 8358982
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /chronus}"
+
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        b3d5893 com.dvtonder.chronus/.weather.WeatherQsService filter ecdb0d0 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.service.dreams.DreamService:
+        a3b00a3 com.dvtonder.chronus/.daydream.ChronusDaydreamService filter 6631fa0 permission android.permission.BIND_DREAM_SERVICE
+          Action: "android.service.dreams.DreamService"
+          Category: "android.intent.category.DEFAULT"
+        1976759 com.dvtonder.chronus/.daydream.ChronusDaydreamServicePro filter 6ca4f1e permission android.permission.BIND_DREAM_SERVICE
+          Action: "android.service.dreams.DreamService"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.dashclock.Extension:
+        77303ff com.dvtonder.chronus/.extensions.gmail.GmailExtension filter d6a95cc permission com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA
+          Action: "com.google.android.apps.dashclock.Extension"
+        7ce2015 com.dvtonder.chronus/.extensions.calendar.CalendarExtension filter 5c83f2a permission com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA
+          Action: "com.google.android.apps.dashclock.Extension"
+        dfde11b com.dvtonder.chronus/.extensions.weather.WeatherExtension filter 59142b8 permission com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA
+          Action: "com.google.android.apps.dashclock.Extension"
+        37da891 com.dvtonder.chronus/.extensions.alarm.NextAlarmExtension filter 70323f6 permission com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA
+          Action: "com.google.android.apps.dashclock.Extension"
+      cyanogenmod.weatherservice.WeatherProviderService:
+        78f73f7 com.dvtonder.chronus/.weather.CMWeatherService filter 573d264 permission cyanogenmod.permission.BIND_WEATHER_PROVIDER_SERVICE
+          Action: "cyanogenmod.weatherservice.WeatherProviderService"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.dvtonder.chronus/.providers.NewsFeedContentProvider:
+    Provider{e74edaf com.dvtonder.chronus/.providers.NewsFeedContentProvider}
+  com.dvtonder.chronus/androidx.startup.InitializationProvider:
+    Provider{c8eb5bc com.dvtonder.chronus/androidx.startup.InitializationProvider}
+  com.dvtonder.chronus/.providers.TasksContentProvider:
+    Provider{f8ad945 com.dvtonder.chronus/.providers.TasksContentProvider}
+  com.dvtonder.chronus/.providers.WeatherContentProvider:
+    Provider{cafb89a com.dvtonder.chronus/.providers.WeatherContentProvider}
+  com.dvtonder.chronus/com.squareup.picasso.PicassoProvider:
+    Provider{26f71a8 com.dvtonder.chronus/com.squareup.picasso.PicassoProvider}
+  com.dvtonder.chronus/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{e04c4c1 com.dvtonder.chronus/com.google.firebase.provider.FirebaseInitProvider}
+  com.dvtonder.chronus/.providers.CitiesContentProvider:
+    Provider{a40c466 com.dvtonder.chronus/.providers.CitiesContentProvider}
+  com.dvtonder.chronus/.providers.StocksContentProvider:
+    Provider{64ee3a7 com.dvtonder.chronus/.providers.StocksContentProvider}
+
+ContentProvider Authorities:
+  [com.dvtonder.chronus.firebaseinitprovider]:
+    Provider{e04c4c1 com.dvtonder.chronus/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{31e0054 com.dvtonder.chronus}
+  [com.dvtonder.chronus.clock]:
+    Provider{a40c466 com.dvtonder.chronus/.providers.CitiesContentProvider}
+      applicationInfo=ApplicationInfo{cd7ebfd com.dvtonder.chronus}
+  [com.dvtonder.chronus.tasks]:
+    Provider{f8ad945 com.dvtonder.chronus/.providers.TasksContentProvider}
+      applicationInfo=ApplicationInfo{484c0f2 com.dvtonder.chronus}
+  [com.dvtonder.chronus.weather]:
+    Provider{cafb89a com.dvtonder.chronus/.providers.WeatherContentProvider}
+      applicationInfo=ApplicationInfo{c7c1343 com.dvtonder.chronus}
+  [com.dvtonder.chronus.newsfeed]:
+    Provider{e74edaf com.dvtonder.chronus/.providers.NewsFeedContentProvider}
+      applicationInfo=ApplicationInfo{784cdc0 com.dvtonder.chronus}
+  [com.dvtonder.chronus.com.squareup.picasso]:
+    Provider{26f71a8 com.dvtonder.chronus/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{cbc4af9 com.dvtonder.chronus}
+  [com.dvtonder.chronus.stocks]:
+    Provider{64ee3a7 com.dvtonder.chronus/.providers.StocksContentProvider}
+      applicationInfo=ApplicationInfo{99fa3e com.dvtonder.chronus}
+  [com.dvtonder.chronus.androidx-startup]:
+    Provider{c8eb5bc com.dvtonder.chronus/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{5c2a09f com.dvtonder.chronus}
+
+Key Set Manager:
+  [com.dvtonder.chronus]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.dvtonder.chronus] (7ed9db5):
+    userId=10336
+    pkg=Package{5377c4a com.dvtonder.chronus}
+    codePath=/data/app/~~g52ak62Q3dGQYwTiOGGL9A==/com.dvtonder.chronus-v6uY9gw2UrOZAGlCTGE8BQ==
+    resourcePath=/data/app/~~g52ak62Q3dGQYwTiOGGL9A==/com.dvtonder.chronus-v6uY9gw2UrOZAGlCTGE8BQ==
+    legacyNativeLibraryDir=/data/app/~~g52ak62Q3dGQYwTiOGGL9A==/com.dvtonder.chronus-v6uY9gw2UrOZAGlCTGE8BQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=193556 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=18.5
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.google.android.apps.fitness, de.robv.android.xposed.installer, com.google.android.wearable.app, com.forpda.lp, com.oasisfeng.greenify, net.dinglisch.android.taskerm, com.google.android.googlequicksearchbox, com.google.android.gm, com.miui.securitycenter, com.letv.android.letvsafe, com.huawei.systemmanager, com.coloros.safecenter, com.oppo.safe, com.iqoo.secure, com.vivo.permissionmanager, com.samsung.android.lool, com.htc.pitroad, com.asus.mobilemanager, net.nurik.roman.dashclock, com.dvtonder.extensionhost, com.noshufou.android.su, com.thirdparty.superuser, eu.chainfire.supersu, com.koushikdutta.superuser, com.zachspong.temprootremovejb, com.ramdroid.appquarantine, com.saurik.substrate, com.noshufou.android.su.elite, com.yellowes.su, com.koushikdutta.rommanager, com.koushikdutta.rommanager.license, com.dimonvideo.luckypatcher, com.chelpus.lackypatch, com.ramdroid.appquarantinepro, com.devadvance.rootcloak, com.devadvance.rootcloakplus, com.amphoras.hidemyroot, com.amphoras.hidemyrootadfree, com.formyhm.hiderootPremium, com.formyhm.hideroot]
+    queriesIntents=[Intent { act=android.intent.action.MAIN }, Intent { act=com.google.android.apps.dashclock.Extension }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    dataDir=/data/user/0/com.dvtonder.chronus
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      com.google.android.wearable
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 20:14:02
+    lastUpdateTime=2022-11-30 20:14:03
+    packageSource=0
+    signatures=PackageSignatures{33694d8 version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.DISABLE_KEYGUARD
+      android.permission.INTERNET
+      android.permission.READ_CALENDAR
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      com.google.android.apps.dashclock.permission.BIND_DATA_CONSUMER
+      android.permission.GET_ACCOUNTS
+      com.google.android.gm.permission.READ_CONTENT_PROVIDER
+      com.google.android.permission.PROVIDE_BACKGROUND
+      android.permission.USE_CREDENTIALS
+      oppo.permission.OPPO_COMPONENT_SAFE
+      com.huawei.permission.external_app_settings.USE_COMPONENT
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      android.permission.ACTIVITY_RECOGNITION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=102277 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 20:14:03
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        com.google.android.gm.permission.READ_CONTENT_PROVIDER: granted=false
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false
+        android.permission.ACTIVITY_RECOGNITION: granted=false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.dvtonder.chronus:
+      com.google.android.googlequicksearchbox
+      com.google.android.gm
+  queries via component:
+    com.google.android.apps.diagnosticstool:
+      com.dvtonder.chronus
+    com.google.android.settings.intelligence:
+      com.dvtonder.chronus
+    com.google.android.apps.accessibility.voiceaccess:
+      com.dvtonder.chronus
+    com.zhiliaoapp.musically:
+      com.dvtonder.chronus
+    com.truecaller:
+      com.dvtonder.chronus
+    com.dv.adm:
+      com.dvtonder.chronus
+    com.zappcues.gamingmode:
+      com.dvtonder.chronus
+    com.dvtonder.chronus:
+      com.google.android.documentsui
+      com.verizon.services
+      com.google.android.projection.gearhead
+      com.google.android.apps.nbu.files
+      com.google.android.apps.recorder
+      com.google.android.apps.tips
+      com.google.android.wfcactivation
+      com.google.android.tetheringentitlement
+      com.google.android.apps.messaging
+      com.google.android.apps.safetyhub
+      com.google.android.carrierlocation
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.restore
+      com.google.android.googlequicksearchbox
+      com.google.android.dialer
+      com.google.android.as
+      com.google.android.settings.intelligence
+      com.google.android.GoogleCamera
+      com.google.android.setupwizard
+      com.google.android.calculator
+      com.android.chrome
+      com.google.android.deskclock
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.calendar
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.marvin.talkback
+      com.google.android.contacts
+      com.google.android.apps.docs
+      com.google.android.videos
+      com.google.android.apps.accessibility.voiceaccess
+      com.google.android.inputmethod.latin
+      com.google.android.apps.youtube.music
+      com.google.android.gm
+      [app id 10195 not installed]
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.shannon.rcsservice
+      com.google.android.pixel.setupwizard
+      com.google.android.cellbroadcastreceiver
+      com.zhiliaoapp.musically
+      com.touchtype.swiftkey
+      com.pandavideocompressor
+      net.eagin.software.android.dejaloYa
+      radiotime.player
+      org.malwarebytes.antimalware
+      ru.iptvremote.android.iptv.pro
+      com.getmimo
+      net.zedge.android
+      com.truecaller
+      com.languagedrops.drops.international
+      hotspotshield.android.vpn
+      com.wallpaperscraft.wallpaper
+      com.kizeetech.newankaradesigns
+      com.zoho.assist.agent
+      deezer.android.app
+      ipnossoft.rma.free
+      wsj.reader_sp
+      com.callapp.contacts
+      com.duolingo
+      com.darinsoft.vimo
+      com.ninegag.android.app
+      cn.wps.moffice_eng
+      vsin.t16_funny_photo
+      com.mxtech.videoplayer.television
+      com.mcdonalds.app
+      com.catdaddy.cat22
+      com.fourchars.lmpfree
+      com.mycompany.app.soulbrowser
+      com.commsource.beautyplus
+      ringtone.maker.mp3.cutter.audio
+      ins.story.unfold
+      com.navimods.radio
+      com.lyrebirdstudio.photo_editor_pro
+      easynotes.notes.notepad.notebook.privatenotes.note
+      com.camerasideas.instashot
+      com.pikoo.app
+      com.mikewheelermedia
+      com.mobisystems.office
+      com.michaldrabik.showly2
+      com.shazam.android
+      com.dv.adm
+      com.frankthebrilliant.app
+      com.brit.swift.minimal
+      com.zappcues.gamingmode
+      com.cam001.selfie
+      com.fitapp
+      com.brit.swiftdark.substratum
+      com.hungama.myplay.activity
+      com.vicman.toonmeapp
+      com.subsplashconsulting.s_NKSKD3
+      deepfinity.android
+      com.king.blossomblast
+      com.bitsmedia.android.muslimpro
+      com.yahoo.mobile.client.android.weather
+      com.picsart.studio.light
+      com.simplehabit.simplehabitapp
+      com.ludia.jurassicworld
+      com.accuweather.android
+      com.weather.Weather
+      com.cooyostudio.marble.blast
+      com.cyberlink.powerdirector.DRA140225_01
+      com.videoeditorpro.android
+      com.tomtom.gplay.navapp.nds
+      com.jio.myjio
+      video.reface.app
+      com.ledblinker.pro
+      com.getepic.Epic
+      com.zombodroid.MemeGeneratorFullGplay
+      com.ufotosoft.justshot
+      com.pranavpandey.rotation
+      com.nikitadev.irregularverbspro
+      com.Wifi.lte5g.lte4g.lte3g.speedtest.Internetspeed
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+      com.unvoid.borealis
+      com.osheden.azulox
+    com.jio.myjio:
+      com.dvtonder.chronus
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.dvtonder.chronus]
+    path: /data/app/~~g52ak62Q3dGQYwTiOGGL9A==/com.dvtonder.chronus-v6uY9gw2UrOZAGlCTGE8BQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:901487
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.dvtonder.chronus]
+     base.apk - 442

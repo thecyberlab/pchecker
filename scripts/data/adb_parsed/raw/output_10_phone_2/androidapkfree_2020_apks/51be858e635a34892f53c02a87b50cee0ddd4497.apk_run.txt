@@ -1,0 +1,167 @@
+Activity Resolver Table:
+  Schemes:
+      bulletforce:
+        567e746 com.blayzegames.iosfps/com.trophit.MyUnityPlayerActivity filter 1a387b3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bulletforce"
+          AutoVerify=true
+      mediasyncer:
+        567e746 com.blayzegames.iosfps/com.trophit.MyUnityPlayerActivity filter 4d66ce9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "mediasyncer"
+          Authority: "oauthresponse": -1
+
+  Non-Data Actions:
+      com.google.vr.vrcore.ACTION_NONE:
+        bd8fd07 com.blayzegames.iosfps/com.unity.purchasing.googleplay.VRPurchaseActivity filter 9b18d6e
+          Action: "com.google.vr.vrcore.ACTION_NONE"
+          Category: "com.google.intent.category.DAYDREAM"
+      android.intent.action.MAIN:
+        567e746 com.blayzegames.iosfps/com.trophit.MyUnityPlayerActivity filter d6b8170
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.net.conn.CONNECTIVITY_CHANGE:
+        2e60e34 com.blayzegames.iosfps/com.vungle.warren.NetworkStateReceiver filter 41feea5
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Category: "android.intent.category.DEFAULT"
+      com.android.vending.INSTALL_REFERRER:
+        480145d com.blayzegames.iosfps/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter ac4ec0f
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        dab31d2 com.blayzegames.iosfps/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 85f449c
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        57e62a3 com.blayzegames.iosfps/com.google.firebase.messaging.FirebaseMessagingService filter 4ed127a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+        5efd9a0 com.blayzegames.iosfps/com.google.firebase.messaging.cpp.ListenerService filter 8ee3a2b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+
+Permissions:
+  Permission [com.blayzegames.iosfps.permission.C2D_MESSAGE] (d2e9959):
+    sourcePackage=com.blayzegames.iosfps
+    uid=10148 gids=null type=0 prot=signature
+    perm=Permission{366991e com.blayzegames.iosfps.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{8a85ff com.blayzegames.iosfps/10148}
+
+Registered ContentProviders:
+  com.blayzegames.iosfps/com.facebook.FacebookContentProvider:
+    Provider{208efcc com.blayzegames.iosfps/com.facebook.FacebookContentProvider}
+  com.blayzegames.iosfps/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{aa67215 com.blayzegames.iosfps/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.blayzegames.iosfps.firebaseinitprovider]:
+    Provider{aa67215 com.blayzegames.iosfps/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{df292a com.blayzegames.iosfps}
+  [com.facebook.app.FacebookContentProvider1850325548565829]:
+    Provider{208efcc com.blayzegames.iosfps/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{df292a com.blayzegames.iosfps}
+
+Key Set Manager:
+  [com.blayzegames.iosfps]
+      Signing KeySets: 270
+
+Packages:
+  Package [com.blayzegames.iosfps] (8a85ff):
+    userId=10148
+    pkg=Package{9e88122 com.blayzegames.iosfps}
+    codePath=/data/app/com.blayzegames.iosfps-H1huwCH8mUjO1Mf6HmQdvg==
+    resourcePath=/data/app/com.blayzegames.iosfps-H1huwCH8mUjO1Mf6HmQdvg==
+    legacyNativeLibraryDir=/data/app/com.blayzegames.iosfps-H1huwCH8mUjO1Mf6HmQdvg==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=697 minSdk=19 targetSdk=30
+    versionName=1.75.1
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{df292a com.blayzegames.iosfps}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE ]
+    dataDir=/data/user/0/com.blayzegames.iosfps
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 08:03:07
+    firstInstallTime=2021-03-06 08:03:09
+    lastUpdateTime=2021-03-06 08:03:09
+    signatures=PackageSignatures{e0b831b version:2, signatures:[744a2ae9], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    declared permissions:
+      com.blayzegames.iosfps.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      com.blayzegames.iosfps.permission.C2D_MESSAGE
+      android.permission.VIBRATE
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.android.vending.BILLING
+      android.permission.READ_LOGS
+      com.android.vending.CHECK_LICENSE
+      android.permission.ACCESS_WIFI_STATE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.blayzegames.iosfps.permission.C2D_MESSAGE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=7433 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=20
+  User 0:
+    seq=3, package=com.google.android.apps.youtube.music
+    seq=4, package=com.rookiestudio.perfectviewer
+    seq=11, package=com.google.android.gms
+    seq=12, package=com.nautilus.RealCricket3D
+    seq=14, package=com.mixplorer
+    seq=16, package=com.dnddream.headsoccer.android
+    seq=18, package=com.innogames.foeandroid
+    seq=19, package=com.blayzegames.iosfps
+
+
+Dexopt state:
+  [com.blayzegames.iosfps]
+    path: /data/app/com.blayzegames.iosfps-H1huwCH8mUjO1Mf6HmQdvg==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.blayzegames.iosfps]
+     base.apk - 3495
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

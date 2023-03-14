@@ -1,0 +1,265 @@
+Activity Resolver Table:
+  Schemes:
+      mine24:
+        d9cbe96 no.e24dinepenger.e24/se.omni.features.deeplink.ExternalLinkActivity filter bd30a17
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "mine24"
+      spid-58da81bbf1a79c7c588b4567:
+        ff430b3 no.e24dinepenger.e24/com.schibsted.account.ui.login.flow.password.PasswordActivity filter f417670
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "spid-58da81bbf1a79c7c588b4567"
+          Authority: "": -1 WILD
+      http:
+        d9cbe96 no.e24dinepenger.e24/se.omni.features.deeplink.ExternalLinkActivity filter ab87e04
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "min.e24.no": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{LITERAL: /senaste}"
+          Path: "PatternMatcher{GLOB: /.*/a/.*}"
+          Path: "PatternMatcher{GLOB: /a/.*}"
+          Path: "PatternMatcher{GLOB: /topic/.*}"
+          Path: "PatternMatcher{LITERAL: /bevakningar}"
+      https:
+        d9cbe96 no.e24dinepenger.e24/se.omni.features.deeplink.ExternalLinkActivity filter ab87e04
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "min.e24.no": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{LITERAL: /senaste}"
+          Path: "PatternMatcher{GLOB: /.*/a/.*}"
+          Path: "PatternMatcher{GLOB: /a/.*}"
+          Path: "PatternMatcher{GLOB: /topic/.*}"
+          Path: "PatternMatcher{LITERAL: /bevakningar}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        447458 no.e24dinepenger.e24/se.omni.features.intro.FullscreenIntroActivity filter ca889b1
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.SEARCH:
+        20b0fed no.e24dinepenger.e24/se.omni.features.search.SearchActivity filter bde2e22
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        7f7250f no.e24dinepenger.e24/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter a1f899c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        b95bde9 no.e24dinepenger.e24/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9d50a6e
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        6034fa5 no.e24dinepenger.e24/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4b5f7a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        98b032b no.e24dinepenger.e24/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 969a388
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        6034fa5 no.e24dinepenger.e24/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4b5f7a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        25cce5d no.e24dinepenger.e24/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 15263d2
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        eaaca3 no.e24dinepenger.e24/com.google.firebase.iid.FirebaseInstanceIdReceiver filter d975ba0
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        7f7250f no.e24dinepenger.e24/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter a1f899c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        4fe4121 no.e24dinepenger.e24/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 89ff946
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        4fe4121 no.e24dinepenger.e24/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 89ff946
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        4fe4121 no.e24dinepenger.e24/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 89ff946
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        b95bde9 no.e24dinepenger.e24/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9d50a6e
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        c34a707 no.e24dinepenger.e24/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 3b97034
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        51cf359 no.e24dinepenger.e24/se.omni.features.messaging.FcmListenerService filter f4eeb1e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        7716fff no.e24dinepenger.e24/com.google.firebase.messaging.FirebaseMessagingService filter 9a691cc
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          min.e24.no
+
+Registered ContentProviders:
+  no.e24dinepenger.e24/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{6c82a59 no.e24dinepenger.e24/com.crashlytics.android.CrashlyticsInitProvider}
+  no.e24dinepenger.e24/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{9f7561e no.e24dinepenger.e24/com.google.firebase.perf.provider.FirebasePerfProvider}
+  no.e24dinepenger.e24/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{3c0feff no.e24dinepenger.e24/com.google.firebase.provider.FirebaseInitProvider}
+  no.e24dinepenger.e24/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{f1874cc no.e24dinepenger.e24/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  no.e24dinepenger.e24/androidx.work.impl.WorkManagerInitializer:
+    Provider{2c81315 no.e24dinepenger.e24/androidx.work.impl.WorkManagerInitializer}
+
+ContentProvider Authorities:
+  [no.e24dinepenger.e24.crashlyticsinitprovider]:
+    Provider{6c82a59 no.e24dinepenger.e24/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{c3eb62a no.e24dinepenger.e24}
+  [no.e24dinepenger.e24.firebaseperfprovider]:
+    Provider{9f7561e no.e24dinepenger.e24/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{b08c1b no.e24dinepenger.e24}
+  [no.e24dinepenger.e24.workmanager-init]:
+    Provider{2c81315 no.e24dinepenger.e24/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{dbe11b8 no.e24dinepenger.e24}
+  [no.e24dinepenger.e24.firebaseinitprovider]:
+    Provider{3c0feff no.e24dinepenger.e24/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{fa3cb91 no.e24dinepenger.e24}
+  [no.e24dinepenger.e24.lifecycle-process]:
+    Provider{f1874cc no.e24dinepenger.e24/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{3ea0af6 no.e24dinepenger.e24}
+
+Key Set Manager:
+  [no.e24dinepenger.e24]
+      Signing KeySets: 5163
+
+Packages:
+  Package [no.e24dinepenger.e24] (a41cef7):
+    userId=10342
+    pkg=Package{51e9164 no.e24dinepenger.e24}
+    codePath=/data/app/~~BcX9Q0_rS17x3Vpa9dJZxQ==/no.e24dinepenger.e24-nUJseD1Y5-WYqLhlIaT7ew==
+    resourcePath=/data/app/~~BcX9Q0_rS17x3Vpa9dJZxQ==/no.e24dinepenger.e24-nUJseD1Y5-WYqLhlIaT7ew==
+    legacyNativeLibraryDir=/data/app/~~BcX9Q0_rS17x3Vpa9dJZxQ==/no.e24dinepenger.e24-nUJseD1Y5-WYqLhlIaT7ew==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=3846 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2.5.5
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/no.e24dinepenger.e24
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 11:51:07
+    lastUpdateTime=2022-11-30 11:51:08
+    packageSource=0
+    signatures=PackageSignatures{5a88fcd version:2, signatures:[aabb5f88], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=50078 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 11:51:08
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      no.e24dinepenger.e24
+    com.google.android.apps.diagnosticstool:
+      no.e24dinepenger.e24
+    com.google.android.settings.intelligence:
+      no.e24dinepenger.e24
+    com.google.android.GoogleCamera:
+      no.e24dinepenger.e24
+    com.google.android.apps.accessibility.voiceaccess:
+      no.e24dinepenger.e24
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [no.e24dinepenger.e24]
+    path: /data/app/~~BcX9Q0_rS17x3Vpa9dJZxQ==/no.e24dinepenger.e24-nUJseD1Y5-WYqLhlIaT7ew==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:333377
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [no.e24dinepenger.e24]
+     base.apk - 757

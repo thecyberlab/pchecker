@@ -1,0 +1,235 @@
+Activity Resolver Table:
+  Schemes:
+      amzn:
+        dff85ba com.pixel.gun3d/com.amazon.identity.auth.device.authorization.AuthorizationActivity filter 92a640e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "amzn"
+          Authority: "com.PixelGun.a3D": -1
+      http:
+        866cc6b com.pixel.gun3d/com.pixelgun.MessagingAndPrime31UnityPlayerActivity filter 627fa09
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "deep.pixelgun3d.com": -1
+          AutoVerify=true
+      https:
+        866cc6b com.pixel.gun3d/com.pixelgun.MessagingAndPrime31UnityPlayerActivity filter 627fa09
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "deep.pixelgun3d.com": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        866cc6b com.pixel.gun3d/com.pixelgun.MessagingAndPrime31UnityPlayerActivity filter b448f10
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        bcfd3c8 com.pixel.gun3d/com.amazon.identity.auth.device.authorization.PackageIntentReceiver filter e4d2dc5
+          Action: "android.intent.action.PACKAGE_INSTALL"
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      android.net.conn.CONNECTIVITY_CHANGE:
+        eb44c61 com.pixel.gun3d/com.vungle.warren.NetworkProviderReceiver filter a0a9427
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Category: "android.intent.category.DEFAULT"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        6104386 com.pixel.gun3d/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter fb65e4b
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        923c447 com.pixel.gun3d/com.appsflyer.MultipleInstallBroadcastReceiver filter 25d0e2f
+          Action: "com.android.vending.INSTALL_REFERRER"
+        ff26474 com.pixel.gun3d/com.facebook.CampaignTrackingReceiver filter a633028
+          Action: "com.android.vending.INSTALL_REFERRER"
+        a884d9d com.pixel.gun3d/com.tapjoy.InstallReferrerReceiver filter ad2e6e6
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.amazon.inapp.purchasing.NOTIFY:
+        81d1212 com.pixel.gun3d/com.amazon.device.iap.ResponseReceiver filter 34b8c3c
+          Action: "com.amazon.inapp.purchasing.NOTIFY"
+      com.google.android.c2dm.intent.RECEIVE:
+        bce5de3 com.pixel.gun3d/com.google.firebase.iid.FirebaseInstanceIdReceiver filter bd7e141
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        80b53e0 com.pixel.gun3d/com.unity.androidnotifications.UnityNotificationRestartOnBootReceiver filter 62cb31a
+          Action: "android.intent.action.BOOT_COMPLETED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        fa12699 com.pixel.gun3d/com.pixelgun.PixelGunMessagingService filter ccf26d4
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        4b63d5e com.pixel.gun3d/com.google.firebase.messaging.FirebaseMessagingService filter e00507d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+        cfef53f com.pixel.gun3d/com.google.firebase.messaging.cpp.ListenerService filter c568b72
+          Action: "com.google.firebase.MESSAGING_EVENT"
+
+Permissions:
+  Permission [com.pixel.gun3d.permission.C2D_MESSAGE] (501ce0c):
+    sourcePackage=com.pixel.gun3d
+    uid=10160 gids=null type=0 prot=signature
+    perm=Permission{7d49355 com.pixel.gun3d.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{324d16a com.pixel.gun3d/10160}
+
+Registered ContentProviders:
+  com.pixel.gun3d/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{77a65b com.pixel.gun3d/com.google.firebase.provider.FirebaseInitProvider}
+  com.pixel.gun3d/com.facebook.internal.FacebookInitProvider:
+    Provider{d03bef8 com.pixel.gun3d/com.facebook.internal.FacebookInitProvider}
+  com.pixel.gun3d/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{a980fd1 com.pixel.gun3d/com.facebook.ads.AudienceNetworkContentProvider}
+  com.pixel.gun3d/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{4369a36 com.pixel.gun3d/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.pixel.gun3d/com.facebook.FacebookContentProvider:
+    Provider{a004d37 com.pixel.gun3d/com.facebook.FacebookContentProvider}
+
+ContentProvider Authorities:
+  [com.pixel.gun3d.AudienceNetworkContentProvider]:
+    Provider{a980fd1 com.pixel.gun3d/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{931d2a4 com.pixel.gun3d}
+  [com.facebook.app.FacebookContentProvider207209806126232]:
+    Provider{a004d37 com.pixel.gun3d/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{931d2a4 com.pixel.gun3d}
+  [com.pixel.gun3d.firebaseinitprovider]:
+    Provider{77a65b com.pixel.gun3d/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{931d2a4 com.pixel.gun3d}
+  [com.pixel.gun3d.FacebookInitProvider]:
+    Provider{d03bef8 com.pixel.gun3d/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{931d2a4 com.pixel.gun3d}
+  [com.pixel.gun3d.mobileadsinitprovider]:
+    Provider{4369a36 com.pixel.gun3d/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{931d2a4 com.pixel.gun3d}
+
+Key Set Manager:
+  [com.pixel.gun3d]
+      Signing KeySets: 304
+
+Packages:
+  Package [com.pixel.gun3d] (324d16a):
+    userId=10160
+    pkg=Package{67c7d3 com.pixel.gun3d}
+    codePath=/data/app/com.pixel.gun3d-dGnDc9zSEYvTu-eWWnOnMQ==
+    resourcePath=/data/app/com.pixel.gun3d-dGnDc9zSEYvTu-eWWnOnMQ==
+    legacyNativeLibraryDir=/data/app/com.pixel.gun3d-dGnDc9zSEYvTu-eWWnOnMQ==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=60381 minSdk=16 targetSdk=29
+    versionName=18.1.0
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{931d2a4 com.pixel.gun3d}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.pixel.gun3d
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 08:13:31
+    firstInstallTime=2021-03-06 08:13:33
+    lastUpdateTime=2021-03-06 08:13:33
+    signatures=PackageSignatures{73cd80d version:2, signatures:[58c56ff5], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    declared permissions:
+      com.pixel.gun3d.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      com.android.vending.CHECK_LICENSE
+      android.permission.INTERNET
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.VIBRATE
+      com.android.vending.BILLING
+      com.android.launcher.permission.READ_SETTINGS
+      com.android.launcher.permission.WRITE_SETTINGS
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      com.pixel.gun3d.permission.C2D_MESSAGE
+      android.permission.GET_TASKS
+      android.permission.USE_CREDENTIALS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      com.pixel.gun3d.permission.C2D_MESSAGE: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=10650 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=41
+  User 0:
+    seq=1, package=com.icecoldapps.screenshoteasy
+    seq=8, package=com.google.android.gms
+    seq=9, package=com.tellurionmobile.realmcraft
+    seq=11, package=com.google.android.play.games
+    seq=13, package=com.jamendoandoutly.mainpakage
+    seq=15, package=com.androvid
+    seq=17, package=com.rayark.Cytus.full
+    seq=19, package=eu.tsoml.graphicssettings
+    seq=21, package=com.pixlr.express
+    seq=23, package=com.delphicoder.flud
+    seq=25, package=tv.periscope.android
+    seq=27, package=com.anghami
+    seq=29, package=com.criticalforceentertainment.criticalops
+    seq=31, package=com.firsttouchgames.story
+    seq=33, package=com.ubercab
+    seq=35, package=org.jw.jwlibrary.mobile
+    seq=37, package=com.ea.game.nfs14_row
+    seq=39, package=com.google.android.apps.work.clouddpc
+    seq=40, package=com.pixel.gun3d
+
+
+Dexopt state:
+  [com.pixel.gun3d]
+    path: /data/app/com.pixel.gun3d-dGnDc9zSEYvTu-eWWnOnMQ==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.pixel.gun3d]
+     base.apk - 6296
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

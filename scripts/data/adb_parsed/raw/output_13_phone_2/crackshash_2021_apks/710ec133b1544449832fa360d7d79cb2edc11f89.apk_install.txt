@@ -1,0 +1,582 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.google.android.gms.auth.api.credentials.PICKER:
+        d7cb361 com.mgoogle.android.gms/org.microg.gms.auth.CredentialPickerActivity filter ac61e86
+          Action: "com.google.android.gms.auth.api.credentials.PICKER"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.EXTRA_SETTINGS:
+        af0249d com.mgoogle.android.gms/org.microg.gms.ui.SettingsActivityLink filter 1d59d12
+          Action: "com.android.settings.action.EXTRA_SETTINGS"
+      com.google.android.gms.accountsettings.PRIVACY_SETTINGS:
+        42f6d99 com.mgoogle.android.gms/org.microg.gms.ui.AccountSettingsActivity filter 8ec785e
+          Action: "com.google.android.gms.accountsettings.ACCOUNT_PREFERENCES_SETTINGS"
+          Action: "com.google.android.gms.accountsettings.PRIVACY_SETTINGS"
+          Action: "com.google.android.gms.accountsettings.SECURITY_SETTINGS"
+          Action: "com.google.android.gms.accountsettings.action.VIEW_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.auth.login.LOGIN:
+        8391b6b com.mgoogle.android.gms/org.microg.gms.auth.login.LoginActivity filter 66d76c8
+          Action: "com.google.android.gms.auth.login.LOGIN"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        54c0347 com.mgoogle.android.gms/org.microg.gms.ui.SettingsActivity filter a473774
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.APPLICATION_PREFERENCES"
+          Category: "android.intent.category.DEFAULT"
+        bbb8ce3 com.mgoogle.android.gms/org.microg.gms.ui.SettingsActivityLauncher filter e5a56e0
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.google.android.gms.common.account.CHOOSE_ACCOUNT:
+        6b31de5 com.mgoogle.android.gms/org.microg.tools.AccountPickerActivity filter 17db0ba
+          Action: "com.google.android.gms.common.account.CHOOSE_ACCOUNT"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.accountsettings.action.VIEW_SETTINGS:
+        42f6d99 com.mgoogle.android.gms/org.microg.gms.ui.AccountSettingsActivity filter 8ec785e
+          Action: "com.google.android.gms.accountsettings.ACCOUNT_PREFERENCES_SETTINGS"
+          Action: "com.google.android.gms.accountsettings.PRIVACY_SETTINGS"
+          Action: "com.google.android.gms.accountsettings.SECURITY_SETTINGS"
+          Action: "com.google.android.gms.accountsettings.action.VIEW_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.APPLICATION_PREFERENCES:
+        54c0347 com.mgoogle.android.gms/org.microg.gms.ui.SettingsActivity filter a473774
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.APPLICATION_PREFERENCES"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.accountsettings.ACCOUNT_PREFERENCES_SETTINGS:
+        42f6d99 com.mgoogle.android.gms/org.microg.gms.ui.AccountSettingsActivity filter 8ec785e
+          Action: "com.google.android.gms.accountsettings.ACCOUNT_PREFERENCES_SETTINGS"
+          Action: "com.google.android.gms.accountsettings.PRIVACY_SETTINGS"
+          Action: "com.google.android.gms.accountsettings.SECURITY_SETTINGS"
+          Action: "com.google.android.gms.accountsettings.action.VIEW_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.accountsettings.SECURITY_SETTINGS:
+        42f6d99 com.mgoogle.android.gms/org.microg.gms.ui.AccountSettingsActivity filter 8ec785e
+          Action: "com.google.android.gms.accountsettings.ACCOUNT_PREFERENCES_SETTINGS"
+          Action: "com.google.android.gms.accountsettings.PRIVACY_SETTINGS"
+          Action: "com.google.android.gms.accountsettings.SECURITY_SETTINGS"
+          Action: "com.google.android.gms.accountsettings.action.VIEW_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Schemes:
+      android_secret_code:
+        10143f com.mgoogle.android.gms/org.microg.gms.checkin.TriggerReceiver filter 403bc6a
+          Action: "android.provider.Telephony.SECRET_CODE"
+          Scheme: "android_secret_code"
+          Authority: "2432546": -1
+        c364c37 com.mgoogle.android.gms/org.microg.gms.gcm.TriggerReceiver filter 8c86f0d
+          Action: "android.provider.Telephony.SECRET_CODE"
+          Scheme: "android_secret_code"
+          Authority: "42678278": -1
+      package:
+        3b6ec2 com.mgoogle.android.gms/org.microg.gms.gcm.UnregisterReceiver filter 11974d3
+          Action: "android.intent.action.PACKAGE_DATA_CLEARED"
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Action: "android.intent.action.PACKAGE_REMOVED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      android.net.conn.CONNECTIVITY_CHANGE:
+        c364c37 com.mgoogle.android.gms/org.microg.gms.gcm.TriggerReceiver filter 7e165a4
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+          Action: "org.microg.gms.gcm.RECONNECT"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+      android.intent.action.AIRPLANE_MODE:
+        10143f com.mgoogle.android.gms/org.microg.gms.checkin.TriggerReceiver filter 4be010c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.server.checkin.CHECKIN"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+        c364c37 com.mgoogle.android.gms/org.microg.gms.gcm.TriggerReceiver filter 7e165a4
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+          Action: "org.microg.gms.gcm.RECONNECT"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+      com.google.android.gcm.intent.SEND:
+        bc836d1 com.mgoogle.android.gms/org.microg.gms.gcm.SendReceiver filter b993536
+          Action: "com.google.android.gcm.intent.SEND"
+      android.intent.action.PACKAGE_RESTARTED:
+        10143f com.mgoogle.android.gms/org.microg.gms.checkin.TriggerReceiver filter 4be010c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.server.checkin.CHECKIN"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+        c364c37 com.mgoogle.android.gms/org.microg.gms.gcm.TriggerReceiver filter 7e165a4
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+          Action: "org.microg.gms.gcm.RECONNECT"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+      org.microg.gms.gcm.RECONNECT:
+        c364c37 com.mgoogle.android.gms/org.microg.gms.gcm.TriggerReceiver filter 7e165a4
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+          Action: "org.microg.gms.gcm.RECONNECT"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+      com.mgoogle.android.c2dm.intent.RECEIVE:
+        10143f com.mgoogle.android.gms/org.microg.gms.checkin.TriggerReceiver filter 4804a55
+          Action: "com.mgoogle.android.c2dm.intent.RECEIVE"
+          Category: "android.server.checkin.CHECKIN"
+      com.mgoogle.iid.TOKEN_REQUEST:
+        cfbb55b com.mgoogle.android.gms/org.microg.gms.gcm.PushRegisterReceiver filter 7d021f8
+          Action: "com.mgoogle.iid.TOKEN_REQUEST"
+      android.net.conn.BACKGROUND_DATA_SETTING_CHANGED:
+        c364c37 com.mgoogle.android.gms/org.microg.gms.gcm.TriggerReceiver filter 7e165a4
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+          Action: "org.microg.gms.gcm.RECONNECT"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+      android.intent.action.BOOT_COMPLETED:
+        10143f com.mgoogle.android.gms/org.microg.gms.checkin.TriggerReceiver filter 4be010c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.server.checkin.CHECKIN"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+        c364c37 com.mgoogle.android.gms/org.microg.gms.gcm.TriggerReceiver filter 7e165a4
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+          Action: "org.microg.gms.gcm.RECONNECT"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        10143f com.mgoogle.android.gms/org.microg.gms.checkin.TriggerReceiver filter 4be010c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.server.checkin.CHECKIN"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+        c364c37 com.mgoogle.android.gms/org.microg.gms.gcm.TriggerReceiver filter 7e165a4
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+          Action: "org.microg.gms.gcm.RECONNECT"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+      android.server.checkin.CHECKIN:
+        10143f com.mgoogle.android.gms/org.microg.gms.checkin.TriggerReceiver filter 4be010c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.server.checkin.CHECKIN"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.gms.clearcut.service.START:
+        ce571b1 com.mgoogle.android.gms/org.microg.gms.clearcut.ClearcutLoggerService filter 63b8696
+          Action: "com.google.android.gms.clearcut.service.START"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START:
+        987a5e9 com.mgoogle.android.gms/org.microg.gms.DummyService filter e84d26e
+          Action: "com.google.android.gms.accounts.ACCOUNT_SERVICE"
+          Action: "com.google.android.gms.identity.service.BIND"
+          Action: "com.google.android.gms.auth.service.START"
+          Action: "com.google.android.gms.cast_mirroring.service.START"
+          Action: "com.google.android.gms.common.service.START"
+          Action: "com.google.android.contextmanager.service.ContextManagerService.START"
+          Action: "com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START"
+          Action: "com.google.android.gms.gass.START"
+          Action: "com.google.android.gms.audit.service.START"
+      com.mgoogle.android.c2dm.intent.UNREGISTER:
+        ad5b50e com.mgoogle.android.gms/org.microg.gms.gcm.PushRegisterService filter fc8b2f
+          Action: "com.mgoogle.android.c2dm.intent.REGISTER"
+          Action: "com.mgoogle.android.c2dm.intent.UNREGISTER"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.auth.api.credentials.service.START:
+        550ab4b com.mgoogle.android.gms/org.microg.gms.auth.CredentialsService filter e8bf928
+          Action: "com.google.android.gms.auth.api.credentials.service.START"
+      com.google.android.gms.gass.START:
+        987a5e9 com.mgoogle.android.gms/org.microg.gms.DummyService filter e84d26e
+          Action: "com.google.android.gms.accounts.ACCOUNT_SERVICE"
+          Action: "com.google.android.gms.identity.service.BIND"
+          Action: "com.google.android.gms.auth.service.START"
+          Action: "com.google.android.gms.cast_mirroring.service.START"
+          Action: "com.google.android.gms.common.service.START"
+          Action: "com.google.android.contextmanager.service.ContextManagerService.START"
+          Action: "com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START"
+          Action: "com.google.android.gms.gass.START"
+          Action: "com.google.android.gms.audit.service.START"
+      com.mgoogle.android.c2dm.intent.REGISTER:
+        ad5b50e com.mgoogle.android.gms/org.microg.gms.gcm.PushRegisterService filter fc8b2f
+          Action: "com.mgoogle.android.c2dm.intent.REGISTER"
+          Action: "com.mgoogle.android.c2dm.intent.UNREGISTER"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.mdm.services.START:
+        62c9e1f com.mgoogle.android.gms/org.microg.gms.mdm.NetworkQualityService filter 426f56c
+          Action: "com.google.android.gms.mdm.services.START"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.checkin.BIND_TO_SERVICE:
+        7a13810 com.mgoogle.android.gms/org.microg.gms.checkin.CheckinService filter b19ef09
+          Action: "com.google.android.gms.checkin.BIND_TO_SERVICE"
+      com.mgoogle.android.gms.phenotype.service.START:
+        37cb127 com.mgoogle.android.gms/org.microg.gms.phenotype.PhenotypeService filter 53b7fd4
+          Action: "com.mgoogle.android.gms.phenotype.service.START"
+      com.google.android.gms.identity.service.BIND:
+        987a5e9 com.mgoogle.android.gms/org.microg.gms.DummyService filter e84d26e
+          Action: "com.google.android.gms.accounts.ACCOUNT_SERVICE"
+          Action: "com.google.android.gms.identity.service.BIND"
+          Action: "com.google.android.gms.auth.service.START"
+          Action: "com.google.android.gms.cast_mirroring.service.START"
+          Action: "com.google.android.gms.common.service.START"
+          Action: "com.google.android.contextmanager.service.ContextManagerService.START"
+          Action: "com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START"
+          Action: "com.google.android.gms.gass.START"
+          Action: "com.google.android.gms.audit.service.START"
+      com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE:
+        e59735 com.mgoogle.android.gms/org.microg.gms.icing.LightweightIndexService filter dd1b7ca
+          Action: "com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE"
+      com.mgoogle.android.gsf.action.GET_GLS:
+        349c53c com.mgoogle.android.gms/org.microg.gms.auth.loginservice.GoogleLoginService filter 5bc141a
+          Action: "com.mgoogle.android.gsf.action.GET_GLS"
+      com.google.android.location.reporting.service.START:
+        67938c3 com.mgoogle.android.gms/org.microg.gms.location.ReportingAndroidService filter abac540
+          Action: "com.google.android.location.reporting.service.START"
+          Action: "com.google.android.gms.location.reporting.service.START"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.playlog.service.START:
+        886fd3b com.mgoogle.android.gms/org.microg.gms.playlog.PlayLogService filter 943fc58
+          Action: "com.google.android.gms.playlog.service.START"
+      com.google.android.gms.auth.service.START:
+        987a5e9 com.mgoogle.android.gms/org.microg.gms.DummyService filter e84d26e
+          Action: "com.google.android.gms.accounts.ACCOUNT_SERVICE"
+          Action: "com.google.android.gms.identity.service.BIND"
+          Action: "com.google.android.gms.auth.service.START"
+          Action: "com.google.android.gms.cast_mirroring.service.START"
+          Action: "com.google.android.gms.common.service.START"
+          Action: "com.google.android.contextmanager.service.ContextManagerService.START"
+          Action: "com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START"
+          Action: "com.google.android.gms.gass.START"
+          Action: "com.google.android.gms.audit.service.START"
+      com.google.android.gms.cast.service.BIND_CAST_DEVICE_CONTROLLER_SERVICE:
+        d2e77ed com.mgoogle.android.gms/org.microg.gms.cast.CastDeviceControllerService filter 3a17622
+          Action: "com.google.android.gms.cast.service.BIND_CAST_DEVICE_CONTROLLER_SERVICE"
+      com.google.android.location.internal.GoogleLocationManagerService.START:
+        d40357d com.mgoogle.android.gms/org.microg.gms.location.GoogleLocationManagerService filter 510c72
+          Action: "com.google.android.location.internal.GoogleLocationManagerService.START"
+      com.google.android.gms.cast_mirroring.service.START:
+        987a5e9 com.mgoogle.android.gms/org.microg.gms.DummyService filter e84d26e
+          Action: "com.google.android.gms.accounts.ACCOUNT_SERVICE"
+          Action: "com.google.android.gms.identity.service.BIND"
+          Action: "com.google.android.gms.auth.service.START"
+          Action: "com.google.android.gms.cast_mirroring.service.START"
+          Action: "com.google.android.gms.common.service.START"
+          Action: "com.google.android.contextmanager.service.ContextManagerService.START"
+          Action: "com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START"
+          Action: "com.google.android.gms.gass.START"
+          Action: "com.google.android.gms.audit.service.START"
+      com.google.android.gms.location.reporting.service.START:
+        67938c3 com.mgoogle.android.gms/org.microg.gms.location.ReportingAndroidService filter abac540
+          Action: "com.google.android.location.reporting.service.START"
+          Action: "com.google.android.gms.location.reporting.service.START"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.contextmanager.service.ContextManagerService.START:
+        987a5e9 com.mgoogle.android.gms/org.microg.gms.DummyService filter e84d26e
+          Action: "com.google.android.gms.accounts.ACCOUNT_SERVICE"
+          Action: "com.google.android.gms.identity.service.BIND"
+          Action: "com.google.android.gms.auth.service.START"
+          Action: "com.google.android.gms.cast_mirroring.service.START"
+          Action: "com.google.android.gms.common.service.START"
+          Action: "com.google.android.contextmanager.service.ContextManagerService.START"
+          Action: "com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START"
+          Action: "com.google.android.gms.gass.START"
+          Action: "com.google.android.gms.audit.service.START"
+      com.google.android.gms.measurement.START:
+        91fac79 com.mgoogle.android.gms/org.microg.gms.measurement.MeasurementBrokerService filter 79f7dbe
+          Action: "com.google.android.gms.measurement.START"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.facs.cache.service.START:
+        e09d8b3 com.mgoogle.android.gms/org.microg.gms.udc.FacsCacheService filter 7a9fe70
+          Action: "com.google.android.gms.facs.cache.service.START"
+      com.google.android.gms.common.service.START:
+        987a5e9 com.mgoogle.android.gms/org.microg.gms.DummyService filter e84d26e
+          Action: "com.google.android.gms.accounts.ACCOUNT_SERVICE"
+          Action: "com.google.android.gms.identity.service.BIND"
+          Action: "com.google.android.gms.auth.service.START"
+          Action: "com.google.android.gms.cast_mirroring.service.START"
+          Action: "com.google.android.gms.common.service.START"
+          Action: "com.google.android.contextmanager.service.ContextManagerService.START"
+          Action: "com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START"
+          Action: "com.google.android.gms.gass.START"
+          Action: "com.google.android.gms.audit.service.START"
+      android.accounts.AccountAuthenticator:
+        349c53c com.mgoogle.android.gms/org.microg.gms.auth.loginservice.GoogleLoginService filter 8e972c5
+          Action: "android.accounts.AccountAuthenticator"
+      com.google.android.gms.audit.service.START:
+        987a5e9 com.mgoogle.android.gms/org.microg.gms.DummyService filter e84d26e
+          Action: "com.google.android.gms.accounts.ACCOUNT_SERVICE"
+          Action: "com.google.android.gms.identity.service.BIND"
+          Action: "com.google.android.gms.auth.service.START"
+          Action: "com.google.android.gms.cast_mirroring.service.START"
+          Action: "com.google.android.gms.common.service.START"
+          Action: "com.google.android.contextmanager.service.ContextManagerService.START"
+          Action: "com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START"
+          Action: "com.google.android.gms.gass.START"
+          Action: "com.google.android.gms.audit.service.START"
+      com.google.android.gms.signin.service.START:
+        85e3217 com.mgoogle.android.gms/org.microg.gms.auth.SignInService filter 8288604
+          Action: "com.google.android.gms.signin.service.START"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.accounts.ACCOUNT_SERVICE:
+        987a5e9 com.mgoogle.android.gms/org.microg.gms.DummyService filter e84d26e
+          Action: "com.google.android.gms.accounts.ACCOUNT_SERVICE"
+          Action: "com.google.android.gms.identity.service.BIND"
+          Action: "com.google.android.gms.auth.service.START"
+          Action: "com.google.android.gms.cast_mirroring.service.START"
+          Action: "com.google.android.gms.common.service.START"
+          Action: "com.google.android.contextmanager.service.ContextManagerService.START"
+          Action: "com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START"
+          Action: "com.google.android.gms.gass.START"
+          Action: "com.google.android.gms.audit.service.START"
+      android.media.MediaRouteProviderService:
+        4737641 com.mgoogle.android.gms/com.google.android.gms.cast.media.CastMediaRouteProviderService filter a7757e6
+          Action: "android.media.MediaRouteProviderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.mgoogle.android.c2dm.permission.SEND] (e9668be):
+    sourcePackage=com.mgoogle.android.gms
+    uid=10316 gids=[] type=0 prot=signature
+    perm=PermissionInfo{ae8ad1f com.mgoogle.android.c2dm.permission.SEND}
+
+Permissions:
+  Permission [com.mgoogle.android.gtalkservice.permission.GTALK_SERVICE] (ecb586c):
+    sourcePackage=com.mgoogle.android.gms
+    uid=10316 gids=[] type=0 prot=signature
+    perm=PermissionInfo{10dbe35 com.mgoogle.android.gtalkservice.permission.GTALK_SERVICE}
+
+Permissions:
+  Permission [org.mgoogle.gms.STATUS_BROADCAST] (4cc52ca):
+    sourcePackage=com.mgoogle.android.gms
+    uid=10316 gids=[] type=0 prot=normal
+    perm=PermissionInfo{e74fc3b org.mgoogle.gms.STATUS_BROADCAST}
+
+Permissions:
+  Permission [org.mgoogle.gms.EXTENDED_ACCESS] (d4b8f58):
+    sourcePackage=com.mgoogle.android.gms
+    uid=10316 gids=[] type=0 prot=dangerous
+    perm=PermissionInfo{4e908b1 org.mgoogle.gms.EXTENDED_ACCESS}
+
+Permissions:
+  Permission [com.mgoogle.android.c2dm.permission.RECEIVE] (1c4d196):
+    sourcePackage=com.mgoogle.android.gms
+    uid=10316 gids=[] type=0 prot=normal
+    perm=PermissionInfo{8ad2117 com.mgoogle.android.c2dm.permission.RECEIVE}
+
+Registered ContentProviders:
+  com.mgoogle.android.gms/org.microg.gms.gservices.GServicesProvider:
+    Provider{964904 com.mgoogle.android.gms/org.microg.gms.gservices.GServicesProvider}
+  com.mgoogle.android.gms/org.microg.gms.auth.AccountContentProvider:
+    Provider{7547eed com.mgoogle.android.gms/org.microg.gms.auth.AccountContentProvider}
+  com.mgoogle.android.gms/org.microg.mgms.settings.SettingsProvider:
+    Provider{5f47122 com.mgoogle.android.gms/org.microg.mgms.settings.SettingsProvider}
+  com.mgoogle.android.gms/org.microg.gms.fonts.FontsProvider:
+    Provider{5d8b7b3 com.mgoogle.android.gms/org.microg.gms.fonts.FontsProvider}
+  com.mgoogle.android.gms/org.microg.mgms.settings.GoogleSettingsProvider:
+    Provider{cb0f170 com.mgoogle.android.gms/org.microg.mgms.settings.GoogleSettingsProvider}
+  com.mgoogle.android.gms/org.microg.gms.feeds.SubscribedFeedsProvider:
+    Provider{d871ce9 com.mgoogle.android.gms/org.microg.gms.feeds.SubscribedFeedsProvider}
+  com.mgoogle.android.gms/org.microg.gms.phenotype.ConfigurationProvider:
+    Provider{28c7d6e com.mgoogle.android.gms/org.microg.gms.phenotype.ConfigurationProvider}
+
+ContentProvider Authorities:
+  [com.mgoogle.settings]:
+    Provider{cb0f170 com.mgoogle.android.gms/org.microg.mgms.settings.GoogleSettingsProvider}
+      applicationInfo=ApplicationInfo{e8bb49c com.mgoogle.android.gms}
+  [com.mgoogle.android.gsf.gservices]:
+    Provider{964904 com.mgoogle.android.gms/org.microg.gms.gservices.GServicesProvider}
+      applicationInfo=ApplicationInfo{f2b9ea5 com.mgoogle.android.gms}
+  [com.mgoogle.android.gms.phenotype]:
+    Provider{28c7d6e com.mgoogle.android.gms/org.microg.gms.phenotype.ConfigurationProvider}
+      applicationInfo=ApplicationInfo{887027a com.mgoogle.android.gms}
+  [org.microg.mgms.settings]:
+    Provider{5f47122 com.mgoogle.android.gms/org.microg.mgms.settings.SettingsProvider}
+      applicationInfo=ApplicationInfo{8996a2b com.mgoogle.android.gms}
+  [mgooglesubscribedfeeds]:
+    Provider{d871ce9 com.mgoogle.android.gms/org.microg.gms.feeds.SubscribedFeedsProvider}
+      applicationInfo=ApplicationInfo{fed7e88 com.mgoogle.android.gms}
+  [com.mgoogle.android.gms.auth.accounts]:
+    Provider{7547eed com.mgoogle.android.gms/org.microg.gms.auth.AccountContentProvider}
+      applicationInfo=ApplicationInfo{9dc8021 com.mgoogle.android.gms}
+  [com.mgoogle.android.gms.fonts]:
+    Provider{5d8b7b3 com.mgoogle.android.gms/org.microg.gms.fonts.FontsProvider}
+      applicationInfo=ApplicationInfo{c72cc46 com.mgoogle.android.gms}
+
+Key Set Manager:
+  [com.mgoogle.android.gms]
+      Signing KeySets: 5988
+
+Packages:
+  Package [com.mgoogle.android.gms] (b427e07):
+    userId=10316
+    pkg=Package{e1ffb34 com.mgoogle.android.gms}
+    codePath=/data/app/~~m6Tk3ypULJs97iJfL-ntlg==/com.mgoogle.android.gms-LnfGgi3g_REtxfXdw8veCA==
+    resourcePath=/data/app/~~m6Tk3ypULJs97iJfL-ntlg==/com.mgoogle.android.gms-LnfGgi3g_REtxfXdw8veCA==
+    legacyNativeLibraryDir=/data/app/~~m6Tk3ypULJs97iJfL-ntlg==/com.mgoogle.android.gms-LnfGgi3g_REtxfXdw8veCA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=212417001 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=0.2.21.212417
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=true
+    dataDir=/data/user/0/com.mgoogle.android.gms
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 17:44:37
+    lastUpdateTime=2022-11-30 17:44:37
+    packageSource=0
+    signatures=PackageSignatures{f5b96a0 version:2, signatures:[bf7dc3d4], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ ]
+    declared permissions:
+      com.mgoogle.android.c2dm.permission.RECEIVE: prot=normal, INSTALLED
+      com.mgoogle.android.c2dm.permission.SEND: prot=signature, INSTALLED
+      com.mgoogle.android.gtalkservice.permission.GTALK_SERVICE: prot=signature, INSTALLED
+      com.mgoogle.android.googleapps.permission.GOOGLE_AUTH: prot=normal, INSTALLED
+      org.mgoogle.gms.STATUS_BROADCAST: prot=normal, INSTALLED
+      org.mgoogle.gms.EXTENDED_ACCESS: prot=dangerous, INSTALLED
+    requested permissions:
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.GET_ACCOUNTS
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.USE_CREDENTIALS
+      android.permission.WAKE_LOCK
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.READ_SYNC_STATS
+      com.mgoogle.android.c2dm.permission.RECEIVE
+      com.mgoogle.android.c2dm.permission.SEND
+      com.mgoogle.android.gtalkservice.permission.GTALK_SERVICE
+      org.mgoogle.gms.STATUS_BROADCAST
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST
+      android.permission.UPDATE_APP_OPS_STATS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      com.mgoogle.android.c2dm.permission.SEND: granted=true
+      com.mgoogle.android.gtalkservice.permission.GTALK_SERVICE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      org.mgoogle.gms.STATUS_BROADCAST: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      com.mgoogle.android.c2dm.permission.RECEIVE: granted=true
+    User 0: ceDataInode=82659 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 17:44:37
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.GET_ACCOUNTS: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.diagnosticstool:
+      com.mgoogle.android.gms
+    com.google.android.settings.intelligence:
+      com.mgoogle.android.gms
+    com.google.android.contacts:
+      com.mgoogle.android.gms
+    com.google.android.apps.accessibility.voiceaccess:
+      com.mgoogle.android.gms
+    com.truecaller:
+      com.mgoogle.android.gms
+    com.dv.adm:
+      com.mgoogle.android.gms
+    com.zappcues.gamingmode:
+      com.mgoogle.android.gms
+    com.jio.myjio:
+      com.mgoogle.android.gms
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.mgoogle.android.gms]
+    path: /data/app/~~m6Tk3ypULJs97iJfL-ntlg==/com.mgoogle.android.gms-LnfGgi3g_REtxfXdw8veCA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:278237
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.mgoogle.android.gms]
+     base.apk - 220

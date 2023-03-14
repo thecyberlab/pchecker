@@ -1,0 +1,320 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        e8d780f com.netease.lztgglobal/com.netease.lztg.Launcher filter 6465296
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "lztg.com": -1
+          Path: "PatternMatcher{PREFIX: /lztg}"
+        76ae09c com.netease.lztgglobal/com.netease.ntunisdk.base.deeplink.UniDeepLinkActivity filter f1f0e17
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "game.163.com": -1
+          Path: "PatternMatcher{PREFIX: /open/lztgglobal/}"
+      lztg:
+        e8d780f com.netease.lztgglobal/com.netease.lztg.Launcher filter 66bedb1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "lztg"
+          Authority: "lztg.com": -1
+          Path: "PatternMatcher{PREFIX: /lztg}"
+      ntes:
+        76ae09c com.netease.lztgglobal/com.netease.ntunisdk.base.deeplink.UniDeepLinkActivity filter 34e3204
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "ntes"
+          Authority: "game.mobile": -1
+          Path: "PatternMatcher{PREFIX: /lztgglobal}"
+        76ae09c com.netease.lztgglobal/com.netease.ntunisdk.base.deeplink.UniDeepLinkActivity filter ea0b3ed
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "ntes"
+          Authority: "game.mobile": -1
+          Path: "PatternMatcher{PREFIX: /com.netease.lztgglobal}"
+        76ae09c com.netease.lztgglobal/com.netease.ntunisdk.base.deeplink.UniDeepLinkActivity filter 78d0222
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "ntes"
+          Authority: "game.mobile": -1
+          Path: "PatternMatcher{PREFIX: /g94.}"
+      https:
+        76ae09c com.netease.lztgglobal/com.netease.ntunisdk.base.deeplink.UniDeepLinkActivity filter f1f0e17
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "game.163.com": -1
+          Path: "PatternMatcher{PREFIX: /open/lztgglobal/}"
+      mpsdk146:
+        d995aa5 com.netease.lztgglobal/com.netease.mpay.oversea.MpayActivityStub filter 5fc74b3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "mpsdk146"
+      lineauth:
+        4880e7a com.netease.lztgglobal/com.linecorp.linesdk.auth.internal.LineAuthenticationCallbackActivity filter d7e6a70
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "lineauth"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        e8d780f com.netease.lztgglobal/com.netease.lztg.Launcher filter b26e858
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        eb3862b com.netease.lztgglobal/com.netease.pushservice.PushServiceReceiver filter 3fa90f
+          Action: "android.intent.action.PACKAGE_REMOVED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      com.netease.push.action.client.METHOD:
+        5936a88 com.netease.lztgglobal/com.netease.lztg.PushNotificationReceiver filter 5e1a1e9
+          Action: "com.netease.push.action.client.MESSAGE"
+          Action: "com.netease.push.action.client.NEWID"
+          Action: "com.netease.push.action.client.METHOD"
+      com.netease.push.action.client.NEWID:
+        5936a88 com.netease.lztgglobal/com.netease.lztg.PushNotificationReceiver filter 5e1a1e9
+          Action: "com.netease.push.action.client.MESSAGE"
+          Action: "com.netease.push.action.client.NEWID"
+          Action: "com.netease.push.action.client.METHOD"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        eb3862b com.netease.lztgglobal/com.netease.pushservice.PushServiceReceiver filter 39d1e6e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.netease.push.action.service.METHOD"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.STATE_CHANGE"
+          Category: "android.intent.category.LAUNCHER"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        769fc21 com.netease.lztgglobal/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 137bd9c
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.net.wifi.STATE_CHANGE:
+        eb3862b com.netease.lztgglobal/com.netease.pushservice.PushServiceReceiver filter 39d1e6e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.netease.push.action.service.METHOD"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.STATE_CHANGE"
+          Category: "android.intent.category.LAUNCHER"
+      com.netease.push.action.client.MESSAGE:
+        5936a88 com.netease.lztgglobal/com.netease.lztg.PushNotificationReceiver filter 5e1a1e9
+          Action: "com.netease.push.action.client.MESSAGE"
+          Action: "com.netease.push.action.client.NEWID"
+          Action: "com.netease.push.action.client.METHOD"
+      android.intent.action.BOOT_COMPLETED:
+        eb3862b com.netease.lztgglobal/com.netease.pushservice.PushServiceReceiver filter 39d1e6e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.netease.push.action.service.METHOD"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.STATE_CHANGE"
+          Category: "android.intent.category.LAUNCHER"
+      com.netease.push.action.service.METHOD:
+        eb3862b com.netease.lztgglobal/com.netease.pushservice.PushServiceReceiver filter 39d1e6e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.netease.push.action.service.METHOD"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.STATE_CHANGE"
+          Category: "android.intent.category.LAUNCHER"
+
+Registered ContentProviders:
+  com.netease.lztgglobal/com.netease.ntunisdk.UniQRFileProvider:
+    Provider{5789846 com.netease.lztgglobal/com.netease.ntunisdk.UniQRFileProvider}
+  com.netease.lztgglobal/com.facebook.internal.FacebookInitProvider:
+    Provider{ee25a07 com.netease.lztgglobal/com.facebook.internal.FacebookInitProvider}
+  com.netease.lztgglobal/com.netease.ntunisdk.UniTwitterFileProvider:
+    Provider{638a734 com.netease.lztgglobal/com.netease.ntunisdk.UniTwitterFileProvider}
+  com.netease.lztgglobal/com.netease.unisdk.gmbridge5.provider.GmFileProvider:
+    Provider{f49395d com.netease.lztgglobal/com.netease.unisdk.gmbridge5.provider.GmFileProvider}
+  com.netease.lztgglobal/com.netease.ntunisdk.UniFacebookFileProvider:
+    Provider{c95f2d2 com.netease.lztgglobal/com.netease.ntunisdk.UniFacebookFileProvider}
+  com.netease.lztgglobal/androidx.core.content.FileProvider:
+    Provider{c408fa3 com.netease.lztgglobal/androidx.core.content.FileProvider}
+  com.netease.lztgglobal/com.facebook.FacebookContentProvider:
+    Provider{e5302a0 com.netease.lztgglobal/com.facebook.FacebookContentProvider}
+
+ContentProvider Authorities:
+  [com.netease.lztgglobal.uniqr.fileprovider]:
+    Provider{5789846 com.netease.lztgglobal/com.netease.ntunisdk.UniQRFileProvider}
+      applicationInfo=ApplicationInfo{be50e59 com.netease.lztgglobal}
+  [com.netease.lztgglobal.tw.fileprovider]:
+    Provider{638a734 com.netease.lztgglobal/com.netease.ntunisdk.UniTwitterFileProvider}
+      applicationInfo=ApplicationInfo{be50e59 com.netease.lztgglobal}
+  [com.netease.lztgglobal.local.fileprovider]:
+    Provider{c408fa3 com.netease.lztgglobal/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{be50e59 com.netease.lztgglobal}
+  [com.netease.lztgglobal.fb.fileprovider]:
+    Provider{c95f2d2 com.netease.lztgglobal/com.netease.ntunisdk.UniFacebookFileProvider}
+      applicationInfo=ApplicationInfo{be50e59 com.netease.lztgglobal}
+  [com.netease.lztgglobal.gmbridge.fileprovider]:
+    Provider{f49395d com.netease.lztgglobal/com.netease.unisdk.gmbridge5.provider.GmFileProvider}
+      applicationInfo=ApplicationInfo{be50e59 com.netease.lztgglobal}
+  [com.netease.lztgglobal.FacebookInitProvider]:
+    Provider{ee25a07 com.netease.lztgglobal/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{be50e59 com.netease.lztgglobal}
+  [com.facebook.app.FacebookContentProvider175289086458934]:
+    Provider{e5302a0 com.netease.lztgglobal/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{be50e59 com.netease.lztgglobal}
+
+Key Set Manager:
+  [com.netease.lztgglobal]
+      Signing KeySets: 359
+
+Packages:
+  Package [com.netease.lztgglobal] (cbc6a1e):
+    userId=10186
+    pkg=Package{1b2193b com.netease.lztgglobal}
+    codePath=/data/app/com.netease.lztgglobal-pPDUT2_rYA5d7049tqT3Hw==
+    resourcePath=/data/app/com.netease.lztgglobal-pPDUT2_rYA5d7049tqT3Hw==
+    legacyNativeLibraryDir=/data/app/com.netease.lztgglobal-pPDUT2_rYA5d7049tqT3Hw==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=100363 minSdk=16 targetSdk=29
+    versionName=0.100.363
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{be50e59 com.netease.lztgglobal}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/com.netease.lztgglobal
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 08:26:20
+    firstInstallTime=2021-03-06 08:26:25
+    lastUpdateTime=2021-03-06 08:26:25
+    signatures=PackageSignatures{5c282ff version:1, signatures:[8eda24df], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    requested permissions:
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.INTERNET
+      android.permission.CAMERA
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.VIBRATE
+      android.permission.CALL_PHONE
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.RECORD_AUDIO
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_GPS
+      android.permission.BLUETOOTH
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.FLASHLIGHT
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.android.vending.BILLING
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=12782 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Package Changes:
+  Sequence number=97
+  User 0:
+    seq=1, package=com.studioeleven.windfinder
+    seq=8, package=com.google.android.gms
+    seq=9, package=de.motain.iliga
+    seq=11, package=com.microsoft.office.word
+    seq=13, package=video.like
+    seq=15, package=com.netflix.mediaclient
+    seq=19, package=com.agilebits.onepassword
+    seq=21, package=com.rayark.valkyrie
+    seq=23, package=com.aa.generaladaptiveapps
+    seq=25, package=com.ea.gp.fifamobile
+    seq=27, package=com.instagram.igtv
+    seq=29, package=deezer.android.app
+    seq=31, package=com.square_enix.android_googleplay.FFBEWW
+    seq=33, package=com.google.android.calculator
+    seq=35, package=com.gamevilusa.mlbpilive.android.google.global.normal
+    seq=37, package=com.kabam.bigrobot
+    seq=39, package=io.enpass.app
+    seq=41, package=com.adobe.lrmobile
+    seq=43, package=com.vng.g6.a.zombie
+    seq=45, package=com.microblink.photomath
+    seq=47, package=com.scopely.whiplash
+    seq=49, package=com.iudesk.android.photo.editor
+    seq=51, package=com.microsoft.office.officehubrow
+    seq=53, package=com.whatsapp
+    seq=55, package=com.joeware.android.gpulumera
+    seq=57, package=com.anslayer
+    seq=59, package=com.apkupdater
+    seq=62, package=com.android.vending
+    seq=63, package=com.google.android.wearable.app
+    seq=65, package=com.zqlabs.filechef
+    seq=67, package=com.wondershare.filmorago
+    seq=69, package=com.outfit7.mytalkingangelafree
+    seq=71, package=com.truecaller
+    seq=73, package=com.ea.games.r3_row
+    seq=75, package=com.google.ar.lens
+    seq=77, package=com.fusionmedia.investing
+    seq=79, package=com.king.candycrushsodasaga
+    seq=81, package=com.seleuco.mame4droid
+    seq=83, package=com.Slack
+    seq=85, package=com.liquidum.rocketvpn
+    seq=87, package=com.sec.android.easyMover
+    seq=89, package=com.fingersoft.hillclimb
+    seq=91, package=com.cpuid.cpu_z
+    seq=93, package=com.piriform.ccleaner
+    seq=95, package=com.tencent.ibg.joox
+    seq=96, package=com.netease.lztgglobal
+
+
+Dexopt state:
+  [com.netease.lztgglobal]
+    path: /data/app/com.netease.lztgglobal-pPDUT2_rYA5d7049tqT3Hw==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.netease.lztgglobal]
+     base.apk - 4982
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

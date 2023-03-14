@@ -1,0 +1,194 @@
+Activity Resolver Table:
+  Schemes:
+      app:
+        d38a623 com.adobe.lens.android/com.adobe.photocam.ui.community.CCDiscoveryActivityMain filter f45ffdc
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "app"
+          Authority: "phylo": -1
+      https:
+        5cf9720 com.adobe.lens.android/com.adobe.photocam.ui.viewfinder.LauncherActivity filter 2f08c4f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "adobelens.app.link": -1
+          AutoVerify=true
+      fbconnect:
+        c2f48d9 com.adobe.lens.android/com.facebook.CustomTabActivity filter 4eb28e5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.adobe.lens.android": -1
+      adobelens:
+        5cf9720 com.adobe.lens.android/com.adobe.photocam.ui.viewfinder.LauncherActivity filter d4286ae
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "adobelens"
+          Authority: "open": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        5cf9720 com.adobe.lens.android/com.adobe.photocam.ui.viewfinder.LauncherActivity filter 1168329
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        92a529e com.adobe.lens.android/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 9d39e6b
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        65817f com.adobe.lens.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 4b45fba
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        fe7054c com.adobe.lens.android/com.adobe.photocam.utils.ans.CCFCMService filter b213dc8
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        dc29995 com.adobe.lens.android/com.google.firebase.messaging.FirebaseMessagingService filter c38bd86
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      android.accounts.AccountAuthenticator:
+        4e4faaa com.adobe.lens.android/com.adobe.creativesdk.foundation.internal.auth.authenticator.AdobeCSDKAdobeIDAuthenticatorServiceCC filter eaa6e61
+          Action: "android.accounts.AccountAuthenticator"
+
+Registered ContentProviders:
+  com.adobe.lens.android/com.adobe.photocam.utils.CCFileProvider:
+    Provider{35ab69b com.adobe.lens.android/com.adobe.photocam.utils.CCFileProvider}
+  com.adobe.lens.android/com.squareup.picasso.PicassoProvider:
+    Provider{8252a38 com.adobe.lens.android/com.squareup.picasso.PicassoProvider}
+  com.adobe.lens.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{a003a11 com.adobe.lens.android/com.google.firebase.provider.FirebaseInitProvider}
+  com.adobe.lens.android/com.facebook.internal.FacebookInitProvider:
+    Provider{df01776 com.adobe.lens.android/com.facebook.internal.FacebookInitProvider}
+  com.adobe.lens.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{1a42177 com.adobe.lens.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.adobe.lens.android/com.facebook.FacebookContentProvider:
+    Provider{e1eb1e4 com.adobe.lens.android/com.facebook.FacebookContentProvider}
+
+ContentProvider Authorities:
+  [com.facebook.app.FacebookContentProvider776587999168897]:
+    Provider{e1eb1e4 com.adobe.lens.android/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{79d664d com.adobe.lens.android}
+  [com.adobe.lens.android.utils.CCFileProvider]:
+    Provider{35ab69b com.adobe.lens.android/com.adobe.photocam.utils.CCFileProvider}
+      applicationInfo=ApplicationInfo{79d664d com.adobe.lens.android}
+  [com.adobe.lens.android.firebaseinitprovider]:
+    Provider{a003a11 com.adobe.lens.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{79d664d com.adobe.lens.android}
+  [com.adobe.lens.android.FacebookInitProvider]:
+    Provider{df01776 com.adobe.lens.android/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{79d664d com.adobe.lens.android}
+  [com.adobe.lens.android.lifecycle-process]:
+    Provider{1a42177 com.adobe.lens.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{79d664d com.adobe.lens.android}
+  [com.adobe.lens.android.com.squareup.picasso]:
+    Provider{8252a38 com.adobe.lens.android/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{79d664d com.adobe.lens.android}
+
+Key Set Manager:
+  [com.adobe.lens.android]
+      Signing KeySets: 274
+
+Packages:
+  Package [com.adobe.lens.android] (fbe3502):
+    userId=10152
+    pkg=Package{b6108b0 com.adobe.lens.android}
+    codePath=/data/app/com.adobe.lens.android-xPLzNcrVNCPQ5xbskgsCfg==
+    resourcePath=/data/app/com.adobe.lens.android-xPLzNcrVNCPQ5xbskgsCfg==
+    legacyNativeLibraryDir=/data/app/com.adobe.lens.android-xPLzNcrVNCPQ5xbskgsCfg==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=224 minSdk=28 targetSdk=29
+    versionName=1.0.4
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{79d664d com.adobe.lens.android}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.adobe.lens.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 08:04:27
+    firstInstallTime=2021-03-06 08:04:29
+    lastUpdateTime=2021-03-06 08:04:29
+    signatures=PackageSignatures{9af5e13 version:3, signatures:[fc757c0a], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    requested permissions:
+      android.permission.CAMERA
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.USE_CREDENTIALS
+      android.permission.GET_ACCOUNTS
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_WIFI_STATE
+      com.samsung.android.iap.permission.BILLING
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.android.vending.BILLING
+      android.permission.ACCESS_COARSE_LOCATION
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=8082 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=28
+  User 0:
+    seq=3, package=com.google.android.apps.youtube.music
+    seq=4, package=com.rookiestudio.perfectviewer
+    seq=11, package=com.google.android.gms
+    seq=12, package=com.nautilus.RealCricket3D
+    seq=14, package=com.mixplorer
+    seq=16, package=com.dnddream.headsoccer.android
+    seq=18, package=com.innogames.foeandroid
+    seq=20, package=com.blayzegames.iosfps
+    seq=22, package=com.ismaker.android.simsimi
+    seq=24, package=com.naver.linewebtoon
+    seq=26, package=jp.naver.line.android
+    seq=27, package=com.adobe.lens.android
+
+
+Dexopt state:
+  [com.adobe.lens.android]
+    path: /data/app/com.adobe.lens.android-xPLzNcrVNCPQ5xbskgsCfg==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.adobe.lens.android]
+     base.apk - 5790
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

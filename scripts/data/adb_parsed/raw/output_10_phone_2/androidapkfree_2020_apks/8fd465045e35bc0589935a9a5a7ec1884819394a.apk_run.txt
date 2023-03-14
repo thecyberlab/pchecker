@@ -1,0 +1,210 @@
+Activity Resolver Table:
+  Schemes:
+      vnd.google.deeplink:
+        6d8cd62 com.ea.games.r3_row/com.firemint.realracing.UnpackAssetsActivity filter ecfcdfe
+          Action: "com.google.android.apps.plus.VIEW_DEEP_LINK"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "vnd.google.deeplink"
+          Scheme: "rr3"
+      rr3:
+        6d8cd62 com.ea.games.r3_row/com.firemint.realracing.UnpackAssetsActivity filter ecfcdfe
+          Action: "com.google.android.apps.plus.VIEW_DEEP_LINK"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "vnd.google.deeplink"
+          Scheme: "rr3"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        6d8cd62 com.ea.games.r3_row/com.firemint.realracing.UnpackAssetsActivity filter 71a15b9
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.ea.eadp.pushnotification.FORWARD_AS_ORDERED_BROADCAST:
+        4af7ef3 com.ea.games.r3_row/com.firemint.realracing.RRPushTNGBroadcastForwarder filter 3d5475
+          Action: "com.ea.eadp.pushnotification.FORWARD_AS_ORDERED_BROADCAST"
+      android.intent.action.QUICKBOOT_POWERON:
+        a5947b0 com.ea.games.r3_row/com.firemint.realracing.BootReceiver filter fbe5fac
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        dfb5629 com.ea.games.r3_row/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 987ca98
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        4fa5dae com.ea.games.r3_row/com.ea.nimble.ReferrerReceiver filter fb2495f
+          Action: "com.android.vending.INSTALL_REFERRER"
+        9b9174f com.ea.games.r3_row/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 156cc0a
+          Action: "com.android.vending.INSTALL_REFERRER"
+        f032edc com.ea.games.r3_row/com.facebook.CampaignTrackingReceiver filter 81bc2f1
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        6ca2be5 com.ea.games.r3_row/com.google.firebase.iid.FirebaseInstanceIdReceiver filter ddc1c7b
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        a5947b0 com.ea.games.r3_row/com.firemint.realracing.BootReceiver filter fbe5fac
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        592a6ba com.ea.games.r3_row/com.google.firebase.iid.FirebaseInstanceIdService filter 5989d2d
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        c19d96b com.ea.games.r3_row/com.firemint.realracing.RRPushTNGBroadcastReceiver filter 9d9ed6
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        b025cc8 com.ea.games.r3_row/com.ea.nimble.pushtng.NimblePushTNGBroadcastReceiver filter 9060557
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        2f6a161 com.ea.games.r3_row/com.google.firebase.messaging.FirebaseMessagingService filter 57af844
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+
+Registered ContentProviders:
+  com.ea.games.r3_row/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{a347486 com.ea.games.r3_row/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.ea.games.r3_row/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{97aa147 com.ea.games.r3_row/com.crashlytics.android.CrashlyticsInitProvider}
+  com.ea.games.r3_row/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{a447d74 com.ea.games.r3_row/com.google.firebase.provider.FirebaseInitProvider}
+  com.ea.games.r3_row/com.facebook.internal.FacebookInitProvider:
+    Provider{91af29d com.ea.games.r3_row/com.facebook.internal.FacebookInitProvider}
+  com.ea.games.r3_row/android.support.v4.content.FileProvider:
+    Provider{8d35312 com.ea.games.r3_row/android.support.v4.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.ea.games.r3_row.fileprovider]:
+    Provider{8d35312 com.ea.games.r3_row/android.support.v4.content.FileProvider}
+      applicationInfo=ApplicationInfo{7360ae3 com.ea.games.r3_row}
+  [com.ea.games.r3_row.mobileadsinitprovider]:
+    Provider{a347486 com.ea.games.r3_row/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{7360ae3 com.ea.games.r3_row}
+  [com.ea.games.r3_row.firebaseinitprovider]:
+    Provider{a447d74 com.ea.games.r3_row/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{7360ae3 com.ea.games.r3_row}
+  [com.ea.games.r3_row.crashlyticsinitprovider]:
+    Provider{97aa147 com.ea.games.r3_row/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{7360ae3 com.ea.games.r3_row}
+  [com.ea.games.r3_row.FacebookInitProvider]:
+    Provider{91af29d com.ea.games.r3_row/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{7360ae3 com.ea.games.r3_row}
+
+Key Set Manager:
+  [com.ea.games.r3_row]
+      Signing KeySets: 347
+
+Packages:
+  Package [com.ea.games.r3_row] (7e5fce0):
+    userId=10174
+    pkg=Package{c640b80 com.ea.games.r3_row}
+    codePath=/data/app/com.ea.games.r3_row-VldU4rxwxshfarOeP50N-w==
+    resourcePath=/data/app/com.ea.games.r3_row-VldU4rxwxshfarOeP50N-w==
+    legacyNativeLibraryDir=/data/app/com.ea.games.r3_row-VldU4rxwxshfarOeP50N-w==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=8701 minSdk=16 targetSdk=29
+    versionName=8.7.0
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{7360ae3 com.ea.games.r3_row}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE ]
+    dataDir=/data/user/0/com.ea.games.r3_row
+    supportsScreens=[medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 08:23:49
+    firstInstallTime=2021-03-06 08:23:52
+    lastUpdateTime=2021-03-06 08:23:52
+    signatures=PackageSignatures{5391b99 version:1, signatures:[e9b5050], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    requested permissions:
+      android.permission.USE_CREDENTIALS
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.INTERNET
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.VIBRATE
+      com.android.vending.BILLING
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+    User 0: ceDataInode=15188 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+
+Package Changes:
+  Sequence number=73
+  User 0:
+    seq=1, package=com.studioeleven.windfinder
+    seq=8, package=com.google.android.gms
+    seq=9, package=de.motain.iliga
+    seq=11, package=com.microsoft.office.word
+    seq=13, package=video.like
+    seq=15, package=com.netflix.mediaclient
+    seq=19, package=com.agilebits.onepassword
+    seq=21, package=com.rayark.valkyrie
+    seq=23, package=com.aa.generaladaptiveapps
+    seq=25, package=com.ea.gp.fifamobile
+    seq=27, package=com.instagram.igtv
+    seq=29, package=deezer.android.app
+    seq=31, package=com.square_enix.android_googleplay.FFBEWW
+    seq=33, package=com.google.android.calculator
+    seq=35, package=com.gamevilusa.mlbpilive.android.google.global.normal
+    seq=37, package=com.kabam.bigrobot
+    seq=39, package=io.enpass.app
+    seq=41, package=com.adobe.lrmobile
+    seq=43, package=com.vng.g6.a.zombie
+    seq=45, package=com.microblink.photomath
+    seq=47, package=com.scopely.whiplash
+    seq=49, package=com.iudesk.android.photo.editor
+    seq=51, package=com.microsoft.office.officehubrow
+    seq=53, package=com.whatsapp
+    seq=55, package=com.joeware.android.gpulumera
+    seq=57, package=com.anslayer
+    seq=59, package=com.apkupdater
+    seq=62, package=com.android.vending
+    seq=63, package=com.google.android.wearable.app
+    seq=65, package=com.zqlabs.filechef
+    seq=67, package=com.wondershare.filmorago
+    seq=69, package=com.outfit7.mytalkingangelafree
+    seq=71, package=com.truecaller
+    seq=72, package=com.ea.games.r3_row
+
+
+Dexopt state:
+  [com.ea.games.r3_row]
+    path: /data/app/com.ea.games.r3_row-VldU4rxwxshfarOeP50N-w==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.ea.games.r3_row]
+     base.apk - 4093
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

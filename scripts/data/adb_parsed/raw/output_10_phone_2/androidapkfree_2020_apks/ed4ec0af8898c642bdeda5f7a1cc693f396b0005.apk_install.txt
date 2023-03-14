@@ -1,0 +1,222 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        277edfb com.ea.game.simcitymobile_row/com.ea.common.LaunchActivity filter ea25532
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          Authority: "www.ea.com": -1
+          Path: "PatternMatcher{PREFIX: /games/simcity/simcity-buildit/deep-link}"
+      simcity:
+        2b4fe18 com.ea.game.simcitymobile_row/com.ea.common.CustomURLActivity filter 7bfb283
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "simcity"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        277edfb com.ea.game.simcitymobile_row/com.ea.common.LaunchActivity filter 3da293d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      notification_cancelled:
+        b0bb071 com.ea.game.simcitymobile_row/com.ea.common.NetworkClientNotificationBroadcastReceiver filter 29c927e
+          Action: "notification_cancelled"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        c22be56 com.ea.game.simcitymobile_row/com.vungle.warren.NetworkProviderReceiver filter 5eff82c
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Category: "android.intent.category.DEFAULT"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        d4d6ed7 com.ea.game.simcitymobile_row/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 9551c00
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        307e3c4 com.ea.game.simcitymobile_row/com.ea.common.ReferrerReceiver filter cc0f3df
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        f59e2ad com.ea.game.simcitymobile_row/com.google.firebase.iid.FirebaseInstanceIdReceiver filter fc51c39
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Action: "com.google.android.c2dm.intent.REGISTRATION"
+          Category: "com.ea.game.simcitymobile_row"
+      com.google.android.c2dm.intent.REGISTRATION:
+        f59e2ad com.ea.game.simcitymobile_row/com.google.firebase.iid.FirebaseInstanceIdReceiver filter fc51c39
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Action: "com.google.android.c2dm.intent.REGISTRATION"
+          Category: "com.ea.game.simcitymobile_row"
+
+Service Resolver Table:
+  Non-Data Actions:
+      .NetworkClientService:
+        b2469e2 com.ea.game.simcitymobile_row/com.ea.common.NetworkClientService filter 7a6b18
+          Action: ".NetworkClientService"
+      com.google.firebase.INSTANCE_ID_EVENT:
+        d902173 com.ea.game.simcitymobile_row/com.google.firebase.iid.FirebaseInstanceIdService filter 16aeefb
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        2817830 com.ea.game.simcitymobile_row/com.ea.android.SCBIFirebaseMessagingService filter 2d242f5
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        8defca9 com.ea.game.simcitymobile_row/com.google.firebase.messaging.FirebaseMessagingService filter 26b588a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+
+Permissions:
+  Permission [com.ea.game.simcitymobile_row.permission.C2D_MESSAGE] (ba3422e):
+    sourcePackage=com.ea.game.simcitymobile_row
+    uid=10178 gids=null type=0 prot=signature
+    perm=Permission{4161cf com.ea.game.simcitymobile_row.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{cbde75c com.ea.game.simcitymobile_row/10178}
+
+Registered ContentProviders:
+  com.ea.game.simcitymobile_row/com.ideaworks3d.marmalade.VFSProvider:
+    Provider{681ba65 com.ea.game.simcitymobile_row/com.ideaworks3d.marmalade.VFSProvider}
+  com.ea.game.simcitymobile_row/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{b25533a com.ea.game.simcitymobile_row/com.google.firebase.provider.FirebaseInitProvider}
+  com.ea.game.simcitymobile_row/com.facebook.internal.FacebookInitProvider:
+    Provider{71c4beb com.ea.game.simcitymobile_row/com.facebook.internal.FacebookInitProvider}
+  com.ea.game.simcitymobile_row/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{8f01d48 com.ea.game.simcitymobile_row/com.facebook.ads.AudienceNetworkContentProvider}
+  com.ea.game.simcitymobile_row/android.support.v4.content.FileProvider:
+    Provider{4d897e1 com.ea.game.simcitymobile_row/android.support.v4.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.ea.game.simcitymobile_row.firebaseinitprovider]:
+    Provider{b25533a com.ea.game.simcitymobile_row/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{7856906 com.ea.game.simcitymobile_row}
+  [com.ea.game.simcitymobile.fileprovider]:
+    Provider{4d897e1 com.ea.game.simcitymobile_row/android.support.v4.content.FileProvider}
+      applicationInfo=ApplicationInfo{7856906 com.ea.game.simcitymobile_row}
+  [com.ea.game.simcitymobile_row.AudienceNetworkContentProvider]:
+    Provider{8f01d48 com.ea.game.simcitymobile_row/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{7856906 com.ea.game.simcitymobile_row}
+  [com.ea.common.FacebookInitProvider]:
+    Provider{71c4beb com.ea.game.simcitymobile_row/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{7856906 com.ea.game.simcitymobile_row}
+  [zzzz91114fd06b8984622a5301f83fc60dde.VFSProvider]:
+    Provider{681ba65 com.ea.game.simcitymobile_row/com.ideaworks3d.marmalade.VFSProvider}
+      applicationInfo=ApplicationInfo{7856906 com.ea.game.simcitymobile_row}
+
+Key Set Manager:
+  [com.ea.game.simcitymobile_row]
+      Signing KeySets: 459
+
+Packages:
+  Package [com.ea.game.simcitymobile_row] (cbde75c):
+    userId=10178
+    pkg=Package{879ea94 com.ea.game.simcitymobile_row}
+    codePath=/data/app/com.ea.game.simcitymobile_row-_DLUAmFLwc8Uunt9iPCWKQ==
+    resourcePath=/data/app/com.ea.game.simcitymobile_row-_DLUAmFLwc8Uunt9iPCWKQ==
+    legacyNativeLibraryDir=/data/app/com.ea.game.simcitymobile_row-_DLUAmFLwc8Uunt9iPCWKQ==/lib
+    primaryCpuAbi=armeabi
+    secondaryCpuAbi=null
+    versionCode=1034001 minSdk=16 targetSdk=30
+    versionName=1.34.1.95520
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{7856906 com.ea.game.simcitymobile_row}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/com.ea.game.simcitymobile_row
+    supportsScreens=[medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 08:51:18
+    firstInstallTime=2021-03-06 08:51:19
+    lastUpdateTime=2021-03-06 08:51:19
+    signatures=PackageSignatures{a71bbc7 version:3, signatures:[e9b5050], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    declared permissions:
+      com.ea.game.simcitymobile_row.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      com.android.vending.CHECK_LICENSE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      com.ea.game.simcitymobile_row.permission.C2D_MESSAGE
+      com.android.vending.BILLING
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      com.ea.game.simcitymobile_row.permission.C2D_MESSAGE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+    User 0: ceDataInode=20413 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=84
+  User 0:
+    seq=2, package=com.yahoo.mobile.client.android.weather
+    seq=9, package=com.google.android.gms
+    seq=11, package=com.psiphon3.subscription
+    seq=13, package=com.tumblr
+    seq=16, package=com.google.android.apps.docs.editors.sheets
+    seq=17, package=com.google.android.apps.docs
+    seq=19, package=com.emoji.coolkeyboard
+    seq=21, package=com.ea.game.starwarscapital_row
+    seq=23, package=com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish
+    seq=25, package=com.virtualapplications.play
+    seq=27, package=com.appsomniacs.da2
+    seq=29, package=com.king.farmheroessupersaga
+    seq=31, package=com.rsupport.mvagent
+    seq=33, package=com.snkplaymore.android014
+    seq=35, package=com.intermedia.hq
+    seq=37, package=com.google.android.apps.adwords
+    seq=39, package=com.weheartit
+    seq=41, package=com.life360.android.safetymapd
+    seq=43, package=com.kabam.marvelbattle
+    seq=45, package=com.antutu.ABenchMark
+    seq=47, package=com.timehop
+    seq=49, package=com.flightradar24free
+    seq=51, package=com.dena.a12026418
+    seq=53, package=com.whatsapp
+    seq=55, package=com.feng.droid.tutu
+    seq=57, package=com.jsdev.instasize
+    seq=60, package=com.gombosdev.ampere
+    seq=62, package=com.sega.vtc
+    seq=64, package=com.google.android.street
+    seq=66, package=com.mobisystems.fileman
+    seq=68, package=com.secondarm.taptapdash
+    seq=70, package=com.kwai.global.video.social.kwaigo
+    seq=73, package=net.mobigame.zombietsunami
+    seq=76, package=com.nll.screenrecorder
+    seq=78, package=com.koushikdutta.vysor
+    seq=80, package=com.appnana.android.giftcardrewards
+    seq=82, package=com.ea.gp.pvz3
+    seq=83, package=com.ea.game.simcitymobile_row
+
+
+Dexopt state:
+  [com.ea.game.simcitymobile_row]
+    path: /data/app/com.ea.game.simcitymobile_row-_DLUAmFLwc8Uunt9iPCWKQ==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.ea.game.simcitymobile_row]
+     base.apk - 6005
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

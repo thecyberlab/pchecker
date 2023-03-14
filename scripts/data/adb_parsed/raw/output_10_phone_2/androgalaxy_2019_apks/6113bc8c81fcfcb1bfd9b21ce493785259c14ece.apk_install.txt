@@ -1,0 +1,407 @@
+Activity Resolver Table:
+  Schemes:
+      adguard:
+        e459e24 com.adguard.android/.ui.CustomFiltersActivity filter 3b6ff0b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "adguard"
+          Scheme: "adg"
+          Scheme: "abp"
+      abp:
+        e459e24 com.adguard.android/.ui.CustomFiltersActivity filter 3b6ff0b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "adguard"
+          Scheme: "adg"
+          Scheme: "abp"
+      adg:
+        e459e24 com.adguard.android/.ui.CustomFiltersActivity filter 3b6ff0b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "adguard"
+          Scheme: "adg"
+          Scheme: "abp"
+      http:
+        e459e24 com.adguard.android/.ui.CustomFiltersActivity filter 42221e8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "subscribe.adblockplus.org": -1
+          Authority: "subscribe.adblockplus.org": -1
+      sdns:
+        dab7d8d com.adguard.android/.ui.CustomDnsActivity filter a4d5001
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "sdns"
+      https:
+        e459e24 com.adguard.android/.ui.CustomFiltersActivity filter 42221e8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "subscribe.adblockplus.org": -1
+          Authority: "subscribe.adblockplus.org": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        a539b42 com.adguard.android/.ui.SplashActivity filter 8bc5eda
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        5f36753 com.adguard.android/.ui.TileServicePreferenceActivity filter 25480e7
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+      .ui.ShortcutActivity:
+        f507890 com.adguard.android/.ui.ShortcutActivity filter e3deb3d
+          Action: ".ui.ShortcutActivity"
+          Category: "android.intent.category.DEFAULT"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        95f6589 com.adguard.android/.ui.WidgetSettingsActivity filter 3118ea6
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      android.intent.action.CREATE_SHORTCUT:
+        f507890 com.adguard.android/.ui.ShortcutActivity filter 6eb7494
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        1c325af com.adguard.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 5da328a
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        9ec8dbc com.adguard.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9ac44f5
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.net.wifi.WIFI_STATE_CHANGED:
+        84fd145 com.adguard.android/.receivers.NetworkStateReceiver filter cf1cc7e
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.LINK_CONFIGURATION_CHANGED"
+          Action: "android.hardware.usb.action.USB_STATE"
+          Action: "android.net.wifi.WIFI_AP_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        c1d509a com.adguard.android/.receivers.BootUpReceiver filter 15e4483
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          mPriority=2000, mOrder=0, mHasPartialTypes=false
+      com.adguard.android.action.WATCHDOG:
+        8266dcb com.adguard.android/.receivers.WatchDogReceiver filter 9a2fe39
+          Action: "com.adguard.android.action.WATCHDOG"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        c1d509a com.adguard.android/.receivers.BootUpReceiver filter 15e4483
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          mPriority=2000, mOrder=0, mHasPartialTypes=false
+      android.intent.action.DEVICE_STORAGE_LOW:
+        3d2c9a8 com.adguard.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter a09c0fb
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        84fd145 com.adguard.android/.receivers.NetworkStateReceiver filter cf1cc7e
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.LINK_CONFIGURATION_CHANGED"
+          Action: "android.hardware.usb.action.USB_STATE"
+          Action: "android.net.wifi.WIFI_AP_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+        a213cc1 com.adguard.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter c15d518
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        3d2c9a8 com.adguard.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter a09c0fb
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.hardware.usb.action.USB_STATE:
+        84fd145 com.adguard.android/.receivers.NetworkStateReceiver filter cf1cc7e
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.LINK_CONFIGURATION_CHANGED"
+          Action: "android.hardware.usb.action.USB_STATE"
+          Action: "android.net.wifi.WIFI_AP_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      android.bluetooth.device.action.ACL_CONNECTED:
+        84fd145 com.adguard.android/.receivers.NetworkStateReceiver filter cf1cc7e
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.LINK_CONFIGURATION_CHANGED"
+          Action: "android.hardware.usb.action.USB_STATE"
+          Action: "android.net.wifi.WIFI_AP_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      android.net.wifi.WIFI_AP_STATE_CHANGED:
+        84fd145 com.adguard.android/.receivers.NetworkStateReceiver filter cf1cc7e
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.LINK_CONFIGURATION_CHANGED"
+          Action: "android.hardware.usb.action.USB_STATE"
+          Action: "android.net.wifi.WIFI_AP_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      android.intent.action.BATTERY_LOW:
+        1c325af com.adguard.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 5da328a
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        eefdc66 com.adguard.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4c93b71
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        eefdc66 com.adguard.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4c93b71
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.adguard.android.filtering.ALWAYS_ON_REQUESTED:
+        e2c1ba7 com.adguard.android/.receivers.VpnAlwaysOnReceiver filter c37ef32
+          Action: "com.adguard.android.filtering.ALWAYS_ON_REQUESTED"
+      android.intent.action.BOOT_COMPLETED:
+        c1d509a com.adguard.android/.receivers.BootUpReceiver filter 15e4483
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          mPriority=2000, mOrder=0, mHasPartialTypes=false
+        eefdc66 com.adguard.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4c93b71
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        9ec8dbc com.adguard.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9ac44f5
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.net.wifi.LINK_CONFIGURATION_CHANGED:
+        84fd145 com.adguard.android/.receivers.NetworkStateReceiver filter cf1cc7e
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.LINK_CONFIGURATION_CHANGED"
+          Action: "android.hardware.usb.action.USB_STATE"
+          Action: "android.net.wifi.WIFI_AP_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        35ed854 com.adguard.android/.WidgetProvider filter 6b6a5df
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        a43e3fd com.adguard.android/.receivers.UpdateReceiver filter e554600
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.bluetooth.device.action.ACL_DISCONNECTED:
+        84fd145 com.adguard.android/.receivers.NetworkStateReceiver filter cf1cc7e
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.LINK_CONFIGURATION_CHANGED"
+          Action: "android.hardware.usb.action.USB_STATE"
+          Action: "android.net.wifi.WIFI_AP_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        10d58f2 com.adguard.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 430ed56
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.adguard.android.LICENSE_KEY:
+        f4cb43 com.adguard.android/.receivers.LicenseKeyBroadcastReceiver filter bc8c22c
+          Action: "com.adguard.android.LICENSE_KEY"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        6fb25c0 com.adguard.android/.AdguardTileService filter 71f2ac4 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+        efc2f9 com.adguard.android/.OutboundProxyTileService filter ee51dad permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.net.VpnService:
+        914123e com.adguard.android/.filtering.api.LocalVpnService filter 7a971d7 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+
+Registered ContentProviders:
+  com.adguard.android/androidx.core.content.FileProvider:
+    Provider{50ed89f com.adguard.android/androidx.core.content.FileProvider}
+  com.adguard.android/androidx.work.impl.WorkManagerInitializer:
+    Provider{74cddec com.adguard.android/androidx.work.impl.WorkManagerInitializer}
+
+ContentProvider Authorities:
+  [com.adguard.android.file.provider]:
+    Provider{50ed89f com.adguard.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{7e095b5 com.adguard.android}
+  [com.adguard.android.workmanager-init]:
+    Provider{74cddec com.adguard.android/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{7e095b5 com.adguard.android}
+
+Key Set Manager:
+  [com.adguard.android]
+      Signing KeySets: 9
+
+Packages:
+  Package [com.adguard.android] (73b144a):
+    userId=10250
+    pkg=Package{1653085 com.adguard.android}
+    codePath=/data/app/com.adguard.android-0v2N4yItFARrkbJor76WOA==
+    resourcePath=/data/app/com.adguard.android-0v2N4yItFARrkbJor76WOA==
+    legacyNativeLibraryDir=/data/app/com.adguard.android-0v2N4yItFARrkbJor76WOA==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=10000166 minSdk=21 targetSdk=29
+    versionName=3.3.166
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{7e095b5 com.adguard.android}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE BACKUP_IN_FOREGROUND HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/com.adguard.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 07:20:48
+    firstInstallTime=2021-03-06 07:20:49
+    lastUpdateTime=2021-03-06 07:20:49
+    signatures=PackageSignatures{f925fbb version:1, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    requested permissions:
+      android.permission.WAKE_LOCK
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.GET_TASKS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.VIBRATE
+      android.permission.BLUETOOTH
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.REQUEST_INSTALL_PACKAGES
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=5713 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=232
+  User 0:
+    seq=5, package=com.google.android.gms
+    seq=11, package=com.kajda.fuelio
+    seq=16, package=me.piere.christmas
+    seq=18, package=ak.alizandro.smartaudiobookplayer
+    seq=20, package=amazing.three_d.icons
+    seq=22, package=com.first75.voicerecorder2pro
+    seq=24, package=digifit.virtuagym.client.android
+    seq=26, package=com.paget96.lspeed
+    seq=32, package=com.in.w3d
+    seq=34, package=com.luzapplications.alessio.wallooppro
+    seq=36, package=com.alesp.orologiomondiale.pro
+    seq=38, package=co.windyapp.android
+    seq=40, package=com.yuanwofei.cardemulator.pro
+    seq=44, package=com.lb.app_manager
+    seq=48, package=com.microblink.photomath
+    seq=50, package=studio14.application.caeluswhite
+    seq=52, package=com.david.android.languageswitch
+    seq=54, package=com.perfectapps.muviz
+    seq=58, package=net.xnano.android.ftpserver
+    seq=60, package=com.aezowie.mycalpro
+    seq=62, package=com.bialy.zonelauncher
+    seq=66, package=com.indigomadina.tabloid
+    seq=68, package=com.plexapp.android
+    seq=70, package=com.mixplorer
+    seq=72, package=com.mobilefootie.wc2010
+    seq=74, package=de.dwd.warnapp
+    seq=76, package=oos.dark.material
+    seq=78, package=com.intsig.camscanner
+    seq=82, package=com.indigomadina.spheroid
+    seq=84, package=com.footej.camera
+    seq=89, package=com.cray.software.justreminderpro
+    seq=91, package=com.sofascore.results
+    seq=97, package=pl.solidexplorer2
+    seq=103, package=jp.gr.java_conf.soboku.batterymeter
+    seq=105, package=com.iioannou.phototools.pro
+    seq=108, package=com.unvoid.borealis
+    seq=112, package=com.happening.studios.swipeforfacebookfree
+    seq=114, package=com.rookiestudio.perfectviewer
+    seq=117, package=com.osheden.azulox
+    seq=122, package=com.fullreader
+    seq=124, package=com.pakdata.easyurdu
+    seq=126, package=eu.faircode.netguard
+    seq=132, package=indigomadina.furatto.ui
+    seq=134, package=com.brit.swiftblack.layers
+    seq=138, package=o.o.joey
+    seq=140, package=at.bitfire.davdroid
+    seq=142, package=com.overlook.android.fing
+    seq=144, package=ru.involta.metro
+    seq=148, package=hastamev.oneuidark.com
+    seq=153, package=com.compscieddy.writeaday
+    seq=155, package=com.protectstar.ishredder.pro
+    seq=157, package=prism.kustom.pack
+    seq=161, package=com.protectstar.ishredder.mil
+    seq=163, package=com.androidev.xhafe.earthquakepro
+    seq=165, package=com.n7mobile.nplayer
+    seq=167, package=com.franco.doze
+    seq=169, package=com.mobisystems.fileman
+    seq=171, package=com.changemystyle.gentlewakeuppro
+    seq=173, package=com.ottplay.ottplay
+    seq=175, package=studio14.application.juno
+    seq=177, package=com.thegrammaruniversity.drfrench
+    seq=179, package=com.medisafe.android.client
+    seq=183, package=com.shaiban.audioplayer.mplayer
+    seq=185, package=com.brit.swiftdark.substratum
+    seq=187, package=com.bergin_it.gpsscatterplot
+    seq=189, package=com.zemana.msecurity
+    seq=191, package=be.inet.rainwidget.donate
+    seq=193, package=com.bergin_it.gpsattitude
+    seq=195, package=ru.yandex.music
+    seq=197, package=com.roamingsquirrel.android.calculator_plus
+    seq=200, package=com.aathifmahir.iconpack.kora.free
+    seq=202, package=com.iudesk.android.photo.editor
+    seq=204, package=com.franco.kernel
+    seq=206, package=com.magdalm.wifimasterpassword
+    seq=209, package=com.nll.asr
+    seq=211, package=com.crypter.cryptocyrrency
+    seq=213, package=com.kimcy929.screenrecorder
+    seq=215, package=com.pavelrekun.skit.premium
+    seq=217, package=com.mobilefootie.fotmobpro
+    seq=219, package=yo.app
+    seq=221, package=com.wiseschematics.reeq01
+    seq=224, package=com.SearingMedia.Parrot
+    seq=226, package=com.fbreader
+    seq=228, package=com.bitsmedia.android.muslimpro
+    seq=230, package=com.mobisystems.office
+    seq=231, package=com.adguard.android
+
+
+Dexopt state:
+  [com.adguard.android]
+    path: /data/app/com.adguard.android-0v2N4yItFARrkbJor76WOA==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.adguard.android]
+     base.apk - 2242
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

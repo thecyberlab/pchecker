@@ -1,0 +1,410 @@
+Activity Resolver Table:
+  Schemes:
+      reface:
+        6578bfc video.reface.app/.home.HomeActivity filter d59285
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "reface"
+          AutoVerify=true
+      fb652514898703507:
+        8f6be8 video.reface.app/com.facebook.CustomTabActivity filter d61d201
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb652514898703507"
+      https:
+        57218da video.reface.app/.deeplinks.ui.DeepLinkingActivity filter 7c3310b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "reface.video": -1
+          AutoVerify=true
+      genericidp:
+        893ec2c video.reface.app/com.google.firebase.auth.internal.GenericIdpActivity filter ef926f5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        726c8a video.reface.app/com.google.firebase.auth.internal.RecaptchaActivity filter a8672fb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      reface_tools:
+        e68e8a6 video.reface.app/.placeface.PlaceFaceActivity filter ff1d2e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "reface_tools"
+          Authority: "place_face": -1
+        de35e94 video.reface.app/.reenactment.ReenactmentActivity filter b188d3d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "reface_tools"
+          Authority: "reenactment": -1
+        eaae932 video.reface.app/.swap.main.ui.SwapEntryPointActivity filter 7eb683
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "reface_tools"
+          Authority: "swap_face": -1
+        de1d000 video.reface.app/.lipsync.LipSyncActivity filter 685c039
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "reface_tools"
+          Authority: "lipsync": -1
+        c9a667e video.reface.app/.camera.CameraActivity filter c6c37df
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "reface_tools"
+          Authority: "camera": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f30edce video.reface.app/.firstscreens.SplashScreenActivity filter b9e34ef
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        e4a4673 video.reface.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7093930
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        ac3fad video.reface.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 18c02e2
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      io.intercom.android.sdk.INTERCOM_PUSH_OPENED:
+        912c756 video.reface.app/io.intercom.android.sdk.push.IntercomPushBroadcastReceiver filter 83f43d7
+          Action: "io.intercom.android.sdk.INTERCOM_PUSH_OPENED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        97a29a9 video.reface.app/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 36b6b2e
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        2f8d6cf video.reface.app/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 880b85c
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        6896e1d video.reface.app/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter f7ee892
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        97a29a9 video.reface.app/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 36b6b2e
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        b699f18 video.reface.app/com.appsflyer.SingleInstallBroadcastReceiver filter f023d71
+          Action: "com.android.vending.INSTALL_REFERRER"
+      io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED:
+        912c756 video.reface.app/io.intercom.android.sdk.push.IntercomPushBroadcastReceiver filter 8e594c4
+          Action: "io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED"
+      com.google.android.c2dm.intent.RECEIVE:
+        402d0c7 video.reface.app/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 1b9b6f4
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        e4a4673 video.reface.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7093930
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        a22b765 video.reface.app/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1c70c3a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        a22b765 video.reface.app/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1c70c3a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        a22b765 video.reface.app/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1c70c3a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        ac3fad video.reface.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 18c02e2
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        e0c64e1 video.reface.app/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 909b206
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        65610eb video.reface.app/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter c8efe48
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        dd3cf19 video.reface.app/io.intercom.android.sdk.fcm.IntercomFcmMessengerService filter 29efbde
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-400, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        6d1b263 video.reface.app/.OurFirebaseMessagingService filter 7354e60
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        dd3cf19 video.reface.app/io.intercom.android.sdk.fcm.IntercomFcmMessengerService filter 29efbde
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-400, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        dc943d5 video.reface.app/com.google.firebase.messaging.FirebaseMessagingService filter d1af7ea
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.auth.api.gms.service.START:
+        a2311bf video.reface.app/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 910f08c
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+  video.reface.app:
+    ID: 018adc62-47c2-4c7b-99e7-7a85b826297c
+    Signatures: [62:15:F0:0B:AA:4B:F1:8B:AB:57:92:FC:79:6B:FC:55:55:91:72:40:F1:4F:7C:7E:67:2D:95:68:88:D7:5C:96]
+    Domain verification state:
+      reface.video: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          reface.video
+
+Registered ContentProviders:
+  video.reface.app/.FileProvider:
+    Provider{daa8a9b video.reface.app/.FileProvider}
+  video.reface.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{6ba6e38 video.reface.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  video.reface.app/com.vungle.warren.utility.VungleProvider:
+    Provider{2462e11 video.reface.app/com.vungle.warren.utility.VungleProvider}
+  video.reface.app/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{c10fb76 video.reface.app/com.google.android.gms.ads.MobileAdsInitProvider}
+  video.reface.app/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{31d3577 video.reface.app/com.google.mlkit.common.internal.MlKitInitProvider}
+  video.reface.app/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{ac435e4 video.reface.app/com.google.firebase.perf.provider.FirebasePerfProvider}
+  video.reface.app/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{4e9a4d video.reface.app/com.google.firebase.provider.FirebaseInitProvider}
+  video.reface.app/com.facebook.internal.FacebookInitProvider:
+    Provider{9095902 video.reface.app/com.facebook.internal.FacebookInitProvider}
+  video.reface.app/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider:
+    Provider{ba5b213 video.reface.app/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+  video.reface.app/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{f80cc50 video.reface.app/com.facebook.ads.AudienceNetworkContentProvider}
+  video.reface.app/io.sentry.android.core.SentryPerformanceProvider:
+    Provider{df78e49 video.reface.app/io.sentry.android.core.SentryPerformanceProvider}
+  video.reface.app/io.intercom.android.sdk.IntercomInitializeContentProvider:
+    Provider{538034e video.reface.app/io.intercom.android.sdk.IntercomInitializeContentProvider}
+  video.reface.app/io.sentry.android.core.SentryInitProvider:
+    Provider{62f5c6f video.reface.app/io.sentry.android.core.SentryInitProvider}
+  video.reface.app/com.ironsource.lifecycle.IronsourceLifecycleProvider:
+    Provider{d2e5d7c video.reface.app/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+
+ContentProvider Authorities:
+  [video.reface.app.SentryPerformanceProvider]:
+    Provider{df78e49 video.reface.app/io.sentry.android.core.SentryPerformanceProvider}
+      applicationInfo=ApplicationInfo{721c605 video.reface.app}
+  [video.reface.app.lifecycle-process]:
+    Provider{6ba6e38 video.reface.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{95065a video.reface.app}
+  [video.reface.app.AudienceNetworkContentProvider]:
+    Provider{f80cc50 video.reface.app/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{aff508b video.reface.app}
+  [video.reface.app.vungle-provider]:
+    Provider{2462e11 video.reface.app/com.vungle.warren.utility.VungleProvider}
+      applicationInfo=ApplicationInfo{fc1d568 video.reface.app}
+  [video.reface.app.mobileadsinitprovider]:
+    Provider{c10fb76 video.reface.app/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{afdbd81 video.reface.app}
+  [video.reface.app.firebaseperfprovider]:
+    Provider{ac435e4 video.reface.app/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{8d2e26 video.reface.app}
+  [video.reface.app.FileProvider]:
+    Provider{daa8a9b video.reface.app/.FileProvider}
+      applicationInfo=ApplicationInfo{7906a67 video.reface.app}
+  [video.reface.app.SentryInitProvider]:
+    Provider{62f5c6f video.reface.app/io.sentry.android.core.SentryInitProvider}
+      applicationInfo=ApplicationInfo{b92e014 video.reface.app}
+  [video.reface.app.mlkitinitprovider]:
+    Provider{31d3577 video.reface.app/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{147b0bd video.reface.app}
+  [video.reface.app.IntercomInitializeContentProvider]:
+    Provider{538034e video.reface.app/io.intercom.android.sdk.IntercomInitializeContentProvider}
+      applicationInfo=ApplicationInfo{28e06b2 video.reface.app}
+  [video.reface.app.firebaseinitprovider]:
+    Provider{4e9a4d video.reface.app/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{c2f4603 video.reface.app}
+  [video.reface.app.IronsourceLifecycleProvider]:
+    Provider{d2e5d7c video.reface.app/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+      applicationInfo=ApplicationInfo{c7e980 video.reface.app}
+  [video.reface.app.FacebookInitProvider]:
+    Provider{9095902 video.reface.app/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{7439bb9 video.reface.app}
+  [video.reface.app.TTMultiProvider]:
+    Provider{ba5b213 video.reface.app/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+      applicationInfo=ApplicationInfo{b51dbfe video.reface.app}
+
+Key Set Manager:
+  [video.reface.app]
+      Signing KeySets: 5853
+
+Packages:
+  Package [video.reface.app] (7563f5f):
+    userId=10292
+    pkg=Package{9821dac video.reface.app}
+    codePath=/data/app/~~u8waAcHblpaubb8gVtCcTQ==/video.reface.app-orRX1V1sXIQ6nOKIn2wACQ==
+    resourcePath=/data/app/~~u8waAcHblpaubb8gVtCcTQ==/video.reface.app-orRX1V1sXIQ6nOKIn2wACQ==
+    legacyNativeLibraryDir=/data/app/~~u8waAcHblpaubb8gVtCcTQ==/video.reface.app-orRX1V1sXIQ6nOKIn2wACQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=272 minSdk=22 targetSdk=31
+    minExtensionVersions=[]
+    versionName=2.2.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.instagram.android, com.facebook.orca, com.whatsapp, com.snapchat.android, com.zhiliaoapp.musically, com.ss.android.ugc.trill, com.facebook.katana]
+    queriesIntents=[Intent { act=android.intent.action.SEND dat=content://*/... typ=image/* }, Intent { act=android.intent.action.SEND dat=content://*/... typ=video/* }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/video.reface.app
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 16:10:39
+    lastUpdateTime=2022-11-30 16:10:40
+    packageSource=0
+    signatures=PackageSignatures{793a75 version:2, signatures:[85bcdd46], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.CAMERA
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      com.android.vending.BILLING
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      com.google.android.gms.permission.AD_ID
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=71272 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 16:10:40
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      video.reface.app
+    com.google.android.apps.diagnosticstool:
+      video.reface.app
+    com.google.android.settings.intelligence:
+      video.reface.app
+    com.google.android.apps.accessibility.voiceaccess:
+      video.reface.app
+    com.truecaller:
+      video.reface.app
+    video.reface.app:
+      [com.google.android.bluetooth.services,com.android.bluetooth]
+      com.google.android.apps.nbu.files
+      com.google.android.apps.messaging
+      com.google.android.googlequicksearchbox
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.apps.docs
+      com.google.android.gm
+      com.pandavideocompressor
+      com.truecaller
+      com.ninegag.android.app
+      com.fourchars.lmpfree
+      com.lyrebirdstudio.photo_editor_pro
+      com.dv.adm
+      com.cam001.selfie
+      com.zombodroid.MemeGeneratorFullGplay
+      com.pranavpandey.rotation
+      com.utorrent.client.pro
+    com.dv.adm:
+      video.reface.app
+    com.zappcues.gamingmode:
+      video.reface.app
+    com.jio.myjio:
+      video.reface.app
+    com.zombodroid.MemeGeneratorFullGplay:
+      video.reface.app
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [video.reface.app]
+    path: /data/app/~~u8waAcHblpaubb8gVtCcTQ==/video.reface.app-orRX1V1sXIQ6nOKIn2wACQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:508270
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [video.reface.app]
+     base.apk - 1096

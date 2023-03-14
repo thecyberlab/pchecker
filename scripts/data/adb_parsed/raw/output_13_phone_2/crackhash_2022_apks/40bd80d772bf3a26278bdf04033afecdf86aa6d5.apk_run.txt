@@ -1,0 +1,278 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        dc0ba17 com.getepic.Epic/.activities.MainActivity filter 8683fed
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.getepic.com": -1
+          Path: "PatternMatcher{GLOB: /app/.*}"
+          AutoVerify=true
+      fbconnect:
+        62b9e22 com.getepic.Epic/com.facebook.CustomTabActivity filter e646670
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.getepic.Epic": -1
+      genericidp:
+        295ede9 com.getepic.Epic/com.google.firebase.auth.internal.GenericIdpActivity filter 3897a6e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        3ead50f com.getepic.Epic/com.google.firebase.auth.internal.RecaptchaActivity filter 81799c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      fb963356997773451:
+        62b9e22 com.getepic.Epic/com.facebook.CustomTabActivity filter b0ce0b3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb963356997773451"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        dc0ba17 com.getepic.Epic/.activities.MainActivity filter 88c6e04
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        4892359 com.getepic.Epic/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6ff5b1e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        b8f5ca3 com.getepic.Epic/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 3564ba0
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        fb11fff com.getepic.Epic/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 46481cc
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        e1f9c15 com.getepic.Epic/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 2420b2a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.google.android.gms.analytics.ANALYTICS_DISPATCH:
+        909b32b com.getepic.Epic/com.google.android.gms.analytics.AnalyticsReceiver filter bfa9388
+          Action: "com.google.android.gms.analytics.ANALYTICS_DISPATCH"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        265fe5d com.getepic.Epic/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 1dbd3d2
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        fb11fff com.getepic.Epic/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 46481cc
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        5d47121 com.getepic.Epic/com.google.android.gms.analytics.CampaignTrackingReceiver filter 6726946
+          Action: "com.android.vending.INSTALL_REFERRER"
+        cee5707 com.getepic.Epic/com.kochava.base.ReferralReceiver filter 6696034
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.amazon.inapp.purchasing.NOTIFY:
+        4d67fa5 com.getepic.Epic/com.amazon.device.iap.ResponseReceiver filter 8d6cf7a
+          Action: "com.amazon.inapp.purchasing.NOTIFY"
+      android.intent.action.BATTERY_LOW:
+        4892359 com.getepic.Epic/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6ff5b1e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        201bd1b com.getepic.Epic/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3deeb8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        201bd1b com.getepic.Epic/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3deeb8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        201bd1b com.getepic.Epic/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3deeb8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        b8f5ca3 com.getepic.Epic/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 3564ba0
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        df50ff7 com.getepic.Epic/androidx.work.impl.diagnostics.DiagnosticsReceiver filter c3f3e64
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        36ae491 com.getepic.Epic/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter f4daff6
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.auth.api.gms.service.START:
+        14838cd com.getepic.Epic/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 89cd582
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+  com.getepic.Epic:
+    ID: d184838c-cd4e-42ab-836e-d4e39b4b4bc6
+    Signatures: [A9:59:54:C3:B2:C9:87:D8:8E:95:8A:7E:F5:6F:90:F8:25:12:AC:74:44:0F:D4:F0:09:A6:D2:6A:57:EA:85:2C]
+    Domain verification state:
+      www.getepic.com: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.getepic.com
+
+Registered ContentProviders:
+  com.getepic.Epic/com.facebook.internal.FacebookInitProvider:
+    Provider{823bd8c com.getepic.Epic/com.facebook.internal.FacebookInitProvider}
+  com.getepic.Epic/androidx.startup.InitializationProvider:
+    Provider{1408cd5 com.getepic.Epic/androidx.startup.InitializationProvider}
+  com.getepic.Epic/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{5230cea com.getepic.Epic/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.getepic.Epic/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{4d7fbdb com.getepic.Epic/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.getepic.Epic/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{5152678 com.getepic.Epic/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.getepic.Epic.firebaseinitprovider]:
+    Provider{5152678 com.getepic.Epic/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{9535fcc com.getepic.Epic}
+  [com.getepic.Epic.FacebookInitProvider]:
+    Provider{823bd8c com.getepic.Epic/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{3782215 com.getepic.Epic}
+  [com.getepic.Epic.lifecycle-process]:
+    Provider{5230cea com.getepic.Epic/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{5c7192a com.getepic.Epic}
+  [com.getepic.Epic.androidx-startup]:
+    Provider{1408cd5 com.getepic.Epic/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{fecb31b com.getepic.Epic}
+  [com.getepic.Epic.mobileadsinitprovider]:
+    Provider{4d7fbdb com.getepic.Epic/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{83cacb8 com.getepic.Epic}
+
+Key Set Manager:
+  [com.getepic.Epic]
+      Signing KeySets: 5598
+
+Packages:
+  Package [com.getepic.Epic] (cc5ca91):
+    userId=10255
+    pkg=Package{2680b53 com.getepic.Epic}
+    codePath=/data/app/~~gIbA3O_4naGshwYs9Hf4Kg==/com.getepic.Epic-N6M8NxR1kF8DtN2xvms1sg==
+    resourcePath=/data/app/~~gIbA3O_4naGshwYs9Hf4Kg==/com.getepic.Epic-N6M8NxR1kF8DtN2xvms1sg==
+    legacyNativeLibraryDir=/data/app/~~gIbA3O_4naGshwYs9Hf4Kg==/com.getepic.Epic-N6M8NxR1kF8DtN2xvms1sg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=508 minSdk=24 targetSdk=30
+    minExtensionVersions=[]
+    versionName=3.49.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.getepic.Epic
+    supportsScreens=[medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 13:05:07
+    lastUpdateTime=2022-11-30 13:05:09
+    packageSource=0
+    signatures=PackageSignatures{ef24c90 version:3, signatures:[a7e27cb5], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      com.android.vending.CHECK_LICENSE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      com.android.vending.BILLING
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=54065 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 13:05:09
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.getepic.Epic
+    com.google.android.apps.diagnosticstool:
+      com.getepic.Epic
+    com.google.android.settings.intelligence:
+      com.getepic.Epic
+    com.google.android.apps.accessibility.voiceaccess:
+      com.getepic.Epic
+  queryable via interaction:
+    User 0:
+      [com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.location.fused,com.android.dynsystem,com.android.keychain,com.google.android.settings.future.biometrics.faceenroll,com.google.SSRestartDetector,com.android.wallpaperbackup,com.android.inputdevices,com.android.qns,com.android.settings,android,com.android.providers.settings]:
+        com.getepic.Epic
+      [com.google.android.gms,com.google.android.gsf]:
+        com.getepic.Epic
+  queryable via uses-library:
+
+Dexopt state:
+  [com.getepic.Epic]
+    path: /data/app/~~gIbA3O_4naGshwYs9Hf4Kg==/com.getepic.Epic-N6M8NxR1kF8DtN2xvms1sg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:96229
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.getepic.Epic]
+     base.apk - 953

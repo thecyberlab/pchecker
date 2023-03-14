@@ -1,0 +1,236 @@
+Activity Resolver Table:
+  Schemes:
+      darkskyapp:
+        c3a41fe net.darksky.darksky/.DarkSky filter db15875
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "darkskyapp"
+          Authority: "forecast": -1
+        c3a41fe net.darksky.darksky/.DarkSky filter cf4800a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "darkskyapp"
+          Authority: "wear": -1
+      https:
+        c3a41fe net.darksky.darksky/.DarkSky filter 22ff3ac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "darksky.net": -1
+          Path: "PatternMatcher{PREFIX: /forecast}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        c3a41fe net.darksky.darksky/.DarkSky filter d5dad5f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        4d9c07b net.darksky.darksky/.WidgetConfigure filter 37e9e98
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BOOT_COMPLETED:
+        2cc06f1 net.darksky.darksky/.receivers.BootReceiver filter a6292d6
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        c39e957 net.darksky.darksky/.widgets.WeekWidget filter a0b0c44
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "net.darksky.darksky.WIDGET_FORECAST_UPDATED"
+        509212d net.darksky.darksky/.widgets.DaySummaryWidget filter 2cd0662
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "net.darksky.darksky.WIDGET_FORECAST_UPDATED"
+        b09c3f3 net.darksky.darksky/.widgets.NextHourWidget filter dcea8b0
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "net.darksky.darksky.WIDGET_FORECAST_UPDATED"
+        83a329 net.darksky.darksky/.widgets.HorizontalTimelineWidget filter e7926ae
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "net.darksky.darksky.WIDGET_FORECAST_UPDATED"
+        bf2ac4f net.darksky.darksky/.widgets.ClockWidget filter aed9fdc
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "net.darksky.darksky.WIDGET_FORECAST_UPDATED"
+        e0a48e5 net.darksky.darksky/.widgets.ClockWeekWidget filter 2b4ffba
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "net.darksky.darksky.WIDGET_FORECAST_UPDATED"
+        d7be6b net.darksky.darksky/.widgets.SmallConditionWidget filter 9a2ddc8
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "net.darksky.darksky.WIDGET_FORECAST_UPDATED"
+      net.darksky.darksky.WIDGET_FORECAST_UPDATED:
+        c39e957 net.darksky.darksky/.widgets.WeekWidget filter a0b0c44
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "net.darksky.darksky.WIDGET_FORECAST_UPDATED"
+        509212d net.darksky.darksky/.widgets.DaySummaryWidget filter 2cd0662
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "net.darksky.darksky.WIDGET_FORECAST_UPDATED"
+        b09c3f3 net.darksky.darksky/.widgets.NextHourWidget filter dcea8b0
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "net.darksky.darksky.WIDGET_FORECAST_UPDATED"
+        83a329 net.darksky.darksky/.widgets.HorizontalTimelineWidget filter e7926ae
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "net.darksky.darksky.WIDGET_FORECAST_UPDATED"
+        bf2ac4f net.darksky.darksky/.widgets.ClockWidget filter aed9fdc
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "net.darksky.darksky.WIDGET_FORECAST_UPDATED"
+        e0a48e5 net.darksky.darksky/.widgets.ClockWeekWidget filter 2b4ffba
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "net.darksky.darksky.WIDGET_FORECAST_UPDATED"
+        d7be6b net.darksky.darksky/.widgets.SmallConditionWidget filter 9a2ddc8
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "net.darksky.darksky.WIDGET_FORECAST_UPDATED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        2cc06f1 net.darksky.darksky/.receivers.BootReceiver filter a6292d6
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        a9b8e61 net.darksky.darksky/.services.FcmListenerService filter 9a35d86
+          Action: "com.google.firebase.MESSAGING_EVENT"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          darksky.net
+
+Registered ContentProviders:
+  net.darksky.darksky/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{3944311 net.darksky.darksky/com.crashlytics.android.CrashlyticsInitProvider}
+  net.darksky.darksky/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{2b5ec76 net.darksky.darksky/com.google.firebase.provider.FirebaseInitProvider}
+  net.darksky.darksky/androidx.core.content.FileProvider:
+    Provider{ec5d277 net.darksky.darksky/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [net.darksky.darksky.crashlyticsinitprovider]:
+    Provider{3944311 net.darksky.darksky/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{2e39297 net.darksky.darksky}
+  [net.darksky.darksky.fileprovider]:
+    Provider{ec5d277 net.darksky.darksky/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{9599c84 net.darksky.darksky}
+  [net.darksky.darksky.firebaseinitprovider]:
+    Provider{2b5ec76 net.darksky.darksky/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{af00c6d net.darksky.darksky}
+
+Key Set Manager:
+  [net.darksky.darksky]
+      Signing KeySets: 4656
+
+Packages:
+  Package [net.darksky.darksky] (54cb0a2):
+    userId=10374
+    pkg=Package{fd63550 net.darksky.darksky}
+    codePath=/data/app/~~hQrybefoO2cHS1jbHL9sBA==/net.darksky.darksky-kpJloAglsLbzmcVNeX4UVQ==
+    resourcePath=/data/app/~~hQrybefoO2cHS1jbHL9sBA==/net.darksky.darksky-kpJloAglsLbzmcVNeX4UVQ==
+    legacyNativeLibraryDir=/data/app/~~hQrybefoO2cHS1jbHL9sBA==/net.darksky.darksky-kpJloAglsLbzmcVNeX4UVQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=277 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=3.3.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/net.darksky.darksky
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 09:10:46
+    lastUpdateTime=2022-11-30 09:10:47
+    packageSource=0
+    signatures=PackageSignatures{b6a144e version:1, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      com.android.vending.BILLING
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_COARSE_LOCATION
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=55612 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 09:10:47
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      net.darksky.darksky
+    com.google.android.apps.diagnosticstool:
+      net.darksky.darksky
+    com.google.android.settings.intelligence:
+      net.darksky.darksky
+    com.google.android.apps.accessibility.voiceaccess:
+      net.darksky.darksky
+  queryable via interaction:
+    User 0:
+      [com.android.location.fused,com.google.SSRestartDetector,com.android.settings,com.android.wallpaperbackup,com.google.android.settings.future.biometrics.faceenroll,com.android.server.telecom,android,com.android.inputdevices,com.android.providers.settings,com.android.keychain,com.android.qns,com.google.android.iwlan,com.android.localtransport,com.android.dynsystem]:
+        net.darksky.darksky
+      [com.google.android.gms,com.google.android.gsf]:
+        net.darksky.darksky
+      com.google.android.permissioncontroller:
+        net.darksky.darksky
+  queryable via uses-library:
+
+Dexopt state:
+  [net.darksky.darksky]
+    path: /data/app/~~hQrybefoO2cHS1jbHL9sBA==/net.darksky.darksky-kpJloAglsLbzmcVNeX4UVQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:2067995
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [net.darksky.darksky]
+     base.apk - 276

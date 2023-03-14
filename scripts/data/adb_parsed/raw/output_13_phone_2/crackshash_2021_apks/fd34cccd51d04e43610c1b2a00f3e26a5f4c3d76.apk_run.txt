@@ -1,0 +1,649 @@
+Activity Resolver Table:
+  Schemes:
+      io.rzp:
+        a788d43 com.originalpicasodatabase/com.razorpay.CheckoutActivity filter 530bfc0
+          Action: "android.intent.action.MAIN"
+          Scheme: "io.rzp"
+          Authority: "rzp.io": -1
+      fb283913540153641:
+        b70a2ea com.originalpicasodatabase/com.facebook.CustomTabActivity filter b94d9db
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb283913540153641"
+      stripesdk:
+        2dd55fd com.originalpicasodatabase/com.stripe.android.payments.StripeBrowserLauncherActivity filter 71ee2f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "stripesdk"
+          Authority: "payment_return_url": -1
+          Path: "PatternMatcher{LITERAL: /com.originalpicasodatabase}"
+      https:
+        5246f8d com.originalpicasodatabase/.ui.streaming.StreamingetailsActivity filter e8ea542
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "com.originalpicasodatabase.app": -1
+          Path: "PatternMatcher{PREFIX: /streaming}"
+        c22a953 com.originalpicasodatabase/.ui.moviedetails.MovieDetailsActivity filter 38b9290
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "com.originalpicasodatabase.app": -1
+          Path: "PatternMatcher{PREFIX: /movies}"
+        4757789 com.originalpicasodatabase/.ui.seriedetails.SerieDetailsActivity filter d65d38e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "com.originalpicasodatabase.app": -1
+          Path: "PatternMatcher{PREFIX: /series}"
+        8a487af com.originalpicasodatabase/.ui.animes.AnimeDetailsActivity filter fbf47bc
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "com.originalpicasodatabase.app": -1
+          Path: "PatternMatcher{PREFIX: /animes}"
+      fbconnect:
+        b70a2ea com.originalpicasodatabase/com.facebook.CustomTabActivity filter 323ac78
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.originalpicasodatabase": -1
+      com.originalpicasodatabase:
+        ba78ec1 com.originalpicasodatabase/com.paypal.pyplcheckout.home.view.activities.PYPLInitiateCheckoutActivity filter e1cc666
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.originalpicasodatabase"
+          Authority: "paypalxo": -1
+          AutoVerify=true
+        f97bda7 com.originalpicasodatabase/com.paypal.openid.RedirectUriReceiverActivity filter 58ed254
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.originalpicasodatabase"
+          Authority: "paypalpay": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        18d2f51 com.originalpicasodatabase/.ui.splash.SplashActivity filter 72e03b6
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        87d38b7 com.originalpicasodatabase/.ui.player.cast.ExpandedControlsActivity filter 9231824
+          Action: "android.intent.action.MAIN"
+        3b50345 com.originalpicasodatabase/.ui.player.cast.settings.CastPreference filter 76f9a9a
+          Action: "android.intent.action.MAIN"
+        8bbefcb com.originalpicasodatabase/.ui.player.cast.queue.ui.QueueListViewActivity filter d1723a8
+          Action: "android.intent.action.MAIN"
+        eae54f9 com.originalpicasodatabase/disabled_io.presage.mraid.browser.ShortcutActivity filter fb43c3e
+          Action: "android.intent.action.MAIN"
+        cba9f com.originalpicasodatabase/disabled_io.presage.mraid.browser.Android8AndLaterShortcutActivity filter c4217ec
+          Action: "android.intent.action.MAIN"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        8fde923 com.originalpicasodatabase/com.appodeal.ads.AppodealPackageAddedReceiver filter 5371e20
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Scheme: "package"
+        780fb6f com.originalpicasodatabase/com.ogury.analytics.receiver.PackageFullyRemovedReceiver filter 561107c
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+      content:
+        ecb6113 com.originalpicasodatabase/com.ogury.analytics.receiver.EventReminderReceiver filter bde4f50
+          Action: "android.intent.action.EVENT_REMINDER"
+          Scheme: "content"
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        e94b86d com.originalpicasodatabase/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6d1eca2
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        1955e97 com.originalpicasodatabase/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f357884
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        98c61bb com.originalpicasodatabase/.ui.downloadmanager.receiver.BootReceiver filter 82ec6d8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        98c61bb com.originalpicasodatabase/.ui.downloadmanager.receiver.BootReceiver filter 82ec6d8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        4c74d33 com.originalpicasodatabase/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ad398f0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        e516e69 com.originalpicasodatabase/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 68630ee
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      .ui.downloadmanager.receiver.NotificationReceiver.NOTIFY_ACTION_SHUTDOWN_APP:
+        7f647b5 com.originalpicasodatabase/.ui.downloadmanager.receiver.NotificationReceiver filter 8b3de4a
+          Action: ".ui.downloadmanager.receiver.NotificationReceiver.NOTIFY_ACTION_SHUTDOWN_APP"
+      android.telephony.action.CARRIER_CONFIG_CHANGED:
+        7f5f477 com.originalpicasodatabase/com.ogury.analytics.receiver.CarrierConfigChangedReceiver filter f3f88e4
+          Action: "android.telephony.action.CARRIER_CONFIG_CHANGED"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        425599b com.originalpicasodatabase/com.ogury.analytics.receiver.BootCompletedReceiver filter e169138
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        f90aa31 com.originalpicasodatabase/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 7599516
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        4c74d33 com.originalpicasodatabase/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ad398f0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        65c3d9 com.originalpicasodatabase/com.yandex.metrica.MetricaEventHandler filter fd6b19e
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.app.action.NEXT_ALARM_CLOCK_CHANGED:
+        e1af14d com.originalpicasodatabase/com.ogury.analytics.receiver.NextAlarmClockChangedReceiver filter 58c6402
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+      android.bluetooth.device.action.ACL_CONNECTED:
+        1b25549 com.originalpicasodatabase/com.ogury.analytics.receiver.BluetoothReceiver filter e60be4e
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      com.yandex.metrica.configuration.service.PLC:
+        6bbf47f com.originalpicasodatabase/com.yandex.metrica.ConfigurationServiceReceiver filter bbffc4c
+          Action: "com.yandex.metrica.configuration.service.PLC"
+      com.google.android.c2dm.intent.RECEIVE:
+        b751b87 com.originalpicasodatabase/com.google.firebase.iid.FirebaseInstanceIdReceiver filter aa0ab4
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        e94b86d com.originalpicasodatabase/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6d1eca2
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        1f898f com.originalpicasodatabase/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cf1541c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        1f898f com.originalpicasodatabase/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cf1541c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        92b1511 com.originalpicasodatabase/com.ogury.analytics.receiver.TimeSetReceiver filter 3e95676
+          Action: "android.intent.action.TIME_SET"
+      android.intent.action.BOOT_COMPLETED:
+        98c61bb com.originalpicasodatabase/.ui.downloadmanager.receiver.BootReceiver filter 82ec6d8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+        1f898f com.originalpicasodatabase/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cf1541c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        2e196dd com.originalpicasodatabase/com.startapp.sdk.adsbase.remoteconfig.BootCompleteListener filter 1f2c252
+          Action: "android.intent.action.BOOT_COMPLETED"
+        425599b com.originalpicasodatabase/com.ogury.analytics.receiver.BootCompletedReceiver filter e169138
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.USER_PRESENT:
+        e65c495 com.originalpicasodatabase/com.ogury.analytics.receiver.UserPresentReceiver filter 37849aa
+          Action: "android.intent.action.USER_PRESENT"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        1955e97 com.originalpicasodatabase/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f357884
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      rzp.device_token.share:
+        c6f81a1 com.originalpicasodatabase/com.razorpay.RzpTokenReceiver filter 87f6fc6
+          Action: "rzp.device_token.share"
+      android.hardware.usb.action.USB_ACCESSORY_DETACHED:
+        1b25549 com.originalpicasodatabase/com.ogury.analytics.receiver.BluetoothReceiver filter e60be4e
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        9152fab com.originalpicasodatabase/androidx.work.impl.diagnostics.DiagnosticsReceiver filter bcd9608
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.bluetooth.device.action.ACL_DISCONNECTED:
+        1b25549 com.originalpicasodatabase/com.ogury.analytics.receiver.BluetoothReceiver filter e60be4e
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        4098825 com.originalpicasodatabase/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 1286dfa
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      metrica:
+        46a6481 com.originalpicasodatabase/com.yandex.metrica.MetricaService filter 8b24926
+          Action: "com.yandex.metrica.IMetricaService"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "metrica"
+
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        941fd05 com.originalpicasodatabase/.ui.notifications.NotificationManager filter 30e715a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        94bdf8b com.originalpicasodatabase/com.google.firebase.messaging.FirebaseMessagingService filter 3ecb868
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.yandex.metrica.configuration.ACTION_INIT:
+        f96e967 com.originalpicasodatabase/com.yandex.metrica.ConfigurationService filter b08f314
+          Action: "com.yandex.metrica.configuration.ACTION_INIT"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          com.originalpicasodatabase.app
+
+Registered ContentProviders:
+  com.originalpicasodatabase/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{336c653 com.originalpicasodatabase/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.originalpicasodatabase/com.vungle.warren.utility.VungleProvider:
+    Provider{5f1eb90 com.originalpicasodatabase/com.vungle.warren.utility.VungleProvider}
+  com.originalpicasodatabase/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{f275c89 com.originalpicasodatabase/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.originalpicasodatabase/androidx.core.content.FileProvider:
+    Provider{cea548e com.originalpicasodatabase/androidx.core.content.FileProvider}
+  com.originalpicasodatabase/com.startapp.sdk.adsbase.StartAppInitProvider:
+    Provider{95d74af com.originalpicasodatabase/com.startapp.sdk.adsbase.StartAppInitProvider}
+  com.originalpicasodatabase/com.appodeal.ads.ApdContentProvider:
+    Provider{4b230bc com.originalpicasodatabase/com.appodeal.ads.ApdContentProvider}
+  com.originalpicasodatabase/com.yandex.metrica.PreloadInfoContentProvider:
+    Provider{8203845 com.originalpicasodatabase/com.yandex.metrica.PreloadInfoContentProvider}
+  com.originalpicasodatabase/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{13b2b9a com.originalpicasodatabase/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.originalpicasodatabase/com.download.library.DownloadFileProvider:
+    Provider{96accb com.originalpicasodatabase/com.download.library.DownloadFileProvider}
+  com.originalpicasodatabase/com.appodeal.ads.adapters.bidmachine.ApdBidMachineContentProvider:
+    Provider{8cf9ca8 com.originalpicasodatabase/com.appodeal.ads.adapters.bidmachine.ApdBidMachineContentProvider}
+  com.originalpicasodatabase/com.squareup.picasso.PicassoProvider:
+    Provider{41113c1 com.originalpicasodatabase/com.squareup.picasso.PicassoProvider}
+  com.originalpicasodatabase/com.appodeal.ads.services.crash_hunter.ApdCrashHunterContentProvider:
+    Provider{7906766 com.originalpicasodatabase/com.appodeal.ads.services.crash_hunter.ApdCrashHunterContentProvider}
+  com.originalpicasodatabase/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{6e14aa7 com.originalpicasodatabase/com.google.firebase.provider.FirebaseInitProvider}
+  com.originalpicasodatabase/com.facebook.internal.FacebookInitProvider:
+    Provider{6d5db54 com.originalpicasodatabase/com.facebook.internal.FacebookInitProvider}
+  com.originalpicasodatabase/com.github.dhaval2404.imagepicker.ImagePickerFileProvider:
+    Provider{8da2afd com.originalpicasodatabase/com.github.dhaval2404.imagepicker.ImagePickerFileProvider}
+  com.originalpicasodatabase/com.smaato.sdk.sys.LifecycleProvider:
+    Provider{aab93f2 com.originalpicasodatabase/com.smaato.sdk.sys.LifecycleProvider}
+  com.originalpicasodatabase/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{14dea43 com.originalpicasodatabase/com.facebook.ads.AudienceNetworkContentProvider}
+  com.originalpicasodatabase/com.applovin.sdk.AppLovinInitProvider:
+    Provider{e5f58c0 com.originalpicasodatabase/com.applovin.sdk.AppLovinInitProvider}
+  com.originalpicasodatabase/androidx.startup.InitializationProvider:
+    Provider{2379f9 com.originalpicasodatabase/androidx.startup.InitializationProvider}
+  com.originalpicasodatabase/com.cardinalcommerce.shared.cs.utils.CCInitProvider:
+    Provider{ddafd3e com.originalpicasodatabase/com.cardinalcommerce.shared.cs.utils.CCInitProvider}
+  com.originalpicasodatabase/com.ironsource.lifecycle.IronsourceLifecycleProvider:
+    Provider{b5ae79f com.originalpicasodatabase/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+  com.originalpicasodatabase/org.acra.attachment.AcraContentProvider:
+    Provider{c4140ec com.originalpicasodatabase/org.acra.attachment.AcraContentProvider}
+
+ContentProvider Authorities:
+  [com.originalpicasodatabase.appmetrica.preloadinfo.retail]:
+    Provider{8203845 com.originalpicasodatabase/com.yandex.metrica.PreloadInfoContentProvider}
+      applicationInfo=ApplicationInfo{1ee7ba9 com.originalpicasodatabase}
+  [com.originalpicasodatabase.imagepicker.provider]:
+    Provider{8da2afd com.originalpicasodatabase/com.github.dhaval2404.imagepicker.ImagePickerFileProvider}
+      applicationInfo=ApplicationInfo{9ee552e com.originalpicasodatabase}
+  [com.originalpicasodatabase.smaato-lifecycle-process]:
+    Provider{13b2b9a com.originalpicasodatabase/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{80278cf com.originalpicasodatabase}
+  [com.originalpicasodatabase.vungle-provider]:
+    Provider{5f1eb90 com.originalpicasodatabase/com.vungle.warren.utility.VungleProvider}
+      applicationInfo=ApplicationInfo{8f6b25c com.originalpicasodatabase}
+  [com.originalpicasodatabase.AppSessionManagerContentProvider]:
+    Provider{4b230bc com.originalpicasodatabase/com.appodeal.ads.ApdContentProvider}
+      applicationInfo=ApplicationInfo{a8a2965 com.originalpicasodatabase}
+  [com.originalpicasodatabase.DownloadFileProvider]:
+    Provider{96accb com.originalpicasodatabase/com.download.library.DownloadFileProvider}
+      applicationInfo=ApplicationInfo{e8e963a com.originalpicasodatabase}
+  [com.originalpicasodatabase.applovincontentprovider]:
+    Provider{e5f58c0 com.originalpicasodatabase/com.applovin.sdk.AppLovinInitProvider}
+      applicationInfo=ApplicationInfo{f57d2eb com.originalpicasodatabase}
+  [com.originalpicasodatabase.CCInitProvider]:
+    Provider{ddafd3e com.originalpicasodatabase/com.cardinalcommerce.shared.cs.utils.CCInitProvider}
+      applicationInfo=ApplicationInfo{76a9848 com.originalpicasodatabase}
+  [com.originalpicasodatabase.androidx-startup]:
+    Provider{2379f9 com.originalpicasodatabase/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{278f6e1 com.originalpicasodatabase}
+  [com.originalpicasodatabase.IronsourceLifecycleProvider]:
+    Provider{b5ae79f com.originalpicasodatabase/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+      applicationInfo=ApplicationInfo{bbfdc06 com.originalpicasodatabase}
+  [com.originalpicasodatabase.firebaseinitprovider]:
+    Provider{6e14aa7 com.originalpicasodatabase/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{85eb2c7 com.originalpicasodatabase}
+  [com.originalpicasodatabase.ApdBidMachineContentProvider]:
+    Provider{8cf9ca8 com.originalpicasodatabase/com.appodeal.ads.adapters.bidmachine.ApdBidMachineContentProvider}
+      applicationInfo=ApplicationInfo{7b4f0f4 com.originalpicasodatabase}
+  [com.originalpicasodatabase.startappinitprovider]:
+    Provider{95d74af com.originalpicasodatabase/com.startapp.sdk.adsbase.StartAppInitProvider}
+      applicationInfo=ApplicationInfo{a2d201d com.originalpicasodatabase}
+  [com.originalpicasodatabase.lifecycle-process]:
+    Provider{336c653 com.originalpicasodatabase/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{86db292 com.originalpicasodatabase}
+  [com.originalpicasodatabase.FacebookInitProvider]:
+    Provider{6d5db54 com.originalpicasodatabase/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{209b463 com.originalpicasodatabase}
+  [com.originalpicasodatabase.smaato-lifecycling]:
+    Provider{aab93f2 com.originalpicasodatabase/com.smaato.sdk.sys.LifecycleProvider}
+      applicationInfo=ApplicationInfo{aaa2860 com.originalpicasodatabase}
+  [com.originalpicasodatabase.AudienceNetworkContentProvider]:
+    Provider{14dea43 com.originalpicasodatabase/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{d00a119 com.originalpicasodatabase}
+  [com.originalpicasodatabase.mobileadsinitprovider]:
+    Provider{f275c89 com.originalpicasodatabase/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{cb065de com.originalpicasodatabase}
+  [com.originalpicasodatabase.ApdCrashHunterContentProvider]:
+    Provider{7906766 com.originalpicasodatabase/com.appodeal.ads.services.crash_hunter.ApdCrashHunterContentProvider}
+      applicationInfo=ApplicationInfo{dd933bf com.originalpicasodatabase}
+  [com.originalpicasodatabase.provider]:
+    Provider{cea548e com.originalpicasodatabase/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{7f96a8c com.originalpicasodatabase}
+  [com.originalpicasodatabase.com.squareup.picasso]:
+    Provider{41113c1 com.originalpicasodatabase/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{7f135d5 com.originalpicasodatabase}
+  [com.originalpicasodatabase.acra]:
+    Provider{c4140ec com.originalpicasodatabase/org.acra.attachment.AcraContentProvider}
+      applicationInfo=ApplicationInfo{7d901ea com.originalpicasodatabase}
+
+Key Set Manager:
+  [com.originalpicasodatabase]
+      Signing KeySets: 6046
+
+Packages:
+  Package [com.originalpicasodatabase] (af74cdb):
+    userId=10380
+    pkg=Package{bc5c623 com.originalpicasodatabase}
+    codePath=/data/app/~~2pXAyyPKF83TcflRtaE_Kg==/com.originalpicasodatabase-URrRMfTzXUfJBqz6jdqF_Q==
+    resourcePath=/data/app/~~2pXAyyPKF83TcflRtaE_Kg==/com.originalpicasodatabase-URrRMfTzXUfJBqz6jdqF_Q==
+    legacyNativeLibraryDir=/data/app/~~2pXAyyPKF83TcflRtaE_Kg==/com.originalpicasodatabase-URrRMfTzXUfJBqz6jdqF_Q==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=102 minSdk=23 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.6.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.android.chrome, com.facebook.katana, com.appnext.core, com.huawei.appmarket]
+    queriesIntents=[Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.OPEN_DOCUMENT_TREE }, Intent { act=android.intent.action.SEND dat=content://*/... typ=message/rfc822 }, Intent { act=android.intent.action.SEND_MULTIPLE dat=content://*/... typ=message/rfc822 }, Intent { act=android.intent.action.SENDTO }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.media.browse.MediaBrowserService }, Intent { act=android.intent.action.MAIN }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }, Intent { act=com.yandex.android.advid.IDENTIFIER_SERVICE }, Intent { act=com.uodis.opendevice.OPENIDS_SERVICE }]
+    dataDir=/data/user/0/com.originalpicasodatabase
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 20:22:03
+    lastUpdateTime=2022-11-30 20:22:05
+    packageSource=0
+    signatures=PackageSignatures{7a63720 version:2, signatures:[9c12e809], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.WRITE_INTERNAL_STORAGE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permifControllerActivityssion.RECEIVE_BOOT_COMPLETED
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.EXPAND_STATUS_BAR
+      android.permission.READ_PHONE_STATE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.WRITE_SETTINGS
+      com.android.vending.CHECK_LICENSE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.gms.permission.AD_ID
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.EXPAND_STATUS_BAR: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=101496 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 20:22:05
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.originalpicasodatabase:
+      com.android.chrome
+  queries via component:
+    com.google.android.apps.messaging:
+      com.originalpicasodatabase
+    com.google.android.apps.diagnosticstool:
+      com.originalpicasodatabase
+    com.google.android.settings.intelligence:
+      com.originalpicasodatabase
+    com.google.android.apps.accessibility.voiceaccess:
+      com.originalpicasodatabase
+    com.google.android.storagemanager:
+      com.originalpicasodatabase
+    com.google.android.pixel.setupwizard:
+      com.originalpicasodatabase
+    com.zhiliaoapp.musically:
+      com.originalpicasodatabase
+    com.truecaller:
+      com.originalpicasodatabase
+    com.dv.adm:
+      com.originalpicasodatabase
+    com.zappcues.gamingmode:
+      com.originalpicasodatabase
+    com.originalpicasodatabase:
+      [com.google.android.bluetooth.services,com.android.bluetooth]
+      com.google.android.documentsui
+      com.verizon.services
+      com.google.android.projection.gearhead
+      com.google.android.apps.nbu.files
+      com.google.android.apps.recorder
+      com.google.android.apps.tips
+      com.google.android.wfcactivation
+      com.google.android.tetheringentitlement
+      com.google.android.apps.messaging
+      com.google.android.apps.safetyhub
+      com.google.android.carrierlocation
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.restore
+      com.google.android.googlequicksearchbox
+      com.google.android.dialer
+      com.google.android.as
+      com.google.android.settings.intelligence
+      com.google.android.GoogleCamera
+      com.google.android.setupwizard
+      com.google.android.calculator
+      com.android.chrome
+      com.google.android.deskclock
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.calendar
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.marvin.talkback
+      com.google.android.contacts
+      com.google.android.apps.docs
+      com.google.android.videos
+      com.google.android.apps.accessibility.voiceaccess
+      com.google.android.inputmethod.latin
+      com.google.android.apps.youtube.music
+      com.google.android.gm
+      [app id 10195 not installed]
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.shannon.rcsservice
+      com.google.android.pixel.setupwizard
+      com.android.cts.priv.ctsshim
+      com.android.cts.ctsshim
+      com.google.android.cellbroadcastreceiver
+      com.zhiliaoapp.musically
+      com.touchtype.swiftkey
+      com.pandavideocompressor
+      net.eagin.software.android.dejaloYa
+      radiotime.player
+      org.malwarebytes.antimalware
+      ru.iptvremote.android.iptv.pro
+      com.getmimo
+      net.zedge.android
+      com.truecaller
+      com.languagedrops.drops.international
+      hotspotshield.android.vpn
+      com.wallpaperscraft.wallpaper
+      com.kizeetech.newankaradesigns
+      com.zoho.assist.agent
+      deezer.android.app
+      ipnossoft.rma.free
+      wsj.reader_sp
+      com.callapp.contacts
+      com.duolingo
+      com.darinsoft.vimo
+      com.ninegag.android.app
+      cn.wps.moffice_eng
+      vsin.t16_funny_photo
+      com.mxtech.videoplayer.television
+      com.mcdonalds.app
+      com.catdaddy.cat22
+      com.fourchars.lmpfree
+      com.mycompany.app.soulbrowser
+      com.commsource.beautyplus
+      ringtone.maker.mp3.cutter.audio
+      ins.story.unfold
+      com.navimods.radio
+      com.lyrebirdstudio.photo_editor_pro
+      easynotes.notes.notepad.notebook.privatenotes.note
+      com.camerasideas.instashot
+      com.pikoo.app
+      com.mikewheelermedia
+      com.mobisystems.office
+      com.michaldrabik.showly2
+      com.shazam.android
+      com.dv.adm
+      com.frankthebrilliant.app
+      com.brit.swift.minimal
+      com.zappcues.gamingmode
+      com.cam001.selfie
+      com.fitapp
+      com.brit.swiftdark.substratum
+      com.hungama.myplay.activity
+      com.vicman.toonmeapp
+      com.subsplashconsulting.s_NKSKD3
+      deepfinity.android
+      com.king.blossomblast
+      com.bitsmedia.android.muslimpro
+      com.yahoo.mobile.client.android.weather
+      com.picsart.studio.light
+      yo.app
+      com.simplehabit.simplehabitapp
+      com.ludia.jurassicworld
+      com.accuweather.android
+      com.weather.Weather
+      com.cooyostudio.marble.blast
+      com.cyberlink.powerdirector.DRA140225_01
+      com.videoeditorpro.android
+      com.tomtom.gplay.navapp.nds
+      com.jio.myjio
+      video.reface.app
+      com.ledblinker.pro
+      com.getepic.Epic
+      com.zombodroid.MemeGeneratorFullGplay
+      com.ufotosoft.justshot
+      com.pranavpandey.rotation
+      com.nikitadev.irregularverbspro
+      com.Wifi.lte5g.lte4g.lte3g.speedtest.Internetspeed
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+      com.unvoid.borealis
+      com.osheden.azulox
+    com.jio.myjio:
+      com.originalpicasodatabase
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.google.android.iwlan,com.android.keychain,com.android.server.telecom,com.android.location.fused,com.google.android.settings.future.biometrics.faceenroll,com.android.qns,com.android.wallpaperbackup,com.android.inputdevices,com.android.localtransport,com.android.providers.settings,android,com.android.settings,com.android.dynsystem]:
+        com.originalpicasodatabase
+      [com.google.android.gms,com.google.android.gsf]:
+        com.originalpicasodatabase
+      com.android.vending:
+        com.originalpicasodatabase
+      com.originalpicasodatabase:
+        com.google.android.webview
+  queryable via uses-library:
+
+Dexopt state:
+  [com.originalpicasodatabase]
+    path: /data/app/~~2pXAyyPKF83TcflRtaE_Kg==/com.originalpicasodatabase-URrRMfTzXUfJBqz6jdqF_Q==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1385655
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.originalpicasodatabase]
+     base.apk - 1401

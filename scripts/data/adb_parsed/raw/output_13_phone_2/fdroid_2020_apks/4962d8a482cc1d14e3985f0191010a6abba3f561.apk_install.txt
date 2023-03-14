@@ -1,0 +1,258 @@
+Activity Resolver Table:
+  Full MIME Types:
+      application/x-bitcoin-wallet-backup:
+        aaa0a72 de.schildbach.wallet/.ui.backup.RestoreWalletFromExternalActivity filter fc15ec3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/x-bitcoin-wallet-backup"
+      application/bitcoin-paymentrequest:
+        5a24c41 de.schildbach.wallet/.ui.send.SendCoinsActivity filter e80cdd4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/bitcoin-paymentrequest"
+        5a24c41 de.schildbach.wallet/.ui.send.SendCoinsActivity filter 1866b7d
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/bitcoin-paymentrequest"
+      application/x-btctx:
+        52b521a de.schildbach.wallet/.WalletActivity filter a786728
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/x-btctx"
+
+  Base MIME Types:
+      application:
+        52b521a de.schildbach.wallet/.WalletActivity filter a786728
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/x-btctx"
+        5a24c41 de.schildbach.wallet/.ui.send.SendCoinsActivity filter e80cdd4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/bitcoin-paymentrequest"
+        5a24c41 de.schildbach.wallet/.ui.send.SendCoinsActivity filter 1866b7d
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/bitcoin-paymentrequest"
+        aaa0a72 de.schildbach.wallet/.ui.backup.RestoreWalletFromExternalActivity filter fc15ec3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/x-bitcoin-wallet-backup"
+
+  Schemes:
+      bitcoin:
+        5a24c41 de.schildbach.wallet/.ui.send.SendCoinsActivity filter 49c75e6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bitcoin"
+          Scheme: "BITCOIN"
+        5a24c41 de.schildbach.wallet/.ui.send.SendCoinsActivity filter 86e7727
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "bitcoin"
+      BITCOIN:
+        5a24c41 de.schildbach.wallet/.ui.send.SendCoinsActivity filter 49c75e6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bitcoin"
+          Scheme: "BITCOIN"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        52b521a de.schildbach.wallet/.WalletActivity filter 92114b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.VIEW:
+        5a24c41 de.schildbach.wallet/.ui.send.SendCoinsActivity filter e80cdd4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/bitcoin-paymentrequest"
+        aaa0a72 de.schildbach.wallet/.ui.backup.RestoreWalletFromExternalActivity filter fc15ec3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/x-bitcoin-wallet-backup"
+      android.nfc.action.NDEF_DISCOVERED:
+        52b521a de.schildbach.wallet/.WalletActivity filter a786728
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/x-btctx"
+        5a24c41 de.schildbach.wallet/.ui.send.SendCoinsActivity filter 1866b7d
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/bitcoin-paymentrequest"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BOOT_COMPLETED:
+        18a5bbe de.schildbach.wallet/.service.BootstrapReceiver filter 2d1241f
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        e06f340 de.schildbach.wallet/.WalletBalanceWidgetProvider filter a934279
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        18a5bbe de.schildbach.wallet/.service.BootstrapReceiver filter b08036c
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Domain verification status:
+
+Registered ContentProviders:
+  de.schildbach.wallet/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{c8ebc2a de.schildbach.wallet/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  de.schildbach.wallet/androidx.core.content.FileProvider:
+    Provider{8971a1b de.schildbach.wallet/androidx.core.content.FileProvider}
+  de.schildbach.wallet/.data.ExchangeRatesProvider:
+    Provider{e2c87b8 de.schildbach.wallet/.data.ExchangeRatesProvider}
+
+ContentProvider Authorities:
+  [de.schildbach.wallet.lifecycle-process]:
+    Provider{c8ebc2a de.schildbach.wallet/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{aa00991 de.schildbach.wallet}
+  [de.schildbach.wallet.file_attachment]:
+    Provider{8971a1b de.schildbach.wallet/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{3470f6 de.schildbach.wallet}
+  [de.schildbach.wallet.exchange_rates]:
+    Provider{e2c87b8 de.schildbach.wallet/.data.ExchangeRatesProvider}
+      applicationInfo=ApplicationInfo{5033cf7 de.schildbach.wallet}
+
+Key Set Manager:
+  [de.schildbach.wallet]
+      Signing KeySets: 6494
+
+Packages:
+  Package [de.schildbach.wallet] (cfe6764):
+    userId=10380
+    pkg=Package{72aadcd de.schildbach.wallet}
+    codePath=/data/app/~~9op-rgNb8FwJv4IRs7dQkg==/de.schildbach.wallet-b3gh7iQUNFPcvLUU5NTx0w==
+    resourcePath=/data/app/~~9op-rgNb8FwJv4IRs7dQkg==/de.schildbach.wallet-b3gh7iQUNFPcvLUU5NTx0w==
+    legacyNativeLibraryDir=/data/app/~~9op-rgNb8FwJv4IRs7dQkg==/de.schildbach.wallet-b3gh7iQUNFPcvLUU5NTx0w==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=427 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=7.27
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/de.schildbach.wallet
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 20:57:32
+    lastUpdateTime=2022-11-30 20:57:33
+    packageSource=0
+    signatures=PackageSignatures{6a4b193 version:1, signatures:[88a55f80], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.BLUETOOTH
+      android.permission.NFC
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.CAMERA
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=104461 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 20:57:33
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      de.schildbach.wallet
+    com.google.android.apps.diagnosticstool:
+      de.schildbach.wallet
+    com.google.android.settings.intelligence:
+      de.schildbach.wallet
+    com.google.android.apps.docs:
+      de.schildbach.wallet
+    com.google.android.apps.accessibility.voiceaccess:
+      de.schildbach.wallet
+    com.google.android.gm:
+      de.schildbach.wallet
+    com.zhiliaoapp.musically:
+      de.schildbach.wallet
+    com.truecaller:
+      de.schildbach.wallet
+    com.dv.adm:
+      de.schildbach.wallet
+    com.zappcues.gamingmode:
+      de.schildbach.wallet
+    com.jio.myjio:
+      de.schildbach.wallet
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [de.schildbach.wallet]
+    path: /data/app/~~9op-rgNb8FwJv4IRs7dQkg==/de.schildbach.wallet-b3gh7iQUNFPcvLUU5NTx0w==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:267385
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [de.schildbach.wallet]
+     base.apk - 246

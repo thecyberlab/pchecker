@@ -1,0 +1,187 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        b95752e com.wireguard.android/.activity.MainActivity filter 7eb18cf
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+        133c965 com.wireguard.android/.activity.LogViewerActivity filter 387b63a
+          Action: "android.intent.action.MAIN"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        b95752e com.wireguard.android/.activity.MainActivity filter fc2d25c
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.wireguard.android.action.SET_TUNNEL_UP:
+        a1c96e1 com.wireguard.android/.model.TunnelManager$IntentReceiver filter 72afc06
+          Action: "com.wireguard.android.action.REFRESH_TUNNEL_STATES"
+          Action: "com.wireguard.android.action.SET_TUNNEL_UP"
+          Action: "com.wireguard.android.action.SET_TUNNEL_DOWN"
+      com.wireguard.android.action.REFRESH_TUNNEL_STATES:
+        a1c96e1 com.wireguard.android/.model.TunnelManager$IntentReceiver filter 72afc06
+          Action: "com.wireguard.android.action.REFRESH_TUNNEL_STATES"
+          Action: "com.wireguard.android.action.SET_TUNNEL_UP"
+          Action: "com.wireguard.android.action.SET_TUNNEL_DOWN"
+      com.wireguard.android.action.SET_TUNNEL_DOWN:
+        a1c96e1 com.wireguard.android/.model.TunnelManager$IntentReceiver filter 72afc06
+          Action: "com.wireguard.android.action.REFRESH_TUNNEL_STATES"
+          Action: "com.wireguard.android.action.SET_TUNNEL_UP"
+          Action: "com.wireguard.android.action.SET_TUNNEL_DOWN"
+      android.intent.action.BOOT_COMPLETED:
+        52a72eb com.wireguard.android/.BootShutdownReceiver filter ed8b848
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_SHUTDOWN:
+        52a72eb com.wireguard.android/.BootShutdownReceiver filter ed8b848
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.BOOT_COMPLETED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        8bb52c7 com.wireguard.android/.QuickTileService filter 7e510f4 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.net.VpnService:
+        86ac01d com.wireguard.android/.backend.GoBackend$VpnService filter f6ad292 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.wireguard.android.permission.CONTROL_TUNNELS] (2912507):
+    sourcePackage=com.wireguard.android
+    uid=10907 gids=[] type=0 prot=dangerous
+    perm=PermissionInfo{b7f1634 com.wireguard.android.permission.CONTROL_TUNNELS}
+
+Registered ContentProviders:
+  com.wireguard.android/.activity.LogViewerActivity$ExportedLogContentProvider:
+    Provider{e187c5d com.wireguard.android/.activity.LogViewerActivity$ExportedLogContentProvider}
+
+ContentProvider Authorities:
+  [com.wireguard.android.exported-log]:
+    Provider{e187c5d com.wireguard.android/.activity.LogViewerActivity$ExportedLogContentProvider}
+      applicationInfo=ApplicationInfo{31161a0 com.wireguard.android}
+
+Key Set Manager:
+  [com.wireguard.android]
+      Signing KeySets: 6999
+
+Packages:
+  Package [com.wireguard.android] (1f7611e):
+    userId=10907
+    pkg=Package{3baf7cc com.wireguard.android}
+    codePath=/data/app/~~_JaN3YQjyD0L7V6n4b-ZWw==/com.wireguard.android-956PGfi2tRyuulrJ-JyuUA==
+    resourcePath=/data/app/~~_JaN3YQjyD0L7V6n4b-ZWw==/com.wireguard.android-956PGfi2tRyuulrJ-JyuUA==
+    legacyNativeLibraryDir=/data/app/~~_JaN3YQjyD0L7V6n4b-ZWw==/com.wireguard.android-956PGfi2tRyuulrJ-JyuUA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=472 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=1.0.20200401
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.wireguard.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 21:28:58
+    lastUpdateTime=2022-11-30 21:29:00
+    packageSource=0
+    signatures=PackageSignatures{6cb2b1b version:1, signatures:[ae0266ee], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ ]
+    declared permissions:
+      com.wireguard.android.permission.CONTROL_TUNNELS: prot=dangerous, INSTALLED
+    requested permissions:
+      android.permission.CAMERA
+      android.permission.INTERNET
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.USE_BIOMETRIC
+      android.permission.USE_FINGERPRINT
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+    User 0: ceDataInode=109975 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 21:29:00
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.diagnosticstool:
+      com.wireguard.android
+    com.google.android.settings.intelligence:
+      com.wireguard.android
+    com.google.android.apps.accessibility.voiceaccess:
+      com.wireguard.android
+    com.zhiliaoapp.musically:
+      com.wireguard.android
+    com.truecaller:
+      com.wireguard.android
+    com.dv.adm:
+      com.wireguard.android
+    com.zappcues.gamingmode:
+      com.wireguard.android
+    com.jio.myjio:
+      com.wireguard.android
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.wireguard.android]
+    path: /data/app/~~_JaN3YQjyD0L7V6n4b-ZWw==/com.wireguard.android-956PGfi2tRyuulrJ-JyuUA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:2154200
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.wireguard.android]
+     base.apk - 210

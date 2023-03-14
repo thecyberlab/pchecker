@@ -1,0 +1,356 @@
+Activity Resolver Table:
+  Schemes:
+      battleme:
+        d731ef1 com.komspek.battleme/.PreloadActivity filter f32c157
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "battleme"
+      https:
+        d731ef1 com.komspek.battleme/.PreloadActivity filter f09b92d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "go.bttl.me": -1
+          Authority: "rap.bttl.me": -1
+          Authority: "share.rapfa.me": -1
+          Authority: "share.rapfame.app": -1
+          Authority: "hotz-alternate.app.link": -1
+          Authority: "hotz.test-app.link": -1
+          Authority: "hotz-alternate.test-app.link": -1
+          AutoVerify=true
+      fbconnect:
+        35dbe62 com.komspek.battleme/com.facebook.CustomTabActivity filter 7da20b0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.komspek.battleme": -1
+      genericidp:
+        a2e844f com.komspek.battleme/com.google.firebase.auth.internal.GenericIdpActivity filter 63897dc
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      fb1399609550345148:
+        35dbe62 com.komspek.battleme/com.facebook.CustomTabActivity filter b81bf3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb1399609550345148"
+      recaptcha:
+        485e0e5 com.komspek.battleme/com.google.firebase.auth.internal.RecaptchaActivity filter da4b7ba
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      content:
+        5f5bb29 com.komspek.battleme/.v2.ui.activity.section.WebViewActivity filter 35d5eae
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Authority: "settings_web_static": -1
+      rapfame:
+        d731ef1 com.komspek.battleme/.PreloadActivity filter fcf0444
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "rapfame"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d731ef1 com.komspek.battleme/.PreloadActivity filter cd7cad6
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        1f8479d com.komspek.battleme/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter cf68412
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        b90ae47 com.komspek.battleme/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 39e0674
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        91fe7e3 com.komspek.battleme/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 7cf15e0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        716c099 com.komspek.battleme/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 2b4cf5e
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        2f9166b com.komspek.battleme/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter aa555c8
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        91fe7e3 com.komspek.battleme/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 7cf15e0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        938a661 com.komspek.battleme/com.google.firebase.iid.FirebaseInstanceIdReceiver filter fd69586
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        1f8479d com.komspek.battleme/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter cf68412
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        edf1f3f com.komspek.battleme/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a3fb00c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        edf1f3f com.komspek.battleme/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a3fb00c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        edf1f3f com.komspek.battleme/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a3fb00c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        b90ae47 com.komspek.battleme/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 39e0674
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        a09cd55 com.komspek.battleme/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 77a836a
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        130705b com.komspek.battleme/.firebase.messaging.BattleMeFirebaseMessagingService filter 53dc0f8
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        e7bb737 com.komspek.battleme/com.google.firebase.messaging.FirebaseMessagingService filter 809f4a4
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.auth.api.gms.service.START:
+        3e6e9d1 com.komspek.battleme/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter d356c36
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+  com.komspek.battleme:
+    ID: 6f6cd565-c9c5-4598-9179-7adf00d9a333
+    Signatures: [3B:61:C2:A8:2A:FF:9F:76:52:FF:E0:B0:4B:E3:C8:F2:48:B5:E1:AA:70:63:F1:A3:84:6F:0C:F5:C7:78:62:8A]
+    Domain verification state:
+      hotz-alternate.app.link: none
+      hotz-alternate.test-app.link: none
+      share.rapfa.me: none
+      share.rapfame.app: none
+      go.bttl.me: none
+      rap.bttl.me: none
+      hotz.test-app.link: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          hotz-alternate.app.link
+          hotz-alternate.test-app.link
+          share.rapfa.me
+          share.rapfame.app
+          go.bttl.me
+          rap.bttl.me
+          hotz.test-app.link
+
+Registered ContentProviders:
+  com.komspek.battleme/androidx.startup.InitializationProvider:
+    Provider{1e6ef60 com.komspek.battleme/androidx.startup.InitializationProvider}
+  com.komspek.battleme/com.flurry.android.agent.FlurryContentProvider:
+    Provider{835c19 com.komspek.battleme/com.flurry.android.agent.FlurryContentProvider}
+  com.komspek.battleme/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{25404de com.komspek.battleme/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.komspek.battleme/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{8f5e6bf com.komspek.battleme/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.komspek.battleme/androidx.core.content.FileProvider:
+    Provider{3bba18c com.komspek.battleme/androidx.core.content.FileProvider}
+  com.komspek.battleme/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{64a0d5 com.komspek.battleme/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.komspek.battleme/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{d9790ea com.komspek.battleme/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.komspek.battleme.mobileadsinitprovider]:
+    Provider{8f5e6bf com.komspek.battleme/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{6ac2fdb com.komspek.battleme}
+  [com.komspek.battleme.androidx-startup]:
+    Provider{1e6ef60 com.komspek.battleme/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{c474a78 com.komspek.battleme}
+  [com.komspek.battleme.fileprovider]:
+    Provider{3bba18c com.komspek.battleme/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{3db7551 com.komspek.battleme}
+  [com.komspek.battleme.firebaseinitprovider]:
+    Provider{d9790ea com.komspek.battleme/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{fd5d1b6 com.komspek.battleme}
+  [com.komspek.battleme.FlurryContentProvider]:
+    Provider{835c19 com.komspek.battleme/com.flurry.android.agent.FlurryContentProvider}
+      applicationInfo=ApplicationInfo{cb3eeb7 com.komspek.battleme}
+  [com.komspek.battleme.lifecycle-process]:
+    Provider{25404de com.komspek.battleme/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{3e29624 com.komspek.battleme}
+  [com.komspek.battleme.firebaseperfprovider]:
+    Provider{64a0d5 com.komspek.battleme/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{511158d com.komspek.battleme}
+
+Key Set Manager:
+  [com.komspek.battleme]
+      Signing KeySets: 5842
+
+Packages:
+  Package [com.komspek.battleme] (4e55342):
+    userId=10255
+    pkg=Package{c0ebf53 com.komspek.battleme}
+    codePath=/data/app/~~b3D131jhPUp1xyFCO5L80Q==/com.komspek.battleme-8TI9AuHjfbyGKq8JwcYmzQ==
+    resourcePath=/data/app/~~b3D131jhPUp1xyFCO5L80Q==/com.komspek.battleme-8TI9AuHjfbyGKq8JwcYmzQ==
+    legacyNativeLibraryDir=/data/app/~~b3D131jhPUp1xyFCO5L80Q==/com.komspek.battleme-8TI9AuHjfbyGKq8JwcYmzQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=40000568 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2.81.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.komspek.battleme
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 16:08:26
+    lastUpdateTime=2022-11-30 16:08:27
+    packageSource=0
+    signatures=PackageSignatures{dc4f090 version:2, signatures:[9c12e809], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      android.permission.VIBRATE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.BLUETOOTH
+      android.permission.FOREGROUND_SERVICE
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.RECORD_AUDIO
+      android.permission.CAMERA
+      com.google.android.c2dm.permission.RECEIVE
+      com.android.vending.BILLING
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=68515 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 16:08:27
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.komspek.battleme
+    com.google.android.apps.diagnosticstool:
+      com.komspek.battleme
+    com.google.android.settings.intelligence:
+      com.komspek.battleme
+    com.google.android.apps.accessibility.voiceaccess:
+      com.komspek.battleme
+    com.truecaller:
+      com.komspek.battleme
+    com.komspek.battleme:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      com.dv.adm
+      com.utorrent.client.pro
+    com.dv.adm:
+      com.komspek.battleme
+    com.zappcues.gamingmode:
+      com.komspek.battleme
+    com.jio.myjio:
+      com.komspek.battleme
+    com.zombodroid.MemeGeneratorFullGplay:
+      com.komspek.battleme
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.komspek.battleme]
+    path: /data/app/~~b3D131jhPUp1xyFCO5L80Q==/com.komspek.battleme-8TI9AuHjfbyGKq8JwcYmzQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:375004
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.komspek.battleme]
+     base.apk - 771

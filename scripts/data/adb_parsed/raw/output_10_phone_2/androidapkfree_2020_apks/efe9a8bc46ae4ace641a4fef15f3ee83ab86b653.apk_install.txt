@@ -1,0 +1,416 @@
+Activity Resolver Table:
+  Schemes:
+      tubitv:
+        a309159 com.tubitv/.activities.MainActivity filter 3fe71e0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tubitv"
+          Authority: "media-details": -1
+          Authority: "media-playback": -1
+          Authority: "media-browse": -1
+          Authority: "open": -1
+          Authority: "registration": -1
+          Authority: "device": -1
+      http:
+        a309159 com.tubitv/.activities.MainActivity filter d48ec99
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "tubitv.com": -1
+      https:
+        a309159 com.tubitv/.activities.MainActivity filter d48ec99
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "tubitv.com": -1
+        a309159 com.tubitv/.activities.MainActivity filter 7798b5e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "link.tubi.tv": -1
+      fbconnect:
+        6cd311e com.tubitv/com.facebook.CustomTabActivity filter f32b955
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.tubitv": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        a309159 com.tubitv/.activities.MainActivity filter d4333e3
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+        5893dff com.tubitv/.activities.CastExpandedControllerActivity filter 8cc0c
+          Action: "android.intent.action.MAIN"
+      android.intent.action.SEARCH:
+        a309159 com.tubitv/.activities.MainActivity filter feb2b3f
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        e8d47cc com.tubitv/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 25a90a4
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        1cfea15 com.tubitv/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b7d4337
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        17412a com.tubitv/com.evernote.android.job.JobBootReceiver filter 85d503c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.gms.cast.framework.action.REWIND:
+        3dbb1b com.tubitv/.receivers.TubiMediaIntentReceiver filter 47c9cf8
+          Action: "com.google.android.gms.cast.framework.action.DISCONNECT"
+          Action: "com.google.android.gms.cast.framework.action.FORWARD"
+          Action: "com.google.android.gms.cast.framework.action.REWIND"
+          Action: "com.google.android.gms.cast.framework.action.SKIP_NEXT"
+          Action: "com.google.android.gms.cast.framework.action.SKIP_PREV"
+          Action: "com.google.android.gms.cast.framework.action.STOP_CASTING"
+          Action: "com.google.android.gms.cast.framework.action.TOGGLE_PLAYBACK"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        17412a com.tubitv/com.evernote.android.job.JobBootReceiver filter 85d503c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        b2d14b8 com.tubitv/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b79be0d
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        cd21291 com.tubitv/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 5cc11c2
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.google.android.gms.cast.framework.action.SKIP_NEXT:
+        3dbb1b com.tubitv/.receivers.TubiMediaIntentReceiver filter 47c9cf8
+          Action: "com.google.android.gms.cast.framework.action.DISCONNECT"
+          Action: "com.google.android.gms.cast.framework.action.FORWARD"
+          Action: "com.google.android.gms.cast.framework.action.REWIND"
+          Action: "com.google.android.gms.cast.framework.action.SKIP_NEXT"
+          Action: "com.google.android.gms.cast.framework.action.SKIP_PREV"
+          Action: "com.google.android.gms.cast.framework.action.STOP_CASTING"
+          Action: "com.google.android.gms.cast.framework.action.TOGGLE_PLAYBACK"
+      com.google.android.gms.cast.framework.action.SKIP_PREV:
+        3dbb1b com.tubitv/.receivers.TubiMediaIntentReceiver filter 47c9cf8
+          Action: "com.google.android.gms.cast.framework.action.DISCONNECT"
+          Action: "com.google.android.gms.cast.framework.action.FORWARD"
+          Action: "com.google.android.gms.cast.framework.action.REWIND"
+          Action: "com.google.android.gms.cast.framework.action.SKIP_NEXT"
+          Action: "com.google.android.gms.cast.framework.action.SKIP_PREV"
+          Action: "com.google.android.gms.cast.framework.action.STOP_CASTING"
+          Action: "com.google.android.gms.cast.framework.action.TOGGLE_PLAYBACK"
+      com.google.android.gms.analytics.ANALYTICS_DISPATCH:
+        44045f6 com.tubitv/com.google.android.gms.analytics.AnalyticsReceiver filter 9ceff6a
+          Action: "com.google.android.gms.analytics.ANALYTICS_DISPATCH"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        6f2edf7 com.tubitv/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter c4d880e
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        b2d14b8 com.tubitv/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b79be0d
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.gms.cast.framework.action.STOP_CASTING:
+        3dbb1b com.tubitv/.receivers.TubiMediaIntentReceiver filter 47c9cf8
+          Action: "com.google.android.gms.cast.framework.action.DISCONNECT"
+          Action: "com.google.android.gms.cast.framework.action.FORWARD"
+          Action: "com.google.android.gms.cast.framework.action.REWIND"
+          Action: "com.google.android.gms.cast.framework.action.SKIP_NEXT"
+          Action: "com.google.android.gms.cast.framework.action.SKIP_PREV"
+          Action: "com.google.android.gms.cast.framework.action.STOP_CASTING"
+          Action: "com.google.android.gms.cast.framework.action.TOGGLE_PLAYBACK"
+      android.media.tv.action.INITIALIZE_PROGRAMS:
+        dfac464 com.tubitv/.receivers.AndroidTVInstallReceiver filter 4f13c5b
+          Action: "android.media.tv.action.INITIALIZE_PROGRAMS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.cast.framework.action.DISCONNECT:
+        3dbb1b com.tubitv/.receivers.TubiMediaIntentReceiver filter 47c9cf8
+          Action: "com.google.android.gms.cast.framework.action.DISCONNECT"
+          Action: "com.google.android.gms.cast.framework.action.FORWARD"
+          Action: "com.google.android.gms.cast.framework.action.REWIND"
+          Action: "com.google.android.gms.cast.framework.action.SKIP_NEXT"
+          Action: "com.google.android.gms.cast.framework.action.SKIP_PREV"
+          Action: "com.google.android.gms.cast.framework.action.STOP_CASTING"
+          Action: "com.google.android.gms.cast.framework.action.TOGGLE_PLAYBACK"
+      com.google.android.gms.cast.framework.action.TOGGLE_PLAYBACK:
+        3dbb1b com.tubitv/.receivers.TubiMediaIntentReceiver filter 47c9cf8
+          Action: "com.google.android.gms.cast.framework.action.DISCONNECT"
+          Action: "com.google.android.gms.cast.framework.action.FORWARD"
+          Action: "com.google.android.gms.cast.framework.action.REWIND"
+          Action: "com.google.android.gms.cast.framework.action.SKIP_NEXT"
+          Action: "com.google.android.gms.cast.framework.action.SKIP_PREV"
+          Action: "com.google.android.gms.cast.framework.action.STOP_CASTING"
+          Action: "com.google.android.gms.cast.framework.action.TOGGLE_PLAYBACK"
+      com.google.android.c2dm.intent.RECEIVE:
+        4f446cd com.tubitv/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 9112e09
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      zendesk.support:
+        922cb82 com.tubitv/zendesk.support.DeepLinkingBroadcastReceiver filter 655a836
+          Action: "zendesk.support"
+      android.intent.action.BATTERY_LOW:
+        e8d47cc com.tubitv/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 25a90a4
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        65e7293 com.tubitv/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 358dbd3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        65e7293 com.tubitv/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 358dbd3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.evernote.android.job.v14.RUN_JOB:
+        dd1c2d0 com.tubitv/com.evernote.android.job.v14.PlatformAlarmReceiver filter 54b622f
+          Action: "com.evernote.android.job.v14.RUN_JOB"
+          Action: "net.vrallev.android.job.v14.RUN_JOB"
+      android.intent.action.BOOT_COMPLETED:
+        88b82c9 com.tubitv/.receivers.RecommendationsReceiver filter b295d1
+          Action: "android.intent.action.BOOT_COMPLETED"
+        65e7293 com.tubitv/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 358dbd3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        17412a com.tubitv/com.evernote.android.job.JobBootReceiver filter 85d503c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        1cfea15 com.tubitv/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b7d4337
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.google.android.gms.cast.framework.action.FORWARD:
+        3dbb1b com.tubitv/.receivers.TubiMediaIntentReceiver filter 47c9cf8
+          Action: "com.google.android.gms.cast.framework.action.DISCONNECT"
+          Action: "com.google.android.gms.cast.framework.action.FORWARD"
+          Action: "com.google.android.gms.cast.framework.action.REWIND"
+          Action: "com.google.android.gms.cast.framework.action.SKIP_NEXT"
+          Action: "com.google.android.gms.cast.framework.action.SKIP_PREV"
+          Action: "com.google.android.gms.cast.framework.action.STOP_CASTING"
+          Action: "com.google.android.gms.cast.framework.action.TOGGLE_PLAYBACK"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        17412a com.tubitv/com.evernote.android.job.JobBootReceiver filter 85d503c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        5b61dce com.tubitv/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 8021310
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      net.vrallev.android.job.v14.RUN_JOB:
+        dd1c2d0 com.tubitv/com.evernote.android.job.v14.PlatformAlarmReceiver filter 54b622f
+          Action: "com.evernote.android.job.v14.RUN_JOB"
+          Action: "net.vrallev.android.job.v14.RUN_JOB"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        6f3a4ef com.tubitv/com.evernote.android.job.gcm.PlatformGcmService filter 535f24b permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        1d83bfc com.tubitv/.services.TubiFirebaseMessagingService filter 895a1c5
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        c408285 com.tubitv/com.google.firebase.messaging.FirebaseMessagingService filter 25e171a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+
+Permissions:
+  Permission [com.tubitv.permission.C2D_MESSAGE] (71a48da):
+    sourcePackage=com.tubitv
+    uid=10182 gids=null type=0 prot=signature
+    perm=Permission{affa10b com.tubitv.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{b6b1be8 com.tubitv/10182}
+
+Registered ContentProviders:
+  com.tubitv/androidx.work.impl.WorkManagerInitializer:
+    Provider{c8bc201 com.tubitv/androidx.work.impl.WorkManagerInitializer}
+  com.tubitv/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{a6418a6 com.tubitv/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.tubitv/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{28542e7 com.tubitv/com.google.firebase.provider.FirebaseInitProvider}
+  com.tubitv/com.facebook.internal.FacebookInitProvider:
+    Provider{2ca0e94 com.tubitv/com.facebook.internal.FacebookInitProvider}
+  com.tubitv/zendesk.belvedere.BelvedereFileProvider:
+    Provider{af17d3d com.tubitv/zendesk.belvedere.BelvedereFileProvider}
+  com.tubitv/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{7291932 com.tubitv/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.tubitv/.features.globalsearch.VoiceSearchProvider:
+    Provider{d92683 com.tubitv/.features.globalsearch.VoiceSearchProvider}
+  com.tubitv/zendesk.support.SupportSdkStartupProvider:
+    Provider{2838000 com.tubitv/zendesk.support.SupportSdkStartupProvider}
+
+ContentProvider Authorities:
+  [com.tubitv.zendesk.support.SupportSdkStartupProvider]:
+    Provider{2838000 com.tubitv/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{2fdb039 com.tubitv}
+  [com.tubitv.belvedere2.attachments]:
+    Provider{af17d3d com.tubitv/zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{2fdb039 com.tubitv}
+  [com.tubitv.firebaseperfprovider]:
+    Provider{a6418a6 com.tubitv/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{2fdb039 com.tubitv}
+  [com.tubitv.lifecycle-process]:
+    Provider{7291932 com.tubitv/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{2fdb039 com.tubitv}
+  [com.tubitv.workmanager-init]:
+    Provider{c8bc201 com.tubitv/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{2fdb039 com.tubitv}
+  [com.tubitv.firebaseinitprovider]:
+    Provider{28542e7 com.tubitv/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{2fdb039 com.tubitv}
+  [com.tubitv.FacebookInitProvider]:
+    Provider{2ca0e94 com.tubitv/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{2fdb039 com.tubitv}
+  [com.tubitv]:
+    Provider{d92683 com.tubitv/.features.globalsearch.VoiceSearchProvider}
+      applicationInfo=ApplicationInfo{2fdb039 com.tubitv}
+
+Key Set Manager:
+  [com.tubitv]
+      Signing KeySets: 461
+
+Packages:
+  Package [com.tubitv] (b6b1be8):
+    userId=10182
+    pkg=Package{1a78012 com.tubitv}
+    codePath=/data/app/com.tubitv-DKzj_D7bi0WpHjYbBKhUAQ==
+    resourcePath=/data/app/com.tubitv-DKzj_D7bi0WpHjYbBKhUAQ==
+    legacyNativeLibraryDir=/data/app/com.tubitv-DKzj_D7bi0WpHjYbBKhUAQ==/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=469 minSdk=21 targetSdk=30
+    versionName=4.5.1
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{2fdb039 com.tubitv}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.tubitv
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 08:51:50
+    firstInstallTime=2021-03-06 08:51:51
+    lastUpdateTime=2021-03-06 08:51:51
+    signatures=PackageSignatures{6cb967e version:2, signatures:[1017cef3], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    declared permissions:
+      com.tubitv.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.android.providers.tv.permission.READ_EPG_DATA
+      com.android.providers.tv.permission.WRITE_EPG_DATA
+      com.amazon.device.permission.COMRADE_CAPABILITIES
+      com.tubitv.permission.C2D_MESSAGE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.READ_PHONE_STATE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.INTERNET: granted=true
+      com.tubitv.permission.C2D_MESSAGE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=16782 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=92
+  User 0:
+    seq=2, package=com.yahoo.mobile.client.android.weather
+    seq=9, package=com.google.android.gms
+    seq=11, package=com.psiphon3.subscription
+    seq=13, package=com.tumblr
+    seq=16, package=com.google.android.apps.docs.editors.sheets
+    seq=17, package=com.google.android.apps.docs
+    seq=19, package=com.emoji.coolkeyboard
+    seq=21, package=com.ea.game.starwarscapital_row
+    seq=23, package=com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish
+    seq=25, package=com.virtualapplications.play
+    seq=27, package=com.appsomniacs.da2
+    seq=29, package=com.king.farmheroessupersaga
+    seq=31, package=com.rsupport.mvagent
+    seq=33, package=com.snkplaymore.android014
+    seq=35, package=com.intermedia.hq
+    seq=37, package=com.google.android.apps.adwords
+    seq=39, package=com.weheartit
+    seq=41, package=com.life360.android.safetymapd
+    seq=43, package=com.kabam.marvelbattle
+    seq=45, package=com.antutu.ABenchMark
+    seq=47, package=com.timehop
+    seq=49, package=com.flightradar24free
+    seq=51, package=com.dena.a12026418
+    seq=53, package=com.whatsapp
+    seq=55, package=com.feng.droid.tutu
+    seq=57, package=com.jsdev.instasize
+    seq=60, package=com.gombosdev.ampere
+    seq=62, package=com.sega.vtc
+    seq=64, package=com.google.android.street
+    seq=66, package=com.mobisystems.fileman
+    seq=68, package=com.secondarm.taptapdash
+    seq=70, package=com.kwai.global.video.social.kwaigo
+    seq=73, package=net.mobigame.zombietsunami
+    seq=76, package=com.nll.screenrecorder
+    seq=78, package=com.koushikdutta.vysor
+    seq=80, package=com.appnana.android.giftcardrewards
+    seq=82, package=com.ea.gp.pvz3
+    seq=84, package=com.ea.game.simcitymobile_row
+    seq=86, package=com.dv.adm
+    seq=88, package=com.google.android.apps.youtube.creator
+    seq=90, package=com.google.android.deskclock
+    seq=91, package=com.tubitv
+
+
+Dexopt state:
+  [com.tubitv]
+    path: /data/app/com.tubitv-DKzj_D7bi0WpHjYbBKhUAQ==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.tubitv]
+     base.apk - 7188
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

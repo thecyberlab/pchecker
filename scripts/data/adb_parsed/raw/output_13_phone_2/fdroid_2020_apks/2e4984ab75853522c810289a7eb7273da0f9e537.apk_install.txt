@@ -1,0 +1,197 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f4d2113 com.jarsilio.android.waveup/.MainActivity filter b9d0f50
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.HEADSET_PLUG:
+        e5a2481 com.jarsilio.android.waveup/.receivers.HeadsetStateReceiver filter 470926
+          Action: "android.intent.action.HEADSET_PLUG"
+      android.intent.action.PHONE_STATE:
+        459f8b com.jarsilio.android.waveup/.receivers.CallStateReceiver filter 4c37868
+          Action: "android.intent.action.PHONE_STATE"
+      android.app.action.DEVICE_ADMIN_ENABLED:
+        fb5bd05 com.jarsilio.android.waveup/.receivers.LockScreenAdminReceiver filter 6d7315a
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+      com.jarsilio.android.waveup.intent.action.WAVEUP_DISABLE:
+        c6ca967 com.jarsilio.android.waveup/.receivers.ServiceTogglerReceiver filter 28bb314
+          Action: "com.jarsilio.android.waveup.intent.action.WAVEUP_ENABLE"
+          Action: "com.jarsilio.android.waveup.intent.action.WAVEUP_DISABLE"
+      com.jarsilio.android.waveup.intent.action.WAVEUP_ENABLE:
+        c6ca967 com.jarsilio.android.waveup/.receivers.ServiceTogglerReceiver filter 28bb314
+          Action: "com.jarsilio.android.waveup.intent.action.WAVEUP_ENABLE"
+          Action: "com.jarsilio.android.waveup.intent.action.WAVEUP_DISABLE"
+      android.intent.action.BOOT_COMPLETED:
+        46a1549 com.jarsilio.android.waveup/.receivers.BootReceiver filter 31d7e4e
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        e5ebb6f com.jarsilio.android.waveup/.receivers.PackageReplacedReceiver filter 24bd07c
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        b8387bd com.jarsilio.android.waveup/.service.TileService filter 38a91b2 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.accessibilityservice.AccessibilityService:
+        c107503 com.jarsilio.android.waveup/.service.LockAccessibilityService filter 9faec80 permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.jarsilio.android.waveup/com.jarsilio.android.common.logging.LogProvider:
+    Provider{28f3e2f com.jarsilio.android.waveup/com.jarsilio.android.common.logging.LogProvider}
+  com.jarsilio.android.waveup/org.acra.attachment.AcraContentProvider:
+    Provider{3c2ddc5 com.jarsilio.android.waveup/org.acra.attachment.AcraContentProvider}
+  com.jarsilio.android.waveup/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{4e8a31a com.jarsilio.android.waveup/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+
+ContentProvider Authorities:
+  [com.jarsilio.android.waveup.acra]:
+    Provider{3c2ddc5 com.jarsilio.android.waveup/org.acra.attachment.AcraContentProvider}
+      applicationInfo=ApplicationInfo{8db8e4b com.jarsilio.android.waveup}
+  [com.jarsilio.android.waveup.lifecycle-process]:
+    Provider{4e8a31a com.jarsilio.android.waveup/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{3d8a028 com.jarsilio.android.waveup}
+  [com.jarsilio.android.waveup.common.fileprovider]:
+    Provider{28f3e2f com.jarsilio.android.waveup/com.jarsilio.android.common.logging.LogProvider}
+      applicationInfo=ApplicationInfo{af89141 com.jarsilio.android.waveup}
+
+Key Set Manager:
+  [com.jarsilio.android.waveup]
+      Signing KeySets: 6369
+
+Packages:
+  Package [com.jarsilio.android.waveup] (15dd6e6):
+    userId=10500
+    pkg=Package{852c427 com.jarsilio.android.waveup}
+    codePath=/data/app/~~tUkKha4jIdy1lPel1VfICg==/com.jarsilio.android.waveup-9C6PD6aclUfhz7ngeY0FaQ==
+    resourcePath=/data/app/~~tUkKha4jIdy1lPel1VfICg==/com.jarsilio.android.waveup-9C6PD6aclUfhz7ngeY0FaQ==
+    legacyNativeLibraryDir=/data/app/~~tUkKha4jIdy1lPel1VfICg==/com.jarsilio.android.waveup-9C6PD6aclUfhz7ngeY0FaQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=110 minSdk=15 targetSdk=29
+    minExtensionVersions=[]
+    versionName=3.2.6
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.SEND dat=content://*/... typ=message/rfc822 }, Intent { act=android.intent.action.SEND_MULTIPLE dat=content://*/... typ=message/rfc822 }, Intent { act=android.intent.action.SENDTO }]
+    dataDir=/data/user/0/com.jarsilio.android.waveup
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 20:51:04
+    lastUpdateTime=2022-11-30 20:51:05
+    packageSource=0
+    signatures=PackageSignatures{2b96d4 version:1, signatures:[4e5202ea], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.USES_POLICY_FORCE_LOCK
+      android.permission.READ_PHONE_STATE
+      android.permission.VIBRATE
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.BLUETOOTH
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=105281 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 20:51:05
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_PHONE_STATE: granted=false
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.diagnosticstool:
+      com.jarsilio.android.waveup
+    com.google.android.settings.intelligence:
+      com.jarsilio.android.waveup
+    com.google.android.apps.accessibility.voiceaccess:
+      com.jarsilio.android.waveup
+    com.zhiliaoapp.musically:
+      com.jarsilio.android.waveup
+    com.truecaller:
+      com.jarsilio.android.waveup
+    com.dv.adm:
+      com.jarsilio.android.waveup
+    com.zappcues.gamingmode:
+      com.jarsilio.android.waveup
+    com.jio.myjio:
+      com.jarsilio.android.waveup
+    com.jarsilio.android.waveup:
+      com.google.android.apps.docs
+      com.google.android.gm
+      com.android.cts.priv.ctsshim
+      com.android.cts.ctsshim
+      cn.wps.moffice_eng
+      com.fourchars.lmpfree
+      easynotes.notes.notepad.notebook.privatenotes.note
+      com.dv.adm
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.jarsilio.android.waveup]
+    path: /data/app/~~tUkKha4jIdy1lPel1VfICg==/com.jarsilio.android.waveup-9C6PD6aclUfhz7ngeY0FaQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:850135
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.jarsilio.android.waveup]
+     base.apk - 240

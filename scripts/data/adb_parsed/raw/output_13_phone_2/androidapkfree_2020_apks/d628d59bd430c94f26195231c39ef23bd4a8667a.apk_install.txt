@@ -1,0 +1,255 @@
+Activity Resolver Table:
+  Schemes:
+      BlossomFF:
+        850ae58 com.king.blossomblast/.BlossomActivity filter 4e5804
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "BlossomFF"
+      http:
+        850ae58 com.king.blossomblast/.BlossomActivity filter 9848896
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "apps.facebook.com": -1
+          Path: "PatternMatcher{PREFIX: /BlossomFF}"
+        850ae58 com.king.blossomblast/.BlossomActivity filter 744e1ed
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "blossomblast.play.king.com": -1
+          Authority: "blossomblast.play.king.com": -1
+      https:
+        850ae58 com.king.blossomblast/.BlossomActivity filter 9100c17
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "apps.facebook.com": -1
+          Path: "PatternMatcher{PREFIX: /BlossomFF}"
+        850ae58 com.king.blossomblast/.BlossomActivity filter 744e1ed
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "blossomblast.play.king.com": -1
+          Authority: "blossomblast.play.king.com": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        850ae58 com.king.blossomblast/.BlossomActivity filter f893bb1
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.android.vending.billing.IN_APP_NOTIFY:
+        f789822 com.king.blossomblast/com.king.core.billing.BillingReceiver filter ff52b3
+          Action: "com.android.vending.billing.IN_APP_NOTIFY"
+          Action: "com.android.vending.billing.RESPONSE_CODE"
+          Action: "com.android.vending.billing.PURCHASE_STATE_CHANGED"
+      com.king.analytics.BOOT_COMPLETED:
+        d56a39c com.king.blossomblast/com.king.analytics.AnalyticsReceiver filter a6561a5
+          Action: "com.king.analytics.BOOT_COMPLETED"
+          Action: "com.king.analytics.REQUEST_VALUE"
+          Action: "com.king.analytics.RECEIVE_VALUE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        b89097a com.king.blossomblast/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 898652b
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        dac146e com.king.blossomblast/com.king.core.ReferrerReceiver filter b92670f
+          Action: "com.android.vending.INSTALL_REFERRER"
+        1f85d88 com.king.blossomblast/com.facebook.CampaignTrackingReceiver filter 26f7321
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.android.vending.billing.RESPONSE_CODE:
+        f789822 com.king.blossomblast/com.king.core.billing.BillingReceiver filter ff52b3
+          Action: "com.android.vending.billing.IN_APP_NOTIFY"
+          Action: "com.android.vending.billing.RESPONSE_CODE"
+          Action: "com.android.vending.billing.PURCHASE_STATE_CHANGED"
+      com.amazon.inapp.purchasing.NOTIFY:
+        15af070 com.king.blossomblast/com.amazon.inapp.purchasing.ResponseReceiver filter f9aafe9
+          Action: "com.amazon.inapp.purchasing.NOTIFY"
+      com.google.android.c2dm.intent.RECEIVE:
+        f79ca34 com.king.blossomblast/com.google.firebase.iid.FirebaseInstanceIdReceiver filter aaf205d
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.king.blossomblast"
+      com.king.analytics.REQUEST_VALUE:
+        d56a39c com.king.blossomblast/com.king.analytics.AnalyticsReceiver filter a6561a5
+          Action: "com.king.analytics.BOOT_COMPLETED"
+          Action: "com.king.analytics.REQUEST_VALUE"
+          Action: "com.king.analytics.RECEIVE_VALUE"
+      com.king.analytics.RECEIVE_VALUE:
+        d56a39c com.king.blossomblast/com.king.analytics.AnalyticsReceiver filter a6561a5
+          Action: "com.king.analytics.BOOT_COMPLETED"
+          Action: "com.king.analytics.REQUEST_VALUE"
+          Action: "com.king.analytics.RECEIVE_VALUE"
+      notification_discarded:
+        b0e4346 com.king.blossomblast/com.king.notification.NotificationBroadcastReceiver filter bb62907
+          Action: "notification_discarded"
+      com.android.vending.billing.PURCHASE_STATE_CHANGED:
+        f789822 com.king.blossomblast/com.king.core.billing.BillingReceiver filter ff52b3
+          Action: "com.android.vending.billing.IN_APP_NOTIFY"
+          Action: "com.android.vending.billing.RESPONSE_CODE"
+          Action: "com.android.vending.billing.PURCHASE_STATE_CHANGED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        3fc751e com.king.blossomblast/com.google.firebase.iid.FirebaseInstanceIdService filter 16131ff
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        d5b4dd2 com.king.blossomblast/com.king.notification.fcm.FcmListenerService filter 4024ea3
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        e0355a0 com.king.blossomblast/com.google.firebase.messaging.FirebaseMessagingService filter 5426559
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          apps.facebook.com
+          blossomblast.play.king.com
+
+Permissions:
+  Permission [com.king.blossomblast.permission.C2D_MESSAGE] (95ef952):
+    sourcePackage=com.king.blossomblast
+    uid=10369 gids=[] type=0 prot=signature
+    perm=PermissionInfo{4d35423 com.king.blossomblast.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.king.blossomblast/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{7afad20 com.king.blossomblast/com.google.firebase.provider.FirebaseInitProvider}
+  com.king.blossomblast/com.facebook.internal.FacebookInitProvider:
+    Provider{34ca6d9 com.king.blossomblast/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.king.blossomblast.firebaseinitprovider]:
+    Provider{7afad20 com.king.blossomblast/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{74f589e com.king.blossomblast}
+  [com.king.blossomblast.FacebookInitProvider]:
+    Provider{34ca6d9 com.king.blossomblast/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{1fd0f7f com.king.blossomblast}
+
+Key Set Manager:
+  [com.king.blossomblast]
+      Signing KeySets: 4820
+
+Packages:
+  Package [com.king.blossomblast] (c57d795):
+    userId=10369
+    pkg=Package{75460aa com.king.blossomblast}
+    codePath=/data/app/~~NAHUf5hLhLDnp0UekLL6HQ==/com.king.blossomblast-GyOLMs096_zdML0AemObfg==
+    resourcePath=/data/app/~~NAHUf5hLhLDnp0UekLL6HQ==/com.king.blossomblast-GyOLMs096_zdML0AemObfg==
+    legacyNativeLibraryDir=/data/app/~~NAHUf5hLhLDnp0UekLL6HQ==/com.king.blossomblast-GyOLMs096_zdML0AemObfg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=301 minSdk=16 targetSdk=29
+    minExtensionVersions=[]
+    versionName=85.0.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.king.blossomblast
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 10:06:36
+    lastUpdateTime=2022-11-30 10:06:38
+    packageSource=0
+    signatures=PackageSignatures{7320038 version:2, signatures:[33409d03], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.king.blossomblast.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      com.android.vending.BILLING
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.GET_ACCOUNTS
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.king.blossomblast.permission.C2D_MESSAGE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.king.blossomblast.permission.C2D_MESSAGE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=47238 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 10:06:38
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.king.blossomblast
+    com.google.android.apps.diagnosticstool:
+      com.king.blossomblast
+    com.google.android.settings.intelligence:
+      com.king.blossomblast
+    com.google.android.apps.accessibility.voiceaccess:
+      com.king.blossomblast
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.king.blossomblast]
+    path: /data/app/~~NAHUf5hLhLDnp0UekLL6HQ==/com.king.blossomblast-GyOLMs096_zdML0AemObfg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1499799
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.king.blossomblast]
+     base.apk - 296
+/system/bin/sh: com.yahoo.mobile.client.android.weather: inaccessible or not found

@@ -1,0 +1,261 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        e3fe876 com.creativemobile.nno/com.creativemobile.internal.NNOActivity filter b31ab5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "instant.nitronation.com": -1
+          AutoVerify=true
+      https:
+        e3fe876 com.creativemobile.nno/com.creativemobile.internal.NNOActivity filter b31ab5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "instant.nitronation.com": -1
+          AutoVerify=true
+      nitronation:
+        e3fe876 com.creativemobile.nno/com.creativemobile.internal.NNOActivity filter b63b54a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "nitronation"
+
+  Non-Data Actions:
+      com.google.vr.vrcore.ACTION_NONE:
+        b4e1e77 com.creativemobile.nno/com.unity.purchasing.googleplay.VRPurchaseActivity filter bececbb
+          Action: "com.google.vr.vrcore.ACTION_NONE"
+          Category: "com.google.intent.category.DAYDREAM"
+      android.intent.action.MAIN:
+        e3fe876 com.creativemobile.nno/com.creativemobile.internal.NNOActivity filter c44a33e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        e3fe876 com.creativemobile.nno/com.creativemobile.internal.NNOActivity filter 2ea959f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      android.intent.action.VIEW:
+        e3fe876 com.creativemobile.nno/com.creativemobile.internal.NNOActivity filter f7256ec
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.QUICKBOOT_POWERON:
+        4956ae4 com.creativemobile.nno/com.onesignal.BootUpReceiver filter f39997
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        a882b4d com.creativemobile.nno/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 1b8eb6d
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        3ba1602 com.creativemobile.nno/com.appsflyer.MultipleInstallBroadcastReceiver filter 7a3f5d8
+          Action: "com.android.vending.INSTALL_REFERRER"
+        7c2b13 com.creativemobile.nno/com.google.android.gms.analytics.CampaignTrackingReceiver filter 2c7ad31
+          Action: "com.android.vending.INSTALL_REFERRER"
+        db05150 com.creativemobile.nno/com.facebook.CampaignTrackingReceiver filter 6c5a3a2
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        b92f49 com.creativemobile.nno/com.onesignal.GcmBroadcastReceiver filter aafdc16
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.creativemobile.nno"
+        6b7904e com.creativemobile.nno/com.google.firebase.iid.FirebaseInstanceIdReceiver filter b4e3833
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        4956ae4 com.creativemobile.nno/com.onesignal.BootUpReceiver filter f39997
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        474656f com.creativemobile.nno/com.onesignal.UpgradeReceiver filter 24e9784
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        f51327c com.creativemobile.nno/com.google.firebase.iid.FirebaseInstanceIdService filter b05d169
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        adc7705 com.creativemobile.nno/com.google.firebase.messaging.FirebaseMessagingService filter fdfa7f0
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+
+Permissions:
+  Permission [com.creativemobile.nno.permission.C2D_MESSAGE] (f00635a):
+    sourcePackage=com.creativemobile.nno
+    uid=10161 gids=null type=0 prot=signature
+    perm=Permission{30be98b com.creativemobile.nno.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{9bcfa68 com.creativemobile.nno/10161}
+
+Registered ContentProviders:
+  com.creativemobile.nno/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{e327e81 com.creativemobile.nno/com.facebook.ads.AudienceNetworkContentProvider}
+  com.creativemobile.nno/com.yasirkula.unity.NativeShareContentProvider:
+    Provider{6d15b26 com.creativemobile.nno/com.yasirkula.unity.NativeShareContentProvider}
+  com.creativemobile.nno/com.helpshift.support.providers.HelpshiftFileProvider:
+    Provider{64d9367 com.creativemobile.nno/com.helpshift.support.providers.HelpshiftFileProvider}
+  com.creativemobile.nno/com.facebook.FacebookContentProvider:
+    Provider{a9b5514 com.creativemobile.nno/com.facebook.FacebookContentProvider}
+  com.creativemobile.nno/android.arch.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{98781bd com.creativemobile.nno/android.arch.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.creativemobile.nno/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{d6803b2 com.creativemobile.nno/com.google.firebase.provider.FirebaseInitProvider}
+  com.creativemobile.nno/com.facebook.internal.FacebookInitProvider:
+    Provider{415ff03 com.creativemobile.nno/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.creativemobile.nno.NativeShareContentProvider]:
+    Provider{6d15b26 com.creativemobile.nno/com.yasirkula.unity.NativeShareContentProvider}
+      applicationInfo=ApplicationInfo{62ae80 com.creativemobile.nno}
+  [com.facebook.app.FacebookContentProvider741240355909571]:
+    Provider{a9b5514 com.creativemobile.nno/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{62ae80 com.creativemobile.nno}
+  [com.creativemobile.nno.AudienceNetworkContentProvider]:
+    Provider{e327e81 com.creativemobile.nno/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{62ae80 com.creativemobile.nno}
+  [com.creativemobile.nno.helpshift.fileprovider]:
+    Provider{64d9367 com.creativemobile.nno/com.helpshift.support.providers.HelpshiftFileProvider}
+      applicationInfo=ApplicationInfo{62ae80 com.creativemobile.nno}
+  [com.creativemobile.nno.firebaseinitprovider]:
+    Provider{d6803b2 com.creativemobile.nno/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{62ae80 com.creativemobile.nno}
+  [com.creativemobile.nno.lifecycle-trojan]:
+    Provider{98781bd com.creativemobile.nno/android.arch.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{62ae80 com.creativemobile.nno}
+  [com.creativemobile.nno.FacebookInitProvider]:
+    Provider{415ff03 com.creativemobile.nno/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{62ae80 com.creativemobile.nno}
+
+Key Set Manager:
+  [com.creativemobile.nno]
+      Signing KeySets: 305
+
+Packages:
+  Package [com.creativemobile.nno] (9bcfa68):
+    userId=10161
+    pkg=Package{133f7f9 com.creativemobile.nno}
+    codePath=/data/app/com.creativemobile.nno-QcLE4MgmJLoPKizbBv7Pxg==
+    resourcePath=/data/app/com.creativemobile.nno-QcLE4MgmJLoPKizbBv7Pxg==
+    legacyNativeLibraryDir=/data/app/com.creativemobile.nno-QcLE4MgmJLoPKizbBv7Pxg==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=4088901 minSdk=16 targetSdk=29
+    versionName=6.11.0
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{62ae80 com.creativemobile.nno}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/com.creativemobile.nno
+    supportsScreens=[medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 08:13:46
+    firstInstallTime=2021-03-06 08:13:48
+    lastUpdateTime=2021-03-06 08:13:48
+    signatures=PackageSignatures{22f7cb9 version:2, signatures:[ddfb9727], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    declared permissions:
+      com.creativemobile.nno.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      com.android.vending.BILLING
+      com.android.vending.CHECK_LICENSE
+      android.permission.INTERNET
+      android.permission.WAKE_LOCK
+      android.permission.GET_TASKS
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      com.google.android.c2dm.permission.RECEIVE
+      com.creativemobile.nno.permission.C2D_MESSAGE
+      android.permission.VIBRATE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.android.vending.BILLING: granted=true
+      com.creativemobile.nno.permission.C2D_MESSAGE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=10764 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=43
+  User 0:
+    seq=1, package=com.icecoldapps.screenshoteasy
+    seq=8, package=com.google.android.gms
+    seq=9, package=com.tellurionmobile.realmcraft
+    seq=11, package=com.google.android.play.games
+    seq=13, package=com.jamendoandoutly.mainpakage
+    seq=15, package=com.androvid
+    seq=17, package=com.rayark.Cytus.full
+    seq=19, package=eu.tsoml.graphicssettings
+    seq=21, package=com.pixlr.express
+    seq=23, package=com.delphicoder.flud
+    seq=25, package=tv.periscope.android
+    seq=27, package=com.anghami
+    seq=29, package=com.criticalforceentertainment.criticalops
+    seq=31, package=com.firsttouchgames.story
+    seq=33, package=com.ubercab
+    seq=35, package=org.jw.jwlibrary.mobile
+    seq=37, package=com.ea.game.nfs14_row
+    seq=39, package=com.google.android.apps.work.clouddpc
+    seq=41, package=com.pixel.gun3d
+    seq=42, package=com.creativemobile.nno
+
+
+Dexopt state:
+  [com.creativemobile.nno]
+    path: /data/app/com.creativemobile.nno-QcLE4MgmJLoPKizbBv7Pxg==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.creativemobile.nno]
+     base.apk - 6246
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

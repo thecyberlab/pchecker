@@ -1,0 +1,164 @@
+Activity Resolver Table:
+  Schemes:
+      duellinks:
+        6e4b66e jp.konami.duellinks/.plugins.YgomMainActivity filter f9ba31f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "duellinks"
+      jp.konami.duellinks.adjust:
+        6e4b66e jp.konami.duellinks/.plugins.YgomMainActivity filter 9f2166c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "jp.konami.duellinks.adjust"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        6e4b66e jp.konami.duellinks/.plugins.YgomMainActivity filter 70376be
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.google.android.c2dm.intent.RECEIVE:
+        60b610f jp.konami.duellinks/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 270a435
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        b05159c jp.konami.duellinks/com.google.firebase.messaging.FirebaseMessagingService filter 1fc40ca
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+        67eba5 jp.konami.duellinks/com.google.firebase.messaging.cpp.ListenerService filter a61523b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+
+Permissions:
+  Permission [jp.konami.duellinks.permission.C2D_MESSAGE] (ca9cb7a):
+    sourcePackage=jp.konami.duellinks
+    uid=10161 gids=null type=0 prot=signature
+    perm=Permission{aa6ff2b jp.konami.duellinks.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{11bef88 jp.konami.duellinks/10161}
+
+Registered ContentProviders:
+  jp.konami.duellinks/androidx.core.content.FileProvider:
+    Provider{7109d21 jp.konami.duellinks/androidx.core.content.FileProvider}
+  jp.konami.duellinks/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{a792546 jp.konami.duellinks/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [jp.konami.duellinks.firebaseinitprovider]:
+    Provider{a792546 jp.konami.duellinks/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{9146307 jp.konami.duellinks}
+  [jp.konami.duellinks.fileprovider]:
+    Provider{7109d21 jp.konami.duellinks/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{9146307 jp.konami.duellinks}
+
+Key Set Manager:
+  [jp.konami.duellinks]
+      Signing KeySets: 215
+
+Packages:
+  Package [jp.konami.duellinks] (11bef88):
+    userId=10161
+    pkg=Package{223e979 jp.konami.duellinks}
+    codePath=/data/app/jp.konami.duellinks-NBIbOVLaPKriOX1qPNnhXw==
+    resourcePath=/data/app/jp.konami.duellinks-NBIbOVLaPKriOX1qPNnhXw==
+    legacyNativeLibraryDir=/data/app/jp.konami.duellinks-NBIbOVLaPKriOX1qPNnhXw==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=75 minSdk=21 targetSdk=29
+    versionName=4.10.0
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{9146307 jp.konami.duellinks}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/jp.konami.duellinks
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 07:50:38
+    firstInstallTime=2021-03-06 07:50:41
+    lastUpdateTime=2021-03-06 07:50:41
+    signatures=PackageSignatures{2447c34 version:2, signatures:[539f6cf3], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    declared permissions:
+      jp.konami.duellinks.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      com.android.vending.BILLING
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.VIBRATE
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      jp.konami.duellinks.permission.C2D_MESSAGE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      jp.konami.duellinks.permission.C2D_MESSAGE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=8297 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=43
+  User 0:
+    seq=6, package=com.google.android.gms
+    seq=7, package=com.ultimateguitar.tabs
+    seq=9, package=com.anddoes.launcher
+    seq=11, package=tv.twitch.android.app
+    seq=13, package=com.ludo.king
+    seq=15, package=net.zedge.android
+    seq=17, package=com.shazam.android
+    seq=19, package=com.whatsweb.app
+    seq=21, package=com.yahoo.mobile.client.android.finance
+    seq=23, package=com.yahoo.mobile.client.android.mail
+    seq=25, package=de.resolution.yf_android
+    seq=27, package=com.ninegag.android.app
+    seq=29, package=iflix.play
+    seq=31, package=com.gamestar.perfectpiano
+    seq=33, package=com.gbwhatsapp
+    seq=35, package=com.instagram.android
+    seq=37, package=com.opera.touch
+    seq=39, package=com.ea.game.pvzfree_row
+    seq=41, package=com.paget96.lspeed
+    seq=42, package=jp.konami.duellinks
+
+
+Dexopt state:
+  [jp.konami.duellinks]
+    path: /data/app/jp.konami.duellinks-NBIbOVLaPKriOX1qPNnhXw==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [jp.konami.duellinks]
+     base.apk - 3390
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

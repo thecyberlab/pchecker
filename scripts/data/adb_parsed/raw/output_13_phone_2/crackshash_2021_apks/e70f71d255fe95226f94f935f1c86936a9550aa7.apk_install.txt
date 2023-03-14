@@ -1,0 +1,528 @@
+Activity Resolver Table:
+  Schemes:
+      tagmanager.c.com.sonyliv:
+        2ab61b8 com.sonyliv/com.google.android.gms.tagmanager.TagManagerPreviewActivity filter 70edb91
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tagmanager.c.com.sonyliv"
+      http:
+        dc3261e com.sonyliv/.ui.home.HomeActivity filter 8d0c4cc
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "preprod-web.sonyliv.com": -1
+          Authority: "preprod-web.sonyliv.com": -1
+          Authority: "www.sonyliv.com": -1
+          Authority: "www.sonyliv.com": -1
+      sony:
+        dc3261e com.sonyliv/.ui.home.HomeActivity filter ea22315
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sony"
+      https:
+        dc3261e com.sonyliv/.ui.home.HomeActivity filter ae88eff
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "sonyliv.onelink.me": -1
+          Path: "PatternMatcher{PREFIX: /RkBr}"
+          AutoVerify=true
+        dc3261e com.sonyliv/.ui.home.HomeActivity filter 8d0c4cc
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "preprod-web.sonyliv.com": -1
+          Authority: "preprod-web.sonyliv.com": -1
+          Authority: "www.sonyliv.com": -1
+          Authority: "www.sonyliv.com": -1
+      fbconnect:
+        bdaa55d com.sonyliv/com.facebook.CustomTabActivity filter 6dddba3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.sonyliv": -1
+      fb1189525214395413:
+        bdaa55d com.sonyliv/com.facebook.CustomTabActivity filter d68eed2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb1189525214395413"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        8745ea0 com.sonyliv/.ui.splash.SplashActivity filter e213a59
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.LAUNCHER"
+        8f7862a com.sonyliv/com.android.videocast.expandedcontrols.ExpandedControlsActivity filter ac11c1b
+          Action: "android.intent.action.MAIN"
+      android.intent.action.VIEW:
+        8745ea0 com.sonyliv/.ui.splash.SplashActivity filter e213a59
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        f15cdda com.sonyliv/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 19d420b
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        674f8fc com.sonyliv/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 292fb85
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.google.android.gms.auth.api.phone.SMS_RETRIEVED:
+        b26b082 com.sonyliv/.ui.signin.smsverification.receiver.SmsBroadcastReceiver filter fccf393
+          Action: "com.google.android.gms.auth.api.phone.SMS_RETRIEVED"
+      android.intent.action.QUICKBOOT_POWERON:
+        8ed618a com.sonyliv/com.evernote.android.job.JobBootReceiver filter b86c3fb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        8ed618a com.sonyliv/com.evernote.android.job.JobBootReceiver filter b86c3fb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        996a8e8 com.sonyliv/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 80ccb01
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        b5fdaf6 com.sonyliv/com.logituit.download.LGNetworkStateReceiver filter ccb5ef7
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        712eda6 com.sonyliv/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter bdbf3e7
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        49352ce com.sonyliv/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter f4935ef
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        996a8e8 com.sonyliv/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 80ccb01
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        32cafd0 com.sonyliv/com.appsflyer.SingleInstallBroadcastReceiver filter 2786bc9
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        5e00b7e com.sonyliv/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 55978df
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        f15cdda com.sonyliv/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 19d420b
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        ca16b94 com.sonyliv/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 7fa163d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        ca16b94 com.sonyliv/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 7fa163d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.evernote.android.job.v14.RUN_JOB:
+        566992c com.sonyliv/com.evernote.android.job.v14.PlatformAlarmReceiver filter 362cff5
+          Action: "com.evernote.android.job.v14.RUN_JOB"
+          Action: "net.vrallev.android.job.v14.RUN_JOB"
+      android.intent.action.BOOT_COMPLETED:
+        ca16b94 com.sonyliv/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 7fa163d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        8ed618a com.sonyliv/com.evernote.android.job.JobBootReceiver filter b86c3fb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        390e164 com.sonyliv/.notification.NotificationSettingsReceiver filter b49fcd
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        674f8fc com.sonyliv/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 292fb85
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        390e164 com.sonyliv/.notification.NotificationSettingsReceiver filter b49fcd
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        ef3ad00 com.sonyliv/androidx.work.impl.diagnostics.DiagnosticsReceiver filter a76d939
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        8ed618a com.sonyliv/com.evernote.android.job.JobBootReceiver filter b86c3fb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        8703e32 com.sonyliv/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 769e783
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      net.vrallev.android.job.v14.RUN_JOB:
+        566992c com.sonyliv/com.evernote.android.job.v14.PlatformAlarmReceiver filter 362cff5
+          Action: "com.evernote.android.job.v14.RUN_JOB"
+          Action: "net.vrallev.android.job.v14.RUN_JOB"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.clevertap.PUSH_EVENT:
+        6c80c56 com.sonyliv/com.clevertap.android.sdk.pushnotification.CTNotificationIntentService filter 773a4d7
+          Action: "com.clevertap.PUSH_EVENT"
+      com.logituit.exoplayer.downloadService.action.RESTART:
+        73a1c18 com.sonyliv/com.logituit.download.LGDownloadService filter add7671
+          Action: "com.logituit.exoplayer.downloadService.action.RESTART"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        9d8a55c com.sonyliv/com.evernote.android.job.gcm.PlatformGcmService filter 4c8a065 permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        dc0e1c4 com.sonyliv/.notification.FCMIDListenerService filter 18208ad
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        5d097e2 com.sonyliv/com.catchmedia.cmsdk.logic.fcm.CMSDKPushMessageListenerService filter 2e3b773
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        fe4502e com.sonyliv/com.google.firebase.messaging.FirebaseMessagingService filter 63857cf
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.clevertap.BG_EVENT:
+        2cc5630 com.sonyliv/com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService filter c6382a9 permission android.permission.BIND_JOB_SERVICE
+          Action: "com.clevertap.BG_EVENT"
+
+Domain verification status:
+  com.sonyliv:
+    ID: b927980b-0a31-4252-a1a7-850e89489a96
+    Signatures: [A4:0D:A8:0A:59:D1:70:CA:A9:50:CF:15:C1:8C:45:4D:47:A3:9B:26:98:9D:8B:64:0E:CD:74:5B:A7:1B:F5:DC]
+    Domain verification state:
+      www.sonyliv.com: none
+      sonyliv.onelink.me: none
+      preprod-web.sonyliv.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.sonyliv.com
+          sonyliv.onelink.me
+          preprod-web.sonyliv.com
+
+Registered ContentProviders:
+  com.sonyliv/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{46ce568 com.sonyliv/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.sonyliv/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{6b38d81 com.sonyliv/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.sonyliv/com.facebook.FacebookContentProvider:
+    Provider{256be26 com.sonyliv/com.facebook.FacebookContentProvider}
+  com.sonyliv/androidx.work.impl.WorkManagerInitializer:
+    Provider{442ba67 com.sonyliv/androidx.work.impl.WorkManagerInitializer}
+  com.sonyliv/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{7def014 com.sonyliv/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.sonyliv/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{a8a80bd com.sonyliv/com.google.firebase.provider.FirebaseInitProvider}
+  com.sonyliv/com.facebook.internal.FacebookInitProvider:
+    Provider{f6096b2 com.sonyliv/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.sonyliv.mobileadsinitprovider]:
+    Provider{6b38d81 com.sonyliv/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{9b69603 com.sonyliv}
+  [com.facebook.app.FacebookContentProvider1189525214395413]:
+    Provider{256be26 com.sonyliv/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{dc4f980 com.sonyliv}
+  [com.sonyliv.firebaseinitprovider]:
+    Provider{a8a80bd com.sonyliv/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{9e36bb9 com.sonyliv}
+  [com.sonyliv.FacebookInitProvider]:
+    Provider{f6096b2 com.sonyliv/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{abd6bfe com.sonyliv}
+  [com.sonyliv.workmanager-init]:
+    Provider{442ba67 com.sonyliv/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{e028f5f com.sonyliv}
+  [com.sonyliv.lifecycle-process]:
+    Provider{46ce568 com.sonyliv/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{1402dac com.sonyliv}
+  [com.sonyliv.firebaseperfprovider]:
+    Provider{7def014 com.sonyliv/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{5460a75 com.sonyliv}
+
+Key Set Manager:
+  [com.sonyliv]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.sonyliv] (1804a0a):
+    userId=10260
+    pkg=Package{7eac27b com.sonyliv}
+    codePath=/data/app/~~_6TS2WdcWU1hbycbckFWiA==/com.sonyliv-lyB-Z191fVlnF8QPTjfXDQ==
+    resourcePath=/data/app/~~_6TS2WdcWU1hbycbckFWiA==/com.sonyliv-lyB-Z191fVlnF8QPTjfXDQ==
+    legacyNativeLibraryDir=/data/app/~~_6TS2WdcWU1hbycbckFWiA==/com.sonyliv-lyB-Z191fVlnF8QPTjfXDQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=9462 minSdk=19 targetSdk=30
+    minExtensionVersions=[]
+    versionName=6.13.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.appnext.core]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.MAIN }]
+    dataDir=/data/user/0/com.sonyliv
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 19:44:45
+    lastUpdateTime=2022-11-30 19:44:46
+    packageSource=0
+    signatures=PackageSignatures{c587898 version:2, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.READ_PHONE_STATE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CAMERA
+      android.permission.RECORD_AUDIO
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.GET_TASKS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.FOREGROUND_SERVICE
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.MICROPHONE
+      com.android.vending.BILLING
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=91995 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 19:44:46
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.sonyliv
+    com.google.android.apps.diagnosticstool:
+      com.sonyliv
+    com.google.android.settings.intelligence:
+      com.sonyliv
+    com.google.android.youtube:
+      com.sonyliv
+    com.google.android.contacts:
+      com.sonyliv
+    com.google.android.apps.accessibility.voiceaccess:
+      com.sonyliv
+    com.google.android.gm:
+      com.sonyliv
+    com.zhiliaoapp.musically:
+      com.sonyliv
+    com.truecaller:
+      com.sonyliv
+    com.sonyliv:
+      com.google.android.documentsui
+      com.verizon.services
+      com.google.android.projection.gearhead
+      com.google.android.apps.nbu.files
+      com.google.android.apps.recorder
+      com.google.android.apps.tips
+      com.google.android.wfcactivation
+      com.google.android.tetheringentitlement
+      com.google.android.apps.messaging
+      com.google.android.apps.safetyhub
+      com.google.android.carrierlocation
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.restore
+      com.google.android.googlequicksearchbox
+      com.google.android.dialer
+      com.google.android.as
+      com.google.android.settings.intelligence
+      com.google.android.GoogleCamera
+      com.google.android.setupwizard
+      com.google.android.calculator
+      com.android.chrome
+      com.google.android.deskclock
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.calendar
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.marvin.talkback
+      com.google.android.contacts
+      com.google.android.apps.docs
+      com.google.android.videos
+      com.google.android.apps.accessibility.voiceaccess
+      com.google.android.inputmethod.latin
+      com.google.android.apps.youtube.music
+      com.google.android.gm
+      [app id 10195 not installed]
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.shannon.rcsservice
+      com.google.android.pixel.setupwizard
+      com.google.android.cellbroadcastreceiver
+      com.zhiliaoapp.musically
+      com.touchtype.swiftkey
+      com.pandavideocompressor
+      net.eagin.software.android.dejaloYa
+      radiotime.player
+      org.malwarebytes.antimalware
+      ru.iptvremote.android.iptv.pro
+      com.getmimo
+      net.zedge.android
+      com.truecaller
+      com.languagedrops.drops.international
+      com.wallpaperscraft.wallpaper
+      com.kizeetech.newankaradesigns
+      com.zoho.assist.agent
+      deezer.android.app
+      wsj.reader_sp
+      com.callapp.contacts
+      com.duolingo
+      com.darinsoft.vimo
+      com.ninegag.android.app
+      vsin.t16_funny_photo
+      com.mxtech.videoplayer.television
+      com.mcdonalds.app
+      com.catdaddy.cat22
+      com.fourchars.lmpfree
+      com.mycompany.app.soulbrowser
+      com.commsource.beautyplus
+      ringtone.maker.mp3.cutter.audio
+      ins.story.unfold
+      com.navimods.radio
+      com.lyrebirdstudio.photo_editor_pro
+      easynotes.notes.notepad.notebook.privatenotes.note
+      com.camerasideas.instashot
+      com.pikoo.app
+      com.mikewheelermedia
+      com.mobisystems.office
+      com.michaldrabik.showly2
+      com.shazam.android
+      com.dv.adm
+      com.frankthebrilliant.app
+      com.brit.swift.minimal
+      com.zappcues.gamingmode
+      com.cam001.selfie
+      com.fitapp
+      com.brit.swiftdark.substratum
+      com.hungama.myplay.activity
+      com.vicman.toonmeapp
+      com.subsplashconsulting.s_NKSKD3
+      deepfinity.android
+      com.king.blossomblast
+      com.bitsmedia.android.muslimpro
+      com.yahoo.mobile.client.android.weather
+      com.picsart.studio.light
+      com.simplehabit.simplehabitapp
+      com.ludia.jurassicworld
+      com.accuweather.android
+      com.weather.Weather
+      com.cooyostudio.marble.blast
+      com.cyberlink.powerdirector.DRA140225_01
+      com.videoeditorpro.android
+      com.tomtom.gplay.navapp.nds
+      com.jio.myjio
+      video.reface.app
+      com.ledblinker.pro
+      com.getepic.Epic
+      com.zombodroid.MemeGeneratorFullGplay
+      com.ufotosoft.justshot
+      com.pranavpandey.rotation
+      com.nikitadev.irregularverbspro
+      com.Wifi.lte5g.lte4g.lte3g.speedtest.Internetspeed
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+      com.unvoid.borealis
+      com.osheden.azulox
+    com.dv.adm:
+      com.sonyliv
+    com.zappcues.gamingmode:
+      com.sonyliv
+    com.jio.myjio:
+      com.sonyliv
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.sonyliv]
+    path: /data/app/~~_6TS2WdcWU1hbycbckFWiA==/com.sonyliv-lyB-Z191fVlnF8QPTjfXDQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:68399
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.sonyliv]
+     base.apk - 1185

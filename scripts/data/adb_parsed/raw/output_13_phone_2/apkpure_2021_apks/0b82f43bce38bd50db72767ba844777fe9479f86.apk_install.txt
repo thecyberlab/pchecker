@@ -1,0 +1,209 @@
+Activity Resolver Table:
+  Schemes:
+      fb350458304987183:
+        57750ec io.zotto.restaurantapp.re/com.facebook.CustomTabActivity filter fd8cb5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb350458304987183"
+      zottorestapp.dev:
+        55468c0 io.zotto.restaurantapp.re/io.zotto.restaurantapp.MainActivity filter e5f379f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "zottorestapp.dev"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        55468c0 io.zotto.restaurantapp.re/io.zotto.restaurantapp.MainActivity filter 15b49f9
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      FLUTTER_NOTIFICATION_CLICK:
+        55468c0 io.zotto.restaurantapp.re/io.zotto.restaurantapp.MainActivity filter 3fe8d3e
+          Action: "FLUTTER_NOTIFICATION_CLICK"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      io.intercom.android.sdk.INTERCOM_PUSH_OPENED:
+        e7d0616 io.zotto.restaurantapp.re/io.intercom.android.sdk.push.IntercomPushBroadcastReceiver filter e1a7b97
+          Action: "io.intercom.android.sdk.INTERCOM_PUSH_OPENED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        e9f9d6d io.zotto.restaurantapp.re/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter b3b6da2
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        1013a33 io.zotto.restaurantapp.re/com.facebook.CampaignTrackingReceiver filter 3b381f0
+          Action: "com.android.vending.INSTALL_REFERRER"
+      io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED:
+        e7d0616 io.zotto.restaurantapp.re/io.intercom.android.sdk.push.IntercomPushBroadcastReceiver filter b8d184
+          Action: "io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED"
+      com.google.android.c2dm.intent.RECEIVE:
+        1fe8fd8 io.zotto.restaurantapp.re/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 2473f31
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.MEDIA_BUTTON:
+        5d23f4a io.zotto.restaurantapp.re/androidx.media.session.MediaButtonReceiver filter 709aebb
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        a8b468f io.zotto.restaurantapp.re/io.intercom.android.sdk.fcm.IntercomFcmMessengerService filter e66cd1c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-400, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        4a5a369 io.zotto.restaurantapp.re/io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService filter e86c1ee
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        a8b468f io.zotto.restaurantapp.re/io.intercom.android.sdk.fcm.IntercomFcmMessengerService filter e66cd1c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-400, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        3ec0d25 io.zotto.restaurantapp.re/com.google.firebase.messaging.FirebaseMessagingService filter 7210efa
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+
+Registered ContentProviders:
+  io.zotto.restaurantapp.re/io.intercom.android.sdk.IntercomInitializeContentProvider:
+    Provider{8e4e8f4 io.zotto.restaurantapp.re/io.intercom.android.sdk.IntercomInitializeContentProvider}
+  io.zotto.restaurantapp.re/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{929b81d io.zotto.restaurantapp.re/com.crashlytics.android.CrashlyticsInitProvider}
+  io.zotto.restaurantapp.re/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{4a6a92 io.zotto.restaurantapp.re/com.google.firebase.perf.provider.FirebasePerfProvider}
+  io.zotto.restaurantapp.re/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{b140c63 io.zotto.restaurantapp.re/com.google.firebase.provider.FirebaseInitProvider}
+  io.zotto.restaurantapp.re/com.facebook.internal.FacebookInitProvider:
+    Provider{ae1a060 io.zotto.restaurantapp.re/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [io.zotto.restaurantapp.re.firebaseinitprovider]:
+    Provider{b140c63 io.zotto.restaurantapp.re/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{b2eb919 io.zotto.restaurantapp.re}
+  [io.zotto.restaurantapp.re.FacebookInitProvider]:
+    Provider{ae1a060 io.zotto.restaurantapp.re/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{1a09dde io.zotto.restaurantapp.re}
+  [io.zotto.restaurantapp.re.crashlyticsinitprovider]:
+    Provider{929b81d io.zotto.restaurantapp.re/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{9310bbf io.zotto.restaurantapp.re}
+  [io.zotto.restaurantapp.re.firebaseperfprovider]:
+    Provider{4a6a92 io.zotto.restaurantapp.re/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{30628c io.zotto.restaurantapp.re}
+  [io.zotto.restaurantapp.re.IntercomInitializeContentProvider]:
+    Provider{8e4e8f4 io.zotto.restaurantapp.re/io.intercom.android.sdk.IntercomInitializeContentProvider}
+      applicationInfo=ApplicationInfo{6e8cdd5 io.zotto.restaurantapp.re}
+
+Key Set Manager:
+  [io.zotto.restaurantapp.re]
+      Signing KeySets: 5089
+
+Packages:
+  Package [io.zotto.restaurantapp.re] (ff4a4db):
+    userId=10261
+    pkg=Package{1c71b78 io.zotto.restaurantapp.re}
+    codePath=/data/app/~~j7DLRYYSWW0XMh-t2yyMSg==/io.zotto.restaurantapp.re-J4QQrQwGCjggOutbxgHV2A==
+    resourcePath=/data/app/~~j7DLRYYSWW0XMh-t2yyMSg==/io.zotto.restaurantapp.re-J4QQrQwGCjggOutbxgHV2A==
+    legacyNativeLibraryDir=/data/app/~~j7DLRYYSWW0XMh-t2yyMSg==/io.zotto.restaurantapp.re-J4QQrQwGCjggOutbxgHV2A==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=47 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=1.1.1-re
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/io.zotto.restaurantapp.re
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 11:47:09
+    lastUpdateTime=2022-11-30 11:47:10
+    packageSource=0
+    signatures=PackageSignatures{6fc8ab6 version:3, signatures:[dd88c7e1], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.VIBRATE
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=48965 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 11:47:10
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      io.zotto.restaurantapp.re
+    com.google.android.apps.diagnosticstool:
+      io.zotto.restaurantapp.re
+    com.google.android.settings.intelligence:
+      io.zotto.restaurantapp.re
+    com.google.android.apps.accessibility.voiceaccess:
+      io.zotto.restaurantapp.re
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [io.zotto.restaurantapp.re]
+    path: /data/app/~~j7DLRYYSWW0XMh-t2yyMSg==/io.zotto.restaurantapp.re-J4QQrQwGCjggOutbxgHV2A==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:95569
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [io.zotto.restaurantapp.re]
+     base.apk - 399

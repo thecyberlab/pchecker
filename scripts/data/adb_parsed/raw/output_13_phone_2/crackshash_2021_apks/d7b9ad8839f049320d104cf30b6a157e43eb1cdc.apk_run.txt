@@ -1,0 +1,392 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        89f7e2b com.acmeaom.android.myradar/.app.activity.LaunchActivity filter c62b421
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "myradar.com": -1
+          Authority: "myradar.com": -1
+          Path: "PatternMatcher{PREFIX: /signin/myradar}"
+          Path: "PatternMatcher{PREFIX: /star_citizen/markers}"
+          AutoVerify=true
+      https:
+        89f7e2b com.acmeaom.android.myradar/.app.activity.LaunchActivity filter c62b421
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "myradar.com": -1
+          Authority: "myradar.com": -1
+          Path: "PatternMatcher{PREFIX: /signin/myradar}"
+          Path: "PatternMatcher{PREFIX: /star_citizen/markers}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        89f7e2b com.acmeaom.android.myradar/.app.activity.LaunchActivity filter 49c0288
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.SEARCH"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+        b6ef046 com.acmeaom.android.myradar/com.acmeaom.android.myradartv.MyRadarTvActivity filter 795d207
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        932bf34 com.acmeaom.android.myradar/.app.services.WidgetConfigActivity filter 715715d
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      android.intent.action.SEARCH:
+        89f7e2b com.acmeaom.android.myradar/.app.activity.LaunchActivity filter 49c0288
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.SEARCH"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.ACTION_MY_PACKAGE_REPLACED:
+        f35f4fc com.acmeaom.android.myradar/.app.modules.notifications.AppUpgradeReceiver filter 1864785
+          Action: "android.intent.action.ACTION_MY_PACKAGE_REPLACED"
+      android.intent.action.BATTERY_OKAY:
+        43f1a32 com.acmeaom.android.myradar/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter d859383
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        505e794 com.acmeaom.android.myradar/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 8ae23d
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        25c21e com.acmeaom.android.myradar/.app.services.BootBroadcastReceiver filter 26cfaff
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        25c21e com.acmeaom.android.myradar/.app.services.BootBroadcastReceiver filter 26cfaff
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        f23e900 com.acmeaom.android.myradar/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 9486539
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        5c0a77e com.acmeaom.android.myradar/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter f83e4df
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        f23e900 com.acmeaom.android.myradar/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 9486539
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        799cad2 com.acmeaom.android.myradar/com.appsflyer.SingleInstallBroadcastReceiver filter 8b387a3
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        6c09a6 com.acmeaom.android.myradar/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 554dfe7
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        43f1a32 com.acmeaom.android.myradar/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter d859383
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        2d69aa0 com.acmeaom.android.myradar/.app.services.TimeZoneBroadcastReceiver filter 3cc659
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        e5e952c com.acmeaom.android.myradar/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bc11bf5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        e5e952c com.acmeaom.android.myradar/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bc11bf5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        25c21e com.acmeaom.android.myradar/.app.services.BootBroadcastReceiver filter 26cfaff
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+        5d529da com.acmeaom.android.myradar/com.cuebiq.cuebiqsdk.receiver.InitializationReceiver filter 71f6e0b
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        e5e952c com.acmeaom.android.myradar/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bc11bf5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        505e794 com.acmeaom.android.myradar/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 8ae23d
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.arity.KEEP_ALIVE:
+        d1ac0cc com.acmeaom.android.myradar/.mydrives.broadcastreceivers.KeepAliveReceiver filter 4ea6f15
+          Action: "com.arity.KEEP_ALIVE"
+          Category: "android.intent.category.DEFAULT"
+      com.arity.coreEngine.EVENT_LISTENER_MISSING:
+        4e7e22a com.acmeaom.android.myradar/.mydrives.broadcastreceivers.NoListenerReceiver filter 420481b
+          Action: "com.arity.coreEngine.EVENT_LISTENER_MISSING"
+          Category: "android.intent.category.DEFAULT"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        7991db8 com.acmeaom.android.myradar/.app.services.forecast.widget.RadarWidget filter 78fe791
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        bf9f6f6 com.acmeaom.android.myradar/.app.services.forecast.widget.SmallBasicWidget filter af14af7
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        f9e5d64 com.acmeaom.android.myradar/.app.services.forecast.widget.SmallRainWidget filter 63a6bcd
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        1468c82 com.acmeaom.android.myradar/.app.services.forecast.widget.SmallHiLoWidget filter 8659f93
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        895ebd0 com.acmeaom.android.myradar/.app.services.forecast.widget.SmallWindWidget filter 88ef7c9
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        2d4eece com.acmeaom.android.myradar/.app.services.forecast.widget.SummaryWidget filter 6c0a1ef
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        db5d818 com.acmeaom.android.myradar/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 8d48271
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.arity.coreEngine.InternalConfiguration.ACTION_NEXT_KVM_DOWNLOAD_ALARM:
+        36b64e8 com.acmeaom.android.myradar/com.arity.coreEngine.InternalConfiguration.InternalConfigurationDownloadHelper$InternalConfigFetchReceiver filter e8d701
+          Action: "com.arity.coreEngine.InternalConfiguration.ACTION_NEXT_KVM_DOWNLOAD_ALARM"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        5d529da com.acmeaom.android.myradar/com.cuebiq.cuebiqsdk.receiver.InitializationReceiver filter 71f6e0b
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        c3bbd8a com.acmeaom.android.myradar/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter bebeffb
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        63c5dc4 com.acmeaom.android.myradar/.app.services.forecast.wear.WearListener filter 5ddd4ad
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /request}"
+          Path: "PatternMatcher{PREFIX: /data}"
+          Path: "PatternMatcher{PREFIX: /status}"
+
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        6a02856 com.acmeaom.android.myradar/.app.modules.notifications.MyRadarFcmService filter 6ff90d7
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        10e73e2 com.acmeaom.android.myradar/com.google.firebase.messaging.FirebaseMessagingService filter d426373
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.acmeaom.android.myradar:
+    ID: dbb644f5-ad10-4c3c-849c-7af57b4fe61c
+    Signatures: [0C:FB:46:63:83:1A:0F:B8:D6:97:3A:AD:44:E2:21:A8:BA:78:F7:F6:84:BD:0B:17:D3:B4:4B:EC:82:31:64:84]
+    Domain verification state:
+      myradar.com: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          myradar.com
+
+Registered ContentProviders:
+  com.acmeaom.android.myradar/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{d31dccb com.acmeaom.android.myradar/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.acmeaom.android.myradar/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{f830ca8 com.acmeaom.android.myradar/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.acmeaom.android.myradar/androidx.core.content.FileProvider:
+    Provider{a97c3c1 com.acmeaom.android.myradar/androidx.core.content.FileProvider}
+  com.acmeaom.android.myradar/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{8895766 com.acmeaom.android.myradar/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.acmeaom.android.myradar/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{9ff7aa7 com.acmeaom.android.myradar/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.acmeaom.android.myradar/com.squareup.picasso.PicassoProvider:
+    Provider{d504b54 com.acmeaom.android.myradar/com.squareup.picasso.PicassoProvider}
+  com.acmeaom.android.myradar/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{a4383f2 com.acmeaom.android.myradar/com.google.firebase.provider.FirebaseInitProvider}
+  com.acmeaom.android.myradar/com.cuebiq.cuebiqsdk.model.CuebiqSDKProvider:
+    Provider{1f1a43 com.acmeaom.android.myradar/com.cuebiq.cuebiqsdk.model.CuebiqSDKProvider}
+  com.acmeaom.android.myradar/com.smaato.sdk.sys.LifecycleProvider:
+    Provider{a10c8c0 com.acmeaom.android.myradar/com.smaato.sdk.sys.LifecycleProvider}
+  com.acmeaom.android.myradar/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{ad029f9 com.acmeaom.android.myradar/com.facebook.ads.AudienceNetworkContentProvider}
+
+ContentProvider Authorities:
+  [com.acmeaom.android.myradar.lifecycle-process]:
+    Provider{d31dccb com.acmeaom.android.myradar/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{eaad911 com.acmeaom.android.myradar}
+  [com.acmeaom.android.myradar.CuebiqSDKProvider]:
+    Provider{1f1a43 com.acmeaom.android.myradar/com.cuebiq.cuebiqsdk.model.CuebiqSDKProvider}
+      applicationInfo=ApplicationInfo{107ca76 com.acmeaom.android.myradar}
+  [com.acmeaom.android.myradar.fileprovider]:
+    Provider{a97c3c1 com.acmeaom.android.myradar/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{d455877 com.acmeaom.android.myradar}
+  [com.acmeaom.android.myradar.firebaseperfprovider]:
+    Provider{9ff7aa7 com.acmeaom.android.myradar/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{a851ce4 com.acmeaom.android.myradar}
+  [com.acmeaom.android.myradar.com.squareup.picasso]:
+    Provider{d504b54 com.acmeaom.android.myradar/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{5d2f54d com.acmeaom.android.myradar}
+  [com.acmeaom.android.myradar.AudienceNetworkContentProvider]:
+    Provider{ad029f9 com.acmeaom.android.myradar/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{81e1802 com.acmeaom.android.myradar}
+  [com.acmeaom.android.myradar.smaato-lifecycling]:
+    Provider{a10c8c0 com.acmeaom.android.myradar/com.smaato.sdk.sys.LifecycleProvider}
+      applicationInfo=ApplicationInfo{3ad0513 com.acmeaom.android.myradar}
+  [com.acmeaom.android.myradar.smaato-lifecycle-process]:
+    Provider{8895766 com.acmeaom.android.myradar/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{7e92350 com.acmeaom.android.myradar}
+  [com.acmeaom.android.myradar.mobileadsinitprovider]:
+    Provider{f830ca8 com.acmeaom.android.myradar/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{6e69949 com.acmeaom.android.myradar}
+  [com.acmeaom.android.myradar.firebaseinitprovider]:
+    Provider{a4383f2 com.acmeaom.android.myradar/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{a59b24e com.acmeaom.android.myradar}
+
+Key Set Manager:
+  [com.acmeaom.android.myradar]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.acmeaom.android.myradar] (2d8df6f):
+    userId=10282
+    pkg=Package{5128369 com.acmeaom.android.myradar}
+    codePath=/data/app/~~RWHOGvEAD9bzqClhuuiA9Q==/com.acmeaom.android.myradar-vpS2A4R_0P9m1P0JnOgrxg==
+    resourcePath=/data/app/~~RWHOGvEAD9bzqClhuuiA9Q==/com.acmeaom.android.myradar-vpS2A4R_0P9m1P0JnOgrxg==
+    legacyNativeLibraryDir=/data/app/~~RWHOGvEAD9bzqClhuuiA9Q==/com.acmeaom.android.myradar-vpS2A4R_0P9m1P0JnOgrxg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=441 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=8.25.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    forceQueryable=false
+    queriesPackages=[com.facebook.katana]
+    queriesIntents=[Intent { act=androidx.browser.customtabs.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.acmeaom.android.myradar
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 19:25:16
+    lastUpdateTime=2022-11-30 19:25:18
+    packageSource=0
+    signatures=PackageSignatures{126efa version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.INTERNET
+      android.permission.ACTIVITY_RECOGNITION
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.c2dm.permission.RECEIVE
+      disabled_com.android.vending.BILLING
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      disabled_com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.WAKE_LOCK
+      android.permission.READ_PHONE_STATE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=91616 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 19:25:18
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACTIVITY_RECOGNITION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.acmeaom.android.myradar
+    com.google.android.apps.diagnosticstool:
+      com.acmeaom.android.myradar
+    com.google.android.settings.intelligence:
+      com.acmeaom.android.myradar
+    com.google.android.GoogleCamera:
+      com.acmeaom.android.myradar
+    com.google.android.apps.accessibility.voiceaccess:
+      com.acmeaom.android.myradar
+    com.zhiliaoapp.musically:
+      com.acmeaom.android.myradar
+    com.truecaller:
+      com.acmeaom.android.myradar
+    com.acmeaom.android.myradar:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      ru.iptvremote.android.iptv.pro
+      com.mycompany.app.soulbrowser
+      com.dv.adm
+      com.utorrent.client.pro
+    com.dv.adm:
+      com.acmeaom.android.myradar
+    com.zappcues.gamingmode:
+      com.acmeaom.android.myradar
+    com.jio.myjio:
+      com.acmeaom.android.myradar
+  queryable via interaction:
+    User 0:
+      [com.android.providers.settings,com.android.location.fused,com.google.android.iwlan,com.android.inputdevices,com.google.SSRestartDetector,com.android.settings,com.android.localtransport,com.android.qns,android,com.google.android.settings.future.biometrics.faceenroll,com.android.wallpaperbackup,com.android.keychain,com.android.server.telecom,com.android.dynsystem]:
+        com.acmeaom.android.myradar
+      [com.google.android.gms,com.google.android.gsf]:
+        com.acmeaom.android.myradar
+      com.android.vending:
+        com.acmeaom.android.myradar
+  queryable via uses-library:
+
+Dexopt state:
+  [com.acmeaom.android.myradar]
+    path: /data/app/~~RWHOGvEAD9bzqClhuuiA9Q==/com.acmeaom.android.myradar-vpS2A4R_0P9m1P0JnOgrxg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:427551
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.acmeaom.android.myradar]
+     base.apk - 890

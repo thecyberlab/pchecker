@@ -1,0 +1,238 @@
+Activity Resolver Table:
+  Schemes:
+      blocka:
+        bbd37aa org.blokada.origin.alarm/ui.CommandActivity filter e02af9b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "blocka"
+          Authority: "cmd": -1
+        bbd37aa org.blokada.origin.alarm/ui.CommandActivity filter 5882f38
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "blocka"
+          Authority: "log": -1
+        bbd37aa org.blokada.origin.alarm/ui.CommandActivity filter 6af5b11
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "blocka"
+          Authority: "acc": -1
+      https:
+        c08bf9e org.blokada.origin.alarm/ui.MainActivity filter 4b3ba4c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "app.blokada.org": -1
+          Path: "PatternMatcher{PREFIX: /success}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        c08bf9e org.blokada.origin.alarm/ui.MainActivity filter c4fea7f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        c08bf9e org.blokada.origin.alarm/ui.MainActivity filter 611aa95
+          Action: "android.intent.action.MAIN"
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+          Category: "android.intent.category.LAUNCHER"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        c08bf9e org.blokada.origin.alarm/ui.MainActivity filter 611aa95
+          Action: "android.intent.action.MAIN"
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+          Category: "android.intent.category.LAUNCHER"
+      com.twofortyfouram.locale.intent.action.EDIT_SETTING:
+        68f2476 org.blokada.origin.alarm/ui.PluginActivity filter 152aa77
+          Action: "com.twofortyfouram.locale.intent.action.EDIT_SETTING"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.twofortyfouram.locale.intent.action.FIRE_SETTING:
+        f2d06e4 org.blokada.origin.alarm/ui.TaskerReceiver filter 69d974d
+          Action: "com.twofortyfouram.locale.intent.action.FIRE_SETTING"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        25ad50 org.blokada.origin.alarm/ui.QuickSettingsToggle filter 6b95b49 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.net.VpnService:
+        7c11202 org.blokada.origin.alarm/engine.SystemTunnel filter 3d7713 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          app.blokada.org
+
+Registered ContentProviders:
+  org.blokada.origin.alarm/androidx.core.content.FileProvider:
+    Provider{2e2d354 org.blokada.origin.alarm/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [org.blokada.origin.alarm.files]:
+    Provider{2e2d354 org.blokada.origin.alarm/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{defc2fd org.blokada.origin.alarm}
+
+Key Set Manager:
+  [org.blokada.origin.alarm]
+      Signing KeySets: 6071
+
+Packages:
+  Package [org.blokada.origin.alarm] (e9409f6):
+    userId=10306
+    sharedUser=SharedUserSetting{92d4bf2 org.blokada/10306}
+    pkg=Package{4994243 org.blokada.origin.alarm}
+    codePath=/data/app/~~focpY4UdxjXI8CxzC6ekXQ==/org.blokada.origin.alarm-LG-Y6PmpOn92M3GqHEWEXw==
+    resourcePath=/data/app/~~focpY4UdxjXI8CxzC6ekXQ==/org.blokada.origin.alarm-LG-Y6PmpOn92M3GqHEWEXw==
+    legacyNativeLibraryDir=/data/app/~~focpY4UdxjXI8CxzC6ekXQ==/org.blokada.origin.alarm-LG-Y6PmpOn92M3GqHEWEXw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=518000000 minSdk=24 targetSdk=29
+    minExtensionVersions=[]
+    versionName=5.18.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/org.blokada.origin.alarm
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 18:51:18
+    lastUpdateTime=2022-11-30 18:51:19
+    packageSource=0
+    signatures=PackageSignatures{a43d0c0 version:2, signatures:[e4bf28c2], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_LOGS
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.FOREGROUND_SERVICE
+      com.android.alarm.permission.SET_ALARM
+      android.permission.INTERACT_ACROSS_USERS
+      android.permission.GET_TASKS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=89755 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 18:51:19
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      org.blokada.origin.alarm
+    com.google.android.apps.diagnosticstool:
+      org.blokada.origin.alarm
+    com.google.android.settings.intelligence:
+      org.blokada.origin.alarm
+    com.google.android.apps.accessibility.voiceaccess:
+      org.blokada.origin.alarm
+    com.zhiliaoapp.musically:
+      org.blokada.origin.alarm
+    com.truecaller:
+      org.blokada.origin.alarm
+    com.dv.adm:
+      org.blokada.origin.alarm
+    com.zappcues.gamingmode:
+      org.blokada.origin.alarm
+    com.jio.myjio:
+      org.blokada.origin.alarm
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Shared users:
+  SharedUser [org.blokada] (92d4bf2):
+    userId=10306
+    Packages
+      PackageSetting{e9409f6 org.blokada.origin.alarm/10306}
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: 
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_PHONE_STATE: granted=false
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Dexopt state:
+  [org.blokada.origin.alarm]
+    path: /data/app/~~focpY4UdxjXI8CxzC6ekXQ==/org.blokada.origin.alarm-LG-Y6PmpOn92M3GqHEWEXw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:530229
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [org.blokada.origin.alarm]
+     base.apk - 534

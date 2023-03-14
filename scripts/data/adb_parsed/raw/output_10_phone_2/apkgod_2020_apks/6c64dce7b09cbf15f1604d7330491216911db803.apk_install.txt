@@ -1,0 +1,460 @@
+Activity Resolver Table:
+  Schemes:
+      windyapp:
+        fd494fd co.windyapp.android/.ui.mainscreen.GeneralActivity filter 1c48f3a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "windyapp"
+          Authority: "open": -1
+      https:
+        b96b5f2 co.windyapp.android/.ui.spot.tabs.SpotTabbedActivity filter 257b948
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "windy.app": -1
+          Authority: "windy.app": -1
+          Path: "PatternMatcher{PREFIX: /forecast2/spot}"
+          Path: "PatternMatcher{GLOB: /forecast2/spot/.*/offer/}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        5444ac0 co.windyapp.android/.ui.mainscreen.SplashActivity filter edc6506
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        d5a83f9 co.windyapp.android/com.facebook.CustomTabActivity filter f7e03e1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        f563f3e co.windyapp.android/.ui.appwidget.SpotAppWidgetConfigure filter 530d7eb
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.net.wifi.WIFI_STATE_CHANGED:
+        6f2019f co.windyapp.android/.network.NetworkStateReceiver filter 34307c7
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+      android.intent.action.QUICKBOOT_POWERON:
+        18352ec co.windyapp.android/com.onesignal.BootUpReceiver filter 9fa4e19
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      com.google.firebase.appindexing.UPDATE_INDEX:
+        6b666b5 co.windyapp.android/.AppIndexingUpdateReceiver filter f5e5963
+          Action: "com.google.firebase.appindexing.UPDATE_INDEX"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        6f2019f co.windyapp.android/.network.NetworkStateReceiver filter 34307c7
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        3f3114a co.windyapp.android/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter f58b2d5
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        6ff18bb co.windyapp.android/com.appsflyer.MultipleInstallBroadcastReceiver filter 6f5fd1d
+          Action: "com.android.vending.INSTALL_REFERRER"
+        fc8b1d8 co.windyapp.android/.backend.analytics.WindyInstallReceiver filter b49cb92
+          Action: "com.android.vending.INSTALL_REFERRER"
+        3b3b931 co.windyapp.android/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 88cbb8c
+          Action: "com.android.vending.INSTALL_REFERRER"
+        2d8f816 co.windyapp.android/com.facebook.CampaignTrackingReceiver filter 4ff3aea
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        e031384 co.windyapp.android/com.onesignal.GcmBroadcastReceiver filter ffa6960
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "co.windyapp.android"
+          mPriority=999, mOrder=0, mHasPartialTypes=false
+        359b76d co.windyapp.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter c5328bf
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.appwidget.action.APPWIDGET_DELETED:
+        e647fa2 co.windyapp.android/.ui.appwidget.SpotAppWidgetProvider filter ad321f4
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+      android.intent.action.BOOT_COMPLETED:
+        18352ec co.windyapp.android/com.onesignal.BootUpReceiver filter 9fa4e19
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        e647fa2 co.windyapp.android/.ui.appwidget.SpotAppWidgetProvider filter ad321f4
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        85fe3f0 co.windyapp.android/com.onesignal.UpgradeReceiver filter 3b50ede
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        3e75d69 co.windyapp.android/com.pusher.android.notifications.fcm.FCMInstanceIDService filter 70e1bb6
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+      com.google.firebase.MESSAGING_EVENT:
+        a64908f co.windyapp.android/.backend.firebase.FirebaseMessagingService filter 6100478
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        e774f1c co.windyapp.android/com.google.firebase.messaging.FirebaseMessagingService filter 2fea751
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      com.onesignal.NotificationExtender:
+        e8f6725 co.windyapp.android/.backend.push.NotificationService filter f9b91db permission android.permission.BIND_JOB_SERVICE
+          Action: "com.onesignal.NotificationExtender"
+
+Permissions:
+  Permission [co.windyapp.android.permission.C2D_MESSAGE] (23a6ab):
+    sourcePackage=co.windyapp.android
+    uid=10403 gids=null type=0 prot=signature
+    perm=Permission{f384108 co.windyapp.android.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{2f450a1 co.windyapp.android/10403}
+
+Registered ContentProviders:
+  co.windyapp.android/androidx.core.content.FileProvider:
+    Provider{a740287 co.windyapp.android/androidx.core.content.FileProvider}
+  co.windyapp.android/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{79465b4 co.windyapp.android/com.crashlytics.android.CrashlyticsInitProvider}
+  co.windyapp.android/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{e6455dd co.windyapp.android/com.google.firebase.perf.provider.FirebasePerfProvider}
+  co.windyapp.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{8d01552 co.windyapp.android/com.google.firebase.provider.FirebaseInitProvider}
+  co.windyapp.android/com.facebook.internal.FacebookInitProvider:
+    Provider{6844023 co.windyapp.android/com.facebook.internal.FacebookInitProvider}
+  co.windyapp.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{fec2920 co.windyapp.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+
+ContentProvider Authorities:
+  [co.windyapp.android.FacebookInitProvider]:
+    Provider{6844023 co.windyapp.android/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{ad572d9 co.windyapp.android}
+  [co.windyapp.android.crashlyticsinitprovider]:
+    Provider{79465b4 co.windyapp.android/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{ad572d9 co.windyapp.android}
+  [co.windyapp.android.fileprovider]:
+    Provider{a740287 co.windyapp.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{ad572d9 co.windyapp.android}
+  [co.windyapp.android.firebaseperfprovider]:
+    Provider{e6455dd co.windyapp.android/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{ad572d9 co.windyapp.android}
+  [co.windyapp.android.lifecycle-process]:
+    Provider{fec2920 co.windyapp.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{ad572d9 co.windyapp.android}
+  [co.windyapp.android.firebaseinitprovider]:
+    Provider{8d01552 co.windyapp.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{ad572d9 co.windyapp.android}
+
+Key Set Manager:
+  [co.windyapp.android]
+      Signing KeySets: 567
+
+Packages:
+  Package [co.windyapp.android] (2f450a1):
+    userId=10403
+    pkg=Package{b686665 co.windyapp.android}
+    codePath=/data/app/co.windyapp.android-YSkflOXPJH0Ld9yIIqdvtw==
+    resourcePath=/data/app/co.windyapp.android-YSkflOXPJH0Ld9yIIqdvtw==
+    legacyNativeLibraryDir=/data/app/co.windyapp.android-YSkflOXPJH0Ld9yIIqdvtw==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=425 minSdk=16 targetSdk=29
+    versionName=7.5.1
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{ad572d9 co.windyapp.android}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/co.windyapp.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 09:23:14
+    firstInstallTime=2021-03-06 09:23:16
+    lastUpdateTime=2021-03-06 09:23:16
+    signatures=PackageSignatures{33f909b version:1, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    declared permissions:
+      co.windyapp.android.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.VIBRATE
+      co.windyapp.android.permission.C2D_MESSAGE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      com.android.vending.BILLING
+      android.permission.FOREGROUND_SERVICE
+      android.permission.CAMERA
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      co.windyapp.android.permission.C2D_MESSAGE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=18005 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=566
+  User 0:
+    seq=2, package=com.yahoo.mobile.client.android.weather
+    seq=9, package=com.google.android.gms
+    seq=11, package=com.psiphon3.subscription
+    seq=13, package=com.tumblr
+    seq=16, package=com.google.android.apps.docs.editors.sheets
+    seq=17, package=com.google.android.apps.docs
+    seq=19, package=com.emoji.coolkeyboard
+    seq=21, package=com.ea.game.starwarscapital_row
+    seq=23, package=com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish
+    seq=25, package=com.virtualapplications.play
+    seq=27, package=com.appsomniacs.da2
+    seq=29, package=com.king.farmheroessupersaga
+    seq=31, package=com.rsupport.mvagent
+    seq=33, package=com.snkplaymore.android014
+    seq=35, package=com.intermedia.hq
+    seq=37, package=com.google.android.apps.adwords
+    seq=39, package=com.weheartit
+    seq=41, package=com.life360.android.safetymapd
+    seq=43, package=com.kabam.marvelbattle
+    seq=45, package=com.antutu.ABenchMark
+    seq=47, package=com.timehop
+    seq=49, package=com.flightradar24free
+    seq=51, package=com.dena.a12026418
+    seq=53, package=com.whatsapp
+    seq=55, package=com.feng.droid.tutu
+    seq=57, package=com.jsdev.instasize
+    seq=60, package=com.gombosdev.ampere
+    seq=62, package=com.sega.vtc
+    seq=64, package=com.google.android.street
+    seq=66, package=com.mobisystems.fileman
+    seq=68, package=com.secondarm.taptapdash
+    seq=70, package=com.kwai.global.video.social.kwaigo
+    seq=73, package=net.mobigame.zombietsunami
+    seq=76, package=com.nll.screenrecorder
+    seq=78, package=com.koushikdutta.vysor
+    seq=80, package=com.appnana.android.giftcardrewards
+    seq=82, package=com.ea.gp.pvz3
+    seq=84, package=com.ea.game.simcitymobile_row
+    seq=86, package=com.dv.adm
+    seq=88, package=com.google.android.apps.youtube.creator
+    seq=90, package=com.google.android.deskclock
+    seq=92, package=com.tubitv
+    seq=94, package=com.rtsoft.growtopia
+    seq=96, package=com.azure.authenticator
+    seq=98, package=com.com2us.smon.normal.freefull.google.kr.android.common
+    seq=100, package=com.king.farmheroessaga
+    seq=102, package=com.mobdro.android
+    seq=105, package=com.google.android.apps.books
+    seq=107, package=com.fifa.fifaapp.android
+    seq=109, package=co.triller.droid
+    seq=111, package=com.bsplayer.bspandroid.free
+    seq=113, package=com.kokteyl.goal
+    seq=115, package=com.skgames.trafficrider
+    seq=117, package=com.google.earth
+    seq=119, package=com.genius.android
+    seq=121, package=com.dewmobile.kuaiya.play
+    seq=123, package=net.zhuoweizhang.mcpelauncher
+    seq=125, package=com.gameloft.android.ANMP.GloftDMHM
+    seq=127, package=com.protheme.launcher.winx.launcher
+    seq=132, package=com.universallauncher.universallauncher
+    seq=136, package=com.glextor.appmanager.paid
+    seq=138, package=org.hola.prem
+    seq=142, package=com.itemstudio.castro.pro
+    seq=144, package=com.borisov.strelokpro
+    seq=148, package=com.skyclock.skyclock
+    seq=158, package=com.chimbori.hermitcrab
+    seq=160, package=com.hktechno.live.photo.motion
+    seq=162, package=com.inglesdivino.addmusictovoice
+    seq=168, package=com.one.ui.dark.s10.iconpack
+    seq=173, package=com.kimcy929.hashtags
+    seq=179, package=melstudio.mstretch
+    seq=183, package=com.maxelus.galaxypacklivewallpaper
+    seq=185, package=com.mybedy.antiradar
+    seq=187, package=com.pavelrekun.skit
+    seq=190, package=air.stellio.player
+    seq=194, package=hastamev.shadow.com
+    seq=196, package=com.ottplay.ottplay
+    seq=198, package=uk.co.serenity.guided.meditation
+    seq=200, package=com.jriver.jremote2
+    seq=205, package=com.mango.android
+    seq=210, package=com.klinker.android.twitter_l
+    seq=212, package=com.jndapp.pixel.pie.dark.iconpack
+    seq=218, package=com.bravolang.phrasebook
+    seq=220, package=com.coccco28.elixir
+    seq=225, package=com.drikp.core
+    seq=227, package=com.finazzi.distquakenoads
+    seq=229, package=com.joshy21.vera.calendarplus
+    seq=231, package=com.technoapps.webdevelopmentpro
+    seq=235, package=com.mkreidl.astrolapp
+    seq=237, package=com.snowberry.vpn_ghost.ghost_paid_vpn
+    seq=241, package=com.livephoto.live_wallpaper.ocean3dpro
+    seq=243, package=com.round_tower.app.android.wallpaper.cartogram
+    seq=247, package=com.ghthome.clickpic
+    seq=250, package=com.softoneui.volokitta
+    seq=252, package=com.kubix.creative
+    seq=254, package=net.tsapps.appsales
+    seq=256, package=studio14.application.caelus
+    seq=263, package=com.osheden.raya.black
+    seq=265, package=com.zymbia.carpm_mechanic
+    seq=267, package=ninja.sesame.app.edge
+    seq=269, package=eu.darken.bluemusic
+    seq=279, package=hu.oandras.newsfeedlauncher
+    seq=281, package=com.waze
+    seq=291, package=ua.com.streamsoft.pingtoolspro
+    seq=295, package=io.appground.blek
+    seq=297, package=com.magdalm.freewifipassword
+    seq=302, package=com.alesp.orologiomondiale.pro
+    seq=304, package=com.coccco28.rustic
+    seq=308, package=com.barcode.qrcode.scanner.reader.pro
+    seq=310, package=com.jndapp.line.x.iconpack
+    seq=315, package=com.sofascore.results
+    seq=317, package=com.sportstreaming.ncaafootball
+    seq=323, package=com.livingearth.pro
+    seq=325, package=com.magdalm.updatesoftwarepro
+    seq=332, package=com.ddm.blocknet
+    seq=334, package=com.accuweather.android
+    seq=337, package=com.indigomadina.tigadpro
+    seq=339, package=com.apptivateme.next.sdut
+    seq=341, package=com.diune.pictures
+    seq=343, package=com.pandavideocompressor
+    seq=345, package=studio14.application.hera
+    seq=348, package=com.osheden.bestia
+    seq=350, package=com.lb.app_manager
+    seq=352, package=com.ilyas.ilyasapps.wifistrengthmeterpro
+    seq=354, package=ginlemon.flowerfree
+    seq=356, package=studio14.application.caelusblack
+    seq=359, package=com.stoik.mdscan
+    seq=368, package=com.usefullapps.fakegpslocationpro
+    seq=375, package=com.osheden.raya
+    seq=380, package=jp.snowlife01.android.rotationcontrolpro
+    seq=382, package=com.ttxapps.megasync
+    seq=390, package=com.lingodeer
+    seq=393, package=com.shaiban.audioplayer.mplayer
+    seq=395, package=com.sonyericsson.music
+    seq=397, package=com.burakgon.dnschanger
+    seq=401, package=com.dfstream.nfl
+    seq=403, package=com.joshy21.vera.calendarplus.widgets
+    seq=405, package=com.medisafe.android.client
+    seq=407, package=com.appums.music_pitcher_pro
+    seq=409, package=ru.v_a_v.celltowerlocator
+    seq=411, package=com.mobilefootie.wc2010
+    seq=414, package=com.eytus_android_10_pack
+    seq=420, package=com.guardian
+    seq=422, package=com.OGR.vipnotesfull
+    seq=424, package=com.bluecorner.totalgympro
+    seq=426, package=com.sunshine.maki
+    seq=430, package=br.com.rodrigokolb.realdrum
+    seq=432, package=com.iudesk.android.photo.editor
+    seq=434, package=com.metalsoft.trackchecker_mobile
+    seq=436, package=cs14.pixelperfect.iconpack.nova
+    seq=444, package=com.vdv.circuitcalculator
+    seq=446, package=com.shanga.walli
+    seq=448, package=org.eobdfacile.android
+    seq=450, package=com.baranakco.supergrampro
+    seq=452, package=com.princevegeta.nightowl
+    seq=454, package=com.shopmoment.momentprocamera
+    seq=456, package=hastamev.vibranticons.com
+    seq=458, package=com.ttop.kaaip
+    seq=460, package=com.itunestoppodcastplayer.app
+    seq=462, package=com.adguard.android
+    seq=465, package=com.SearingMedia.Parrot
+    seq=467, package=com.mantratech.bluetooth.device.manager
+    seq=471, package=com.used.aoe
+    seq=473, package=com.artsol.android.extra.high.volume.booster
+    seq=475, package=com.lonelycatgames.Xplore
+    seq=479, package=vitalypanov.phototracker.pro
+    seq=481, package=com.wiseschematics.reeq01
+    seq=483, package=com.luzapplications.alessio.topwallpapers
+    seq=486, package=indigomadina.furatto.ui
+    seq=488, package=com.kimcy929.screenrecorder
+    seq=492, package=com.kimcy92.wavelock
+    seq=495, package=com.busuu.android.enc
+    seq=497, package=thanhletranngoc.calculator.pro
+    seq=499, package=com.truecaller
+    seq=502, package=com.pranavpandey.rotation
+    seq=504, package=photo.editor.polarr
+    seq=508, package=com.ddm.intrace
+    seq=510, package=eu.lindentree.sounds
+    seq=512, package=com.pinkfroot.planefinder
+    seq=514, package=xyz.eutvpn.app
+    seq=516, package=hastamev.masha.com
+    seq=518, package=com.fitnesskeeper.runkeeper.pro
+    seq=520, package=com.lkr.ledscrollerpro
+    seq=522, package=com.mixplorer.silver
+    seq=525, package=com.indigomadina.tabloid
+    seq=527, package=com.fbreader
+    seq=529, package=yo.app
+    seq=531, package=free.tnt.live.app
+    seq=533, package=com.ddm.ethwork
+    seq=535, package=com.brit.swiftdark.substratum
+    seq=537, package=com.ray.glass.icons.paid
+    seq=539, package=com.pierx.kuro
+    seq=541, package=at.bitfire.davdroid
+    seq=543, package=com.ppn.harmonium.sound
+    seq=546, package=com.dreamon.ruzits
+    seq=548, package=com.kibiteam.androidnightmode
+    seq=550, package=com.brit.swiftblack.layers
+    seq=552, package=com.adobe.lrmobile
+    seq=554, package=io.enpass.app
+    seq=556, package=com.scan.srbd
+    seq=558, package=com.appums.music_pitcher_love_pro
+    seq=560, package=moviefy.winktech.moviefire
+    seq=562, package=cs14.pixelperfect.iconpack.heradark
+    seq=564, package=com.onelook.oneui.circle.iconpack
+    seq=565, package=co.windyapp.android
+
+
+Dexopt state:
+  [co.windyapp.android]
+    path: /data/app/co.windyapp.android-YSkflOXPJH0Ld9yIIqdvtw==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [co.windyapp.android]
+     base.apk - 4108
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

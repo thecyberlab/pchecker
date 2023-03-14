@@ -1,0 +1,594 @@
+Activity Resolver Table:
+  Schemes:
+      io.rzp:
+        39041e2 com.putmoviesultraflix/com.razorpay.CheckoutActivity filter f4b1973
+          Action: "android.intent.action.MAIN"
+          Scheme: "io.rzp"
+          Authority: "rzp.io": -1
+      fb590451789066119:
+        95e4d85 com.putmoviesultraflix/com.facebook.CustomTabActivity filter 2a3b7da
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb590451789066119"
+      stripesdk:
+        b29fbc4 com.putmoviesultraflix/com.stripe.android.payments.StripeBrowserLauncherActivity filter 92e1aad
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "stripesdk"
+          Authority: "payment_return_url": -1
+          Path: "PatternMatcher{LITERAL: /com.putmoviesultraflix}"
+      https:
+        4300594 com.putmoviesultraflix/.ui.streaming.StreamingetailsActivity filter e9da83d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "com.putmoviesultraflix.app": -1
+          Path: "PatternMatcher{PREFIX: /streaming}"
+        e916832 com.putmoviesultraflix/.ui.moviedetails.MovieDetailsActivity filter a54c983
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "com.putmoviesultraflix.app": -1
+          Path: "PatternMatcher{PREFIX: /movies}"
+        9d1e700 com.putmoviesultraflix/.ui.seriedetails.SerieDetailsActivity filter cc18b39
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "com.putmoviesultraflix.app": -1
+          Path: "PatternMatcher{PREFIX: /series}"
+        de9d57e com.putmoviesultraflix/.ui.animes.AnimeDetailsActivity filter 9107adf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "com.putmoviesultraflix.app": -1
+          Path: "PatternMatcher{PREFIX: /animes}"
+      fbconnect:
+        95e4d85 com.putmoviesultraflix/com.facebook.CustomTabActivity filter e55e40b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.putmoviesultraflix": -1
+      com.putmoviesultraflix:
+        4659618 com.putmoviesultraflix/com.paypal.pyplcheckout.home.view.activities.PYPLInitiateCheckoutActivity filter 18c6871
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.putmoviesultraflix"
+          Authority: "paypalxo": -1
+          AutoVerify=true
+        9011656 com.putmoviesultraflix/com.paypal.openid.RedirectUriReceiverActivity filter 6c8e6d7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.putmoviesultraflix"
+          Authority: "paypalpay": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        18fa2e8 com.putmoviesultraflix/.ui.splash.SplashActivity filter 53b3d01
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        69577a6 com.putmoviesultraflix/.ui.player.cast.ExpandedControlsActivity filter 87cb5e7
+          Action: "android.intent.action.MAIN"
+        8ee732c com.putmoviesultraflix/.ui.player.cast.settings.CastPreference filter 4a6a1f5
+          Action: "android.intent.action.MAIN"
+        8c9cb8a com.putmoviesultraflix/.ui.player.cast.queue.ui.QueueListViewActivity filter abe5fb
+          Action: "android.intent.action.MAIN"
+        6ad1030 com.putmoviesultraflix/io.presage.mraid.browser.ShortcutActivity filter 7beb4a9
+          Action: "android.intent.action.MAIN"
+        af49a2e com.putmoviesultraflix/io.presage.mraid.browser.Android8AndLaterShortcutActivity filter eb3d9cf
+          Action: "android.intent.action.MAIN"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        19e5942 com.putmoviesultraflix/com.appodeal.ads.AppodealPackageAddedReceiver filter aaa4d53
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Scheme: "package"
+        3b0303e com.putmoviesultraflix/com.ogury.analytics.receiver.PackageFullyRemovedReceiver filter eab9e9f
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+      content:
+        78396f2 com.putmoviesultraflix/com.ogury.analytics.receiver.EventReminderReceiver filter c313143
+          Action: "android.intent.action.EVENT_REMINDER"
+          Scheme: "content"
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        d65ddf4 com.putmoviesultraflix/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter cb8091d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        4a9c106 com.putmoviesultraflix/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 5bb33c7
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        a342b3a com.putmoviesultraflix/.ui.downloadmanager.receiver.BootReceiver filter 63e43eb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        a342b3a com.putmoviesultraflix/.ui.downloadmanager.receiver.BootReceiver filter 63e43eb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        690e792 com.putmoviesultraflix/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter f2d4563
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        efce560 com.putmoviesultraflix/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 7d11a19
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      .ui.downloadmanager.receiver.NotificationReceiver.NOTIFY_ACTION_SHUTDOWN_APP:
+        40aff5c com.putmoviesultraflix/.ui.downloadmanager.receiver.NotificationReceiver filter fa4f265
+          Action: ".ui.downloadmanager.receiver.NotificationReceiver.NOTIFY_ACTION_SHUTDOWN_APP"
+      android.telephony.action.CARRIER_CONFIG_CHANGED:
+        1de3a66 com.putmoviesultraflix/com.ogury.analytics.receiver.CarrierConfigChangedReceiver filter 24e21a7
+          Action: "android.telephony.action.CARRIER_CONFIG_CHANGED"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        e41ce9a com.putmoviesultraflix/com.ogury.analytics.receiver.BootCompletedReceiver filter 41413cb
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        3f6b548 com.putmoviesultraflix/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 8f74fe1
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        690e792 com.putmoviesultraflix/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter f2d4563
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        f446690 com.putmoviesultraflix/com.yandex.metrica.MetricaEventHandler filter abfbb89
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.app.action.NEXT_ALARM_CLOCK_CHANGED:
+        7af6654 com.putmoviesultraflix/com.ogury.analytics.receiver.NextAlarmClockChangedReceiver filter fd459fd
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+      android.bluetooth.device.action.ACL_CONNECTED:
+        ac693c0 com.putmoviesultraflix/com.ogury.analytics.receiver.BluetoothReceiver filter e1198f9
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      com.yandex.metrica.configuration.service.PLC:
+        3bcc78e com.putmoviesultraflix/com.yandex.metrica.ConfigurationServiceReceiver filter 2026baf
+          Action: "com.yandex.metrica.configuration.service.PLC"
+      com.google.android.c2dm.intent.RECEIVE:
+        8ea77b6 com.putmoviesultraflix/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 9129cb7
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        d65ddf4 com.putmoviesultraflix/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter cb8091d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        251eade com.putmoviesultraflix/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 824d4bf
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        251eade com.putmoviesultraflix/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 824d4bf
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        49677a8 com.putmoviesultraflix/com.ogury.analytics.receiver.TimeSetReceiver filter 7652c1
+          Action: "android.intent.action.TIME_SET"
+      android.intent.action.BOOT_COMPLETED:
+        a342b3a com.putmoviesultraflix/.ui.downloadmanager.receiver.BootReceiver filter 63e43eb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+        251eade com.putmoviesultraflix/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 824d4bf
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        536ac24 com.putmoviesultraflix/com.startapp.sdk.adsbase.remoteconfig.BootCompleteListener filter 892738d
+          Action: "android.intent.action.BOOT_COMPLETED"
+        e41ce9a com.putmoviesultraflix/com.ogury.analytics.receiver.BootCompletedReceiver filter 41413cb
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.USER_PRESENT:
+        315bbc com.putmoviesultraflix/com.ogury.analytics.receiver.UserPresentReceiver filter e5f8745
+          Action: "android.intent.action.USER_PRESENT"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        4a9c106 com.putmoviesultraflix/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 5bb33c7
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      rzp.device_token.share:
+        b660078 com.putmoviesultraflix/com.razorpay.RzpTokenReceiver filter 362f351
+          Action: "rzp.device_token.share"
+      android.hardware.usb.action.USB_ACCESSORY_DETACHED:
+        ac693c0 com.putmoviesultraflix/com.ogury.analytics.receiver.BluetoothReceiver filter e1198f9
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        68dd6ea com.putmoviesultraflix/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 4dbfddb
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.bluetooth.device.action.ACL_DISCONNECTED:
+        ac693c0 com.putmoviesultraflix/com.ogury.analytics.receiver.BluetoothReceiver filter e1198f9
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        b3af78c com.putmoviesultraflix/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 1d03ed5
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      metrica:
+        82b1ad8 com.putmoviesultraflix/com.yandex.metrica.MetricaService filter 7986e31
+          Action: "com.yandex.metrica.IMetricaService"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "metrica"
+
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        7612bec com.putmoviesultraflix/.ui.notifications.NotificationManager filter 449cbb5
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        27b124a com.putmoviesultraflix/com.google.firebase.messaging.FirebaseMessagingService filter d3585bb
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.yandex.metrica.configuration.ACTION_INIT:
+        8600916 com.putmoviesultraflix/com.yandex.metrica.ConfigurationService filter acc297
+          Action: "com.yandex.metrica.configuration.ACTION_INIT"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          com.putmoviesultraflix.app
+
+Registered ContentProviders:
+  com.putmoviesultraflix/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{8eee2c7 com.putmoviesultraflix/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.putmoviesultraflix/com.download.library.DownloadFileProvider:
+    Provider{3b960f4 com.putmoviesultraflix/com.download.library.DownloadFileProvider}
+  com.putmoviesultraflix/com.appodeal.ads.adapters.bidmachine.ApdBidMachineContentProvider:
+    Provider{230d01d com.putmoviesultraflix/com.appodeal.ads.adapters.bidmachine.ApdBidMachineContentProvider}
+  com.putmoviesultraflix/com.squareup.picasso.PicassoProvider:
+    Provider{19fa292 com.putmoviesultraflix/com.squareup.picasso.PicassoProvider}
+  com.putmoviesultraflix/com.appodeal.ads.services.crash_hunter.ApdCrashHunterContentProvider:
+    Provider{36ce463 com.putmoviesultraflix/com.appodeal.ads.services.crash_hunter.ApdCrashHunterContentProvider}
+  com.putmoviesultraflix/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{a859860 com.putmoviesultraflix/com.google.firebase.provider.FirebaseInitProvider}
+  com.putmoviesultraflix/com.facebook.internal.FacebookInitProvider:
+    Provider{f1155de com.putmoviesultraflix/com.facebook.internal.FacebookInitProvider}
+  com.putmoviesultraflix/com.github.dhaval2404.imagepicker.ImagePickerFileProvider:
+    Provider{a3f63bf com.putmoviesultraflix/com.github.dhaval2404.imagepicker.ImagePickerFileProvider}
+  com.putmoviesultraflix/com.smaato.sdk.sys.LifecycleProvider:
+    Provider{21bda8c com.putmoviesultraflix/com.smaato.sdk.sys.LifecycleProvider}
+  com.putmoviesultraflix/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{6bae5d5 com.putmoviesultraflix/com.facebook.ads.AudienceNetworkContentProvider}
+  com.putmoviesultraflix/com.applovin.sdk.AppLovinInitProvider:
+    Provider{758f1ea com.putmoviesultraflix/com.applovin.sdk.AppLovinInitProvider}
+  com.putmoviesultraflix/androidx.startup.InitializationProvider:
+    Provider{f907cdb com.putmoviesultraflix/androidx.startup.InitializationProvider}
+  com.putmoviesultraflix/com.cardinalcommerce.shared.cs.utils.CCInitProvider:
+    Provider{2f21378 com.putmoviesultraflix/com.cardinalcommerce.shared.cs.utils.CCInitProvider}
+  com.putmoviesultraflix/com.ironsource.lifecycle.IronsourceLifecycleProvider:
+    Provider{9d10a51 com.putmoviesultraflix/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+  com.putmoviesultraflix/org.acra.attachment.AcraContentProvider:
+    Provider{acc42b6 com.putmoviesultraflix/org.acra.attachment.AcraContentProvider}
+  com.putmoviesultraflix/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{4100bb7 com.putmoviesultraflix/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.putmoviesultraflix/com.vungle.warren.utility.VungleProvider:
+    Provider{4f0ef24 com.putmoviesultraflix/com.vungle.warren.utility.VungleProvider}
+  com.putmoviesultraflix/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{d4afa8d com.putmoviesultraflix/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.putmoviesultraflix/androidx.core.content.FileProvider:
+    Provider{751d442 com.putmoviesultraflix/androidx.core.content.FileProvider}
+  com.putmoviesultraflix/com.startapp.sdk.adsbase.StartAppInitProvider:
+    Provider{98fac53 com.putmoviesultraflix/com.startapp.sdk.adsbase.StartAppInitProvider}
+  com.putmoviesultraflix/com.appodeal.ads.ApdContentProvider:
+    Provider{3dfd990 com.putmoviesultraflix/com.appodeal.ads.ApdContentProvider}
+  com.putmoviesultraflix/com.yandex.metrica.PreloadInfoContentProvider:
+    Provider{ff9b289 com.putmoviesultraflix/com.yandex.metrica.PreloadInfoContentProvider}
+
+ContentProvider Authorities:
+  [com.putmoviesultraflix.AudienceNetworkContentProvider]:
+    Provider{6bae5d5 com.putmoviesultraflix/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{acf28e com.putmoviesultraflix}
+  [com.putmoviesultraflix.mobileadsinitprovider]:
+    Provider{d4afa8d com.putmoviesultraflix/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{35ebaaf com.putmoviesultraflix}
+  [com.putmoviesultraflix.ApdCrashHunterContentProvider]:
+    Provider{36ce463 com.putmoviesultraflix/com.appodeal.ads.services.crash_hunter.ApdCrashHunterContentProvider}
+      applicationInfo=ApplicationInfo{e90febc com.putmoviesultraflix}
+  [com.putmoviesultraflix.IronsourceLifecycleProvider]:
+    Provider{9d10a51 com.putmoviesultraflix/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+      applicationInfo=ApplicationInfo{2c1ee45 com.putmoviesultraflix}
+  [com.putmoviesultraflix.acra]:
+    Provider{acc42b6 com.putmoviesultraflix/org.acra.attachment.AcraContentProvider}
+      applicationInfo=ApplicationInfo{189a99a com.putmoviesultraflix}
+  [com.putmoviesultraflix.DownloadFileProvider]:
+    Provider{3b960f4 com.putmoviesultraflix/com.download.library.DownloadFileProvider}
+      applicationInfo=ApplicationInfo{6652cb com.putmoviesultraflix}
+  [com.putmoviesultraflix.smaato-lifecycle-process]:
+    Provider{8eee2c7 com.putmoviesultraflix/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{ccd4aa8 com.putmoviesultraflix}
+  [com.putmoviesultraflix.firebaseinitprovider]:
+    Provider{a859860 com.putmoviesultraflix/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{61829c1 com.putmoviesultraflix}
+  [com.putmoviesultraflix.vungle-provider]:
+    Provider{4f0ef24 com.putmoviesultraflix/com.vungle.warren.utility.VungleProvider}
+      applicationInfo=ApplicationInfo{148c566 com.putmoviesultraflix}
+  [com.putmoviesultraflix.CCInitProvider]:
+    Provider{2f21378 com.putmoviesultraflix/com.cardinalcommerce.shared.cs.utils.CCInitProvider}
+      applicationInfo=ApplicationInfo{b0550a7 com.putmoviesultraflix}
+  [com.putmoviesultraflix.startappinitprovider]:
+    Provider{98fac53 com.putmoviesultraflix/com.startapp.sdk.adsbase.StartAppInitProvider}
+      applicationInfo=ApplicationInfo{8006954 com.putmoviesultraflix}
+  [com.putmoviesultraflix.ApdBidMachineContentProvider]:
+    Provider{230d01d com.putmoviesultraflix/com.appodeal.ads.adapters.bidmachine.ApdBidMachineContentProvider}
+      applicationInfo=ApplicationInfo{33ca0fd com.putmoviesultraflix}
+  [com.putmoviesultraflix.lifecycle-process]:
+    Provider{4100bb7 com.putmoviesultraflix/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{a8bd1f2 com.putmoviesultraflix}
+  [com.putmoviesultraflix.appmetrica.preloadinfo.retail]:
+    Provider{ff9b289 com.putmoviesultraflix/com.yandex.metrica.PreloadInfoContentProvider}
+      applicationInfo=ApplicationInfo{aac5043 com.putmoviesultraflix}
+  [com.putmoviesultraflix.FacebookInitProvider]:
+    Provider{f1155de com.putmoviesultraflix/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{2a4c6c0 com.putmoviesultraflix}
+  [com.putmoviesultraflix.AppSessionManagerContentProvider]:
+    Provider{3dfd990 com.putmoviesultraflix/com.appodeal.ads.ApdContentProvider}
+      applicationInfo=ApplicationInfo{d374ff9 com.putmoviesultraflix}
+  [com.putmoviesultraflix.com.squareup.picasso]:
+    Provider{19fa292 com.putmoviesultraflix/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{e811b3e com.putmoviesultraflix}
+  [com.putmoviesultraflix.applovincontentprovider]:
+    Provider{758f1ea com.putmoviesultraflix/com.applovin.sdk.AppLovinInitProvider}
+      applicationInfo=ApplicationInfo{339ad9f com.putmoviesultraflix}
+  [com.putmoviesultraflix.imagepicker.provider]:
+    Provider{a3f63bf com.putmoviesultraflix/com.github.dhaval2404.imagepicker.ImagePickerFileProvider}
+      applicationInfo=ApplicationInfo{a6f8eec com.putmoviesultraflix}
+  [com.putmoviesultraflix.smaato-lifecycling]:
+    Provider{21bda8c com.putmoviesultraflix/com.smaato.sdk.sys.LifecycleProvider}
+      applicationInfo=ApplicationInfo{593f2b5 com.putmoviesultraflix}
+  [com.putmoviesultraflix.androidx-startup]:
+    Provider{f907cdb com.putmoviesultraflix/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{e1584bb com.putmoviesultraflix}
+  [com.putmoviesultraflix.provider]:
+    Provider{751d442 com.putmoviesultraflix/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{13cadd8 com.putmoviesultraflix}
+
+Key Set Manager:
+  [com.putmoviesultraflix]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.putmoviesultraflix] (de0531):
+    userId=10277
+    pkg=Package{9035416 com.putmoviesultraflix}
+    codePath=/data/app/~~BrMDSx9jPWiw_jFoP1pOXA==/com.putmoviesultraflix-fr_sMUk7VxV4E0BCgcMc9w==
+    resourcePath=/data/app/~~BrMDSx9jPWiw_jFoP1pOXA==/com.putmoviesultraflix-fr_sMUk7VxV4E0BCgcMc9w==
+    legacyNativeLibraryDir=/data/app/~~BrMDSx9jPWiw_jFoP1pOXA==/com.putmoviesultraflix-fr_sMUk7VxV4E0BCgcMc9w==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=7 minSdk=23 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.0.0.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.android.chrome, com.facebook.katana, com.appnext.core, com.huawei.appmarket]
+    queriesIntents=[Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.OPEN_DOCUMENT_TREE }, Intent { act=android.intent.action.SEND dat=content://*/... typ=message/rfc822 }, Intent { act=android.intent.action.SEND_MULTIPLE dat=content://*/... typ=message/rfc822 }, Intent { act=android.intent.action.SENDTO }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.media.browse.MediaBrowserService }, Intent { act=android.intent.action.MAIN }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }, Intent { act=com.yandex.android.advid.IDENTIFIER_SERVICE }, Intent { act=com.uodis.opendevice.OPENIDS_SERVICE }]
+    dataDir=/data/user/0/com.putmoviesultraflix
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 14:15:00
+    lastUpdateTime=2022-11-30 14:15:01
+    packageSource=0
+    signatures=PackageSignatures{8bacf84 version:3, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.WRITE_INTERNAL_STORAGE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permifControllerActivityssion.RECEIVE_BOOT_COMPLETED
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.EXPAND_STATUS_BAR
+      android.permission.READ_PHONE_STATE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.WRITE_SETTINGS
+      com.android.vending.CHECK_LICENSE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.gms.permission.AD_ID
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.EXPAND_STATUS_BAR: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=49896 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 14:15:01
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.putmoviesultraflix:
+      com.android.chrome
+  queries via component:
+    com.google.android.apps.messaging:
+      com.putmoviesultraflix
+    com.google.android.apps.diagnosticstool:
+      com.putmoviesultraflix
+    com.google.android.settings.intelligence:
+      com.putmoviesultraflix
+    com.google.android.apps.accessibility.voiceaccess:
+      com.putmoviesultraflix
+    com.google.android.storagemanager:
+      com.putmoviesultraflix
+    com.google.android.pixel.setupwizard:
+      com.putmoviesultraflix
+    com.putmoviesultraflix:
+      [com.google.android.bluetooth.services,com.android.bluetooth]
+      com.google.android.documentsui
+      com.verizon.services
+      com.google.android.projection.gearhead
+      com.google.android.apps.nbu.files
+      com.google.android.apps.recorder
+      com.google.android.apps.tips
+      com.google.android.wfcactivation
+      com.google.android.tetheringentitlement
+      com.google.android.apps.messaging
+      com.google.android.apps.safetyhub
+      com.google.android.carrierlocation
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.restore
+      com.google.android.googlequicksearchbox
+      com.google.android.dialer
+      com.google.android.as
+      com.google.android.settings.intelligence
+      com.google.android.GoogleCamera
+      com.google.android.setupwizard
+      com.google.android.calculator
+      com.android.chrome
+      com.google.android.deskclock
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.calendar
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.marvin.talkback
+      com.google.android.contacts
+      com.google.android.apps.docs
+      com.google.android.videos
+      com.google.android.apps.accessibility.voiceaccess
+      com.google.android.inputmethod.latin
+      com.google.android.apps.youtube.music
+      com.google.android.gm
+      [app id 10195 not installed]
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.shannon.rcsservice
+      com.google.android.pixel.setupwizard
+      com.android.cts.priv.ctsshim
+      com.android.cts.ctsshim
+      com.google.android.cellbroadcastreceiver
+      com.pandavideocompressor
+      net.eagin.software.android.dejaloYa
+      radiotime.player
+      org.malwarebytes.antimalware
+      com.kizeetech.newankaradesigns
+      com.zoho.assist.agent
+      com.darinsoft.vimo
+      com.ninegag.android.app
+      com.mxtech.videoplayer.television
+      com.mcdonalds.app
+      com.catdaddy.cat22
+      com.fourchars.lmpfree
+      com.lyrebirdstudio.photo_editor_pro
+      com.pikoo.app
+      com.mikewheelermedia
+      com.frankthebrilliant.app
+      com.brit.swift.minimal
+      com.zappcues.gamingmode
+      com.cam001.selfie
+      com.fitapp
+      com.brit.swiftdark.substratum
+      com.subsplashconsulting.s_NKSKD3
+      deepfinity.android
+      com.king.blossomblast
+      com.bitsmedia.android.muslimpro
+      com.yahoo.mobile.client.android.weather
+      com.simplehabit.simplehabitapp
+      com.ludia.jurassicworld
+      com.accuweather.android
+      com.cooyostudio.marble.blast
+      com.jio.myjio
+      com.getepic.Epic
+      com.pranavpandey.rotation
+      com.nikitadev.irregularverbspro
+      com.Wifi.lte5g.lte4g.lte3g.speedtest.Internetspeed
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+      com.unvoid.borealis
+      com.osheden.azulox
+    com.zappcues.gamingmode:
+      com.putmoviesultraflix
+    com.jio.myjio:
+      com.putmoviesultraflix
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.putmoviesultraflix]
+    path: /data/app/~~BrMDSx9jPWiw_jFoP1pOXA==/com.putmoviesultraflix-fr_sMUk7VxV4E0BCgcMc9w==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:178115
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.putmoviesultraflix]
+     base.apk - 1440

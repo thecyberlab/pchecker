@@ -1,0 +1,284 @@
+Activity Resolver Table:
+  Schemes:
+      emby:
+        6cd6ad8 com.mb.android/.MainActivity filter d12d916
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "emby"
+          Authority: "items": -1
+
+  Non-Data Actions:
+      android.media.action.VIDEO_PLAY_FROM_SEARCH:
+        6cd6ad8 com.mb.android/.MainActivity filter 31a5c84
+          Action: "android.media.action.VIDEO_PLAY_FROM_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        6cd6ad8 com.mb.android/.MainActivity filter 7147e31
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      android.media.action.MEDIA_PLAY_FROM_SEARCH:
+        6cd6ad8 com.mb.android/.MainActivity filter c2f5297
+          Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        6cd6ad8 com.mb.android/.MainActivity filter c81cc6d
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        40eb81c com.mb.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 8051c25
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        9a3f4ee com.mb.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d83fd8f
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        25e71fa com.mb.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter a4ce3ab
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        15d3a08 com.mb.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 69055a1
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        25e71fa com.mb.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter a4ce3ab
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        222bcf0 com.mb.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter ffbc269
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        40eb81c com.mb.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 8051c25
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        111b3c6 com.mb.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a740f87
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        111b3c6 com.mb.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a740f87
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        111b3c6 com.mb.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a740f87
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        9a3f4ee com.mb.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d83fd8f
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        98feeb4 com.mb.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 3baadd
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.MEDIA_BUTTON:
+        8db70a2 com.mb.android/androidx.media.session.MediaButtonReceiver filter 10c8133
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.exoplayer.downloadService.action.RESTART:
+        6fe604c com.mb.android/.download.exo.ExoDownloadService filter 26e5895
+          Action: "com.google.android.exoplayer.downloadService.action.RESTART"
+          Category: "android.intent.category.DEFAULT"
+      com.google.firebase.INSTANCE_ID_EVENT:
+        974220 com.mb.android/.fcm.FcmFirebaseInstanceIDService filter b4d17d9
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+        8d73538 com.mb.android/com.google.firebase.iid.FirebaseInstanceIdService filter 728e911
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        7ed759e com.mb.android/.fcm.FcmFirebaseMessagingService filter 25687f
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        374daa com.mb.android/com.google.firebase.messaging.FirebaseMessagingService filter cb20d9b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.media.browse.MediaBrowserService:
+        b654652 com.mb.android/.media.MediaService filter af81d23
+          Action: "android.media.browse.MediaBrowserService"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.mb.android/.media.tv.MediaContentProvider:
+    Provider{97ef729 com.mb.android/.media.tv.MediaContentProvider}
+  com.mb.android/androidx.work.impl.WorkManagerInitializer:
+    Provider{390204f com.mb.android/androidx.work.impl.WorkManagerInitializer}
+  com.mb.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{a5003dc com.mb.android/com.google.firebase.provider.FirebaseInitProvider}
+  com.mb.android/.media.ArtworkProvider:
+    Provider{d66dce5 com.mb.android/.media.ArtworkProvider}
+
+ContentProvider Authorities:
+  [com.mb.android.workmanager-init]:
+    Provider{390204f com.mb.android/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{6a2937 com.mb.android}
+  [com.mb.android.firebaseinitprovider]:
+    Provider{a5003dc com.mb.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{d4c7ea4 com.mb.android}
+  [com.mb.android.media.ArtworkProvider]:
+    Provider{d66dce5 com.mb.android/.media.ArtworkProvider}
+      applicationInfo=ApplicationInfo{f00140d com.mb.android}
+  [com.mb.android.media]:
+    Provider{97ef729 com.mb.android/.media.tv.MediaContentProvider}
+      applicationInfo=ApplicationInfo{832afc2 com.mb.android}
+
+Key Set Manager:
+  [com.mb.android]
+      Signing KeySets: 5893
+
+Packages:
+  Package [com.mb.android] (12e21d3):
+    userId=10343
+    pkg=Package{409ca47 com.mb.android}
+    codePath=/data/app/~~Cahx5tir3fqlNJFX1_FpIw==/com.mb.android-Ilftish5ebNnvr82VH1tGA==
+    resourcePath=/data/app/~~Cahx5tir3fqlNJFX1_FpIw==/com.mb.android-Ilftish5ebNnvr82VH1tGA==
+    legacyNativeLibraryDir=/data/app/~~Cahx5tir3fqlNJFX1_FpIw==/com.mb.android-Ilftish5ebNnvr82VH1tGA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=300002193 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=3.2.19
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.mb.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 16:38:44
+    lastUpdateTime=2022-11-30 16:38:45
+    packageSource=0
+    signatures=PackageSignatures{88ac1e0 version:3, signatures:[7f088282], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.MEDIA_CONTENT_CONTROL
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.ACCESS_ALL_DOWNLOADS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      com.android.providers.tv.permission.WRITE_EPG_DATA
+      com.android.providers.tv.permission.READ_EPG_DATA
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=74688 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 16:38:45
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.mb.android
+    com.google.android.apps.diagnosticstool:
+      com.mb.android
+    com.google.android.settings.intelligence:
+      com.mb.android
+    com.google.android.GoogleCamera:
+      com.mb.android
+    com.google.android.deskclock:
+      com.mb.android
+    com.google.android.apps.accessibility.voiceaccess:
+      com.mb.android
+    com.pandavideocompressor:
+      com.mb.android
+    radiotime.player:
+      com.mb.android
+    com.truecaller:
+      com.mb.android
+    com.ninegag.android.app:
+      com.mb.android
+    ringtone.maker.mp3.cutter.audio:
+      com.mb.android
+    com.lyrebirdstudio.photo_editor_pro:
+      com.mb.android
+    com.dv.adm:
+      com.mb.android
+    com.zappcues.gamingmode:
+      com.mb.android
+    com.jio.myjio:
+      com.mb.android
+  queryable via interaction:
+    User 0:
+      [com.android.wallpaperbackup,com.android.location.fused,com.android.keychain,android,com.android.qns,com.google.SSRestartDetector,com.android.providers.settings,com.android.inputdevices,com.android.server.telecom,com.android.settings,com.android.dynsystem,com.android.localtransport,com.google.android.iwlan,com.google.android.settings.future.biometrics.faceenroll]:
+        com.mb.android
+      [com.google.android.gms,com.google.android.gsf]:
+        com.mb.android
+      com.google.android.webview:
+        com.mb.android
+      com.mb.android:
+        com.google.android.webview
+  queryable via uses-library:
+
+Dexopt state:
+  [com.mb.android]
+    path: /data/app/~~Cahx5tir3fqlNJFX1_FpIw==/com.mb.android-Ilftish5ebNnvr82VH1tGA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:372672
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.mb.android]
+     base.apk - 499

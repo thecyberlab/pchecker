@@ -1,0 +1,250 @@
+Activity Resolver Table:
+  Schemes:
+      ss:
+        20675b1 com.github.shadowsocks/.UrlImportActivity filter c823a96
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ss"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        213b1be com.github.shadowsocks/.MainActivity filter 97ec21f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        213b1be com.github.shadowsocks/.MainActivity filter d18496c
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+      com.twofortyfouram.locale.intent.action.EDIT_SETTING:
+        f3e5b35 com.github.shadowsocks/.tasker.ConfigActivity filter d552bca
+          Action: "com.twofortyfouram.locale.intent.action.EDIT_SETTING"
+      android.intent.action.CREATE_SHORTCUT:
+        8d7613b com.github.shadowsocks/.QuickToggleShortcut filter 1f69058
+          Action: "android.intent.action.CREATE_SHORTCUT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        94529e9 com.github.shadowsocks/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 86e066e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        382bcb3 com.github.shadowsocks/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 99b1270
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        3e2710f com.github.shadowsocks/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 676e59c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        d3d7ba5 com.github.shadowsocks/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 5781b7a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        d5bbbed com.github.shadowsocks/.BootReceiver filter 99f6a22
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        3e2710f com.github.shadowsocks/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 676e59c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        94529e9 com.github.shadowsocks/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 86e066e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        6df0f2b com.github.shadowsocks/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9dabf88
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        6df0f2b com.github.shadowsocks/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9dabf88
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        d5bbbed com.github.shadowsocks/.BootReceiver filter 99f6a22
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        6df0f2b com.github.shadowsocks/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9dabf88
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.twofortyfouram.locale.intent.action.FIRE_SETTING:
+        750d617 com.github.shadowsocks/.tasker.ActionListener filter b705a04
+          Action: "com.twofortyfouram.locale.intent.action.FIRE_SETTING"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        382bcb3 com.github.shadowsocks/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 99b1270
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        8bd7307 com.github.shadowsocks/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 204c34
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        d5bbbed com.github.shadowsocks/.BootReceiver filter 99f6a22
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        3af2d21 com.github.shadowsocks/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 9dc7546
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        9307a5d com.github.shadowsocks/.bg.TileService filter fda9fd2 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.net.VpnService:
+        b3438a3 com.github.shadowsocks/.bg.VpnService filter f8ff7a0 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        37f5f59 com.github.shadowsocks/androidx.work.impl.background.gcm.WorkManagerGcmService filter 41ee71e permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.github.shadowsocks.SERVICE] (3670420):
+    sourcePackage=com.github.shadowsocks
+    uid=10366 gids=[] type=0 prot=signature
+    perm=PermissionInfo{6deb1d9 com.github.shadowsocks.SERVICE}
+
+Registered ContentProviders:
+  com.github.shadowsocks/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{dd8079e com.github.shadowsocks/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.github.shadowsocks/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{981927f com.github.shadowsocks/com.google.mlkit.common.internal.MlKitInitProvider}
+
+ContentProvider Authorities:
+  [com.github.shadowsocks.mobileadsinitprovider]:
+    Provider{dd8079e com.github.shadowsocks/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{408424c com.github.shadowsocks}
+  [com.github.shadowsocks.mlkitinitprovider]:
+    Provider{981927f com.github.shadowsocks/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{e7f9295 com.github.shadowsocks}
+
+Key Set Manager:
+  [com.github.shadowsocks]
+      Signing KeySets: 4817
+
+Packages:
+  Package [com.github.shadowsocks] (f38ffaa):
+    userId=10366
+    pkg=Package{a6d79b com.github.shadowsocks}
+    codePath=/data/app/~~8bZirPOSJ_-e-FcVjwNN_g==/com.github.shadowsocks-GYkPduyR3mZK55rJUnsIyA==
+    resourcePath=/data/app/~~8bZirPOSJ_-e-FcVjwNN_g==/com.github.shadowsocks-GYkPduyR3mZK55rJUnsIyA==
+    legacyNativeLibraryDir=/data/app/~~8bZirPOSJ_-e-FcVjwNN_g==/com.github.shadowsocks-GYkPduyR3mZK55rJUnsIyA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=5010300 minSdk=23 targetSdk=30
+    minExtensionVersions=[]
+    versionName=5.1.3
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=com.github.shadowsocks.plugin.ACTION_NATIVE_PLUGIN }]
+    dataDir=/data/user/0/com.github.shadowsocks
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 10:01:19
+    lastUpdateTime=2022-11-30 10:01:20
+    packageSource=0
+    signatures=PackageSignatures{e115277 version:2, signatures:[9d2e898e], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.github.shadowsocks.SERVICE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.CAMERA
+      com.github.shadowsocks.SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.INTERNET
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.github.shadowsocks.SERVICE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=44074 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 10:01:20
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.github.shadowsocks
+    com.google.android.apps.diagnosticstool:
+      com.github.shadowsocks
+    com.google.android.settings.intelligence:
+      com.github.shadowsocks
+    com.google.android.apps.accessibility.voiceaccess:
+      com.github.shadowsocks
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.github.shadowsocks]
+    path: /data/app/~~8bZirPOSJ_-e-FcVjwNN_g==/com.github.shadowsocks-GYkPduyR3mZK55rJUnsIyA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1179925
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.github.shadowsocks]
+     base.apk - 469

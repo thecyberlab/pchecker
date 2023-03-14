@@ -1,0 +1,416 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        8ce59c8 hotspotshield.android.vpn/com.anchorfree.hotspotshield.ui.HssActivity filter 3113986
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.hotspotshield.com": -1
+          Path: "PatternMatcher{PREFIX: /vpn/vpn-for-android}"
+          AutoVerify=true
+        8ce59c8 hotspotshield.android.vpn/com.anchorfree.hotspotshield.ui.HssActivity filter 1808247
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "order.hotspotshield.com": -1
+          Path: "PatternMatcher{PREFIX: /special-offer}"
+          AutoVerify=true
+        8ce59c8 hotspotshield.android.vpn/com.anchorfree.hotspotshield.ui.HssActivity filter ede3b9d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "order.hotspotshield.com": -1
+          AutoVerify=true
+        8ce59c8 hotspotshield.android.vpn/com.anchorfree.hotspotshield.ui.HssActivity filter 3376812
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "pango.co": -1
+          Authority: "pango.co": -1
+          Authority: "pango.co": -1
+          Authority: "pango.co": -1
+          Authority: "pango.co": -1
+          Authority: "pango.co": -1
+          Authority: "pango.co": -1
+          Authority: "pango.co": -1
+          Authority: "pango.co": -1
+          Path: "PatternMatcher{PREFIX: /tv}"
+          Path: "PatternMatcher{PREFIX: /settings_screen}"
+          Path: "PatternMatcher{PREFIX: /locations_screen}"
+          Path: "PatternMatcher{PREFIX: /disconnect_vpn}"
+          Path: "PatternMatcher{PREFIX: /connect_vpn}"
+          Path: "PatternMatcher{PREFIX: /products}"
+          Path: "PatternMatcher{PREFIX: /optin}"
+          Path: "PatternMatcher{PREFIX: /time_wall_intro}"
+          Path: "PatternMatcher{PREFIX: /app_appearance}"
+          AutoVerify=true
+      hotspotshield:
+        8ce59c8 hotspotshield.android.vpn/com.anchorfree.hotspotshield.ui.HssActivity filter 5534a74
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "hotspotshield"
+          Authority: "promotion": -1
+
+  Non-Data Actions:
+      com.anchorfree.hotspotshield.wl_id.SHARE:
+        e67f499 hotspotshield.android.vpn/com.anchorfree.hotspotshield.wl.WhiteLabelShareActivity filter 61ff35e
+          Action: "com.anchorfree.hotspotshield.wl_id.SHARE"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        8ce59c8 hotspotshield.android.vpn/com.anchorfree.hotspotshield.ui.HssActivity filter 7e75a61
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        38fbe3 hotspotshield.android.vpn/com.anchorfree.hotspotshield.ui.tv.HssTvActivity filter 99499e0
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        4023609 hotspotshield.android.vpn/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 55df00e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        350a3d3 hotspotshield.android.vpn/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 3723b10
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        7d8045b hotspotshield.android.vpn/com.anchorfree.vpnautoconnect.AutoConnectOnBootReceiver filter 1afc4f8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.REBOOT"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        f7aa2f hotspotshield.android.vpn/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ea7f83c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        58f29c5 hotspotshield.android.vpn/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter cff1a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      hotspotshield.android.vpnaction.connect:
+        75733f hotspotshield.android.vpn/com.anchorfree.hotspotshield.appwidget.large.HssLargeAppWidgetProvider filter cd9740c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "hotspotshield.android.vpnaction.connect"
+          Action: "hotspotshield.android.vpnaction.disconnect"
+        73a4155 hotspotshield.android.vpn/com.anchorfree.hotspotshield.appwidget.small.HssSmallAppWidgetProvider filter 73e76a
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "hotspotshield.android.vpnaction.connect"
+          Action: "hotspotshield.android.vpnaction.disconnect"
+      android.intent.action.DEVICE_STORAGE_OK:
+        f7aa2f hotspotshield.android.vpn/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ea7f83c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        bea460d hotspotshield.android.vpn/com.google.firebase.iid.FirebaseInstanceIdReceiver filter f25f9c2
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      zendesk.support:
+        a088b37 hotspotshield.android.vpn/zendesk.support.DeepLinkingBroadcastReceiver filter 39838a4
+          Action: "zendesk.support"
+      android.intent.action.BATTERY_LOW:
+        4023609 hotspotshield.android.vpn/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 55df00e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        35eba4b hotspotshield.android.vpn/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d1a5c28
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        35eba4b hotspotshield.android.vpn/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d1a5c28
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        7d8045b hotspotshield.android.vpn/com.anchorfree.vpnautoconnect.AutoConnectOnBootReceiver filter 1afc4f8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.REBOOT"
+          Category: "android.intent.category.DEFAULT"
+        35eba4b hotspotshield.android.vpn/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d1a5c28
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        350a3d3 hotspotshield.android.vpn/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 3723b10
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      hotspotshield.android.vpnaction.disconnect:
+        75733f hotspotshield.android.vpn/com.anchorfree.hotspotshield.appwidget.large.HssLargeAppWidgetProvider filter cd9740c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "hotspotshield.android.vpnaction.connect"
+          Action: "hotspotshield.android.vpnaction.disconnect"
+        73a4155 hotspotshield.android.vpn/com.anchorfree.hotspotshield.appwidget.small.HssSmallAppWidgetProvider filter 73e76a
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "hotspotshield.android.vpnaction.connect"
+          Action: "hotspotshield.android.vpnaction.disconnect"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        75733f hotspotshield.android.vpn/com.anchorfree.hotspotshield.appwidget.large.HssLargeAppWidgetProvider filter cd9740c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "hotspotshield.android.vpnaction.connect"
+          Action: "hotspotshield.android.vpnaction.disconnect"
+        73a4155 hotspotshield.android.vpn/com.anchorfree.hotspotshield.appwidget.small.HssSmallAppWidgetProvider filter 73e76a
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "hotspotshield.android.vpnaction.connect"
+          Action: "hotspotshield.android.vpnaction.disconnect"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        5aa9dd1 hotspotshield.android.vpn/com.anchorfree.updatereceiver.UpdateReceiver filter 6611036
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        b3d9d41 hotspotshield.android.vpn/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 6bf2e6
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.REBOOT:
+        7d8045b hotspotshield.android.vpn/com.anchorfree.vpnautoconnect.AutoConnectOnBootReceiver filter 1afc4f8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.REBOOT"
+          Category: "android.intent.category.DEFAULT"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        5dcb027 hotspotshield.android.vpn/com.anchorfree.vpntileservice.VpnTileService filter 1cd12d4 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.net.VpnService:
+        c27b379 hotspotshield.android.vpn/com.anchorfree.vpnsdk.vpnservice.AFVpnService filter e2c78be permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        9e70e35 hotspotshield.android.vpn/com.firebase.jobdispatcher.GooglePlayReceiver filter fb362ca permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        405cc7d hotspotshield.android.vpn/com.anchorfree.firebasepushnotifications.MessagingService filter 745772
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        6ad7d1f hotspotshield.android.vpn/com.google.firebase.messaging.FirebaseMessagingService filter 8f7e86c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.firebase.jobdispatcher.ACTION_EXECUTE:
+        85a27c3 hotspotshield.android.vpn/com.anchorfree.wakeservice.WakeService filter a528840
+          Action: "com.firebase.jobdispatcher.ACTION_EXECUTE"
+
+Domain verification status:
+  hotspotshield.android.vpn:
+    ID: 28ed26d3-ce15-486f-8711-be4c86af467d
+    Signatures: [66:92:05:77:93:26:81:08:D3:91:AA:71:20:3E:26:C5:2F:E6:E4:FD:EA:81:FE:E7:79:AB:1B:BC:05:BA:4E:27]
+    Domain verification state:
+      www.hotspotshield.com: none
+      pango.co: none
+      order.hotspotshield.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.hotspotshield.com
+          pango.co
+          order.hotspotshield.com
+
+Registered ContentProviders:
+  hotspotshield.android.vpn/zendesk.support.guide.GuideSdkStartupProvider:
+    Provider{3cc4486 hotspotshield.android.vpn/zendesk.support.guide.GuideSdkStartupProvider}
+  hotspotshield.android.vpn/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{7e3147 hotspotshield.android.vpn/com.google.firebase.perf.provider.FirebasePerfProvider}
+  hotspotshield.android.vpn/com.squareup.picasso.PicassoProvider:
+    Provider{ca8cd74 hotspotshield.android.vpn/com.squareup.picasso.PicassoProvider}
+  hotspotshield.android.vpn/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{e31029d hotspotshield.android.vpn/com.google.firebase.provider.FirebaseInitProvider}
+  hotspotshield.android.vpn/net.grandcentrix.tray.provider.TrayContentProvider:
+    Provider{c182312 hotspotshield.android.vpn/net.grandcentrix.tray.provider.TrayContentProvider}
+  hotspotshield.android.vpn/zendesk.belvedere.BelvedereFileProvider:
+    Provider{2e29ae3 hotspotshield.android.vpn/zendesk.belvedere.BelvedereFileProvider}
+  hotspotshield.android.vpn/com.anchorfree.vpnsdk.vpnservice.config.VpnConfigProvider:
+    Provider{43f4ce0 hotspotshield.android.vpn/com.anchorfree.vpnsdk.vpnservice.config.VpnConfigProvider}
+  hotspotshield.android.vpn/com.anchorfree.vpnsdk.vpnservice.credentials.CredentialsContentProvider:
+    Provider{da02b99 hotspotshield.android.vpn/com.anchorfree.vpnsdk.vpnservice.credentials.CredentialsContentProvider}
+  hotspotshield.android.vpn/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{bd15e5e hotspotshield.android.vpn/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  hotspotshield.android.vpn/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{d9a023f hotspotshield.android.vpn/com.google.android.gms.ads.MobileAdsInitProvider}
+  hotspotshield.android.vpn/zendesk.support.SupportSdkStartupProvider:
+    Provider{2fc570c hotspotshield.android.vpn/zendesk.support.SupportSdkStartupProvider}
+  hotspotshield.android.vpn/com.anchorfree.eliteapi.wl.provider.EliteAuthProvider:
+    Provider{73ee855 hotspotshield.android.vpn/com.anchorfree.eliteapi.wl.provider.EliteAuthProvider}
+  hotspotshield.android.vpn/androidx.work.impl.WorkManagerInitializer:
+    Provider{751026a hotspotshield.android.vpn/androidx.work.impl.WorkManagerInitializer}
+
+ContentProvider Authorities:
+  [hotspotshield.android.vpn.zendesk.support.SupportSdkStartupProvider]:
+    Provider{2fc570c hotspotshield.android.vpn/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{436835b hotspotshield.android.vpn}
+  [hotspotshield.android.vpn.firebaseinitprovider]:
+    Provider{e31029d hotspotshield.android.vpn/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{a9dd7f8 hotspotshield.android.vpn}
+  [hotspotshield.android.vpn.EliteAuthProvider]:
+    Provider{73ee855 hotspotshield.android.vpn/com.anchorfree.eliteapi.wl.provider.EliteAuthProvider}
+      applicationInfo=ApplicationInfo{ed2b4d1 hotspotshield.android.vpn}
+  [hotspotshield.android.vpn.tray]:
+    Provider{c182312 hotspotshield.android.vpn/net.grandcentrix.tray.provider.TrayContentProvider}
+      applicationInfo=ApplicationInfo{d74db36 hotspotshield.android.vpn}
+  [hotspotshield.android.vpn.zendesk.support.GuideSdkStartupProvider]:
+    Provider{3cc4486 hotspotshield.android.vpn/zendesk.support.guide.GuideSdkStartupProvider}
+      applicationInfo=ApplicationInfo{74ffa37 hotspotshield.android.vpn}
+  [hotspotshield.android.vpn.mobileadsinitprovider]:
+    Provider{d9a023f hotspotshield.android.vpn/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{8d47ba4 hotspotshield.android.vpn}
+  [hotspotshield.android.vpn.firebaseperfprovider]:
+    Provider{7e3147 hotspotshield.android.vpn/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{f2002d3 hotspotshield.android.vpn}
+  [hotspotshield.android.vpn.com.squareup.picasso]:
+    Provider{ca8cd74 hotspotshield.android.vpn/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{3afae10 hotspotshield.android.vpn}
+  [hotspotshield.android.vpn.vpn_config]:
+    Provider{43f4ce0 hotspotshield.android.vpn/com.anchorfree.vpnsdk.vpnservice.config.VpnConfigProvider}
+      applicationInfo=ApplicationInfo{9362d09 hotspotshield.android.vpn}
+  [hotspotshield.android.vpn.belvedere2.attachments]:
+    Provider{2e29ae3 hotspotshield.android.vpn/zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{bc01b0e hotspotshield.android.vpn}
+  [hotspotshield.android.vpn.credentials]:
+    Provider{da02b99 hotspotshield.android.vpn/com.anchorfree.vpnsdk.vpnservice.credentials.CredentialsContentProvider}
+      applicationInfo=ApplicationInfo{3ddf92f hotspotshield.android.vpn}
+  [hotspotshield.android.vpn.lifecycle-process]:
+    Provider{bd15e5e hotspotshield.android.vpn/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{c99b3c hotspotshield.android.vpn}
+  [hotspotshield.android.vpn.workmanager-init]:
+    Provider{751026a hotspotshield.android.vpn/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{f8b90c5 hotspotshield.android.vpn}
+
+Key Set Manager:
+  [hotspotshield.android.vpn]
+      Signing KeySets: 5699
+
+Packages:
+  Package [hotspotshield.android.vpn] (6197441):
+    userId=10277
+    pkg=Package{5887de6 hotspotshield.android.vpn}
+    codePath=/data/app/~~PuJq4IYLe28-ZDRrGCyjfQ==/hotspotshield.android.vpn-2ID70ZdDyIOiIc6f0lKJug==
+    resourcePath=/data/app/~~PuJq4IYLe28-ZDRrGCyjfQ==/hotspotshield.android.vpn-2ID70ZdDyIOiIc6f0lKJug==
+    legacyNativeLibraryDir=/data/app/~~PuJq4IYLe28-ZDRrGCyjfQ==/hotspotshield.android.vpn-2ID70ZdDyIOiIc6f0lKJug==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=80800 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=8.8.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/hotspotshield.android.vpn
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 17:42:11
+    lastUpdateTime=2022-11-30 17:42:12
+    packageSource=0
+    signatures=PackageSignatures{648137d version:2, signatures:[1f09083b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.READ_EXTERNAL_STORAGE
+      com.android.vending.BILLING
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.PACKAGE_USAGE_STATS
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=81053 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 17:42:12
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      hotspotshield.android.vpn
+    com.google.android.apps.diagnosticstool:
+      hotspotshield.android.vpn
+    com.google.android.settings.intelligence:
+      hotspotshield.android.vpn
+    com.google.android.apps.accessibility.voiceaccess:
+      hotspotshield.android.vpn
+    com.truecaller:
+      hotspotshield.android.vpn
+    com.dv.adm:
+      hotspotshield.android.vpn
+    com.zappcues.gamingmode:
+      hotspotshield.android.vpn
+    com.jio.myjio:
+      hotspotshield.android.vpn
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [hotspotshield.android.vpn]
+    path: /data/app/~~PuJq4IYLe28-ZDRrGCyjfQ==/hotspotshield.android.vpn-2ID70ZdDyIOiIc6f0lKJug==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:133912
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [hotspotshield.android.vpn]
+     base.apk - 1023

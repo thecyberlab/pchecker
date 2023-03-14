@@ -1,0 +1,425 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        d6b1421 com.scribd.app.reader0/com.scribd.app.ui.SplashScreen filter 8aab747
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.scribd.com": -1
+          Path: "PatternMatcher{PREFIX: /audiobook/}"
+          Path: "PatternMatcher{PREFIX: /book/}"
+          Path: "PatternMatcher{PREFIX: /lists/}"
+          Path: "PatternMatcher{PREFIX: /curated-lists/}"
+          Path: "PatternMatcher{PREFIX: /read/}"
+          Path: "PatternMatcher{PREFIX: /listen/}"
+          Path: "PatternMatcher{PREFIX: /doc/}"
+          Path: "PatternMatcher{PREFIX: /document/}"
+          Path: "PatternMatcher{PREFIX: /article/}"
+          Path: "PatternMatcher{PREFIX: /presentation/}"
+          Path: "PatternMatcher{PREFIX: /snapshot/}"
+          Path: "PatternMatcher{PREFIX: /author/}"
+          Path: "PatternMatcher{PREFIX: /user/}"
+          Path: "PatternMatcher{PREFIX: /podcast/}"
+          Path: "PatternMatcher{PREFIX: /podcast-show/}"
+          AutoVerify=true
+      fbconnect:
+        93fd046 com.scribd.app.reader0/com.facebook.CustomTabActivity filter 28b3ae0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.scribd.app.reader0": -1
+      checkout:
+        dc53207 com.scribd.app.reader0/com.scribd.app.account.AdyenCheckoutRedirectActivity filter 85180e3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "checkout"
+          Authority: "com.scribd.app.reader0": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d6b1421 com.scribd.app.reader0/com.scribd.app.ui.SplashScreen filter 25f2286
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        a9e9f34 com.scribd.app.reader0/com.scribd.app.ui.MainMenuActivity filter c71db74
+          Action: "android.intent.action.MAIN"
+        43d15d com.scribd.app.reader0/com.scribd.app.account.SettingsNotificationsActivity filter 3fae112
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+        198aad2 com.scribd.app.reader0/com.surveymonkey.surveymonkeyandroidsdk.SMFeedbackActivity filter a788199
+          Action: "android.intent.action.MAIN"
+      android.media.action.MEDIA_PLAY_FROM_SEARCH:
+        a9e9f34 com.scribd.app.reader0/com.scribd.app.ui.MainMenuActivity filter d0ff89d
+          Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        278e7a3 com.scribd.app.reader0/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c85430d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        f207aa0 com.scribd.app.reader0/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter bfd09a4
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED:
+        df12659 com.scribd.app.reader0/com.scribd.app.update.DownloadReceiver filter 8469e55
+          Action: "android.intent.action.DOWNLOAD_COMPLETE"
+          Action: "android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"
+      com.scribd.app.audiobooks.armadillo.AudiobookNotifier.RETRY:
+        b32a21e com.scribd.app.reader0/com.scribd.app.audiobooks.armadillo.AudioBookNotificationRetryReceiver filter 211483f
+          Action: "com.scribd.app.audiobooks.armadillo.AudiobookNotifier.RETRY"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        3285aff com.scribd.app.reader0/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 839b2c2
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        422a0cc com.scribd.app.reader0/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 91468d3
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        984cf15 com.scribd.app.reader0/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter eaa0037
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        3285aff com.scribd.app.reader0/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 839b2c2
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        3e2c22a com.scribd.app.reader0/com.appsflyer.MultipleInstallBroadcastReceiver filter 221fc5e
+          Action: "com.android.vending.INSTALL_REFERRER"
+        531a81b com.scribd.app.reader0/com.scribd.app.install.InstallReferrerReceiver filter 519250c
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.waze.sdk.audio.ACTION_INIT:
+        73efdb8 com.scribd.app.reader0/com.scribd.app.waze.WazeWakeUpReceiver filter fdc295b
+          Action: "com.waze.sdk.audio.ACTION_INIT"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.c2dm.intent.RECEIVE:
+        b704791 com.scribd.app.reader0/com.google.firebase.iid.FirebaseInstanceIdReceiver filter d7b3936
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      zendesk.support:
+        fc2d6f6 com.scribd.app.reader0/zendesk.support.DeepLinkingBroadcastReceiver filter cb985f8
+          Action: "zendesk.support"
+      android.intent.action.BATTERY_LOW:
+        278e7a3 com.scribd.app.reader0/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c85430d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        bb8aaf7 com.scribd.app.reader0/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bd31c10
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        bb8aaf7 com.scribd.app.reader0/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bd31c10
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        bb8aaf7 com.scribd.app.reader0/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bd31c10
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        f207aa0 com.scribd.app.reader0/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter bfd09a4
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DOWNLOAD_COMPLETE:
+        df12659 com.scribd.app.reader0/com.scribd.app.update.DownloadReceiver filter 8469e55
+          Action: "android.intent.action.DOWNLOAD_COMPLETE"
+          Action: "android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        3c23d64 com.scribd.app.reader0/androidx.work.impl.diagnostics.DiagnosticsReceiver filter e74390e
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        7c0cbcd com.scribd.app.reader0/com.adyen.threeds2.internal.AppUpgradeBroadcastReceiver filter 79fcad1
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        8bd6c82 com.scribd.app.reader0/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter fd00309
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.MEDIA_BUTTON:
+        e42ff93 com.scribd.app.reader0/com.scribd.app.audiobooks.armadillo.ArmadilloMediaButtonReceiver filter 50d806a
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        b17cbd0 com.scribd.app.reader0/androidx.work.impl.background.gcm.WorkManagerGcmService filter ebed81a permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        c1b57c9 com.scribd.app.reader0/com.scribd.app.notifications.ScribdFcmListenerService filter fb2bf2f
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        ad9cece com.scribd.app.reader0/com.google.firebase.messaging.FirebaseMessagingService filter b361f4b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      com.google.android.exoplayer.downloadService.action.INIT:
+        d1401ef com.scribd.app.reader0/com.scribd.armadillo.download.DefaultExoplayerDownloadService filter 4ecc6c5
+          Action: "com.google.android.exoplayer.downloadService.action.INIT"
+          Category: "android.intent.category.DEFAULT"
+      android.accounts.AccountAuthenticator:
+        7f5d4fc com.scribd.app.reader0/com.scribd.app.auth.AuthenticationService filter 2b5e93c
+          Action: "android.accounts.AccountAuthenticator"
+      android.media.browse.MediaBrowserService:
+        178a785 com.scribd.app.reader0/com.scribd.armadillo.playback.PlaybackService filter 2965d28
+          Action: "android.media.browse.MediaBrowserService"
+
+Registered ContentProviders:
+  com.scribd.app.reader0/zendesk.belvedere.BelvedereFileProvider:
+    Provider{94809da com.scribd.app.reader0/zendesk.belvedere.BelvedereFileProvider}
+  com.scribd.app.reader0/com.pspdfkit.media.AssetsContentProvider:
+    Provider{f48ce0b com.scribd.app.reader0/com.pspdfkit.media.AssetsContentProvider}
+  com.scribd.app.reader0/com.pspdfkit.document.sharing.DocumentSharingProvider:
+    Provider{84944e8 com.scribd.app.reader0/com.pspdfkit.document.sharing.DocumentSharingProvider}
+  com.scribd.app.reader0/com.xtralogic.android.logcollector.lib.LogContentProvider:
+    Provider{da13701 com.scribd.app.reader0/com.xtralogic.android.logcollector.lib.LogContentProvider}
+  com.scribd.app.reader0/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{82ce9a6 com.scribd.app.reader0/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.scribd.app.reader0/androidx.core.content.FileProvider:
+    Provider{6b43fe7 com.scribd.app.reader0/androidx.core.content.FileProvider}
+  com.scribd.app.reader0/zendesk.support.SupportSdkStartupProvider:
+    Provider{9e1c794 com.scribd.app.reader0/zendesk.support.SupportSdkStartupProvider}
+  com.scribd.app.reader0/com.pspdfkit.PSPDFKitInitializationProvider:
+    Provider{69423d com.scribd.app.reader0/com.pspdfkit.PSPDFKitInitializationProvider}
+  com.scribd.app.reader0/com.facebook.FacebookContentProvider:
+    Provider{72dfa32 com.scribd.app.reader0/com.facebook.FacebookContentProvider}
+  com.scribd.app.reader0/com.activeandroid.content.ContentProvider:
+    Provider{57af383 com.scribd.app.reader0/com.activeandroid.content.ContentProvider}
+  com.scribd.app.reader0/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{5ddc900 com.scribd.app.reader0/com.crashlytics.android.CrashlyticsInitProvider}
+  com.scribd.app.reader0/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{8acc539 com.scribd.app.reader0/com.google.firebase.provider.FirebaseInitProvider}
+  com.scribd.app.reader0/com.facebook.internal.FacebookInitProvider:
+    Provider{8bd877e com.scribd.app.reader0/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.scribd.app.reader0.fileProvider]:
+    Provider{6b43fe7 com.scribd.app.reader0/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{16f44df com.scribd.app.reader0}
+  [com.scribd.app.reader0.FacebookInitProvider]:
+    Provider{8bd877e com.scribd.app.reader0/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{16f44df com.scribd.app.reader0}
+  [com.scribd.app.reader0.crashlyticsinitprovider]:
+    Provider{5ddc900 com.scribd.app.reader0/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{16f44df com.scribd.app.reader0}
+  [com.scribd.app.reader0.pdf.assets]:
+    Provider{f48ce0b com.scribd.app.reader0/com.pspdfkit.media.AssetsContentProvider}
+      applicationInfo=ApplicationInfo{16f44df com.scribd.app.reader0}
+  [com.scribd.app.reader0.logProvider]:
+    Provider{da13701 com.scribd.app.reader0/com.xtralogic.android.logcollector.lib.LogContentProvider}
+      applicationInfo=ApplicationInfo{16f44df com.scribd.app.reader0}
+  [com.scribd.app.reader0.belvedere2.attachments]:
+    Provider{94809da com.scribd.app.reader0/zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{16f44df com.scribd.app.reader0}
+  [com.scribd.app.reader0]:
+    Provider{57af383 com.scribd.app.reader0/com.activeandroid.content.ContentProvider}
+      applicationInfo=ApplicationInfo{16f44df com.scribd.app.reader0}
+  [com.scribd.app.reader0.zendesk.support.SupportSdkStartupProvider]:
+    Provider{9e1c794 com.scribd.app.reader0/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{16f44df com.scribd.app.reader0}
+  [com.scribd.app.reader0.lifecycle-process]:
+    Provider{82ce9a6 com.scribd.app.reader0/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{16f44df com.scribd.app.reader0}
+  [com.scribd.app.reader0.pdf.share]:
+    Provider{84944e8 com.scribd.app.reader0/com.pspdfkit.document.sharing.DocumentSharingProvider}
+      applicationInfo=ApplicationInfo{16f44df com.scribd.app.reader0}
+  [com.scribd.app.reader0.com.pspdfkit.PSPDFKitInitializationProvider]:
+    Provider{69423d com.scribd.app.reader0/com.pspdfkit.PSPDFKitInitializationProvider}
+      applicationInfo=ApplicationInfo{16f44df com.scribd.app.reader0}
+  [com.facebook.app.FacebookContentProvider136494494209]:
+    Provider{72dfa32 com.scribd.app.reader0/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{16f44df com.scribd.app.reader0}
+  [com.scribd.app.reader0.firebaseinitprovider]:
+    Provider{8acc539 com.scribd.app.reader0/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{16f44df com.scribd.app.reader0}
+
+Key Set Manager:
+  [com.scribd.app.reader0]
+      Signing KeySets: 412
+
+Packages:
+  Package [com.scribd.app.reader0] (6d6752c):
+    userId=10242
+    pkg=Package{7874761 com.scribd.app.reader0}
+    codePath=/data/app/com.scribd.app.reader0-8LM38Qg7l6svwLiBUKefCg==
+    resourcePath=/data/app/com.scribd.app.reader0-8LM38Qg7l6svwLiBUKefCg==
+    legacyNativeLibraryDir=/data/app/com.scribd.app.reader0-8LM38Qg7l6svwLiBUKefCg==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=431 minSdk=21 targetSdk=29
+    versionName=10.19
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{16f44df com.scribd.app.reader0}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.scribd.app.reader0
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 08:38:21
+    firstInstallTime=2021-03-06 08:38:22
+    lastUpdateTime=2021-03-06 08:38:22
+    signatures=PackageSignatures{d0b7bf5 version:3, signatures:[b2b5d94a], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.WRITE_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.BROADCAST_STICKY
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH
+      android.permission.FOREGROUND_SERVICE
+      com.android.vending.BILLING
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.WAKE_LOCK
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_PHONE_STATE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=3784 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=211
+  User 0:
+    seq=1, package=com.studioeleven.windfinder
+    seq=8, package=com.google.android.gms
+    seq=9, package=de.motain.iliga
+    seq=11, package=com.microsoft.office.word
+    seq=13, package=video.like
+    seq=15, package=com.netflix.mediaclient
+    seq=19, package=com.agilebits.onepassword
+    seq=21, package=com.rayark.valkyrie
+    seq=23, package=com.aa.generaladaptiveapps
+    seq=25, package=com.ea.gp.fifamobile
+    seq=27, package=com.instagram.igtv
+    seq=29, package=deezer.android.app
+    seq=31, package=com.square_enix.android_googleplay.FFBEWW
+    seq=33, package=com.google.android.calculator
+    seq=35, package=com.gamevilusa.mlbpilive.android.google.global.normal
+    seq=37, package=com.kabam.bigrobot
+    seq=39, package=io.enpass.app
+    seq=41, package=com.adobe.lrmobile
+    seq=43, package=com.vng.g6.a.zombie
+    seq=45, package=com.microblink.photomath
+    seq=47, package=com.scopely.whiplash
+    seq=49, package=com.iudesk.android.photo.editor
+    seq=51, package=com.microsoft.office.officehubrow
+    seq=53, package=com.whatsapp
+    seq=55, package=com.joeware.android.gpulumera
+    seq=57, package=com.anslayer
+    seq=59, package=com.apkupdater
+    seq=62, package=com.android.vending
+    seq=63, package=com.google.android.wearable.app
+    seq=65, package=com.zqlabs.filechef
+    seq=67, package=com.wondershare.filmorago
+    seq=69, package=com.outfit7.mytalkingangelafree
+    seq=71, package=com.truecaller
+    seq=73, package=com.ea.games.r3_row
+    seq=75, package=com.google.ar.lens
+    seq=77, package=com.fusionmedia.investing
+    seq=79, package=com.king.candycrushsodasaga
+    seq=81, package=com.seleuco.mame4droid
+    seq=83, package=com.Slack
+    seq=85, package=com.liquidum.rocketvpn
+    seq=87, package=com.sec.android.easyMover
+    seq=89, package=com.fingersoft.hillclimb
+    seq=91, package=com.cpuid.cpu_z
+    seq=93, package=com.piriform.ccleaner
+    seq=95, package=com.tencent.ibg.joox
+    seq=97, package=com.netease.lztgglobal
+    seq=99, package=com.youthhr.phonto
+    seq=101, package=com.nintendo.zaba
+    seq=103, package=com.idleif.abyssrium
+    seq=105, package=com.facebook.orca
+    seq=107, package=com.amazon.mShop.android.shopping
+    seq=109, package=com.google.android.apps.cloudconsole
+    seq=111, package=com.app.onlyvpn
+    seq=113, package=com.rayark.pluto
+    seq=115, package=wp.wattpad
+    seq=117, package=com.adguard.android
+    seq=119, package=com.lomotif.android
+    seq=121, package=com.infraware.office.link
+    seq=123, package=com.ea.game.pvz2_row
+    seq=125, package=com.afwsamples.testdpc
+    seq=127, package=com.ubisoft.hungrydragon
+    seq=129, package=com.intsig.camscanner
+    seq=131, package=com.urbandroid.lux
+    seq=133, package=com.mobisystems.office
+    seq=135, package=com.microsoft.office.excel
+    seq=137, package=com.ea.gp.pvzheroes
+    seq=139, package=com.bandainamcoent.saomdeu
+    seq=141, package=com.linkedin.android
+    seq=143, package=com.foobar2000.foobar2000
+    seq=145, package=com.moonton.magicrush
+    seq=147, package=com.bandainamcoent.ninjavoltage_app
+    seq=149, package=com.maxmpz.audioplayer
+    seq=151, package=com.gameloft.android.ANMP.GloftGGHM
+    seq=153, package=dp.ws.popcorntime
+    seq=155, package=com.pinterest
+    seq=157, package=com.zombodroid.MemeGenerator
+    seq=159, package=com.contextlogic.wish
+    seq=161, package=com.ovilex.bussimulator2015
+    seq=163, package=com.halfbrick.jetpackjoyride
+    seq=165, package=dk.mymovies.mymoviesforandroidfree
+    seq=167, package=com.google.android.apps.mapslite
+    seq=169, package=com.autodesk.autocadws
+    seq=171, package=com.cma.launcher.lite
+    seq=173, package=com.gameloft.android.ANMP.GloftDYHM
+    seq=175, package=com.ansangha.drdriving
+    seq=177, package=com.google.android.apps.chromecast.app
+    seq=179, package=com.google.android.apps.magazines
+    seq=181, package=com.instagram.threadsapp
+    seq=183, package=ace.jun.simplecontrol
+    seq=186, package=com.supercell.clashroyale
+    seq=188, package=com.gameloft.android.ANMP.GloftDOHM
+    seq=190, package=com.musixmatch.android.lyrify
+    seq=192, package=com.mobilemotion.dubsmash
+    seq=194, package=air.com.playtika.slotomania
+    seq=196, package=com.waze
+    seq=198, package=com.actionlauncher.playstore
+    seq=200, package=com.superevilmegacorp.game
+    seq=202, package=com.mi.globalbrowser
+    seq=205, package=com.supercell.clashofclans
+    seq=207, package=com.nway.powerrangerslegacywars
+    seq=209, package=com.venticake.retrica
+    seq=210, package=com.scribd.app.reader0
+
+
+Dexopt state:
+  [com.scribd.app.reader0]
+    path: /data/app/com.scribd.app.reader0-8LM38Qg7l6svwLiBUKefCg==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.scribd.app.reader0]
+     base.apk - 7896
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

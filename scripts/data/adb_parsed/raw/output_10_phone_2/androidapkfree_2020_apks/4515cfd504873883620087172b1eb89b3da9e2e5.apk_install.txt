@@ -1,0 +1,364 @@
+Activity Resolver Table:
+  Schemes:
+      tv:
+        bc580a com.google.android.apps.youtube.unplugged/.features.main.MainActivity filter a6022b4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tv"
+          Authority: "youtube": -1
+      http:
+        bc580a com.google.android.apps.youtube.unplugged/.features.main.MainActivity filter 549387
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "tv.youtube.com": -1
+          Authority: "tv.youtube.com": -1
+          AutoVerify=true
+      https:
+        bc580a com.google.android.apps.youtube.unplugged/.features.main.MainActivity filter 549387
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "tv.youtube.com": -1
+          Authority: "tv.youtube.com": -1
+          AutoVerify=true
+      com.google.android.apps.youtube.unplugged:
+        4c0b87b com.google.android.apps.youtube.unplugged/com.google.android.libraries.accountlinking.activity.AccountLinkingActivity filter b9cedd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.google.android.apps.youtube.unplugged"
+          Authority: "oauth2redirect": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        bc580a com.google.android.apps.youtube.unplugged/.features.main.MainActivity filter fd1c7c6
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.youtube.unplugged.startup.activity.SplashActivity:
+        8663698 com.google.android.apps.youtube.unplugged/.startup.activity.SplashActivity filter dd22e08
+          Action: "com.google.android.apps.youtube.unplugged.startup.activity.SplashActivity"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        bc580a com.google.android.apps.youtube.unplugged/.features.main.MainActivity filter eb439a1
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        9b7bef1 com.google.android.apps.youtube.unplugged/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 2bb21aa
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        ecfead6 com.google.android.apps.youtube.unplugged/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 80cfc95
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.google.android.libraries.cast.companionlibrary.action.stop:
+        f986157 com.google.android.apps.youtube.unplugged/.remote.RemoteNotificationReceiver filter 8129a52
+          Action: "android.intent.action.MEDIA_BUTTON"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.forward"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.rewind"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.toggleplayback"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.stop"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        1d42444 com.google.android.apps.youtube.unplugged/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 16b519b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        af8592d com.google.android.apps.youtube.unplugged/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 6712938
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.google.android.libraries.cast.companionlibrary.action.rewind:
+        f986157 com.google.android.apps.youtube.unplugged/.remote.RemoteNotificationReceiver filter 8129a52
+          Action: "android.intent.action.MEDIA_BUTTON"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.forward"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.rewind"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.toggleplayback"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.stop"
+      com.google.android.gms.analytics.ANALYTICS_DISPATCH:
+        cb7de62 com.google.android.apps.youtube.unplugged/com.google.android.gms.analytics.AnalyticsReceiver filter 85ce123
+          Action: "com.google.android.gms.analytics.ANALYTICS_DISPATCH"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        1d7bbf3 com.google.android.apps.youtube.unplugged/com.google.android.libraries.youtube.account.service.AccountsChangedReceiver filter 36b620
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        1d42444 com.google.android.apps.youtube.unplugged/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 16b519b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        51140b0 com.google.android.apps.youtube.unplugged/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 321144c
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        9b7bef1 com.google.android.apps.youtube.unplugged/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 2bb21aa
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        22e5b29 com.google.android.apps.youtube.unplugged/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 20dcd11
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        22e5b29 com.google.android.apps.youtube.unplugged/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 20dcd11
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        8397eae com.google.android.apps.youtube.unplugged/com.google.android.libraries.youtube.mdx.background.MdxBackgroundScanBootReceiver filter f897bd9
+          Action: "android.intent.action.BOOT_COMPLETED"
+        da8244f com.google.android.apps.youtube.unplugged/com.google.android.libraries.youtube.mdx.notification.continueontv.ContinueWatchingOnTvNotificationBroadcastReceiver filter 41c099e
+          Action: "android.intent.action.BOOT_COMPLETED"
+        fc1b7dc com.google.android.apps.youtube.unplugged/com.google.android.libraries.youtube.mdx.notification.local.LocalNotificationsBroadcastReceiver filter 9126c7f
+          Action: "android.intent.action.BOOT_COMPLETED"
+        22e5b29 com.google.android.apps.youtube.unplugged/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 20dcd11
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        ecfead6 com.google.android.apps.youtube.unplugged/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 80cfc95
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.google.android.libraries.cast.companionlibrary.action.toggleplayback:
+        f986157 com.google.android.apps.youtube.unplugged/.remote.RemoteNotificationReceiver filter 8129a52
+          Action: "android.intent.action.MEDIA_BUTTON"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.forward"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.rewind"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.toggleplayback"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.stop"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        ba880e5 com.google.android.apps.youtube.unplugged/androidx.work.impl.diagnostics.DiagnosticsReceiver filter fa36c77
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.google.android.libraries.cast.companionlibrary.action.forward:
+        f986157 com.google.android.apps.youtube.unplugged/.remote.RemoteNotificationReceiver filter 8129a52
+          Action: "android.intent.action.MEDIA_BUTTON"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.forward"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.rewind"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.toggleplayback"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.stop"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        422d7ba com.google.android.apps.youtube.unplugged/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 81ae76
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.MEDIA_BUTTON:
+        f986157 com.google.android.apps.youtube.unplugged/.remote.RemoteNotificationReceiver filter 8129a52
+          Action: "android.intent.action.MEDIA_BUTTON"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.forward"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.rewind"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.toggleplayback"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.stop"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.libraries.cast.companionlibrary.action.notificationvisibility:
+        46cb66b com.google.android.apps.youtube.unplugged/.remote.RemoteNotificationService filter eaba0e4
+          Action: "com.google.android.libraries.cast.companionlibrary.action.forward"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.rewind"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.toggleplayback"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.stop"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.notificationvisibility"
+      com.google.android.libraries.cast.companionlibrary.action.stop:
+        46cb66b com.google.android.apps.youtube.unplugged/.remote.RemoteNotificationService filter eaba0e4
+          Action: "com.google.android.libraries.cast.companionlibrary.action.forward"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.rewind"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.toggleplayback"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.stop"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.notificationvisibility"
+      com.google.android.libraries.cast.companionlibrary.action.rewind:
+        46cb66b com.google.android.apps.youtube.unplugged/.remote.RemoteNotificationService filter eaba0e4
+          Action: "com.google.android.libraries.cast.companionlibrary.action.forward"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.rewind"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.toggleplayback"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.stop"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.notificationvisibility"
+      android.speech.RecognitionService:
+        3a075c8 com.google.android.apps.youtube.unplugged/.voice.speech.UnpluggedRecognitionService filter f523c02
+          Action: "android.speech.RecognitionService"
+          Category: "android.intent.category.DEFAULT"
+      com.google.firebase.MESSAGING_EVENT:
+        fe54661 com.google.android.apps.youtube.unplugged/.notifications.FcmMessageListenerService filter e71294d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        16b586 com.google.android.apps.youtube.unplugged/com.google.firebase.messaging.FirebaseMessagingService filter fd85913
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      com.google.android.libraries.cast.companionlibrary.action.toggleplayback:
+        46cb66b com.google.android.apps.youtube.unplugged/.remote.RemoteNotificationService filter eaba0e4
+          Action: "com.google.android.libraries.cast.companionlibrary.action.forward"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.rewind"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.toggleplayback"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.stop"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.notificationvisibility"
+      com.google.android.libraries.cast.companionlibrary.action.forward:
+        46cb66b com.google.android.apps.youtube.unplugged/.remote.RemoteNotificationService filter eaba0e4
+          Action: "com.google.android.libraries.cast.companionlibrary.action.forward"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.rewind"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.toggleplayback"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.stop"
+          Action: "com.google.android.libraries.cast.companionlibrary.action.notificationvisibility"
+
+Registered ContentProviders:
+  com.google.android.apps.youtube.unplugged/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{9e4e47 com.google.android.apps.youtube.unplugged/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+
+ContentProvider Authorities:
+  [com.google.android.apps.youtube.unplugged.lifecycle-process]:
+    Provider{9e4e47 com.google.android.apps.youtube.unplugged/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{12b2674 com.google.android.apps.youtube.unplugged}
+
+Key Set Manager:
+  [com.google.android.apps.youtube.unplugged]
+      Signing KeySets: 251
+
+Packages:
+  Package [com.google.android.apps.youtube.unplugged] (6cee79d):
+    userId=10201
+    pkg=Package{46d27ab com.google.android.apps.youtube.unplugged}
+    codePath=/data/app/com.google.android.apps.youtube.unplugged-sySEKa1_UP8uoJlsd4AJ2A==
+    resourcePath=/data/app/com.google.android.apps.youtube.unplugged-sySEKa1_UP8uoJlsd4AJ2A==
+    legacyNativeLibraryDir=/data/app/com.google.android.apps.youtube.unplugged-sySEKa1_UP8uoJlsd4AJ2A==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=204380310 minSdk=21 targetSdk=29
+    versionName=4.38.3
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{12b2674 com.google.android.apps.youtube.unplugged}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.google.android.apps.youtube.unplugged
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 07:58:14
+    firstInstallTime=2021-03-06 07:58:15
+    lastUpdateTime=2021-03-06 07:58:15
+    signatures=PackageSignatures{118a412 version:3, signatures:[9e3d9f7], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    requested permissions:
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.GET_ACCOUNTS
+      android.permission.INTERNET
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.RECORD_AUDIO
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.USE_CREDENTIALS
+      android.permission.USE_FINGERPRINT
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.ACCESS_COARSE_LOCATION
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=7001 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=128
+  User 0:
+    seq=6, package=com.google.android.gms
+    seq=7, package=com.ultimateguitar.tabs
+    seq=9, package=com.anddoes.launcher
+    seq=11, package=tv.twitch.android.app
+    seq=13, package=com.ludo.king
+    seq=15, package=net.zedge.android
+    seq=17, package=com.shazam.android
+    seq=19, package=com.whatsweb.app
+    seq=21, package=com.yahoo.mobile.client.android.finance
+    seq=23, package=com.yahoo.mobile.client.android.mail
+    seq=25, package=de.resolution.yf_android
+    seq=27, package=com.ninegag.android.app
+    seq=29, package=iflix.play
+    seq=31, package=com.gamestar.perfectpiano
+    seq=33, package=com.gbwhatsapp
+    seq=35, package=com.instagram.android
+    seq=37, package=com.opera.touch
+    seq=39, package=com.ea.game.pvzfree_row
+    seq=41, package=com.paget96.lspeed
+    seq=43, package=jp.konami.duellinks
+    seq=46, package=com.google.android.apps.walletnfcrel
+    seq=48, package=com.mufumbo.android.recipe.search
+    seq=51, package=com.google.android.apps.docs.editors.docs
+    seq=52, package=com.google.android.apps.docs
+    seq=54, package=io.friendly
+    seq=56, package=com.gamestar.pianoperfect
+    seq=58, package=com.bethsoft.falloutshelter
+    seq=60, package=com.midasplayer.apps.bubblewitchsaga2
+    seq=62, package=com.google.android.apps.adm
+    seq=64, package=it.medieval.blueftp
+    seq=66, package=com.bandainamcogames.dbzdokkanww
+    seq=68, package=com.quirky.android.wink.wink
+    seq=70, package=com.king.candycrushjellysaga
+    seq=72, package=com.microsoft.office.powerpoint
+    seq=74, package=com.yowhatsapp
+    seq=77, package=com.rarlab.rar
+    seq=79, package=com.internet.speed.meter.lite
+    seq=81, package=com.sega.sprint
+    seq=83, package=com.defianttech.diskdigger
+    seq=85, package=com.mcdonalds.app
+    seq=87, package=com.catdaddy.cat22
+    seq=89, package=org.ppsspp.ppsspp
+    seq=91, package=com.creativemobile.DragRacing
+    seq=93, package=kik.android
+    seq=95, package=sg.bigo.live
+    seq=97, package=com.imo.android.imoim
+    seq=99, package=mega.privacy.android.app
+    seq=101, package=com.instagram.lite
+    seq=103, package=air.com.befunky.BeFunkyPhotoEditor
+    seq=106, package=com.picsart.studio
+    seq=108, package=com.adobe.reader
+    seq=110, package=com.edengames.GTSpirit
+    seq=112, package=com.mixplorer.addon.archive
+    seq=114, package=com.ridewith
+    seq=116, package=com.whatsapp.w4b
+    seq=118, package=com.wolvesinteractive.traffictour
+    seq=120, package=com.twitter.android
+    seq=122, package=com.facebook.katana
+    seq=124, package=com.google.android.apps.paidtasks
+    seq=126, package=com.rpdev.cutter
+    seq=127, package=com.google.android.apps.youtube.unplugged
+
+
+Dexopt state:
+  [com.google.android.apps.youtube.unplugged]
+    path: /data/app/com.google.android.apps.youtube.unplugged-sySEKa1_UP8uoJlsd4AJ2A==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.google.android.apps.youtube.unplugged]
+     base.apk - 6905
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

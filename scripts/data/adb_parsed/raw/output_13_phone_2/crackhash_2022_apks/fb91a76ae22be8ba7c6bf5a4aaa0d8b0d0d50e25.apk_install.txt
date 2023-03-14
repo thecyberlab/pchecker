@@ -1,0 +1,431 @@
+Activity Resolver Table:
+  Full MIME Types:
+      image/*:
+        43be2f3 com.wallpaperscraft.wallpaper/.feature.installer.InstallerActivity filter 797dbb0
+          Action: "android.intent.action.ATTACH_DATA"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      image:
+        43be2f3 com.wallpaperscraft.wallpaper/.feature.installer.InstallerActivity filter 797dbb0
+          Action: "android.intent.action.ATTACH_DATA"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      https:
+        2381857 com.wallpaperscraft.wallpaper/.feature.main.MainActivity filter d084162
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "volkraft.com": -1
+          Path: "PatternMatcher{PREFIX: /content}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        2381857 com.wallpaperscraft.wallpaper/.feature.main.MainActivity filter 3970f44
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        ab85a29 com.wallpaperscraft.wallpaper/io.presage.mraid.browser.ShortcutActivity filter ad11ae
+          Action: "android.intent.action.MAIN"
+        fa7bb4f com.wallpaperscraft.wallpaper/io.presage.mraid.browser.Android8AndLaterShortcutActivity filter 39702dc
+          Action: "android.intent.action.MAIN"
+      android.intent.action.SET_WALLPAPER:
+        2381857 com.wallpaperscraft.wallpaper/.feature.main.MainActivity filter 90682d
+          Action: "android.intent.action.SET_WALLPAPER"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.ATTACH_DATA:
+        43be2f3 com.wallpaperscraft.wallpaper/.feature.installer.InstallerActivity filter 797dbb0
+          Action: "android.intent.action.ATTACH_DATA"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        6537327 com.wallpaperscraft.wallpaper/com.ogury.analytics.receiver.PackageFullyRemovedReceiver filter 5c819d4
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+      content:
+        df4d4b com.wallpaperscraft.wallpaper/com.ogury.analytics.receiver.EventReminderReceiver filter ba2f328
+          Action: "android.intent.action.EVENT_REMINDER"
+          Scheme: "content"
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        d3f1f99 com.wallpaperscraft.wallpaper/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 8d7425e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        4a36ee3 com.wallpaperscraft.wallpaper/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter bf190e0
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        c94163f com.wallpaperscraft.wallpaper/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d8edb0c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        3d91c55 com.wallpaperscraft.wallpaper/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 8d1266a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.telephony.action.CARRIER_CONFIG_CHANGED:
+        f850d2f com.wallpaperscraft.wallpaper/com.ogury.analytics.receiver.CarrierConfigChangedReceiver filter 7051f3c
+          Action: "android.telephony.action.CARRIER_CONFIG_CHANGED"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        cbdd6d3 com.wallpaperscraft.wallpaper/com.ogury.analytics.receiver.BootCompletedReceiver filter e7af210
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        608b69d com.wallpaperscraft.wallpaper/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 3c7c712
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.ogury.sdk.intent.ENABLE_LOGS:
+        c09c77d com.wallpaperscraft.wallpaper/com.ogury.core.internal.OguryLogEnablerReceiver filter 2a03672
+          Action: "com.ogury.sdk.intent.ENABLE_LOGS"
+      android.intent.action.DEVICE_STORAGE_OK:
+        c94163f com.wallpaperscraft.wallpaper/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d8edb0c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.app.action.NEXT_ALARM_CLOCK_CHANGED:
+        11ac4c5 com.wallpaperscraft.wallpaper/com.ogury.analytics.receiver.NextAlarmClockChangedReceiver filter 5b7fe1a
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+      android.bluetooth.device.action.ACL_CONNECTED:
+        367e841 com.wallpaperscraft.wallpaper/com.ogury.analytics.receiver.BluetoothReceiver filter f47e1e6
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      com.google.android.c2dm.intent.RECEIVE:
+        219c547 com.wallpaperscraft.wallpaper/com.google.firebase.iid.FirebaseInstanceIdReceiver filter afed174
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        d3f1f99 com.wallpaperscraft.wallpaper/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 8d7425e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        abdd75b com.wallpaperscraft.wallpaper/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5d49bf8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        abdd75b com.wallpaperscraft.wallpaper/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5d49bf8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        87a2109 com.wallpaperscraft.wallpaper/com.ogury.analytics.receiver.TimeSetReceiver filter 806ff0e
+          Action: "android.intent.action.TIME_SET"
+      android.intent.action.BOOT_COMPLETED:
+        1d02561 com.wallpaperscraft.wallpaper/.lib.BootReceiver filter b09a886
+          Action: "android.intent.action.BOOT_COMPLETED"
+        abdd75b com.wallpaperscraft.wallpaper/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5d49bf8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        cbdd6d3 com.wallpaperscraft.wallpaper/com.ogury.analytics.receiver.BootCompletedReceiver filter e7af210
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.USER_PRESENT:
+        c29810d com.wallpaperscraft.wallpaper/com.ogury.analytics.receiver.UserPresentReceiver filter c18c2
+          Action: "android.intent.action.USER_PRESENT"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        4a36ee3 com.wallpaperscraft.wallpaper/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter bf190e0
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DOWNLOAD_COMPLETE:
+        c536fe5 com.wallpaperscraft.wallpaper/.lib.task.DownloadReceiver filter bbc9aba
+          Action: "android.intent.action.DOWNLOAD_COMPLETE"
+      notification_removed:
+        c4ebd6b com.wallpaperscraft.wallpaper/.lib.NotificationBroadcastReceiver filter 6ff70c8
+          Action: "notification_removed"
+      android.hardware.usb.action.USB_ACCESSORY_DETACHED:
+        367e841 com.wallpaperscraft.wallpaper/com.ogury.analytics.receiver.BluetoothReceiver filter f47e1e6
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        f88e37 com.wallpaperscraft.wallpaper/androidx.work.impl.diagnostics.DiagnosticsReceiver filter ab37fa4
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.bluetooth.device.action.ACL_DISCONNECTED:
+        367e841 com.wallpaperscraft.wallpaper/com.ogury.analytics.receiver.BluetoothReceiver filter f47e1e6
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        cdc28d1 com.wallpaperscraft.wallpaper/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter d33f36
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      metrica:
+        e021f3b com.wallpaperscraft.wallpaper/com.yandex.metrica.MetricaService filter f0d7658
+          Action: "com.yandex.metrica.IMetricaService"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "metrica"
+
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        cfa1ac3 com.wallpaperscraft.wallpaper/.lib.push.WLCFirebaseMessagingService filter 76ff40
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        90f6935 com.wallpaperscraft.wallpaper/com.google.firebase.messaging.FirebaseMessagingService filter 19c21ca
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.yandex.metrica.configuration.ACTION_INIT:
+        2da63b1 com.wallpaperscraft.wallpaper/com.yandex.metrica.ConfigurationService filter d429096
+          Action: "com.yandex.metrica.configuration.ACTION_INIT"
+      android.service.wallpaper.WallpaperService:
+        ff05e79 com.wallpaperscraft.wallpaper/.feature.parallax.lib.ParallaxLiveWallpaper filter b747be permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        d9a01f com.wallpaperscraft.wallpaper/.feature.video.lib.VideoLiveWallpaper filter 26ccf6c permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          volkraft.com
+
+Registered ContentProviders:
+  com.wallpaperscraft.wallpaper/com.my.target.common.MyTargetContentProvider:
+    Provider{2654829 com.wallpaperscraft.wallpaper/com.my.target.common.MyTargetContentProvider}
+  com.wallpaperscraft.wallpaper/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{9d267ae com.wallpaperscraft.wallpaper/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.wallpaperscraft.wallpaper/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{8c1594f com.wallpaperscraft.wallpaper/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.wallpaperscraft.wallpaper/androidx.core.content.FileProvider:
+    Provider{5a348dc com.wallpaperscraft.wallpaper/androidx.core.content.FileProvider}
+  com.wallpaperscraft.wallpaper/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{ce13de5 com.wallpaperscraft.wallpaper/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.wallpaperscraft.wallpaper/com.facebook.marketing.internal.MarketingInitProvider:
+    Provider{e150ba com.wallpaperscraft.wallpaper/com.facebook.marketing.internal.MarketingInitProvider}
+  com.wallpaperscraft.wallpaper/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{643b6b com.wallpaperscraft.wallpaper/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.wallpaperscraft.wallpaper/com.squareup.picasso.PicassoProvider:
+    Provider{48a16c8 com.wallpaperscraft.wallpaper/com.squareup.picasso.PicassoProvider}
+  com.wallpaperscraft.wallpaper/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{86cd361 com.wallpaperscraft.wallpaper/com.google.firebase.provider.FirebaseInitProvider}
+  com.wallpaperscraft.wallpaper/com.facebook.internal.FacebookInitProvider:
+    Provider{cc3be86 com.wallpaperscraft.wallpaper/com.facebook.internal.FacebookInitProvider}
+  com.wallpaperscraft.wallpaper/com.smaato.sdk.sys.LifecycleProvider:
+    Provider{5092347 com.wallpaperscraft.wallpaper/com.smaato.sdk.sys.LifecycleProvider}
+  com.wallpaperscraft.wallpaper/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{d8dd774 com.wallpaperscraft.wallpaper/com.facebook.ads.AudienceNetworkContentProvider}
+  com.wallpaperscraft.wallpaper/com.applovin.sdk.AppLovinInitProvider:
+    Provider{4c2449d com.wallpaperscraft.wallpaper/com.applovin.sdk.AppLovinInitProvider}
+  com.wallpaperscraft.wallpaper/androidx.startup.InitializationProvider:
+    Provider{60d3d12 com.wallpaperscraft.wallpaper/androidx.startup.InitializationProvider}
+  com.wallpaperscraft.wallpaper/com.ironsource.lifecycle.IronsourceLifecycleProvider:
+    Provider{a2aace3 com.wallpaperscraft.wallpaper/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+
+ContentProvider Authorities:
+  [com.wallpaperscraft.wallpaper.lifecycle-process]:
+    Provider{9d267ae com.wallpaperscraft.wallpaper/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{f6af6e0 com.wallpaperscraft.wallpaper}
+  [com.wallpaperscraft.wallpaper.provider]:
+    Provider{5a348dc com.wallpaperscraft.wallpaper/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{9038d99 com.wallpaperscraft.wallpaper}
+  [com.wallpaperscraft.wallpaper.MarketingInitProvider]:
+    Provider{e150ba com.wallpaperscraft.wallpaper/com.facebook.marketing.internal.MarketingInitProvider}
+      applicationInfo=ApplicationInfo{8fe185e com.wallpaperscraft.wallpaper}
+  [com.wallpaperscraft.wallpaper.IronsourceLifecycleProvider]:
+    Provider{a2aace3 com.wallpaperscraft.wallpaper/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+      applicationInfo=ApplicationInfo{651343f com.wallpaperscraft.wallpaper}
+  [com.wallpaperscraft.wallpaper.AudienceNetworkContentProvider]:
+    Provider{d8dd774 com.wallpaperscraft.wallpaper/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{638a10c com.wallpaperscraft.wallpaper}
+  [com.wallpaperscraft.wallpaper.smaato-lifecycle-process]:
+    Provider{ce13de5 com.wallpaperscraft.wallpaper/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{2766a55 com.wallpaperscraft.wallpaper}
+  [com.wallpaperscraft.wallpaper.applovincontentprovider]:
+    Provider{4c2449d com.wallpaperscraft.wallpaper/com.applovin.sdk.AppLovinInitProvider}
+      applicationInfo=ApplicationInfo{38f5c6a com.wallpaperscraft.wallpaper}
+  [com.wallpaperscraft.wallpaper.androidx-startup]:
+    Provider{60d3d12 com.wallpaperscraft.wallpaper/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{62ed55b com.wallpaperscraft.wallpaper}
+  [com.wallpaperscraft.wallpaper.firebaseinitprovider]:
+    Provider{86cd361 com.wallpaperscraft.wallpaper/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{654c1f8 com.wallpaperscraft.wallpaper}
+  [com.wallpaperscraft.wallpaper.mobileadsinitprovider]:
+    Provider{8c1594f com.wallpaperscraft.wallpaper/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{30056d1 com.wallpaperscraft.wallpaper}
+  [com.wallpaperscraft.wallpaper.smaato-lifecycling]:
+    Provider{5092347 com.wallpaperscraft.wallpaper/com.smaato.sdk.sys.LifecycleProvider}
+      applicationInfo=ApplicationInfo{83ed536 com.wallpaperscraft.wallpaper}
+  [com.wallpaperscraft.wallpaper.FacebookInitProvider]:
+    Provider{cc3be86 com.wallpaperscraft.wallpaper/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{57b6c37 com.wallpaperscraft.wallpaper}
+  [com.wallpaperscraft.wallpaper.mytargetcontentprovider]:
+    Provider{2654829 com.wallpaperscraft.wallpaper/com.my.target.common.MyTargetContentProvider}
+      applicationInfo=ApplicationInfo{a1005a4 com.wallpaperscraft.wallpaper}
+  [com.wallpaperscraft.wallpaper.firebaseperfprovider]:
+    Provider{643b6b com.wallpaperscraft.wallpaper/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{b628f0d com.wallpaperscraft.wallpaper}
+  [com.wallpaperscraft.wallpaper.com.squareup.picasso]:
+    Provider{48a16c8 com.wallpaperscraft.wallpaper/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{19b0ec2 com.wallpaperscraft.wallpaper}
+
+Key Set Manager:
+  [com.wallpaperscraft.wallpaper]
+      Signing KeySets: 5699
+
+Packages:
+  Package [com.wallpaperscraft.wallpaper] (99094d3):
+    userId=10373
+    pkg=Package{e19d810 com.wallpaperscraft.wallpaper}
+    codePath=/data/app/~~kQ2OVzzQQLhla7zDefYoEg==/com.wallpaperscraft.wallpaper-czu803_ALwSSUe-_M18SqA==
+    resourcePath=/data/app/~~kQ2OVzzQQLhla7zDefYoEg==/com.wallpaperscraft.wallpaper-czu803_ALwSSUe-_M18SqA==
+    legacyNativeLibraryDir=/data/app/~~kQ2OVzzQQLhla7zDefYoEg==/com.wallpaperscraft.wallpaper-czu803_ALwSSUe-_M18SqA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=30700 minSdk=25 targetSdk=30
+    minExtensionVersions=[]
+    versionName=3.7.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.android.systemui, com.android.chrome, com.facebook.katana, com.android.vending, com.amazon.venezia, com.sec.android.app.samsungapps, com.huawei.appmarket]
+    queriesIntents=[Intent { act=android.intent.action.SENDTO dat=mailto:xx }, Intent { act=android.intent.action.VIEW dat=image/*:/... }, Intent { act=android.intent.action.VIEW dat=video/mp4:/... }, Intent { act=android.intent.action.VIEW dat=http:/... }, Intent { act=androidx.browser.customtabs.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }, Intent { act=android.intent.action.VIEW dat=market:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.wallpaperscraft.wallpaper
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 15:22:13
+    lastUpdateTime=2022-11-30 15:22:15
+    packageSource=0
+    signatures=PackageSignatures{d360f09 version:3, signatures:[1f09083b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.SET_WALLPAPER
+      android.permission.SET_WALLPAPER_HINTS
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      com.android.vending.BILLING
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.SCHEDULE_EXACT_ALARM
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.gms.permission.AD_ID
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      android.permission.SCHEDULE_EXACT_ALARM: granted=true
+      android.permission.SET_WALLPAPER_HINTS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=64099 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:22:15
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.wallpaperscraft.wallpaper:
+      com.android.chrome
+  queries via component:
+    com.google.android.apps.messaging:
+      com.wallpaperscraft.wallpaper
+    com.google.android.apps.diagnosticstool:
+      com.wallpaperscraft.wallpaper
+    com.google.android.settings.intelligence:
+      com.wallpaperscraft.wallpaper
+    com.google.android.apps.photos:
+      com.wallpaperscraft.wallpaper
+    com.google.android.apps.accessibility.voiceaccess:
+      com.wallpaperscraft.wallpaper
+    com.google.android.apps.wallpaper:
+      com.wallpaperscraft.wallpaper
+    com.google.android.storagemanager:
+      com.wallpaperscraft.wallpaper
+    com.google.android.pixel.setupwizard:
+      com.wallpaperscraft.wallpaper
+    com.truecaller:
+      com.wallpaperscraft.wallpaper
+    com.dv.adm:
+      com.wallpaperscraft.wallpaper
+    com.zappcues.gamingmode:
+      com.wallpaperscraft.wallpaper
+    com.wallpaperscraft.wallpaper:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      com.google.android.gm
+      com.mobisystems.office
+      com.dv.adm
+      com.utorrent.client.pro
+    com.jio.myjio:
+      com.wallpaperscraft.wallpaper
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.wallpaperscraft.wallpaper]
+    path: /data/app/~~kQ2OVzzQQLhla7zDefYoEg==/com.wallpaperscraft.wallpaper-czu803_ALwSSUe-_M18SqA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:684521
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.wallpaperscraft.wallpaper]
+     base.apk - 1580

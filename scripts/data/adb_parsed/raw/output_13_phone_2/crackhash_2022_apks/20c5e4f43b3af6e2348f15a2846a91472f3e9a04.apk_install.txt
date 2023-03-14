@@ -1,0 +1,327 @@
+Activity Resolver Table:
+  Schemes:
+      fb406848630071440:
+        fa58f00 co.blocksite/com.facebook.CustomTabActivity filter 5101339
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb406848630071440"
+      https:
+        f1642df co.blocksite/.MainActivity filter c549b2c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "blocksite.page.link": -1
+          Path: "PatternMatcher{PREFIX: /app-link/}"
+      fbconnect:
+        fa58f00 co.blocksite/com.facebook.CustomTabActivity filter 4c9bd7e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.co.blocksite": -1
+      genericidp:
+        c063e18 co.blocksite/com.google.firebase.auth.internal.GenericIdpActivity filter 423f071
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        ef5fe56 co.blocksite/com.google.firebase.auth.internal.RecaptchaActivity filter ebfaed7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      mobileapp:
+        f1642df co.blocksite/.MainActivity filter 755a9f5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "mobileapp"
+          Authority: "api.blocksite.co": -1
+          Path: "PatternMatcher{PREFIX: /app-link}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        1c0338a co.blocksite/.SplashScreenActivity filter 5462dfb
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        c964f92 co.blocksite/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 52a8d63
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        d8305f4 co.blocksite/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b52111d
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        7c48d60 co.blocksite/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter a03a219
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        745d2de co.blocksite/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 4ae9cbf
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.google.android.gms.analytics.ANALYTICS_DISPATCH:
+        d9e822e co.blocksite/com.google.android.gms.analytics.AnalyticsReceiver filter 5bba1cf
+          Action: "com.google.android.gms.analytics.ANALYTICS_DISPATCH"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        5a8a906 co.blocksite/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter cf3fbc7
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        7c48d60 co.blocksite/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter a03a219
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.app.action.DEVICE_ADMIN_DISABLED:
+        194933a co.blocksite/.modules.DeviceAdmin filter 9fa8beb
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+      android.app.action.DEVICE_ADMIN_ENABLED:
+        194933a co.blocksite/.modules.DeviceAdmin filter 9fa8beb
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+      com.android.vending.INSTALL_REFERRER:
+        7eba9e2 co.blocksite/com.appsflyer.MultipleInstallBroadcastReceiver filter 3e66173
+          Action: "com.android.vending.INSTALL_REFERRER"
+        cbab830 co.blocksite/com.google.android.gms.analytics.CampaignTrackingReceiver filter 4bf3ca9
+          Action: "com.android.vending.INSTALL_REFERRER"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        b735fb6 co.blocksite/androidx.profileinstaller.ProfileInstallReceiver filter 40d64b7
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        7aa878 co.blocksite/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 85e7b51
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        c964f92 co.blocksite/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 52a8d63
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        cd51f8c co.blocksite/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8a346d5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        cd51f8c co.blocksite/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8a346d5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        2d23c4 co.blocksite/.accessibility.AccessibilityReminderReceiver filter 1b622ad
+          Action: "BLOCKSITE_ACCESSIBILITY_REMINDER_ALARM"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        14b275c co.blocksite/.accessibility.ReceiverBoot filter 25fa65
+          Action: "android.intent.action.BOOT_COMPLETED"
+        cd51f8c co.blocksite/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8a346d5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        d8305f4 co.blocksite/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b52111d
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        9115d48 co.blocksite/.receivers.OnUpgradeReceiver filter 480d7e1
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        ad83eea co.blocksite/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 43a45db
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      BLOCKSITE_ACCESSIBILITY_REMINDER_ALARM:
+        2d23c4 co.blocksite/.accessibility.AccessibilityReminderReceiver filter 1b622ad
+          Action: "BLOCKSITE_ACCESSIBILITY_REMINDER_ALARM"
+          Action: "android.intent.action.BOOT_COMPLETED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        7cdc142 co.blocksite/.sync.services.SyncMessagingService filter e899553
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        17aaf8e co.blocksite/com.google.firebase.messaging.FirebaseMessagingService filter 88e33af
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.accessibilityservice.AccessibilityService:
+        aedd424 co.blocksite/.accessibility.AccessibilityWrapper filter 5be7b8d permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+          mPriority=99, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.auth.api.gms.service.START:
+        d460e90 co.blocksite/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 2a44389
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          blocksite.page.link
+
+Registered ContentProviders:
+  co.blocksite/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{55d8d31 co.blocksite/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  co.blocksite/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{92c7997 co.blocksite/com.google.android.gms.ads.MobileAdsInitProvider}
+  co.blocksite/androidx.core.content.FileProvider:
+    Provider{6c5f784 co.blocksite/androidx.core.content.FileProvider}
+  co.blocksite/com.squareup.picasso.PicassoProvider:
+    Provider{7cccb6d co.blocksite/com.squareup.picasso.PicassoProvider}
+  co.blocksite/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{e351833 co.blocksite/com.google.firebase.provider.FirebaseInitProvider}
+  co.blocksite/com.facebook.internal.FacebookInitProvider:
+    Provider{46d07f0 co.blocksite/com.facebook.internal.FacebookInitProvider}
+  co.blocksite/androidx.startup.InitializationProvider:
+    Provider{e77b169 co.blocksite/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [co.blocksite.mobileadsinitprovider]:
+    Provider{92c7997 co.blocksite/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{a1f048f co.blocksite}
+  [co.blocksite.fileprovider]:
+    Provider{6c5f784 co.blocksite/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{832b31c co.blocksite}
+  [co.blocksite.FacebookInitProvider]:
+    Provider{46d07f0 co.blocksite/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{1e64fa co.blocksite}
+  [co.blocksite.lifecycle-process]:
+    Provider{55d8d31 co.blocksite/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{3115aab co.blocksite}
+  [co.blocksite.androidx-startup]:
+    Provider{e77b169 co.blocksite/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{345e508 co.blocksite}
+  [co.blocksite.com.squareup.picasso]:
+    Provider{7cccb6d co.blocksite/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{65dd6c6 co.blocksite}
+  [co.blocksite.firebaseinitprovider]:
+    Provider{e351833 co.blocksite/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{88f687 co.blocksite}
+
+Key Set Manager:
+  [co.blocksite]
+      Signing KeySets: 5522
+
+Packages:
+  Package [co.blocksite] (9102f7f):
+    userId=10636
+    pkg=Package{46ff795 co.blocksite}
+    codePath=/data/app/~~WR-JmJ6Z9MvtTIZHCk5spw==/co.blocksite-Vhi9jlvEPVj76k9EqOeU7g==
+    resourcePath=/data/app/~~WR-JmJ6Z9MvtTIZHCk5spw==/co.blocksite-Vhi9jlvEPVj76k9EqOeU7g==
+    legacyNativeLibraryDir=/data/app/~~WR-JmJ6Z9MvtTIZHCk5spw==/co.blocksite-Vhi9jlvEPVj76k9EqOeU7g==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=26609 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.9.5.4609
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/co.blocksite
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 12:42:34
+    lastUpdateTime=2022-11-30 12:42:35
+    packageSource=0
+    signatures=PackageSignatures{cfaac13 version:2, signatures:[1f09083b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.READ_LOGS
+      android.permission.PACKAGE_USAGE_STATS
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      com.android.vending.BILLING
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=49049 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 12:42:35
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      co.blocksite
+    com.google.android.apps.diagnosticstool:
+      co.blocksite
+    com.google.android.settings.intelligence:
+      co.blocksite
+    com.google.android.apps.accessibility.voiceaccess:
+      co.blocksite
+    co.blocksite:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [co.blocksite]
+    path: /data/app/~~WR-JmJ6Z9MvtTIZHCk5spw==/co.blocksite-Vhi9jlvEPVj76k9EqOeU7g==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:2700920
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [co.blocksite]
+     base.apk - 680

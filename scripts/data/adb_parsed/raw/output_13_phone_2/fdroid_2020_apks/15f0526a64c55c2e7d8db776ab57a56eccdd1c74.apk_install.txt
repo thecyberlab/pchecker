@@ -1,0 +1,302 @@
+Activity Resolver Table:
+  Full MIME Types:
+      */*:
+        5b88071 org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.SharePlugin.ShareActivity filter f174e56
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        5b88071 org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.SharePlugin.ShareActivity filter 34ebed7
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      *:
+        5b88071 org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.SharePlugin.ShareActivity filter f174e56
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        5b88071 org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.SharePlugin.ShareActivity filter 34ebed7
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      kdeconnect:
+        4043dfb org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.RunCommandPlugin.RunCommandUrlActivity filter bd30e18
+          Action: "android.intent.action.VIEW"
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kdeconnect"
+          Authority: "runcommand": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        5c139f5 org.kde.kdeconnect_tp/org.kde.kdeconnect.UserInterface.MainActivity filter b6c838a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        5b88071 org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.SharePlugin.ShareActivity filter f174e56
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.SEND_MULTIPLE:
+        5b88071 org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.SharePlugin.ShareActivity filter 34ebed7
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        7f6f3c4 org.kde.kdeconnect_tp/org.kde.kdeconnect.KdeConnectBroadcastReceiver filter 3b2ad
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Scheme: "package"
+          Authority: "kdeconnect": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      RUN_COMMAND_ACTION:
+        6f4e33a org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.RunCommandPlugin.RunCommandWidget filter db22d48
+          Action: "RUN_COMMAND_ACTION"
+      org.kde.kdeconnect.Plugins.FindMyPhonePlugin.foundIt:
+        699d22e org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.FindMyPhonePlugin.FindMyPhoneReceiver filter b1cb1cf
+          Action: "org.kde.kdeconnect.Plugins.FindMyPhonePlugin.foundIt"
+      android.net.wifi.WIFI_STATE_CHANGED:
+        7f6f3c4 org.kde.kdeconnect_tp/org.kde.kdeconnect.KdeConnectBroadcastReceiver filter 255cca9
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        7f6f3c4 org.kde.kdeconnect_tp/org.kde.kdeconnect.KdeConnectBroadcastReceiver filter f518830
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      org.kde.kdeconnect.Plugins.SharePlugin.CancelShare:
+        c5967e1 org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.SharePlugin.ShareBroadcastReceiver filter 8bdf906
+          Action: "org.kde.kdeconnect.Plugins.SharePlugin.CancelShare"
+      android.intent.action.BOOT_COMPLETED:
+        7f6f3c4 org.kde.kdeconnect_tp/org.kde.kdeconnect.KdeConnectBroadcastReceiver filter a567173
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        6f4e33a org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.RunCommandPlugin.RunCommandWidget filter c5c9beb
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        7f6f3c4 org.kde.kdeconnect_tp/org.kde.kdeconnect.KdeConnectBroadcastReceiver filter d1f9e2
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.MEDIA_BUTTON:
+        e7ef75c org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.MprisPlugin.MprisMediaNotificationReceiver filter 8958a65
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.view.InputMethod:
+        b670bc7 org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.RemoteKeyboardPlugin.RemoteKeyboardService filter 360d5f4 permission android.permission.BIND_INPUT_METHOD
+          Action: "android.view.InputMethod"
+      android.service.notification.NotificationListenerService:
+        23a11d org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.NotificationsPlugin.NotificationReceiver filter 3b09f92 permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+      android.service.chooser.ChooserTargetService:
+        fbe9d63 org.kde.kdeconnect_tp/org.kde.kdeconnect.Plugins.SharePlugin.ShareChooserTargetService filter 5af5d60 permission android.permission.BIND_CHOOSER_TARGET_SERVICE
+          Action: "android.service.chooser.ChooserTargetService"
+
+Domain verification status:
+
+Registered ContentProviders:
+  org.kde.kdeconnect_tp/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{29ef87e org.kde.kdeconnect_tp/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  org.kde.kdeconnect_tp/androidx.core.content.FileProvider:
+    Provider{cda61df org.kde.kdeconnect_tp/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [org.kde.kdeconnect_tp.lifecycle-process]:
+    Provider{29ef87e org.kde.kdeconnect_tp/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{447ce2c org.kde.kdeconnect_tp}
+  [org.kde.kdeconnect_tp.fileprovider]:
+    Provider{cda61df org.kde.kdeconnect_tp/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{56c60f5 org.kde.kdeconnect_tp}
+
+Key Set Manager:
+  [org.kde.kdeconnect_tp]
+      Signing KeySets: 6255
+
+Packages:
+  Package [org.kde.kdeconnect_tp] (c2c928d):
+    userId=10360
+    pkg=Package{9af8c42 org.kde.kdeconnect_tp}
+    codePath=/data/app/~~i4iqCCzUp80Kk1a7C5C0bw==/org.kde.kdeconnect_tp-B_PAO9qUFykd53Ec0PyEnA==
+    resourcePath=/data/app/~~i4iqCCzUp80Kk1a7C5C0bw==/org.kde.kdeconnect_tp-B_PAO9qUFykd53Ec0PyEnA==
+    legacyNativeLibraryDir=/data/app/~~i4iqCCzUp80Kk1a7C5C0bw==/org.kde.kdeconnect_tp-B_PAO9qUFykd53Ec0PyEnA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=11410 minSdk=14 targetSdk=29
+    minExtensionVersions=[]
+    versionName=1.14.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/org.kde.kdeconnect_tp
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 20:45:57
+    lastUpdateTime=2022-11-30 20:45:59
+    packageSource=0
+    signatures=PackageSignatures{9870453 version:1, signatures:[e93187c9], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.READ_CONTACTS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_CALL_LOG
+      android.permission.RECEIVE_SMS
+      android.permission.SEND_SMS
+      android.permission.READ_SMS
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+    User 0: ceDataInode=105498 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 20:45:59
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CALL_LOG: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECEIVE_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.SEND_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      org.kde.kdeconnect_tp
+    com.google.android.apps.diagnosticstool:
+      org.kde.kdeconnect_tp
+    com.google.android.settings.intelligence:
+      org.kde.kdeconnect_tp
+    com.google.android.GoogleCamera:
+      org.kde.kdeconnect_tp
+    com.google.android.apps.maps:
+      org.kde.kdeconnect_tp
+    com.google.android.apps.photos:
+      org.kde.kdeconnect_tp
+    com.google.android.youtube:
+      org.kde.kdeconnect_tp
+    com.google.android.apps.accessibility.voiceaccess:
+      org.kde.kdeconnect_tp
+    com.google.android.apps.youtube.music:
+      org.kde.kdeconnect_tp
+    com.zhiliaoapp.musically:
+      org.kde.kdeconnect_tp
+    com.truecaller:
+      org.kde.kdeconnect_tp
+    deezer.android.app:
+      org.kde.kdeconnect_tp
+    com.duolingo:
+      org.kde.kdeconnect_tp
+    com.darinsoft.vimo:
+      org.kde.kdeconnect_tp
+    com.ninegag.android.app:
+      org.kde.kdeconnect_tp
+    vsin.t16_funny_photo:
+      org.kde.kdeconnect_tp
+    com.camerasideas.instashot:
+      org.kde.kdeconnect_tp
+    com.mobisystems.office:
+      org.kde.kdeconnect_tp
+    com.shazam.android:
+      org.kde.kdeconnect_tp
+    com.dv.adm:
+      org.kde.kdeconnect_tp
+    com.zappcues.gamingmode:
+      org.kde.kdeconnect_tp
+    com.cam001.selfie:
+      org.kde.kdeconnect_tp
+    com.cyberlink.powerdirector.DRA140225_01:
+      org.kde.kdeconnect_tp
+    com.jio.myjio:
+      org.kde.kdeconnect_tp
+    video.reface.app:
+      org.kde.kdeconnect_tp
+    com.clearchannel.iheartradio.controller:
+      org.kde.kdeconnect_tp
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [org.kde.kdeconnect_tp]
+    path: /data/app/~~i4iqCCzUp80Kk1a7C5C0bw==/org.kde.kdeconnect_tp-B_PAO9qUFykd53Ec0PyEnA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:544589
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [org.kde.kdeconnect_tp]
+     base.apk - 326

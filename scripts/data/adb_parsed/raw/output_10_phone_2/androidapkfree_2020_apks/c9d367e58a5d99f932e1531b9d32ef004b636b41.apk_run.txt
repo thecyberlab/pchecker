@@ -1,0 +1,407 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        d1662c5 com.google.android.apps.subscriptions.red/.deeplink.DeepLink filter 816cc6b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "one.google.com": -1
+          Authority: "one.google.com": -1
+          Authority: "one.google.com": -1
+          Authority: "one.google.com": -1
+          Authority: "one.google.com": -1
+          Authority: "one.google.com": -1
+          Path: "PatternMatcher{PREFIX: /benefits}"
+          Path: "PatternMatcher{PREFIX: /home}"
+          Path: "PatternMatcher{PREFIX: /support}"
+          Path: "PatternMatcher{PREFIX: /redirect}"
+          Path: "PatternMatcher{PREFIX: /changestorageplan}"
+          Path: "PatternMatcher{PREFIX: /storage/management}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        dfe441a com.google.android.apps.subscriptions.red/.LauncherActivity filter da326e5
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.android.setupwizard.GOOGLE_ONE:
+        41f1b4b com.google.android.apps.subscriptions.red/.setup.SetupWizardActivity filter e6f85ba
+          Action: "com.android.setupwizard.GOOGLE_ONE"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        291a928 com.google.android.apps.subscriptions.red/com.google.android.libraries.phenotype.client.stable.PhenotypeStickyAccount$AccountRemovedBroadcastReceiver filter daef53f
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        67f6641 com.google.android.apps.subscriptions.red/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7a69a36
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        cac87e6 com.google.android.apps.subscriptions.red/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 5c80fd1
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        8c22127 com.google.android.apps.subscriptions.red/com.google.android.libraries.internal.growth.growthkit.tiktok.GrowthKitBootCompletedListener_Receiver filter 3d3c447
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        bec2fd4 com.google.android.apps.subscriptions.red/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b04d37
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        c1b257d com.google.android.apps.subscriptions.red/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 221d2a4
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS:
+        8a93c72 com.google.android.apps.subscriptions.red/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter de44c61
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        2a5a8c3 com.google.android.apps.subscriptions.red/com.google.android.libraries.notifications.entrypoints.accountchanged.AccountChangedReceiver filter ce26474
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+        3c67540 com.google.android.apps.subscriptions.red/com.google.apps.tiktok.account.data.device.DeviceAccountsChangedReceiver_Receiver filter 49355
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        bec2fd4 com.google.android.apps.subscriptions.red/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b04d37
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS:
+        8a93c72 com.google.android.apps.subscriptions.red/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter de44c61
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+      android.intent.action.LOCALE_CHANGED:
+        2b99c79 com.google.android.apps.subscriptions.red/com.google.android.libraries.notifications.entrypoints.localechanged.LocaleChangedReceiver filter 17e5de3
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        54aadbe com.google.android.apps.subscriptions.red/com.google.android.libraries.notifications.entrypoints.gcm.GcmBroadcastReceiver filter 68d1212
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          mPriority=99, mOrder=0, mHasPartialTypes=false
+        b00e1f com.google.android.apps.subscriptions.red/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 6f3bef8
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        a3da56c com.google.android.apps.subscriptions.red/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter cb84d9d
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      android.intent.action.BATTERY_LOW:
+        67f6641 com.google.android.apps.subscriptions.red/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7a69a36
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        22e8735 com.google.android.apps.subscriptions.red/com.google.android.libraries.notifications.entrypoints.timezonechanged.TimezoneChangedReceiver filter a263d5e
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        2ffe7ca com.google.android.apps.subscriptions.red/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 56cd80d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        2ffe7ca com.google.android.apps.subscriptions.red/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 56cd80d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS:
+        8a93c72 com.google.android.apps.subscriptions.red/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter de44c61
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+      com.google.android.libraries.internal.growth.growthkit.SYNC:
+        8a93c72 com.google.android.apps.subscriptions.red/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter de44c61
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+      android.intent.action.BOOT_COMPLETED:
+        8c22127 com.google.android.apps.subscriptions.red/com.google.android.libraries.internal.growth.growthkit.tiktok.GrowthKitBootCompletedListener_Receiver filter 3d3c447
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        fd16d3b com.google.android.apps.subscriptions.red/com.google.android.libraries.notifications.entrypoints.restart.RestartReceiver filter 4d12699
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        2ffe7ca com.google.android.apps.subscriptions.red/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 56cd80d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        a3da56c com.google.android.apps.subscriptions.red/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter cb84d9d
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        cac87e6 com.google.android.apps.subscriptions.red/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 5c80fd1
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        a3da56c com.google.android.apps.subscriptions.red/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter cb84d9d
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA:
+        8a93c72 com.google.android.apps.subscriptions.red/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter de44c61
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        215ac58 com.google.android.apps.subscriptions.red/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 9b285d3
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        1cd61b1 com.google.android.apps.subscriptions.red/.backup.staleness.PackageReplacedScheduleStaleBackupsCheckReceiver_Receiver filter 9bfd3c8
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        8c22127 com.google.android.apps.subscriptions.red/com.google.android.libraries.internal.growth.growthkit.tiktok.GrowthKitBootCompletedListener_Receiver filter 3d3c447
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        fd16d3b com.google.android.apps.subscriptions.red/com.google.android.libraries.notifications.entrypoints.restart.RestartReceiver filter 4d12699
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        81cb696 com.google.android.apps.subscriptions.red/com.google.apps.tiktok.sync.impl.SyncPackageReplacedReceiver_Receiver filter c27a65b
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO:
+        8a93c72 com.google.android.apps.subscriptions.red/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter de44c61
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        1dfa217 com.google.android.apps.subscriptions.red/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 3a23c2
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PROMO:
+        8a93c72 com.google.android.apps.subscriptions.red/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter de44c61
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+      com.google.android.gms.phenotype.UPDATE:
+        4653604 com.google.android.apps.subscriptions.red/com.google.android.libraries.internal.growth.growthkit.internal.experiments.impl.PhenotypeBroadcastReceiver filter d804386
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        a567ed com.google.android.apps.subscriptions.red/com.google.android.libraries.notifications.entrypoints.phenotype.PhenotypeUpdateReceiver filter 3fb53e0
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        a65a622 com.google.android.apps.subscriptions.red/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBroadcastReceiver filter ff1ce0c
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        63248b3 com.google.android.apps.subscriptions.red/com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver filter f94d16a
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        301ae70 com.google.android.apps.subscriptions.red/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 9fb7510
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Key Set Manager:
+  [com.google.android.apps.subscriptions.red]
+      Signing KeySets: 413
+
+Packages:
+  Package [com.google.android.apps.subscriptions.red] (57d95e9):
+    userId=10243
+    pkg=Package{40735dc com.google.android.apps.subscriptions.red}
+    codePath=/data/app/com.google.android.apps.subscriptions.red-qnF1TxUcLXml5GdP0K4IaA==
+    resourcePath=/data/app/com.google.android.apps.subscriptions.red-qnF1TxUcLXml5GdP0K4IaA==
+    legacyNativeLibraryDir=/data/app/com.google.android.apps.subscriptions.red-qnF1TxUcLXml5GdP0K4IaA==/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=40767 minSdk=22 targetSdk=29
+    versionName=1.76.331227418
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{55c026e com.google.android.apps.subscriptions.red}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/com.google.android.apps.subscriptions.red
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 08:38:34
+    firstInstallTime=2021-03-06 08:38:34
+    lastUpdateTime=2021-03-06 08:38:34
+    signatures=PackageSignatures{ffebd0f version:3, signatures:[457289b3], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.android.vending.BILLING
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.GET_PACKAGE_SIZE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=14140 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+
+Package Changes:
+  Sequence number=213
+  User 0:
+    seq=1, package=com.studioeleven.windfinder
+    seq=8, package=com.google.android.gms
+    seq=9, package=de.motain.iliga
+    seq=11, package=com.microsoft.office.word
+    seq=13, package=video.like
+    seq=15, package=com.netflix.mediaclient
+    seq=19, package=com.agilebits.onepassword
+    seq=21, package=com.rayark.valkyrie
+    seq=23, package=com.aa.generaladaptiveapps
+    seq=25, package=com.ea.gp.fifamobile
+    seq=27, package=com.instagram.igtv
+    seq=29, package=deezer.android.app
+    seq=31, package=com.square_enix.android_googleplay.FFBEWW
+    seq=33, package=com.google.android.calculator
+    seq=35, package=com.gamevilusa.mlbpilive.android.google.global.normal
+    seq=37, package=com.kabam.bigrobot
+    seq=39, package=io.enpass.app
+    seq=41, package=com.adobe.lrmobile
+    seq=43, package=com.vng.g6.a.zombie
+    seq=45, package=com.microblink.photomath
+    seq=47, package=com.scopely.whiplash
+    seq=49, package=com.iudesk.android.photo.editor
+    seq=51, package=com.microsoft.office.officehubrow
+    seq=53, package=com.whatsapp
+    seq=55, package=com.joeware.android.gpulumera
+    seq=57, package=com.anslayer
+    seq=59, package=com.apkupdater
+    seq=62, package=com.android.vending
+    seq=63, package=com.google.android.wearable.app
+    seq=65, package=com.zqlabs.filechef
+    seq=67, package=com.wondershare.filmorago
+    seq=69, package=com.outfit7.mytalkingangelafree
+    seq=71, package=com.truecaller
+    seq=73, package=com.ea.games.r3_row
+    seq=75, package=com.google.ar.lens
+    seq=77, package=com.fusionmedia.investing
+    seq=79, package=com.king.candycrushsodasaga
+    seq=81, package=com.seleuco.mame4droid
+    seq=83, package=com.Slack
+    seq=85, package=com.liquidum.rocketvpn
+    seq=87, package=com.sec.android.easyMover
+    seq=89, package=com.fingersoft.hillclimb
+    seq=91, package=com.cpuid.cpu_z
+    seq=93, package=com.piriform.ccleaner
+    seq=95, package=com.tencent.ibg.joox
+    seq=97, package=com.netease.lztgglobal
+    seq=99, package=com.youthhr.phonto
+    seq=101, package=com.nintendo.zaba
+    seq=103, package=com.idleif.abyssrium
+    seq=105, package=com.facebook.orca
+    seq=107, package=com.amazon.mShop.android.shopping
+    seq=109, package=com.google.android.apps.cloudconsole
+    seq=111, package=com.app.onlyvpn
+    seq=113, package=com.rayark.pluto
+    seq=115, package=wp.wattpad
+    seq=117, package=com.adguard.android
+    seq=119, package=com.lomotif.android
+    seq=121, package=com.infraware.office.link
+    seq=123, package=com.ea.game.pvz2_row
+    seq=125, package=com.afwsamples.testdpc
+    seq=127, package=com.ubisoft.hungrydragon
+    seq=129, package=com.intsig.camscanner
+    seq=131, package=com.urbandroid.lux
+    seq=133, package=com.mobisystems.office
+    seq=135, package=com.microsoft.office.excel
+    seq=137, package=com.ea.gp.pvzheroes
+    seq=139, package=com.bandainamcoent.saomdeu
+    seq=141, package=com.linkedin.android
+    seq=143, package=com.foobar2000.foobar2000
+    seq=145, package=com.moonton.magicrush
+    seq=147, package=com.bandainamcoent.ninjavoltage_app
+    seq=149, package=com.maxmpz.audioplayer
+    seq=151, package=com.gameloft.android.ANMP.GloftGGHM
+    seq=153, package=dp.ws.popcorntime
+    seq=155, package=com.pinterest
+    seq=157, package=com.zombodroid.MemeGenerator
+    seq=159, package=com.contextlogic.wish
+    seq=161, package=com.ovilex.bussimulator2015
+    seq=163, package=com.halfbrick.jetpackjoyride
+    seq=165, package=dk.mymovies.mymoviesforandroidfree
+    seq=167, package=com.google.android.apps.mapslite
+    seq=169, package=com.autodesk.autocadws
+    seq=171, package=com.cma.launcher.lite
+    seq=173, package=com.gameloft.android.ANMP.GloftDYHM
+    seq=175, package=com.ansangha.drdriving
+    seq=177, package=com.google.android.apps.chromecast.app
+    seq=179, package=com.google.android.apps.magazines
+    seq=181, package=com.instagram.threadsapp
+    seq=183, package=ace.jun.simplecontrol
+    seq=186, package=com.supercell.clashroyale
+    seq=188, package=com.gameloft.android.ANMP.GloftDOHM
+    seq=190, package=com.musixmatch.android.lyrify
+    seq=192, package=com.mobilemotion.dubsmash
+    seq=194, package=air.com.playtika.slotomania
+    seq=196, package=com.waze
+    seq=198, package=com.actionlauncher.playstore
+    seq=200, package=com.superevilmegacorp.game
+    seq=202, package=com.mi.globalbrowser
+    seq=205, package=com.supercell.clashofclans
+    seq=207, package=com.nway.powerrangerslegacywars
+    seq=209, package=com.venticake.retrica
+    seq=211, package=com.scribd.app.reader0
+    seq=212, package=com.google.android.apps.subscriptions.red
+
+
+Dexopt state:
+  [com.google.android.apps.subscriptions.red]
+    path: /data/app/com.google.android.apps.subscriptions.red-qnF1TxUcLXml5GdP0K4IaA==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.google.android.apps.subscriptions.red]
+     base.apk - 3741
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

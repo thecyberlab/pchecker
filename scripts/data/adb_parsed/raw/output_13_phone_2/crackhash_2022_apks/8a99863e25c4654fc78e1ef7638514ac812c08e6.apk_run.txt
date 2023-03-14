@@ -1,0 +1,245 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        dd92e20 app.inspiry/.activities.MainActivity filter e4693d9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "inspiry.onelink.me": -1
+          Path: "PatternMatcher{PREFIX: /{onelinkID}}"
+          AutoVerify=true
+      inspiry:
+        7b06b87 app.inspiry/.subscribe.ui.SubscribeActivity filter 84b1ab4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "inspiry"
+          Authority: "subscribe": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        6a25252 app.inspiry/.activities.StartActivity filter 59e3923
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      click_adapty_notification:
+        7b06b87 app.inspiry/.subscribe.ui.SubscribeActivity filter 55566dd
+          Action: "click_adapty_notification"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED:
+        6eaa138 app.inspiry/com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver filter 855e511
+          Action: "com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        c89d9aa app.inspiry/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter a7fa99b
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        4730c4c app.inspiry/com.appsflyer.SingleInstallBroadcastReceiver filter 1839495
+          Action: "com.android.vending.INSTALL_REFERRER"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        94498e4 app.inspiry/androidx.profileinstaller.ProfileInstallReceiver filter d22c14d
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        483e676 app.inspiry/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 1a54477
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        7ef419e app.inspiry/.helpers.BootCompletedReceiver filter 511447f
+          Action: "android.intent.action.BOOT_COMPLETED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        d3ff402 app.inspiry/.helpers.analytics.AdaptyFirebaseMessagingService filter c1fb113
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        9245f50 app.inspiry/com.google.firebase.messaging.FirebaseMessagingService filter 1672549
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  app.inspiry:
+    ID: e43bb44d-6699-4fd5-9255-04818d7b71f0
+    Signatures: [A4:0D:A8:0A:59:D1:70:CA:A9:50:CF:15:C1:8C:45:4D:47:A3:9B:26:98:9D:8B:64:0E:CD:74:5B:A7:1B:F5:DC]
+    Domain verification state:
+      inspiry.onelink.me: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          inspiry.onelink.me
+
+Registered ContentProviders:
+  app.inspiry/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{15bfc43 app.inspiry/com.google.firebase.provider.FirebaseInitProvider}
+  app.inspiry/com.facebook.internal.FacebookInitProvider:
+    Provider{705b73e app.inspiry/com.facebook.internal.FacebookInitProvider}
+  app.inspiry/.helpers.GenericFileProvider:
+    Provider{9e63eb5 app.inspiry/.helpers.GenericFileProvider}
+  app.inspiry/androidx.startup.InitializationProvider:
+    Provider{d8eb0bb app.inspiry/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [app.inspiry.androidx-startup]:
+    Provider{d8eb0bb app.inspiry/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{dbb6b8a app.inspiry}
+  [app.inspiry.helpers.GenericFileProvider.all]:
+    Provider{9e63eb5 app.inspiry/.helpers.GenericFileProvider}
+      applicationInfo=ApplicationInfo{a4d05fb app.inspiry}
+  [app.inspiry.firebaseinitprovider]:
+    Provider{15bfc43 app.inspiry/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{5c03618 app.inspiry}
+  [app.inspiry.FacebookInitProvider]:
+    Provider{705b73e app.inspiry/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{1e28871 app.inspiry}
+
+Key Set Manager:
+  [app.inspiry]
+      Signing KeySets: 88
+
+Packages:
+  Package [app.inspiry] (b6cb656):
+    userId=10249
+    pkg=Package{e5ad250 app.inspiry}
+    codePath=/data/app/~~eT1zFulsgi36YyWW79XUIw==/app.inspiry-zk55x-0MZHP0hyiFrfkqMw==
+    resourcePath=/data/app/~~eT1zFulsgi36YyWW79XUIw==/app.inspiry-zk55x-0MZHP0hyiFrfkqMw==
+    legacyNativeLibraryDir=/data/app/~~eT1zFulsgi36YyWW79XUIw==/app.inspiry-zk55x-0MZHP0hyiFrfkqMw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=63 minSdk=24 targetSdk=31
+    minExtensionVersions=[]
+    versionName=5.4.3
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.SEND dat=content://*/... typ=image/jpeg }, Intent { act=android.intent.action.SEND dat=content://*/... typ=video/mp4 }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.media.action.VIDEO_CAPTURE }, Intent { act=android.intent.action.VIEW dat=https:/... }]
+    dataDir=/data/user/0/app.inspiry
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 14:13:09
+    lastUpdateTime=2022-11-30 14:13:10
+    packageSource=0
+    signatures=PackageSignatures{6a2c37c version:2, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.gms.permission.AD_ID
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=54088 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 14:13:10
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      app.inspiry
+    com.google.android.apps.diagnosticstool:
+      app.inspiry
+    com.google.android.settings.intelligence:
+      app.inspiry
+    com.google.android.apps.accessibility.voiceaccess:
+      app.inspiry
+    app.inspiry:
+      [com.google.android.bluetooth.services,com.android.bluetooth]
+      com.google.android.apps.nbu.files
+      com.google.android.apps.messaging
+      com.google.android.googlequicksearchbox
+      com.google.android.GoogleCamera
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.apps.docs
+      com.google.android.gm
+      com.pandavideocompressor
+      com.ninegag.android.app
+      com.fourchars.lmpfree
+      com.lyrebirdstudio.photo_editor_pro
+      com.cam001.selfie
+      com.pranavpandey.rotation
+      com.utorrent.client.pro
+    com.zappcues.gamingmode:
+      app.inspiry
+    com.jio.myjio:
+      app.inspiry
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.wallpaperbackup,com.android.location.fused,android,com.android.providers.settings,com.android.inputdevices,com.android.qns,com.google.android.iwlan,com.android.dynsystem,com.android.server.telecom,com.android.localtransport,com.google.android.settings.future.biometrics.faceenroll,com.android.settings,com.android.keychain]:
+        app.inspiry
+      [com.google.android.gms,com.google.android.gsf]:
+        app.inspiry
+      com.android.vending:
+        app.inspiry
+  queryable via uses-library:
+
+Dexopt state:
+  [app.inspiry]
+    path: /data/app/~~eT1zFulsgi36YyWW79XUIw==/app.inspiry-zk55x-0MZHP0hyiFrfkqMw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:67487
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [app.inspiry]
+     base.apk - 662

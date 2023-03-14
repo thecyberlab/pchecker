@@ -1,0 +1,238 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        4d4a407 com.asdoi.gymwen/.ui.activities.WebsiteActivity filter cee2934
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "gym-wen.de": -1
+          Authority: "www.gym-wen.de": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        94cc88 com.asdoi.gymwen/.ui.activities.MainActivity filter edcb621
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        42d935d com.asdoi.gymwen/.ui.activities.SubstitutionTimeTableActivity filter 13c44d2
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        94cc88 com.asdoi.gymwen/.ui.activities.MainActivity filter 1fdca46
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        d79a3 com.asdoi.gymwen/.ui.activities.SubstitutionWidgetActivity filter 7dea4a0
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        3b50859 com.asdoi.gymwen/.ui.activities.SummaryWidgetActivity filter a75dc1e
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.QUICKBOOT_POWERON:
+        58e6991 com.asdoi.gymwen/.receivers.CheckSubstitutionPlanReceiver filter 8f350f6
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+        6889cf7 com.asdoi.gymwen/.receivers.AlarmReceiver filter 6084764
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+        b201193 com.asdoi.gymwen/com.ulan.timetable.receivers.DailyReceiver filter cb475d0
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+        39bb9c9 com.asdoi.gymwen/com.ulan.timetable.receivers.TurnOnReceiver filter 65f88ce
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.BOOT_COMPLETED:
+        58e6991 com.asdoi.gymwen/.receivers.CheckSubstitutionPlanReceiver filter 8f350f6
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+        6889cf7 com.asdoi.gymwen/.receivers.AlarmReceiver filter 6084764
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+        b201193 com.asdoi.gymwen/com.ulan.timetable.receivers.DailyReceiver filter cb475d0
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+        39bb9c9 com.asdoi.gymwen/com.ulan.timetable.receivers.TurnOnReceiver filter 65f88ce
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        a740cff com.asdoi.gymwen/.widgets.SubstitutionWidgetProvider filter b996acc
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        4a4d115 com.asdoi.gymwen/.widgets.SummaryWidget filter d1f9c2a
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        a867a1b com.asdoi.gymwen/.widgets.RefreshWidget filter 5867b8
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        29f0dcd com.asdoi.gymwen/.receivers.OpenAppReceiver filter d7b8682
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Category: "android.intent.category.DEFAULT"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        fb033ef com.asdoi.gymwen/.services.NotificationTileService filter 7b31efc permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          gym-wen.de
+          www.gym-wen.de
+
+Registered ContentProviders:
+  com.asdoi.gymwen/org.acra.attachment.AcraContentProvider:
+    Provider{c57b854 com.asdoi.gymwen/org.acra.attachment.AcraContentProvider}
+  com.asdoi.gymwen/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{7b43fd com.asdoi.gymwen/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.asdoi.gymwen/androidx.core.content.FileProvider:
+    Provider{5e138f2 com.asdoi.gymwen/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.asdoi.gymwen.lifecycle-process]:
+    Provider{7b43fd com.asdoi.gymwen/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{437d53 com.asdoi.gymwen}
+  [com.asdoi.gymwen.acra]:
+    Provider{c57b854 com.asdoi.gymwen/org.acra.attachment.AcraContentProvider}
+      applicationInfo=ApplicationInfo{e1dd690 com.asdoi.gymwen}
+  [com.asdoi.gymwen.provider]:
+    Provider{5e138f2 com.asdoi.gymwen/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{d746b89 com.asdoi.gymwen}
+
+Key Set Manager:
+  [com.asdoi.gymwen]
+      Signing KeySets: 6330
+
+Packages:
+  Package [com.asdoi.gymwen] (84bb78e):
+    userId=10457
+    pkg=Package{1a3f5b5 com.asdoi.gymwen}
+    codePath=/data/app/~~GDwmGOBn6aH-c9sZGrKwGw==/com.asdoi.gymwen-8GTIA-_LCu5fHrozZjP9sw==
+    resourcePath=/data/app/~~GDwmGOBn6aH-c9sZGrKwGw==/com.asdoi.gymwen-8GTIA-_LCu5fHrozZjP9sw==
+    legacyNativeLibraryDir=/data/app/~~GDwmGOBn6aH-c9sZGrKwGw==/com.asdoi.gymwen-8GTIA-_LCu5fHrozZjP9sw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=120 minSdk=18 targetSdk=29
+    minExtensionVersions=[]
+    versionName=1.2.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.asdoi.gymwen
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 20:49:15
+    lastUpdateTime=2022-11-30 20:49:16
+    packageSource=0
+    signatures=PackageSignatures{1c2ccd8 version:1, signatures:[5344d36d], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=102482 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 20:49:16
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        com.asdoi.gymwen.receivers.CheckSubstitutionPlanReceiver
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.asdoi.gymwen
+    com.google.android.apps.diagnosticstool:
+      com.asdoi.gymwen
+    com.google.android.settings.intelligence:
+      com.asdoi.gymwen
+    com.google.android.apps.accessibility.voiceaccess:
+      com.asdoi.gymwen
+    com.zhiliaoapp.musically:
+      com.asdoi.gymwen
+    com.truecaller:
+      com.asdoi.gymwen
+    com.dv.adm:
+      com.asdoi.gymwen
+    com.zappcues.gamingmode:
+      com.asdoi.gymwen
+    com.jio.myjio:
+      com.asdoi.gymwen
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.localtransport,com.android.qns,com.google.android.iwlan,android,com.android.keychain,com.android.location.fused,com.android.wallpaperbackup,com.android.providers.settings,com.google.android.settings.future.biometrics.faceenroll,com.android.settings,com.android.server.telecom,com.android.inputdevices,com.android.dynsystem]:
+        com.asdoi.gymwen
+      com.android.chrome:
+        com.asdoi.gymwen
+  queryable via uses-library:
+
+Dexopt state:
+  [com.asdoi.gymwen]
+    path: /data/app/~~GDwmGOBn6aH-c9sZGrKwGw==/com.asdoi.gymwen-8GTIA-_LCu5fHrozZjP9sw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:742369
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.asdoi.gymwen]
+     base.apk - 311

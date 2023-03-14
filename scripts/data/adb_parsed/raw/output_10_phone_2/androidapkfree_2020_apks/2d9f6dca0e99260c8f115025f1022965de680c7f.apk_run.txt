@@ -1,0 +1,287 @@
+Activity Resolver Table:
+  Schemes:
+      mcdmobileapp.uberauth:
+        1e98eaf com.mcdonalds.app/com.mcdonalds.delivery.activity.UberDeepLinkHandlerActivity filter 7dd1c3d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "mcdmobileapp.uberauth"
+          Authority: "uberredirect": -1
+      http:
+        44542bc com.mcdonalds.app/com.mcdonalds.mcdcoreapp.common.activity.DeepLinkRouter filter db4c994
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.mcdonalds.com": -1
+          Authority: "www.mcdonalds.com": -1
+          AutoVerify=true
+      https:
+        44542bc com.mcdonalds.app/com.mcdonalds.mcdcoreapp.common.activity.DeepLinkRouter filter db4c994
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.mcdonalds.com": -1
+          Authority: "www.mcdonalds.com": -1
+          AutoVerify=true
+      com.mcdonalds.app.uberauth:
+        53ae245 com.mcdonalds.app/com.uber.sdk.android.core.auth.LoginRedirectReceiverActivity filter 9235d83
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.mcdonalds.app.uberauth"
+          Authority: "redirect": -1
+      mcdmobileapp:
+        44542bc com.mcdonalds.app/com.mcdonalds.mcdcoreapp.common.activity.DeepLinkRouter filter dca09e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "mcdmobileapp"
+      fb960967060681957:
+        1618d9a com.mcdonalds.app/com.facebook.CustomTabActivity filter bedcc32
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb960967060681957"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        eca66cb com.mcdonalds.app/com.mcdonalds.mcdcoreapp.common.activity.SplashActivity filter e339ba6
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.google.android.gms.analytics.ANALYTICS_DISPATCH:
+        381cea8 com.mcdonalds.app/com.google.android.gms.analytics.AnalyticsReceiver filter deeb00
+          Action: "com.google.android.gms.analytics.ANALYTICS_DISPATCH"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        92c5dc1 com.mcdonalds.app/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter ceaf8a
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        bae966 com.mcdonalds.app/com.mparticle.ReferrerReceiver filter c843f39
+          Action: "com.android.vending.INSTALL_REFERRER"
+        d96a4a7 com.mcdonalds.app/com.kochava.base.ReferralReceiver filter ea8797e
+          Action: "com.android.vending.INSTALL_REFERRER"
+        f792d54 com.mcdonalds.app/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter dc7b72c
+          Action: "com.android.vending.INSTALL_REFERRER"
+        56014fd com.mcdonalds.app/com.facebook.CampaignTrackingReceiver filter 38f9fb
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        8fc35f2 com.mcdonalds.app/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 8344edf
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        6fee443 com.mcdonalds.app/com.adyen.threeds2.internal.AppUpgradeBroadcastReceiver filter fe095f5
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.content.SyncAdapter:
+        2e5cac0 com.mcdonalds.app/com.mcdonalds.sdk.services.data.sync.SyncService filter 6703a56
+          Action: "android.content.SyncAdapter"
+      com.google.firebase.MESSAGING_EVENT:
+        1e03f9 com.mcdonalds.app/com.mcdonalds.account.push.FcmListenerService filter 78f1a18 permission android.permission.BIND_JOB_SERVICE
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        d93bf3e com.mcdonalds.app/com.google.firebase.messaging.FirebaseMessagingService filter 4133ad7
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      android.accounts.AccountAuthenticator:
+        421819f com.mcdonalds.app/.account.AuthenticatorService filter 8719c71
+          Action: "android.accounts.AccountAuthenticator"
+
+Permissions:
+  Permission [com.mcdonalds.app.permission.MAPS_RECEIVE] (7bcd2ec):
+    sourcePackage=com.mcdonalds.app
+    uid=10180 gids=null type=0 prot=signature
+    perm=Permission{231e6b5 com.mcdonalds.app.permission.MAPS_RECEIVE}
+    packageSetting=PackageSetting{888914a com.mcdonalds.app/10180}
+
+Registered ContentProviders:
+  com.mcdonalds.app/com.apptentive.android.sdk.debug.ApptentiveAttachmentFileProvider:
+    Provider{7a698bb com.mcdonalds.app/com.apptentive.android.sdk.debug.ApptentiveAttachmentFileProvider}
+  com.mcdonalds.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{1a31d8 com.mcdonalds.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.mcdonalds.app/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{b673931 com.mcdonalds.app/com.google.firebase.provider.FirebaseInitProvider}
+  com.mcdonalds.app/com.facebook.internal.FacebookInitProvider:
+    Provider{b467816 com.mcdonalds.app/com.facebook.internal.FacebookInitProvider}
+  com.mcdonalds.app/com.mcdonalds.sdk.services.data.provider.ContentProvider:
+    Provider{c9c0597 com.mcdonalds.app/com.mcdonalds.sdk.services.data.provider.ContentProvider}
+
+ContentProvider Authorities:
+  [com.mcdonalds.app.firebaseinitprovider]:
+    Provider{b673931 com.mcdonalds.app/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{1ec9384 com.mcdonalds.app}
+  [com.mcdonalds.app.FacebookInitProvider]:
+    Provider{b467816 com.mcdonalds.app/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{1ec9384 com.mcdonalds.app}
+  [com.mcdonalds.app.lifecycle-process]:
+    Provider{1a31d8 com.mcdonalds.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{1ec9384 com.mcdonalds.app}
+  [com.mcdonalds.app.ApptentiveAttachmentFileProvider]:
+    Provider{7a698bb com.mcdonalds.app/com.apptentive.android.sdk.debug.ApptentiveAttachmentFileProvider}
+      applicationInfo=ApplicationInfo{1ec9384 com.mcdonalds.app}
+  [com.mcdonalds.app.qa.authority]:
+    Provider{c9c0597 com.mcdonalds.app/com.mcdonalds.sdk.services.data.provider.ContentProvider}
+      applicationInfo=ApplicationInfo{1ec9384 com.mcdonalds.app}
+
+Key Set Manager:
+  [com.mcdonalds.app]
+      Signing KeySets: 232
+
+Packages:
+  Package [com.mcdonalds.app] (888914a):
+    userId=10180
+    pkg=Package{5ab7101 com.mcdonalds.app}
+    codePath=/data/app/com.mcdonalds.app-5AFy862FIrLtN-jPAESiNQ==
+    resourcePath=/data/app/com.mcdonalds.app-5AFy862FIrLtN-jPAESiNQ==
+    legacyNativeLibraryDir=/data/app/com.mcdonalds.app-5AFy862FIrLtN-jPAESiNQ==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=460 minSdk=21 targetSdk=29
+    versionName=6.7.1
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{1ec9384 com.mcdonalds.app}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.mcdonalds.app
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 07:53:39
+    firstInstallTime=2021-03-06 07:53:41
+    lastUpdateTime=2021-03-06 07:53:41
+    signatures=PackageSignatures{2c5376d version:2, signatures:[3793569f], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    declared permissions:
+      com.mcdonalds.app.permission.MAPS_RECEIVE: prot=signature, INSTALLED
+    requested permissions:
+      com.mcdonalds.app.permission.MAPS_RECEIVE
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.CAMERA
+      android.permission.USE_CREDENTIALS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.VIBRATE
+      android.permission.GET_TASKS
+      android.permission.RECORD_AUDIO
+      com.android.alarm.permission.SET_ALARM
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.READ_SYNC_STATS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      com.mcdonalds.app.permission.MAPS_RECEIVE: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=7111 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Package Changes:
+  Sequence number=85
+  User 0:
+    seq=6, package=com.google.android.gms
+    seq=7, package=com.ultimateguitar.tabs
+    seq=9, package=com.anddoes.launcher
+    seq=11, package=tv.twitch.android.app
+    seq=13, package=com.ludo.king
+    seq=15, package=net.zedge.android
+    seq=17, package=com.shazam.android
+    seq=19, package=com.whatsweb.app
+    seq=21, package=com.yahoo.mobile.client.android.finance
+    seq=23, package=com.yahoo.mobile.client.android.mail
+    seq=25, package=de.resolution.yf_android
+    seq=27, package=com.ninegag.android.app
+    seq=29, package=iflix.play
+    seq=31, package=com.gamestar.perfectpiano
+    seq=33, package=com.gbwhatsapp
+    seq=35, package=com.instagram.android
+    seq=37, package=com.opera.touch
+    seq=39, package=com.ea.game.pvzfree_row
+    seq=41, package=com.paget96.lspeed
+    seq=43, package=jp.konami.duellinks
+    seq=46, package=com.google.android.apps.walletnfcrel
+    seq=48, package=com.mufumbo.android.recipe.search
+    seq=51, package=com.google.android.apps.docs.editors.docs
+    seq=52, package=com.google.android.apps.docs
+    seq=54, package=io.friendly
+    seq=56, package=com.gamestar.pianoperfect
+    seq=58, package=com.bethsoft.falloutshelter
+    seq=60, package=com.midasplayer.apps.bubblewitchsaga2
+    seq=62, package=com.google.android.apps.adm
+    seq=64, package=it.medieval.blueftp
+    seq=66, package=com.bandainamcogames.dbzdokkanww
+    seq=68, package=com.quirky.android.wink.wink
+    seq=70, package=com.king.candycrushjellysaga
+    seq=72, package=com.microsoft.office.powerpoint
+    seq=74, package=com.yowhatsapp
+    seq=77, package=com.rarlab.rar
+    seq=79, package=com.internet.speed.meter.lite
+    seq=81, package=com.sega.sprint
+    seq=83, package=com.defianttech.diskdigger
+    seq=84, package=com.mcdonalds.app
+
+
+Dexopt state:
+  [com.mcdonalds.app]
+    path: /data/app/com.mcdonalds.app-5AFy862FIrLtN-jPAESiNQ==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.mcdonalds.app]
+     base.apk - 17643
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

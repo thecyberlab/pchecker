@@ -1,0 +1,297 @@
+Activity Resolver Table:
+  Schemes:
+      steezy:
+        2e4fec9 co.steezy.app/.activity.main.DeeplinkActivity filter 997e9ce
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "steezy"
+      http:
+        2e4fec9 co.steezy.app/.activity.main.DeeplinkActivity filter 23f80ef
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "app.steezy.co": -1
+          Authority: "app.steezy.co": -1
+          Path: "PatternMatcher{PREFIX: /party}"
+          Path: "PatternMatcher{PREFIX: /party}"
+      https:
+        2e4fec9 co.steezy.app/.activity.main.DeeplinkActivity filter 23f80ef
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "app.steezy.co": -1
+          Authority: "app.steezy.co": -1
+          Path: "PatternMatcher{PREFIX: /party}"
+          Path: "PatternMatcher{PREFIX: /party}"
+      fbconnect:
+        62ce7fc co.steezy.app/com.facebook.CustomTabActivity filter 54cd4da
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.co.steezy.app": -1
+      genericidp:
+        152393d co.steezy.app/com.google.firebase.auth.internal.GenericIdpActivity filter fa12532
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      fb1099646100104757:
+        62ce7fc co.steezy.app/com.facebook.CustomTabActivity filter 8b5be85
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb1099646100104757"
+      recaptcha:
+        79e4283 co.steezy.app/com.google.firebase.auth.internal.RecaptchaActivity filter af86c00
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        52d3d0b co.steezy.app/.activity.main.StartUpActivity filter e5e87e8
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        118be01 co.steezy.app/.cast.CastExpandedControlsActivity filter 73364a6
+          Action: "android.intent.action.MAIN"
+      android.bluetooth.device.action.ACL_CONNECTED:
+        7f09ee7 co.steezy.app/.activity.main.SteezyPartyVideoPlayerActivity filter f883a94
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      android.bluetooth.device.action.ACL_DISCONNECTED:
+        7f09ee7 co.steezy.app/.activity.main.SteezyPartyVideoPlayerActivity filter f883a94
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        c8b7efb co.steezy.app/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 937bb18
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        53c52f5 co.steezy.app/com.kochava.base.ReferralReceiver filter a74288a
+          Action: "com.android.vending.INSTALL_REFERRER"
+      co.steezy.app.cast.control:
+        4ae2c39 co.steezy.app/.cast.CastingMediaIntentReceiver filter cb8627e
+          Action: "co.steezy.app.cast.control"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        3890fd7 co.steezy.app/androidx.profileinstaller.ProfileInstallReceiver filter b7970c4
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        44c2971 co.steezy.app/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 7744356
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.iterable.push.ACTION_PUSH_ACTION:
+        3f883df co.steezy.app/com.iterable.iterableapi.IterablePushActionReceiver filter 678482c
+          Action: "com.iterable.push.ACTION_PUSH_ACTION"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        ea8ebad co.steezy.app/.messaging.CustomFirebaseMessagingService filter a893ee2
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        264d273 co.steezy.app/com.iterable.iterableapi.IterableFirebaseMessagingService filter 4fed530
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        c3022cf co.steezy.app/com.google.firebase.messaging.FirebaseMessagingService filter 634145c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.auth.api.gms.service.START:
+        89595a9 co.steezy.app/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 500672e
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          app.steezy.co
+
+Registered ContentProviders:
+  co.steezy.app/androidx.startup.InitializationProvider:
+    Provider{2296567 co.steezy.app/androidx.startup.InitializationProvider}
+  co.steezy.app/io.sentry.android.core.SentryInitProvider:
+    Provider{d2fbf14 co.steezy.app/io.sentry.android.core.SentryInitProvider}
+  co.steezy.app/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{704a3bd co.steezy.app/com.google.firebase.provider.FirebaseInitProvider}
+  co.steezy.app/com.facebook.internal.FacebookInitProvider:
+    Provider{80b7db2 co.steezy.app/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [co.steezy.app.androidx-startup]:
+    Provider{2296567 co.steezy.app/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{df8e707 co.steezy.app}
+  [co.steezy.app.firebaseinitprovider]:
+    Provider{704a3bd co.steezy.app/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{fc8b034 co.steezy.app}
+  [co.steezy.app.SentryInitProvider]:
+    Provider{d2fbf14 co.steezy.app/io.sentry.android.core.SentryInitProvider}
+      applicationInfo=ApplicationInfo{a5b0e5d co.steezy.app}
+  [co.steezy.app.FacebookInitProvider]:
+    Provider{80b7db2 co.steezy.app/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{13a3d2 co.steezy.app}
+
+Key Set Manager:
+  [co.steezy.app]
+      Signing KeySets: 5699
+
+Packages:
+  Package [co.steezy.app] (ab2eca3):
+    userId=10277
+    pkg=Package{7fbdcac co.steezy.app}
+    codePath=/data/app/~~iUJcmkeK6xJSXbb95B_AIA==/co.steezy.app-n4su6IS9ejo2-jMJS3cnhw==
+    resourcePath=/data/app/~~iUJcmkeK6xJSXbb95B_AIA==/co.steezy.app-n4su6IS9ejo2-jMJS3cnhw==
+    legacyNativeLibraryDir=/data/app/~~iUJcmkeK6xJSXbb95B_AIA==/co.steezy.app-n4su6IS9ejo2-jMJS3cnhw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=117 minSdk=24 targetSdk=31
+    minExtensionVersions=[]
+    versionName=3.2.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }, Intent { act=android.media.browse.MediaBrowserService }]
+    dataDir=/data/user/0/co.steezy.app
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 15:13:28
+    lastUpdateTime=2022-11-30 15:13:29
+    packageSource=0
+    signatures=PackageSignatures{9c1110a version:3, signatures:[1f09083b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.INTERNET
+      android.net.conn.CONNECTIVITY_CHANGE
+      android.net.wifi.WIFI_STATE_CHANGED
+      android.permission.VIBRATE
+      android.permission.CAMERA
+      android.permission.RECORD_AUDIO
+      com.android.vending.BILLING
+      android.permission.BLUETOOTH
+      android.permission.READ_EXTERNAL_STORAGE
+      com.google.android.gms.permission.AD_ID
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WAKE_LOCK
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=66010 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:13:29
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      co.steezy.app
+    com.google.android.apps.diagnosticstool:
+      co.steezy.app
+    com.google.android.settings.intelligence:
+      co.steezy.app
+    com.google.android.apps.accessibility.voiceaccess:
+      co.steezy.app
+    com.truecaller:
+      co.steezy.app
+    co.steezy.app:
+      [com.google.android.bluetooth.services,com.android.bluetooth]
+      com.google.android.googlequicksearchbox
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.youtube
+      com.google.android.apps.docs
+      com.google.android.apps.youtube.music
+      radiotime.player
+      com.dv.adm
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+    com.dv.adm:
+      co.steezy.app
+    com.zappcues.gamingmode:
+      co.steezy.app
+    com.jio.myjio:
+      co.steezy.app
+  queryable via interaction:
+    User 0:
+      [com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.android.inputdevices,com.android.settings,com.android.localtransport,com.android.location.fused,com.google.android.iwlan,com.android.keychain,com.android.wallpaperbackup,com.android.dynsystem,com.android.qns,com.android.providers.settings,android,com.google.SSRestartDetector]:
+        co.steezy.app
+      [com.google.android.gms,com.google.android.gsf]:
+        co.steezy.app
+  queryable via uses-library:
+
+Dexopt state:
+  [co.steezy.app]
+    path: /data/app/~~iUJcmkeK6xJSXbb95B_AIA==/co.steezy.app-n4su6IS9ejo2-jMJS3cnhw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:159040
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [co.steezy.app]
+     base.apk - 651

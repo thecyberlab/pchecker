@@ -1,0 +1,715 @@
+Activity Resolver Table:
+  Schemes:
+      ausp-transparentclockweather:
+        f28aef com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.LauncherActivity filter 828d885
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ausp-transparentclockweather"
+      http:
+        35bc94 com.droid27.transparentclockweather.premium/com.droid27.weatherinterface.WeatherForecastActivity filter 5fc0e00
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "www.machapp.net": -1
+          Authority: "www.machapp.net": -1
+          Authority: "www.machapp.net": -1
+          Authority: "machapp.net": -1
+          Authority: "www.machapp.net": -1
+          Authority: "www.machapp.net": -1
+          Authority: "www.machapp.net": -1
+          Authority: "www.machapp.net": -1
+          Authority: "www.machapp.net": -1
+          Authority: "www.machapp.net": -1
+          Authority: "www.machapp.net": -1
+          Path: "PatternMatcher{PREFIX: /}"
+          Path: "PatternMatcher{PREFIX: /index.html}"
+          Path: "PatternMatcher{PREFIX: /index.html}"
+          Path: "PatternMatcher{PREFIX: /transparentclockweather.html}"
+          Path: "PatternMatcher{PREFIX: /tcw/current_forecast.html}"
+          Path: "PatternMatcher{PREFIX: /tcw/daily_forecast.html}"
+          Path: "PatternMatcher{PREFIX: /tcw/hourly_forecast.html}"
+          Path: "PatternMatcher{PREFIX: /tcw/moon_forecast.html}"
+          Path: "PatternMatcher{PREFIX: /tcw/wind_forecast.html}"
+          Path: "PatternMatcher{PREFIX: /tcw/weather_graphs.html}"
+          AutoVerify=true
+      machapp-tcw:
+        3d7e9e8 com.droid27.transparentclockweather.premium/com.droid27.weatherinterface.WeatherIconHandlerActivity filter da37801
+          Action: "com.droid27.weathericon.receiver"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "machapp-tcw"
+          Authority: "set": -1
+          Authority: "set-wx-icon": -1
+        ef096a6 com.droid27.transparentclockweather.premium/com.droid27.weatherinterface.WeatherBackgroundHandlerActivity filter 4bae8e7
+          Action: "com.droid27.wallpaper.receiver"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "machapp-tcw"
+          Authority: "set": -1
+          Authority: "set-anim-wbg": -1
+        35bc94 com.droid27.transparentclockweather.premium/com.droid27.weatherinterface.WeatherForecastActivity filter aff7732
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "machapp-tcw"
+          Authority: "set": -1
+        35bc94 com.droid27.transparentclockweather.premium/com.droid27.weatherinterface.WeatherForecastActivity filter 7c32c83
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "machapp-tcw"
+          Authority: "view": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f28aef com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.LauncherActivity filter 17429fc
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        35bc94 com.droid27.transparentclockweather.premium/com.droid27.weatherinterface.WeatherForecastActivity filter 4ce933d
+          Action: "android.intent.action.MAIN"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        73ae6da com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.LocationSetupActivity filter d06e70b
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        7e232bc com.droid27.transparentclockweather.premium/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 2d1245
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        9c6068e com.droid27.transparentclockweather.premium/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f243eaf
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.droid27.transparentclockweather.premium.ACTION_INEXACT_FIRED:
+        2820ddf com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.skinning.weatherbackgrounds.preview.domain.TrialPeriodBroadcastReceiver filter b140a2c
+          Action: "com.droid27.transparentclockweather.premium.ACTION_INEXACT_FIRED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        51ffd9a com.droid27.transparentclockweather.premium/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d0016cb
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        bfdbea8 com.droid27.transparentclockweather.premium/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 9118dc1
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        2c5cd90 com.droid27.transparentclockweather.premium/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 3a9689
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.PACKAGE_REPLACED:
+        f41a842 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.receivers.BootCompletedReceiver filter 544f053
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+      android.intent.action.PACKAGE_RESTARTED:
+        f41a842 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.receivers.BootCompletedReceiver filter 544f053
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        51ffd9a com.droid27.transparentclockweather.premium/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d0016cb
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.droid27.tcw.LOCATION_UPDATED:
+        b23a8fb com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_2x1 filter df96371
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        9e1f556 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x1 filter b8b72c4
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        eefc5ad com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Weather_4x1_1 filter 2983c73
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        12ef730 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Weather_4x1_2 filter d32592e
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        d302ccf com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2 filter 90fd65
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        c0eda3a com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_calendar filter 1ee7c48
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        4190ae1 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_b filter 70ee6c7
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        9314f4 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x3_c filter 5327692
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        d892863 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x3_d filter 80f3519
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        afd69de com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_c filter 1f80e8c
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        75509d5 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_d filter 7140db
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        65d8778 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_5x2 filter da6d6b6
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        c390fb7 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_graph_5x2 filter a859e8d
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+      android.appwidget.action.APPWIDGET_DELETED:
+        b23a8fb com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_2x1 filter 8cd9d18
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        9e1f556 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x1 filter 479d9d7
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        eefc5ad com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Weather_4x1_1 filter b2010e2
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        12ef730 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Weather_4x1_2 filter f700fa9
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        d302ccf com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2 filter 244565c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        c0eda3a com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_calendar filter bacc6eb
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        4190ae1 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_b filter b006006
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        9314f4 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x3_c filter 7ba741d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        d892863 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x3_d filter d468c60
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        afd69de com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_c filter 3dbe7bf
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        75509d5 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_d filter 7f245ea
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        65d8778 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_5x2 filter 3e96e51
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        c390fb7 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_graph_5x2 filter 59fa324
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+      android.intent.action.BATTERY_LOW:
+        7e232bc com.droid27.transparentclockweather.premium/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 2d1245
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        9f05966 com.droid27.transparentclockweather.premium/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 17754a7
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        9f05966 com.droid27.transparentclockweather.premium/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 17754a7
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.appwidget.action.APPWIDGET_DISABLED:
+        b23a8fb com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_2x1 filter 8cd9d18
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        9e1f556 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x1 filter 479d9d7
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        eefc5ad com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Weather_4x1_1 filter b2010e2
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        12ef730 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Weather_4x1_2 filter f700fa9
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        d302ccf com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2 filter 244565c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        c0eda3a com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_calendar filter bacc6eb
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        4190ae1 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_b filter b006006
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        9314f4 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x3_c filter 7ba741d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        d892863 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x3_d filter d468c60
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        afd69de com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_c filter 3dbe7bf
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        75509d5 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_d filter 7f245ea
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        65d8778 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_5x2 filter 3e96e51
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        c390fb7 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_graph_5x2 filter 59fa324
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+      android.intent.action.BOOT_COMPLETED:
+        c962639 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.skinning.weatherbackgrounds.preview.domain.PremiumBackgroundPreviewAlarmBootBroadcastReceiver filter 4a9d47e
+          Action: "android.intent.action.BOOT_COMPLETED"
+        ca9ecf5 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.skinning.weatherbackgrounds.preview.domain.PremiumBackgroundPreviewAlarmBootBroadcastReceiver filter 50aba8a
+          Action: "android.intent.action.BOOT_COMPLETED"
+        f41a842 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.receivers.BootCompletedReceiver filter 544f053
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+        9f05966 com.droid27.transparentclockweather.premium/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 17754a7
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        9c6068e com.droid27.transparentclockweather.premium/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f243eaf
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.droid27.tcw.WEATHER_UPDATED:
+        b23a8fb com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_2x1 filter df96371
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        9e1f556 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x1 filter b8b72c4
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        eefc5ad com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Weather_4x1_1 filter 2983c73
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        12ef730 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Weather_4x1_2 filter d32592e
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        d302ccf com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2 filter 90fd65
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        c0eda3a com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_calendar filter 1ee7c48
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        4190ae1 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_b filter 70ee6c7
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        9314f4 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x3_c filter 5327692
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        d892863 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x3_d filter 80f3519
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        afd69de com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_c filter 1f80e8c
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        75509d5 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_d filter 7140db
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        65d8778 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_5x2 filter da6d6b6
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+        c390fb7 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_graph_5x2 filter a859e8d
+          Action: "com.droid27.tcw.LOCATION_UPDATED"
+          Action: "com.droid27.tcw.WEATHER_UPDATED"
+      android.appwidget.action.APPWIDGET_ENABLED:
+        b23a8fb com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_2x1 filter 8cd9d18
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        9e1f556 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x1 filter 479d9d7
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        eefc5ad com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Weather_4x1_1 filter b2010e2
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        12ef730 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Weather_4x1_2 filter f700fa9
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        d302ccf com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2 filter 244565c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        c0eda3a com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_calendar filter bacc6eb
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        4190ae1 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_b filter b006006
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        9314f4 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x3_c filter 7ba741d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        d892863 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x3_d filter d468c60
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        afd69de com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_c filter 3dbe7bf
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        75509d5 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_d filter 7f245ea
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        65d8778 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_5x2 filter 3e96e51
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        c390fb7 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_graph_5x2 filter 59fa324
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        b23a8fb com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_2x1 filter 8cd9d18
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        9e1f556 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x1 filter 479d9d7
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        eefc5ad com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Weather_4x1_1 filter b2010e2
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        12ef730 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Weather_4x1_2 filter f700fa9
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        d302ccf com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2 filter 244565c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        c0eda3a com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_calendar filter bacc6eb
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        4190ae1 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_b filter b006006
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        9314f4 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x3_c filter 7ba741d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        d892863 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x3_d filter d468c60
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        afd69de com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_c filter 3dbe7bf
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        75509d5 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_4x2_d filter 7f245ea
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        65d8778 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_5x2 filter 3e96e51
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        c390fb7 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.Widget_graph_5x2 filter 59fa324
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        818a5f2 com.droid27.transparentclockweather.premium/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 3a9443
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        bc41d54 com.droid27.transparentclockweather.premium/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 66844fd
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        a072f3e com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.wearable.WearableService filter d68319f
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Action: "com.google.android.gms.wearable.CHANNEL_EVENT"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: }"
+
+  Non-Data Actions:
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        77221d8 com.droid27.transparentclockweather.premium/androidx.work.impl.background.gcm.WorkManagerGcmService filter 6f86931 permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        efbac0 com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.services.FirebaseMsgService filter 17933f9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        c3014a com.droid27.transparentclockweather.premium/com.google.firebase.messaging.FirebaseMessagingService filter 6a848bb
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.wallpaper.WallpaperService:
+        475c2ec com.droid27.transparentclockweather.premium/com.droid27.transparentclockweather.services.LiveWallpaperService filter 61016b5 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+
+Domain verification status:
+  com.droid27.transparentclockweather.premium:
+    ID: 3a7a6b73-a8ed-4525-a7ba-f593fb40f7bf
+    Signatures: [0C:FB:46:63:83:1A:0F:B8:D6:97:3A:AD:44:E2:21:A8:BA:78:F7:F6:84:BD:0B:17:D3:B4:4B:EC:82:31:64:84]
+    Domain verification state:
+      machapp.net: none
+      www.machapp.net: none
+
+Registered ContentProviders:
+  com.droid27.transparentclockweather.premium/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{196c19 com.droid27.transparentclockweather.premium/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.droid27.transparentclockweather.premium/androidx.core.content.FileProvider:
+    Provider{e18d4de com.droid27.transparentclockweather.premium/androidx.core.content.FileProvider}
+  com.droid27.transparentclockweather.premium/com.squareup.picasso.PicassoProvider:
+    Provider{32276bf com.droid27.transparentclockweather.premium/com.squareup.picasso.PicassoProvider}
+  com.droid27.transparentclockweather.premium/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{c94f18c com.droid27.transparentclockweather.premium/com.google.firebase.provider.FirebaseInitProvider}
+  com.droid27.transparentclockweather.premium/com.facebook.internal.FacebookInitProvider:
+    Provider{8d960ea com.droid27.transparentclockweather.premium/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.droid27.transparentclockweather.premium.firebaseinitprovider]:
+    Provider{c94f18c com.droid27.transparentclockweather.premium/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{f4efcd7 com.droid27.transparentclockweather.premium}
+  [com.droid27.transparentclockweather.premium.lifecycle-process]:
+    Provider{196c19 com.droid27.transparentclockweather.premium/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{af559c4 com.droid27.transparentclockweather.premium}
+  [com.droid27.transparentclockweather.premium.FacebookInitProvider]:
+    Provider{8d960ea com.droid27.transparentclockweather.premium/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{d6920ad com.droid27.transparentclockweather.premium}
+  [com.droid27.transparentclockweather.premium.provider]:
+    Provider{e18d4de com.droid27.transparentclockweather.premium/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{85cfe2 com.droid27.transparentclockweather.premium}
+  [com.droid27.transparentclockweather.premium.com.squareup.picasso]:
+    Provider{32276bf com.droid27.transparentclockweather.premium/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{91c8f73 com.droid27.transparentclockweather.premium}
+
+Key Set Manager:
+  [com.droid27.transparentclockweather.premium]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.droid27.transparentclockweather.premium] (ad04e30):
+    userId=10358
+    pkg=Package{c912342 com.droid27.transparentclockweather.premium}
+    codePath=/data/app/~~Vf1RK5yuf_eRUGCmDNS2UQ==/com.droid27.transparentclockweather.premium-wnlW4tabzb2XgnIb4kVkDg==
+    resourcePath=/data/app/~~Vf1RK5yuf_eRUGCmDNS2UQ==/com.droid27.transparentclockweather.premium-wnlW4tabzb2XgnIb4kVkDg==
+    legacyNativeLibraryDir=/data/app/~~Vf1RK5yuf_eRUGCmDNS2UQ==/com.droid27.transparentclockweather.premium-wnlW4tabzb2XgnIb4kVkDg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=724 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=5.7.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=com.droid27.custom.provider }, Intent { act=android.intent.action.VIEW dat=https:/... }]
+    dataDir=/data/user/0/com.droid27.transparentclockweather.premium
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 17:47:33
+    lastUpdateTime=2022-11-30 17:47:34
+    packageSource=0
+    signatures=PackageSignatures{e5d4090 version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_CALENDAR
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      com.google.android.permission.PROVIDE_BACKGROUND
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=80630 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 17:47:34
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.droid27.transparentclockweather.premium
+    com.google.android.apps.diagnosticstool:
+      com.droid27.transparentclockweather.premium
+    com.google.android.settings.intelligence:
+      com.droid27.transparentclockweather.premium
+    com.google.android.apps.accessibility.voiceaccess:
+      com.droid27.transparentclockweather.premium
+    com.google.android.apps.wallpaper:
+      com.droid27.transparentclockweather.premium
+    com.truecaller:
+      com.droid27.transparentclockweather.premium
+    com.dv.adm:
+      com.droid27.transparentclockweather.premium
+    com.zappcues.gamingmode:
+      com.droid27.transparentclockweather.premium
+    com.droid27.transparentclockweather.premium:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      ru.iptvremote.android.iptv.pro
+      com.mobisystems.office
+      com.dv.adm
+      com.utorrent.client.pro
+    com.jio.myjio:
+      com.droid27.transparentclockweather.premium
+  queryable via interaction:
+    User 0:
+      [com.android.inputdevices,com.android.keychain,com.google.SSRestartDetector,com.google.android.iwlan,com.android.dynsystem,com.android.location.fused,android,com.android.localtransport,com.android.qns,com.android.providers.settings,com.google.android.settings.future.biometrics.faceenroll,com.android.wallpaperbackup,com.android.settings,com.android.server.telecom]:
+        com.droid27.transparentclockweather.premium
+      [com.google.android.gms,com.google.android.gsf]:
+        com.droid27.transparentclockweather.premium
+      com.android.vending:
+        com.droid27.transparentclockweather.premium
+      com.droid27.transparentclockweather.premium:
+        [com.android.inputdevices,com.android.keychain,com.google.SSRestartDetector,com.google.android.iwlan,com.android.dynsystem,com.android.location.fused,android,com.android.localtransport,com.android.qns,com.android.providers.settings,com.google.android.settings.future.biometrics.faceenroll,com.android.wallpaperbackup,com.android.settings,com.android.server.telecom]
+  queryable via uses-library:
+
+Dexopt state:
+  [com.droid27.transparentclockweather.premium]
+    path: /data/app/~~Vf1RK5yuf_eRUGCmDNS2UQ==/com.droid27.transparentclockweather.premium-wnlW4tabzb2XgnIb4kVkDg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:456436
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.droid27.transparentclockweather.premium]
+     base.apk - 567

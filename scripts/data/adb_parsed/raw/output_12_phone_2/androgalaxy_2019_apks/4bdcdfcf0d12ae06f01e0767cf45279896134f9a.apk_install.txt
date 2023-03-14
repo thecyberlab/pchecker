@@ -1,0 +1,606 @@
+Activity Resolver Table:
+  Schemes:
+      fb1625853691029451:
+        7a9b463 com.codium.hydrocoach.pro/com.facebook.CustomTabActivity filter fca2860
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb1625853691029451"
+      http:
+        816b25c com.codium.hydrocoach.pro/com.codium.hydrocoach.ui.MainActivity filter 2ae963a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "hydrocoach.page.link": -1
+          Authority: "hydrocoach.page.link": -1
+          AutoVerify=true
+        ecd201d com.codium.hydrocoach.pro/com.firebase.ui.auth.ui.provider.GitHubLoginActivity filter 8db292
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "CHANGE-ME": -1
+          Path: "PatternMatcher{LITERAL: /__/auth/handler}"
+          AutoVerify=true
+      https:
+        816b25c com.codium.hydrocoach.pro/com.codium.hydrocoach.ui.MainActivity filter 2ae963a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "hydrocoach.page.link": -1
+          Authority: "hydrocoach.page.link": -1
+          AutoVerify=true
+        ecd201d com.codium.hydrocoach.pro/com.firebase.ui.auth.ui.provider.GitHubLoginActivity filter 8db292
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "CHANGE-ME": -1
+          Path: "PatternMatcher{LITERAL: /__/auth/handler}"
+          AutoVerify=true
+      hydrocoach:
+        f7d2eb com.codium.hydrocoach.pro/com.codium.hydrocoach.ui.pref.PrefActivity filter 88a9848
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "hydrocoach"
+          Authority: "fitbit.logincallback": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        816b25c com.codium.hydrocoach.pro/com.codium.hydrocoach.ui.MainActivity filter b2a2965
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        d18f6e1 com.codium.hydrocoach.pro/com.codium.hydrocoach.appwidgets.WidgetThreeCupsConfigActivity filter 1dfdc06
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        3feb2c7 com.codium.hydrocoach.pro/com.codium.hydrocoach.appwidgets.WidgetOneCupConfigActivity filter ad4f0f4
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      hydrocoach.action.DISMISSED_DRINK_NOTI:
+        ba0a119 com.codium.hydrocoach.pro/com.codium.hydrocoach.receiver.DrinkReminderReceiver filter 6d065de
+          Action: "hydrocoach.action.TOGGLE_MUTE_REMINDER"
+          Action: "hydrocoach.action.SHOW_DRINK_NOTI"
+          Action: "hydrocoach.action.DISMISSED_DRINK_NOTI"
+          Action: "hydrocoach.action.UPDATE_PERMA_DATA"
+      hydrocoach.action.CREATE_WEIGHT:
+        9135d5 com.codium.hydrocoach.pro/com.codium.hydrocoach.receiver.WeightCrudReceiver filter 3f901ea
+          Action: "hydrocoach.action.CREATE_WEIGHT"
+          Action: "hydrocoach.action.UPDATE_WEIGHT"
+          Action: "hydrocoach.action.DELETE_WEIGHT"
+      hydrocoach.action.UPDATE_WEIGHT:
+        9135d5 com.codium.hydrocoach.pro/com.codium.hydrocoach.receiver.WeightCrudReceiver filter 3f901ea
+          Action: "hydrocoach.action.CREATE_WEIGHT"
+          Action: "hydrocoach.action.UPDATE_WEIGHT"
+          Action: "hydrocoach.action.DELETE_WEIGHT"
+      hydrocoach.action.SHOW_DRINK_NOTI:
+        ba0a119 com.codium.hydrocoach.pro/com.codium.hydrocoach.receiver.DrinkReminderReceiver filter 6d065de
+          Action: "hydrocoach.action.TOGGLE_MUTE_REMINDER"
+          Action: "hydrocoach.action.SHOW_DRINK_NOTI"
+          Action: "hydrocoach.action.DISMISSED_DRINK_NOTI"
+          Action: "hydrocoach.action.UPDATE_PERMA_DATA"
+      hydrocoach.action.CREATE_DRINK_LOG:
+        d7933bf com.codium.hydrocoach.pro/com.codium.hydrocoach.receiver.NotificationActionReceiver filter f196a8c
+          Action: "hydrocoach.action.CREATE_DRINK_LOG"
+      hydrocoach.action.SELECT_PAGE:
+        6cc3e45 com.codium.hydrocoach.pro/com.codium.hydrocoach.appwidgets.HydrocoachViewFlipperAppWidgetProvider filter e4db99a
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "hydrocoach.action.NEXT_PAGE"
+          Action: "hydrocoach.action.SELECT_PAGE"
+      com.android.vending.INSTALL_REFERRER:
+        87779c1 com.codium.hydrocoach.pro/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter e3dd566
+          Action: "com.android.vending.INSTALL_REFERRER"
+      hydrocoach.action.TOGGLE_MUTE_REMINDER:
+        ba0a119 com.codium.hydrocoach.pro/com.codium.hydrocoach.receiver.DrinkReminderReceiver filter 6d065de
+          Action: "hydrocoach.action.TOGGLE_MUTE_REMINDER"
+          Action: "hydrocoach.action.SHOW_DRINK_NOTI"
+          Action: "hydrocoach.action.DISMISSED_DRINK_NOTI"
+          Action: "hydrocoach.action.UPDATE_PERMA_DATA"
+      hydrocoach.action.NEXT_PAGE:
+        6cc3e45 com.codium.hydrocoach.pro/com.codium.hydrocoach.appwidgets.HydrocoachViewFlipperAppWidgetProvider filter e4db99a
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "hydrocoach.action.NEXT_PAGE"
+          Action: "hydrocoach.action.SELECT_PAGE"
+      hydrocoach.action.DELETE_WEIGHT:
+        9135d5 com.codium.hydrocoach.pro/com.codium.hydrocoach.receiver.WeightCrudReceiver filter 3f901ea
+          Action: "hydrocoach.action.CREATE_WEIGHT"
+          Action: "hydrocoach.action.UPDATE_WEIGHT"
+          Action: "hydrocoach.action.DELETE_WEIGHT"
+      hydrocoach.action.UPDATE_PERMA_DATA:
+        ba0a119 com.codium.hydrocoach.pro/com.codium.hydrocoach.receiver.DrinkReminderReceiver filter 6d065de
+          Action: "hydrocoach.action.TOGGLE_MUTE_REMINDER"
+          Action: "hydrocoach.action.SHOW_DRINK_NOTI"
+          Action: "hydrocoach.action.DISMISSED_DRINK_NOTI"
+          Action: "hydrocoach.action.UPDATE_PERMA_DATA"
+      com.google.android.c2dm.intent.RECEIVE:
+        cc122cb com.codium.hydrocoach.pro/com.google.firebase.iid.FirebaseInstanceIdReceiver filter ad7daa8
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.TIMEZONE_CHANGED:
+        19b4a8d com.codium.hydrocoach.pro/com.codium.hydrocoach.receiver.DateTimeChangedReceiver filter 5e3e442
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        19b4a8d com.codium.hydrocoach.pro/com.codium.hydrocoach.receiver.DateTimeChangedReceiver filter 5e3e442
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        2bc5a51 com.codium.hydrocoach.pro/com.codium.hydrocoach.receiver.AutoStartReceiver filter 95d52b6
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        ea07c53 com.codium.hydrocoach.pro/com.codium.hydrocoach.appwidgets.HydrocoachPieAppWidgetProvider filter b686990
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        ff0289 com.codium.hydrocoach.pro/com.codium.hydrocoach.appwidgets.HydrocoachProPieAppWidgetProvider filter e50028e
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        ac8aaf com.codium.hydrocoach.pro/com.codium.hydrocoach.appwidgets.HydrocoachOneCupAppWidgetProvider filter e128ebc
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        6cc3e45 com.codium.hydrocoach.pro/com.codium.hydrocoach.appwidgets.HydrocoachViewFlipperAppWidgetProvider filter e4db99a
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "hydrocoach.action.NEXT_PAGE"
+          Action: "hydrocoach.action.SELECT_PAGE"
+      hydrocoach.action.REENGAGE:
+        4974cdb com.codium.hydrocoach.pro/com.codium.hydrocoach.receiver.ReengagementReveiver filter a38a378
+          Action: "hydrocoach.action.REENGAGE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        ab3dbb7 com.codium.hydrocoach.pro/com.codium.hydrocoach.receiver.AppUpdateReceiver filter 2107f24
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Domain verification status:
+  com.codium.hydrocoach.pro:
+    ID: 85014713-8cb8-4fea-93e1-d07bbdacf83c
+    Signatures: [A4:86:0D:6D:6D:3C:A4:69:68:16:29:17:30:3A:DE:37:3C:53:A0:FB:70:39:A5:69:49:95:DD:83:67:B6:6A:01]
+    Invalid autoVerify domains:
+      CHANGE-ME
+    Domain verification state:
+      hydrocoach.page.link: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          hydrocoach.page.link
+
+Permissions:
+  Permission [com.codium.hydrocoach.obsolete.provider.ACCESS_DB] (6536e4e):
+    sourcePackage=com.codium.hydrocoach.pro
+    uid=19923 gids=[] type=0 prot=signature
+    perm=PermissionInfo{b75eb6f com.codium.hydrocoach.obsolete.provider.ACCESS_DB}
+
+Registered ContentProviders:
+  com.codium.hydrocoach.pro/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{5cb407c com.codium.hydrocoach.pro/com.crashlytics.android.CrashlyticsInitProvider}
+  com.codium.hydrocoach.pro/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{1186d05 com.codium.hydrocoach.pro/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.codium.hydrocoach.pro/com.firebase.ui.auth.data.client.AuthUiInitProvider:
+    Provider{f7c215a com.codium.hydrocoach.pro/com.firebase.ui.auth.data.client.AuthUiInitProvider}
+  com.codium.hydrocoach.pro/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{f9fcf8b com.codium.hydrocoach.pro/com.google.firebase.provider.FirebaseInitProvider}
+  com.codium.hydrocoach.pro/com.codium.hydrocoach.obsolete.provider.HydrocoachProvider:
+    Provider{8c9e868 com.codium.hydrocoach.pro/com.codium.hydrocoach.obsolete.provider.HydrocoachProvider}
+  com.codium.hydrocoach.pro/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{b37d481 com.codium.hydrocoach.pro/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.codium.hydrocoach.pro/com.samsung.android.sdk.shealth.PluginContentProvider:
+    Provider{64af926 com.codium.hydrocoach.pro/com.samsung.android.sdk.shealth.PluginContentProvider}
+  com.codium.hydrocoach.pro/androidx.core.content.FileProvider:
+    Provider{f39d967 com.codium.hydrocoach.pro/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.codium.hydrocoach.pro.authuiinitprovider]:
+    Provider{f7c215a com.codium.hydrocoach.pro/com.firebase.ui.auth.data.client.AuthUiInitProvider}
+      applicationInfo=ApplicationInfo{8892314 com.codium.hydrocoach.pro}
+  [com.codium.hydrocoach.pro.firebaseinitprovider]:
+    Provider{f9fcf8b com.codium.hydrocoach.pro/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{8c37bd com.codium.hydrocoach.pro}
+  [com.codium.hydrocoach.pro.export]:
+    Provider{f39d967 com.codium.hydrocoach.pro/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{ddd81b2 com.codium.hydrocoach.pro}
+  [com.codium.hydrocoach.pro.pluginservice]:
+    Provider{64af926 com.codium.hydrocoach.pro/com.samsung.android.sdk.shealth.PluginContentProvider}
+      applicationInfo=ApplicationInfo{680a503 com.codium.hydrocoach.pro}
+  [com.codium.hydrocoach.pro.firebaseperfprovider]:
+    Provider{1186d05 com.codium.hydrocoach.pro/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{a5f5c80 com.codium.hydrocoach.pro}
+  [com.codium.hydrocoach.pro.lifecycle-process]:
+    Provider{b37d481 com.codium.hydrocoach.pro/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{3c992b9 com.codium.hydrocoach.pro}
+  [com.codium.hydrocoach.pro]:
+    Provider{8c9e868 com.codium.hydrocoach.pro/com.codium.hydrocoach.obsolete.provider.HydrocoachProvider}
+      applicationInfo=ApplicationInfo{b9e06fe com.codium.hydrocoach.pro}
+  [com.codium.hydrocoach.pro.crashlyticsinitprovider]:
+    Provider{5cb407c com.codium.hydrocoach.pro/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{ede8e5f com.codium.hydrocoach.pro}
+
+Key Set Manager:
+  [com.codium.hydrocoach.pro]
+      Signing KeySets: 306961
+
+Packages:
+  Package [com.codium.hydrocoach.pro] (9dc0ac):
+    userId=19923
+    pkg=Package{4e7a175 com.codium.hydrocoach.pro}
+    codePath=/data/app/~~Bmh-JmzhFnR2t-EMCKj9hg==/com.codium.hydrocoach.pro-AM29BZr3Uw6O5svFA_FBRA==
+    resourcePath=/data/app/~~Bmh-JmzhFnR2t-EMCKj9hg==/com.codium.hydrocoach.pro-AM29BZr3Uw6O5svFA_FBRA==
+    legacyNativeLibraryDir=/data/app/~~Bmh-JmzhFnR2t-EMCKj9hg==/com.codium.hydrocoach.pro-AM29BZr3Uw6O5svFA_FBRA==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=204 minSdk=16 targetSdk=29
+    minExtensionVersions=[]
+    versionName=4.2.4-pro
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=PackageImpl{4e7a175 com.codium.hydrocoach.pro}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[]
+    dataDir=/data/user/0/com.codium.hydrocoach.pro
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-28 12:11:54
+    firstInstallTime=2022-11-28 12:11:54
+    lastUpdateTime=2022-11-28 12:11:54
+    signatures=PackageSignatures{f4f950a version:2, signatures:[5fa2210c], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      com.codium.hydrocoach.obsolete.provider.ACCESS_DB: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      com.android.vending.BILLING
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.VIBRATE
+      com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      android.permission.USE_FULL_SCREEN_INTENT
+      com.codium.hydrocoach.obsolete.provider.ACCESS_DB
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      com.codium.hydrocoach.obsolete.provider.ACCESS_DB: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=51346 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+
+SkippingApks:
+  name : 100Game_MOVISTAR_4x3_KU84_2009_2.0.9.apk
+  name : 100Game_PERSONAL_4x4_PF36_2009_2.0.2.apk
+  name : 149_companion-release.apk
+  name : Adalyst_ZTA.apk
+  name : AirtelStub.apk
+  name : AlticeMusic_2.3.apk
+  name : AmazonMDIP_CAN.apk
+  name : AmazonShopping-32bit.apk
+  name : AmazonShopping_CAN.apk
+  name : AppCenter_v5.9.18-6851_signed-aligned-signing.apk
+  name : BellTVWidget.apk
+  name : ClaroContenedor_Full.apk
+  name : ClaroContenedor_Stub.apk
+  name : ClaroJuegos_Stub.apk
+  name : CombinedStarter_T31-14.05.00-build_5265-Release-signed-aligned-pd.apk
+  name : DeviceCheckup_TLS.apk
+  name : DigitalKey.apk
+  name : HPSClient.apk
+  name : HpsAgreement.apk
+  name : Ignite-Singtel.apk
+  name : Ignite-Tigo.apk
+  name : Ignite-aoneSamsungAgent_8.1.098-5783_release.apk
+  name : Ignite-attMexico.apk
+  name : Ignite-timSamsungAgent_7.1.300-5521_release.apk
+  name : KT114Provider2.apk
+  name : KTAuth.apk
+  name : KTCustomerService.apk
+  name : KTHiddenMenu.apk
+  name : KTOneStore.apk
+  name : KTPushNotiService.apk
+  name : KTServiceAgent.apk
+  name : KTServiceMenu.apk
+  name : KTUsimManager.apk
+  name : LGUGPSnWPS.apk
+  name : LGUHiddenMenu.apk
+  name : LGUMiniCustomerCenter.apk
+  name : LGUOZStore.apk
+  name : LGUplusTsmProxy.apk
+  name : MDIP-TIM_O2UK_DTDE_VFAU_OPTUSAU_3IT_sdk-30.apk
+  name : MDIP.apk
+  name : MaftPreloadManagerAndroidApp-MovistarMX.apk
+  name : MaftPreloadManagerAndroidApp-TEF_LATAM.apk
+  name : MaftPreloadManagerAndroidApp-release-signed-tagged.apk
+  name : MeuTIM.apk
+  name : MinhaOi.apk
+  name : MovitarPlayTGU_b_stub_v1.1_20180517.apk
+  name : Musica_VIVA_v1.1.apk
+  name : MyAccount_FMC.apk
+  name : MyAccount_GLW.apk
+  name : MyAccount_VMC.apk
+  name : MyApps-1.7.2-logoff-obson-prodSamsungRelease.apk
+  name : MyBell.apk
+  name : MyGalaxy.apk
+  name : MyGalaxy_NEBANGS.apk
+  name : MyRogers.apk
+  name : MySingtel.apk
+  name : MyTELUS.apk
+  name : NaverV_N.apk
+  name : OPENMarketHiddenMenu.apk
+  name : OiApps.apk
+  name : OiAppsClube.apk
+  name : OiRecarga.apk
+  name : OiWiFi.apk
+  name : Omc.apk
+  name : OnStart_Notification_V30.apk
+  name : OneStoreService.apk
+  name : ProductSearch.apk
+  name : Push_To_Talk_BMC.apk
+  name : RRO_NBS_stk1.apk
+  name : RRO_NBS_stk2.apk
+  name : SEIOAgent.apk
+  name : SFRJeux-8.2.2-logoff-obson-samsungRelease.apk
+  name : SKTHiddenMenu.apk
+  name : SKTMemberShip.apk
+  name : SKTOneStore.apk
+  name : SYSdll.apk
+  name : SafetyCleaner.apk
+  name : SamsungCarKeyFw.apk
+  name : SamsungPayStub.apk
+  name : SelfCareMobile-6.0.3-prod-signed.apk
+  name : SktUsimService.apk
+  name : SmartPush.apk
+  name : TPhoneOnePackage.apk
+  name : TPhoneSetup.apk
+  name : TWorld.apk
+  name : TelcelContenedor_Full.apk
+  name : UnifiedVVM.apk
+  name : Upday.apk
+  name : UserManual.apk
+  name : VivoAppsClube.apk
+  name : VivoMaisApps.apk
+  name : WebManual.apk
+  name : app-a1telekomaustriaSamsung-1.0.73.108(841)-release.apk
+  name : appcloud_oobe_hutchison-release_V4.3.4.6.apk
+  name : appcloud_oobe_samsungDeutscheTelekom-release_V5.2.4.1.apk
+  name : appcloud_oobe_samsungGlobal-release_V5.0.0.0.apk
+  name : appcloud_oobe_samsungOrange-release_V5.2.8.1.apk
+  name : appcloud_oobe_samsungVodafone-release_V5.2.4.6.apk
+  name : che_notification_6.apk
+  name : entelPlay_20122016.apk
+  name : entel_peru_6-10.apk
+  name : instagram-stub-BR.apk
+  name : instagram-stub.apk
+  name : instagram-stub_33-1-8.apk
+  name : kolbi_5.0.19.apk
+  name : koodo.apk
+  name : messenger-stub-BR.apk
+  name : messenger-stub_33-1-8.apk
+  name : messenger_stub.apk
+  name : miTelcel_Stub.apk
+  name : mySaskTel.apk
+  name : myflow_cww_6-3-2-131.apk
+  name : noticias_aro_52.apk
+  name : samsung_club_bo_4.3.4.apk
+  name : samsung_club_uy_access_release_v1_3.apk
+  name : samsungclub_py.apk
+  name : samsungclub_py_3-7-1.apk
+  name : samsungclub_uy.apk
+  name : signatureClub.apk
+  name : tickantel_1.0_stub.apk
+  name : trendystub_1.apk
+  name : tuapp_1.0_stub.apk
+  name : veramas_1.0_stub.apk
+  name : veratv_1.0_stub.apk
+  name : videotron_usercentre_plus.apk
+  name : virginmobile_mybenefits.apk
+  name : SearchSelector.apk
+
+Queries:
+  system apps queryable: false
+  queries via package name:
+  queries via intent:
+    [com.samsung.android.bixby.service,com.samsung.android.bixby.agent]:
+      com.codium.hydrocoach.pro
+    com.google.android.apps.messaging:
+      com.codium.hydrocoach.pro
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Package Changes:
+  Sequence number=606
+  User 0:
+    seq=2, package=com.android.bluetooth
+    seq=5, package=com.sec.unifiedwfc
+    seq=13, package=com.google.android.gms
+    seq=68, package=com.google.android.apps.messaging
+    seq=95, package=org.tlhInganHol.android.klingonassistant
+    seq=98, package=org.eehouse.android.xw4
+    seq=99, package=de.audioattack.openlink
+    seq=172, package=com.example.permissiongrant
+    seq=188, package=com.example.permissiontest
+    seq=226, package=com.example.rtpc
+    seq=269, package=com.google.android.trichromelibrary_530414133
+    seq=270, package=com.google.android.webview
+    seq=404, package=com.samsung.android.forest
+    seq=406, package=com.samsung.android.app.sharelive
+    seq=412, package=com.samsung.android.sm.policy
+    seq=414, package=com.microsoft.appmanager
+    seq=417, package=com.google.android.youtube
+    seq=418, package=com.google.android.apps.maps
+    seq=419, package=com.example.testpermissionsdk
+    seq=420, package=com.example.bevigil
+    seq=421, package=com.microsoft.skydrive
+    seq=429, package=com.kajda.fuelio
+    seq=434, package=me.piere.christmas
+    seq=436, package=ak.alizandro.smartaudiobookplayer
+    seq=438, package=amazing.three_d.icons
+    seq=440, package=com.first75.voicerecorder2pro
+    seq=442, package=digifit.virtuagym.client.android
+    seq=444, package=com.paget96.lspeed
+    seq=448, package=yo.app
+    seq=453, package=izzl.gruvy.pack
+    seq=455, package=com.android.chrome
+    seq=456, package=com.in.w3d
+    seq=458, package=com.luzapplications.alessio.wallooppro
+    seq=460, package=com.alesp.orologiomondiale.pro
+    seq=462, package=co.windyapp.android
+    seq=464, package=com.yuanwofei.cardemulator.pro
+    seq=469, package=com.lb.app_manager
+    seq=473, package=com.microblink.photomath
+    seq=475, package=studio14.application.caeluswhite
+    seq=477, package=com.david.android.languageswitch
+    seq=479, package=com.perfectapps.muviz
+    seq=483, package=net.xnano.android.ftpserver
+    seq=485, package=org.khankids.android
+    seq=487, package=com.aezowie.mycalpro
+    seq=489, package=com.bialy.zonelauncher
+    seq=493, package=com.indigomadina.tabloid
+    seq=495, package=com.plexapp.android
+    seq=497, package=com.mixplorer
+    seq=499, package=com.mobilefootie.wc2010
+    seq=501, package=de.dwd.warnapp
+    seq=503, package=oos.dark.material
+    seq=505, package=com.intsig.camscanner
+    seq=509, package=com.indigomadina.spheroid
+    seq=511, package=com.footej.camera
+    seq=515, package=net.sourceforge.photomaton18
+    seq=518, package=com.cray.software.justreminderpro
+    seq=520, package=com.sofascore.results
+    seq=526, package=pl.solidexplorer2
+    seq=530, package=be.inet.rainwidget.donate
+    seq=532, package=jp.gr.java_conf.soboku.batterymeter
+    seq=534, package=com.iioannou.phototools.pro
+    seq=537, package=com.unvoid.borealis
+    seq=541, package=com.happening.studios.swipeforfacebookfree
+    seq=543, package=com.rookiestudio.perfectviewer
+    seq=546, package=com.osheden.azulox
+    seq=549, package=com.shaiban.audioplayer.mplayer
+    seq=551, package=com.fullreader
+    seq=553, package=com.pakdata.easyurdu
+    seq=555, package=eu.faircode.netguard
+    seq=557, package=ru.yandex.music
+    seq=561, package=indigomadina.furatto.ui
+    seq=563, package=com.brit.swiftblack.layers
+    seq=565, package=com.brit.swiftdark.substratum
+    seq=567, package=o.o.joey
+    seq=569, package=at.bitfire.davdroid
+    seq=571, package=com.overlook.android.fing
+    seq=573, package=ru.involta.metro
+    seq=577, package=hastamev.oneuidark.com
+    seq=580, package=com.nll.asr
+    seq=582, package=com.compscieddy.writeaday
+    seq=584, package=vitalypanov.personalaccounting.pro
+    seq=586, package=com.protectstar.ishredder.pro
+    seq=588, package=prism.kustom.pack
+    seq=590, package=com.iudesk.android.photo.editor
+    seq=592, package=com.protectstar.ishredder.mil
+    seq=594, package=com.androidev.xhafe.earthquakepro
+    seq=596, package=com.n7mobile.nplayer
+    seq=598, package=com.franco.doze
+    seq=602, package=com.mobisystems.fileman
+    seq=604, package=com.changemystyle.gentlewakeuppro
+    seq=605, package=com.codium.hydrocoach.pro
+
+
+Dexopt state:
+  [com.codium.hydrocoach.pro]
+    path: /data/app/~~Bmh-JmzhFnR2t-EMCKj9hg==/com.codium.hydrocoach.pro-AM29BZr3Uw6O5svFA_FBRA==/base.apk
+      arm64: [status=verify] [reason=install]
+
+
+HeimdAllFS state:
+  [com.codium.hydrocoach.pro]
+    path: /data/app/~~Bmh-JmzhFnR2t-EMCKj9hg==/com.codium.hydrocoach.pro-AM29BZr3Uw6O5svFA_FBRA==/base.apk
+    Compressed? False
+  [ Summary ]
+    # of packages: 1 / # of packages in DATA: 1 (1)
+    Compressed apks info - sum of orig size: 0 / sum of compr size : 0
+
+
+Compiler stats:
+  [com.codium.hydrocoach.pro]
+     base.apk - 2934
+
+APEX session state:
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+
+Historical install Logging info(9/10):
+  []
+    1669659114108: "Ver":"", "Session":"0", "Write":"15", "Commit":"303", "Stage":"0", "Copy":"32", "Sign":"2", "DexOpt"
+    :"3", 
+Snapshot statistics
+   Unrecorded-hits: 4304  Cork-level: 0
+   Summary stats               TotBlds     TotUsed     TotCork     BigBlds    ShortLvd     TotTime     MaxTime
+          0:04         now           8       98995           0           1           2          27          10
+          1:04        0:04         185     1187674           0           6          42         341          29
+          2:04        1:04         170     1090787           0           7          42         371          47
+          3:04        2:04         217     1391974           0           8          59         426          27
+          4:04        3:04         194     1303876           0          10          44         636         148
+          5:04        4:04         255     1632180           0           6          56         638         117
+          6:04        5:04          61      292288           0           2          12         117          20
+          7:04        6:04           3       27231           0           0           1           1           1
+         57:04        7:04           9      160869           0           0           5          17           5
+      01:42:49       57:04           0           0           0           0           0           0           0
+    5:17:10:00         now        2819    17159571           0          89         549        6890         148
+
+   Build times                  <= 1ms      <= 2ms      <= 5ms     <= 10ms     <= 20ms     <= 50ms    <= 100ms     > 100ms
+          0:04         now           3           1           3           1           0           0           0           0
+          1:04        0:04         141           1          34           3           5           1           0           0
+          2:04        1:04         127           4          29           3           5           2           0           0
+          3:04        2:04         156          12          37           6           4           2           0           0
+          4:04        3:04         142           8          27           7           6           2           1           1
+          5:04        4:04         192           5          46           6           4           0           0           2
+          6:04        5:04          46           1           9           3           2           0           0           0
+          7:04        6:04           3           0           0           0           0           0           0           0
+         57:04        7:04           6           0           3           0           0           0           0           0
+      01:42:49       57:04           0           0           0           0           0           0           0           0
+    5:17:10:00         now        1848          89         630         169          67          12           1           3
+
+   Use counters                   <= 1        <= 2        <= 5       <= 10       <= 20       <= 50      <= 100       > 100
+          0:04         now           2           0           0           0           1           0           0           5
+          1:04        0:04          35           6           1           3           5          14          19         102
+          2:04        1:04          31           6           5           4           9          15          15          85
+          3:04        2:04          49           5           5           5          11           6          17         119
+          4:04        3:04          37           4           3           5           3          11          11         120
+          5:04        4:04          51           3           2           5           6          21          20         147
+          6:04        5:04          10           0           2           3           0           6           8          32
+          7:04        6:04           1           0           0           0           0           0           0           2
+         57:04        7:04           4           0           1           1           0           0           0           3
+      01:42:49       57:04           0           0           0           0           0           0           0           0
+    5:17:10:00         now         402          59          87         103         101         190         226        1650

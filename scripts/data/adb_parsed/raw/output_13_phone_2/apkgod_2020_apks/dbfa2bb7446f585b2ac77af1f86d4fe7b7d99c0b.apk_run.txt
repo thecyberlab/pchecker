@@ -1,0 +1,229 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        ce4f4df com.nstudio.weatherhere/.WeatherActivity filter c30abf5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "forecast.weather.gov": -1
+          Path: "PatternMatcher{PREFIX: /MapClick.php}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        ce4f4df com.nstudio.weatherhere/.WeatherActivity filter 392652c
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.nstudio.noaaweather.LAUNCH_NOTIFICATION:
+        a56a818 com.nstudio.weatherhere/.widget.NoteLauncherActivity filter 8ad1271
+          Action: "com.nstudio.noaaweather.LAUNCH_NOTIFICATION"
+          Category: "android.intent.category.DEFAULT"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        99c0d8a com.nstudio.weatherhere/.widget.WidgetConfiguration filter 64dfffb
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.net.conn.CONNECTIVITY_CHANGE:
+        8f715c com.nstudio.weatherhere/.widget.NetworkStateReceiver filter ac57c65
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.android.vending.INSTALL_REFERRER:
+        c3aa306 com.nstudio.weatherhere/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter f476dc7
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        9504748 com.nstudio.weatherhere/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 69679e1
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        d1aed3a com.nstudio.weatherhere/.BootCompleteReceiver filter d9addeb
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        1b57856 com.nstudio.weatherhere/.widget.WeatherAppWidgetProviderSmall filter d72a0d7
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        41a2dc4 com.nstudio.weatherhere/.widget.WeatherAppWidgetProviderMedium filter 2af64ad
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        28c3e2 com.nstudio.weatherhere/.widget.WeatherAppWidgetProviderWide filter fd67373
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        36e6230 com.nstudio.weatherhere/.widget.WeatherAppWidgetProviderLarge filter 90a9ea9
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        5933c2e com.nstudio.weatherhere/.widget.WeatherAppWidgetProviderLockscreen filter 59ad3cf
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        3c68ff4 com.nstudio.weatherhere/.WearUpdateService filter 61fd31d
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /app}"
+
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        34de992 com.nstudio.weatherhere/.MyFirebaseMessagingService filter e431f63
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        fb6b760 com.nstudio.weatherhere/com.google.firebase.messaging.FirebaseMessagingService filter eb8419
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          forecast.weather.gov
+
+Registered ContentProviders:
+  com.nstudio.weatherhere/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{5d80ec com.nstudio.weatherhere/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.nstudio.weatherhere/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{79ffcb5 com.nstudio.weatherhere/com.crashlytics.android.CrashlyticsInitProvider}
+  com.nstudio.weatherhere/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{71bef4a com.nstudio.weatherhere/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.nstudio.weatherhere/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{7099ebb com.nstudio.weatherhere/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.nstudio.weatherhere.mobileadsinitprovider]:
+    Provider{5d80ec com.nstudio.weatherhere/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{678cb69 com.nstudio.weatherhere}
+  [com.nstudio.weatherhere.firebaseperfprovider]:
+    Provider{71bef4a com.nstudio.weatherhere/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{b9ec9ee com.nstudio.weatherhere}
+  [com.nstudio.weatherhere.crashlyticsinitprovider]:
+    Provider{79ffcb5 com.nstudio.weatherhere/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{36ae8f com.nstudio.weatherhere}
+  [com.nstudio.weatherhere.firebaseinitprovider]:
+    Provider{7099ebb com.nstudio.weatherhere/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{212151c com.nstudio.weatherhere}
+
+Key Set Manager:
+  [com.nstudio.weatherhere]
+      Signing KeySets: 4966
+
+Packages:
+  Package [com.nstudio.weatherhere] (3c9b525):
+    userId=10250
+    pkg=Package{d992a26 com.nstudio.weatherhere}
+    codePath=/data/app/~~rE4wzfp1DE9-LNXxiIhfpg==/com.nstudio.weatherhere-dRFufcSkqikc2nAdmiXh-A==
+    resourcePath=/data/app/~~rE4wzfp1DE9-LNXxiIhfpg==/com.nstudio.weatherhere-dRFufcSkqikc2nAdmiXh-A==
+    legacyNativeLibraryDir=/data/app/~~rE4wzfp1DE9-LNXxiIhfpg==/com.nstudio.weatherhere-dRFufcSkqikc2nAdmiXh-A==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=160396 minSdk=16 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2.10.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.nstudio.weatherhere
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 11:07:06
+    lastUpdateTime=2022-11-30 11:07:07
+    packageSource=0
+    signatures=PackageSignatures{3153c14 version:2, signatures:[27de6a18], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=50891 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 11:07:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.nstudio.weatherhere
+    com.google.android.apps.diagnosticstool:
+      com.nstudio.weatherhere
+    com.google.android.settings.intelligence:
+      com.nstudio.weatherhere
+    com.google.android.apps.accessibility.voiceaccess:
+      com.nstudio.weatherhere
+  queryable via interaction:
+    User 0:
+      [com.android.localtransport,com.google.SSRestartDetector,com.google.android.iwlan,com.android.providers.settings,com.android.location.fused,com.google.android.settings.future.biometrics.faceenroll,com.android.server.telecom,com.android.qns,com.android.settings,com.android.dynsystem,com.android.wallpaperbackup,android,com.android.inputdevices,com.android.keychain]:
+        com.nstudio.weatherhere
+      [com.google.android.gsf,com.google.android.gms]:
+        com.nstudio.weatherhere
+  queryable via uses-library:
+
+Dexopt state:
+  [com.nstudio.weatherhere]
+    path: /data/app/~~rE4wzfp1DE9-LNXxiIhfpg==/com.nstudio.weatherhere-dRFufcSkqikc2nAdmiXh-A==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:73336
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.nstudio.weatherhere]
+     base.apk - 385

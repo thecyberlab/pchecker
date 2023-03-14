@@ -1,0 +1,311 @@
+Activity Resolver Table:
+  Schemes:
+      peakgames:
+        9578af2 net.peakgames.amy/net.peakgames.mobile.android.inappbilling.unity.activities.IabUnityAndroidPlayerNativeActivity filter aed4660
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "peakgames"
+          Authority: "toyblast": -1
+      http:
+        9578af2 net.peakgames.amy/net.peakgames.mobile.android.inappbilling.unity.activities.IabUnityAndroidPlayerNativeActivity filter 70e8a63
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "toyblast.peakgames.net": -1
+          AutoVerify=true
+      fbconnect:
+        fc81543 net.peakgames.amy/com.facebook.CustomTabActivity filter b86719
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.net.peakgames.amy": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        9578af2 net.peakgames.amy/net.peakgames.mobile.android.inappbilling.unity.activities.IabUnityAndroidPlayerNativeActivity filter 9c82092
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.QUICKBOOT_POWERON:
+        37da7c0 net.peakgames.amy/com.onesignal.BootUpReceiver filter 532fea
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        41d1cf9 net.peakgames.amy/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter d5569bf
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        cf643e net.peakgames.amy/com.adjust.sdk.AdjustReferrerReceiver filter 443b3de
+          Action: "com.android.vending.INSTALL_REFERRER"
+        eccc29f net.peakgames.amy/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter c50688c
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        6757fec net.peakgames.amy/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 65f5bd5
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+        9898fb5 net.peakgames.amy/com.onesignal.GcmBroadcastReceiver filter 500e2db
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "net.peakgames.amy"
+      android.intent.action.BOOT_COMPLETED:
+        37da7c0 net.peakgames.amy/com.onesignal.BootUpReceiver filter 532fea
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        459864a net.peakgames.amy/net.peakgames.toyblast.nativeplugin.ToyBlastMessagingService filter 6e18178
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        844e9bb net.peakgames.amy/com.google.firebase.messaging.FirebaseMessagingService filter e46e051
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+        630aed8 net.peakgames.amy/com.google.firebase.messaging.cpp.ListenerService filter c2c60b6
+          Action: "com.google.firebase.MESSAGING_EVENT"
+
+Permissions:
+  Permission [net.peakgames.amy.permission.C2D_MESSAGE] (b107231):
+    sourcePackage=net.peakgames.amy
+    uid=10244 gids=null type=0 prot=signature
+    perm=Permission{bb1bd16 net.peakgames.amy.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{74e6697 net.peakgames.amy/10244}
+
+Registered ContentProviders:
+  net.peakgames.amy/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{f6de084 net.peakgames.amy/com.google.firebase.provider.FirebaseInitProvider}
+  net.peakgames.amy/com.facebook.internal.FacebookInitProvider:
+    Provider{649006d net.peakgames.amy/com.facebook.internal.FacebookInitProvider}
+  net.peakgames.amy/com.helpshift.support.providers.HelpshiftFileProvider:
+    Provider{c8494a2 net.peakgames.amy/com.helpshift.support.providers.HelpshiftFileProvider}
+  net.peakgames.amy/com.facebook.FacebookContentProvider:
+    Provider{108d533 net.peakgames.amy/com.facebook.FacebookContentProvider}
+  net.peakgames.amy/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{a2a80f0 net.peakgames.amy/com.crashlytics.android.CrashlyticsInitProvider}
+
+ContentProvider Authorities:
+  [com.facebook.app.FacebookContentProvider1409866949302187]:
+    Provider{108d533 net.peakgames.amy/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{1023669 net.peakgames.amy}
+  [net.peakgames.amy.crashlyticsinitprovider]:
+    Provider{a2a80f0 net.peakgames.amy/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{1023669 net.peakgames.amy}
+  [net.peakgames.amy.helpshift.fileprovider]:
+    Provider{c8494a2 net.peakgames.amy/com.helpshift.support.providers.HelpshiftFileProvider}
+      applicationInfo=ApplicationInfo{1023669 net.peakgames.amy}
+  [net.peakgames.amy.firebaseinitprovider]:
+    Provider{f6de084 net.peakgames.amy/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{1023669 net.peakgames.amy}
+  [net.peakgames.amy.FacebookInitProvider]:
+    Provider{649006d net.peakgames.amy/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{1023669 net.peakgames.amy}
+
+Key Set Manager:
+  [net.peakgames.amy]
+      Signing KeySets: 414
+
+Packages:
+  Package [net.peakgames.amy] (74e6697):
+    userId=10244
+    pkg=Package{3d4861d net.peakgames.amy}
+    codePath=/data/app/net.peakgames.amy-Oe_7IPMt7c7uAAwOeKifQQ==
+    resourcePath=/data/app/net.peakgames.amy-Oe_7IPMt7c7uAAwOeKifQQ==
+    legacyNativeLibraryDir=/data/app/net.peakgames.amy-Oe_7IPMt7c7uAAwOeKifQQ==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=730800 minSdk=16 targetSdk=29
+    versionName=7308
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{1023669 net.peakgames.amy}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/net.peakgames.amy
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 08:38:46
+    firstInstallTime=2021-03-06 08:38:49
+    lastUpdateTime=2021-03-06 08:38:49
+    signatures=PackageSignatures{8bb58ee version:2, signatures:[3bec3711], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP RESTORE_ANY_VERSION ]
+    declared permissions:
+      net.peakgames.amy.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.VIBRATE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.android.vending.BILLING
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      net.peakgames.amy.permission.C2D_MESSAGE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      net.peakgames.amy.permission.C2D_MESSAGE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=14587 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=215
+  User 0:
+    seq=1, package=com.studioeleven.windfinder
+    seq=8, package=com.google.android.gms
+    seq=9, package=de.motain.iliga
+    seq=11, package=com.microsoft.office.word
+    seq=13, package=video.like
+    seq=15, package=com.netflix.mediaclient
+    seq=19, package=com.agilebits.onepassword
+    seq=21, package=com.rayark.valkyrie
+    seq=23, package=com.aa.generaladaptiveapps
+    seq=25, package=com.ea.gp.fifamobile
+    seq=27, package=com.instagram.igtv
+    seq=29, package=deezer.android.app
+    seq=31, package=com.square_enix.android_googleplay.FFBEWW
+    seq=33, package=com.google.android.calculator
+    seq=35, package=com.gamevilusa.mlbpilive.android.google.global.normal
+    seq=37, package=com.kabam.bigrobot
+    seq=39, package=io.enpass.app
+    seq=41, package=com.adobe.lrmobile
+    seq=43, package=com.vng.g6.a.zombie
+    seq=45, package=com.microblink.photomath
+    seq=47, package=com.scopely.whiplash
+    seq=49, package=com.iudesk.android.photo.editor
+    seq=51, package=com.microsoft.office.officehubrow
+    seq=53, package=com.whatsapp
+    seq=55, package=com.joeware.android.gpulumera
+    seq=57, package=com.anslayer
+    seq=59, package=com.apkupdater
+    seq=62, package=com.android.vending
+    seq=63, package=com.google.android.wearable.app
+    seq=65, package=com.zqlabs.filechef
+    seq=67, package=com.wondershare.filmorago
+    seq=69, package=com.outfit7.mytalkingangelafree
+    seq=71, package=com.truecaller
+    seq=73, package=com.ea.games.r3_row
+    seq=75, package=com.google.ar.lens
+    seq=77, package=com.fusionmedia.investing
+    seq=79, package=com.king.candycrushsodasaga
+    seq=81, package=com.seleuco.mame4droid
+    seq=83, package=com.Slack
+    seq=85, package=com.liquidum.rocketvpn
+    seq=87, package=com.sec.android.easyMover
+    seq=89, package=com.fingersoft.hillclimb
+    seq=91, package=com.cpuid.cpu_z
+    seq=93, package=com.piriform.ccleaner
+    seq=95, package=com.tencent.ibg.joox
+    seq=97, package=com.netease.lztgglobal
+    seq=99, package=com.youthhr.phonto
+    seq=101, package=com.nintendo.zaba
+    seq=103, package=com.idleif.abyssrium
+    seq=105, package=com.facebook.orca
+    seq=107, package=com.amazon.mShop.android.shopping
+    seq=109, package=com.google.android.apps.cloudconsole
+    seq=111, package=com.app.onlyvpn
+    seq=113, package=com.rayark.pluto
+    seq=115, package=wp.wattpad
+    seq=117, package=com.adguard.android
+    seq=119, package=com.lomotif.android
+    seq=121, package=com.infraware.office.link
+    seq=123, package=com.ea.game.pvz2_row
+    seq=125, package=com.afwsamples.testdpc
+    seq=127, package=com.ubisoft.hungrydragon
+    seq=129, package=com.intsig.camscanner
+    seq=131, package=com.urbandroid.lux
+    seq=133, package=com.mobisystems.office
+    seq=135, package=com.microsoft.office.excel
+    seq=137, package=com.ea.gp.pvzheroes
+    seq=139, package=com.bandainamcoent.saomdeu
+    seq=141, package=com.linkedin.android
+    seq=143, package=com.foobar2000.foobar2000
+    seq=145, package=com.moonton.magicrush
+    seq=147, package=com.bandainamcoent.ninjavoltage_app
+    seq=149, package=com.maxmpz.audioplayer
+    seq=151, package=com.gameloft.android.ANMP.GloftGGHM
+    seq=153, package=dp.ws.popcorntime
+    seq=155, package=com.pinterest
+    seq=157, package=com.zombodroid.MemeGenerator
+    seq=159, package=com.contextlogic.wish
+    seq=161, package=com.ovilex.bussimulator2015
+    seq=163, package=com.halfbrick.jetpackjoyride
+    seq=165, package=dk.mymovies.mymoviesforandroidfree
+    seq=167, package=com.google.android.apps.mapslite
+    seq=169, package=com.autodesk.autocadws
+    seq=171, package=com.cma.launcher.lite
+    seq=173, package=com.gameloft.android.ANMP.GloftDYHM
+    seq=175, package=com.ansangha.drdriving
+    seq=177, package=com.google.android.apps.chromecast.app
+    seq=179, package=com.google.android.apps.magazines
+    seq=181, package=com.instagram.threadsapp
+    seq=183, package=ace.jun.simplecontrol
+    seq=186, package=com.supercell.clashroyale
+    seq=188, package=com.gameloft.android.ANMP.GloftDOHM
+    seq=190, package=com.musixmatch.android.lyrify
+    seq=192, package=com.mobilemotion.dubsmash
+    seq=194, package=air.com.playtika.slotomania
+    seq=196, package=com.waze
+    seq=198, package=com.actionlauncher.playstore
+    seq=200, package=com.superevilmegacorp.game
+    seq=202, package=com.mi.globalbrowser
+    seq=205, package=com.supercell.clashofclans
+    seq=207, package=com.nway.powerrangerslegacywars
+    seq=209, package=com.venticake.retrica
+    seq=211, package=com.scribd.app.reader0
+    seq=213, package=com.google.android.apps.subscriptions.red
+    seq=214, package=net.peakgames.amy
+
+
+Dexopt state:
+  [net.peakgames.amy]
+    path: /data/app/net.peakgames.amy-Oe_7IPMt7c7uAAwOeKifQQ==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [net.peakgames.amy]
+     base.apk - 4786
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

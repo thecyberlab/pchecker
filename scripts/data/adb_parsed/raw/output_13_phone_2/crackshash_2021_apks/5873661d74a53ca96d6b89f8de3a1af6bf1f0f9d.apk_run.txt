@@ -1,0 +1,295 @@
+Activity Resolver Table:
+  Schemes:
+      ss:
+        7a7ae6c com.vpn.powervpn2/com.github.shadowsocks.UrlImportActivity filter d125c35
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ss"
+      fbconnect:
+        1e75f04 com.vpn.powervpn2/com.facebook.CustomTabActivity filter f8edced
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.vpn.powervpn2": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f71ee40 com.vpn.powervpn2/com.vpn.power.SplashActivity filter f9a2179
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        ee798ca com.vpn.powervpn2/de.blinkt.openvpn.api.GrantPermissionsActivity filter f65ca3b
+          Action: "android.intent.action.MAIN"
+        6974558 com.vpn.powervpn2/de.blinkt.openvpn.api.ConfirmDialog filter f9986b1
+          Action: "android.intent.action.MAIN"
+        94e7796 com.vpn.powervpn2/de.blinkt.openvpn.LaunchVPN filter 2dccf17
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        7694ebe com.vpn.powervpn2/com.vpn.power.appmanager.AppManagerActivity filter 2c89b1f
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        affc87a com.vpn.powervpn2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 659b82b
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        a298a9c com.vpn.powervpn2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c93bca5
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        692b488 com.vpn.powervpn2/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 8a87e21
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        4b1f246 com.vpn.powervpn2/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter fb9ac07
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        3727722 com.vpn.powervpn2/com.github.shadowsocks.BootReceiver filter e5545b3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        e4e36e com.vpn.powervpn2/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 3d48a0f
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        692b488 com.vpn.powervpn2/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 8a87e21
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        affc87a com.vpn.powervpn2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 659b82b
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        8e29134 com.vpn.powervpn2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2eddb5d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        8e29134 com.vpn.powervpn2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2eddb5d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        3727722 com.vpn.powervpn2/com.github.shadowsocks.BootReceiver filter e5545b3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        fd6770 com.vpn.powervpn2/de.blinkt.openvpn.OnBootReceiver filter 2095ae9
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        8e29134 com.vpn.powervpn2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2eddb5d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        a298a9c com.vpn.powervpn2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c93bca5
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        3727722 com.vpn.powervpn2/com.github.shadowsocks.BootReceiver filter e5545b3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        fd6770 com.vpn.powervpn2/de.blinkt.openvpn.OnBootReceiver filter 2095ae9
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        f0aecd2 com.vpn.powervpn2/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 83b01a3
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.net.VpnService:
+        2b18ca0 com.vpn.powervpn2/com.github.shadowsocks.bg.VpnService filter 231d059 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+        a87041e com.vpn.powervpn2/de.blinkt.openvpn.core.OpenVPNService filter bf214ff permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.vpn.powervpn2/com.facebook.internal.FacebookInitProvider:
+    Provider{8549d18 com.vpn.powervpn2/com.facebook.internal.FacebookInitProvider}
+  com.vpn.powervpn2/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{c746371 com.vpn.powervpn2/com.facebook.ads.AudienceNetworkContentProvider}
+  com.vpn.powervpn2/com.applovin.sdk.AppLovinInitProvider:
+    Provider{e40f556 com.vpn.powervpn2/com.applovin.sdk.AppLovinInitProvider}
+  com.vpn.powervpn2/de.blinkt.openvpn.FileProvider:
+    Provider{c8272c4 com.vpn.powervpn2/de.blinkt.openvpn.FileProvider}
+  com.vpn.powervpn2/androidx.startup.InitializationProvider:
+    Provider{a1ac5ad com.vpn.powervpn2/androidx.startup.InitializationProvider}
+  com.vpn.powervpn2/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{66f10e2 com.vpn.powervpn2/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+
+ContentProvider Authorities:
+  [com.vpn.powervpn2.androidx-startup]:
+    Provider{a1ac5ad com.vpn.powervpn2/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{c1d8ccb com.vpn.powervpn2}
+  [com.vpn.powervpn2.FileProvider]:
+    Provider{c8272c4 com.vpn.powervpn2/de.blinkt.openvpn.FileProvider}
+      applicationInfo=ApplicationInfo{97cfca8 com.vpn.powervpn2}
+  [com.vpn.powervpn2.applovincontentprovider]:
+    Provider{e40f556 com.vpn.powervpn2/com.applovin.sdk.AppLovinInitProvider}
+      applicationInfo=ApplicationInfo{122f3c1 com.vpn.powervpn2}
+  [com.vpn.powervpn2.AudienceNetworkContentProvider]:
+    Provider{c746371 com.vpn.powervpn2/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{a6cc766 com.vpn.powervpn2}
+  [com.vpn.powervpn2.FacebookInitProvider]:
+    Provider{8549d18 com.vpn.powervpn2/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{3f62aa7 com.vpn.powervpn2}
+  [com.vpn.powervpn2.lifecycle-process]:
+    Provider{66f10e2 com.vpn.powervpn2/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{4f93b54 com.vpn.powervpn2}
+
+Key Set Manager:
+  [com.vpn.powervpn2]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.vpn.powervpn2] (52a0afd):
+    userId=10328
+    pkg=Package{1357c48 com.vpn.powervpn2}
+    codePath=/data/app/~~TztB60TkS7E4n5QCmhvPhA==/com.vpn.powervpn2-mN2gp4R3n-7kHVMGc2awJA==
+    resourcePath=/data/app/~~TztB60TkS7E4n5QCmhvPhA==/com.vpn.powervpn2-mN2gp4R3n-7kHVMGc2awJA==
+    legacyNativeLibraryDir=/data/app/~~TztB60TkS7E4n5QCmhvPhA==/com.vpn.powervpn2-mN2gp4R3n-7kHVMGc2awJA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=272 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.9
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.facebook.katana]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.vpn.powervpn2
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 17:21:04
+    lastUpdateTime=2022-11-30 17:21:06
+    packageSource=0
+    signatures=PackageSignatures{841e6c7 version:3, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.VIBRATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      com.android.vending.BILLING
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.READ_PHONE_STATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=83531 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 17:21:06
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.vpn.powervpn2
+    com.google.android.apps.diagnosticstool:
+      com.vpn.powervpn2
+    com.google.android.settings.intelligence:
+      com.vpn.powervpn2
+    com.google.android.apps.accessibility.voiceaccess:
+      com.vpn.powervpn2
+    com.truecaller:
+      com.vpn.powervpn2
+    com.dv.adm:
+      com.vpn.powervpn2
+    com.vpn.powervpn2:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      com.dv.adm
+      com.utorrent.client.pro
+    com.zappcues.gamingmode:
+      com.vpn.powervpn2
+    com.jio.myjio:
+      com.vpn.powervpn2
+  queryable via interaction:
+    User 0:
+      [com.android.keychain,com.android.location.fused,com.android.qns,com.android.providers.settings,com.google.android.settings.future.biometrics.faceenroll,com.android.localtransport,com.google.android.iwlan,com.android.server.telecom,com.android.inputdevices,com.android.settings,com.android.wallpaperbackup,android,com.android.dynsystem,com.google.SSRestartDetector]:
+        com.vpn.powervpn2
+      [com.google.android.gsf,com.google.android.gms]:
+        com.vpn.powervpn2
+      com.android.vending:
+        com.vpn.powervpn2
+  queryable via uses-library:
+
+Dexopt state:
+  [com.vpn.powervpn2]
+    path: /data/app/~~TztB60TkS7E4n5QCmhvPhA==/com.vpn.powervpn2-mN2gp4R3n-7kHVMGc2awJA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:954268
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.vpn.powervpn2]
+     base.apk - 803

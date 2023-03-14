@@ -1,0 +1,351 @@
+Activity Resolver Table:
+  Schemes:
+      fbYOUR_APP_ID:
+        bc8d988 com.original.madflix/com.facebook.CustomTabActivity filter 4291f46
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbYOUR_APP_ID"
+      io.rzp:
+        948baa3 com.original.madflix/com.razorpay.CheckoutActivity filter 9e751a0
+          Action: "android.intent.action.MAIN"
+          Scheme: "io.rzp"
+          Authority: "rzp.io": -1
+      https:
+        32dd507 com.original.madflix/.MainActivity filter bd60634
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "madflix.in": -1
+          Path: "PatternMatcher{LITERAL: /movies}"
+          AutoVerify=true
+      fb445836279979781:
+        bc8d988 com.original.madflix/com.facebook.CustomTabActivity filter dfc3f21
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb445836279979781"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        3cac5d com.original.madflix/.SplashScreenActivity filter 347e9d2
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        4223291 com.original.madflix/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b1de5f6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        5c8db1b com.original.madflix/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b29b4b8
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        2a25dff com.original.madflix/com.onesignal.BootUpReceiver filter 9ffe7cc
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        a100df7 com.original.madflix/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 1216464
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        12666cd com.original.madflix/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 3a6b82
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        896a285 com.original.madflix/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 585e8da
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        a100df7 com.original.madflix/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 1216464
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        992c10b com.original.madflix/com.facebook.CampaignTrackingReceiver filter 3cfbbe8
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        41cb159 com.original.madflix/com.onesignal.GcmBroadcastReceiver filter 216d11e
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.original.madflix"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        c94c4ef com.original.madflix/com.google.firebase.iid.FirebaseInstanceIdReceiver filter f32dbfc
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        4223291 com.original.madflix/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b1de5f6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        e2d9293 com.original.madflix/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cc262d0
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        e2d9293 com.original.madflix/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cc262d0
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        2a25dff com.original.madflix/com.onesignal.BootUpReceiver filter 9ffe7cc
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+        e2d9293 com.original.madflix/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cc262d0
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        72a62e7 com.original.madflix/com.startapp.sdk.adsbase.remoteconfig.BootCompleteListener filter cd8ae94
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        5c8db1b com.original.madflix/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b29b4b8
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      rzp.device_token.share:
+        823e201 com.original.madflix/com.razorpay.RzpTokenReceiver filter 3e9b8a6
+          Action: "rzp.device_token.share"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        e5e0a15 com.original.madflix/com.onesignal.UpgradeReceiver filter 65ae12a
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        5bfa2c9 com.original.madflix/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 6a7bdce
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        7eb9d3d com.original.madflix/com.google.firebase.messaging.FirebaseMessagingService filter 368b932
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.original.madflix:
+    ID: f9089535-e7e2-40bb-9ded-22de72076b63
+    Signatures: [A4:0D:A8:0A:59:D1:70:CA:A9:50:CF:15:C1:8C:45:4D:47:A3:9B:26:98:9D:8B:64:0E:CD:74:5B:A7:1B:F5:DC]
+    Domain verification state:
+      madflix.in: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          madflix.in
+
+Permissions:
+  Permission [com.original.madflix.permission.C2D_MESSAGE] (dec1788):
+    sourcePackage=com.original.madflix
+    uid=10311 gids=[] type=0 prot=signature
+    perm=PermissionInfo{94fdea com.original.madflix.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.original.madflix/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{1c998db com.original.madflix/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.original.madflix/com.startapp.sdk.adsbase.StartAppInitProvider:
+    Provider{3caff78 com.original.madflix/com.startapp.sdk.adsbase.StartAppInitProvider}
+  com.original.madflix/androidx.work.impl.WorkManagerInitializer:
+    Provider{6158651 com.original.madflix/androidx.work.impl.WorkManagerInitializer}
+  com.original.madflix/com.firebase.ui.auth.data.client.AuthUiInitProvider:
+    Provider{9bd0eb6 com.original.madflix/com.firebase.ui.auth.data.client.AuthUiInitProvider}
+  com.original.madflix/com.secneo.apkwrapper.CP:
+    Provider{6bee7b7 com.original.madflix/com.secneo.apkwrapper.CP}
+  com.original.madflix/com.squareup.picasso.PicassoProvider:
+    Provider{86c9b24 com.original.madflix/com.squareup.picasso.PicassoProvider}
+  com.original.madflix/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{f5b368d com.original.madflix/com.google.firebase.provider.FirebaseInitProvider}
+  com.original.madflix/com.facebook.internal.FacebookInitProvider:
+    Provider{2836042 com.original.madflix/com.facebook.internal.FacebookInitProvider}
+  com.original.madflix/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{e504853 com.original.madflix/com.facebook.ads.AudienceNetworkContentProvider}
+  com.original.madflix/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{16a4590 com.original.madflix/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+
+ContentProvider Authorities:
+  [com.original.madflix.com.squareup.picasso]:
+    Provider{86c9b24 com.original.madflix/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{7e1a521 com.original.madflix}
+  [com.original.madflix.authuiinitprovider]:
+    Provider{9bd0eb6 com.original.madflix/com.firebase.ui.auth.data.client.AuthUiInitProvider}
+      applicationInfo=ApplicationInfo{3e98d46 com.original.madflix}
+  [com.original.madflix.workmanager-init]:
+    Provider{6158651 com.original.madflix/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{da0ab07 com.original.madflix}
+  [com.original.madflix.mobileadsinitprovider]:
+    Provider{1c998db com.original.madflix/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{fef2434 com.original.madflix}
+  [com.original.madflix.lifecycle-process]:
+    Provider{16a4590 com.original.madflix/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{a12725d com.original.madflix}
+  [com.original.madflix.firebaseinitprovider]:
+    Provider{f5b368d com.original.madflix/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{9a137d2 com.original.madflix}
+  [com.original.madflix.AudienceNetworkContentProvider]:
+    Provider{e504853 com.original.madflix/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{712f0a3 com.original.madflix}
+  [com.original.madflix.startappinitprovider]:
+    Provider{3caff78 com.original.madflix/com.startapp.sdk.adsbase.StartAppInitProvider}
+      applicationInfo=ApplicationInfo{9744fa0 com.original.madflix}
+  [com.original.madflix.FacebookInitProvider]:
+    Provider{2836042 com.original.madflix/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{c88d759 com.original.madflix}
+  [com.original.madflix.CP]:
+    Provider{6bee7b7 com.original.madflix/com.secneo.apkwrapper.CP}
+      applicationInfo=ApplicationInfo{fb6ff1e com.original.madflix}
+
+Key Set Manager:
+  [com.original.madflix]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.original.madflix] (1d9f3ff):
+    userId=10311
+    pkg=Package{ecbec43 com.original.madflix}
+    codePath=/data/app/~~uqHyMYDTthDbvBQGYud_5A==/com.original.madflix-4KdgWz8idzXtdiJ8X96u3Q==
+    resourcePath=/data/app/~~uqHyMYDTthDbvBQGYud_5A==/com.original.madflix-4KdgWz8idzXtdiJ8X96u3Q==
+    legacyNativeLibraryDir=/data/app/~~uqHyMYDTthDbvBQGYud_5A==/com.original.madflix-4KdgWz8idzXtdiJ8X96u3Q==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=7 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=2.1.4
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.original.madflix
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 19:42:36
+    lastUpdateTime=2022-11-30 19:42:38
+    packageSource=0
+    signatures=PackageSignatures{a064bf9 version:2, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ ]
+    declared permissions:
+      com.original.madflix.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.FOREGROUND_SERVICE
+      android.permission.INTERNET
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_INTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.WRITE_INTERNAL_STORAGE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.REQUEST_INSTALL_PACKAGES
+      com.original.madflix.permission.C2D_MESSAGE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.VIBRATE
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.CAMERA
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.original.madflix.permission.C2D_MESSAGE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=92084 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 19:42:38
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.original.madflix
+    com.google.android.apps.diagnosticstool:
+      com.original.madflix
+    com.google.android.settings.intelligence:
+      com.original.madflix
+    com.google.android.apps.accessibility.voiceaccess:
+      com.original.madflix
+    com.zhiliaoapp.musically:
+      com.original.madflix
+    com.truecaller:
+      com.original.madflix
+    com.dv.adm:
+      com.original.madflix
+    com.zappcues.gamingmode:
+      com.original.madflix
+    com.jio.myjio:
+      com.original.madflix
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.original.madflix]
+    path: /data/app/~~uqHyMYDTthDbvBQGYud_5A==/com.original.madflix-4KdgWz8idzXtdiJ8X96u3Q==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:198949
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.original.madflix]
+     base.apk - 78

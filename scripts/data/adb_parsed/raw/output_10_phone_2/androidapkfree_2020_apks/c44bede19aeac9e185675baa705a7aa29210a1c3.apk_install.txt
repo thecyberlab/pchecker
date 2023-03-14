@@ -1,0 +1,398 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        d4389bf com.mobilemotion.dubsmash/com.dubsmash.ui.profile.deeplink.ProfileDeepLinkActivity filter 9ed17f9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "dubsmash.com": -1
+          Authority: "www.dubsmash.com": -1
+          Authority: "quotes.dubsmash.com": -1
+          Authority: "www.quotes.dubsmash.com": -1
+          Path: "PatternMatcher{PREFIX: /user/}"
+          Path: "PatternMatcher{PREFIX: /user/}"
+          Path: "PatternMatcher{PREFIX: /user/}"
+          Path: "PatternMatcher{PREFIX: /user/}"
+        274088c com.mobilemotion.dubsmash/com.dubsmash.ui.post.deeplink.UGCPostDeepLinkActivity filter ad7433e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "dubsmash.com": -1
+          Authority: "www.dubsmash.com": -1
+          Authority: "quotes.dubsmash.com": -1
+          Authority: "www.quotes.dubsmash.com": -1
+          Path: "PatternMatcher{PREFIX: /post}"
+          Path: "PatternMatcher{PREFIX: /post}"
+          Path: "PatternMatcher{PREFIX: /post}"
+          Path: "PatternMatcher{PREFIX: /post}"
+        e4a7bd5 com.mobilemotion.dubsmash/com.dubsmash.ui.sounddetail.deeplink.SoundDetailDeepLinkActivity filter 418b59f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "dubsmash.com": -1
+          Authority: "www.dubsmash.com": -1
+          Authority: "quotes.dubsmash.com": -1
+          Authority: "www.quotes.dubsmash.com": -1
+          Path: "PatternMatcher{PREFIX: /sound}"
+          Path: "PatternMatcher{PREFIX: /sound}"
+          Path: "PatternMatcher{PREFIX: /sound}"
+          Path: "PatternMatcher{PREFIX: /sound}"
+      https:
+        d4389bf com.mobilemotion.dubsmash/com.dubsmash.ui.profile.deeplink.ProfileDeepLinkActivity filter 9ed17f9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "dubsmash.com": -1
+          Authority: "www.dubsmash.com": -1
+          Authority: "quotes.dubsmash.com": -1
+          Authority: "www.quotes.dubsmash.com": -1
+          Path: "PatternMatcher{PREFIX: /user/}"
+          Path: "PatternMatcher{PREFIX: /user/}"
+          Path: "PatternMatcher{PREFIX: /user/}"
+          Path: "PatternMatcher{PREFIX: /user/}"
+        274088c com.mobilemotion.dubsmash/com.dubsmash.ui.post.deeplink.UGCPostDeepLinkActivity filter ad7433e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "dubsmash.com": -1
+          Authority: "www.dubsmash.com": -1
+          Authority: "quotes.dubsmash.com": -1
+          Authority: "www.quotes.dubsmash.com": -1
+          Path: "PatternMatcher{PREFIX: /post}"
+          Path: "PatternMatcher{PREFIX: /post}"
+          Path: "PatternMatcher{PREFIX: /post}"
+          Path: "PatternMatcher{PREFIX: /post}"
+        e4a7bd5 com.mobilemotion.dubsmash/com.dubsmash.ui.sounddetail.deeplink.SoundDetailDeepLinkActivity filter 418b59f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "dubsmash.com": -1
+          Authority: "www.dubsmash.com": -1
+          Authority: "quotes.dubsmash.com": -1
+          Authority: "www.quotes.dubsmash.com": -1
+          Path: "PatternMatcher{PREFIX: /sound}"
+          Path: "PatternMatcher{PREFIX: /sound}"
+          Path: "PatternMatcher{PREFIX: /sound}"
+          Path: "PatternMatcher{PREFIX: /sound}"
+      instabug-bug:
+        32fcfea com.mobilemotion.dubsmash/com.instabug.bug.view.BugReportingActivity filter dd5f6ec
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "instabug-bug"
+          Authority: "instabug-disclaimer.com": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        5b102db com.mobilemotion.dubsmash/com.dubsmash.ui.SplashActivity filter cf4aec0
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        b9f2178 com.mobilemotion.dubsmash/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 80554a
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        9c40051 com.mobilemotion.dubsmash/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter bde3ab5
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        3300b6 com.mobilemotion.dubsmash/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 1dd0cbb
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        2b2f1b7 com.mobilemotion.dubsmash/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 8a195d8
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        3300b6 com.mobilemotion.dubsmash/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 1dd0cbb
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        660dd24 com.mobilemotion.dubsmash/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 5863784
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        877508d com.mobilemotion.dubsmash/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 5c5b997
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        b9f2178 com.mobilemotion.dubsmash/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 80554a
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        f667242 com.mobilemotion.dubsmash/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 584cd31
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        f667242 com.mobilemotion.dubsmash/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 584cd31
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        f667242 com.mobilemotion.dubsmash/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 584cd31
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        9c40051 com.mobilemotion.dubsmash/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter bde3ab5
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        67af253 com.mobilemotion.dubsmash/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 4f67c16
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.exoplayer.downloadService.action.RESTART:
+        760a790 com.mobilemotion.dubsmash/com.dubsmash.api.downloadvideos.DownloadVideoService filter b225833
+          Action: "com.google.android.exoplayer.downloadService.action.RESTART"
+          Category: "android.intent.category.DEFAULT"
+      com.google.firebase.INSTANCE_ID_EVENT:
+        956889 com.mobilemotion.dubsmash/com.dubsmash.fcm.FCMInstanceIDService filter ed643a2
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+      com.google.firebase.MESSAGING_EVENT:
+        86d708e com.mobilemotion.dubsmash/com.dubsmash.fcm.FCMMessagingService filter 3280b6d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        ab860af com.mobilemotion.dubsmash/com.google.firebase.messaging.FirebaseMessagingService filter ef147f0
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+
+Permissions:
+  Permission [com.mobilemotion.dubsmash.permission.C2D_MESSAGE] (450acbc):
+    sourcePackage=com.mobilemotion.dubsmash
+    uid=10233 gids=null type=0 prot=signature
+    perm=Permission{630445 com.mobilemotion.dubsmash.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{7d4079a com.mobilemotion.dubsmash/10233}
+
+Registered ContentProviders:
+  com.mobilemotion.dubsmash/androidx.work.impl.WorkManagerInitializer:
+    Provider{ab458cb com.mobilemotion.dubsmash/androidx.work.impl.WorkManagerInitializer}
+  com.mobilemotion.dubsmash/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{9d9d8a8 com.mobilemotion.dubsmash/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.mobilemotion.dubsmash/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{bb49fc1 com.mobilemotion.dubsmash/com.google.firebase.provider.FirebaseInitProvider}
+  com.mobilemotion.dubsmash/org.acra.attachment.AcraContentProvider:
+    Provider{4db0366 com.mobilemotion.dubsmash/org.acra.attachment.AcraContentProvider}
+  com.mobilemotion.dubsmash/androidx.core.content.FileProvider:
+    Provider{32db6a7 com.mobilemotion.dubsmash/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.mobilemotion.dubsmash.workmanager-init]:
+    Provider{ab458cb com.mobilemotion.dubsmash/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{447d754 com.mobilemotion.dubsmash}
+  [com.mobilemotion.dubsmash.firebaseperfprovider]:
+    Provider{9d9d8a8 com.mobilemotion.dubsmash/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{447d754 com.mobilemotion.dubsmash}
+  [com.mobilemotion.dubsmash.acra]:
+    Provider{4db0366 com.mobilemotion.dubsmash/org.acra.attachment.AcraContentProvider}
+      applicationInfo=ApplicationInfo{447d754 com.mobilemotion.dubsmash}
+  [com.mobilemotion.dubsmash.firebaseinitprovider]:
+    Provider{bb49fc1 com.mobilemotion.dubsmash/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{447d754 com.mobilemotion.dubsmash}
+  [com.mobilemotion.dubsmash.file_provider]:
+    Provider{32db6a7 com.mobilemotion.dubsmash/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{447d754 com.mobilemotion.dubsmash}
+
+Key Set Manager:
+  [com.mobilemotion.dubsmash]
+      Signing KeySets: 403
+
+Packages:
+  Package [com.mobilemotion.dubsmash] (7d4079a):
+    userId=10233
+    pkg=Package{e2ad843 com.mobilemotion.dubsmash}
+    codePath=/data/app/com.mobilemotion.dubsmash-TJUL2jsqk8YsY_doRBV7Cw==
+    resourcePath=/data/app/com.mobilemotion.dubsmash-TJUL2jsqk8YsY_doRBV7Cw==
+    legacyNativeLibraryDir=/data/app/com.mobilemotion.dubsmash-TJUL2jsqk8YsY_doRBV7Cw==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=54442 minSdk=21 targetSdk=29
+    versionName=5.12.0
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{447d754 com.mobilemotion.dubsmash}
+    flags=[ HAS_CODE ALLOW_TASK_REPARENTING ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.mobilemotion.dubsmash
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.test.mock
+      android.test.runner
+    usesLibraryFiles:
+      /system/framework/android.test.mock.jar
+      /system/framework/android.test.runner.jar
+    timeStamp=2021-03-06 08:36:22
+    firstInstallTime=2021-03-06 08:36:22
+    lastUpdateTime=2021-03-06 08:36:22
+    signatures=PackageSignatures{52a76fd version:2, signatures:[b240688b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_TASK_REPARENTING ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    declared permissions:
+      com.mobilemotion.dubsmash.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.FLASHLIGHT
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECORD_AUDIO
+      android.permission.READ_CONTACTS
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=13462 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=192
+  User 0:
+    seq=1, package=com.studioeleven.windfinder
+    seq=8, package=com.google.android.gms
+    seq=9, package=de.motain.iliga
+    seq=11, package=com.microsoft.office.word
+    seq=13, package=video.like
+    seq=15, package=com.netflix.mediaclient
+    seq=19, package=com.agilebits.onepassword
+    seq=21, package=com.rayark.valkyrie
+    seq=23, package=com.aa.generaladaptiveapps
+    seq=25, package=com.ea.gp.fifamobile
+    seq=27, package=com.instagram.igtv
+    seq=29, package=deezer.android.app
+    seq=31, package=com.square_enix.android_googleplay.FFBEWW
+    seq=33, package=com.google.android.calculator
+    seq=35, package=com.gamevilusa.mlbpilive.android.google.global.normal
+    seq=37, package=com.kabam.bigrobot
+    seq=39, package=io.enpass.app
+    seq=41, package=com.adobe.lrmobile
+    seq=43, package=com.vng.g6.a.zombie
+    seq=45, package=com.microblink.photomath
+    seq=47, package=com.scopely.whiplash
+    seq=49, package=com.iudesk.android.photo.editor
+    seq=51, package=com.microsoft.office.officehubrow
+    seq=53, package=com.whatsapp
+    seq=55, package=com.joeware.android.gpulumera
+    seq=57, package=com.anslayer
+    seq=59, package=com.apkupdater
+    seq=62, package=com.android.vending
+    seq=63, package=com.google.android.wearable.app
+    seq=65, package=com.zqlabs.filechef
+    seq=67, package=com.wondershare.filmorago
+    seq=69, package=com.outfit7.mytalkingangelafree
+    seq=71, package=com.truecaller
+    seq=73, package=com.ea.games.r3_row
+    seq=75, package=com.google.ar.lens
+    seq=77, package=com.fusionmedia.investing
+    seq=79, package=com.king.candycrushsodasaga
+    seq=81, package=com.seleuco.mame4droid
+    seq=83, package=com.Slack
+    seq=85, package=com.liquidum.rocketvpn
+    seq=87, package=com.sec.android.easyMover
+    seq=89, package=com.fingersoft.hillclimb
+    seq=91, package=com.cpuid.cpu_z
+    seq=93, package=com.piriform.ccleaner
+    seq=95, package=com.tencent.ibg.joox
+    seq=97, package=com.netease.lztgglobal
+    seq=99, package=com.youthhr.phonto
+    seq=101, package=com.nintendo.zaba
+    seq=103, package=com.idleif.abyssrium
+    seq=105, package=com.facebook.orca
+    seq=107, package=com.amazon.mShop.android.shopping
+    seq=109, package=com.google.android.apps.cloudconsole
+    seq=111, package=com.app.onlyvpn
+    seq=113, package=com.rayark.pluto
+    seq=115, package=wp.wattpad
+    seq=117, package=com.adguard.android
+    seq=119, package=com.lomotif.android
+    seq=121, package=com.infraware.office.link
+    seq=123, package=com.ea.game.pvz2_row
+    seq=125, package=com.afwsamples.testdpc
+    seq=127, package=com.ubisoft.hungrydragon
+    seq=129, package=com.intsig.camscanner
+    seq=131, package=com.urbandroid.lux
+    seq=133, package=com.mobisystems.office
+    seq=135, package=com.microsoft.office.excel
+    seq=137, package=com.ea.gp.pvzheroes
+    seq=139, package=com.bandainamcoent.saomdeu
+    seq=141, package=com.linkedin.android
+    seq=143, package=com.foobar2000.foobar2000
+    seq=145, package=com.moonton.magicrush
+    seq=147, package=com.bandainamcoent.ninjavoltage_app
+    seq=149, package=com.maxmpz.audioplayer
+    seq=151, package=com.gameloft.android.ANMP.GloftGGHM
+    seq=153, package=dp.ws.popcorntime
+    seq=155, package=com.pinterest
+    seq=157, package=com.zombodroid.MemeGenerator
+    seq=159, package=com.contextlogic.wish
+    seq=161, package=com.ovilex.bussimulator2015
+    seq=163, package=com.halfbrick.jetpackjoyride
+    seq=165, package=dk.mymovies.mymoviesforandroidfree
+    seq=167, package=com.google.android.apps.mapslite
+    seq=169, package=com.autodesk.autocadws
+    seq=171, package=com.cma.launcher.lite
+    seq=173, package=com.gameloft.android.ANMP.GloftDYHM
+    seq=175, package=com.ansangha.drdriving
+    seq=177, package=com.google.android.apps.chromecast.app
+    seq=179, package=com.google.android.apps.magazines
+    seq=181, package=com.instagram.threadsapp
+    seq=183, package=ace.jun.simplecontrol
+    seq=186, package=com.supercell.clashroyale
+    seq=188, package=com.gameloft.android.ANMP.GloftDOHM
+    seq=190, package=com.musixmatch.android.lyrify
+    seq=191, package=com.mobilemotion.dubsmash
+
+
+Dexopt state:
+  [com.mobilemotion.dubsmash]
+    path: /data/app/com.mobilemotion.dubsmash-TJUL2jsqk8YsY_doRBV7Cw==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.mobilemotion.dubsmash]
+     base.apk - 6379
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

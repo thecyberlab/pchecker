@@ -1,0 +1,358 @@
+Activity Resolver Table:
+  Schemes:
+      fb1548843298607838:
+        e667caa com.pocket.tvapps/com.facebook.CustomTabActivity filter 11b109b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb1548843298607838"
+      fbYOUR_APP_ID:
+        e667caa com.pocket.tvapps/com.facebook.CustomTabActivity filter a777c38
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbYOUR_APP_ID"
+      io.rzp:
+        e634449 com.pocket.tvapps/com.razorpay.CheckoutActivity filter 888814e
+          Action: "android.intent.action.MAIN"
+          Scheme: "io.rzp"
+          Authority: "rzp.io": -1
+      genericidp:
+        e4af04d com.pocket.tvapps/com.google.firebase.auth.internal.GenericIdpActivity filter 3adf702
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        fe0f813 com.pocket.tvapps/com.google.firebase.auth.internal.RecaptchaActivity filter 119a50
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        8092411 com.pocket.tvapps/.SplashScreenActivity filter b07b976
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        4101b77 com.pocket.tvapps/com.onesignal.NotificationOpenedActivityHMS filter 84423e4
+          Action: "android.intent.action.VIEW"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        608d067 com.pocket.tvapps/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7ea4e14
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        a6a3381 com.pocket.tvapps/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1af6c26
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        192dc05 com.pocket.tvapps/com.onesignal.BootUpReceiver filter b6f645a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        a0586bd com.pocket.tvapps/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 69624b2
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        c80c03 com.pocket.tvapps/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 6283780
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        4f4f87b com.pocket.tvapps/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter a257698
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        a0586bd com.pocket.tvapps/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 69624b2
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        da5fef1 com.pocket.tvapps/com.facebook.CampaignTrackingReceiver filter 2c12ad6
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        9d9026f com.pocket.tvapps/com.onesignal.GcmBroadcastReceiver filter fe0b7c
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.pocket.tvapps"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        c5bd075 com.pocket.tvapps/com.google.firebase.iid.FirebaseInstanceIdReceiver filter c19980a
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        608d067 com.pocket.tvapps/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7ea4e14
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        d08d1b9 com.pocket.tvapps/androidx.work.impl.background.systemalarm.RescheduleReceiver filter abdd9fe
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        d08d1b9 com.pocket.tvapps/androidx.work.impl.background.systemalarm.RescheduleReceiver filter abdd9fe
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        192dc05 com.pocket.tvapps/com.onesignal.BootUpReceiver filter b6f645a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+        d08d1b9 com.pocket.tvapps/androidx.work.impl.background.systemalarm.RescheduleReceiver filter abdd9fe
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        f8a992d com.pocket.tvapps/com.startapp.sdk.adsbase.remoteconfig.BootCompleteListener filter e7d1e62
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        a6a3381 com.pocket.tvapps/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1af6c26
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      rzp.device_token.share:
+        ed0a157 com.pocket.tvapps/com.razorpay.RzpTokenReceiver filter 476444
+          Action: "rzp.device_token.share"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        69d568b com.pocket.tvapps/com.onesignal.UpgradeReceiver filter bde6368
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        3b5655f com.pocket.tvapps/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter f994bac
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        da49b29 com.pocket.tvapps/com.google.firebase.messaging.FirebaseMessagingService filter 112beae
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.auth.api.gms.service.START:
+        3a8644f com.pocket.tvapps/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 15cf7dc
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+      com.huawei.push.action.MESSAGING_EVENT:
+        c53fbf3 com.pocket.tvapps/com.onesignal.HmsMessageServiceOneSignal filter 77880b0
+          Action: "com.huawei.push.action.MESSAGING_EVENT"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.pocket.tvapps.permission.C2D_MESSAGE] (6af31b6):
+    sourcePackage=com.pocket.tvapps
+    uid=10270 gids=[] type=0 prot=signature
+    perm=PermissionInfo{281ceb7 com.pocket.tvapps.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.pocket.tvapps/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{f41f58d com.pocket.tvapps/com.google.firebase.provider.FirebaseInitProvider}
+  com.pocket.tvapps/com.facebook.internal.FacebookInitProvider:
+    Provider{ff4b342 com.pocket.tvapps/com.facebook.internal.FacebookInitProvider}
+  com.pocket.tvapps/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{da9f53 com.pocket.tvapps/com.facebook.ads.AudienceNetworkContentProvider}
+  com.pocket.tvapps/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{6d35090 com.pocket.tvapps/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.pocket.tvapps/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{9e55d89 com.pocket.tvapps/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.pocket.tvapps/com.startapp.sdk.adsbase.StartAppInitProvider:
+    Provider{a1ec18e com.pocket.tvapps/com.startapp.sdk.adsbase.StartAppInitProvider}
+  com.pocket.tvapps/androidx.work.impl.WorkManagerInitializer:
+    Provider{fe5ddaf com.pocket.tvapps/androidx.work.impl.WorkManagerInitializer}
+  com.pocket.tvapps/com.firebase.ui.auth.data.client.AuthUiInitProvider:
+    Provider{2c4e5bc com.pocket.tvapps/com.firebase.ui.auth.data.client.AuthUiInitProvider}
+  com.pocket.tvapps/com.squareup.picasso.PicassoProvider:
+    Provider{73d4945 com.pocket.tvapps/com.squareup.picasso.PicassoProvider}
+
+ContentProvider Authorities:
+  [com.pocket.tvapps.authuiinitprovider]:
+    Provider{2c4e5bc com.pocket.tvapps/com.firebase.ui.auth.data.client.AuthUiInitProvider}
+      applicationInfo=ApplicationInfo{1c9689a com.pocket.tvapps}
+  [com.pocket.tvapps.firebaseinitprovider]:
+    Provider{f41f58d com.pocket.tvapps/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{1bca5cb com.pocket.tvapps}
+  [com.pocket.tvapps.startappinitprovider]:
+    Provider{a1ec18e com.pocket.tvapps/com.startapp.sdk.adsbase.StartAppInitProvider}
+      applicationInfo=ApplicationInfo{dd8a1a8 com.pocket.tvapps}
+  [com.pocket.tvapps.FacebookInitProvider]:
+    Provider{ff4b342 com.pocket.tvapps/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{66e34c1 com.pocket.tvapps}
+  [com.pocket.tvapps.mobileadsinitprovider]:
+    Provider{9e55d89 com.pocket.tvapps/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{f457466 com.pocket.tvapps}
+  [com.pocket.tvapps.workmanager-init]:
+    Provider{fe5ddaf com.pocket.tvapps/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{6edd3a7 com.pocket.tvapps}
+  [com.pocket.tvapps.com.squareup.picasso]:
+    Provider{73d4945 com.pocket.tvapps/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{3ea3054 com.pocket.tvapps}
+  [com.pocket.tvapps.lifecycle-process]:
+    Provider{6d35090 com.pocket.tvapps/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{a685bfd com.pocket.tvapps}
+  [com.pocket.tvapps.AudienceNetworkContentProvider]:
+    Provider{da9f53 com.pocket.tvapps/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{d2470f2 com.pocket.tvapps}
+
+Key Set Manager:
+  [com.pocket.tvapps]
+      Signing KeySets: 5678
+
+Packages:
+  Package [com.pocket.tvapps] (d256f0):
+    userId=10270
+    pkg=Package{dac5469 com.pocket.tvapps}
+    codePath=/data/app/~~mG12EqIUWVqTOeRz3FKPXQ==/com.pocket.tvapps-qDfmmxQRnyJ5vBXSJoVvlg==
+    resourcePath=/data/app/~~mG12EqIUWVqTOeRz3FKPXQ==/com.pocket.tvapps-qDfmmxQRnyJ5vBXSJoVvlg==
+    legacyNativeLibraryDir=/data/app/~~mG12EqIUWVqTOeRz3FKPXQ==/com.pocket.tvapps-qDfmmxQRnyJ5vBXSJoVvlg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=56 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=5.6.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.facebook.katana]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.pocket.tvapps
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 13:37:06
+    lastUpdateTime=2022-11-30 13:37:08
+    packageSource=0
+    signatures=PackageSignatures{71df21c version:2, signatures:[85bcdd46], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.pocket.tvapps.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.FOREGROUND_SERVICE
+      android.permission.INTERNET
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_INTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.WRITE_INTERNAL_STORAGE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.REQUEST_INSTALL_PACKAGES
+      com.pocket.tvapps.permission.C2D_MESSAGE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.VIBRATE
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.CAMERA
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      com.pocket.tvapps.permission.C2D_MESSAGE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=49334 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 13:37:08
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.pocket.tvapps
+    com.google.android.apps.diagnosticstool:
+      com.pocket.tvapps
+    com.google.android.settings.intelligence:
+      com.pocket.tvapps
+    com.google.android.youtube:
+      com.pocket.tvapps
+    com.google.android.contacts:
+      com.pocket.tvapps
+    com.google.android.apps.accessibility.voiceaccess:
+      com.pocket.tvapps
+    com.google.android.gm:
+      com.pocket.tvapps
+    com.pocket.tvapps:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      com.utorrent.client.pro
+    com.jio.myjio:
+      com.pocket.tvapps
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.pocket.tvapps]
+    path: /data/app/~~mG12EqIUWVqTOeRz3FKPXQ==/com.pocket.tvapps-qDfmmxQRnyJ5vBXSJoVvlg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:154441
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.pocket.tvapps]
+     base.apk - 1207

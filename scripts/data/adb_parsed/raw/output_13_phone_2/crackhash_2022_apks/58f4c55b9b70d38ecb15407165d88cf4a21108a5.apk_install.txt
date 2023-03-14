@@ -1,0 +1,447 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        9ffd01c com.scores365/.ui.Splash filter ab149fa
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "www.365scores.com": -1
+          Authority: "www.365scores.com": -1
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/league/.*}"
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/team/.*}"
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/game/.*/.*}"
+          Path: "PatternMatcher{GLOB: /.*/.*/athlete/.*/.*}"
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/player/.*}"
+          Path: "PatternMatcher{PREFIX: /devconfig}"
+      https:
+        9ffd01c com.scores365/.ui.Splash filter 362dbab
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.365scores.com": -1
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/league/.*}"
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/team/.*}"
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/game/.*}"
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/player/.*}"
+          Path: "PatternMatcher{GLOB: /.*/.*/athlete/.*/.*}"
+        af18787 com.scores365/.tipster.TipSaleActivity filter 98c06b4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "https://go.onelink.me": -1
+          Path: "PatternMatcher{PREFIX: /jeKk}"
+          AutoVerify=true
+      fbconnect:
+        3aa046d com.scores365/com.facebook.CustomTabActivity filter 23b7933
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.scores365": -1
+      genericidp:
+        1d51523 com.scores365/com.google.firebase.auth.internal.GenericIdpActivity filter 3cda20
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        91ecfd9 com.scores365/com.google.firebase.auth.internal.RecaptchaActivity filter 48cd9e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      fb158698534219579:
+        3aa046d com.scores365/com.facebook.CustomTabActivity filter 60b48a2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb158698534219579"
+      scores365:
+        5deca97 com.scores365/.leadForm.activities.LeadFormActivity filter 9607484
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "scores365"
+          Authority: "www.365scores.com": -1
+          Path: "PatternMatcher{LITERAL: /LeadForm}"
+        2b254f0 com.scores365/.ui.Feedback filter d6f7a69
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "scores365"
+          Authority: "365scores.com": -1
+          Path: "PatternMatcher{LITERAL: /androidfeedback}"
+        5f94cee com.scores365/.ui.playerCard.SinglePlayerCardActivity filter eaa758f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "scores365"
+          Authority: "www.365scores.com": -1
+          Path: "PatternMatcher{LITERAL: /singleplayer}"
+        9ffd01c com.scores365/.ui.Splash filter 147d208
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "scores365"
+          Authority: "365scores.com": -1
+          Path: "PatternMatcher{LITERAL: /appgallery}"
+          Path: "PatternMatcher{LITERAL: /singleentity}"
+          Path: "PatternMatcher{LITERAL: /gamecenter}"
+        7c30da1 com.scores365/.tipster.TipsterStandaloneActivity filter 7ba0bc6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "scores365"
+          Authority: "www.365scores.com": -1
+          Path: "PatternMatcher{LITERAL: /TipstersMain}"
+        de1e2dd com.scores365/.Dashboard365TV.DashboardTvActivity filter 3b1e52
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "scores365"
+          Authority: "www.365scores.com": -1
+          Path: "PatternMatcher{PREFIX: /TV}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        9ffd01c com.scores365/.ui.Splash filter 4fc5425
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        873f081 com.scores365/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 16ae526
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        3df8b8b com.scores365/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b34f468
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        679a111 com.scores365/.BootReceiver filter 502f276
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        db95567 com.scores365/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 498ef14
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        1c58d13 com.scores365/com.flowsense.flowsensesdk.Receivers.ConnectedToWifiReceiver filter 1cb0b50
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        38ac905 com.scores365/com.freshchat.consumer.sdk.receiver.FreshchatNetworkChangeReceiver filter a354d5a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        b6e13bd com.scores365/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 9102db2
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        6518a5f com.scores365/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter d5b0cac
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        db95567 com.scores365/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 498ef14
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        3d9e07f com.scores365/com.adjust.sdk.AdjustReferrerReceiver filter 765784c
+          Action: "com.android.vending.INSTALL_REFERRER"
+        7a39095 com.scores365/com.appsflyer.MultipleInstallBroadcastReceiver filter ef025aa
+          Action: "com.android.vending.INSTALL_REFERRER"
+        336059b com.scores365/.InstallReferrerReceiver filter 497cd38
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.intent.action.LOCALE_CHANGED:
+        df1e76f com.scores365/com.freshchat.consumer.sdk.receiver.FreshchatReceiver filter 35d8c7c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.c2dm.intent.RECEIVE:
+        c66149 com.scores365/com.google.firebase.iid.FirebaseInstanceIdReceiver filter d91da4e
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        873f081 com.scores365/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 16ae526
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        37be103 com.scores365/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 59fe880
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        37be103 com.scores365/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 59fe880
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        679a111 com.scores365/.BootReceiver filter 502f276
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+        fc63d4d com.scores365/com.flowsense.flowsensesdk.Receivers.BootCompletedReceiver filter 4a3c002
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Category: "android.intent.category.DEFAULT"
+        df1e76f com.scores365/com.freshchat.consumer.sdk.receiver.FreshchatReceiver filter 35d8c7c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        37be103 com.scores365/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 59fe880
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        3df8b8b com.scores365/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b34f468
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        5656077 com.scores365/com.flowsense.flowsensesdk.Receivers.AppUpgradeReceiver filter 29884e4
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        df1e76f com.scores365/com.freshchat.consumer.sdk.receiver.FreshchatReceiver filter 35d8c7c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        ed2eb9 com.scores365/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 54f72fe
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        6a8fd75 com.scores365/.FirebaseMessageService filter abc10a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        418fbf1 com.scores365/com.flowsense.flowsensesdk.PushNotification.FCM.FSFirebaseService filter 8cce3d6
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        6b0662d com.scores365/com.google.firebase.messaging.FirebaseMessagingService filter c0b6762
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.gms.wearable.DATA_CHANGED:
+        5ae6d7b com.scores365/.wear.WearService filter 8c24798
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+      com.google.firebase.auth.api.gms.service.START:
+        a2c6657 com.scores365/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter a604544
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+  com.scores365:
+    ID: 076c5901-d7ba-4a66-816a-bfa8fb6ecf0c
+    Signatures: [0C:FB:46:63:83:1A:0F:B8:D6:97:3A:AD:44:E2:21:A8:BA:78:F7:F6:84:BD:0B:17:D3:B4:4B:EC:82:31:64:84]
+    Invalid autoVerify domains:
+      https://go.onelink.me
+    Domain verification state:
+      www.365scores.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.365scores.com
+
+Permissions:
+  Permission [com.scores365.permission.C2D_MESSAGE] (fac333f):
+    sourcePackage=com.scores365
+    uid=10363 gids=[] type=0 prot=signature
+    perm=PermissionInfo{5a9340c com.scores365.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.scores365/com.facebook.FacebookContentProvider:
+    Provider{42f0155 com.scores365/com.facebook.FacebookContentProvider}
+  com.scores365/androidx.work.impl.WorkManagerInitializer:
+    Provider{729a76a com.scores365/androidx.work.impl.WorkManagerInitializer}
+  com.scores365/com.squareup.picasso.PicassoProvider:
+    Provider{3bac45b com.scores365/com.squareup.picasso.PicassoProvider}
+  com.scores365/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{7bb84f8 com.scores365/com.google.firebase.provider.FirebaseInitProvider}
+  com.scores365/com.facebook.internal.FacebookInitProvider:
+    Provider{d2b5dd1 com.scores365/com.facebook.internal.FacebookInitProvider}
+  com.scores365/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{2b2d036 com.scores365/com.facebook.ads.AudienceNetworkContentProvider}
+  com.scores365/.utils.FreshchatFileProvider:
+    Provider{1574b37 com.scores365/.utils.FreshchatFileProvider}
+  com.scores365/com.freshchat.consumer.sdk.provider.FreshchatInitProvider:
+    Provider{e9ff8a4 com.scores365/com.freshchat.consumer.sdk.provider.FreshchatInitProvider}
+  com.scores365/.utils.GenericFileProvider:
+    Provider{ab7060d com.scores365/.utils.GenericFileProvider}
+  com.scores365/com.flurry.android.agent.FlurryContentProvider:
+    Provider{ed3b9c2 com.scores365/com.flurry.android.agent.FlurryContentProvider}
+  com.scores365/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{735fb10 com.scores365/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.scores365/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{2daf609 com.scores365/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.scores365/androidx.core.content.FileProvider:
+    Provider{227b00e com.scores365/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.scores365.freshchatprovider]:
+    Provider{1574b37 com.scores365/.utils.FreshchatFileProvider}
+      applicationInfo=ApplicationInfo{b5e6a2f com.scores365}
+  [com.facebook.app.FacebookContentProvider158698534219579]:
+    Provider{42f0155 com.scores365/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{ae7b83c com.scores365}
+  [com.scores365.FacebookInitProvider]:
+    Provider{d2b5dd1 com.scores365/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{933e9c5 com.scores365}
+  [com.scores365.AudienceNetworkContentProvider]:
+    Provider{2b2d036 com.scores365/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{fb2bf1a com.scores365}
+  [com.scores365.fileprovider]:
+    Provider{227b00e com.scores365/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{d717a4b com.scores365}
+  [com.scores365.freshchat.initprovider]:
+    Provider{e9ff8a4 com.scores365/com.freshchat.consumer.sdk.provider.FreshchatInitProvider}
+      applicationInfo=ApplicationInfo{d961c28 com.scores365}
+  [com.scores365.lifecycle-process]:
+    Provider{735fb10 com.scores365/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{46e5d41 com.scores365}
+  [com.scores365.FlurryContentProvider]:
+    Provider{ed3b9c2 com.scores365/com.flurry.android.agent.FlurryContentProvider}
+      applicationInfo=ApplicationInfo{4adb2e6 com.scores365}
+  [com.scores365.com.squareup.picasso]:
+    Provider{3bac45b com.scores365/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{e5b7027 com.scores365}
+  [com.scores365.initfileprovider]:
+    Provider{ab7060d com.scores365/.utils.GenericFileProvider}
+      applicationInfo=ApplicationInfo{e44d2d4 com.scores365}
+  [com.scores365.workmanager-init]:
+    Provider{729a76a com.scores365/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{f828c7d com.scores365}
+  [com.scores365.mobileadsinitprovider]:
+    Provider{2daf609 com.scores365/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{7121772 com.scores365}
+  [com.scores365.firebaseinitprovider]:
+    Provider{7bb84f8 com.scores365/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{a04e7c3 com.scores365}
+
+Key Set Manager:
+  [com.scores365]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.scores365] (6864840):
+    userId=10363
+    pkg=Package{e638be com.scores365}
+    codePath=/data/app/~~1ngD67GsZslPBEsNTYiPiQ==/com.scores365-yHiGHJGWjigJEooSc2lapQ==
+    resourcePath=/data/app/~~1ngD67GsZslPBEsNTYiPiQ==/com.scores365-yHiGHJGWjigJEooSc2lapQ==
+    legacyNativeLibraryDir=/data/app/~~1ngD67GsZslPBEsNTYiPiQ==/com.scores365-yHiGHJGWjigJEooSc2lapQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1182 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=11.8.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.scores365
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 13:18:32
+    lastUpdateTime=2022-11-30 13:18:33
+    packageSource=0
+    signatures=PackageSignatures{8443d1f version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.scores365.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.GET_ACCOUNTS
+      android.permission.VIBRATE
+      disabled_com.android.vending.BILLING
+      android.permission.CAMERA
+      disabled_com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.scores365.permission.C2D_MESSAGE
+      android.permission.FOREGROUND_SERVICE
+      disabled_com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.scores365.permission.C2D_MESSAGE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=55798 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 13:18:33
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.scores365:
+      com.google.android.apps.maps
+  queries via component:
+    com.google.android.apps.messaging:
+      com.scores365
+    com.google.android.apps.diagnosticstool:
+      com.scores365
+    com.google.android.settings.intelligence:
+      com.scores365
+    com.google.android.apps.accessibility.voiceaccess:
+      com.scores365
+    com.scores365:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      com.utorrent.client.pro
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.scores365]
+    path: /data/app/~~1ngD67GsZslPBEsNTYiPiQ==/com.scores365-yHiGHJGWjigJEooSc2lapQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:899174
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.scores365]
+     base.apk - 916

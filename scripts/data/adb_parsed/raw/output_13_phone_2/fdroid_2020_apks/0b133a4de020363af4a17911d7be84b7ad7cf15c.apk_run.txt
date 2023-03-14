@@ -1,0 +1,328 @@
+Activity Resolver Table:
+  Full MIME Types:
+      vnd.android.cursor.item/vnd.com.xabber.view:
+        c765035 com.xabber.android/.ui.activity.ContactActivity filter 8ce7cca
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          StaticType: "vnd.android.cursor.item/vnd.com.xabber.view"
+      */*:
+        b78dcd4 com.xabber.android/.ui.activity.ContactListActivity filter 927f9c3
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Base MIME Types:
+      vnd.android.cursor.item:
+        c765035 com.xabber.android/.ui.activity.ContactActivity filter 8ce7cca
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          StaticType: "vnd.android.cursor.item/vnd.com.xabber.view"
+
+  Wild MIME Types:
+      *:
+        b78dcd4 com.xabber.android/.ui.activity.ContactListActivity filter 927f9c3
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      http:
+        82cde3b com.xabber.android/.ui.activity.DeepLinkActivity filter 348bab1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "dev.xabber.com": -1
+          Path: "PatternMatcher{PREFIX: /account/emails/confirmation}"
+      imto:
+        b78dcd4 com.xabber.android/.ui.activity.ContactListActivity filter 3f0f240
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "imto"
+          Authority: "jabber": -1
+        b78dcd4 com.xabber.android/.ui.activity.ContactListActivity filter 4e6d579
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "imto"
+          Authority: "gtalk": -1
+      temp:
+        4bf9b96 com.xabber.android/com.facebook.CustomTabActivity filter 3012317
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "temp"
+      xmpp:
+        b78dcd4 com.xabber.android/.ui.activity.ContactListActivity filter 36e3172
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "xmpp"
+      https:
+        82cde3b com.xabber.android/.ui.activity.DeepLinkActivity filter 372c958
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.xabber.com": -1
+          Path: "PatternMatcher{PREFIX: /account/emails/confirmation}"
+      content:
+        c765035 com.xabber.android/.ui.activity.ContactActivity filter 8ce7cca
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          StaticType: "vnd.android.cursor.item/vnd.com.xabber.view"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        b78dcd4 com.xabber.android/.ui.activity.ContactListActivity filter 5b6ce7d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        b866f1f com.xabber.android/.ui.activity.ChatActivity filter f12f26c
+          Action: "android.intent.action.MAIN"
+      android.intent.action.CREATE_SHORTCUT:
+        b78dcd4 com.xabber.android/.ui.activity.ContactListActivity filter fe9f2be
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        b78dcd4 com.xabber.android/.ui.activity.ContactListActivity filter 927f9c3
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.VIEW:
+        c765035 com.xabber.android/.ui.activity.ContactActivity filter 8ce7cca
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          StaticType: "vnd.android.cursor.item/vnd.com.xabber.view"
+      android.intent.action.SEND_MULTIPLE:
+        b78dcd4 com.xabber.android/.ui.activity.ContactListActivity filter 927f9c3
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.QUICKBOOT_POWEROFF:
+        ed1db22 com.xabber.android/.receiver.ShutDownReceiver filter e6ad9b3
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.QUICKBOOT_POWEROFF"
+      android.intent.action.BOOT_COMPLETED:
+        af72304 com.xabber.android/.receiver.BootReceiver filter fd50ed
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_SHUTDOWN:
+        ed1db22 com.xabber.android/.receiver.ShutDownReceiver filter e6ad9b3
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          Action: "android.intent.action.QUICKBOOT_POWEROFF"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        5456b70 com.xabber.android/.service.PushService filter deb0ee9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.xabber.com
+          dev.xabber.com
+
+Registered ContentProviders:
+  com.xabber.android/androidx.core.content.FileProvider:
+    Provider{dc6d8f4 com.xabber.android/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.xabber.android.provider]:
+    Provider{dc6d8f4 com.xabber.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{f5dfb49 com.xabber.android}
+
+Key Set Manager:
+  [com.xabber.android]
+      Signing KeySets: 6190
+
+Packages:
+  Package [com.xabber.android] (10a6c4e):
+    userId=10270
+    pkg=Package{84e919 com.xabber.android}
+    codePath=/data/app/~~9Pi4aIfsUfz3b981Abx6JA==/com.xabber.android-Pq61HEXvPgo8TJUC93Aaew==
+    resourcePath=/data/app/~~9Pi4aIfsUfz3b981Abx6JA==/com.xabber.android-Pq61HEXvPgo8TJUC93Aaew==
+    legacyNativeLibraryDir=/data/app/~~9Pi4aIfsUfz3b981Abx6JA==/com.xabber.android-Pq61HEXvPgo8TJUC93Aaew==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=644 minSdk=15 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2.6.6.644-open
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.xabber.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 20:37:51
+    lastUpdateTime=2022-11-30 20:37:55
+    packageSource=0
+    signatures=PackageSignatures{26abbbf version:1, signatures:[45adee92], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_INTERNAL_STORAGE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.CAMERA
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=105289 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 20:37:55
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.xabber.android
+    com.google.android.apps.diagnosticstool:
+      com.xabber.android
+    com.google.android.settings.intelligence:
+      com.xabber.android
+    com.google.android.GoogleCamera:
+      com.xabber.android
+    com.google.android.apps.maps:
+      com.xabber.android
+    com.google.android.apps.photos:
+      com.xabber.android
+    com.google.android.youtube:
+      com.xabber.android
+    com.google.android.contacts:
+      com.xabber.android
+    com.google.android.apps.docs:
+      com.xabber.android
+    com.google.android.apps.accessibility.voiceaccess:
+      com.xabber.android
+    com.google.android.apps.youtube.music:
+      com.xabber.android
+    com.google.android.gm:
+      com.xabber.android
+    com.zhiliaoapp.musically:
+      com.xabber.android
+    com.truecaller:
+      com.xabber.android
+    deezer.android.app:
+      com.xabber.android
+    com.duolingo:
+      com.xabber.android
+    com.darinsoft.vimo:
+      com.xabber.android
+    com.ninegag.android.app:
+      com.xabber.android
+    vsin.t16_funny_photo:
+      com.xabber.android
+    com.camerasideas.instashot:
+      com.xabber.android
+    com.mobisystems.office:
+      com.xabber.android
+    com.shazam.android:
+      com.xabber.android
+    com.dv.adm:
+      com.xabber.android
+    com.zappcues.gamingmode:
+      com.xabber.android
+    com.cam001.selfie:
+      com.xabber.android
+    com.cyberlink.powerdirector.DRA140225_01:
+      com.xabber.android
+    com.jio.myjio:
+      com.xabber.android
+    video.reface.app:
+      com.xabber.android
+    com.clearchannel.iheartradio.controller:
+      com.xabber.android
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.localtransport,com.android.qns,com.google.android.iwlan,android,com.android.keychain,com.android.location.fused,com.android.wallpaperbackup,com.android.providers.settings,com.google.android.settings.future.biometrics.faceenroll,com.android.settings,com.android.server.telecom,com.android.inputdevices,com.android.dynsystem]:
+        com.xabber.android
+      com.google.android.inputmethod.latin:
+        com.xabber.android
+  queryable via uses-library:
+
+Dexopt state:
+  [com.xabber.android]
+    path: /data/app/~~9Pi4aIfsUfz3b981Abx6JA==/com.xabber.android-Pq61HEXvPgo8TJUC93Aaew==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:61036
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.xabber.android]
+     base.apk - 289

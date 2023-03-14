@@ -1,0 +1,260 @@
+Activity Resolver Table:
+  Schemes:
+      timehop:
+        252c803 com.timehop/.DayActivity filter b824380
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "timehop"
+          Authority: "open": -1
+          Authority: "settings": -1
+      amazonmobile:
+        230ac75 com.timehop/com.amazon.device.ads.DTBActivity filter ac3440a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "amazonmobile"
+          Authority: "intent": -1
+      fbconnect:
+        92fe15f com.timehop/com.facebook.CustomTabActivity filter e8817ac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.timehop": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        c07edb9 com.timehop/.LoginActivity filter fe4c5fe
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        79ef52d com.timehop/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b304a62
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        19e9d57 com.timehop/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter cc3b044
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        405b7f3 com.timehop/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d6d8cb0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        8a2b729 com.timehop/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 3ccaaae
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        1ec9af1 com.timehop/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 5996d6
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        405b7f3 com.timehop/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d6d8cb0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        d9b347b com.timehop/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 7350298
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        79ef52d com.timehop/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b304a62
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        ab9e04f com.timehop/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f96c3dc
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        ab9e04f com.timehop/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f96c3dc
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        ab9e04f com.timehop/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f96c3dc
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        19e9d57 com.timehop/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter cc3b044
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        b069ce5 com.timehop/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 3bcc3ba
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        6de326b com.timehop/.FirebaseMessagingReceiver filter 9ba41c8
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          Category: "com.timehop"
+        d092261 com.timehop/com.google.firebase.messaging.FirebaseMessagingService filter d636186
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+
+Permissions:
+  Permission [com.timehop.permission.C2D_MESSAGE] (24a04a5):
+    sourcePackage=com.timehop
+    uid=10253 gids=[] type=0 prot=signature
+    perm=PermissionInfo{38c707a com.timehop.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.timehop/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{56d402b com.timehop/com.facebook.ads.AudienceNetworkContentProvider}
+  com.timehop/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{5539c88 com.timehop/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.timehop/androidx.core.content.FileProvider:
+    Provider{77b4621 com.timehop/androidx.core.content.FileProvider}
+  com.timehop/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{d611a46 com.timehop/com.google.firebase.provider.FirebaseInitProvider}
+  com.timehop/com.facebook.internal.FacebookInitProvider:
+    Provider{7db407 com.timehop/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.timehop.lifecycle-process]:
+    Provider{5539c88 com.timehop/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{6c9f934 com.timehop}
+  [com.timehop.fileprovider]:
+    Provider{77b4621 com.timehop/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{25235d com.timehop}
+  [com.timehop.firebaseinitprovider]:
+    Provider{d611a46 com.timehop/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{78494d2 com.timehop}
+  [com.timehop.AudienceNetworkContentProvider]:
+    Provider{56d402b com.timehop/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{53789a3 com.timehop}
+  [com.timehop.FacebookInitProvider]:
+    Provider{7db407 com.timehop/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{f959859 com.timehop}
+
+Key Set Manager:
+  [com.timehop]
+      Signing KeySets: 4834
+
+Packages:
+  Package [com.timehop] (4f32c1e):
+    userId=10253
+    pkg=Package{2f1cff com.timehop}
+    codePath=/data/app/~~g28efsxpCN4v0PojiNiWQQ==/com.timehop-3ZUT0ZSgI9a059RE7H7HSw==
+    resourcePath=/data/app/~~g28efsxpCN4v0PojiNiWQQ==/com.timehop-3ZUT0ZSgI9a059RE7H7HSw==
+    legacyNativeLibraryDir=/data/app/~~g28efsxpCN4v0PojiNiWQQ==/com.timehop-3ZUT0ZSgI9a059RE7H7HSw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=7824 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=4.10.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.timehop
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 10:14:48
+    lastUpdateTime=2022-11-30 10:14:49
+    packageSource=0
+    signatures=PackageSignatures{b1f3acc version:2, signatures:[54511b1], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.timehop.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.WAKE_LOCK
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      com.google.android.c2dm.permission.RECEIVE
+      com.timehop.permission.C2D_MESSAGE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_LOGS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      com.timehop.permission.C2D_MESSAGE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=45234 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 10:14:49
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.timehop
+    com.google.android.apps.diagnosticstool:
+      com.timehop
+    com.google.android.settings.intelligence:
+      com.timehop
+    com.google.android.apps.accessibility.voiceaccess:
+      com.timehop
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.timehop]
+    path: /data/app/~~g28efsxpCN4v0PojiNiWQQ==/com.timehop-3ZUT0ZSgI9a059RE7H7HSw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:478224
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.timehop]
+     base.apk - 577

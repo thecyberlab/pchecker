@@ -1,0 +1,249 @@
+Activity Resolver Table:
+  Schemes:
+      elextech:
+        40656db com.moonton.magicrush/.AppActivity filter 74b7451
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "elextech"
+          Authority: "open": -1
+      https:
+        32b9dbf com.moonton.magicrush/com.ljoy.chatbot.FAQActivity filter 45c8c8c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "cs30.net": -1
+          Path: "PatternMatcher{PREFIX: /elvaFAQ}"
+      fbconnect:
+        3764b6 com.moonton.magicrush/com.facebook.CustomTabActivity filter 30985b7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.moonton.magicrush": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        40656db com.moonton.magicrush/.AppActivity filter d8be578
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        e82afd5 com.moonton.magicrush/com.ljoy.chatbot.WebViewActivity filter 2f5f3ea
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.net.conn.CONNECTIVITY_CHANGE:
+        1175c89 com.moonton.magicrush/com.vk.sdk.payments.VKPaymentsReceiver filter 1a548e
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        36230bc com.moonton.magicrush/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 9103845
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        7a6c653 com.moonton.magicrush/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 9a1eb90
+          Action: "com.android.vending.INSTALL_REFERRER"
+        1175c89 com.moonton.magicrush/com.vk.sdk.payments.VKPaymentsReceiver filter 4cd74af
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        455e124 com.moonton.magicrush/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 902048d
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Action: "com.google.android.c2dm.intent.REGISTRATION"
+          Category: "com.moonton.magicrush"
+        455e124 com.moonton.magicrush/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 54d1642
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.moonton.magicrush"
+      com.google.android.c2dm.intent.REGISTRATION:
+        455e124 com.moonton.magicrush/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 902048d
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Action: "com.google.android.c2dm.intent.REGISTRATION"
+          Category: "com.moonton.magicrush"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        27f9ca8 com.moonton.magicrush/.MyFirebaseInstanceIdService filter 40113c1
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        b85db54 com.moonton.magicrush/com.google.firebase.iid.FirebaseInstanceIdService filter 7ca2afd
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        76b2b9a com.moonton.magicrush/.MyFirebaseMessagingService filter 306accb
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        c06766 com.moonton.magicrush/com.google.firebase.messaging.FirebaseMessagingService filter 514aa7
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          cs30.net
+
+Permissions:
+  Permission [com.moonton.magicrush.permission.C2D_MESSAGE] (1c605e8):
+    sourcePackage=com.moonton.magicrush
+    uid=10338 gids=[] type=0 prot=signature
+    perm=PermissionInfo{2b20921 com.moonton.magicrush.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.moonton.magicrush/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{51c2146 com.moonton.magicrush/com.google.firebase.provider.FirebaseInitProvider}
+  com.moonton.magicrush/com.facebook.internal.FacebookInitProvider:
+    Provider{141af07 com.moonton.magicrush/com.facebook.internal.FacebookInitProvider}
+  com.moonton.magicrush/com.facebook.FacebookContentProvider:
+    Provider{2b5d834 com.moonton.magicrush/com.facebook.FacebookContentProvider}
+
+ContentProvider Authorities:
+  [com.moonton.magicrush.firebaseinitprovider]:
+    Provider{51c2146 com.moonton.magicrush/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{8d6401 com.moonton.magicrush}
+  [com.moonton.magicrush.FacebookInitProvider]:
+    Provider{141af07 com.moonton.magicrush/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{a7212a6 com.moonton.magicrush}
+  [com.facebook.app.FacebookContentProvider632016480230833]:
+    Provider{2b5d834 com.moonton.magicrush/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{6a4b4e7 com.moonton.magicrush}
+
+Key Set Manager:
+  [com.moonton.magicrush]
+      Signing KeySets: 4791
+
+Packages:
+  Package [com.moonton.magicrush] (4e99894):
+    userId=10338
+    pkg=Package{c81bb59 com.moonton.magicrush}
+    codePath=/data/app/~~A8YgmRTAXYs5ItXj2WsZ1g==/com.moonton.magicrush-MrzXbsgtF4X7pO0L6npxLg==
+    resourcePath=/data/app/~~A8YgmRTAXYs5ItXj2WsZ1g==/com.moonton.magicrush-MrzXbsgtF4X7pO0L6npxLg==
+    legacyNativeLibraryDir=/data/app/~~A8YgmRTAXYs5ItXj2WsZ1g==/com.moonton.magicrush-MrzXbsgtF4X7pO0L6npxLg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=313 minSdk=16 targetSdk=29
+    minExtensionVersions=[]
+    versionName=1.1.274
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.moonton.magicrush
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 09:58:25
+    lastUpdateTime=2022-11-30 09:58:27
+    packageSource=0
+    signatures=PackageSignatures{7d567f6 version:2, signatures:[86630ab1], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.moonton.magicrush.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.INTERNET
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.MANAGE_USERS
+      android.permission.USE_CREDENTIALS
+      com.android.vending.BILLING
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.READ_PHONE_STATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.moonton.magicrush.permission.C2D_MESSAGE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      com.moonton.magicrush.permission.C2D_MESSAGE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=25530 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 09:58:27
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.moonton.magicrush
+    com.google.android.apps.diagnosticstool:
+      com.moonton.magicrush
+    com.google.android.settings.intelligence:
+      com.moonton.magicrush
+    com.google.android.youtube:
+      com.moonton.magicrush
+    com.google.android.contacts:
+      com.moonton.magicrush
+    com.google.android.apps.accessibility.voiceaccess:
+      com.moonton.magicrush
+    com.google.android.gm:
+      com.moonton.magicrush
+  queryable via interaction:
+    User 0:
+      [android,com.android.dynsystem,com.android.providers.settings,com.google.android.settings.future.biometrics.faceenroll,com.google.android.iwlan,com.android.server.telecom,com.android.qns,com.android.settings,com.google.SSRestartDetector,com.android.keychain,com.android.localtransport,com.android.location.fused,com.android.wallpaperbackup,com.android.inputdevices]:
+        com.moonton.magicrush
+      [com.google.android.gsf,com.google.android.gms]:
+        com.moonton.magicrush
+  queryable via uses-library:
+
+Dexopt state:
+  [com.moonton.magicrush]
+    path: /data/app/~~A8YgmRTAXYs5ItXj2WsZ1g==/com.moonton.magicrush-MrzXbsgtF4X7pO0L6npxLg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1007699
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.moonton.magicrush]
+     base.apk - 476

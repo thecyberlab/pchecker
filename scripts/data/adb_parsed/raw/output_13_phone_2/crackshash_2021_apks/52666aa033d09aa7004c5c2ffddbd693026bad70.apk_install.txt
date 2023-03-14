@@ -1,0 +1,519 @@
+Activity Resolver Table:
+  Full MIME Types:
+      text/plain:
+        9050bc8 com.myfitnesspal.android/com.myfitnesspal.feature.recipes.ui.activity.RecipeImporterShareProxy filter 56d2461
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Base MIME Types:
+      text:
+        9050bc8 com.myfitnesspal.android/com.myfitnesspal.feature.recipes.ui.activity.RecipeImporterShareProxy filter 56d2461
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Schemes:
+      fb186796388009496:
+        4943b86 com.myfitnesspal.android/com.facebook.CustomTabActivity filter ce45c47
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb186796388009496"
+      mfp:
+        1ce7ee5 com.myfitnesspal.android/com.myfitnesspal.shared.ui.activity.impl.deeplink.DeepLinkRouterActivity filter 9b3fdba
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "mfp"
+      https:
+        1ce7ee5 com.myfitnesspal.android/com.myfitnesspal.shared.ui.activity.impl.deeplink.DeepLinkRouterActivity filter cde46b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "myfitnesspal.app.link": -1
+          Authority: "myfitnesspal-alternate.app.link": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      com.myfitnesspal.action.ADD_ENTRY:
+        7431c74 com.myfitnesspal.android/com.myfitnesspal.feature.main.ui.MainActivity filter ff6a59d
+          Action: "com.myfitnesspal.action.ADD_ENTRY"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        11116b0 com.myfitnesspal.android/.login.WelcomeActivity filter 5507929
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        11116b0 com.myfitnesspal.android/.login.WelcomeActivity filter 6e444ae
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+        6e88a12 com.myfitnesspal.android/.recipe_collection.ui.activity.CuratedRecipesActivity filter 70075e3
+          Action: "android.intent.action.VIEW"
+        faf8be0 com.myfitnesspal.android/.recipe_collection.ui.activity.ManagedRecipesActivity filter 99cfe99
+          Action: "android.intent.action.VIEW"
+        c1355e com.myfitnesspal.android/com.myfitnesspal.plans.ui.activity.PlansActivity filter 53a8d3f
+          Action: "android.intent.action.VIEW"
+      com.myfitnesspal.android.login.AUTHORIZE:
+        8b2724f com.myfitnesspal.android/com.myfitnesspal.feature.registration.ui.activity.OAuthActivity filter ae8eddc
+          Action: "com.myfitnesspal.android.login.AUTHORIZE"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        9050bc8 com.myfitnesspal.android/com.myfitnesspal.feature.recipes.ui.activity.RecipeImporterShareProxy filter 56d2461
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        f1300d com.myfitnesspal.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter a639bc2
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        b16e537 com.myfitnesspal.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 2208aa4
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.myfitnesspal.action.UPDATE_CALORIES:
+        eb1860c com.myfitnesspal.android/com.myfitnesspal.shared.provider.MPFAppWidgetProvider filter e7496a
+          Action: "com.myfitnesspal.action.UPDATE_CALORIES"
+          Action: "com.myfitnesspal.action.UPDATE_STATUS"
+          Action: "com.myfitnesspal.action.PERIODIC_UPDATE"
+          Action: "com.myfitnesspal.action.SIGNED_OUT"
+          Action: "com.myfitnesspal.action.CALORIES_REPORT_REQUEST"
+          Action: "com.myfitnesspal.action.STEPS_UPDATE"
+          Action: "com.myfitnesspal.action.REQUEST_SYNC"
+          Action: "com.myfitnesspal.action.START_BARCODE_SCANNER"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        fea9dd3 com.myfitnesspal.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 72dad10
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        38dc009 com.myfitnesspal.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 3d3b20e
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.myfitnesspal.action.REQUEST_SYNC_STARTED:
+        eb1860c com.myfitnesspal.android/com.myfitnesspal.shared.provider.MPFAppWidgetProvider filter 1b5eb55
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.myfitnesspal.action.WIDGET_DATA_UPDATED"
+          Action: "com.myfitnesspal.action.REQUEST_SYNC_STARTED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        d36e7d1 com.myfitnesspal.android/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 7a89236
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        fea9dd3 com.myfitnesspal.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 72dad10
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.myfitnesspal.action.CALORIES_REPORT_REQUEST:
+        eb1860c com.myfitnesspal.android/com.myfitnesspal.shared.provider.MPFAppWidgetProvider filter e7496a
+          Action: "com.myfitnesspal.action.UPDATE_CALORIES"
+          Action: "com.myfitnesspal.action.UPDATE_STATUS"
+          Action: "com.myfitnesspal.action.PERIODIC_UPDATE"
+          Action: "com.myfitnesspal.action.SIGNED_OUT"
+          Action: "com.myfitnesspal.action.CALORIES_REPORT_REQUEST"
+          Action: "com.myfitnesspal.action.STEPS_UPDATE"
+          Action: "com.myfitnesspal.action.REQUEST_SYNC"
+          Action: "com.myfitnesspal.action.START_BARCODE_SCANNER"
+          Category: "android.intent.category.DEFAULT"
+      com.myfitnesspal.notification.action.POST:
+        cd4be5b com.myfitnesspal.android/com.myfitnesspal.shared.receiver.MfpNotificationActionReceiver filter df6f6f8
+          Action: "com.myfitnesspal.notification.action.POST"
+          Category: "android.intent.category.DEFAULT"
+      com.myfitnesspal.action.SIGNED_OUT:
+        eb1860c com.myfitnesspal.android/com.myfitnesspal.shared.provider.MPFAppWidgetProvider filter e7496a
+          Action: "com.myfitnesspal.action.UPDATE_CALORIES"
+          Action: "com.myfitnesspal.action.UPDATE_STATUS"
+          Action: "com.myfitnesspal.action.PERIODIC_UPDATE"
+          Action: "com.myfitnesspal.action.SIGNED_OUT"
+          Action: "com.myfitnesspal.action.CALORIES_REPORT_REQUEST"
+          Action: "com.myfitnesspal.action.STEPS_UPDATE"
+          Action: "com.myfitnesspal.action.REQUEST_SYNC"
+          Action: "com.myfitnesspal.action.START_BARCODE_SCANNER"
+          Category: "android.intent.category.DEFAULT"
+      com.myfitnesspal.action.STEPS_UPDATE:
+        eb1860c com.myfitnesspal.android/com.myfitnesspal.shared.provider.MPFAppWidgetProvider filter e7496a
+          Action: "com.myfitnesspal.action.UPDATE_CALORIES"
+          Action: "com.myfitnesspal.action.UPDATE_STATUS"
+          Action: "com.myfitnesspal.action.PERIODIC_UPDATE"
+          Action: "com.myfitnesspal.action.SIGNED_OUT"
+          Action: "com.myfitnesspal.action.CALORIES_REPORT_REQUEST"
+          Action: "com.myfitnesspal.action.STEPS_UPDATE"
+          Action: "com.myfitnesspal.action.REQUEST_SYNC"
+          Action: "com.myfitnesspal.action.START_BARCODE_SCANNER"
+          Category: "android.intent.category.DEFAULT"
+      com.myfitnesspal.action.PERIODIC_UPDATE:
+        eb1860c com.myfitnesspal.android/com.myfitnesspal.shared.provider.MPFAppWidgetProvider filter e7496a
+          Action: "com.myfitnesspal.action.UPDATE_CALORIES"
+          Action: "com.myfitnesspal.action.UPDATE_STATUS"
+          Action: "com.myfitnesspal.action.PERIODIC_UPDATE"
+          Action: "com.myfitnesspal.action.SIGNED_OUT"
+          Action: "com.myfitnesspal.action.CALORIES_REPORT_REQUEST"
+          Action: "com.myfitnesspal.action.STEPS_UPDATE"
+          Action: "com.myfitnesspal.action.REQUEST_SYNC"
+          Action: "com.myfitnesspal.action.START_BARCODE_SCANNER"
+          Category: "android.intent.category.DEFAULT"
+      com.myfitnesspal.action.START_BARCODE_SCANNER:
+        eb1860c com.myfitnesspal.android/com.myfitnesspal.shared.provider.MPFAppWidgetProvider filter e7496a
+          Action: "com.myfitnesspal.action.UPDATE_CALORIES"
+          Action: "com.myfitnesspal.action.UPDATE_STATUS"
+          Action: "com.myfitnesspal.action.PERIODIC_UPDATE"
+          Action: "com.myfitnesspal.action.SIGNED_OUT"
+          Action: "com.myfitnesspal.action.CALORIES_REPORT_REQUEST"
+          Action: "com.myfitnesspal.action.STEPS_UPDATE"
+          Action: "com.myfitnesspal.action.REQUEST_SYNC"
+          Action: "com.myfitnesspal.action.START_BARCODE_SCANNER"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.BATTERY_LOW:
+        f1300d com.myfitnesspal.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter a639bc2
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        637442f com.myfitnesspal.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 7a88a3c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        637442f com.myfitnesspal.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 7a88a3c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        637442f com.myfitnesspal.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 7a88a3c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.myfitnesspal.action.UPDATE_STATUS:
+        eb1860c com.myfitnesspal.android/com.myfitnesspal.shared.provider.MPFAppWidgetProvider filter e7496a
+          Action: "com.myfitnesspal.action.UPDATE_CALORIES"
+          Action: "com.myfitnesspal.action.UPDATE_STATUS"
+          Action: "com.myfitnesspal.action.PERIODIC_UPDATE"
+          Action: "com.myfitnesspal.action.SIGNED_OUT"
+          Action: "com.myfitnesspal.action.CALORIES_REPORT_REQUEST"
+          Action: "com.myfitnesspal.action.STEPS_UPDATE"
+          Action: "com.myfitnesspal.action.REQUEST_SYNC"
+          Action: "com.myfitnesspal.action.START_BARCODE_SCANNER"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        b16e537 com.myfitnesspal.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 2208aa4
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.myfitnesspal.action.WIDGET_DATA_UPDATED:
+        eb1860c com.myfitnesspal.android/com.myfitnesspal.shared.provider.MPFAppWidgetProvider filter 1b5eb55
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.myfitnesspal.action.WIDGET_DATA_UPDATED"
+          Action: "com.myfitnesspal.action.REQUEST_SYNC_STARTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        eb1860c com.myfitnesspal.android/com.myfitnesspal.shared.provider.MPFAppWidgetProvider filter 1b5eb55
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.myfitnesspal.action.WIDGET_DATA_UPDATED"
+          Action: "com.myfitnesspal.action.REQUEST_SYNC_STARTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        5fdf44b com.myfitnesspal.android/androidx.work.impl.diagnostics.DiagnosticsReceiver filter a920e28
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        34953c5 com.myfitnesspal.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter d1ce11a
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.myfitnesspal.action.REQUEST_SYNC:
+        eb1860c com.myfitnesspal.android/com.myfitnesspal.shared.provider.MPFAppWidgetProvider filter e7496a
+          Action: "com.myfitnesspal.action.UPDATE_CALORIES"
+          Action: "com.myfitnesspal.action.UPDATE_STATUS"
+          Action: "com.myfitnesspal.action.PERIODIC_UPDATE"
+          Action: "com.myfitnesspal.action.SIGNED_OUT"
+          Action: "com.myfitnesspal.action.CALORIES_REPORT_REQUEST"
+          Action: "com.myfitnesspal.action.STEPS_UPDATE"
+          Action: "com.myfitnesspal.action.REQUEST_SYNC"
+          Action: "com.myfitnesspal.action.START_BARCODE_SCANNER"
+          Category: "android.intent.category.DEFAULT"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        b706741 com.myfitnesspal.android/com.myfitnesspal.shared.service.message.MFPFirebaseMessagingService filter b97f4e6
+          Action: "com.google.firebase.MESSAGING_EVENT"
+
+Domain verification status:
+  com.myfitnesspal.android:
+    ID: 59fdf601-51f1-458d-8e47-c88df07779fd
+    Signatures: [0C:FB:46:63:83:1A:0F:B8:D6:97:3A:AD:44:E2:21:A8:BA:78:F7:F6:84:BD:0B:17:D3:B4:4B:EC:82:31:64:84]
+    Domain verification state:
+      myfitnesspal.app.link: none
+      myfitnesspal-alternate.app.link: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          myfitnesspal.app.link
+          myfitnesspal-alternate.app.link
+
+Permissions:
+  Permission [com.myfitnesspal.android.permission.C2D_MESSAGE] (c392332):
+    sourcePackage=com.myfitnesspal.android
+    uid=10270 gids=[] type=0 prot=signature
+    perm=PermissionInfo{7b96883 com.myfitnesspal.android.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.myfitnesspal.android/com.myfitnesspal.shared.api.auth.SSOContentProvider:
+    Provider{1b9a00 com.myfitnesspal.android/com.myfitnesspal.shared.api.auth.SSOContentProvider}
+  com.myfitnesspal.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{acc239 com.myfitnesspal.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.myfitnesspal.android/com.facebook.FacebookContentProvider:
+    Provider{dd2407e com.myfitnesspal.android/com.facebook.FacebookContentProvider}
+  com.myfitnesspal.android/com.myfitnesspal.shared.provider.FileProviderPrivateExternal:
+    Provider{1a009df com.myfitnesspal.android/com.myfitnesspal.shared.provider.FileProviderPrivateExternal}
+  com.myfitnesspal.android/com.myfitnesspal.shared.provider.FileProviderShareCache:
+    Provider{5a0562c com.myfitnesspal.android/com.myfitnesspal.shared.provider.FileProviderShareCache}
+  com.myfitnesspal.android/androidx.work.impl.WorkManagerInitializer:
+    Provider{18e48f5 com.myfitnesspal.android/androidx.work.impl.WorkManagerInitializer}
+  com.myfitnesspal.android/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{64de68a com.myfitnesspal.android/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.myfitnesspal.android/com.squareup.picasso.PicassoProvider:
+    Provider{42564fb com.myfitnesspal.android/com.squareup.picasso.PicassoProvider}
+  com.myfitnesspal.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{dd2a918 com.myfitnesspal.android/com.google.firebase.provider.FirebaseInitProvider}
+  com.myfitnesspal.android/io.uacf.gymworkouts.ui.internal.GymWorkoutsFileProvider:
+    Provider{2c77f71 com.myfitnesspal.android/io.uacf.gymworkouts.ui.internal.GymWorkoutsFileProvider}
+  com.myfitnesspal.android/com.facebook.internal.FacebookInitProvider:
+    Provider{a2be156 com.myfitnesspal.android/com.facebook.internal.FacebookInitProvider}
+  com.myfitnesspal.android/com.myfitnesspal.shared.api.auth.IdentityContentProvider:
+    Provider{1db55d7 com.myfitnesspal.android/com.myfitnesspal.shared.api.auth.IdentityContentProvider}
+  com.myfitnesspal.android/io.uacf.thumbprint.ui.internal.ThumbprintFileProvider:
+    Provider{883a1ad com.myfitnesspal.android/io.uacf.thumbprint.ui.internal.ThumbprintFileProvider}
+  com.myfitnesspal.android/com.myfitnesspal.shared.provider.FileProviderPrivateInternal:
+    Provider{41cbce2 com.myfitnesspal.android/com.myfitnesspal.shared.provider.FileProviderPrivateInternal}
+
+ContentProvider Authorities:
+  [io.uacf.identity.provider.myfitnesspal]:
+    Provider{1db55d7 com.myfitnesspal.android/com.myfitnesspal.shared.api.auth.IdentityContentProvider}
+      applicationInfo=ApplicationInfo{a957873 com.myfitnesspal.android}
+  [com.myfitnesspal.android.firebaseperfprovider]:
+    Provider{64de68a com.myfitnesspal.android/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{8498330 com.myfitnesspal.android}
+  [com.myfitnesspal.android.com.squareup.picasso]:
+    Provider{42564fb com.myfitnesspal.android/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{cb22292 com.myfitnesspal.android}
+  [com.myfitnesspal.android.fileprovider]:
+    Provider{2c77f71 com.myfitnesspal.android/io.uacf.gymworkouts.ui.internal.GymWorkoutsFileProvider}
+      applicationInfo=ApplicationInfo{61c1860 com.myfitnesspal.android}
+  [com.myfitnesspal.android.workmanager-init]:
+    Provider{18e48f5 com.myfitnesspal.android/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{3a3d119 com.myfitnesspal.android}
+  [com.myfitnesspal.android.fileproviderprivateinternal]:
+    Provider{41cbce2 com.myfitnesspal.android/com.myfitnesspal.shared.provider.FileProviderPrivateInternal}
+      applicationInfo=ApplicationInfo{8cbd5de com.myfitnesspal.android}
+  [com.myfitnesspal.android.firebaseinitprovider]:
+    Provider{dd2a918 com.myfitnesspal.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{1a7e3bf com.myfitnesspal.android}
+  [com.facebook.app.FacebookContentProvider186796388009496]:
+    Provider{dd2407e com.myfitnesspal.android/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{9a5a8c com.myfitnesspal.android}
+  [com.myfitnesspal.android.fileprovidersharecache]:
+    Provider{5a0562c com.myfitnesspal.android/com.myfitnesspal.shared.provider.FileProviderShareCache}
+      applicationInfo=ApplicationInfo{d9765d5 com.myfitnesspal.android}
+  [com.myfitnesspal.android.FacebookInitProvider]:
+    Provider{a2be156 com.myfitnesspal.android/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{23b71ea com.myfitnesspal.android}
+  [com.myfitnesspal.android.lifecycle-process]:
+    Provider{acc239 com.myfitnesspal.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{500fcdb com.myfitnesspal.android}
+  [com.myfitnesspal.android.fileproviderprivateexternal]:
+    Provider{1a009df com.myfitnesspal.android/com.myfitnesspal.shared.provider.FileProviderPrivateExternal}
+      applicationInfo=ApplicationInfo{ad89378 com.myfitnesspal.android}
+  [com.uacf.identity.provider.myfitnesspal]:
+    Provider{1b9a00 com.myfitnesspal.android/com.myfitnesspal.shared.api.auth.SSOContentProvider}
+      applicationInfo=ApplicationInfo{1f58a51 com.myfitnesspal.android}
+
+Key Set Manager:
+  [com.myfitnesspal.android]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.myfitnesspal.android] (a0c299a):
+    userId=10270
+    pkg=Package{2f6d2cb com.myfitnesspal.android}
+    codePath=/data/app/~~g7LR_zGYeL6WRIYkJeJdHQ==/com.myfitnesspal.android-rxuDnSx5PBlobpGUowJvMQ==
+    resourcePath=/data/app/~~g7LR_zGYeL6WRIYkJeJdHQ==/com.myfitnesspal.android-rxuDnSx5PBlobpGUowJvMQ==
+    legacyNativeLibraryDir=/data/app/~~g7LR_zGYeL6WRIYkJeJdHQ==/com.myfitnesspal.android-rxuDnSx5PBlobpGUowJvMQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=19261 minSdk=26 targetSdk=29
+    minExtensionVersions=[]
+    versionName=21.12.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.myfitnesspal.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      android.test.runner
+      android.test.base
+      android.test.mock
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system/framework/android.test.runner.jar
+      /system/framework/android.test.base.jar
+      /system/framework/android.test.mock.jar
+    timeStamp=2022-11-30 17:07:06
+    lastUpdateTime=2022-11-30 17:07:08
+    packageSource=0
+    signatures=PackageSignatures{61dd0a7 version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.myfitnesspal.android.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      com.myfitnesspal.android.permission.C2D_MESSAGE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.FLASHLIGHT
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.GET_ACCOUNTS
+      android.permission.MANAGE_DOCUMENTS
+      android.permission.USE_CREDENTIALS
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_CONTACTS
+      android.permission.CAMERA
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACTIVITY_RECOGNITION
+      com.samsung.WATCH_APP_TYPE.Companion
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      com.myfitnesspal.android.permission.C2D_MESSAGE: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=83210 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 17:07:08
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACTIVITY_RECOGNITION: granted=false
+        android.permission.READ_CONTACTS: granted=false
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.myfitnesspal.android
+    com.google.android.apps.diagnosticstool:
+      com.myfitnesspal.android
+    com.google.android.settings.intelligence:
+      com.myfitnesspal.android
+    com.google.android.apps.maps:
+      com.myfitnesspal.android
+    com.google.android.apps.photos:
+      com.myfitnesspal.android
+    com.google.android.youtube:
+      com.myfitnesspal.android
+    com.google.android.contacts:
+      com.myfitnesspal.android
+    com.google.android.apps.accessibility.voiceaccess:
+      com.myfitnesspal.android
+    com.google.android.apps.youtube.music:
+      com.myfitnesspal.android
+    com.google.android.gm:
+      com.myfitnesspal.android
+    com.truecaller:
+      com.myfitnesspal.android
+    com.duolingo:
+      com.myfitnesspal.android
+    com.myfitnesspal.android:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      com.dv.adm
+      com.utorrent.client.pro
+    com.shazam.android:
+      com.myfitnesspal.android
+    com.dv.adm:
+      com.myfitnesspal.android
+    com.zappcues.gamingmode:
+      com.myfitnesspal.android
+    com.cam001.selfie:
+      com.myfitnesspal.android
+    com.jio.myjio:
+      com.myfitnesspal.android
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.myfitnesspal.android]
+    path: /data/app/~~g7LR_zGYeL6WRIYkJeJdHQ==/com.myfitnesspal.android-rxuDnSx5PBlobpGUowJvMQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:116862
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.myfitnesspal.android]
+     base.apk - 1810

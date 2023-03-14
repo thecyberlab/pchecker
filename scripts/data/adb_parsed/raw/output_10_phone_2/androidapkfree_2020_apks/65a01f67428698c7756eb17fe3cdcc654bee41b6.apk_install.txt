@@ -1,0 +1,507 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        a7969c9 com.google.android.apps.work.clouddpc/.ui.customtab.RedirectUriReceiverActivity filter 6042a3f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "enterprise.google.com": -1 WILD
+          Path: "PatternMatcher{PREFIX: /android/enroll}"
+          AutoVerify=true
+        e6378ce com.google.android.apps.work.clouddpc/.ui.preprovisioning.EnrollmentLinkActivity filter 4fc5c41
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "enterprise.google.com": -1
+          Authority: "enterprise-staging.sandbox.google.com": -1
+          Path: "PatternMatcher{PREFIX: /android/experience/enroll/}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      com.google.android.apps.work.clouddpc.ACTION_EMPTY_ACTIVITY:
+        c7d63ef com.google.android.apps.work.clouddpc/.ui.base.EmptyActivity filter fea33c
+          Action: "com.google.android.apps.work.clouddpc.ACTION_EMPTY_ACTIVITY"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.ACTION_REQUEST_PROVISIONING:
+        fb08efc com.google.android.apps.work.clouddpc/.ui.preprovisioning.SyncAuthActivity filter 5b0b728
+          Action: "com.google.android.apps.work.clouddpc.ACTION_REQUEST_PROVISIONING"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.ACTION_START_SETUP_TUTORIAL:
+        ca5d985 com.google.android.apps.work.clouddpc/.ui.preprovisioning.PreProvisioningTutorialActivity filter 1ff0727
+          Action: "com.google.android.apps.work.clouddpc.ACTION_START_SETUP_TUTORIAL"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.ACTION_START_MANAGED_PROVISIONING:
+        cc253da com.google.android.apps.work.clouddpc/.ui.provisioningselector.ManagedProvisioningActivity filter dd72237
+          Action: "com.google.android.apps.work.clouddpc.ACTION_START_MANAGED_PROVISIONING"
+          Category: "android.intent.category.DEFAULT"
+      android.app.action.GET_PROVISIONING_MODE:
+        8e6500b com.google.android.apps.work.clouddpc/.ui.preprovisioning.GetProvisioningModeActivity filter ed545e6
+          Action: "android.app.action.GET_PROVISIONING_MODE"
+          Category: "android.intent.category.DEFAULT"
+      android.settings.SHOW_WORK_POLICY_INFO:
+        9f59ee8 com.google.android.apps.work.clouddpc/.ui.statusui.StatusActivity filter d243610
+          Action: "com.google.android.settings.privacy.ACTION_SHOW_WORK_POLICY_INFO"
+          Action: "android.settings.SHOW_WORK_POLICY_INFO"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_STATUS_UI"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_DO_STATUS_UI"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_PO_STATUS_UI"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.POST_SETUP_ACTIVITY:
+        36f8901 com.google.android.apps.work.clouddpc/.ui.postsetup.PostSetupActivity filter f295ff8
+          Action: "com.google.android.apps.work.clouddpc.POST_SETUP_ACTIVITY"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        a01d3a6 com.google.android.apps.work.clouddpc/.ui.kioskincompliance.LockedIncomplianceActivity filter 6d95055
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+        9a7e1e7 com.google.android.apps.work.clouddpc/.ui.networkescapehatch.NetworkEscapeHatchActivity filter d1b2b5b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+        2f9c194 com.google.android.apps.work.clouddpc/.ui.setup.DeviceOwnerSetupActivity filter 21abcc2
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+        9cab43d com.google.android.apps.work.clouddpc/.ui.v2.setup.LockedSetupActivity filter f22212f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+        2678432 com.google.android.apps.work.clouddpc/.ui.launcher.LauncherActivity filter e77221a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+        fb08efc com.google.android.apps.work.clouddpc/.ui.preprovisioning.SyncAuthActivity filter f39a14b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.INFO"
+        106b583 com.google.android.apps.work.clouddpc/.ui.shareddevices.MultiUserTextLoginActivity filter cee1dd4
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+        17b6300 com.google.android.apps.work.clouddpc/.ui.shareddevices.EphemeralUserSplashActivity filter 4717b7d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+        bb35739 com.google.android.apps.work.clouddpc/.ui.shareddevices.EphemeralScreensaverActivity filter 79fda72
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+        f05b17e com.google.android.apps.work.clouddpc/.ui.trampoline.TrampolineActivity filter 9caeec3
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.libraries.strictmode.STRICTMODE_TARGET:
+        6f526df com.google.android.apps.work.clouddpc/com.google.android.libraries.strictmode.penalties.notification.FullStackTraceActivity filter 91f5279
+          Action: "com.google.android.libraries.strictmode.STRICTMODE_TARGET"
+          Category: "android.intent.category.DEFAULT"
+      android.app.action.CHECK_POLICY_COMPLIANCE:
+        7b3af2c com.google.android.apps.work.clouddpc/.ui.kioskincompliance.CheckPolicyComplianceActivity filter 7bf4a6a
+          Action: "android.app.action.CHECK_POLICY_COMPLIANCE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.ADD_PERSONAL_ACCOUNT:
+        ee92df5 com.google.android.apps.work.clouddpc/.ui.postsetup.AddPersonalAccountActivity filter 1ab9cd1
+          Action: "com.google.android.apps.work.clouddpc.ADD_PERSONAL_ACCOUNT"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.ACTION_STATUS_UI:
+        9f59ee8 com.google.android.apps.work.clouddpc/.ui.statusui.StatusActivity filter d243610
+          Action: "com.google.android.settings.privacy.ACTION_SHOW_WORK_POLICY_INFO"
+          Action: "android.settings.SHOW_WORK_POLICY_INFO"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_STATUS_UI"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_DO_STATUS_UI"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_PO_STATUS_UI"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.ACTION_DO_STATUS_UI:
+        9f59ee8 com.google.android.apps.work.clouddpc/.ui.statusui.StatusActivity filter d243610
+          Action: "com.google.android.settings.privacy.ACTION_SHOW_WORK_POLICY_INFO"
+          Action: "android.settings.SHOW_WORK_POLICY_INFO"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_STATUS_UI"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_DO_STATUS_UI"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_PO_STATUS_UI"
+          Category: "android.intent.category.DEFAULT"
+      android.app.action.PROVISIONING_SUCCESSFUL:
+        5c7678a com.google.android.apps.work.clouddpc/.ui.provisioningsucceed.ProvisioningSuccessfulActivity filter e9083a4
+          Action: "android.app.action.PROVISIONING_SUCCESSFUL"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.THIRD_PARTY_SIGNIN:
+        62f51fb com.google.android.apps.work.clouddpc/.ui.customtab.CustomTabActivity filter 86b265e
+          Action: "com.google.android.apps.work.clouddpc.THIRD_PARTY_SIGNIN"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.START_PRE_SETUP:
+        429218 com.google.android.apps.work.clouddpc/.ui.v2.presetup.PreSetupActivity filter 65be30e
+          Action: "com.google.android.apps.work.clouddpc.START_PRE_SETUP"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.ACTION_START_APP_INSTALLS:
+        b6bb471 com.google.android.apps.work.clouddpc/.ui.stepper.AwaitAppsInstallActivity filter 1441509
+          Action: "com.google.android.apps.work.clouddpc.ACTION_START_APP_INSTALLS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.ACTION_PROVISIONING_FAILED:
+        e3c7256 com.google.android.apps.work.clouddpc/.ui.provisioningfailure.ProvisioningFailedActivity filter 7c350d
+          Action: "com.google.android.apps.work.clouddpc.ACTION_PROVISIONING_FAILED"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.settings.privacy.ACTION_SHOW_WORK_POLICY_INFO:
+        9f59ee8 com.google.android.apps.work.clouddpc/.ui.statusui.StatusActivity filter d243610
+          Action: "com.google.android.settings.privacy.ACTION_SHOW_WORK_POLICY_INFO"
+          Action: "android.settings.SHOW_WORK_POLICY_INFO"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_STATUS_UI"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_DO_STATUS_UI"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_PO_STATUS_UI"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.ACTION_START_ACTIVITY_FOR_RESULT:
+        f1712d7 com.google.android.apps.work.clouddpc/.ui.base.StartForResultActivity filter e8ff8c5
+          Action: "com.google.android.apps.work.clouddpc.ACTION_START_ACTIVITY_FOR_RESULT"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.CHECK_ENROLLMENT_TOKEN:
+        ddab7c4 com.google.android.apps.work.clouddpc/.ui.etinput.CheckEnrollmentTokenActivity filter 5f5f0c
+          Action: "com.google.android.apps.work.clouddpc.CHECK_ENROLLMENT_TOKEN"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.SELECT_PROVISION_MODE:
+        fb626ad com.google.android.apps.work.clouddpc/.ui.provisioningselector.ProvisioningSelectorActivity filter a7fa336
+          Action: "com.google.android.apps.work.clouddpc.SELECT_PROVISION_MODE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.work.clouddpc.ACTION_PO_STATUS_UI:
+        9f59ee8 com.google.android.apps.work.clouddpc/.ui.statusui.StatusActivity filter d243610
+          Action: "com.google.android.settings.privacy.ACTION_SHOW_WORK_POLICY_INFO"
+          Action: "android.settings.SHOW_WORK_POLICY_INFO"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_STATUS_UI"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_DO_STATUS_UI"
+          Action: "com.google.android.apps.work.clouddpc.ACTION_PO_STATUS_UI"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.primes.action.DEBUG_PRIMES_EVENTS:
+        7255de2 com.google.android.apps.work.clouddpc/com.google.android.libraries.performance.primes.debug.PrimesEventActivity filter df94340
+          Action: "com.google.android.primes.action.DEBUG_PRIMES_EVENTS"
+          Category: "android.intent.category.DEFAULT"
+      android.app.action.ADMIN_POLICY_COMPLIANCE:
+        c500573 com.google.android.apps.work.clouddpc/.ui.setup.IntegratedFlowSetupActivity filter af1aad3
+          Action: "android.app.action.ADMIN_POLICY_COMPLIANCE"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.PROVISIONING_FINALIZATION"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        9ad8c30 com.google.android.apps.work.clouddpc/.base.receivers.PackageInstallReceiver filter be3b41f
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Action: "android.intent.action.PACKAGE_CHANGED"
+          Action: "android.intent.action.PACKAGE_REMOVED"
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Scheme: "package"
+        cbb80a9 com.google.android.apps.work.clouddpc/.base.receivers.PackageUpdateReceiver filter 199733b
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Action: "android.intent.action.PACKAGE_REMOVED"
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_DATA_CLEARED"
+          Action: "android.intent.action.PACKAGE_CHANGED"
+          Action: "android.intent.action.PACKAGE_RESTARTED"
+          Scheme: "package"
+        8bf762e com.google.android.apps.work.clouddpc/com.google.android.apps.work.dpcsupport.AccountManagementWhitelistEnforcer$ContinuousEnforcer filter e83fc70
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Action: "android.intent.action.PACKAGE_CHANGED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        51b85cf com.google.android.apps.work.clouddpc/com.google.android.libraries.phenotype.client.stable.PhenotypeStickyAccount$AccountRemovedBroadcastReceiver filter 3bccbe9
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        c973b5c com.google.android.apps.work.clouddpc/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b89b57a
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        5a27e65 com.google.android.apps.work.clouddpc/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 48d3da5
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.google.android.gms.auth.BAD_DEVICE_MANAGEMENT:
+        fd0c73a com.google.android.apps.work.clouddpc/.base.receivers.AccountStateReceiver filter a6c45ca
+          Action: "com.google.android.gms.auth.ACCOUNT_REAUTH_REQUIRED"
+          Action: "com.google.android.gms.auth.BAD_DEVICE_MANAGEMENT"
+      com.google.android.gms.auth.ACCOUNT_REAUTH_REQUIRED:
+        fd0c73a com.google.android.apps.work.clouddpc/.base.receivers.AccountStateReceiver filter a6c45ca
+          Action: "com.google.android.gms.auth.ACCOUNT_REAUTH_REQUIRED"
+          Action: "com.google.android.gms.auth.BAD_DEVICE_MANAGEMENT"
+      android.intent.action.PHONE_STATE:
+        974afeb com.google.android.apps.work.clouddpc/.receivers.PhoneStateChangedBroadcastReceiver filter f220817
+          Action: "android.intent.action.PHONE_STATE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        f0ab148 com.google.android.apps.work.clouddpc/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 549a12b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        f419be1 com.google.android.apps.work.clouddpc/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 1b6e988
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        d741d06 com.google.android.apps.work.clouddpc/.receivers.LockedBootCompletedReceiver filter e3d3ded
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+      com.google.android.apps.work.clouddpc.sdk.UPDATE_POLICIES:
+        3ec5fc7 com.google.android.apps.work.clouddpc/.base.receivers.ExtensionRequestReceiver filter a143a58
+          Action: "com.google.android.apps.work.clouddpc.sdk.UPDATE_POLICIES"
+      android.intent.action.DEVICE_STORAGE_OK:
+        f0ab148 com.google.android.apps.work.clouddpc/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 549a12b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.app.action.DEVICE_ADMIN_ENABLED:
+        bbd99f4 com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver filter cf0f496
+          Action: "android.app.action.ACTION_PROFILE_PROVISIONING_COMPLETE"
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.ACTION_LOCK_TASK_EXITING"
+          Action: "android.app.action.ACTION_PASSWORD_FAILED"
+      com.android.vending.INSTALL_REFERRER:
+        b5b151d com.google.android.apps.work.clouddpc/.receivers.InstallReferrerReceiver filter b3fc422
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.app.action.ACTION_PROFILE_PROVISIONING_COMPLETE:
+        bbd99f4 com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver filter cf0f496
+          Action: "android.app.action.ACTION_PROFILE_PROVISIONING_COMPLETE"
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.ACTION_LOCK_TASK_EXITING"
+          Action: "android.app.action.ACTION_PASSWORD_FAILED"
+      android.intent.action.LOCALE_CHANGED:
+        7a50392 com.google.android.apps.work.clouddpc/.base.receivers.LocaleChangedBroadcastReceiver filter 8399d35
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.checkin.CHECKIN_COMPLETE:
+        d453163 com.google.android.apps.work.clouddpc/.base.receivers.CheckinCompleteReceiver filter fcf536c
+          Action: "com.google.android.checkin.CHECKIN_COMPLETE"
+      com.google.firebase.messaging.RECEIVE_DIRECT_BOOT:
+        1146160 com.google.android.apps.work.clouddpc/com.google.firebase.messaging.directboot.FirebaseMessagingDirectBootReceiver filter 2046f9c
+          Action: "com.google.firebase.messaging.RECEIVE_DIRECT_BOOT"
+      android.app.action.ACTION_LOCK_TASK_EXITING:
+        bbd99f4 com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver filter cf0f496
+          Action: "android.app.action.ACTION_PROFILE_PROVISIONING_COMPLETE"
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.ACTION_LOCK_TASK_EXITING"
+          Action: "android.app.action.ACTION_PASSWORD_FAILED"
+      com.google.android.c2dm.intent.RECEIVE:
+        b98e619 com.google.android.apps.work.clouddpc/com.google.firebase.iid.FirebaseInstanceIdReceiver filter a67e30f
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        c973b5c com.google.android.apps.work.clouddpc/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b89b57a
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        68bc6de com.google.android.apps.work.clouddpc/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d390f21
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        dcf80bf com.google.android.apps.work.clouddpc/.base.receivers.TimeChangeReceiver filter c73d7b1
+          Action: "android.intent.action.TIME_SET"
+        68bc6de com.google.android.apps.work.clouddpc/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d390f21
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        d4e338c com.google.android.apps.work.clouddpc/.receivers.BootCompletedReceiver filter 8bea404
+          Action: "android.intent.action.BOOT_COMPLETED"
+        68bc6de com.google.android.apps.work.clouddpc/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d390f21
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.google.android.apps.work.clouddpc.UPDATE_PHENOTYPE_OVERRIDES:
+        848cad5 com.google.android.apps.work.clouddpc/.base.integ.phenotype.flags.PhenotypeOverrideReceiver filter c350eb3
+          Action: "com.google.android.apps.work.clouddpc.UPDATE_PHENOTYPE_OVERRIDES"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        5a27e65 com.google.android.apps.work.clouddpc/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 48d3da5
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        a8972ea com.google.android.apps.work.clouddpc/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 83f2507
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.app.action.ACTION_PASSWORD_FAILED:
+        bbd99f4 com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver filter cf0f496
+          Action: "android.app.action.ACTION_PROFILE_PROVISIONING_COMPLETE"
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.ACTION_LOCK_TASK_EXITING"
+          Action: "android.app.action.ACTION_PASSWORD_FAILED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        88569db com.google.android.apps.work.clouddpc/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 86daf46
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        170fc78 com.google.android.apps.work.clouddpc/.base.integ.phenotype.PhenotypeUpdatedReceiver filter d2bbe
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        6d83f51 com.google.android.apps.work.clouddpc/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBroadcastReceiver filter cba006e
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.android.vending.dpc.APPLICATION_RESTRICTIONS_PROXY:
+        703d3b6 com.google.android.apps.work.clouddpc/com.google.android.apps.work.dpcsupport.ManagedConfigurationsProxy filter d8761a0
+          Action: "com.android.vending.dpc.APPLICATION_RESTRICTIONS_PROXY"
+      android.app.action.DEVICE_ADMIN_SERVICE:
+        be6c8b7 com.google.android.apps.work.clouddpc/.vanilla.services.admin.CloudDeviceAdminService filter f4579d2 permission android.permission.BIND_DEVICE_ADMIN
+          Action: "android.app.action.DEVICE_ADMIN_SERVICE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.firebase.MESSAGING_EVENT:
+        6f56824 com.google.android.apps.work.clouddpc/.vanilla.services.gms.FcmClientService filter e767c5d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        c107f8d com.google.android.apps.work.clouddpc/com.google.firebase.messaging.FirebaseMessagingService filter 4238159
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      androidx.enterprise.feedback.action.APP_STATES:
+        df17542 com.google.android.apps.work.clouddpc/.base.appfeedbackchannel.impl.AppStatesService filter a951634
+          Action: "androidx.enterprise.feedback.action.APP_STATES"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        4953953 com.google.android.apps.work.clouddpc/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 61f0aa3
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Registered ContentProviders:
+  com.google.android.apps.work.clouddpc/androidx.work.impl.WorkManagerInitializer:
+    Provider{432e290 com.google.android.apps.work.clouddpc/androidx.work.impl.WorkManagerInitializer}
+  com.google.android.apps.work.clouddpc/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{6128789 com.google.android.apps.work.clouddpc/com.google.firebase.provider.FirebaseInitProvider}
+  com.google.android.apps.work.clouddpc/.base.dump.impl.DumpStateProvider:
+    Provider{825a38e com.google.android.apps.work.clouddpc/.base.dump.impl.DumpStateProvider}
+  com.google.android.apps.work.clouddpc/android.support.v4.content.FileProvider:
+    Provider{db017af com.google.android.apps.work.clouddpc/android.support.v4.content.FileProvider}
+  com.google.android.apps.work.clouddpc/.base.process.ProcessInitProvider:
+    Provider{b8b97bc com.google.android.apps.work.clouddpc/.base.process.ProcessInitProvider}
+  com.google.android.apps.work.clouddpc/.base.process.LockedProcessInitProvider:
+    Provider{a131345 com.google.android.apps.work.clouddpc/.base.process.LockedProcessInitProvider}
+  com.google.android.apps.work.clouddpc/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{65c6a9a com.google.android.apps.work.clouddpc/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+
+ContentProvider Authorities:
+  [com.google.android.apps.work.clouddpc.vanilla.services.firebaseinitprovider]:
+    Provider{6128789 com.google.android.apps.work.clouddpc/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{af07fcb com.google.android.apps.work.clouddpc}
+  [com.google.android.apps.work.clouddpc.base.util.network.fileprovider]:
+    Provider{db017af com.google.android.apps.work.clouddpc/android.support.v4.content.FileProvider}
+      applicationInfo=ApplicationInfo{af07fcb com.google.android.apps.work.clouddpc}
+  [com.google.android.apps.work.clouddpc.workmanager-init]:
+    Provider{432e290 com.google.android.apps.work.clouddpc/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{af07fcb com.google.android.apps.work.clouddpc}
+  [com.google.android.apps.work.clouddpc.base.process.init_locked]:
+    Provider{a131345 com.google.android.apps.work.clouddpc/.base.process.LockedProcessInitProvider}
+      applicationInfo=ApplicationInfo{af07fcb com.google.android.apps.work.clouddpc}
+  [com.google.android.apps.work.clouddpc.lifecycle-process]:
+    Provider{65c6a9a com.google.android.apps.work.clouddpc/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{af07fcb com.google.android.apps.work.clouddpc}
+  [com.google.android.apps.work.clouddpc.base.dump]:
+    Provider{825a38e com.google.android.apps.work.clouddpc/.base.dump.impl.DumpStateProvider}
+      applicationInfo=ApplicationInfo{af07fcb com.google.android.apps.work.clouddpc}
+  [com.google.android.apps.work.clouddpc.base.process.init]:
+    Provider{b8b97bc com.google.android.apps.work.clouddpc/.base.process.ProcessInitProvider}
+      applicationInfo=ApplicationInfo{af07fcb com.google.android.apps.work.clouddpc}
+
+Key Set Manager:
+  [com.google.android.apps.work.clouddpc]
+      Signing KeySets: 303
+
+Packages:
+  Package [com.google.android.apps.work.clouddpc] (15873a8):
+    userId=10159
+    pkg=Package{8e41399 com.google.android.apps.work.clouddpc}
+    codePath=/data/app/com.google.android.apps.work.clouddpc-sGuYTbY5S3c2TOrsLvvtdQ==
+    resourcePath=/data/app/com.google.android.apps.work.clouddpc-sGuYTbY5S3c2TOrsLvvtdQ==
+    legacyNativeLibraryDir=/data/app/com.google.android.apps.work.clouddpc-sGuYTbY5S3c2TOrsLvvtdQ==/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1317100 minSdk=21 targetSdk=29
+    versionName=13.17.10.v32
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{af07fcb com.google.android.apps.work.clouddpc}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.google.android.apps.work.clouddpc
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 08:13:23
+    firstInstallTime=2021-03-06 08:13:23
+    lastUpdateTime=2021-03-06 08:13:23
+    signatures=PackageSignatures{1d69ec1 version:3, signatures:[2393289], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    requested permissions:
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.INTERNET
+      android.permission.READ_PHONE_STATE
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.GET_ACCOUNTS
+      android.permission.USE_CREDENTIALS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.READ_SYNC_STATS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.REORDER_TASKS
+      android.permission.CAMERA
+      android.permission.NFC
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.KILL_BACKGROUND_PROCESSES
+      android.permission.WRITE_SYNC_SETTINGS
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=10536 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+
+Package Changes:
+  Sequence number=39
+  User 0:
+    seq=1, package=com.icecoldapps.screenshoteasy
+    seq=8, package=com.google.android.gms
+    seq=9, package=com.tellurionmobile.realmcraft
+    seq=11, package=com.google.android.play.games
+    seq=13, package=com.jamendoandoutly.mainpakage
+    seq=15, package=com.androvid
+    seq=17, package=com.rayark.Cytus.full
+    seq=19, package=eu.tsoml.graphicssettings
+    seq=21, package=com.pixlr.express
+    seq=23, package=com.delphicoder.flud
+    seq=25, package=tv.periscope.android
+    seq=27, package=com.anghami
+    seq=29, package=com.criticalforceentertainment.criticalops
+    seq=31, package=com.firsttouchgames.story
+    seq=33, package=com.ubercab
+    seq=35, package=org.jw.jwlibrary.mobile
+    seq=37, package=com.ea.game.nfs14_row
+    seq=38, package=com.google.android.apps.work.clouddpc
+
+
+Dexopt state:
+  [com.google.android.apps.work.clouddpc]
+    path: /data/app/com.google.android.apps.work.clouddpc-sGuYTbY5S3c2TOrsLvvtdQ==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.google.android.apps.work.clouddpc]
+     base.apk - 3062
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

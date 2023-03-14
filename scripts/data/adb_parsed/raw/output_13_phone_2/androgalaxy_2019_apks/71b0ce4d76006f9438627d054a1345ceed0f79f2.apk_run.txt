@@ -1,0 +1,187 @@
+Activity Resolver Table:
+  Schemes:
+      kmshack:
+        34da1eb com.kmshack.mute/.activity.ShortCutActivity filter 625bb48
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kmshack"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        b61a065 com.kmshack.mute/.activity.SettingsActivity filter a8e413a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.extra.ASSIST_CONTEXT:
+        34da1eb com.kmshack.mute/.activity.ShortCutActivity filter ed0dde1
+          Action: "android.intent.action.ASSIST"
+          Action: "android.intent.extra.ASSIST_CONTEXT"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.ASSIST:
+        34da1eb com.kmshack.mute/.activity.ShortCutActivity filter ed0dde1
+          Action: "android.intent.action.ASSIST"
+          Action: "android.intent.extra.ASSIST_CONTEXT"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.android.vending.INSTALL_REFERRER:
+        957bd92 com.kmshack.mute/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 70a6363
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        b46ab60 com.kmshack.mute/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 18e6819
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        f8f3706 com.kmshack.mute/.service.BootBroadcastReceiver filter 76271c7
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        a7f43f4 com.kmshack.mute/.widget.WidgetStyle1Provider filter 19c771d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+
+Service Resolver Table:
+  Schemes:
+      kmshack://mute:
+        4996cea com.kmshack.mute/.service.NotificationService filter b7edbdb
+          Action: "com.kmshack.mute.action.TOGGLE"
+          Scheme: "kmshack://mute"
+
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        95b1d8c com.kmshack.mute/.service.QuickSettingTileService filter 5146cd5 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.accessibilityservice.AccessibilityService:
+        9b020de com.kmshack.mute/.service.AccessibilityService filter 3b5d2bf permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.kmshack.mute/com.squareup.picasso.PicassoProvider:
+    Provider{dff20b5 com.kmshack.mute/com.squareup.picasso.PicassoProvider}
+  com.kmshack.mute/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{296434a com.kmshack.mute/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.kmshack.mute.firebaseinitprovider]:
+    Provider{296434a com.kmshack.mute/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{2fa9ebe com.kmshack.mute}
+  [com.kmshack.mute.com.squareup.picasso]:
+    Provider{dff20b5 com.kmshack.mute/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{607ab1f com.kmshack.mute}
+
+Key Set Manager:
+  [com.kmshack.mute]
+      Signing KeySets: 4603
+
+Packages:
+  Package [com.kmshack.mute] (617e6c):
+    userId=10292
+    pkg=Package{fbfb16d com.kmshack.mute}
+    codePath=/data/app/~~ihOZr1LgUgOT-sAJtalNvQ==/com.kmshack.mute-OMcZ5qtOeZWkVByP3LL1BQ==
+    resourcePath=/data/app/~~ihOZr1LgUgOT-sAJtalNvQ==/com.kmshack.mute-OMcZ5qtOeZWkVByP3LL1BQ==
+    legacyNativeLibraryDir=/data/app/~~ihOZr1LgUgOT-sAJtalNvQ==/com.kmshack.mute-OMcZ5qtOeZWkVByP3LL1BQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2030 minSdk=23 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2.0.3
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.kmshack.mute
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 08:51:12
+    lastUpdateTime=2022-11-30 08:51:13
+    packageSource=0
+    signatures=PackageSignatures{b316e33 version:2, signatures:[2d37bd25], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.FOREGROUND_SERVICE
+      android.permission.INTERNET
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.EXPAND_STATUS_BAR
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.EXPAND_STATUS_BAR: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=44102 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 08:51:13
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.kmshack.mute
+    com.google.android.apps.diagnosticstool:
+      com.kmshack.mute
+    com.google.android.settings.intelligence:
+      com.kmshack.mute
+    com.google.android.apps.accessibility.voiceaccess:
+      com.kmshack.mute
+  queryable via interaction:
+    User 0:
+      [com.android.location.fused,com.google.SSRestartDetector,com.android.settings,com.android.wallpaperbackup,com.google.android.settings.future.biometrics.faceenroll,com.android.server.telecom,android,com.android.inputdevices,com.android.providers.settings,com.android.keychain,com.android.qns,com.google.android.iwlan,com.android.localtransport,com.android.dynsystem]:
+        com.kmshack.mute
+      [com.google.android.gms,com.google.android.gsf]:
+        com.kmshack.mute
+  queryable via uses-library:
+
+Dexopt state:
+  [com.kmshack.mute]
+    path: /data/app/~~ihOZr1LgUgOT-sAJtalNvQ==/com.kmshack.mute-OMcZ5qtOeZWkVByP3LL1BQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:894292
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.kmshack.mute]
+     base.apk - 238

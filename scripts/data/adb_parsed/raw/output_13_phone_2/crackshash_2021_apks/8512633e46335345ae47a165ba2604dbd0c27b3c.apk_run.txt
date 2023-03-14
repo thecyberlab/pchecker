@@ -1,0 +1,255 @@
+Activity Resolver Table:
+  Schemes:
+      fbconnect:
+        918be98 video.mojo/com.facebook.CustomTabActivity filter b2ba6f1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.video.mojo": -1
+      genericidp:
+        dd9b2d6 video.mojo/com.google.firebase.auth.internal.GenericIdpActivity filter 1b28957
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        f272c44 video.mojo/com.google.firebase.auth.internal.RecaptchaActivity filter 3c2c12d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        139a00a video.mojo/.pages.splashscreen.SplashscreenActivity filter 608607b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      io.intercom.android.sdk.INTERCOM_PUSH_OPENED:
+        88cc8b0 video.mojo/io.intercom.android.sdk.push.IntercomPushBroadcastReceiver filter 1374329
+          Action: "io.intercom.android.sdk.INTERCOM_PUSH_OPENED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        657e8e5 video.mojo/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 2821fba
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        6962662 video.mojo/com.appsflyer.SingleInstallBroadcastReceiver filter f6c63f3
+          Action: "com.android.vending.INSTALL_REFERRER"
+      io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED:
+        88cc8b0 video.mojo/io.intercom.android.sdk.push.IntercomPushBroadcastReceiver filter 5b446ae
+          Action: "io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED"
+      com.google.android.c2dm.intent.RECEIVE:
+        3df4c4f video.mojo/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 36dbfdc
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        aee5e6b video.mojo/io.intercom.android.sdk.fcm.IntercomFcmMessengerService filter a04fdc8
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-400, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        aee5e6b video.mojo/io.intercom.android.sdk.fcm.IntercomFcmMessengerService filter a04fdc8
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-400, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        1927647 video.mojo/com.google.firebase.messaging.FirebaseMessagingService filter d502e74
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.auth.api.gms.service.START:
+        a232e61 video.mojo/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 9227d86
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+
+Registered ContentProviders:
+  video.mojo/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{6c98724 video.mojo/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  video.mojo/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{f532453 video.mojo/com.google.firebase.provider.FirebaseInitProvider}
+  video.mojo/com.facebook.internal.FacebookInitProvider:
+    Provider{6a9f190 video.mojo/com.facebook.internal.FacebookInitProvider}
+  video.mojo/.app.GenericFileProvider:
+    Provider{355ea89 video.mojo/.app.GenericFileProvider}
+  video.mojo/io.intercom.android.sdk.IntercomInitializeContentProvider:
+    Provider{800ca8e video.mojo/io.intercom.android.sdk.IntercomInitializeContentProvider}
+
+ContentProvider Authorities:
+  [video.mojo.lifecycle-process]:
+    Provider{6c98724 video.mojo/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{ad32bb2 video.mojo}
+  [video.mojo.IntercomInitializeContentProvider]:
+    Provider{800ca8e video.mojo/io.intercom.android.sdk.IntercomInitializeContentProvider}
+      applicationInfo=ApplicationInfo{e60703 video.mojo}
+  [video.mojo.provider]:
+    Provider{355ea89 video.mojo/.app.GenericFileProvider}
+      applicationInfo=ApplicationInfo{7661680 video.mojo}
+  [video.mojo.firebaseinitprovider]:
+    Provider{f532453 video.mojo/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{852c4b9 video.mojo}
+  [video.mojo.FacebookInitProvider]:
+    Provider{6a9f190 video.mojo/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{34450fe video.mojo}
+
+Key Set Manager:
+  [video.mojo]
+      Signing KeySets: 88
+
+Packages:
+  Package [video.mojo] (738105f):
+    userId=10285
+    pkg=Package{1c361c1 video.mojo}
+    codePath=/data/app/~~7RMBnNDiLY515Uglt3bdfw==/video.mojo-pv9Zic9hI-gl6x2A_YMWog==
+    resourcePath=/data/app/~~7RMBnNDiLY515Uglt3bdfw==/video.mojo-pv9Zic9hI-gl6x2A_YMWog==
+    legacyNativeLibraryDir=/data/app/~~7RMBnNDiLY515Uglt3bdfw==/video.mojo-pv9Zic9hI-gl6x2A_YMWog==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=3082 minSdk=26 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.2.16
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.SEND dat=content://*/... typ=video/* }]
+    dataDir=/data/user/0/video.mojo
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.test.runner
+      android.test.base
+      android.test.mock
+    usesLibraryFiles:
+      /system/framework/android.test.runner.jar
+      /system/framework/android.test.base.jar
+      /system/framework/android.test.mock.jar
+    timeStamp=2022-11-30 18:04:24
+    lastUpdateTime=2022-11-30 18:04:25
+    packageSource=0
+    signatures=PackageSignatures{43f9d66 version:2, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.VIBRATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=81113 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 18:04:25
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      video.mojo
+    com.google.android.apps.diagnosticstool:
+      video.mojo
+    com.google.android.settings.intelligence:
+      video.mojo
+    com.google.android.apps.accessibility.voiceaccess:
+      video.mojo
+    com.truecaller:
+      video.mojo
+    video.mojo:
+      [com.android.bluetooth,com.google.android.bluetooth.services]
+      com.google.android.apps.nbu.files
+      com.google.android.apps.messaging
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.apps.docs
+      com.google.android.gm
+      com.pandavideocompressor
+      com.truecaller
+      com.callapp.contacts
+      com.ninegag.android.app
+      com.fourchars.lmpfree
+      com.dv.adm
+    com.dv.adm:
+      video.mojo
+    com.zappcues.gamingmode:
+      video.mojo
+    com.jio.myjio:
+      video.mojo
+  queryable via interaction:
+    User 0:
+      [com.android.settings,com.google.android.iwlan,com.android.providers.settings,com.google.SSRestartDetector,com.android.qns,android,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem,com.android.wallpaperbackup,com.android.location.fused,com.android.server.telecom,com.android.inputdevices,com.android.localtransport,com.android.keychain]:
+        video.mojo
+      [com.google.android.gsf,com.google.android.gms]:
+        video.mojo
+      com.android.vending:
+        video.mojo
+  queryable via uses-library:
+
+Dexopt state:
+  [video.mojo]
+    path: /data/app/~~7RMBnNDiLY515Uglt3bdfw==/video.mojo-pv9Zic9hI-gl6x2A_YMWog==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:151954
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [video.mojo]
+     base.apk - 517

@@ -1,0 +1,330 @@
+Activity Resolver Table:
+  Schemes:
+      sky:
+        eac3ad me.skyvpn.app/me.dt.lib.ad.checkin.CheckinActivity filter 6236e2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sky"
+          Authority: "skyvpn.app": -1
+          Path: "PatternMatcher{LITERAL: /checkIn}"
+        91ceda9 me.skyvpn.app/.ui.activity.SkySplashActivity filter ea33acf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sky"
+          Authority: "skyvpn.app": -1
+          Path: "PatternMatcher{LITERAL: /splash}"
+        2854c5c me.skyvpn.app/.ui.activity.GetCreditsActivity filter b2dbb65
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sky"
+          Authority: "skyvpn.app": -1
+          Path: "PatternMatcher{LITERAL: /getCredits}"
+        6afc03a me.skyvpn.app/.ui.activity.InviteFirstActivity filter c42b4eb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sky"
+          Authority: "skyvpn.app": -1
+          Path: "PatternMatcher{LITERAL: /invite}"
+        448d248 me.skyvpn.app/me.dtvpn.sub.activity.SubsActivity filter ec3a8e1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sky"
+          Authority: "skyvpn.app": -1
+          Path: "PatternMatcher{LITERAL: /subs}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        91ceda9 me.skyvpn.app/.ui.activity.SkySplashActivity filter b70df2e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        b566a73 me.skyvpn.app/com.facebook.CustomTabActivity filter 2c8d30
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        6f95d78 me.skyvpn.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 5778c51
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        798abea me.skyvpn.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 15eaedb
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        84d9cb6 me.skyvpn.app/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 98f5db7
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        d3ccaf4 me.skyvpn.app/me.dt.lib.receiver.ConnectionChangeReceiver filter 570f21d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        9d5a260 me.skyvpn.app/me.dingtone.app.vpn.receiver.NetworkChangeReceiver filter daf9319
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        e96fde me.skyvpn.app/com.vungle.warren.NetworkProviderReceiver filter 72e75bf
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Category: "android.intent.category.DEFAULT"
+        322d924 me.skyvpn.app/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 9d79c8d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        84d9cb6 me.skyvpn.app/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 98f5db7
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        a4a1c92 me.skyvpn.app/com.adjust.sdk.AdjustReferrerReceiver filter 12ed663
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        762848c me.skyvpn.app/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 99d47d5
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      coupon.checkin.reminder:
+        5c9a606 me.skyvpn.app/me.dt.lib.ad.checkin.CheckinRemindReceiver filter 615b4c7
+          Action: "coupon.checkin.reminder"
+      android.intent.action.BATTERY_LOW:
+        6f95d78 me.skyvpn.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 5778c51
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        48ece42 me.skyvpn.app/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cb21e53
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        48ece42 me.skyvpn.app/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cb21e53
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        48ece42 me.skyvpn.app/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cb21e53
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        798abea me.skyvpn.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 15eaedb
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        4466390 me.skyvpn.app/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 5ae7489
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.net.VpnService:
+        62be39a me.skyvpn.app/me.dingtone.app.vpn.vpn.BaseConnectService filter 32504cb permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+      com.google.firebase.MESSAGING_EVENT:
+        dbf8c8e me.skyvpn.app/me.dt.lib.service.SkyFirebaseMessagingService filter b364caf
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        e3b14a8 me.skyvpn.app/com.google.firebase.messaging.FirebaseMessagingService filter 1632bc1
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      me.dingtone.app.vpn.vpn.IVpnStateService:
+        fd628bc me.skyvpn.app/me.dingtone.app.vpn.vpn.VpnStateService filter c00d045
+          Action: "me.dingtone.app.vpn.vpn.IVpnStateService"
+
+Domain verification status:
+
+Permissions:
+  Permission [skyvpn.permissions] (65fe7ef):
+    sourcePackage=me.skyvpn.app
+    uid=10392 gids=[] type=0 prot=signature
+    perm=PermissionInfo{15ac2fc skyvpn.permissions}
+
+Registered ContentProviders:
+  me.skyvpn.app/androidx.work.impl.WorkManagerInitializer:
+    Provider{6d9a7da me.skyvpn.app/androidx.work.impl.WorkManagerInitializer}
+  me.skyvpn.app/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{86d140b me.skyvpn.app/com.google.firebase.provider.FirebaseInitProvider}
+  me.skyvpn.app/com.applovin.sdk.AppLovinInitProvider:
+    Provider{b9ded01 me.skyvpn.app/com.applovin.sdk.AppLovinInitProvider}
+  me.skyvpn.app/me.vd.lib.file.manager.FileManagerFileProvider:
+    Provider{3a67a6 me.skyvpn.app/me.vd.lib.file.manager.FileManagerFileProvider}
+  me.skyvpn.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{4d6e5e7 me.skyvpn.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  me.skyvpn.app/com.vungle.warren.utility.VungleProvider:
+    Provider{1367594 me.skyvpn.app/com.vungle.warren.utility.VungleProvider}
+  me.skyvpn.app/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{7b583d me.skyvpn.app/com.google.android.gms.ads.MobileAdsInitProvider}
+  me.skyvpn.app/androidx.core.content.FileProvider:
+    Provider{5955832 me.skyvpn.app/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [me.skyvpn.app.lifecycle-process]:
+    Provider{4d6e5e7 me.skyvpn.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{a21f983 me.skyvpn.app}
+  [me.skyvpn.app.mobileadsinitprovider]:
+    Provider{7b583d me.skyvpn.app/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{6ca3b39 me.skyvpn.app}
+  [me.skyvpn.app.workmanager-init]:
+    Provider{6d9a7da me.skyvpn.app/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{93cc57e me.skyvpn.app}
+  [me.skyvpn.app.vungle-provider]:
+    Provider{1367594 me.skyvpn.app/com.vungle.warren.utility.VungleProvider}
+      applicationInfo=ApplicationInfo{80aadf me.skyvpn.app}
+  [me.skyvpn.app.firebaseinitprovider]:
+    Provider{86d140b me.skyvpn.app/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{252e32c me.skyvpn.app}
+  [me.skyvpn.app.FileProvider]:
+    Provider{5955832 me.skyvpn.app/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{e8a51f5 me.skyvpn.app}
+  [me.skyvpn.app.applovininitprovider]:
+    Provider{b9ded01 me.skyvpn.app/com.applovin.sdk.AppLovinInitProvider}
+      applicationInfo=ApplicationInfo{e5bbb8a me.skyvpn.app}
+
+Key Set Manager:
+  [me.skyvpn.app]
+      Signing KeySets: 5699
+
+Packages:
+  Package [me.skyvpn.app] (6ef15fb):
+    userId=10392
+    pkg=Package{7a10618 me.skyvpn.app}
+    codePath=/data/app/~~ysnIkHbBtZaLPnnI0MiDAg==/me.skyvpn.app-CQgVtF3GmBm8k6UkwAwWaQ==
+    resourcePath=/data/app/~~ysnIkHbBtZaLPnnI0MiDAg==/me.skyvpn.app-CQgVtF3GmBm8k6UkwAwWaQ==
+    legacyNativeLibraryDir=/data/app/~~ysnIkHbBtZaLPnnI0MiDAg==/me.skyvpn.app-CQgVtF3GmBm8k6UkwAwWaQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2270 minSdk=19 targetSdk=30
+    minExtensionVersions=[]
+    versionName=2.2.7
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/me.skyvpn.app
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 18:11:56
+    lastUpdateTime=2022-11-30 18:11:57
+    packageSource=0
+    signatures=PackageSignatures{dc20656 version:2, signatures:[1f09083b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      skyvpn.permissions: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      com.android.vending.BILLING
+      skyvpn.permissions
+      android.permission.FOREGROUND_SERVICE
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.VIBRATE
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WRITE_INTERNAL_STORAGE
+      android.permission.READ_INTERNAL_STORAGE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.intent.action.BOOT_COMPLETED
+      android.permission.WRITE_SETTINGS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      skyvpn.permissions: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=84667 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 18:11:57
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      me.skyvpn.app
+    com.google.android.apps.diagnosticstool:
+      me.skyvpn.app
+    com.google.android.settings.intelligence:
+      me.skyvpn.app
+    com.google.android.youtube:
+      me.skyvpn.app
+    com.google.android.contacts:
+      me.skyvpn.app
+    com.google.android.apps.accessibility.voiceaccess:
+      me.skyvpn.app
+    com.google.android.gm:
+      me.skyvpn.app
+    com.truecaller:
+      me.skyvpn.app
+    com.dv.adm:
+      me.skyvpn.app
+    com.zappcues.gamingmode:
+      me.skyvpn.app
+    me.skyvpn.app:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      ru.iptvremote.android.iptv.pro
+      com.dv.adm
+      com.utorrent.client.pro
+    com.jio.myjio:
+      me.skyvpn.app
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [me.skyvpn.app]
+    path: /data/app/~~ysnIkHbBtZaLPnnI0MiDAg==/me.skyvpn.app-CQgVtF3GmBm8k6UkwAwWaQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:603872
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [me.skyvpn.app]
+     base.apk - 1360

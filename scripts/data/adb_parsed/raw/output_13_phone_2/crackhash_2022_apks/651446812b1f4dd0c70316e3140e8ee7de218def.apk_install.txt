@@ -1,0 +1,505 @@
+Activity Resolver Table:
+  Schemes:
+      jioplay:
+        19523 com.jio.jioplay.tv/com.jio.media.tv.ui.permission_onboarding.PermissionActivity filter e5f4fd9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "jioplay"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        19523 com.jio.jioplay.tv/com.jio.media.tv.ui.permission_onboarding.PermissionActivity filter 82f5a20
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+      com.madme.ACTION_FCM_CLICK:
+        3bf4d9e com.jio.jioplay.tv/com.madme.mobile.sdk.activity.MadmeCmClickActivity filter 84e607f
+          Action: "com.madme.ACTION_FCM_CLICK"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        81a62dd com.jio.jioplay.tv/.activities.HomeActivity filter 1499e52
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        3980c7c com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.PackageRemovalReceiver filter f734905
+          Action: "android.intent.action.PACKAGE_REMOVED"
+          Scheme: "package"
+        1a36f14 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.DailyTaskReceiver filter 35eadb2
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+        1a36f14 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.DailyTaskReceiver filter 1e86103
+          Action: "android.intent.action.PACKAGE_DATA_CLEARED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      com.jio.jioplay.tv.madme.ACTION_NOTIFICATION_CLICK:
+        1358cac com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.NotificationActionReceiver filter db17d75
+          Action: "com.jio.jioplay.tv.madme.ACTION_NOTIFICATION_CLICK"
+          Action: "com.jio.jioplay.tv.madme.ACTION_NOTIFICATION_REMOVAL"
+          Action: "com.jio.jioplay.tv.madme.ACTION_INTERMEDIATE_NOTIFICATION_CLICK"
+          Action: "com.jio.jioplay.tv.madme.ACTION_INTERMEDIATE_NOTIFICATION_REMOVAL"
+      com.jio.jioplay.tv.madme.ACTION_AD_REMINDER:
+        85a4d38 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.AdReminderReceiver filter 34a2111
+          Action: "com.jio.jioplay.tv.madme.ACTION_AD_REMINDER"
+      android.intent.action.BATTERY_OKAY:
+        f0ac544 com.jio.jioplay.tv/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 648e62d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        c97276 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.adtriggers.PowerConnectionAdTrigger filter 3e9e077
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+        9d363d6 com.jio.jioplay.tv/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4f0e657
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.google.android.gms.auth.api.phone.SMS_RETRIEVED:
+        bfff84c com.jio.jioplay.tv/com.jio.jiomediaauth.managers.recievers.SMSListener filter 6c1095
+          Action: "com.google.android.gms.auth.api.phone.SMS_RETRIEVED"
+      android.intent.action.PHONE_STATE:
+        bd16526 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.EOCTrigger filter 65dd567
+          Action: "android.intent.action.NEW_OUTGOING_CALL"
+          Action: "android.intent.action.PHONE_STATE"
+        1a36f14 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.DailyTaskReceiver filter be693bd
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.intent.action.PHONE_STATE"
+          Action: "android.intent.action.NEW_OUTGOING_CALL"
+          Action: "android.telephony.action.CARRIER_CONFIG_CHANGED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        6f9e762 com.jio.jioplay.tv/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4b390f3
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        6524002 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.adtriggers.WiFiAdTrigger filter 4120d13
+          Action: "android.net.wifi.STATE_CHANGE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        ba85a4e com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.adtriggers.RoamingAdTrigger filter 886676f
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        1a36f14 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.DailyTaskReceiver filter be693bd
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.intent.action.PHONE_STATE"
+          Action: "android.intent.action.NEW_OUTGOING_CALL"
+          Action: "android.telephony.action.CARRIER_CONFIG_CHANGED"
+        590f1b0 com.jio.jioplay.tv/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 67ab829
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.telephony.action.CARRIER_CONFIG_CHANGED:
+        1a36f14 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.DailyTaskReceiver filter be693bd
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.intent.action.PHONE_STATE"
+          Action: "android.intent.action.NEW_OUTGOING_CALL"
+          Action: "android.telephony.action.CARRIER_CONFIG_CHANGED"
+      android.intent.action.AIRPLANE_MODE:
+        304e4 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.adtriggers.AirplaneModeChangedAdTrigger filter 91ebd4d
+          Action: "android.intent.action.AIRPLANE_MODE"
+      com.jio.jioplay.tv.madme.ACTION_INTERMEDIATE_NOTIFICATION_CLICK:
+        1358cac com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.NotificationActionReceiver filter db17d75
+          Action: "com.jio.jioplay.tv.madme.ACTION_NOTIFICATION_CLICK"
+          Action: "com.jio.jioplay.tv.madme.ACTION_NOTIFICATION_REMOVAL"
+          Action: "com.jio.jioplay.tv.madme.ACTION_INTERMEDIATE_NOTIFICATION_CLICK"
+          Action: "com.jio.jioplay.tv.madme.ACTION_INTERMEDIATE_NOTIFICATION_REMOVAL"
+      android.intent.action.DEVICE_STORAGE_OK:
+        6f9e762 com.jio.jioplay.tv/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4b390f3
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.wifi.STATE_CHANGE:
+        6524002 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.adtriggers.WiFiAdTrigger filter 4120d13
+          Action: "android.net.wifi.STATE_CHANGE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.google.android.c2dm.intent.RECEIVE:
+        34ea5aa com.jio.jioplay.tv/com.google.firebase.iid.FirebaseInstanceIdReceiver filter a72859b
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        f0ac544 com.jio.jioplay.tv/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 648e62d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        f1317ae com.jio.jioplay.tv/androidx.work.impl.background.systemalarm.RescheduleReceiver filter aec494f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        f1317ae com.jio.jioplay.tv/androidx.work.impl.background.systemalarm.RescheduleReceiver filter aec494f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        8d26880 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.BootReceiver filter 6daeb9
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        f1317ae com.jio.jioplay.tv/androidx.work.impl.background.systemalarm.RescheduleReceiver filter aec494f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.USER_PRESENT:
+        333cd5a com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.UnlockReceiver filter 33c0b8b
+          Action: "android.intent.action.USER_PRESENT"
+      com.jio.jioplay.tv.madme.ACTION_NOTIFICATION_REMOVAL:
+        1358cac com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.NotificationActionReceiver filter db17d75
+          Action: "com.jio.jioplay.tv.madme.ACTION_NOTIFICATION_CLICK"
+          Action: "com.jio.jioplay.tv.madme.ACTION_NOTIFICATION_REMOVAL"
+          Action: "com.jio.jioplay.tv.madme.ACTION_INTERMEDIATE_NOTIFICATION_CLICK"
+          Action: "com.jio.jioplay.tv.madme.ACTION_INTERMEDIATE_NOTIFICATION_REMOVAL"
+      com.madme.idsns.U3:
+        64a410a com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.IdSnsReceiver filter 52aed7b
+          Action: "com.madme.idsns.U3"
+          Action: "com.madme.idsns.U4"
+      com.madme.idsns.U4:
+        64a410a com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.IdSnsReceiver filter 52aed7b
+          Action: "com.madme.idsns.U3"
+          Action: "com.madme.idsns.U4"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        c97276 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.adtriggers.PowerConnectionAdTrigger filter 3e9e077
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+        9d363d6 com.jio.jioplay.tv/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4f0e657
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.provider.Telephony.SMS_RECEIVED:
+        4977468 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.MadmeSmsTrigger filter a647081
+          Action: "android.provider.Telephony.SMS_RECEIVED"
+      com.jio.jioplay.tv.madme.ACTION_INTERMEDIATE_NOTIFICATION_REMOVAL:
+        1358cac com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.NotificationActionReceiver filter db17d75
+          Action: "com.jio.jioplay.tv.madme.ACTION_NOTIFICATION_CLICK"
+          Action: "com.jio.jioplay.tv.madme.ACTION_NOTIFICATION_REMOVAL"
+          Action: "com.jio.jioplay.tv.madme.ACTION_INTERMEDIATE_NOTIFICATION_CLICK"
+          Action: "com.jio.jioplay.tv.madme.ACTION_INTERMEDIATE_NOTIFICATION_REMOVAL"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        70b78dc com.jio.jioplay.tv/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 4ddade5
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.net.wifi.SCAN_RESULTS:
+        b5d8b50 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.adtriggers.WiFiAvailableTrigger filter 726e149
+          Action: "android.net.wifi.SCAN_RESULTS"
+      android.intent.action.NEW_OUTGOING_CALL:
+        bd16526 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.EOCTrigger filter 65dd567
+          Action: "android.intent.action.NEW_OUTGOING_CALL"
+          Action: "android.intent.action.PHONE_STATE"
+        1a36f14 com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.DailyTaskReceiver filter be693bd
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.intent.action.PHONE_STATE"
+          Action: "android.intent.action.NEW_OUTGOING_CALL"
+          Action: "android.telephony.action.CARRIER_CONFIG_CHANGED"
+      com.jio.jioplay.tv.madme.ACTION_AD_ALARM:
+        605f2fe com.jio.jioplay.tv/com.madme.mobile.sdk.broadcast.AdAlarmReceiver filter f060a5f
+          Action: "com.jio.jioplay.tv.madme.ACTION_AD_ALARM"
+      android.intent.action.MEDIA_BUTTON:
+        fc4c798 com.jio.jioplay.tv/com.jio.media.androidsdk.player.remoteControlClient.MusicIntentReceiver filter 3297bf1
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        c4546c8 com.jio.jioplay.tv/.FireBaseMessageService filter bc04361
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        36a6e86 com.jio.jioplay.tv/com.google.firebase.messaging.FirebaseMessagingService filter 3a21347
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.clevertap.BG_EVENT:
+        dcc0774 com.jio.jioplay.tv/com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService filter 1dcb49d permission android.permission.BIND_JOB_SERVICE
+          Action: "com.clevertap.BG_EVENT"
+      com.clevertap.PT_PUSH_EVENT:
+        17d00ba com.jio.jioplay.tv/com.clevertap.pushtemplates.PTNotificationIntentService filter 24e2b6b
+          Action: "com.clevertap.PT_PUSH_EVENT"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.jio.media.jiosaavnjiotvsdk.INTERNAL_CLASS_PROTECTION] (8ab5952):
+    sourcePackage=com.jio.jioplay.tv
+    uid=10435 gids=[] type=0 prot=signature
+    perm=PermissionInfo{d983423 com.jio.media.jiosaavnjiotvsdk.INTERNAL_CLASS_PROTECTION}
+
+Registered ContentProviders:
+  com.jio.jioplay.tv/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{acc86d9 com.jio.jioplay.tv/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.jio.jioplay.tv/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{f01b89e com.jio.jioplay.tv/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.jio.jioplay.tv/androidx.core.content.FileProvider:
+    Provider{22fef7f com.jio.jioplay.tv/androidx.core.content.FileProvider}
+  com.jio.jioplay.tv/androidx.work.impl.WorkManagerInitializer:
+    Provider{49bdb4c com.jio.jioplay.tv/androidx.work.impl.WorkManagerInitializer}
+  com.jio.jioplay.tv/com.madme.mobile.sdk.provider.MadmeFileProvider:
+    Provider{bf5b795 com.jio.jioplay.tv/com.madme.mobile.sdk.provider.MadmeFileProvider}
+  com.jio.jioplay.tv/.provider.RecentSuggestionsProvider:
+    Provider{7ccc0aa com.jio.jioplay.tv/.provider.RecentSuggestionsProvider}
+  com.jio.jioplay.tv/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{2516038 com.jio.jioplay.tv/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.jio.jioplay.tv/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{b473811 com.jio.jioplay.tv/com.google.firebase.provider.FirebaseInitProvider}
+  com.jio.jioplay.tv/com.madme.mobile.sdk.provider.IdSnsProvider:
+    Provider{e8e3d76 com.jio.jioplay.tv/com.madme.mobile.sdk.provider.IdSnsProvider}
+  com.jio.jioplay.tv/com.madme.mobile.sdk.MadmeInitProvider:
+    Provider{88e4f77 com.jio.jioplay.tv/com.madme.mobile.sdk.MadmeInitProvider}
+  com.jio.jioplay.tv/androidx.startup.InitializationProvider:
+    Provider{dd847e4 com.jio.jioplay.tv/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.jio.jioplay.tv.lifecycle-process]:
+    Provider{acc86d9 com.jio.jioplay.tv/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{956444d com.jio.jioplay.tv}
+  [com.jio.jioplay.tv.firebaseinitprovider]:
+    Provider{b473811 com.jio.jioplay.tv/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{318bb02 com.jio.jioplay.tv}
+  [com.jio.jioplay.tv.madme.init]:
+    Provider{88e4f77 com.jio.jioplay.tv/com.madme.mobile.sdk.MadmeInitProvider}
+      applicationInfo=ApplicationInfo{e6c13 com.jio.jioplay.tv}
+  [com.jio.jioplay.tv.mobileadsinitprovider]:
+    Provider{f01b89e com.jio.jioplay.tv/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{4c3fe50 com.jio.jioplay.tv}
+  [com.jio.jioplay.tv.workmanager-init]:
+    Provider{49bdb4c com.jio.jioplay.tv/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{cfd849 com.jio.jioplay.tv}
+  [com.jio.jioplay.tv.provider]:
+    Provider{22fef7f com.jio.jioplay.tv/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{ddb854e com.jio.jioplay.tv}
+  [com.jio.jioplay.tv.madme.files]:
+    Provider{bf5b795 com.jio.jioplay.tv/com.madme.mobile.sdk.provider.MadmeFileProvider}
+      applicationInfo=ApplicationInfo{872af7c com.jio.jioplay.tv}
+  [com.jio.jioplay.tv.madme.idsns]:
+    Provider{e8e3d76 com.jio.jioplay.tv/com.madme.mobile.sdk.provider.IdSnsProvider}
+      applicationInfo=ApplicationInfo{34b005 com.jio.jioplay.tv}
+  [com.jio.jioplay.tv.provider.RecentSuggestionsProvider]:
+    Provider{7ccc0aa com.jio.jioplay.tv/.provider.RecentSuggestionsProvider}
+      applicationInfo=ApplicationInfo{ceea85a com.jio.jioplay.tv}
+  [com.jio.jioplay.tv.androidx-startup]:
+    Provider{dd847e4 com.jio.jioplay.tv/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{8854a8b com.jio.jioplay.tv}
+  [com.jio.jioplay.tv.firebaseperfprovider]:
+    Provider{2516038 com.jio.jioplay.tv/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{ff94768 com.jio.jioplay.tv}
+
+Key Set Manager:
+  [com.jio.jioplay.tv]
+      Signing KeySets: 5663
+
+Packages:
+  Package [com.jio.jioplay.tv] (3554781):
+    userId=10435
+    pkg=Package{5def026 com.jio.jioplay.tv}
+    codePath=/data/app/~~C0PmIMS_NS4yXKByAioonw==/com.jio.jioplay.tv-DbpLjkmFj0HLK86Sg3QT1A==
+    resourcePath=/data/app/~~C0PmIMS_NS4yXKByAioonw==/com.jio.jioplay.tv-DbpLjkmFj0HLK86Sg3QT1A==
+    legacyNativeLibraryDir=/data/app/~~C0PmIMS_NS4yXKByAioonw==/com.jio.jioplay.tv-DbpLjkmFj0HLK86Sg3QT1A==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=273 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=7.0.3
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.MAIN }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW dat=http:/... }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=com.madme.idsns.U4 }]
+    dataDir=/data/user/0/com.jio.jioplay.tv
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 13:28:34
+    lastUpdateTime=2022-11-30 13:28:35
+    packageSource=0
+    signatures=PackageSignatures{ccf7214 version:2, signatures:[89fa6125], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.jio.media.jiosaavnjiotvsdk.INTERNAL_CLASS_PROTECTION: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.BLUETOOTH
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.WAKE_LOCK
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.CAMERA
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.RECORD_AUDIO
+      android.permission.READ_CONTACTS
+      android.permission.CALL_PHONE
+      com.google.android.gms.permission.AD_ID
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_INTERNAL_STORAGE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.VIBRATE
+      com.jio.media.jiosaavnjiotvsdk.INTERNAL_CLASS_PROTECTION
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.jio.media.jiosaavnjiotvsdk.INTERNAL_CLASS_PROTECTION: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=48402 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 13:28:35
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false
+        android.permission.READ_PHONE_STATE: granted=false
+        android.permission.CALL_PHONE: granted=false
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false
+        android.permission.READ_CONTACTS: granted=false
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.jio.jioplay.tv
+    com.google.android.apps.diagnosticstool:
+      com.jio.jioplay.tv
+    com.google.android.settings.intelligence:
+      com.jio.jioplay.tv
+    com.google.android.GoogleCamera:
+      com.jio.jioplay.tv
+    com.google.android.apps.accessibility.voiceaccess:
+      com.jio.jioplay.tv
+    com.jio.myjio:
+      com.jio.jioplay.tv
+    com.jio.jioplay.tv:
+      com.google.android.documentsui
+      com.verizon.services
+      com.google.android.projection.gearhead
+      com.google.android.apps.nbu.files
+      com.google.android.apps.recorder
+      com.google.android.apps.tips
+      com.google.android.wfcactivation
+      com.google.android.tetheringentitlement
+      com.google.android.apps.messaging
+      com.google.android.apps.safetyhub
+      com.google.android.carrierlocation
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.restore
+      com.google.android.googlequicksearchbox
+      com.google.android.dialer
+      com.google.android.as
+      com.google.android.settings.intelligence
+      com.google.android.GoogleCamera
+      com.google.android.setupwizard
+      com.google.android.calculator
+      com.android.chrome
+      com.google.android.deskclock
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.calendar
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.marvin.talkback
+      com.google.android.contacts
+      com.google.android.apps.docs
+      com.google.android.videos
+      com.google.android.apps.accessibility.voiceaccess
+      com.google.android.inputmethod.latin
+      com.google.android.apps.youtube.music
+      com.google.android.gm
+      [app id 10195 not installed]
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.shannon.rcsservice
+      com.google.android.pixel.setupwizard
+      com.google.android.cellbroadcastreceiver
+      net.eagin.software.android.dejaloYa
+      radiotime.player
+      org.malwarebytes.antimalware
+      com.kizeetech.newankaradesigns
+      com.zoho.assist.agent
+      com.mcdonalds.app
+      com.catdaddy.cat22
+      com.lyrebirdstudio.photo_editor_pro
+      com.pikoo.app
+      com.mikewheelermedia
+      com.frankthebrilliant.app
+      com.brit.swift.minimal
+      com.fitapp
+      com.brit.swiftdark.substratum
+      com.subsplashconsulting.s_NKSKD3
+      deepfinity.android
+      com.king.blossomblast
+      com.bitsmedia.android.muslimpro
+      com.yahoo.mobile.client.android.weather
+      com.simplehabit.simplehabitapp
+      com.ludia.jurassicworld
+      com.accuweather.android
+      com.cooyostudio.marble.blast
+      com.jio.myjio
+      com.pranavpandey.rotation
+      com.nikitadev.irregularverbspro
+      com.Wifi.lte5g.lte4g.lte3g.speedtest.Internetspeed
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+      com.unvoid.borealis
+      com.osheden.azulox
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.jio.jioplay.tv]
+    path: /data/app/~~C0PmIMS_NS4yXKByAioonw==/com.jio.jioplay.tv-DbpLjkmFj0HLK86Sg3QT1A==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1501593
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.jio.jioplay.tv]
+     base.apk - 1122

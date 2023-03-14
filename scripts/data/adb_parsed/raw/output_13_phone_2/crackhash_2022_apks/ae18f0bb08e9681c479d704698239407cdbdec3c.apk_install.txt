@@ -1,0 +1,431 @@
+Activity Resolver Table:
+  Schemes:
+      fb273606856749643:
+        6983f35 com.fiton.android/com.facebook.CustomTabActivity filter a133fca
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb273606856749643"
+      stripesdk:
+        58bfe22 com.fiton.android/com.stripe.android.payments.StripeBrowserLauncherActivity filter 455c0b3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "stripesdk"
+          Authority: "payment_return_url": -1
+          Path: "PatternMatcher{LITERAL: /com.fiton.android}"
+      http:
+        bf4c458 com.fiton.android/.ui.invite.DeepLinkInvitePopupActivity filter a3b9a17
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "ablink.messages.fitonapp.com": -1
+          Authority: "ablink.newsletters.fitonapp.com": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+      fiton:
+        bf4c458 com.fiton.android/.ui.invite.DeepLinkInvitePopupActivity filter 18e1fed
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fiton"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+      https:
+        bf4c458 com.fiton.android/.ui.invite.DeepLinkInvitePopupActivity filter f1a99b1
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "fiton.app": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+        bf4c458 com.fiton.android/.ui.invite.DeepLinkInvitePopupActivity filter 90d8e96
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "app-staging.fitonapp.com": -1
+          Authority: "app.fitonapp.com": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+        bf4c458 com.fiton.android/.ui.invite.DeepLinkInvitePopupActivity filter 91dce04
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "fiton.onelink.me": -1
+          Path: "PatternMatcher{PREFIX: /XB1h}"
+          AutoVerify=true
+      fbconnect:
+        6983f35 com.fiton.android/com.facebook.CustomTabActivity filter 7dde53b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.fiton.android": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        665061f com.fiton.android/.ui.login.SplashShowActivity filter bdb3d6c
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        665061f com.fiton.android/.ui.login.SplashShowActivity filter bdb3d6c
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.twitter.sdk.android.tweetcomposer.UPLOAD_FAILURE:
+        6abc670 com.fiton.android/.ui.inprogress.TwitterShareReceiver filter 839cde9
+          Action: "com.twitter.sdk.android.tweetcomposer.UPLOAD_SUCCESS"
+          Action: "com.twitter.sdk.android.tweetcomposer.UPLOAD_FAILURE"
+          Action: "com.twitter.sdk.android.tweetcomposer.TWEET_COMPOSE_CANCEL"
+      android.intent.action.BATTERY_OKAY:
+        e12c034 com.fiton.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c3de5d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        9e4c946 com.fiton.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter de13707
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        a1433d2 com.fiton.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 8d03ca3
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        c35aba0 com.fiton.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter ae50359
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        7e32f7a com.fiton.android/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 68e932b
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        a1433d2 com.fiton.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 8d03ca3
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.samsung.accessory.action.REGISTER_AGENT:
+        88fda6e com.fiton.android/com.samsung.android.sdk.accessory.RegisterUponInstallReceiver filter 8e1b50f
+          Action: "com.samsung.accessory.action.REGISTER_AGENT"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        9a94eb8 com.fiton.android/androidx.profileinstaller.ProfileInstallReceiver filter d62c491
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        9cdf388 com.fiton.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 145121
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        e12c034 com.fiton.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c3de5d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        a5dbb1e com.fiton.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1fffff
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        a5dbb1e com.fiton.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1fffff
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        a5dbb1e com.fiton.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1fffff
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.twitter.sdk.android.tweetcomposer.TWEET_COMPOSE_CANCEL:
+        6abc670 com.fiton.android/.ui.inprogress.TwitterShareReceiver filter 839cde9
+          Action: "com.twitter.sdk.android.tweetcomposer.UPLOAD_SUCCESS"
+          Action: "com.twitter.sdk.android.tweetcomposer.UPLOAD_FAILURE"
+          Action: "com.twitter.sdk.android.tweetcomposer.TWEET_COMPOSE_CANCEL"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        9e4c946 com.fiton.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter de13707
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.twitter.sdk.android.tweetcomposer.UPLOAD_SUCCESS:
+        6abc670 com.fiton.android/.ui.inprogress.TwitterShareReceiver filter 839cde9
+          Action: "com.twitter.sdk.android.tweetcomposer.UPLOAD_SUCCESS"
+          Action: "com.twitter.sdk.android.tweetcomposer.UPLOAD_FAILURE"
+          Action: "com.twitter.sdk.android.tweetcomposer.TWEET_COMPOSE_CANCEL"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        d266b2a com.fiton.android/androidx.work.impl.diagnostics.DiagnosticsReceiver filter a7e9d1b
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED:
+        5ded99c com.fiton.android/com.samsung.android.sdk.accessory.ServiceConnectionIndicationBroadcastReceiver filter d85fa5
+          Action: "com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        bd9e1cc com.fiton.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter e597c15
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        4180ff6 com.fiton.android/.feature.pushbraze.MAppboyFirebaseMessagingService filter 15feff7
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        1009e64 com.fiton.android/com.google.firebase.messaging.FirebaseMessagingService filter 2de18cd
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.fiton.android:
+    ID: 05a6430c-877e-40d0-a45a-c7c8ebb7e458
+    Signatures: [3B:61:C2:A8:2A:FF:9F:76:52:FF:E0:B0:4B:E3:C8:F2:48:B5:E1:AA:70:63:F1:A3:84:6F:0C:F5:C7:78:62:8A]
+    Domain verification state:
+      app-staging.fitonapp.com: none
+      ablink.newsletters.fitonapp.com: none
+      ablink.messages.fitonapp.com: none
+      app.fitonapp.com: none
+      fiton.onelink.me: none
+      fiton.app: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          app-staging.fitonapp.com
+          ablink.newsletters.fitonapp.com
+          ablink.messages.fitonapp.com
+          app.fitonapp.com
+          fiton.onelink.me
+          fiton.app
+
+Registered ContentProviders:
+  com.fiton.android/com.apptentive.android.sdk.debug.ApptentiveAttachmentFileProvider:
+    Provider{f7cc076 com.fiton.android/com.apptentive.android.sdk.debug.ApptentiveAttachmentFileProvider}
+  com.fiton.android/androidx.core.content.FileProvider:
+    Provider{c061677 com.fiton.android/androidx.core.content.FileProvider}
+  com.fiton.android/com.facebook.FacebookContentProvider:
+    Provider{7a02e4 com.fiton.android/com.facebook.FacebookContentProvider}
+  com.fiton.android/androidx.work.impl.WorkManagerInitializer:
+    Provider{12ce34d com.fiton.android/androidx.work.impl.WorkManagerInitializer}
+  com.fiton.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{7ec6e02 com.fiton.android/com.google.firebase.provider.FirebaseInitProvider}
+  com.fiton.android/com.facebook.internal.FacebookInitProvider:
+    Provider{bba313 com.fiton.android/com.facebook.internal.FacebookInitProvider}
+  com.fiton.android/com.facebook.accountkit.internal.AccountKitInitProvider:
+    Provider{f466950 com.fiton.android/com.facebook.accountkit.internal.AccountKitInitProvider}
+  com.fiton.android/androidx.startup.InitializationProvider:
+    Provider{8f16749 com.fiton.android/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.fiton.android.workmanager-init]:
+    Provider{12ce34d com.fiton.android/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{7b7684e com.fiton.android}
+  [com.fiton.android.firebaseinitprovider]:
+    Provider{7ec6e02 com.fiton.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{5335d6f com.fiton.android}
+  [com.facebook.app.FacebookContentProvider273606856749643]:
+    Provider{7a02e4 com.fiton.android/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{30ca7c com.fiton.android}
+  [com.fiton.android.androidx-startup]:
+    Provider{8f16749 com.fiton.android/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{a602f05 com.fiton.android}
+  [com.fiton.android.FacebookInitProvider]:
+    Provider{bba313 com.fiton.android/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{c25bb5a com.fiton.android}
+  [com.fiton.android.ApptentiveAttachmentFileProvider]:
+    Provider{f7cc076 com.fiton.android/com.apptentive.android.sdk.debug.ApptentiveAttachmentFileProvider}
+      applicationInfo=ApplicationInfo{cc2618b com.fiton.android}
+  [com.fiton.android.AccountKitInitialization]:
+    Provider{f466950 com.fiton.android/com.facebook.accountkit.internal.AccountKitInitProvider}
+      applicationInfo=ApplicationInfo{4fe1268 com.fiton.android}
+  [com.fiton.android.fileprovider]:
+    Provider{c061677 com.fiton.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{e39b681 com.fiton.android}
+
+Key Set Manager:
+  [com.fiton.android]
+      Signing KeySets: 5731
+
+Packages:
+  Package [com.fiton.android] (cf43326):
+    userId=10255
+    pkg=Package{f38b67 com.fiton.android}
+    codePath=/data/app/~~tzhsC-Zb-82Xd4RrOA7nwA==/com.fiton.android-IAY1bqu14FRjfv5DfRGfyA==
+    resourcePath=/data/app/~~tzhsC-Zb-82Xd4RrOA7nwA==/com.fiton.android-IAY1bqu14FRjfv5DfRGfyA==
+    legacyNativeLibraryDir=/data/app/~~tzhsC-Zb-82Xd4RrOA7nwA==/com.fiton.android-IAY1bqu14FRjfv5DfRGfyA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=167798 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=4.6.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.facebook.orca, com.instagram.android, com.pinterest, com.android.mms, com.android.email, com.google.android.apps.messaging, com.google.android.gm, com.microsoft.office.outlook, com.readdle.spark, com.garmin.android.apps.connectmobile, com.samsung.android.app.watchmanager, com.samsung.accessory, com.android.chrome]
+    queriesIntents=[Intent { act=android.intent.action.SENDTO dat=smsto:xx }, Intent { act=android.intent.action.SENDTO dat=mailto:xx }, Intent { act=android.intent.action.SEND dat=content://*/... typ=text/plain }, Intent { act=android.intent.action.SEND dat=content://*/... typ=image/* }, Intent { act=android.intent.action.SEND dat=content://*/... typ=application/octet-stream }, Intent { act=android.media.browse.MediaBrowserService }]
+    dataDir=/data/user/0/com.fiton.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 14:29:40
+    lastUpdateTime=2022-11-30 14:29:42
+    packageSource=0
+    signatures=PackageSignatures{4d5ed14 version:3, signatures:[9c12e809], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_CONTACTS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.FLASHLIGHT
+      android.permission.BILLING
+      android.permission.RECORD_AUDIO
+      android.permission.BLUETOOTH
+      android.permission.BLUETOOTH_ADMIN
+      com.samsung.accessory.permission.ACCESSORY_FRAMEWORK
+      com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY
+      com.samsung.wmanager.ENABLE_NOTIFICATION
+      com.samsung.WATCH_APP_TYPE.Companion
+      android.permission.WRITE_CALENDAR
+      android.permission.READ_CALENDAR
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      android.permission.READ_APP_BADGE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=54060 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 14:29:42
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false
+        android.permission.WRITE_CALENDAR: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false
+        android.permission.READ_CONTACTS: granted=false
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.fiton.android:
+      com.google.android.apps.messaging
+      com.android.chrome
+      com.google.android.gm
+  queries via component:
+    com.google.android.apps.messaging:
+      com.fiton.android
+    com.google.android.apps.diagnosticstool:
+      com.fiton.android
+    com.google.android.settings.intelligence:
+      com.fiton.android
+    com.google.android.youtube:
+      com.fiton.android
+    com.google.android.contacts:
+      com.fiton.android
+    com.google.android.apps.accessibility.voiceaccess:
+      com.fiton.android
+    com.google.android.gm:
+      com.fiton.android
+    com.fiton.android:
+      [com.android.bluetooth,com.google.android.bluetooth.services]
+      com.google.android.apps.nbu.files
+      com.google.android.apps.messaging
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.apps.docs
+      com.google.android.apps.youtube.music
+      com.google.android.gm
+      net.eagin.software.android.dejaloYa
+      radiotime.player
+      org.malwarebytes.antimalware
+      com.ninegag.android.app
+      com.fourchars.lmpfree
+      com.lyrebirdstudio.photo_editor_pro
+      com.cam001.selfie
+      com.pranavpandey.rotation
+      com.clearchannel.iheartradio.controller
+    com.zappcues.gamingmode:
+      com.fiton.android
+    com.jio.myjio:
+      com.fiton.android
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.fiton.android]
+    path: /data/app/~~tzhsC-Zb-82Xd4RrOA7nwA==/com.fiton.android-IAY1bqu14FRjfv5DfRGfyA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:102828
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.fiton.android]
+     base.apk - 1507

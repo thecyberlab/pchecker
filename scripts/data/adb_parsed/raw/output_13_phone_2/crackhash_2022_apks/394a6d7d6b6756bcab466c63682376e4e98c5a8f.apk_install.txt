@@ -1,0 +1,478 @@
+Activity Resolver Table:
+  Schemes:
+      com.washingtonpost.classic.android://oauth-callback:
+        7a1c538 com.washingtonpost.android/net.openid.appauth.RedirectUriReceiverActivity filter 349aa76
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.washingtonpost.classic.android://oauth-callback"
+      http:
+        dfd220 com.washingtonpost.android/com.wapo.flagship.MainActivity filter c38a895
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "washingtonpost.com": -1
+          Authority: "www.washingtonpost.com": -1
+          Path: "PatternMatcher{GLOB: ..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/202./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/202./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/202./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/..*/202./../../..*}"
+      https:
+        dfd220 com.washingtonpost.android/com.wapo.flagship.MainActivity filter c38a895
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "washingtonpost.com": -1
+          Authority: "www.washingtonpost.com": -1
+          Path: "PatternMatcher{GLOB: ..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/202./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/202./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/202./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/..*/202./../../..*}"
+        dfd220 com.washingtonpost.android/com.wapo.flagship.MainActivity filter fbb5daa
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "wapo.st": -1
+      washpost:
+        dfd220 com.washingtonpost.android/com.wapo.flagship.MainActivity filter d33387f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "washpost"
+          Authority: "www.washingtonpost.com": -1
+        dfd220 com.washingtonpost.android/com.wapo.flagship.MainActivity filter b3ff04c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "washpost"
+      com.washingtonpost.classic.android:
+        dfd220 com.washingtonpost.android/com.wapo.flagship.MainActivity filter 4ccdd9b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.washingtonpost.classic.android"
+          Authority: "oauth-callback": -1
+          Path: "PatternMatcher{LITERAL: /magiclink}"
+        7a1c538 com.washingtonpost.android/net.openid.appauth.RedirectUriReceiverActivity filter b483911
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.washingtonpost.classic.android"
+          Authority: "oauth-callback": -1
+          Path: "PatternMatcher{LITERAL: /normal}"
+      wp-android:
+        dfd220 com.washingtonpost.android/com.wapo.flagship.MainActivity filter c50859e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "wp-android"
+          Authority: "www.washingtonpost.com": -1
+          Authority: "subscribe.washingtonpost.com": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        4b75652 com.washingtonpost.android/com.wapo.flagship.SplashActivity filter 3c8ed23
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        ee6554d com.washingtonpost.android/com.wapo.flagship.external.ListWidgetConfigurationActivity filter c9df802
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        45f6513 com.washingtonpost.android/com.wapo.flagship.external.WidgetConfigurationActivity filter d1c0350
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        dcff949 com.washingtonpost.android/com.wapo.flagship.external.DiscoverWidgetConfigurationActivity filter 6f7924e
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      com.urbanairship.actions.SHOW_RATE_APP_INTENT_ACTION:
+        c513f6f com.washingtonpost.android/com.urbanairship.actions.RateAppActivity filter ec6047c
+          Action: "com.urbanairship.actions.SHOW_RATE_APP_INTENT_ACTION"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        dfd220 com.washingtonpost.android/com.wapo.flagship.MainActivity filter 61267d9
+          Action: "android.intent.action.SEARCH"
+        591b877 com.washingtonpost.android/com.wapo.flagship.features.search.SearchActivity filter 849fce4
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        e2c45e5 com.washingtonpost.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter a43b8ba
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      com.wapo.flagship.features.tts.NotificationEventsReceiver.CLOSE:
+        b91457b com.washingtonpost.android/com.wapo.flagship.features.tts.services.NotificationEventsReceiver filter 8283f98
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PLAY"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PAUSE"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PREVIOUS"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.NEXT"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.CLOSE"
+      com.wapo.flagship.features.tts.NotificationEventsReceiver.PAUSE:
+        b91457b com.washingtonpost.android/com.wapo.flagship.features.tts.services.NotificationEventsReceiver filter 8283f98
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PLAY"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PAUSE"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PREVIOUS"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.NEXT"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.CLOSE"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        d03214f com.washingtonpost.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9570dc
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.wapo.flagship.features.tts.NotificationEventsReceiver.NEXT:
+        b91457b com.washingtonpost.android/com.wapo.flagship.features.tts.services.NotificationEventsReceiver filter 8283f98
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PLAY"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PAUSE"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PREVIOUS"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.NEXT"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.CLOSE"
+      com.wapo.flagship.features.tts.NotificationEventsReceiver.PLAY:
+        b91457b com.washingtonpost.android/com.wapo.flagship.features.tts.services.NotificationEventsReceiver filter 8283f98
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PLAY"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PAUSE"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PREVIOUS"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.NEXT"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.CLOSE"
+      com.wapo.flagship.features.tts.NotificationEventsReceiver.PREVIOUS:
+        b91457b com.washingtonpost.android/com.wapo.flagship.features.tts.services.NotificationEventsReceiver filter 8283f98
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PLAY"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PAUSE"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.PREVIOUS"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.NEXT"
+          Action: "com.wapo.flagship.features.tts.NotificationEventsReceiver.CLOSE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        afa836b com.washingtonpost.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 76bec8
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        7605b61 com.washingtonpost.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter de4a686
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.google.android.gms.analytics.ANALYTICS_DISPATCH:
+        736e25f com.washingtonpost.android/com.google.android.gms.analytics.AnalyticsReceiver filter fd184ac
+          Action: "com.google.android.gms.analytics.ANALYTICS_DISPATCH"
+      android.intent.action.DEVICE_STORAGE_OK:
+        afa836b com.washingtonpost.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 76bec8
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.wapo.flagship.action.ACTION_SAVE:
+        c3bb903 com.washingtonpost.android/com.wapo.flagship.push.SaveArticleReceiver filter 31ee080
+          Action: "com.wapo.flagship.action.ACTION_SAVE"
+      com.urbanairship.push.OPENED:
+        68ce8f3 com.washingtonpost.android/com.urbanairship.push.NotificationProxyReceiver filter 7eb69b0
+          Action: "com.urbanairship.push.OPENED"
+          Category: "com.washingtonpost.android"
+          mPriority=-999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.wapo.flagship.action.ACTION_DELETE:
+        f8cc6b9 com.washingtonpost.android/com.wapo.flagship.push.DeleteNotificationReceiver filter f932afe
+          Action: "com.wapo.flagship.action.ACTION_DELETE"
+      android.intent.action.LOCALE_CHANGED:
+        78fd029 com.washingtonpost.android/com.urbanairship.locale.LocaleChangeReceiver filter 25e4fae
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.amazon.inapp.purchasing.NOTIFY:
+        395e105 com.washingtonpost.android/com.amazon.device.iap.ResponseReceiver filter 3e855a
+          Action: "com.amazon.inapp.purchasing.NOTIFY"
+      com.google.android.c2dm.intent.RECEIVE:
+        764be57 com.washingtonpost.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 62dbd44
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.appwidget.action.APPWIDGET_DELETED:
+        4dc638b com.washingtonpost.android/com.wapo.flagship.external.TabletWidget filter acec68
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+      zendesk.support:
+        41393f1 com.washingtonpost.android/zendesk.support.DeepLinkingBroadcastReceiver filter cf9bd6
+          Action: "zendesk.support"
+      android.intent.action.BATTERY_LOW:
+        e2c45e5 com.washingtonpost.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter a43b8ba
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        6bbeb47 com.washingtonpost.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f9cff74
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        6bbeb47 com.washingtonpost.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f9cff74
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.appwidget.action.APPWIDGET_DISABLED:
+        4dc638b com.washingtonpost.android/com.wapo.flagship.external.TabletWidget filter acec68
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+      android.intent.action.BOOT_COMPLETED:
+        a188881 com.washingtonpost.android/com.wapo.flagship.external.Widget filter dabad67
+          Action: "android.intent.action.BOOT_COMPLETED"
+        5986714 com.washingtonpost.android/com.wapo.flagship.external.DiscoverWidget filter 865b2
+          Action: "android.intent.action.BOOT_COMPLETED"
+        6bbeb47 com.washingtonpost.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f9cff74
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        d03214f com.washingtonpost.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9570dc
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.appwidget.action.APPWIDGET_ENABLED:
+        4dc638b com.washingtonpost.android/com.wapo.flagship.external.TabletWidget filter acec68
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        4dc638b com.washingtonpost.android/com.wapo.flagship.external.TabletWidget filter acec68
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_DISABLED"
+        a188881 com.washingtonpost.android/com.wapo.flagship.external.Widget filter acf9d26
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        5986714 com.washingtonpost.android/com.wapo.flagship.external.DiscoverWidget filter ec42bbd
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      com.urbanairship.automation.alarms.ALARM_FIRED:
+        7bc7e2d com.washingtonpost.android/com.urbanairship.automation.alarms.AlarmOperationReceiver filter d819f62
+          Action: "com.urbanairship.automation.alarms.ALARM_FIRED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        3664c9d com.washingtonpost.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter c54a512
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.MEDIA_BUTTON:
+        baa1575 com.washingtonpost.android/androidx.media.session.MediaButtonReceiver filter 772f90a
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        841f4e3 com.washingtonpost.android/com.wapo.flagship.data.WearDataLayerListenerService filter 7449ee0
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /DataLayerNotif}"
+
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        294fc3f com.washingtonpost.android/com.wapo.android.push.FCMPushNotificationReceiver filter 604c90c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        937255 com.washingtonpost.android/com.urbanairship.push.fcm.AirshipFirebaseMessagingService filter e5bc46a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        6e71d5b com.washingtonpost.android/com.google.firebase.messaging.FirebaseMessagingService filter abb69f8
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.media.browse.MediaBrowserService:
+        1e01599 com.washingtonpost.android/com.wapo.flagship.features.audio.service.MusicService filter 54005e
+          Action: "android.media.browse.MediaBrowserService"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          wapo.st
+          washingtonpost.com
+          www.washingtonpost.com
+
+Registered ContentProviders:
+  com.washingtonpost.android/com.prolificinteractive.materialcalendarview.MaterialCalendarViewInitProvider:
+    Provider{8962777 com.washingtonpost.android/com.prolificinteractive.materialcalendarview.MaterialCalendarViewInitProvider}
+  com.washingtonpost.android/com.urbanairship.UrbanAirshipProvider:
+    Provider{4ff3fe4 com.washingtonpost.android/com.urbanairship.UrbanAirshipProvider}
+  com.washingtonpost.android/zendesk.belvedere.BelvedereFileProvider:
+    Provider{47ddc4d com.washingtonpost.android/zendesk.belvedere.BelvedereFileProvider}
+  com.washingtonpost.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{3627650 com.washingtonpost.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.washingtonpost.android/com.wapo.flagship.providers.RecentSearchQueriesProvider:
+    Provider{2d8f049 com.washingtonpost.android/com.wapo.flagship.providers.RecentSearchQueriesProvider}
+  com.washingtonpost.android/zendesk.support.SupportSdkStartupProvider:
+    Provider{10abd4e com.washingtonpost.android/zendesk.support.SupportSdkStartupProvider}
+  com.washingtonpost.android/androidx.work.impl.WorkManagerInitializer:
+    Provider{f948e6f com.washingtonpost.android/androidx.work.impl.WorkManagerInitializer}
+  com.washingtonpost.android/zendesk.support.guide.GuideSdkStartupProvider:
+    Provider{e80a77c com.washingtonpost.android/zendesk.support.guide.GuideSdkStartupProvider}
+  com.washingtonpost.android/com.squareup.picasso.PicassoProvider:
+    Provider{5b74805 com.washingtonpost.android/com.squareup.picasso.PicassoProvider}
+  com.washingtonpost.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{fd9605a com.washingtonpost.android/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.washingtonpost.android.materialcalendarviewinitprovider]:
+    Provider{8962777 com.washingtonpost.android/com.prolificinteractive.materialcalendarview.MaterialCalendarViewInitProvider}
+      applicationInfo=ApplicationInfo{a85a28b com.washingtonpost.android}
+  [com.wapo.flagship.providers.searchSuggestions]:
+    Provider{2d8f049 com.washingtonpost.android/com.wapo.flagship.providers.RecentSearchQueriesProvider}
+      applicationInfo=ApplicationInfo{4eebf68 com.washingtonpost.android}
+  [com.washingtonpost.android.zendesk.support.GuideSdkStartupProvider]:
+    Provider{e80a77c com.washingtonpost.android/zendesk.support.guide.GuideSdkStartupProvider}
+      applicationInfo=ApplicationInfo{a695f81 com.washingtonpost.android}
+  [com.washingtonpost.android.workmanager-init]:
+    Provider{f948e6f com.washingtonpost.android/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{8bd2826 com.washingtonpost.android}
+  [com.washingtonpost.android.firebaseinitprovider]:
+    Provider{fd9605a com.washingtonpost.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{e29dc67 com.washingtonpost.android}
+  [com.washingtonpost.android.lifecycle-process]:
+    Provider{3627650 com.washingtonpost.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{7a46a14 com.washingtonpost.android}
+  [com.washingtonpost.android.urbanairship.provider]:
+    Provider{4ff3fe4 com.washingtonpost.android/com.urbanairship.UrbanAirshipProvider}
+      applicationInfo=ApplicationInfo{8cb72bd com.washingtonpost.android}
+  [com.washingtonpost.android.com.squareup.picasso]:
+    Provider{5b74805 com.washingtonpost.android/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{6c3a0b2 com.washingtonpost.android}
+  [com.washingtonpost.android.belvedere2.attachments]:
+    Provider{47ddc4d com.washingtonpost.android/zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{7edd803 com.washingtonpost.android}
+  [com.washingtonpost.android.zendesk.support.SupportSdkStartupProvider]:
+    Provider{10abd4e com.washingtonpost.android/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{d681380 com.washingtonpost.android}
+
+Key Set Manager:
+  [com.washingtonpost.android]
+      Signing KeySets: 5583
+
+Packages:
+  Package [com.washingtonpost.android] (988447b):
+    userId=10745
+    pkg=Package{604d298 com.washingtonpost.android}
+    codePath=/data/app/~~3hG7oGFSdi87Y_uzGCZJ6w==/com.washingtonpost.android-G-KeAdSToJ7qEyfxMVUrAA==
+    resourcePath=/data/app/~~3hG7oGFSdi87Y_uzGCZJ6w==/com.washingtonpost.android-G-KeAdSToJ7qEyfxMVUrAA==
+    legacyNativeLibraryDir=/data/app/~~3hG7oGFSdi87Y_uzGCZJ6w==/com.washingtonpost.android-G-KeAdSToJ7qEyfxMVUrAA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1451 minSdk=17 targetSdk=30
+    minExtensionVersions=[]
+    versionName=6.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=com.google.android.youtube.api.service.START }]
+    dataDir=/data/user/0/com.washingtonpost.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      com.google.android.wearable
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 12:51:24
+    lastUpdateTime=2022-11-30 12:51:25
+    packageSource=0
+    signatures=PackageSignatures{1a3852d version:3, signatures:[7f088282], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CAMERA
+      android.permission.WAKE_LOCK
+      com.washingtonpost.rainbow.providers.WapoSubscriptionProvider.READ_PERMISSION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_EXTERNAL_STORAGE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.VIBRATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=49250 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 12:51:25
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.washingtonpost.android
+    com.google.android.apps.diagnosticstool:
+      com.washingtonpost.android
+    com.google.android.settings.intelligence:
+      com.washingtonpost.android
+    com.google.android.GoogleCamera:
+      com.washingtonpost.android
+    com.google.android.deskclock:
+      com.washingtonpost.android
+    com.google.android.apps.accessibility.voiceaccess:
+      com.washingtonpost.android
+    com.washingtonpost.android:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.youtube
+      com.google.android.apps.docs
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.washingtonpost.android]
+    path: /data/app/~~3hG7oGFSdi87Y_uzGCZJ6w==/com.washingtonpost.android-G-KeAdSToJ7qEyfxMVUrAA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:3231500
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.washingtonpost.android]
+     base.apk - 950

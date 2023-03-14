@@ -1,0 +1,282 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        3e6ab5 com.hayhouse.hayhouseaudio/.ui.activity.splash.SplashActivity filter 3e385d8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "47i82.app.link": -1
+          Authority: "47i82-alternate.app.link": -1
+          AutoVerify=true
+      hayhouse:
+        3e6ab5 com.hayhouse.hayhouseaudio/.ui.activity.splash.SplashActivity filter a30bcbb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "hayhouse"
+          Authority: "47i82-alternate.app.link": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        3e6ab5 com.hayhouse.hayhouseaudio/.ui.activity.splash.SplashActivity filter c14c54a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        3b02169 com.hayhouse.hayhouseaudio/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c6267ee
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        43c0833 com.hayhouse.hayhouseaudio/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 28137f0
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        1a4f48f com.hayhouse.hayhouseaudio/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b59e31c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        c206b25 com.hayhouse.hayhouseaudio/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter e1114fa
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        491d9dd com.hayhouse.hayhouseaudio/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 694952
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        1a4f48f com.hayhouse.hayhouseaudio/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b59e31c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        7b7fd31 com.hayhouse.hayhouseaudio/io.branch.referral.InstallListener filter d61ec16
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        d5e3b6d com.hayhouse.hayhouseaudio/com.google.firebase.iid.FirebaseInstanceIdReceiver filter a88b3a2
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        3b02169 com.hayhouse.hayhouseaudio/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c6267ee
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        5064aab com.hayhouse.hayhouseaudio/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9b01508
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        5064aab com.hayhouse.hayhouseaudio/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9b01508
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        5064aab com.hayhouse.hayhouseaudio/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9b01508
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        43c0833 com.hayhouse.hayhouseaudio/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 28137f0
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        4dce687 com.hayhouse.hayhouseaudio/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 3b579b4
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        29194a1 com.hayhouse.hayhouseaudio/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 8cb86c6
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.MEDIA_BUTTON:
+        7a46997 com.hayhouse.hayhouseaudio/androidx.media.session.MediaButtonReceiver filter af72784
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.exoplayer.downloadService.action.RESTART:
+        77b6795 com.hayhouse.hayhouseaudio/.player.offline.OfflineDownloadService filter b58b0aa
+          Action: "com.google.android.exoplayer.downloadService.action.RESTART"
+          Category: "android.intent.category.DEFAULT"
+      com.clevertap.PUSH_EVENT:
+        5736d9 com.hayhouse.hayhouseaudio/com.clevertap.android.sdk.CTNotificationIntentService filter caea89e
+          Action: "com.clevertap.PUSH_EVENT"
+      com.google.firebase.MESSAGING_EVENT:
+        8976423 com.hayhouse.hayhouseaudio/.utils.network.HayHouseMessagingService filter f0a7d20
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        177e811 com.hayhouse.hayhouseaudio/com.google.firebase.messaging.FirebaseMessagingService filter 6e92d76
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.clevertap.BG_EVENT:
+        813349b com.hayhouse.hayhouseaudio/com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService filter 516d038 permission android.permission.BIND_JOB_SERVICE
+          Action: "com.clevertap.BG_EVENT"
+      android.media.browse.MediaBrowserService:
+        5f21f7f com.hayhouse.hayhouseaudio/.player.playback.MusicService filter 8ea4b4c
+          Action: "android.media.browse.MediaBrowserService"
+
+Domain verification status:
+  com.hayhouse.hayhouseaudio:
+    ID: 54b16d53-964b-41f9-8ce3-be5a48c019e2
+    Signatures: [79:81:16:2E:75:CD:76:8F:C2:EF:AC:EE:77:3C:92:4B:E0:C5:22:17:A8:6D:85:C4:D2:A8:30:4F:2B:F1:C4:B4]
+    Domain verification state:
+      47i82-alternate.app.link: 1024
+      47i82.app.link: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          47i82-alternate.app.link
+          47i82.app.link
+
+Registered ContentProviders:
+  com.hayhouse.hayhouseaudio/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{8713716 com.hayhouse.hayhouseaudio/com.google.firebase.provider.FirebaseInitProvider}
+  com.hayhouse.hayhouseaudio/com.facebook.internal.FacebookInitProvider:
+    Provider{d5aea84 com.hayhouse.hayhouseaudio/com.facebook.internal.FacebookInitProvider}
+  com.hayhouse.hayhouseaudio/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{942426d com.hayhouse.hayhouseaudio/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.hayhouse.hayhouseaudio/androidx.core.content.FileProvider:
+    Provider{ec1aea2 com.hayhouse.hayhouseaudio/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.hayhouse.hayhouseaudio.provider]:
+    Provider{ec1aea2 com.hayhouse.hayhouseaudio/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{dfb2e20 com.hayhouse.hayhouseaudio}
+  [com.hayhouse.hayhouseaudio.FacebookInitProvider]:
+    Provider{d5aea84 com.hayhouse.hayhouseaudio/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{8c093d9 com.hayhouse.hayhouseaudio}
+  [com.hayhouse.hayhouseaudio.lifecycle-process]:
+    Provider{942426d com.hayhouse.hayhouseaudio/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{9e1419e com.hayhouse.hayhouseaudio}
+  [com.hayhouse.hayhouseaudio.firebaseinitprovider]:
+    Provider{8713716 com.hayhouse.hayhouseaudio/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{51b447f com.hayhouse.hayhouseaudio}
+
+Key Set Manager:
+  [com.hayhouse.hayhouseaudio]
+      Signing KeySets: 5663
+
+Packages:
+  Package [com.hayhouse.hayhouseaudio] (4b50c4c):
+    userId=10463
+    pkg=Package{b0e6ffa com.hayhouse.hayhouseaudio}
+    codePath=/data/app/~~PfGhM9EhAzEmAkB5-yPrVQ==/com.hayhouse.hayhouseaudio--KfhgaFnLmoxnokxFOmLQQ==
+    resourcePath=/data/app/~~PfGhM9EhAzEmAkB5-yPrVQ==/com.hayhouse.hayhouseaudio--KfhgaFnLmoxnokxFOmLQQ==
+    legacyNativeLibraryDir=/data/app/~~PfGhM9EhAzEmAkB5-yPrVQ==/com.hayhouse.hayhouseaudio--KfhgaFnLmoxnokxFOmLQQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=18102 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.8.1-29
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.hayhouse.hayhouseaudio
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 15:28:57
+    lastUpdateTime=2022-11-30 15:28:58
+    packageSource=0
+    signatures=PackageSignatures{a009ab version:2, signatures:[89fa6125], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.FOREGROUND_SERVICE
+      com.android.vending.BILLING
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=66409 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:28:58
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.hayhouse.hayhouseaudio
+    com.google.android.apps.diagnosticstool:
+      com.hayhouse.hayhouseaudio
+    com.google.android.settings.intelligence:
+      com.hayhouse.hayhouseaudio
+    com.google.android.deskclock:
+      com.hayhouse.hayhouseaudio
+    com.google.android.apps.accessibility.voiceaccess:
+      com.hayhouse.hayhouseaudio
+    com.pandavideocompressor:
+      com.hayhouse.hayhouseaudio
+    radiotime.player:
+      com.hayhouse.hayhouseaudio
+    com.truecaller:
+      com.hayhouse.hayhouseaudio
+    com.ninegag.android.app:
+      com.hayhouse.hayhouseaudio
+    com.lyrebirdstudio.photo_editor_pro:
+      com.hayhouse.hayhouseaudio
+    com.dv.adm:
+      com.hayhouse.hayhouseaudio
+    com.zappcues.gamingmode:
+      com.hayhouse.hayhouseaudio
+    com.jio.myjio:
+      com.hayhouse.hayhouseaudio
+  queryable via interaction:
+    User 0:
+      [com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.android.inputdevices,com.android.settings,com.android.localtransport,com.android.location.fused,com.google.android.iwlan,com.android.keychain,com.android.wallpaperbackup,com.android.dynsystem,com.android.qns,com.android.providers.settings,android,com.google.SSRestartDetector]:
+        com.hayhouse.hayhouseaudio
+      [com.google.android.gms,com.google.android.gsf]:
+        com.hayhouse.hayhouseaudio
+  queryable via uses-library:
+
+Dexopt state:
+  [com.hayhouse.hayhouseaudio]
+    path: /data/app/~~PfGhM9EhAzEmAkB5-yPrVQ==/com.hayhouse.hayhouseaudio--KfhgaFnLmoxnokxFOmLQQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1087586
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.hayhouse.hayhouseaudio]
+     base.apk - 777

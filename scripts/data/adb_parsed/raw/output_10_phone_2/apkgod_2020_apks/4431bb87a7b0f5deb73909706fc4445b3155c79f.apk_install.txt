@@ -1,0 +1,412 @@
+Activity Resolver Table:
+  Schemes:
+      medisafe:
+        756e145 com.medisafe.android.client/.SplashActivity filter 4227f30
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "medisafe"
+          Authority: "open": -1
+        8ff209a com.medisafe.android.client/com.medisafe.android.base.activities.ScreenLaunchDispatchActivity filter 2e5212e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "medisafe"
+          Authority: "medisafe.com": -1
+          Path: "PatternMatcher{PREFIX: /inapp}"
+      amp0ac19d06ecd6487190d6836-a16432bc-b31e-11e5-8ad8-00736b041834:
+        756e145 com.medisafe.android.client/.SplashActivity filter 490f7a9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "amp0ac19d06ecd6487190d6836-a16432bc-b31e-11e5-8ad8-00736b041834"
+      https:
+        1abfdcb com.medisafe.android.client/.NewPasswordActivity filter 33f54cf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "medisafe.com": -1
+          Path: "PatternMatcher{PREFIX: /resetpassword}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        756e145 com.medisafe.android.client/.SplashActivity filter 284e473
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      zopim.action.RESUME_CHAT:
+        39119a8 com.medisafe.android.client/com.zopim.android.sdk.prechat.ZopimChatActivity filter 4e85e5c
+          Action: "zopim.action.RESUME_CHAT"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=-1000, mOrder=0, mHasPartialTypes=false
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        a894cc1 com.medisafe.android.client/com.medisafe.android.base.neura.PluginPackageReceiver filter adb0ec7
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      com.medisafe.android.debugapp.MESSAGE:
+        1eac66 com.medisafe.android.client/com.medisafe.android.base.helpers.debug.DebugAppReceiver filter 2b01cf4
+          Action: "com.medisafe.android.debugapp.MESSAGE"
+      com.android.vending.billing.PURCHASES_UPDATED:
+        27aaba7 com.medisafe.android.client/com.medisafe.android.base.IapUtil.IabBroadcastReceiver filter f6ef2e1
+          Action: "com.android.vending.billing.PURCHASES_UPDATED"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        8b22854 com.medisafe.android.client/com.medisafe.android.base.recievers.ConnectivityChangeReceiver filter ecb0448
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        11cf3fd com.medisafe.android.client/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 686dc1d
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        e5928f2 com.medisafe.android.client/com.localytics.android.ReferralReceiver filter 9eabe92
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.intent.action.TIMEZONE_CHANGED:
+        39c5b43 com.medisafe.android.client/com.medisafe.android.base.recievers.TimeZoneReceiver filter b442806
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        63375c0 com.medisafe.android.client/com.medisafe.android.base.activities.StartupReciever filter e26223a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Category: "android.intent.category.HOME"
+        449d2f9 com.medisafe.android.client/com.localytics.android.BootReceiver filter 5efd063
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        74ce23e com.medisafe.android.client/com.medisafe.android.base.client.views.WidgetDailyListReceiver filter ad86565
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        29f689f com.medisafe.android.client/com.medisafe.android.base.recievers.PackageReplacedReceiver filter 7866eeb
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        9ba2dec com.medisafe.android.client/com.medisafe.android.base.service.WatchResponseService filter 82c1460
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        ecba5b5 com.medisafe.android.client/com.localytics.android.FirebaseTokenService filter 6f231de
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        830e44a com.medisafe.android.client/com.localytics.android.BackgroundService filter 9ae168c permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        d9befbb com.medisafe.android.client/com.medisafe.android.base.service.FcmMessageService filter b3a1d19
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        4123cd8 com.medisafe.android.client/com.localytics.android.FirebaseService filter 50fbf
+          Action: "com.google.firebase.MESSAGING_EVENT"
+
+Permissions:
+  Permission [com.medisafe.android.client.DEBUG] (15de831):
+    sourcePackage=com.medisafe.android.client
+    uid=10326 gids=null type=0 prot=signature
+    perm=Permission{8a0fb16 com.medisafe.android.client.DEBUG}
+    packageSetting=PackageSetting{20fcc97 com.medisafe.android.client/10326}
+
+Registered ContentProviders:
+  com.medisafe.android.client/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{4da4e84 com.medisafe.android.client/com.crashlytics.android.CrashlyticsInitProvider}
+  com.medisafe.android.client/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{2f7d66d com.medisafe.android.client/com.google.firebase.provider.FirebaseInitProvider}
+  com.medisafe.android.client/com.facebook.internal.FacebookInitProvider:
+    Provider{c29b2a2 com.medisafe.android.client/com.facebook.internal.FacebookInitProvider}
+  com.medisafe.android.client/com.medisafe.room.helpers.VCardFileProvider:
+    Provider{d7a9b33 com.medisafe.android.client/com.medisafe.room.helpers.VCardFileProvider}
+  com.medisafe.android.client/com.zendesk.belvedere.BelvedereFileProvider:
+    Provider{4efcef0 com.medisafe.android.client/com.zendesk.belvedere.BelvedereFileProvider}
+  com.medisafe.android.client/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{8c86c69 com.medisafe.android.client/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.medisafe.android.client/androidx.core.content.FileProvider:
+    Provider{9456ee com.medisafe.android.client/androidx.core.content.FileProvider}
+  com.medisafe.android.client/com.facebook.marketing.internal.MarketingInitProvider:
+    Provider{bb9b78f com.medisafe.android.client/com.facebook.marketing.internal.MarketingInitProvider}
+
+ContentProvider Authorities:
+  [com.medisafe.android.client.provider]:
+    Provider{d7a9b33 com.medisafe.android.client/com.medisafe.room.helpers.VCardFileProvider}
+      applicationInfo=ApplicationInfo{b9aea1c com.medisafe.android.client}
+  [com.medisafe.android.client.FacebookInitProvider]:
+    Provider{c29b2a2 com.medisafe.android.client/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{b9aea1c com.medisafe.android.client}
+  [com.medisafe.android.client.lifecycle-process]:
+    Provider{8c86c69 com.medisafe.android.client/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{b9aea1c com.medisafe.android.client}
+  [com.medisafe.android.client.MarketingInitProvider]:
+    Provider{bb9b78f com.medisafe.android.client/com.facebook.marketing.internal.MarketingInitProvider}
+      applicationInfo=ApplicationInfo{b9aea1c com.medisafe.android.client}
+  [com.medisafe.android.client.belvedere.attachments]:
+    Provider{4efcef0 com.medisafe.android.client/com.zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{b9aea1c com.medisafe.android.client}
+  [com.medisafe.android.client.fileprovider]:
+    Provider{9456ee com.medisafe.android.client/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{b9aea1c com.medisafe.android.client}
+  [com.medisafe.android.client.crashlyticsinitprovider]:
+    Provider{4da4e84 com.medisafe.android.client/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{b9aea1c com.medisafe.android.client}
+  [com.medisafe.android.client.firebaseinitprovider]:
+    Provider{2f7d66d com.medisafe.android.client/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{b9aea1c com.medisafe.android.client}
+
+Key Set Manager:
+  [com.medisafe.android.client]
+      Signing KeySets: 531
+
+Packages:
+  Package [com.medisafe.android.client] (20fcc97):
+    userId=10326
+    pkg=Package{9b658e2 com.medisafe.android.client}
+    codePath=/data/app/com.medisafe.android.client-7kFeP15fkXwWLa_owkEHkQ==
+    resourcePath=/data/app/com.medisafe.android.client-7kFeP15fkXwWLa_owkEHkQ==
+    legacyNativeLibraryDir=/data/app/com.medisafe.android.client-7kFeP15fkXwWLa_owkEHkQ==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=8699 minSdk=21 targetSdk=29
+    versionName=8.71.08699
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{b9aea1c com.medisafe.android.client}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/com.medisafe.android.client
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 09:12:37
+    firstInstallTime=2021-03-06 09:12:42
+    lastUpdateTime=2021-03-06 09:12:42
+    signatures=PackageSignatures{1f26625 version:1, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      com.medisafe.android.client.DEBUG: prot=signature, INSTALLED
+    requested permissions:
+      com.medisafe.android.debugapp.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.READ_CONTACTS
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.WRITE_INTERNAL_STORAGE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.android.vending.BILLING
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.GET_ACCOUNTS
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_BACKGROUND_LOCATION: restricted=true
+      android.permission.SYSTEM_ALERT_WINDOW
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.BLUETOOTH
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.ACCESS_COARSE_LOCATION
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=20156 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=405
+  User 0:
+    seq=2, package=com.yahoo.mobile.client.android.weather
+    seq=9, package=com.google.android.gms
+    seq=11, package=com.psiphon3.subscription
+    seq=13, package=com.tumblr
+    seq=16, package=com.google.android.apps.docs.editors.sheets
+    seq=17, package=com.google.android.apps.docs
+    seq=19, package=com.emoji.coolkeyboard
+    seq=21, package=com.ea.game.starwarscapital_row
+    seq=23, package=com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish
+    seq=25, package=com.virtualapplications.play
+    seq=27, package=com.appsomniacs.da2
+    seq=29, package=com.king.farmheroessupersaga
+    seq=31, package=com.rsupport.mvagent
+    seq=33, package=com.snkplaymore.android014
+    seq=35, package=com.intermedia.hq
+    seq=37, package=com.google.android.apps.adwords
+    seq=39, package=com.weheartit
+    seq=41, package=com.life360.android.safetymapd
+    seq=43, package=com.kabam.marvelbattle
+    seq=45, package=com.antutu.ABenchMark
+    seq=47, package=com.timehop
+    seq=49, package=com.flightradar24free
+    seq=51, package=com.dena.a12026418
+    seq=53, package=com.whatsapp
+    seq=55, package=com.feng.droid.tutu
+    seq=57, package=com.jsdev.instasize
+    seq=60, package=com.gombosdev.ampere
+    seq=62, package=com.sega.vtc
+    seq=64, package=com.google.android.street
+    seq=66, package=com.mobisystems.fileman
+    seq=68, package=com.secondarm.taptapdash
+    seq=70, package=com.kwai.global.video.social.kwaigo
+    seq=73, package=net.mobigame.zombietsunami
+    seq=76, package=com.nll.screenrecorder
+    seq=78, package=com.koushikdutta.vysor
+    seq=80, package=com.appnana.android.giftcardrewards
+    seq=82, package=com.ea.gp.pvz3
+    seq=84, package=com.ea.game.simcitymobile_row
+    seq=86, package=com.dv.adm
+    seq=88, package=com.google.android.apps.youtube.creator
+    seq=90, package=com.google.android.deskclock
+    seq=92, package=com.tubitv
+    seq=94, package=com.rtsoft.growtopia
+    seq=96, package=com.azure.authenticator
+    seq=98, package=com.com2us.smon.normal.freefull.google.kr.android.common
+    seq=100, package=com.king.farmheroessaga
+    seq=102, package=com.mobdro.android
+    seq=105, package=com.google.android.apps.books
+    seq=107, package=com.fifa.fifaapp.android
+    seq=109, package=co.triller.droid
+    seq=111, package=com.bsplayer.bspandroid.free
+    seq=113, package=com.kokteyl.goal
+    seq=115, package=com.skgames.trafficrider
+    seq=117, package=com.google.earth
+    seq=119, package=com.genius.android
+    seq=121, package=com.dewmobile.kuaiya.play
+    seq=123, package=net.zhuoweizhang.mcpelauncher
+    seq=125, package=com.gameloft.android.ANMP.GloftDMHM
+    seq=127, package=com.protheme.launcher.winx.launcher
+    seq=132, package=com.universallauncher.universallauncher
+    seq=136, package=com.glextor.appmanager.paid
+    seq=138, package=org.hola.prem
+    seq=140, package=xyz.eutvpn.app
+    seq=142, package=com.itemstudio.castro.pro
+    seq=144, package=com.borisov.strelokpro
+    seq=148, package=com.skyclock.skyclock
+    seq=155, package=com.adobe.lrmobile
+    seq=158, package=com.chimbori.hermitcrab
+    seq=160, package=com.hktechno.live.photo.motion
+    seq=162, package=com.inglesdivino.addmusictovoice
+    seq=168, package=com.one.ui.dark.s10.iconpack
+    seq=173, package=com.kimcy929.hashtags
+    seq=175, package=com.iudesk.android.photo.editor
+    seq=179, package=melstudio.mstretch
+    seq=183, package=com.maxelus.galaxypacklivewallpaper
+    seq=185, package=com.mybedy.antiradar
+    seq=187, package=com.pavelrekun.skit
+    seq=190, package=air.stellio.player
+    seq=194, package=hastamev.shadow.com
+    seq=196, package=com.ottplay.ottplay
+    seq=198, package=uk.co.serenity.guided.meditation
+    seq=200, package=com.jriver.jremote2
+    seq=205, package=com.mango.android
+    seq=208, package=com.indigomadina.tabloid
+    seq=210, package=com.klinker.android.twitter_l
+    seq=212, package=com.jndapp.pixel.pie.dark.iconpack
+    seq=214, package=com.adguard.android
+    seq=218, package=com.bravolang.phrasebook
+    seq=220, package=com.coccco28.elixir
+    seq=223, package=com.busuu.android.enc
+    seq=225, package=com.drikp.core
+    seq=227, package=com.finazzi.distquakenoads
+    seq=229, package=com.joshy21.vera.calendarplus
+    seq=231, package=com.technoapps.webdevelopmentpro
+    seq=235, package=com.mkreidl.astrolapp
+    seq=237, package=com.snowberry.vpn_ghost.ghost_paid_vpn
+    seq=241, package=com.livephoto.live_wallpaper.ocean3dpro
+    seq=243, package=com.round_tower.app.android.wallpaper.cartogram
+    seq=247, package=com.ghthome.clickpic
+    seq=250, package=com.softoneui.volokitta
+    seq=252, package=com.kubix.creative
+    seq=254, package=net.tsapps.appsales
+    seq=256, package=studio14.application.caelus
+    seq=263, package=com.osheden.raya.black
+    seq=265, package=com.zymbia.carpm_mechanic
+    seq=267, package=ninja.sesame.app.edge
+    seq=269, package=eu.darken.bluemusic
+    seq=273, package=com.lonelycatgames.Xplore
+    seq=279, package=hu.oandras.newsfeedlauncher
+    seq=281, package=com.waze
+    seq=291, package=ua.com.streamsoft.pingtoolspro
+    seq=293, package=com.brit.swiftdark.substratum
+    seq=295, package=io.appground.blek
+    seq=297, package=com.magdalm.freewifipassword
+    seq=302, package=com.alesp.orologiomondiale.pro
+    seq=304, package=com.coccco28.rustic
+    seq=306, package=com.brit.swiftblack.layers
+    seq=308, package=com.barcode.qrcode.scanner.reader.pro
+    seq=310, package=com.jndapp.line.x.iconpack
+    seq=315, package=com.sofascore.results
+    seq=317, package=com.sportstreaming.ncaafootball
+    seq=319, package=com.fbreader
+    seq=323, package=com.livingearth.pro
+    seq=325, package=com.magdalm.updatesoftwarepro
+    seq=330, package=yo.app
+    seq=332, package=com.ddm.blocknet
+    seq=334, package=com.accuweather.android
+    seq=337, package=com.indigomadina.tigadpro
+    seq=339, package=com.apptivateme.next.sdut
+    seq=341, package=com.diune.pictures
+    seq=343, package=com.pandavideocompressor
+    seq=345, package=studio14.application.hera
+    seq=348, package=com.osheden.bestia
+    seq=350, package=com.lb.app_manager
+    seq=352, package=com.ilyas.ilyasapps.wifistrengthmeterpro
+    seq=354, package=ginlemon.flowerfree
+    seq=356, package=studio14.application.caelusblack
+    seq=359, package=com.stoik.mdscan
+    seq=363, package=com.mobilefootie.wc2010
+    seq=366, package=com.pranavpandey.rotation
+    seq=368, package=com.usefullapps.fakegpslocationpro
+    seq=372, package=com.OGR.vipnotesfull
+    seq=375, package=com.osheden.raya
+    seq=377, package=eu.lindentree.sounds
+    seq=380, package=jp.snowlife01.android.rotationcontrolpro
+    seq=382, package=com.ttxapps.megasync
+    seq=384, package=com.appums.music_pitcher_love_pro
+    seq=386, package=com.used.aoe
+    seq=388, package=com.kimcy929.screenrecorder
+    seq=390, package=com.lingodeer
+    seq=393, package=com.shaiban.audioplayer.mplayer
+    seq=395, package=com.sonyericsson.music
+    seq=397, package=com.burakgon.dnschanger
+    seq=401, package=com.dfstream.nfl
+    seq=403, package=com.joshy21.vera.calendarplus.widgets
+    seq=404, package=com.medisafe.android.client
+
+
+Dexopt state:
+  [com.medisafe.android.client]
+    path: /data/app/com.medisafe.android.client-7kFeP15fkXwWLa_owkEHkQ==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.medisafe.android.client]
+     base.apk - 7020
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

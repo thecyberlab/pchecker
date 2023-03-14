@@ -1,0 +1,266 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        88d2432 com.fitifyworkouts.bodyweight.workoutapp/com.fitifyapps.fitify.ui.pro.ProPurchaseActivity filter 92a0300
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "fitify.page.link": -1
+        88d2432 com.fitifyworkouts.bodyweight.workoutapp/com.fitifyapps.fitify.ui.pro.ProPurchaseActivity filter 5cd7739
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "fitify.app": -1
+          Path: "PatternMatcher{PREFIX: /promo}"
+          AutoVerify=true
+      fbconnect:
+        1e5517e com.fitifyworkouts.bodyweight.workoutapp/com.facebook.CustomTabActivity filter 2ec46df
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.fitifyworkouts.bodyweight.workoutapp": -1
+      genericidp:
+        bac4f2c com.fitifyworkouts.bodyweight.workoutapp/com.google.firebase.auth.internal.GenericIdpActivity filter 854df5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        701078a com.fitifyworkouts.bodyweight.workoutapp/com.google.firebase.auth.internal.RecaptchaActivity filter a7871fb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        efe6194 com.fitifyworkouts.bodyweight.workoutapp/com.fitifyapps.fitify.ui.onboarding.OnboardingActivity filter 82d43d
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        efe6194 com.fitifyworkouts.bodyweight.workoutapp/com.fitifyapps.fitify.ui.onboarding.OnboardingActivity filter 82d43d
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.LAUNCHER"
+      com.fitifyapps.fitify.PURCHASE:
+        88d2432 com.fitifyworkouts.bodyweight.workoutapp/com.fitifyapps.fitify.ui.pro.ProPurchaseActivity filter 5cbd583
+          Action: "com.fitifyapps.fitify.PURCHASE"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.QUICKBOOT_POWERON:
+        b253218 com.fitifyworkouts.bodyweight.workoutapp/com.fitifyapps.fitify.BootReceiver filter aa9d471
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        b253218 com.fitifyworkouts.bodyweight.workoutapp/com.fitifyapps.fitify.BootReceiver filter aa9d471
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+      com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED:
+        1f2fde2 com.fitifyworkouts.bodyweight.workoutapp/com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver filter c9d2573
+          Action: "com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        44757c4 com.fitifyworkouts.bodyweight.workoutapp/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 4b646ad
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        9701256 com.fitifyworkouts.bodyweight.workoutapp/com.google.firebase.iid.FirebaseInstanceIdReceiver filter ed232d7
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        b253218 com.fitifyworkouts.bodyweight.workoutapp/com.fitifyapps.fitify.BootReceiver filter aa9d471
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        a442c30 com.fitifyworkouts.bodyweight.workoutapp/com.fitifyapps.fitify.notification.WorkoutsFirebaseMessagingService filter 19da0a9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        2c7162e com.fitifyworkouts.bodyweight.workoutapp/com.google.firebase.messaging.FirebaseMessagingService filter d1aa5cf
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.fitifyworkouts.bodyweight.workoutapp:
+    ID: 03ac941d-6db0-4e58-8402-8df4ed724802
+    Signatures: [0C:FB:46:63:83:1A:0F:B8:D6:97:3A:AD:44:E2:21:A8:BA:78:F7:F6:84:BD:0B:17:D3:B4:4B:EC:82:31:64:84]
+    Domain verification state:
+      fitify.app: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          fitify.app
+          fitify.page.link
+
+Registered ContentProviders:
+  com.fitifyworkouts.bodyweight.workoutapp/androidx.startup.InitializationProvider:
+    Provider{ca638d5 com.fitifyworkouts.bodyweight.workoutapp/androidx.startup.InitializationProvider}
+  com.fitifyworkouts.bodyweight.workoutapp/androidx.core.content.FileProvider:
+    Provider{30387db com.fitifyworkouts.bodyweight.workoutapp/androidx.core.content.FileProvider}
+  com.fitifyworkouts.bodyweight.workoutapp/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{a47c278 com.fitifyworkouts.bodyweight.workoutapp/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.fitifyworkouts.bodyweight.workoutapp/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{e9e8d51 com.fitifyworkouts.bodyweight.workoutapp/com.google.firebase.provider.FirebaseInitProvider}
+  com.fitifyworkouts.bodyweight.workoutapp/com.facebook.internal.FacebookInitProvider:
+    Provider{63709b6 com.fitifyworkouts.bodyweight.workoutapp/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.fitifyworkouts.bodyweight.workoutapp.provider]:
+    Provider{30387db com.fitifyworkouts.bodyweight.workoutapp/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{7ef7343 com.fitifyworkouts.bodyweight.workoutapp}
+  [com.fitifyworkouts.bodyweight.workoutapp.androidx-startup]:
+    Provider{ca638d5 com.fitifyworkouts.bodyweight.workoutapp/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{ee4adc0 com.fitifyworkouts.bodyweight.workoutapp}
+  [com.fitifyworkouts.bodyweight.workoutapp.firebaseinitprovider]:
+    Provider{e9e8d51 com.fitifyworkouts.bodyweight.workoutapp/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{6ceaaf9 com.fitifyworkouts.bodyweight.workoutapp}
+  [com.fitifyworkouts.bodyweight.workoutapp.FacebookInitProvider]:
+    Provider{63709b6 com.fitifyworkouts.bodyweight.workoutapp/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{3acda3e com.fitifyworkouts.bodyweight.workoutapp}
+  [com.fitifyworkouts.bodyweight.workoutapp.firebaseperfprovider]:
+    Provider{a47c278 com.fitifyworkouts.bodyweight.workoutapp/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{50c009f com.fitifyworkouts.bodyweight.workoutapp}
+
+Key Set Manager:
+  [com.fitifyworkouts.bodyweight.workoutapp]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.fitifyworkouts.bodyweight.workoutapp] (846e5ec):
+    userId=10668
+    pkg=Package{3c77dbc com.fitifyworkouts.bodyweight.workoutapp}
+    codePath=/data/app/~~Oifev1k5xlGExqdTvKZRxg==/com.fitifyworkouts.bodyweight.workoutapp-y_jTvD_xmNp6wj-3V38RZA==
+    resourcePath=/data/app/~~Oifev1k5xlGExqdTvKZRxg==/com.fitifyworkouts.bodyweight.workoutapp-y_jTvD_xmNp6wj-3V38RZA==
+    legacyNativeLibraryDir=/data/app/~~Oifev1k5xlGExqdTvKZRxg==/com.fitifyworkouts.bodyweight.workoutapp-y_jTvD_xmNp6wj-3V38RZA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=3171 minSdk=23 targetSdk=31
+    minExtensionVersions=[]
+    versionName=1.26.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.spotify.music, com.huawei.health, com.hisilicon.android.hiRMService]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW dat=https:/... }]
+    dataDir=/data/user/0/com.fitifyworkouts.bodyweight.workoutapp
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 12:45:16
+    lastUpdateTime=2022-11-30 12:45:18
+    packageSource=0
+    signatures=PackageSignatures{fa7c854 version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACTIVITY_RECOGNITION
+      android.permission.CAMERA
+      android.permission.VIBRATE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=53038 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 12:45:18
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACTIVITY_RECOGNITION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.fitifyworkouts.bodyweight.workoutapp
+    com.google.android.apps.diagnosticstool:
+      com.fitifyworkouts.bodyweight.workoutapp
+    com.google.android.settings.intelligence:
+      com.fitifyworkouts.bodyweight.workoutapp
+    com.google.android.youtube:
+      com.fitifyworkouts.bodyweight.workoutapp
+    com.google.android.contacts:
+      com.fitifyworkouts.bodyweight.workoutapp
+    com.google.android.apps.accessibility.voiceaccess:
+      com.fitifyworkouts.bodyweight.workoutapp
+    com.google.android.gm:
+      com.fitifyworkouts.bodyweight.workoutapp
+    com.fitifyworkouts.bodyweight.workoutapp:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.localtransport,com.android.qns,com.android.keychain,com.android.providers.settings,com.android.location.fused,com.android.wallpaperbackup,com.google.android.iwlan,com.android.inputdevices,com.android.settings,android,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem]:
+        com.fitifyworkouts.bodyweight.workoutapp
+      [com.google.android.gms,com.google.android.gsf]:
+        com.fitifyworkouts.bodyweight.workoutapp
+  queryable via uses-library:
+
+Dexopt state:
+  [com.fitifyworkouts.bodyweight.workoutapp]
+    path: /data/app/~~Oifev1k5xlGExqdTvKZRxg==/com.fitifyworkouts.bodyweight.workoutapp-y_jTvD_xmNp6wj-3V38RZA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:2864591
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.fitifyworkouts.bodyweight.workoutapp]
+     base.apk - 743

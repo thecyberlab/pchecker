@@ -1,0 +1,346 @@
+Activity Resolver Table:
+  Full MIME Types:
+      image/*:
+        dc49f7d uhd.hd.amoled.wallpapers.wallhub/.common.ui.activity.SetWallpaperActivity filter cfe2e72
+          Action: "android.intent.action.ATTACH_DATA"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      image:
+        dc49f7d uhd.hd.amoled.wallpapers.wallhub/.common.ui.activity.SetWallpaperActivity filter cfe2e72
+          Action: "android.intent.action.ATTACH_DATA"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      https:
+        88cb2c3 uhd.hd.amoled.wallpapers.wallhub/.common.ui.activity.DispatchBrowserActionActivity filter 831b740
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "unsplash.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+        88cb2c3 uhd.hd.amoled.wallpapers.wallhub/.common.ui.activity.DispatchBrowserActionActivity filter e80b679
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "unsplash.com": -1
+          Path: "PatternMatcher{PREFIX: /photos/}"
+        88cb2c3 uhd.hd.amoled.wallpapers.wallhub/.common.ui.activity.DispatchBrowserActionActivity filter efcbfbe
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "unsplash.com": -1
+          Path: "PatternMatcher{PREFIX: /collections/}"
+        88cb2c3 uhd.hd.amoled.wallpapers.wallhub/.common.ui.activity.DispatchBrowserActionActivity filter efdb81f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "unsplash.com": -1
+          Path: "PatternMatcher{GLOB: .*/@.*}"
+      mysplash:
+        16e54b uhd.hd.amoled.wallpapers.wallhub/.common.ui.activity.LoginActivity filter 69eab28
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "mysplash"
+          Authority: "unsplash-auth-callback": -1
+
+  Non-Data Actions:
+      uhd.hd.amoled.wallpapers.wallhub.Search:
+        2b29cc5 uhd.hd.amoled.wallpapers.wallhub/.search.ui.SearchActivity filter 72ef61a
+          Action: "uhd.hd.amoled.wallpapers.wallhub.Search"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        9f3252f uhd.hd.amoled.wallpapers.wallhub/.main.MainActivity filter 335573c
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      uhd.hd.amoled.wallpapers.wallhub.DownloadManager:
+        d6c8b27 uhd.hd.amoled.wallpapers.wallhub/.common.ui.activity.DownloadManageActivity filter c751d4
+          Action: "uhd.hd.amoled.wallpapers.wallhub.DownloadManager"
+          Category: "android.intent.category.DEFAULT"
+      uhd.hd.amoled.wallpapers.wallhub.Me:
+        2a54041 uhd.hd.amoled.wallpapers.wallhub/.me.ui.activity.MeActivity filter d3659e6
+          Action: "uhd.hd.amoled.wallpapers.wallhub.Me"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.ATTACH_DATA:
+        dc49f7d uhd.hd.amoled.wallpapers.wallhub/.common.ui.activity.SetWallpaperActivity filter cfe2e72
+          Action: "android.intent.action.ATTACH_DATA"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        c672e58 uhd.hd.amoled.wallpapers.wallhub/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 81dbbb1
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        ac119ca uhd.hd.amoled.wallpapers.wallhub/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 64fb73b
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED:
+        71b076c uhd.hd.amoled.wallpapers.wallhub/.common.download.DownloadReceiver filter c4d4135
+          Action: "android.intent.action.DOWNLOAD_COMPLETE"
+          Action: "android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"
+          mPriority=1000, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.DEVICE_STORAGE_LOW:
+        fbf0896 uhd.hd.amoled.wallpapers.wallhub/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 2f88c17
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        f4cd804 uhd.hd.amoled.wallpapers.wallhub/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 4a161ed
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        fbf0896 uhd.hd.amoled.wallpapers.wallhub/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 2f88c17
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        b6946e uhd.hd.amoled.wallpapers.wallhub/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter a0ae70f
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        da5239c uhd.hd.amoled.wallpapers.wallhub/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 6d1e1a5
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        c672e58 uhd.hd.amoled.wallpapers.wallhub/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 81dbbb1
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        edb1822 uhd.hd.amoled.wallpapers.wallhub/androidx.work.impl.background.systemalarm.RescheduleReceiver filter efd2b3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        edb1822 uhd.hd.amoled.wallpapers.wallhub/androidx.work.impl.background.systemalarm.RescheduleReceiver filter efd2b3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        edb1822 uhd.hd.amoled.wallpapers.wallhub/androidx.work.impl.background.systemalarm.RescheduleReceiver filter efd2b3
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        ac119ca uhd.hd.amoled.wallpapers.wallhub/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 64fb73b
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DOWNLOAD_COMPLETE:
+        71b076c uhd.hd.amoled.wallpapers.wallhub/.common.download.DownloadReceiver filter c4d4135
+          Action: "android.intent.action.DOWNLOAD_COMPLETE"
+          Action: "android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"
+          mPriority=1000, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        1c17070 uhd.hd.amoled.wallpapers.wallhub/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 63f2fe9
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        4e8c346 uhd.hd.amoled.wallpapers.wallhub/com.google.firebase.messaging.FirebaseMessagingService filter bea907
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.apps.muzei.api.MuzeiArtSource:
+        8aedd88 uhd.hd.amoled.wallpapers.wallhub/.common.muzei.MysplashMuzeiArtSource filter 923f321
+          Action: "com.google.android.apps.muzei.api.MuzeiArtSource"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      com.google.android.apps.muzei.api.MuzeiArtProvider:
+        4bb897a uhd.hd.amoled.wallpapers.wallhub/.common.muzei.MysplashMuzeiArtProvider filter 618e52b
+          Action: "com.google.android.apps.muzei.api.MuzeiArtProvider"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          unsplash.com
+
+Registered ContentProviders:
+  uhd.hd.amoled.wallpapers.wallhub/androidx.work.impl.WorkManagerInitializer:
+    Provider{666e7a6 uhd.hd.amoled.wallpapers.wallhub/androidx.work.impl.WorkManagerInitializer}
+  uhd.hd.amoled.wallpapers.wallhub/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{e76f594 uhd.hd.amoled.wallpapers.wallhub/com.crashlytics.android.CrashlyticsInitProvider}
+  uhd.hd.amoled.wallpapers.wallhub/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{bf1d83d uhd.hd.amoled.wallpapers.wallhub/com.google.firebase.provider.FirebaseInitProvider}
+  uhd.hd.amoled.wallpapers.wallhub/.common.muzei.MysplashMuzeiArtProvider:
+    Provider{4bb897a uhd.hd.amoled.wallpapers.wallhub/.common.muzei.MysplashMuzeiArtProvider}
+  uhd.hd.amoled.wallpapers.wallhub/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{209d832 uhd.hd.amoled.wallpapers.wallhub/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  uhd.hd.amoled.wallpapers.wallhub/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{6bc7983 uhd.hd.amoled.wallpapers.wallhub/com.google.android.gms.ads.MobileAdsInitProvider}
+  uhd.hd.amoled.wallpapers.wallhub/androidx.core.content.FileProvider:
+    Provider{997d700 uhd.hd.amoled.wallpapers.wallhub/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [uhd.hd.amoled.wallpapers.wallhub.fileprovider]:
+    Provider{997d700 uhd.hd.amoled.wallpapers.wallhub/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{a3c958f uhd.hd.amoled.wallpapers.wallhub}
+  [uhd.hd.amoled.wallpapers.wallhub.crashlyticsinitprovider]:
+    Provider{e76f594 uhd.hd.amoled.wallpapers.wallhub/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{cf7701c uhd.hd.amoled.wallpapers.wallhub}
+  [uhd.hd.amoled.wallpapers.wallhub.mobileadsinitprovider]:
+    Provider{6bc7983 uhd.hd.amoled.wallpapers.wallhub/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{b2b7425 uhd.hd.amoled.wallpapers.wallhub}
+  [uhd.hd.amoled.wallpapers.wallhub.lifecycle-process]:
+    Provider{209d832 uhd.hd.amoled.wallpapers.wallhub/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{881e9fa uhd.hd.amoled.wallpapers.wallhub}
+  [uhd.hd.amoled.wallpapers.wallhub]:
+    Provider{4bb897a uhd.hd.amoled.wallpapers.wallhub/.common.muzei.MysplashMuzeiArtProvider}
+      applicationInfo=ApplicationInfo{5f6fbab uhd.hd.amoled.wallpapers.wallhub}
+  [uhd.hd.amoled.wallpapers.wallhub.firebaseinitprovider]:
+    Provider{bf1d83d uhd.hd.amoled.wallpapers.wallhub/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{c197208 uhd.hd.amoled.wallpapers.wallhub}
+  [uhd.hd.amoled.wallpapers.wallhub.workmanager-init]:
+    Provider{666e7a6 uhd.hd.amoled.wallpapers.wallhub/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{1c42da1 uhd.hd.amoled.wallpapers.wallhub}
+
+Key Set Manager:
+  [uhd.hd.amoled.wallpapers.wallhub]
+      Signing KeySets: 88
+
+Packages:
+  Package [uhd.hd.amoled.wallpapers.wallhub] (1f4abc6):
+    userId=10247
+    pkg=Package{7a196d7 uhd.hd.amoled.wallpapers.wallhub}
+    codePath=/data/app/~~IwBmccLyqjRGTbdmilIvHg==/uhd.hd.amoled.wallpapers.wallhub-_AZxQn2K1HBhqdOIbYJ01A==
+    resourcePath=/data/app/~~IwBmccLyqjRGTbdmilIvHg==/uhd.hd.amoled.wallpapers.wallhub-_AZxQn2K1HBhqdOIbYJ01A==
+    legacyNativeLibraryDir=/data/app/~~IwBmccLyqjRGTbdmilIvHg==/uhd.hd.amoled.wallpapers.wallhub-_AZxQn2K1HBhqdOIbYJ01A==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=104 minSdk=19 targetSdk=29
+    minExtensionVersions=[]
+    versionName=1.0.4
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_TASK_REPARENTING ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/uhd.hd.amoled.wallpapers.wallhub
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 10:47:24
+    lastUpdateTime=2022-11-30 10:47:25
+    packageSource=0
+    signatures=PackageSignatures{e04b1e2 version:1, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.SET_WALLPAPER
+      android.permission.SET_WALLPAPER_HINTS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      android.permission.VIBRATE
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+      android.permission.READ_LOGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      android.permission.SET_WALLPAPER_HINTS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=45410 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 10:47:25
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.SystemAlarmService
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      uhd.hd.amoled.wallpapers.wallhub
+    com.google.android.apps.diagnosticstool:
+      uhd.hd.amoled.wallpapers.wallhub
+    com.google.android.settings.intelligence:
+      uhd.hd.amoled.wallpapers.wallhub
+    com.google.android.apps.photos:
+      uhd.hd.amoled.wallpapers.wallhub
+    com.google.android.apps.accessibility.voiceaccess:
+      uhd.hd.amoled.wallpapers.wallhub
+  queryable via interaction:
+    User 0:
+      [com.android.qns,com.google.SSRestartDetector,com.google.android.iwlan,com.android.settings,com.android.providers.settings,com.android.wallpaperbackup,android,com.android.location.fused,com.android.server.telecom,com.android.dynsystem,com.android.localtransport,com.android.inputdevices,com.android.keychain,com.google.android.settings.future.biometrics.faceenroll]:
+        uhd.hd.amoled.wallpapers.wallhub
+      [com.google.android.gsf,com.google.android.gms]:
+        uhd.hd.amoled.wallpapers.wallhub
+  queryable via uses-library:
+
+Dexopt state:
+  [uhd.hd.amoled.wallpapers.wallhub]
+    path: /data/app/~~IwBmccLyqjRGTbdmilIvHg==/uhd.hd.amoled.wallpapers.wallhub-_AZxQn2K1HBhqdOIbYJ01A==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:71438
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [uhd.hd.amoled.wallpapers.wallhub]
+     base.apk - 573

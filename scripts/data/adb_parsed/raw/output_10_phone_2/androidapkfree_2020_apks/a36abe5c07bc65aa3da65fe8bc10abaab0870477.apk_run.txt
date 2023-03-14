@@ -1,0 +1,260 @@
+Activity Resolver Table:
+  Schemes:
+      lomotifprod:
+        8fb77 com.lomotif.android/com.snapchat.kit.sdk.SnapKitActivity filter 3063a52
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "lomotifprod"
+          Authority: "snapchat": -1
+          Path: "PatternMatcher{LITERAL: /login}"
+      https:
+        57b83e4 com.lomotif.android/.app.ui.screen.launcher.LauncherActivity filter f02c2b4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "lomotif.onelink.me": -1
+          Path: "PatternMatcher{PREFIX: /z5Xs}"
+          AutoVerify=true
+      lomotif:
+        57b83e4 com.lomotif.android/.app.ui.screen.launcher.LauncherActivity filter d5db387
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "lomotif"
+      amp01d382ce05d5f61bae54317-943ff384-2398-11e6-178b-00cef1388a40:
+        57b83e4 com.lomotif.android/.app.ui.screen.launcher.LauncherActivity filter 6b7eedd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "amp01d382ce05d5f61bae54317-943ff384-2398-11e6-178b-00cef1388a40"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        57b83e4 com.lomotif.android/.app.ui.screen.launcher.LauncherActivity filter 4cb67c6
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        e1ed04d com.lomotif.android/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter aa9a99e
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        f245702 com.lomotif.android/com.appsflyer.SingleInstallBroadcastReceiver filter cd80123
+          Action: "com.android.vending.INSTALL_REFERRER"
+        287d813 com.lomotif.android/com.facebook.CampaignTrackingReceiver filter a1f8c7f
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        95efa50 com.lomotif.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 7499bd9
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.leanplum.LeanplumPushFirebaseMessagingService:
+        7952449 com.lomotif.android/com.leanplum.LeanplumPushReceiver filter c635620
+          Action: "com.leanplum.LeanplumPushFirebaseMessagingService"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        504e14e com.lomotif.android/.app.model.analytics.LomotifFirebaseMessagingService filter 577b44c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        de26f com.lomotif.android/com.leanplum.LeanplumPushFirebaseMessagingService filter baf1c95
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        1c16b7c com.lomotif.android/com.google.firebase.messaging.FirebaseMessagingService filter 482c1aa
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+
+Registered ContentProviders:
+  com.lomotif.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{c02bc05 com.lomotif.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.lomotif.android/androidx.core.content.FileProvider:
+    Provider{351c45a com.lomotif.android/androidx.core.content.FileProvider}
+  com.lomotif.android/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{b40368b com.lomotif.android/com.crashlytics.android.CrashlyticsInitProvider}
+  com.lomotif.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{577c368 com.lomotif.android/com.google.firebase.provider.FirebaseInitProvider}
+  com.lomotif.android/com.facebook.internal.FacebookInitProvider:
+    Provider{bf81381 com.lomotif.android/com.facebook.internal.FacebookInitProvider}
+  com.lomotif.android/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{557cc26 com.lomotif.android/com.facebook.ads.AudienceNetworkContentProvider}
+  com.lomotif.android/coil.util.CoilContentProvider:
+    Provider{1f9b067 com.lomotif.android/coil.util.CoilContentProvider}
+  com.lomotif.android/com.flurry.android.agent.FlurryContentProvider:
+    Provider{1b9ae14 com.lomotif.android/com.flurry.android.agent.FlurryContentProvider}
+
+ContentProvider Authorities:
+  [com.lomotif.android.provider]:
+    Provider{351c45a com.lomotif.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{69166bd com.lomotif.android}
+  [com.lomotif.android.lifecycle-process]:
+    Provider{c02bc05 com.lomotif.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{69166bd com.lomotif.android}
+  [com.lomotif.android.FlurryContentProvider]:
+    Provider{1b9ae14 com.lomotif.android/com.flurry.android.agent.FlurryContentProvider}
+      applicationInfo=ApplicationInfo{69166bd com.lomotif.android}
+  [com.lomotif.android.AudienceNetworkContentProvider]:
+    Provider{557cc26 com.lomotif.android/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{69166bd com.lomotif.android}
+  [com.lomotif.android.firebaseinitprovider]:
+    Provider{577c368 com.lomotif.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{69166bd com.lomotif.android}
+  [com.lomotif.android.FacebookInitProvider]:
+    Provider{bf81381 com.lomotif.android/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{69166bd com.lomotif.android}
+  [com.lomotif.android.coil]:
+    Provider{1f9b067 com.lomotif.android/coil.util.CoilContentProvider}
+      applicationInfo=ApplicationInfo{69166bd com.lomotif.android}
+  [com.lomotif.android.crashlyticsinitprovider]:
+    Provider{b40368b com.lomotif.android/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{69166bd com.lomotif.android}
+
+Key Set Manager:
+  [com.lomotif.android]
+      Signing KeySets: 369
+
+Packages:
+  Package [com.lomotif.android] (c6484b2):
+    userId=10197
+    pkg=Package{b1059a1 com.lomotif.android}
+    codePath=/data/app/com.lomotif.android-FY47sxU-cltnhHehOlndgw==
+    resourcePath=/data/app/com.lomotif.android-FY47sxU-cltnhHehOlndgw==
+    legacyNativeLibraryDir=/data/app/com.lomotif.android-FY47sxU-cltnhHehOlndgw==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=404 minSdk=21 targetSdk=29
+    versionName=2.5.4
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{69166bd com.lomotif.android}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.lomotif.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 08:28:30
+    firstInstallTime=2021-03-06 08:28:30
+    lastUpdateTime=2021-03-06 08:28:30
+    signatures=PackageSignatures{ae6ec03 version:3, signatures:[bc6ed4a0], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.READ_CONTACTS
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.CAMERA
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.READ_PHONE_STATE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=13563 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Package Changes:
+  Sequence number=119
+  User 0:
+    seq=1, package=com.studioeleven.windfinder
+    seq=8, package=com.google.android.gms
+    seq=9, package=de.motain.iliga
+    seq=11, package=com.microsoft.office.word
+    seq=13, package=video.like
+    seq=15, package=com.netflix.mediaclient
+    seq=19, package=com.agilebits.onepassword
+    seq=21, package=com.rayark.valkyrie
+    seq=23, package=com.aa.generaladaptiveapps
+    seq=25, package=com.ea.gp.fifamobile
+    seq=27, package=com.instagram.igtv
+    seq=29, package=deezer.android.app
+    seq=31, package=com.square_enix.android_googleplay.FFBEWW
+    seq=33, package=com.google.android.calculator
+    seq=35, package=com.gamevilusa.mlbpilive.android.google.global.normal
+    seq=37, package=com.kabam.bigrobot
+    seq=39, package=io.enpass.app
+    seq=41, package=com.adobe.lrmobile
+    seq=43, package=com.vng.g6.a.zombie
+    seq=45, package=com.microblink.photomath
+    seq=47, package=com.scopely.whiplash
+    seq=49, package=com.iudesk.android.photo.editor
+    seq=51, package=com.microsoft.office.officehubrow
+    seq=53, package=com.whatsapp
+    seq=55, package=com.joeware.android.gpulumera
+    seq=57, package=com.anslayer
+    seq=59, package=com.apkupdater
+    seq=62, package=com.android.vending
+    seq=63, package=com.google.android.wearable.app
+    seq=65, package=com.zqlabs.filechef
+    seq=67, package=com.wondershare.filmorago
+    seq=69, package=com.outfit7.mytalkingangelafree
+    seq=71, package=com.truecaller
+    seq=73, package=com.ea.games.r3_row
+    seq=75, package=com.google.ar.lens
+    seq=77, package=com.fusionmedia.investing
+    seq=79, package=com.king.candycrushsodasaga
+    seq=81, package=com.seleuco.mame4droid
+    seq=83, package=com.Slack
+    seq=85, package=com.liquidum.rocketvpn
+    seq=87, package=com.sec.android.easyMover
+    seq=89, package=com.fingersoft.hillclimb
+    seq=91, package=com.cpuid.cpu_z
+    seq=93, package=com.piriform.ccleaner
+    seq=95, package=com.tencent.ibg.joox
+    seq=97, package=com.netease.lztgglobal
+    seq=99, package=com.youthhr.phonto
+    seq=101, package=com.nintendo.zaba
+    seq=103, package=com.idleif.abyssrium
+    seq=105, package=com.facebook.orca
+    seq=107, package=com.amazon.mShop.android.shopping
+    seq=109, package=com.google.android.apps.cloudconsole
+    seq=111, package=com.app.onlyvpn
+    seq=113, package=com.rayark.pluto
+    seq=115, package=wp.wattpad
+    seq=117, package=com.adguard.android
+    seq=118, package=com.lomotif.android
+
+
+Dexopt state:
+  [com.lomotif.android]
+    path: /data/app/com.lomotif.android-FY47sxU-cltnhHehOlndgw==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.lomotif.android]
+     base.apk - 6435
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

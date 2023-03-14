@@ -1,0 +1,255 @@
+Activity Resolver Table:
+  Schemes:
+      cinetrak:
+        197cf7c com.cinetrak.mobile/pw.accky.climax.activity.startup.RouterActivity filter 268c85a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "cinetrak"
+          Authority: "open": -1
+      https:
+        197cf7c com.cinetrak.mobile/pw.accky.climax.activity.startup.RouterActivity filter 344ea8b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "a380.app.link": -1
+          AutoVerify=true
+      cinetraksignin:
+        6506768 com.cinetrak.mobile/pw.accky.climax.activity.CurrentSigninActivity filter 22de781
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "cinetraksignin"
+          Authority: "hello": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        197cf7c com.cinetrak.mobile/pw.accky.climax.activity.startup.RouterActivity filter 4c35005
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        1789214 com.cinetrak.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c507abd
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        8db1026 com.cinetrak.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 795a467
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        ed808b2 com.cinetrak.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4e2003
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        456bb80 com.cinetrak.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter b0f05b9
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        ed808b2 com.cinetrak.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4e2003
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        1789214 com.cinetrak.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c507abd
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        f39fdfe com.cinetrak.mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 788b95f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        f39fdfe com.cinetrak.mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 788b95f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        f39fdfe com.cinetrak.mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 788b95f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        8db1026 com.cinetrak.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 795a467
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        c2c0fac com.cinetrak.mobile/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 6914475
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        633fc0a com.cinetrak.mobile/pw.accky.climax.service.CinetrakFirebaseMessagingService filter 4a98c7b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        7207a98 com.cinetrak.mobile/com.google.firebase.messaging.FirebaseMessagingService filter 7beb2f1
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.cinetrak.mobile:
+    ID: a34f87e2-5304-4824-9592-f03f50802c8a
+    Signatures: [0C:FB:46:63:83:1A:0F:B8:D6:97:3A:AD:44:E2:21:A8:BA:78:F7:F6:84:BD:0B:17:D3:B4:4B:EC:82:31:64:84]
+    Domain verification state:
+      a380.app.link: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          a380.app.link
+
+Registered ContentProviders:
+  com.cinetrak.mobile/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{af59161 com.cinetrak.mobile/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.cinetrak.mobile/androidx.work.impl.WorkManagerInitializer:
+    Provider{ee0a486 com.cinetrak.mobile/androidx.work.impl.WorkManagerInitializer}
+  com.cinetrak.mobile/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{d6b1147 com.cinetrak.mobile/com.google.firebase.provider.FirebaseInitProvider}
+  com.cinetrak.mobile/com.chibatching.kotpref.initializer.KotprefInitProvider:
+    Provider{9c42d74 com.cinetrak.mobile/com.chibatching.kotpref.initializer.KotprefInitProvider}
+
+ContentProvider Authorities:
+  [com.cinetrak.mobile.lifecycle-process]:
+    Provider{af59161 com.cinetrak.mobile/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{a18e29d com.cinetrak.mobile}
+  [com.cinetrak.mobile.firebaseinitprovider]:
+    Provider{d6b1147 com.cinetrak.mobile/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{4128312 com.cinetrak.mobile}
+  [com.cinetrak.mobile.workmanager-init]:
+    Provider{ee0a486 com.cinetrak.mobile/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{1bd7ae3 com.cinetrak.mobile}
+  [com.cinetrak.mobile.kotprefinitprovider]:
+    Provider{9c42d74 com.cinetrak.mobile/com.chibatching.kotpref.initializer.KotprefInitProvider}
+      applicationInfo=ApplicationInfo{7b0ace0 com.cinetrak.mobile}
+
+Key Set Manager:
+  [com.cinetrak.mobile]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.cinetrak.mobile] (260b99):
+    userId=10251
+    pkg=Package{911be5e com.cinetrak.mobile}
+    codePath=/data/app/~~fLiQWThFl6wHKmOkbcSOTg==/com.cinetrak.mobile-kihFedtTQFhi_IbgVwoN7w==
+    resourcePath=/data/app/~~fLiQWThFl6wHKmOkbcSOTg==/com.cinetrak.mobile-kihFedtTQFhi_IbgVwoN7w==
+    legacyNativeLibraryDir=/data/app/~~fLiQWThFl6wHKmOkbcSOTg==/com.cinetrak.mobile-kihFedtTQFhi_IbgVwoN7w==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=264 minSdk=23 targetSdk=30
+    minExtensionVersions=[]
+    versionName=0.8.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.cinetrak.mobile
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 15:12:03
+    lastUpdateTime=2022-11-30 15:12:03
+    packageSource=0
+    signatures=PackageSignatures{f42e23f version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=65825 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:12:03
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.cinetrak.mobile
+    com.google.android.apps.diagnosticstool:
+      com.cinetrak.mobile
+    com.google.android.settings.intelligence:
+      com.cinetrak.mobile
+    com.google.android.apps.accessibility.voiceaccess:
+      com.cinetrak.mobile
+    com.cinetrak.mobile:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      com.dv.adm
+      com.utorrent.client.pro
+    com.truecaller:
+      com.cinetrak.mobile
+    com.dv.adm:
+      com.cinetrak.mobile
+    com.zappcues.gamingmode:
+      com.cinetrak.mobile
+    com.jio.myjio:
+      com.cinetrak.mobile
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.cinetrak.mobile]
+    path: /data/app/~~fLiQWThFl6wHKmOkbcSOTg==/com.cinetrak.mobile-kihFedtTQFhi_IbgVwoN7w==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:72008
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.cinetrak.mobile]
+     base.apk - 545

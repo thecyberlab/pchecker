@@ -1,0 +1,375 @@
+Activity Resolver Table:
+  Schemes:
+      nytimes:
+        f2f553b com.nytimes.android/.IntentFilterActivity filter 9c17458
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "nyt"
+          Scheme: "nytimes"
+          Authority: "": -1 WILD
+          Authority: "reader": -1
+          Authority: "abra": -1
+          Authority: "adv-preview.nytimes.com": -1
+          Authority: "paidpost.nytimes.com": -1
+      nyt:
+        f2f553b com.nytimes.android/.IntentFilterActivity filter 9c17458
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "nyt"
+          Scheme: "nytimes"
+          Authority: "": -1 WILD
+          Authority: "reader": -1
+          Authority: "abra": -1
+          Authority: "adv-preview.nytimes.com": -1
+          Authority: "paidpost.nytimes.com": -1
+      http:
+        f2f553b com.nytimes.android/.IntentFilterActivity filter ce189b1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.nytimes.com": -1
+          Path: "PatternMatcher{PREFIX: /20}"
+          Path: "PatternMatcher{PREFIX: /19}"
+          Path: "PatternMatcher{PREFIX: /es/20}"
+          Path: "PatternMatcher{PREFIX: /es/19}"
+          Path: "PatternMatcher{PREFIX: /id/}"
+          Path: "PatternMatcher{PREFIX: /sf/}"
+          Path: "PatternMatcher{PREFIX: /live/}"
+          Path: "PatternMatcher{PREFIX: /section/}"
+          Path: "PatternMatcher{PREFIX: /lp/}"
+          Path: "PatternMatcher{PREFIX: /interactive/}"
+          Path: "PatternMatcher{PREFIX: /now/}"
+          Path: "PatternMatcher{PREFIX: /news-event/2020-election}"
+          AutoVerify=true
+        f2f553b com.nytimes.android/.IntentFilterActivity filter 3e1be96
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.nytimes.com": -1
+          Path: "PatternMatcher{GLOB: /*}"
+          AutoVerify=true
+      https:
+        f2f553b com.nytimes.android/.IntentFilterActivity filter ce189b1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.nytimes.com": -1
+          Path: "PatternMatcher{PREFIX: /20}"
+          Path: "PatternMatcher{PREFIX: /19}"
+          Path: "PatternMatcher{PREFIX: /es/20}"
+          Path: "PatternMatcher{PREFIX: /es/19}"
+          Path: "PatternMatcher{PREFIX: /id/}"
+          Path: "PatternMatcher{PREFIX: /sf/}"
+          Path: "PatternMatcher{PREFIX: /live/}"
+          Path: "PatternMatcher{PREFIX: /section/}"
+          Path: "PatternMatcher{PREFIX: /lp/}"
+          Path: "PatternMatcher{PREFIX: /interactive/}"
+          Path: "PatternMatcher{PREFIX: /now/}"
+          Path: "PatternMatcher{PREFIX: /news-event/2020-election}"
+          AutoVerify=true
+        f2f553b com.nytimes.android/.IntentFilterActivity filter 3e1be96
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.nytimes.com": -1
+          Path: "PatternMatcher{GLOB: /*}"
+          AutoVerify=true
+      fbconnect:
+        cd40fed com.nytimes.android/com.facebook.CustomTabActivity filter 1732e22
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.nytimes.android": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d02f35 com.nytimes.android/.MainActivity filter f046fca
+          Action: "android.intent.action.MAIN"
+          Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
+          Action: "android.media.action.MEDIA_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+      android.media.action.MEDIA_PLAY_FROM_SEARCH:
+        d02f35 com.nytimes.android/.MainActivity filter f046fca
+          Action: "android.intent.action.MAIN"
+          Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
+          Action: "android.media.action.MEDIA_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+      android.media.action.MEDIA_SEARCH:
+        d02f35 com.nytimes.android/.MainActivity filter f046fca
+          Action: "android.intent.action.MAIN"
+          Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
+          Action: "android.media.action.MEDIA_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.SEARCH:
+        d340a17 com.nytimes.android/.browse.searchlegacy.SearchActivity filter f057e04
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        d1c032b com.nytimes.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c26a388
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        ec4fa5 com.nytimes.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 3805f7a
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        5774121 com.nytimes.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter a24f946
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        7d5a707 com.nytimes.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 5467034
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        478250f com.nytimes.android/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter b0c899c
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        5774121 com.nytimes.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter a24f946
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        9eebde9 com.nytimes.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 3ba0a6e
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        d1c032b com.nytimes.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c26a388
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        165ce5d com.nytimes.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 62763d2
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        165ce5d com.nytimes.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 62763d2
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        165ce5d com.nytimes.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 62763d2
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        6326fff com.nytimes.android/com.instacart.library.truetime.BootCompletedBroadcastReceiver filter fd391cc
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        ec4fa5 com.nytimes.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 3805f7a
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        bb5f359 com.nytimes.android/androidx.work.impl.diagnostics.DiagnosticsReceiver filter c73eb1e
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        59baca3 com.nytimes.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter af45ba0
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.MEDIA_BUTTON:
+        66530b3 com.nytimes.android/.media.NytMediaButtonReceiver filter b5e7670
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        3496c15 com.nytimes.android/.firebase.NYTFirebaseMessagingService filter 26f9b2a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        961b491 com.nytimes.android/com.google.firebase.messaging.FirebaseMessagingService filter cc43ff6
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.media.browse.MediaBrowserService:
+        7480d1b com.nytimes.android/.media.player.MediaService filter b8dfeb8
+          Action: "android.media.browse.MediaBrowserService"
+
+Domain verification status:
+  com.nytimes.android:
+    ID: 3ef3ca1c-f786-4123-a0a3-3555713dc53c
+    Signatures: [0C:FB:46:63:83:1A:0F:B8:D6:97:3A:AD:44:E2:21:A8:BA:78:F7:F6:84:BD:0B:17:D3:B4:4B:EC:82:31:64:84]
+    Domain verification state:
+      www.nytimes.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.nytimes.com
+
+Registered ContentProviders:
+  com.nytimes.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{e818c1b com.nytimes.android/com.google.firebase.provider.FirebaseInitProvider}
+  com.nytimes.android/com.facebook.internal.FacebookInitProvider:
+    Provider{dbb11b8 com.nytimes.android/com.facebook.internal.FacebookInitProvider}
+  com.nytimes.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{45ccb91 com.nytimes.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.nytimes.android/.browse.searchlegacy.SuggestionProvider:
+    Provider{4af0af6 com.nytimes.android/.browse.searchlegacy.SuggestionProvider}
+  com.nytimes.android/com.squareup.picasso.PicassoProvider:
+    Provider{422cef7 com.nytimes.android/com.squareup.picasso.PicassoProvider}
+
+ContentProvider Authorities:
+  [com.nytimes.android.lifecycle-process]:
+    Provider{45ccb91 com.nytimes.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{cb7f357 com.nytimes.android}
+  [com.nytimes.android.search.SuggestionProvider]:
+    Provider{4af0af6 com.nytimes.android/.browse.searchlegacy.SuggestionProvider}
+      applicationInfo=ApplicationInfo{2c14e44 com.nytimes.android}
+  [com.nytimes.android.firebaseinitprovider]:
+    Provider{e818c1b com.nytimes.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{ebf3b2d com.nytimes.android}
+  [com.nytimes.android.FacebookInitProvider]:
+    Provider{dbb11b8 com.nytimes.android/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{d421862 com.nytimes.android}
+  [com.nytimes.android.com.squareup.picasso]:
+    Provider{422cef7 com.nytimes.android/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{65e6df3 com.nytimes.android}
+
+Key Set Manager:
+  [com.nytimes.android]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.nytimes.android] (8a70ab0):
+    userId=10427
+    pkg=Package{29882ce com.nytimes.android}
+    codePath=/data/app/~~7ecw9l0EIN8duFyH48CY6w==/com.nytimes.android-yCEw3mmWsbcN-9X7QVcRRA==
+    resourcePath=/data/app/~~7ecw9l0EIN8duFyH48CY6w==/com.nytimes.android-yCEw3mmWsbcN-9X7QVcRRA==
+    legacyNativeLibraryDir=/data/app/~~7ecw9l0EIN8duFyH48CY6w==/com.nytimes.android-yCEw3mmWsbcN-9X7QVcRRA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=9325810 minSdk=23 targetSdk=30
+    minExtensionVersions=[]
+    versionName=9.37
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.nytimes.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 16:49:48
+    lastUpdateTime=2022-11-30 16:49:49
+    packageSource=0
+    signatures=PackageSignatures{c1ea5ef version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.CAMERA
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=74531 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 16:49:49
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.nytimes.android
+    com.google.android.apps.diagnosticstool:
+      com.nytimes.android
+    com.google.android.settings.intelligence:
+      com.nytimes.android
+    com.google.android.GoogleCamera:
+      com.nytimes.android
+    com.google.android.deskclock:
+      com.nytimes.android
+    com.google.android.apps.accessibility.voiceaccess:
+      com.nytimes.android
+    com.pandavideocompressor:
+      com.nytimes.android
+    radiotime.player:
+      com.nytimes.android
+    com.truecaller:
+      com.nytimes.android
+    com.ninegag.android.app:
+      com.nytimes.android
+    ringtone.maker.mp3.cutter.audio:
+      com.nytimes.android
+    com.lyrebirdstudio.photo_editor_pro:
+      com.nytimes.android
+    com.dv.adm:
+      com.nytimes.android
+    com.zappcues.gamingmode:
+      com.nytimes.android
+    com.jio.myjio:
+      com.nytimes.android
+  queryable via interaction:
+    User 0:
+      [com.android.wallpaperbackup,com.android.location.fused,com.android.keychain,android,com.android.qns,com.google.SSRestartDetector,com.android.providers.settings,com.android.inputdevices,com.android.server.telecom,com.android.settings,com.android.dynsystem,com.android.localtransport,com.google.android.iwlan,com.google.android.settings.future.biometrics.faceenroll]:
+        com.nytimes.android
+      [com.google.android.gms,com.google.android.gsf]:
+        com.nytimes.android
+      com.nytimes.android:
+        com.google.android.webview
+  queryable via uses-library:
+
+Dexopt state:
+  [com.nytimes.android]
+    path: /data/app/~~7ecw9l0EIN8duFyH48CY6w==/com.nytimes.android-yCEw3mmWsbcN-9X7QVcRRA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1036861
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.nytimes.android]
+     base.apk - 1123

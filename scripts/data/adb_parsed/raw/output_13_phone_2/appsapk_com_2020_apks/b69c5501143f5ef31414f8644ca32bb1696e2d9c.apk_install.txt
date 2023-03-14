@@ -1,0 +1,491 @@
+Activity Resolver Table:
+  Schemes:
+      juspay:
+        f175a65 com.flipkart.android/in.juspay.godel.core.CustomtabActivity filter 99a733a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "juspay"
+          Authority: "com.flipkart.android": -1
+      http:
+        55a9ca9 com.flipkart.android/.activity.HomeFragmentHolderActivity filter 9a6075c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "dl.flipkart.com": -1
+          Authority: "dl.flipkart.com": -1
+          Authority: "www.flipkart.com": -1
+          Authority: "www.flipkart.com": -1
+          Path: "PatternMatcher{PREFIX: /dl/}"
+          Path: "PatternMatcher{PREFIX: /dl/}"
+          Path: "PatternMatcher{PREFIX: /}"
+          Path: "PatternMatcher{PREFIX: /}"
+          AutoVerify=true
+        f175a65 com.flipkart.android/in.juspay.godel.core.CustomtabActivity filter ebaebeb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "api.juspay.in": -1
+          Path: "PatternMatcher{LITERAL: /pay/sdk-response/apps/com.flipkart.android}"
+          AutoVerify=true
+        f175a65 com.flipkart.android/in.juspay.godel.core.CustomtabActivity filter 12837e1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "sandbox.juspay.in": -1
+          Path: "PatternMatcher{LITERAL: /pay/sdk-response/apps/com.flipkart.android}"
+          AutoVerify=true
+      https:
+        55a9ca9 com.flipkart.android/.activity.HomeFragmentHolderActivity filter 9a6075c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "dl.flipkart.com": -1
+          Authority: "dl.flipkart.com": -1
+          Authority: "www.flipkart.com": -1
+          Authority: "www.flipkart.com": -1
+          Path: "PatternMatcher{PREFIX: /dl/}"
+          Path: "PatternMatcher{PREFIX: /dl/}"
+          Path: "PatternMatcher{PREFIX: /}"
+          Path: "PatternMatcher{PREFIX: /}"
+          AutoVerify=true
+        f175a65 com.flipkart.android/in.juspay.godel.core.CustomtabActivity filter c3a3d48
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "api.juspay.in": -1
+          Path: "PatternMatcher{LITERAL: /pay/sdk-response/apps/com.flipkart.android}"
+          AutoVerify=true
+        f175a65 com.flipkart.android/in.juspay.godel.core.CustomtabActivity filter 82c8906
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "sandbox.juspay.in": -1
+          Path: "PatternMatcher{LITERAL: /pay/sdk-response/apps/com.flipkart.android}"
+          AutoVerify=true
+      flipkart:
+        55a9ca9 com.flipkart.android/.activity.HomeFragmentHolderActivity filter 706622e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "flipkart"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        67ac173 com.flipkart.android/.SplashActivity filter b279830
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.google.android.gms.actions.SEARCH_ACTION:
+        55a9ca9 com.flipkart.android/.activity.HomeFragmentHolderActivity filter d3601cf
+          Action: "com.google.android.gms.actions.SEARCH_ACTION"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.VOICE"
+      org.npci.upi.security.pinactivitycomponent.GetCredential:
+        d5a5bc7 com.flipkart.android/org.npci.upi.security.pinactivitycomponent.GetCredential filter a59e5f4
+          Action: "org.npci.upi.security.pinactivitycomponent.GetCredential"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        9d2a5db com.flipkart.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f9b8878
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        6aca6d5 com.flipkart.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 161eea
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.google.android.gms.auth.api.phone.SMS_RETRIEVED:
+        596ed63 com.flipkart.android/.receiver.AutoReadSMSReceiver filter b296d60
+          Action: "com.google.android.gms.auth.api.phone.SMS_RETRIEVED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        d9ddb51 com.flipkart.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 6af3fb6
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        acbc4b7 com.flipkart.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter b3cb424
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        d9ddb51 com.flipkart.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 6af3fb6
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      expiry_notification_alarm_received:
+        8370219 com.flipkart.android/com.flipkart.pushnotification.receivers.FCMIntentReceiver filter a65b2de
+          Action: "show_notification_alarm_received"
+          Action: "expiry_notification_alarm_received"
+      com.android.vending.INSTALL_REFERRER:
+        b0f711d com.flipkart.android/.campaignmanager.ReferrerReceiver filter 3782f92
+          Action: "com.android.vending.INSTALL_REFERRER"
+        46fa389 com.flipkart.android/com.tune.TuneTracker filter c528f8e
+          Action: "com.android.vending.INSTALL_REFERRER"
+        725ef45 com.flipkart.android/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter e6c169a
+          Action: "com.android.vending.INSTALL_REFERRER"
+      show_notification_alarm_received:
+        8370219 com.flipkart.android/com.flipkart.pushnotification.receivers.FCMIntentReceiver filter a65b2de
+          Action: "show_notification_alarm_received"
+          Action: "expiry_notification_alarm_received"
+      com.google.android.c2dm.intent.RECEIVE:
+        cb893af com.flipkart.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter ff063bc
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        9d2a5db com.flipkart.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f9b8878
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        f93db8d com.flipkart.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ae7a142
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        f93db8d com.flipkart.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ae7a142
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        f93db8d com.flipkart.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ae7a142
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        6aca6d5 com.flipkart.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 161eea
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      notification_delete_action:
+        f80fcbf com.flipkart.android/com.flipkart.pushnotification.receivers.NotificationDeleteIntentReceiver filter 1a7ff8c
+          Action: "notification_delete_action"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        2cdf553 com.flipkart.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 3a2ee90
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.content.SyncAdapter:
+        88ed943 com.flipkart.android/.chat.sync.ChatSyncService filter 7d71bc0
+          Action: "android.content.SyncAdapter"
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        33b3ac1 com.flipkart.android/androidx.work.impl.background.gcm.WorkManagerGcmService filter e650266 permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        804bbcb com.flipkart.android/com.flipkart.pushnotification.services.FCMMessageListenerService filter 53dffa8
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        8a149a7 com.flipkart.android/com.google.firebase.messaging.FirebaseMessagingService filter f476e54
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      org.npci.upi.security.services.CLRemoteService:
+        dffc1fd com.flipkart.android/org.npci.upi.security.pinactivitycomponent.CLRemoteServiceImpl filter 9aedef2
+          Action: "org.npci.upi.security.services.CLRemoteService"
+      android.accounts.AccountAuthenticator:
+        78b80f9 com.flipkart.android/com.flipkart.accountManager.account.AuthenticatorService filter 147f83e
+          Action: "android.accounts.AccountAuthenticator"
+
+Domain verification status:
+  com.flipkart.android:
+    ID: bfed331b-dee1-44a9-8918-de87638028e6
+    Signatures: [5D:FB:A3:D8:D6:CB:06:F3:9A:2E:12:DB:6B:AC:64:CE:DF:AC:E4:68:11:EC:D0:93:71:7A:A0:51:AC:65:CE:31]
+    Domain verification state:
+      www.flipkart.com: none
+      api.juspay.in: none
+      sandbox.juspay.in: none
+      dl.flipkart.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.flipkart.com
+          api.juspay.in
+          sandbox.juspay.in
+          dl.flipkart.com
+
+Permissions:
+  Permission [com.flipkart.app.ecom.permission.C2D_MESSAGE] (ed54ec0):
+    sourcePackage=com.flipkart.android
+    uid=10479 gids=[] type=0 prot=signature
+    perm=PermissionInfo{75137f9 com.flipkart.app.ecom.permission.C2D_MESSAGE}
+
+Permissions:
+  Permission [com.flipkart.android.mwcpRead] (38e33e):
+    sourcePackage=com.flipkart.android
+    uid=10479 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{d69d59f com.flipkart.android.mwcpRead}
+
+Permissions:
+  Permission [com.flipkart.android.mwcpWrite] (d2096ec):
+    sourcePackage=com.flipkart.android
+    uid=10479 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{b645ab5 com.flipkart.android.mwcpWrite}
+
+Registered ContentProviders:
+  com.flipkart.android/.productpage.data.provider.ProductPageContentProviderWrapper:
+    Provider{a5bf54a com.flipkart.android/.productpage.data.provider.ProductPageContentProviderWrapper}
+  com.flipkart.android/com.reactnativecommunity.webview.RNCWebViewFileProvider:
+    Provider{f202cbb com.flipkart.android/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+  com.flipkart.android/com.flipkart.dus.DUSContentProvider:
+    Provider{1f635d8 com.flipkart.android/com.flipkart.dus.DUSContentProvider}
+  com.flipkart.android/com.flipkart.chat.db.CommContentProvider:
+    Provider{74ced31 com.flipkart.android/com.flipkart.chat.db.CommContentProvider}
+  com.flipkart.android/.newmultiwidget.data.provider.MultiWidgetContentProvider:
+    Provider{ec1c16 com.flipkart.android/.newmultiwidget.data.provider.MultiWidgetContentProvider}
+  com.flipkart.android/.providers.FlipkartFileProvider:
+    Provider{41ad997 com.flipkart.android/.providers.FlipkartFileProvider}
+  com.flipkart.android/.localization.FkFontsProvider:
+    Provider{f84d784 com.flipkart.android/.localization.FkFontsProvider}
+  com.flipkart.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{9522b6d com.flipkart.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.flipkart.android/androidx.work.impl.WorkManagerInitializer:
+    Provider{485e3a2 com.flipkart.android/androidx.work.impl.WorkManagerInitializer}
+  com.flipkart.android/.browse.data.provider.ProductContentProvider:
+    Provider{9a97833 com.flipkart.android/.browse.data.provider.ProductContentProvider}
+  com.flipkart.android/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{a39e7f0 com.flipkart.android/com.crashlytics.android.CrashlyticsInitProvider}
+  com.flipkart.android/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{2f31169 com.flipkart.android/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.flipkart.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{10297ee com.flipkart.android/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.flipkart.provider.AppContact]:
+    Provider{74ced31 com.flipkart.android/com.flipkart.chat.db.CommContentProvider}
+      applicationInfo=ApplicationInfo{879648f com.flipkart.android}
+  [com.flipkart.android.productpage.data.provider.ProductPageContentProviderWrapper]:
+    Provider{a5bf54a com.flipkart.android/.productpage.data.provider.ProductPageContentProviderWrapper}
+      applicationInfo=ApplicationInfo{ded931c com.flipkart.android}
+  [com.flipkart.android.workmanager-init]:
+    Provider{485e3a2 com.flipkart.android/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{4a25b25 com.flipkart.android}
+  [com.flipkart.chat.db.CommContentProvider]:
+    Provider{74ced31 com.flipkart.android/com.flipkart.chat.db.CommContentProvider}
+      applicationInfo=ApplicationInfo{48444fa com.flipkart.android}
+  [com.flipkart.android.newmultiwidget.data.provider.MultiWidgetContentProvider]:
+    Provider{ec1c16 com.flipkart.android/.newmultiwidget.data.provider.MultiWidgetContentProvider}
+      applicationInfo=ApplicationInfo{cb1baab com.flipkart.android}
+  [com.flipkart.android.localization.FkFontsProvider]:
+    Provider{f84d784 com.flipkart.android/.localization.FkFontsProvider}
+      applicationInfo=ApplicationInfo{9cec508 com.flipkart.android}
+  [com.flipkart.android.firebaseperfprovider]:
+    Provider{2f31169 com.flipkart.android/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{94284a1 com.flipkart.android}
+  [com.flipkart.android.lifecycle-process]:
+    Provider{9522b6d com.flipkart.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{b41b6c6 com.flipkart.android}
+  [com.flipkart.android.dus.duscontentprovider]:
+    Provider{1f635d8 com.flipkart.android/com.flipkart.dus.DUSContentProvider}
+      applicationInfo=ApplicationInfo{3cf5687 com.flipkart.android}
+  [com.flipkart.android.fileprovider]:
+    Provider{f202cbb com.flipkart.android/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+      applicationInfo=ApplicationInfo{d61c9dd com.flipkart.android}
+  [com.flipkart.android.browse.data.provider.ProductContentProvider]:
+    Provider{9a97833 com.flipkart.android/.browse.data.provider.ProductContentProvider}
+      applicationInfo=ApplicationInfo{c127952 com.flipkart.android}
+  [com.flipkart.android.provider]:
+    Provider{41ad997 com.flipkart.android/.providers.FlipkartFileProvider}
+      applicationInfo=ApplicationInfo{c40d423 com.flipkart.android}
+  [com.flipkart.android.crashlyticsinitprovider]:
+    Provider{a39e7f0 com.flipkart.android/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{e4f2d20 com.flipkart.android}
+  [com.flipkart.android.firebaseinitprovider]:
+    Provider{10297ee com.flipkart.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{e3626d9 com.flipkart.android}
+
+Key Set Manager:
+  [com.flipkart.android]
+      Signing KeySets: 5405
+
+Packages:
+  Package [com.flipkart.android] (1bad89e):
+    userId=10479
+    pkg=Package{2c28f7f com.flipkart.android}
+    codePath=/data/app/~~7LXNqlsq8zZE3cs_qmoZZA==/com.flipkart.android-BT52BlXogq3T6rCYANN9nQ==
+    resourcePath=/data/app/~~7LXNqlsq8zZE3cs_qmoZZA==/com.flipkart.android-BT52BlXogq3T6rCYANN9nQ==
+    legacyNativeLibraryDir=/data/app/~~7LXNqlsq8zZE3cs_qmoZZA==/com.flipkart.android-BT52BlXogq3T6rCYANN9nQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1170200 minSdk=22 targetSdk=29
+    minExtensionVersions=[]
+    versionName=7.10
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.flipkart.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 12:25:36
+    lastUpdateTime=2022-11-30 12:25:38
+    packageSource=0
+    signatures=PackageSignatures{fc9fb4c version:3, signatures:[80ef53d8], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.flipkart.android.mwcpRead: prot=signature|privileged, INSTALLED
+      com.flipkart.android.mwcpWrite: prot=signature|privileged, INSTALLED
+      com.flipkart.app.ecom.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.CAMERA
+      android.permission.USE_CREDENTIALS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.FLASHLIGHT
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.RECORD_AUDIO
+      android.permission.BLUETOOTH
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.USE_BIOMETRIC
+      android.permission.USE_FINGERPRINT
+      android.permission.VIBRATE
+      android.permission.READ_CONTACTS
+      android.permission.READ_PROFILE
+      android.permission.RECEIVE_SMS
+      android.permission.READ_SMS
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.GET_ACCOUNTS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.android.launcher.permission.READ_SETTINGS
+      com.android.launcher.permission.WRITE_SETTINGS
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      com.android.launcher.permission.UNINSTALL_SHORTCUT
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.flipkart.android.mwcpRead
+      com.flipkart.android.mwcpWrite
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.READ_OWNER_DATA
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.WRITE_CONTACTS
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.launcher.permission.UNINSTALL_SHORTCUT: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      com.flipkart.android.mwcpRead: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      com.flipkart.android.mwcpWrite: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=53673 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 12:25:38
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECEIVE_SMS: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.WRITE_CONTACTS: granted=false
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.GET_ACCOUNTS: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.flipkart.android
+    com.google.android.apps.diagnosticstool:
+      com.flipkart.android
+    com.google.android.settings.intelligence:
+      com.flipkart.android
+    com.google.android.contacts:
+      com.flipkart.android
+    com.google.android.apps.accessibility.voiceaccess:
+      com.flipkart.android
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.flipkart.android]
+    path: /data/app/~~7LXNqlsq8zZE3cs_qmoZZA==/com.flipkart.android-BT52BlXogq3T6rCYANN9nQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1684089
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.flipkart.android]
+     base.apk - 910

@@ -1,0 +1,226 @@
+Activity Resolver Table:
+  Schemes:
+      intent:
+        cd5c3f0 com.haystack.android/.tv.ui.activities.LoadingActivity filter 23bf08f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "intent"
+          Authority: "com.haystack.android": -1
+      http:
+        cd5c3f0 com.haystack.android/.tv.ui.activities.LoadingActivity filter 46b2f1c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.haystack.tv": -1
+      https:
+        cd5c3f0 com.haystack.android/.tv.ui.activities.LoadingActivity filter 46b2f1c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.haystack.tv": -1
+      fbconnect:
+        e1106ab com.haystack.android/com.facebook.CustomTabActivity filter 8a2108
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.haystack.android": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        cd5c3f0 com.haystack.android/.tv.ui.activities.LoadingActivity filter 457bd69
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+        5a5c725 com.haystack.android/.tv.livechannel.LiveChannelSetupActivity filter 5e140fa
+          Action: "android.intent.action.MAIN"
+      android.intent.action.SEARCH:
+        cd5c3f0 com.haystack.android/.tv.ui.activities.LoadingActivity filter d47d3ee
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        8bda023 com.haystack.android/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter d9a0920
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        5e6b5dd com.haystack.android/.common.campaignreferrer.HSCampaignTrackingReceiver filter 492f552
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.media.tv.action.INITIALIZE_PROGRAMS:
+        9d76287 com.haystack.android/.tv.channelsprograms.ChannelsProgramsBootReceiver filter c2445b4
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.media.tv.action.INITIALIZE_PROGRAMS"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.BOOT_COMPLETED:
+        510b0a1 com.haystack.android/.tv.recommendationcards.RecommendationsReceiver filter b7272c6
+          Action: "android.intent.action.BOOT_COMPLETED"
+        9d76287 com.haystack.android/.tv.channelsprograms.ChannelsProgramsBootReceiver filter c2445b4
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.media.tv.action.INITIALIZE_PROGRAMS"
+          Category: "android.intent.category.DEFAULT"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.media.tv.TvInputService:
+        81dd2d9 com.haystack.android/.tv.livechannel.LiveChannelInputService filter 7c7149e permission android.permission.BIND_TV_INPUT
+          Action: "android.media.tv.TvInputService"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.haystack.tv
+
+Registered ContentProviders:
+  com.haystack.android/.tv.ui.VideoContentProvider:
+    Provider{192fbe2 com.haystack.android/.tv.ui.VideoContentProvider}
+  com.haystack.android/com.squareup.picasso.PicassoProvider:
+    Provider{7204b73 com.haystack.android/com.squareup.picasso.PicassoProvider}
+  com.haystack.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{daf5a30 com.haystack.android/com.google.firebase.provider.FirebaseInitProvider}
+  com.haystack.android/com.facebook.internal.FacebookInitProvider:
+    Provider{24436a9 com.haystack.android/com.facebook.internal.FacebookInitProvider}
+  com.haystack.android/.common.provider.CachedFileProvider:
+    Provider{f68f42e com.haystack.android/.common.provider.CachedFileProvider}
+  com.haystack.android/.common.channelsprograms.db.ChannelsProgramsProvider:
+    Provider{3aa2bcf com.haystack.android/.common.channelsprograms.db.ChannelsProgramsProvider}
+  com.haystack.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{9e7e95c com.haystack.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+
+ContentProvider Authorities:
+  [com.haystack.android.lifecycle-process]:
+    Provider{9e7e95c com.haystack.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{a009465 com.haystack.android}
+  [com.haystack.android.firebaseinitprovider]:
+    Provider{daf5a30 com.haystack.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{a94253a com.haystack.android}
+  [com.haystack.android.FacebookInitProvider]:
+    Provider{24436a9 com.haystack.android/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{947b5eb com.haystack.android}
+  [com.haystack.android.tv.VideoContent]:
+    Provider{192fbe2 com.haystack.android/.tv.ui.VideoContentProvider}
+      applicationInfo=ApplicationInfo{bb83f48 com.haystack.android}
+  [com.haystack.android.channelsprograms]:
+    Provider{3aa2bcf com.haystack.android/.common.channelsprograms.db.ChannelsProgramsProvider}
+      applicationInfo=ApplicationInfo{a6b11e1 com.haystack.android}
+  [com.haystack.android.cachedfile.provider]:
+    Provider{f68f42e com.haystack.android/.common.provider.CachedFileProvider}
+      applicationInfo=ApplicationInfo{40f5b06 com.haystack.android}
+  [com.haystack.android.com.squareup.picasso]:
+    Provider{7204b73 com.haystack.android/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{4e9c5c7 com.haystack.android}
+
+Key Set Manager:
+  [com.haystack.android]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.haystack.android] (ea5eb1d):
+    userId=10259
+    pkg=Package{fb62192 com.haystack.android}
+    codePath=/data/app/~~N6gEYSRQDYhRhityVX1x4w==/com.haystack.android-IXRixk-8QhAP1MQjGQoFIw==
+    resourcePath=/data/app/~~N6gEYSRQDYhRhityVX1x4w==/com.haystack.android-IXRixk-8QhAP1MQjGQoFIw==
+    legacyNativeLibraryDir=/data/app/~~N6gEYSRQDYhRhityVX1x4w==/com.haystack.android-IXRixk-8QhAP1MQjGQoFIw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=8201 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=4.21
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.haystack.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 19:00:18
+    lastUpdateTime=2022-11-30 19:00:19
+    packageSource=0
+    signatures=PackageSignatures{190c4de version:1, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      com.android.providers.tv.permission.READ_EPG_DATA
+      com.android.providers.tv.permission.WRITE_EPG_DATA
+      android.permission.WAKE_LOCK
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=91588 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 19:00:19
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.haystack.android
+    com.google.android.apps.diagnosticstool:
+      com.haystack.android
+    com.google.android.settings.intelligence:
+      com.haystack.android
+    com.google.android.GoogleCamera:
+      com.haystack.android
+    com.zhiliaoapp.musically:
+      com.haystack.android
+    com.truecaller:
+      com.haystack.android
+    com.zappcues.gamingmode:
+      com.haystack.android
+    com.jio.myjio:
+      com.haystack.android
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.haystack.android]
+    path: /data/app/~~N6gEYSRQDYhRhityVX1x4w==/com.haystack.android-IXRixk-8QhAP1MQjGQoFIw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:60817
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.haystack.android]
+     base.apk - 288

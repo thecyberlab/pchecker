@@ -1,0 +1,374 @@
+Activity Resolver Table:
+  Schemes:
+      com.washingtonpost.rainbow.android:
+        51886b9 com.washingtonpost.rainbow/.activities.AuthEntryActivity filter 93eafe
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.washingtonpost.rainbow.android"
+          Authority: "oauth-callback": -1
+          Path: "PatternMatcher{LITERAL: /magiclink}"
+        6147d44 com.washingtonpost.rainbow/net.openid.appauth.RedirectUriReceiverActivity filter b7c3e2d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.washingtonpost.rainbow.android"
+          Authority: "oauth-callback": -1
+          Path: "PatternMatcher{LITERAL: /normal}"
+      washpost-national:
+        ebf057b com.washingtonpost.rainbow/.activities.SearchableActivity filter 75753f1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "washpost-national"
+          Authority: "www.washingtonpost.com": -1
+        ebf057b com.washingtonpost.rainbow/.activities.SearchableActivity filter 9285bd6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "washpost-national"
+      tagmanager.c.com.washingtonpost.rainbow:
+        9b2a8f3 com.washingtonpost.rainbow/com.google.android.gms.tagmanager.TagManagerPreviewActivity filter f7e29b0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tagmanager.c.com.washingtonpost.rainbow"
+      http:
+        ebf057b com.washingtonpost.rainbow/.activities.SearchableActivity filter fae7e57
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "washingtonpost.com": -1
+          Authority: "www.washingtonpost.com": -1
+          Path: "PatternMatcher{GLOB: ..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/202./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/202./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/202./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/..*/202./../../..*}"
+      https:
+        ebf057b com.washingtonpost.rainbow/.activities.SearchableActivity filter fae7e57
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "washingtonpost.com": -1
+          Authority: "www.washingtonpost.com": -1
+          Path: "PatternMatcher{GLOB: ..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/..*/201./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/202./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/202./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/202./../../..*}"
+          Path: "PatternMatcher{GLOB: ..*/..*/..*/..*/202./../../..*}"
+      wp-android-rainbow:
+        ebf057b com.washingtonpost.rainbow/.activities.SearchableActivity filter 322ff98
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "wp-android-rainbow"
+          Authority: "www.washingtonpost.com": -1
+          Authority: "subscribe.washingtonpost.com": -1
+      com.washingtonpost.rainbow.android://oauth-callback:
+        6147d44 com.washingtonpost.rainbow/net.openid.appauth.RedirectUriReceiverActivity filter 2a65f62
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.washingtonpost.rainbow.android://oauth-callback"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f08a25f com.washingtonpost.rainbow/.activities.SplashScreenActivity filter ca044ac
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.washingtonpost.rainbow.PURCHASE_RAINBOW_SUBS:
+        6717903 com.washingtonpost.rainbow/.activities.MainActivity filter c81a080
+          Action: "com.washingtonpost.rainbow.PURCHASE_RAINBOW_SUBS"
+          Category: "android.intent.category.DEFAULT"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        e31d575 com.washingtonpost.rainbow/.activities.RainbowWidgetConfigureActivity filter 7bfb90a
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      com.urbanairship.actions.SHOW_RATE_APP_INTENT_ACTION:
+        78b9029 com.washingtonpost.rainbow/com.urbanairship.actions.RateAppActivity filter 50f0fae
+          Action: "com.urbanairship.actions.SHOW_RATE_APP_INTENT_ACTION"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      DeleteNotificationReceiver.action.delete:
+        22405e5 com.washingtonpost.rainbow/.push.DeleteNotificationReceiver filter 74078ba
+          Action: "DeleteNotificationReceiver.action.delete"
+      com.google.android.gms.analytics.ANALYTICS_DISPATCH:
+        4f5ab47 com.washingtonpost.rainbow/com.google.android.gms.analytics.AnalyticsReceiver filter 6b3bf74
+          Action: "com.google.android.gms.analytics.ANALYTICS_DISPATCH"
+      com.android.vending.INSTALL_REFERRER:
+        57b4e3 com.washingtonpost.rainbow/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 9075ee0
+          Action: "com.android.vending.INSTALL_REFERRER"
+        3f4dd5b com.washingtonpost.rainbow/com.appsflyer.SingleInstallBroadcastReceiver filter a1629f8
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.urbanairship.push.OPENED:
+        646bc3f com.washingtonpost.rainbow/com.urbanairship.push.NotificationProxyReceiver filter 133890c
+          Action: "com.urbanairship.push.OPENED"
+          Category: "com.washingtonpost.rainbow"
+          mPriority=-999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.LOCALE_CHANGED:
+        1fb3255 com.washingtonpost.rainbow/com.urbanairship.locale.LocaleChangeReceiver filter 408846a
+          Action: "android.intent.action.LOCALE_CHANGED"
+      TabSelectReceiver.action.select:
+        518436b com.washingtonpost.rainbow/.push.TabSelectReceiver filter fa17ec8
+          Action: "TabSelectReceiver.action.select"
+      com.google.android.c2dm.intent.RECEIVE:
+        84bd599 com.washingtonpost.rainbow/com.google.firebase.iid.FirebaseInstanceIdReceiver filter b4c05e
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      SaveArticleReceiver.action.save:
+        3141b61 com.washingtonpost.rainbow/.push.SaveArticleReceiver filter ded6686
+          Action: "SaveArticleReceiver.action.save"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        cc4e14f com.washingtonpost.rainbow/.providers.RainbowAppWidgetProvider filter e9430dc
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MEDIA_BUTTON:
+        6960c9d com.washingtonpost.rainbow/androidx.media.session.MediaButtonReceiver filter 4296512
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.content.SyncAdapter:
+        a099ed1 com.washingtonpost.rainbow/.sync2.SyncService2 filter b227d36
+          Action: "android.content.SyncAdapter"
+      com.google.firebase.MESSAGING_EVENT:
+        90f9cd3 com.washingtonpost.rainbow/com.wapo.android.push.FCMPushNotificationReceiver filter ba04010
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        3205709 com.washingtonpost.rainbow/com.urbanairship.push.fcm.AirshipFirebaseMessagingService filter 93ffd0e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        62d332f com.washingtonpost.rainbow/com.google.firebase.messaging.FirebaseMessagingService filter c314d3c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.accounts.AccountAuthenticator:
+        d99f437 com.washingtonpost.rainbow/.services.AuthenticatorService filter c7feda4
+          Action: "android.accounts.AccountAuthenticator"
+      android.media.browse.MediaBrowserService:
+        db8570d com.washingtonpost.rainbow/com.wapo.flagship.features.audio.service.MusicService filter 31136c2
+          Action: "android.media.browse.MediaBrowserService"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          washingtonpost.com
+          www.washingtonpost.com
+
+Permissions:
+  Permission [com.washingtonpost.rainbow.permission.C2D_MESSAGE] (a27d60e):
+    sourcePackage=com.washingtonpost.rainbow
+    uid=10329 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a04ece5 com.washingtonpost.rainbow.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.washingtonpost.rainbow/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{264d3ba com.washingtonpost.rainbow/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.washingtonpost.rainbow/androidx.core.content.FileProvider:
+    Provider{94d026b com.washingtonpost.rainbow/androidx.core.content.FileProvider}
+  com.washingtonpost.rainbow/.providers.CacheContentProvider:
+    Provider{648d1c8 com.washingtonpost.rainbow/.providers.CacheContentProvider}
+  com.washingtonpost.rainbow/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{59c7261 com.washingtonpost.rainbow/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.washingtonpost.rainbow/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{67c7186 com.washingtonpost.rainbow/com.google.firebase.provider.FirebaseInitProvider}
+  com.washingtonpost.rainbow/com.urbanairship.UrbanAirshipProvider:
+    Provider{1375a47 com.washingtonpost.rainbow/com.urbanairship.UrbanAirshipProvider}
+
+ContentProvider Authorities:
+  [com.washingtonpost.rainbow.urbanairship.provider]:
+    Provider{1375a47 com.washingtonpost.rainbow/com.urbanairship.UrbanAirshipProvider}
+      applicationInfo=ApplicationInfo{302982f com.washingtonpost.rainbow}
+  [com.washingtonpost.rainbow.firebaseinitprovider]:
+    Provider{67c7186 com.washingtonpost.rainbow/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{5d34e3c com.washingtonpost.rainbow}
+  [com.washingtonpost.rainbow.cache]:
+    Provider{648d1c8 com.washingtonpost.rainbow/.providers.CacheContentProvider}
+      applicationInfo=ApplicationInfo{b36c7c5 com.washingtonpost.rainbow}
+  [com.washingtonpost.rainbow.files]:
+    Provider{94d026b com.washingtonpost.rainbow/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{e8f451a com.washingtonpost.rainbow}
+  [com.washingtonpost.rainbow.lifecycle-process]:
+    Provider{264d3ba com.washingtonpost.rainbow/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{62a884b com.washingtonpost.rainbow}
+  [com.washingtonpost.rainbow.firebaseperfprovider]:
+    Provider{59c7261 com.washingtonpost.rainbow/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{aa51228 com.washingtonpost.rainbow}
+
+Key Set Manager:
+  [com.washingtonpost.rainbow]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.washingtonpost.rainbow] (6c11b41):
+    userId=10329
+    pkg=Package{fca6c0c com.washingtonpost.rainbow}
+    codePath=/data/app/~~aA2JAaf_WM_bZvCg9bXrNA==/com.washingtonpost.rainbow-Kmj-7zpCbJWCdDWnNMKO5A==
+    resourcePath=/data/app/~~aA2JAaf_WM_bZvCg9bXrNA==/com.washingtonpost.rainbow-Kmj-7zpCbJWCdDWnNMKO5A==
+    legacyNativeLibraryDir=/data/app/~~aA2JAaf_WM_bZvCg9bXrNA==/com.washingtonpost.rainbow-Kmj-7zpCbJWCdDWnNMKO5A==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=232 minSdk=17 targetSdk=29
+    minExtensionVersions=[]
+    versionName=1.30.3
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.washingtonpost.rainbow
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 16:38:02
+    lastUpdateTime=2022-11-30 16:38:03
+    packageSource=0
+    signatures=PackageSignatures{eb83cf8 version:3, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.washingtonpost.rainbow.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_SYNC_STATS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      com.washingtonpost.rainbow.permission.C2D_MESSAGE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_EXTERNAL_STORAGE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.VIBRATE
+      com.android.vending.BILLING
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      com.washingtonpost.rainbow.permission.C2D_MESSAGE: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=73966 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 16:38:03
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.washingtonpost.rainbow
+    com.google.android.apps.diagnosticstool:
+      com.washingtonpost.rainbow
+    com.google.android.settings.intelligence:
+      com.washingtonpost.rainbow
+    com.google.android.deskclock:
+      com.washingtonpost.rainbow
+    com.google.android.contacts:
+      com.washingtonpost.rainbow
+    com.google.android.apps.accessibility.voiceaccess:
+      com.washingtonpost.rainbow
+    com.pandavideocompressor:
+      com.washingtonpost.rainbow
+    radiotime.player:
+      com.washingtonpost.rainbow
+    com.truecaller:
+      com.washingtonpost.rainbow
+    com.ninegag.android.app:
+      com.washingtonpost.rainbow
+    ringtone.maker.mp3.cutter.audio:
+      com.washingtonpost.rainbow
+    com.lyrebirdstudio.photo_editor_pro:
+      com.washingtonpost.rainbow
+    com.dv.adm:
+      com.washingtonpost.rainbow
+    com.zappcues.gamingmode:
+      com.washingtonpost.rainbow
+    com.jio.myjio:
+      com.washingtonpost.rainbow
+  queryable via interaction:
+    User 0:
+      [com.android.wallpaperbackup,com.android.location.fused,com.android.keychain,android,com.android.qns,com.google.SSRestartDetector,com.android.providers.settings,com.android.inputdevices,com.android.server.telecom,com.android.settings,com.android.dynsystem,com.android.localtransport,com.google.android.iwlan,com.google.android.settings.future.biometrics.faceenroll]:
+        com.washingtonpost.rainbow
+      [com.google.android.gms,com.google.android.gsf]:
+        com.washingtonpost.rainbow
+      com.android.vending:
+        com.washingtonpost.rainbow
+      com.google.android.webview:
+        com.washingtonpost.rainbow
+      com.washingtonpost.rainbow:
+        com.google.android.webview
+  queryable via uses-library:
+
+Dexopt state:
+  [com.washingtonpost.rainbow]
+    path: /data/app/~~aA2JAaf_WM_bZvCg9bXrNA==/com.washingtonpost.rainbow-Kmj-7zpCbJWCdDWnNMKO5A==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:330665
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.washingtonpost.rainbow]
+     base.apk - 553

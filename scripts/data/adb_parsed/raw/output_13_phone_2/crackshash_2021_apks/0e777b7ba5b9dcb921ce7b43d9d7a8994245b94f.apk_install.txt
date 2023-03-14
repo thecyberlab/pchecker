@@ -1,0 +1,387 @@
+Activity Resolver Table:
+  Full MIME Types:
+      image/*:
+        77dacfa com.photoroom.app/com.photoroom.application.LaunchActivity filter 8699ec6
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      image:
+        77dacfa com.photoroom.app/com.photoroom.application.LaunchActivity filter 8699ec6
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      photoroom:
+        77dacfa com.photoroom.app/com.photoroom.application.LaunchActivity filter aaa6d08
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "photoroom"
+      https:
+        77dacfa com.photoroom.app/com.photoroom.application.LaunchActivity filter 3f90ca1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "app.photoroom.com": -1
+          AutoVerify=true
+        67d1e87 com.photoroom.app/com.photoroom.features.login.ui.LoginActivity filter 5fd51b4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "photoroom.page.link": -1
+          AutoVerify=true
+      fbconnect:
+        f8d1dd com.photoroom.app/com.facebook.CustomTabActivity filter 7d0e152
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.photoroom.app": -1
+      genericidp:
+        31c23 com.photoroom.app/com.google.firebase.auth.internal.GenericIdpActivity filter 9f7d520
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        835aed9 com.photoroom.app/com.google.firebase.auth.internal.RecaptchaActivity filter ef7c09e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        77dacfa com.photoroom.app/com.photoroom.application.LaunchActivity filter e9302ab
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.EDIT:
+        77dacfa com.photoroom.app/com.photoroom.application.LaunchActivity filter 8699ec6
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.SEND:
+        77dacfa com.photoroom.app/com.photoroom.application.LaunchActivity filter 8699ec6
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.SEND_MULTIPLE:
+        77dacfa com.photoroom.app/com.photoroom.application.LaunchActivity filter 8699ec6
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        f728fe4 com.photoroom.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 9f6ec4d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        63d4576 com.photoroom.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 284b777
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      io.intercom.android.sdk.INTERCOM_PUSH_OPENED:
+        461577f com.photoroom.app/io.intercom.android.sdk.push.IntercomPushBroadcastReceiver filter 155234c
+          Action: "io.intercom.android.sdk.INTERCOM_PUSH_OPENED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        ab04302 com.photoroom.app/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 7035413
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        9bac650 com.photoroom.app/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter ed30049
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        51b48aa com.photoroom.app/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter a3dec9b
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        ab04302 com.photoroom.app/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 7035413
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED:
+        461577f com.photoroom.app/io.intercom.android.sdk.push.IntercomPushBroadcastReceiver filter ac95f95
+          Action: "io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED"
+      com.google.android.c2dm.intent.RECEIVE:
+        5572838 com.photoroom.app/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 7ad6011
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        f728fe4 com.photoroom.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 9f6ec4d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        b638d4e com.photoroom.app/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6c51e6f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        b638d4e com.photoroom.app/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6c51e6f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        b638d4e com.photoroom.app/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6c51e6f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        63d4576 com.photoroom.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 284b777
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        eef305a com.photoroom.app/androidx.work.impl.diagnostics.DiagnosticsReceiver filter c2f328b
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        a0df77c com.photoroom.app/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter f425805
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        b5ff826 com.photoroom.app/io.intercom.android.sdk.fcm.IntercomFcmMessengerService filter 8dc6c67
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-400, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        4010f68 com.photoroom.app/com.photoroom.service.FirebaseNotificationService filter 9956f81
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        b5ff826 com.photoroom.app/io.intercom.android.sdk.fcm.IntercomFcmMessengerService filter 8dc6c67
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-400, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        8c370b2 com.photoroom.app/com.google.firebase.messaging.FirebaseMessagingService filter 3396803
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.auth.api.gms.service.START:
+        d8bba14 com.photoroom.app/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 6a882bd
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+  com.photoroom.app:
+    ID: 88facb73-d478-4ccd-9dcf-8dcf87c7baf5
+    Signatures: [66:92:05:77:93:26:81:08:D3:91:AA:71:20:3E:26:C5:2F:E6:E4:FD:EA:81:FE:E7:79:AB:1B:BC:05:BA:4E:27]
+    Domain verification state:
+      photoroom.page.link: none
+      app.photoroom.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          photoroom.page.link
+          app.photoroom.com
+
+Registered ContentProviders:
+  com.photoroom.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{289d739 com.photoroom.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.photoroom.app/androidx.core.content.FileProvider:
+    Provider{35a317e com.photoroom.app/androidx.core.content.FileProvider}
+  com.photoroom.app/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{defa6df com.photoroom.app/com.google.firebase.provider.FirebaseInitProvider}
+  com.photoroom.app/com.facebook.internal.FacebookInitProvider:
+    Provider{35c2f2c com.photoroom.app/com.facebook.internal.FacebookInitProvider}
+  com.photoroom.app/androidx.startup.InitializationProvider:
+    Provider{ca7adf5 com.photoroom.app/androidx.startup.InitializationProvider}
+  com.photoroom.app/io.intercom.android.sdk.IntercomInitializeContentProvider:
+    Provider{ae3e78a com.photoroom.app/io.intercom.android.sdk.IntercomInitializeContentProvider}
+
+ContentProvider Authorities:
+  [com.photoroom.app.IntercomInitializeContentProvider]:
+    Provider{ae3e78a com.photoroom.app/io.intercom.android.sdk.IntercomInitializeContentProvider}
+      applicationInfo=ApplicationInfo{251d1fb com.photoroom.app}
+  [com.photoroom.app.provider]:
+    Provider{35a317e com.photoroom.app/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{df31218 com.photoroom.app}
+  [com.photoroom.app.lifecycle-process]:
+    Provider{289d739 com.photoroom.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{6923471 com.photoroom.app}
+  [com.photoroom.app.androidx-startup]:
+    Provider{ca7adf5 com.photoroom.app/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{8a0f256 com.photoroom.app}
+  [com.photoroom.app.firebaseinitprovider]:
+    Provider{defa6df com.photoroom.app/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{ae192d7 com.photoroom.app}
+  [com.photoroom.app.FacebookInitProvider]:
+    Provider{35c2f2c com.photoroom.app/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{61337c4 com.photoroom.app}
+
+Key Set Manager:
+  [com.photoroom.app]
+      Signing KeySets: 5699
+
+Packages:
+  Package [com.photoroom.app] (6c4a6ad):
+    userId=10486
+    pkg=Package{a428573 com.photoroom.app}
+    codePath=/data/app/~~knRlc7JfIqZIJxjpYEjYGw==/com.photoroom.app-TFVU0sqXuay5owGpWGMi7A==
+    resourcePath=/data/app/~~knRlc7JfIqZIJxjpYEjYGw==/com.photoroom.app-TFVU0sqXuay5owGpWGMi7A==
+    legacyNativeLibraryDir=/data/app/~~knRlc7JfIqZIJxjpYEjYGw==/com.photoroom.app-TFVU0sqXuay5owGpWGMi7A==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=391 minSdk=26 targetSdk=30
+    minExtensionVersions=[]
+    versionName=2.3.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.media.browse.MediaBrowserService }]
+    dataDir=/data/user/0/com.photoroom.app
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 15:35:48
+    lastUpdateTime=2022-11-30 15:35:49
+    packageSource=0
+    signatures=PackageSignatures{63200a9 version:2, signatures:[1f09083b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=63342 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:35:49
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.photoroom.app
+    com.google.android.apps.diagnosticstool:
+      com.photoroom.app
+    com.google.android.settings.intelligence:
+      com.photoroom.app
+    com.google.android.GoogleCamera:
+      com.photoroom.app
+    com.google.android.apps.maps:
+      com.photoroom.app
+    com.google.android.apps.photos:
+      com.photoroom.app
+    com.google.android.apps.accessibility.voiceaccess:
+      com.photoroom.app
+    com.truecaller:
+      com.photoroom.app
+    com.darinsoft.vimo:
+      com.photoroom.app
+    com.ninegag.android.app:
+      com.photoroom.app
+    com.mobisystems.office:
+      com.photoroom.app
+    com.dv.adm:
+      com.photoroom.app
+    com.zappcues.gamingmode:
+      com.photoroom.app
+    com.cam001.selfie:
+      com.photoroom.app
+    com.jio.myjio:
+      com.photoroom.app
+    com.zombodroid.MemeGeneratorFullGplay:
+      com.photoroom.app
+    com.photoroom.app:
+      [com.google.android.bluetooth.services,com.android.bluetooth]
+      com.google.android.googlequicksearchbox
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.youtube
+      com.google.android.apps.docs
+      com.google.android.apps.youtube.music
+      radiotime.player
+      com.dv.adm
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+    com.clearchannel.iheartradio.controller:
+      com.photoroom.app
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.photoroom.app]
+    path: /data/app/~~knRlc7JfIqZIJxjpYEjYGw==/com.photoroom.app-TFVU0sqXuay5owGpWGMi7A==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1497719
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.photoroom.app]
+     base.apk - 649

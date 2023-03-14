@@ -1,0 +1,368 @@
+Activity Resolver Table:
+  Schemes:
+      wish-klarna-pay-in-four:
+        b55d897 com.contextlogic.wish/.activity.cart.billing.paymentform.KlarnaPayInFourPaymentFormActivity filter b85e406
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "wish-klarna-pay-in-four"
+          Authority: "klarna-pay-in-four-checkout": -1
+      http:
+        7556a84 com.contextlogic.wish/.activity.browse.BrowseActivity filter 8ef6048
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Authority: "wish.com": -1
+          Path: "PatternMatcher{PREFIX: /bump}"
+        beac26d com.contextlogic.wish/.activity.link.DeepLinkActivity filter 28c3a92
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.wish.com": -1
+          Path: "PatternMatcher{PREFIX: /}"
+          AutoVerify=true
+      wish:
+        beac26d com.contextlogic.wish/.activity.link.DeepLinkActivity filter 710c81d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "wish"
+      https:
+        beac26d com.contextlogic.wish/.activity.link.DeepLinkActivity filter 28c3a92
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.wish.com": -1
+          Path: "PatternMatcher{PREFIX: /}"
+          AutoVerify=true
+      fbconnect:
+        7802ea2 com.contextlogic.wish/com.facebook.CustomTabActivity filter 876c919
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.contextlogic.wish": -1
+      com.contextlogic.wish.braintree:
+        3156733 com.contextlogic.wish/com.braintreepayments.api.BraintreeBrowserSwitchActivity filter efff060
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.contextlogic.wish.braintree"
+      wish-klarna:
+        a00aaf0 com.contextlogic.wish/.activity.webview.KlarnaWebViewActivity filter cf21ee1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "wish-klarna"
+          Authority: "klarna-checkout": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        7556a84 com.contextlogic.wish/.activity.browse.BrowseActivity filter 452baeb
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        bfe1869 com.contextlogic.wish/.activity.settings.notifications.NotificationSettingsActivity filter 6201ac7
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+        d692ee com.contextlogic.wish/.activity.facebook.WishFacebookDeepLinkActivity filter e799c63
+          Action: "android.intent.action.MAIN"
+      com.google.android.gms.actions.SEARCH_ACTION:
+        e35438f com.contextlogic.wish/.activity.search.SearchActivity filter be38f4
+          Action: "com.google.android.gms.actions.SEARCH_ACTION"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        6dd861c com.contextlogic.wish/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 64089ea
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        d6d225 com.contextlogic.wish/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 8a1ddd5
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.google.firebase.appindexing.UPDATE_INDEX:
+        d1ceffa com.contextlogic.wish/.receiver.AppIndexingUpdateReceiver filter 55f9bbf
+          Action: "com.google.firebase.appindexing.UPDATE_INDEX"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        bcc89ab com.contextlogic.wish/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 87c34db
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        d4ae808 com.contextlogic.wish/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 15f6b78
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        9c76ba1 com.contextlogic.wish/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 8dbc724
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        bcc89ab com.contextlogic.wish/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 87c34db
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        c3a11c6 com.contextlogic.wish/.receiver.InstallReceiver filter e2f6dde
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        b481587 com.contextlogic.wish/com.google.firebase.iid.FirebaseInstanceIdReceiver filter bff43b7
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        6dd861c com.contextlogic.wish/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 64089ea
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        1aa7cb4 com.contextlogic.wish/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f2f8251
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        1aa7cb4 com.contextlogic.wish/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f2f8251
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        1aa7cb4 com.contextlogic.wish/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f2f8251
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        d6d225 com.contextlogic.wish/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 8a1ddd5
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        ece20dd com.contextlogic.wish/com.adyen.threeds2.internal.AppUpgradeBroadcastReceiver filter fe3b28c
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        3b58452 com.contextlogic.wish/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter c955ab6
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        c068323 com.contextlogic.wish/androidx.work.impl.background.gcm.WorkManagerGcmService filter 8946c42 permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        accb020 com.contextlogic.wish/.notifications.push.PushMessagingService filter 618f28d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        f90edd9 com.contextlogic.wish/com.google.firebase.messaging.FirebaseMessagingService filter d3a6453
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+
+Registered ContentProviders:
+  com.contextlogic.wish/com.klarna.mobile.KlarnaInitProvider:
+    Provider{803939e com.contextlogic.wish/com.klarna.mobile.KlarnaInitProvider}
+  com.contextlogic.wish/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{ab42e7f com.contextlogic.wish/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.contextlogic.wish/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{a1cae4c com.contextlogic.wish/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.contextlogic.wish/androidx.core.content.FileProvider:
+    Provider{6198e95 com.contextlogic.wish/androidx.core.content.FileProvider}
+  com.contextlogic.wish/androidx.work.impl.WorkManagerInitializer:
+    Provider{e914baa com.contextlogic.wish/androidx.work.impl.WorkManagerInitializer}
+  com.contextlogic.wish/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{867339b com.contextlogic.wish/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.contextlogic.wish/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{a8c6338 com.contextlogic.wish/com.google.firebase.provider.FirebaseInitProvider}
+  com.contextlogic.wish/com.facebook.internal.FacebookInitProvider:
+    Provider{9517f11 com.contextlogic.wish/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.contextlogic.wish.firebaseinitprovider]:
+    Provider{a8c6338 com.contextlogic.wish/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{4907876 com.contextlogic.wish}
+  [com.contextlogic.wish.FacebookInitProvider]:
+    Provider{9517f11 com.contextlogic.wish/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{4907876 com.contextlogic.wish}
+  [com.contextlogic.wish.lifecycle-process]:
+    Provider{ab42e7f com.contextlogic.wish/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{4907876 com.contextlogic.wish}
+  [com.contextlogic.wish.firebaseperfprovider]:
+    Provider{867339b com.contextlogic.wish/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{4907876 com.contextlogic.wish}
+  [com.contextlogic.wish.mobileadsinitprovider]:
+    Provider{a1cae4c com.contextlogic.wish/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{4907876 com.contextlogic.wish}
+  [com.contextlogic.wish.klarna.provider]:
+    Provider{803939e com.contextlogic.wish/com.klarna.mobile.KlarnaInitProvider}
+      applicationInfo=ApplicationInfo{4907876 com.contextlogic.wish}
+  [com.contextlogic.wish.workmanager-init]:
+    Provider{e914baa com.contextlogic.wish/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{4907876 com.contextlogic.wish}
+  [com.contextlogic.wish.fileprovider]:
+    Provider{6198e95 com.contextlogic.wish/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{4907876 com.contextlogic.wish}
+
+Key Set Manager:
+  [com.contextlogic.wish]
+      Signing KeySets: 389
+
+Packages:
+  Package [com.contextlogic.wish] (77b6e77):
+    userId=10217
+    pkg=Package{841e3a com.contextlogic.wish}
+    codePath=/data/app/com.contextlogic.wish-44tj-PdacxWxYXMyfnEA0A==
+    resourcePath=/data/app/com.contextlogic.wish-44tj-PdacxWxYXMyfnEA0A==
+    legacyNativeLibraryDir=/data/app/com.contextlogic.wish-44tj-PdacxWxYXMyfnEA0A==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=1438 minSdk=21 targetSdk=29
+    versionName=4.42.0
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{4907876 com.contextlogic.wish}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.contextlogic.wish
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 08:33:07
+    firstInstallTime=2021-03-06 08:33:08
+    lastUpdateTime=2021-03-06 08:33:08
+    signatures=PackageSignatures{2407ae4 version:2, signatures:[e93930da], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.VIBRATE
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.CAMERA
+      android.permission.GET_ACCOUNTS
+      android.permission.READ_CONTACTS
+      android.permission.NFC
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.ACCESS_COARSE_LOCATION
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.NFC: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=15295 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Package Changes:
+  Sequence number=159
+  User 0:
+    seq=1, package=com.studioeleven.windfinder
+    seq=8, package=com.google.android.gms
+    seq=9, package=de.motain.iliga
+    seq=11, package=com.microsoft.office.word
+    seq=13, package=video.like
+    seq=15, package=com.netflix.mediaclient
+    seq=19, package=com.agilebits.onepassword
+    seq=21, package=com.rayark.valkyrie
+    seq=23, package=com.aa.generaladaptiveapps
+    seq=25, package=com.ea.gp.fifamobile
+    seq=27, package=com.instagram.igtv
+    seq=29, package=deezer.android.app
+    seq=31, package=com.square_enix.android_googleplay.FFBEWW
+    seq=33, package=com.google.android.calculator
+    seq=35, package=com.gamevilusa.mlbpilive.android.google.global.normal
+    seq=37, package=com.kabam.bigrobot
+    seq=39, package=io.enpass.app
+    seq=41, package=com.adobe.lrmobile
+    seq=43, package=com.vng.g6.a.zombie
+    seq=45, package=com.microblink.photomath
+    seq=47, package=com.scopely.whiplash
+    seq=49, package=com.iudesk.android.photo.editor
+    seq=51, package=com.microsoft.office.officehubrow
+    seq=53, package=com.whatsapp
+    seq=55, package=com.joeware.android.gpulumera
+    seq=57, package=com.anslayer
+    seq=59, package=com.apkupdater
+    seq=62, package=com.android.vending
+    seq=63, package=com.google.android.wearable.app
+    seq=65, package=com.zqlabs.filechef
+    seq=67, package=com.wondershare.filmorago
+    seq=69, package=com.outfit7.mytalkingangelafree
+    seq=71, package=com.truecaller
+    seq=73, package=com.ea.games.r3_row
+    seq=75, package=com.google.ar.lens
+    seq=77, package=com.fusionmedia.investing
+    seq=79, package=com.king.candycrushsodasaga
+    seq=81, package=com.seleuco.mame4droid
+    seq=83, package=com.Slack
+    seq=85, package=com.liquidum.rocketvpn
+    seq=87, package=com.sec.android.easyMover
+    seq=89, package=com.fingersoft.hillclimb
+    seq=91, package=com.cpuid.cpu_z
+    seq=93, package=com.piriform.ccleaner
+    seq=95, package=com.tencent.ibg.joox
+    seq=97, package=com.netease.lztgglobal
+    seq=99, package=com.youthhr.phonto
+    seq=101, package=com.nintendo.zaba
+    seq=103, package=com.idleif.abyssrium
+    seq=105, package=com.facebook.orca
+    seq=107, package=com.amazon.mShop.android.shopping
+    seq=109, package=com.google.android.apps.cloudconsole
+    seq=111, package=com.app.onlyvpn
+    seq=113, package=com.rayark.pluto
+    seq=115, package=wp.wattpad
+    seq=117, package=com.adguard.android
+    seq=119, package=com.lomotif.android
+    seq=121, package=com.infraware.office.link
+    seq=123, package=com.ea.game.pvz2_row
+    seq=125, package=com.afwsamples.testdpc
+    seq=127, package=com.ubisoft.hungrydragon
+    seq=129, package=com.intsig.camscanner
+    seq=131, package=com.urbandroid.lux
+    seq=133, package=com.mobisystems.office
+    seq=135, package=com.microsoft.office.excel
+    seq=137, package=com.ea.gp.pvzheroes
+    seq=139, package=com.bandainamcoent.saomdeu
+    seq=141, package=com.linkedin.android
+    seq=143, package=com.foobar2000.foobar2000
+    seq=145, package=com.moonton.magicrush
+    seq=147, package=com.bandainamcoent.ninjavoltage_app
+    seq=149, package=com.maxmpz.audioplayer
+    seq=151, package=com.gameloft.android.ANMP.GloftGGHM
+    seq=153, package=dp.ws.popcorntime
+    seq=155, package=com.pinterest
+    seq=157, package=com.zombodroid.MemeGenerator
+    seq=158, package=com.contextlogic.wish
+
+
+Dexopt state:
+  [com.contextlogic.wish]
+    path: /data/app/com.contextlogic.wish-44tj-PdacxWxYXMyfnEA0A==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.contextlogic.wish]
+     base.apk - 8972
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

@@ -1,0 +1,416 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        d0da48c io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.nfc.TagReaderActivity filter 739e7d5
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.home-assistant.io": -1
+          Path: "PatternMatcher{PREFIX: /tag/}"
+        d0da48c io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.nfc.TagReaderActivity filter c08cbea
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.home-assistant.io": -1
+          Path: "PatternMatcher{PREFIX: /tag/}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        cc23319 io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.launch.LaunchActivity filter 8978fde
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        cc23319 io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.launch.LaunchActivity filter a1215bf
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        aa554c7 io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.ButtonWidgetConfigureActivity filter 123eaf4
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        a99921d io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.StaticWidgetConfigureActivity filter d563c92
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        f187663 io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.template.TemplateWidgetConfigureActivity filter 50ec260
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        a057045 io.homeassistant.companion.android.minimal/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6e4039a
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        e41ecaf io.homeassistant.companion.android.minimal/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 68948bc
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        edc4edb io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.sensors.SensorReceiver filter c367d78
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+        a683c8d io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.template.TemplateWidget filter 2e2ee42
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "io.homeassistant.companion.android.background.REQUEST_SENSORS_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "io.homeassistant.companion.android.widgets.template.TemplateWidget.RECEIVE_DATA"
+      io.homeassistant.companion.android.background.REQUEST_ACCURATE_UPDATE:
+        843be53 io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.sensors.LocationSensorManager filter 78390
+          Action: "io.homeassistant.companion.android.background.REQUEST_ACCURATE_UPDATE"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        edc4edb io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.sensors.SensorReceiver filter c367d78
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+        a683c8d io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.template.TemplateWidget filter 2e2ee42
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "io.homeassistant.companion.android.background.REQUEST_SENSORS_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "io.homeassistant.companion.android.widgets.template.TemplateWidget.RECEIVE_DATA"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        b4aa4cb io.homeassistant.companion.android.minimal/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d0034a8
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        b11cbc1 io.homeassistant.companion.android.minimal/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter aeebf66
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      io.homeassistant.companion.android.widgets.template.TemplateWidget.RECEIVE_DATA:
+        a683c8d io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.template.TemplateWidget filter 2e2ee42
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "io.homeassistant.companion.android.background.REQUEST_SENSORS_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "io.homeassistant.companion.android.widgets.template.TemplateWidget.RECEIVE_DATA"
+      android.intent.action.DEVICE_STORAGE_OK:
+        b4aa4cb io.homeassistant.companion.android.minimal/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d0034a8
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.app.action.NEXT_ALARM_CLOCK_CHANGED:
+        edc4edb io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.sensors.SensorReceiver filter c367d78
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+        a683c8d io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.template.TemplateWidget filter 2e2ee42
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "io.homeassistant.companion.android.background.REQUEST_SENSORS_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "io.homeassistant.companion.android.widgets.template.TemplateWidget.RECEIVE_DATA"
+      android.bluetooth.device.action.ACL_CONNECTED:
+        edc4edb io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.sensors.SensorReceiver filter c367d78
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+        a683c8d io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.template.TemplateWidget filter 2e2ee42
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "io.homeassistant.companion.android.background.REQUEST_SENSORS_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "io.homeassistant.companion.android.widgets.template.TemplateWidget.RECEIVE_DATA"
+      io.homeassistant.companion.android.background.REQUEST_SENSORS_UPDATE:
+        a683c8d io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.template.TemplateWidget filter 2e2ee42
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "io.homeassistant.companion.android.background.REQUEST_SENSORS_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "io.homeassistant.companion.android.widgets.template.TemplateWidget.RECEIVE_DATA"
+      android.intent.action.BATTERY_LOW:
+        a057045 io.homeassistant.companion.android.minimal/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6e4039a
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        4dcc2a7 io.homeassistant.companion.android.minimal/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 977f354
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        4dcc2a7 io.homeassistant.companion.android.minimal/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 977f354
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      io.homeassistant.companion.android.widgets.ButtonWidget.RECEIVE_DATA:
+        3e2c51 io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.ButtonWidget filter 39fbcb6
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "io.homeassistant.companion.android.widgets.ButtonWidget.CALL_SERVICE"
+          Action: "io.homeassistant.companion.android.widgets.ButtonWidget.RECEIVE_DATA"
+      io.homeassistant.companion.android.widgets.StaticWidget.RECEIVE_DATA:
+        146fdb7 io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.StaticWidget filter f11f924
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "io.homeassistant.companion.android.widgets.StaticWidget.RECEIVE_DATA"
+      android.intent.action.BOOT_COMPLETED:
+        edc4edb io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.sensors.SensorReceiver filter c367d78
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+        a683c8d io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.template.TemplateWidget filter 2e2ee42
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "io.homeassistant.companion.android.background.REQUEST_SENSORS_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "io.homeassistant.companion.android.widgets.template.TemplateWidget.RECEIVE_DATA"
+        4dcc2a7 io.homeassistant.companion.android.minimal/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 977f354
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        e41ecaf io.homeassistant.companion.android.minimal/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 68948bc
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      io.homeassistant.companion.android.widgets.ButtonWidget.CALL_SERVICE:
+        3e2c51 io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.ButtonWidget filter 39fbcb6
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "io.homeassistant.companion.android.widgets.ButtonWidget.CALL_SERVICE"
+          Action: "io.homeassistant.companion.android.widgets.ButtonWidget.RECEIVE_DATA"
+      io.homeassistant.companion.android.background.REQUEST_ACTIVITY_UPDATES:
+        ea91489 io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.sensors.ActivitySensorManager filter d35ac8e
+          Action: "io.homeassistant.companion.android.background.REQUEST_ACTIVITY_UPDATES"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        3e2c51 io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.ButtonWidget filter 39fbcb6
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "io.homeassistant.companion.android.widgets.ButtonWidget.CALL_SERVICE"
+          Action: "io.homeassistant.companion.android.widgets.ButtonWidget.RECEIVE_DATA"
+        146fdb7 io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.StaticWidget filter f11f924
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "io.homeassistant.companion.android.widgets.StaticWidget.RECEIVE_DATA"
+        a683c8d io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.template.TemplateWidget filter 2e2ee42
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "io.homeassistant.companion.android.background.REQUEST_SENSORS_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "io.homeassistant.companion.android.widgets.template.TemplateWidget.RECEIVE_DATA"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        f88e243 io.homeassistant.companion.android.minimal/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 50af0c0
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.bluetooth.device.action.ACL_DISCONNECTED:
+        edc4edb io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.sensors.SensorReceiver filter c367d78
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+        a683c8d io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.widgets.template.TemplateWidget filter 2e2ee42
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "io.homeassistant.companion.android.background.REQUEST_SENSORS_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "io.homeassistant.companion.android.widgets.template.TemplateWidget.RECEIVE_DATA"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        b2e62fd io.homeassistant.companion.android.minimal/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 1976bf2
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Domain verification status:
+  io.homeassistant.companion.android.minimal:
+    ID: e2a14304-2fba-4d05-bdfb-73bd2de6972f
+    Signatures: [17:48:52:50:A0:3A:0F:2B:3F:29:2A:05:4F:59:5A:9E:79:4B:EE:F8:0C:F9:10:F7:B3:BB:B8:09:8A:BF:6D:50]
+    Domain verification state:
+      www.home-assistant.io: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.home-assistant.io
+
+Registered ContentProviders:
+  io.homeassistant.companion.android.minimal/androidx.work.impl.WorkManagerInitializer:
+    Provider{95ef0f4 io.homeassistant.companion.android.minimal/androidx.work.impl.WorkManagerInitializer}
+
+ContentProvider Authorities:
+  [io.homeassistant.companion.android.minimal.workmanager-init]:
+    Provider{95ef0f4 io.homeassistant.companion.android.minimal/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{b8f201d io.homeassistant.companion.android.minimal}
+
+Key Set Manager:
+  [io.homeassistant.companion.android.minimal]
+      Signing KeySets: 6421
+
+Packages:
+  Package [io.homeassistant.companion.android.minimal] (b27b292):
+    userId=10278
+    pkg=Package{73bb463 io.homeassistant.companion.android.minimal}
+    codePath=/data/app/~~W3288slXKfArB7wnEm4DHQ==/io.homeassistant.companion.android.minimal-DkM8g3nprFt58kuS5MhvPg==
+    resourcePath=/data/app/~~W3288slXKfArB7wnEm4DHQ==/io.homeassistant.companion.android.minimal-DkM8g3nprFt58kuS5MhvPg==
+    legacyNativeLibraryDir=/data/app/~~W3288slXKfArB7wnEm4DHQ==/io.homeassistant.companion.android.minimal-DkM8g3nprFt58kuS5MhvPg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=343 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2.3.3-minimal
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/io.homeassistant.companion.android.minimal
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 20:54:04
+    lastUpdateTime=2022-11-30 20:54:05
+    packageSource=0
+    signatures=PackageSignatures{10a65de version:1, signatures:[80e291b0], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.CAMERA
+      android.permission.RECORD_AUDIO
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.NFC
+      android.permission.READ_PHONE_STATE
+      android.permission.ACTIVITY_RECOGNITION
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      android.permission.USE_BIOMETRIC
+      android.permission.USE_FINGERPRINT
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+    install permissions:
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=104136 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 20:54:05
+      uninstallReason=0
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_PHONE_STATE: granted=false
+        android.permission.CAMERA: granted=false
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.ACTIVITY_RECOGNITION: granted=false
+        android.permission.RECORD_AUDIO: granted=false
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      io.homeassistant.companion.android.minimal
+    com.google.android.apps.diagnosticstool:
+      io.homeassistant.companion.android.minimal
+    com.google.android.settings.intelligence:
+      io.homeassistant.companion.android.minimal
+    com.google.android.apps.accessibility.voiceaccess:
+      io.homeassistant.companion.android.minimal
+    com.zhiliaoapp.musically:
+      io.homeassistant.companion.android.minimal
+    com.truecaller:
+      io.homeassistant.companion.android.minimal
+    com.dv.adm:
+      io.homeassistant.companion.android.minimal
+    com.zappcues.gamingmode:
+      io.homeassistant.companion.android.minimal
+    com.jio.myjio:
+      io.homeassistant.companion.android.minimal
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [io.homeassistant.companion.android.minimal]
+    path: /data/app/~~W3288slXKfArB7wnEm4DHQ==/io.homeassistant.companion.android.minimal-DkM8g3nprFt58kuS5MhvPg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:59317
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [io.homeassistant.companion.android.minimal]
+     base.apk - 670

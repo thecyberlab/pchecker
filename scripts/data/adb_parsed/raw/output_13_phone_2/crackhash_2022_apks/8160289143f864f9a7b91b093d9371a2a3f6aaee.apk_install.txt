@@ -1,0 +1,266 @@
+Activity Resolver Table:
+  Schemes:
+      vllo:
+        9f6dad6 com.darinsoft.vimo/.VLLOMainActivity filter 12c9444
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "vllo"
+      fbconnect:
+        5c0092d com.darinsoft.vimo/com.facebook.CustomTabActivity filter b5dce62
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.darinsoft.vimo": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        9f6dad6 com.darinsoft.vimo/.VLLOMainActivity filter c4c9157
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        9f6dad6 com.darinsoft.vimo/.VLLOMainActivity filter c4c9157
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        be9e66b com.darinsoft.vimo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 88de5c8
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        1b630e5 com.darinsoft.vimo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 396c7ba
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED:
+        9c10b29 com.darinsoft.vimo/com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver filter 34e6eae
+          Action: "com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        11df661 com.darinsoft.vimo/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ad9a586
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        abe7e47 com.darinsoft.vimo/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter f7f9674
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        d9eebf3 com.darinsoft.vimo/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 980b0b0
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        11df661 com.darinsoft.vimo/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ad9a586
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        6b2544f com.darinsoft.vimo/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 3b827dc
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        be9e66b com.darinsoft.vimo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 88de5c8
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        ae2979d com.darinsoft.vimo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d1a9412
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        ae2979d com.darinsoft.vimo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d1a9412
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        ae2979d com.darinsoft.vimo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d1a9412
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        1b630e5 com.darinsoft.vimo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 396c7ba
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        55ab7e3 com.darinsoft.vimo/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 839a5e0
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        c561099 com.darinsoft.vimo/.fcm.VLFirebaseMessagingService filter 909df5e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        bf6ef3f com.darinsoft.vimo/com.google.firebase.messaging.FirebaseMessagingService filter ec3400c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.darinsoft.vimo/androidx.work.impl.WorkManagerInitializer:
+    Provider{594689e com.darinsoft.vimo/androidx.work.impl.WorkManagerInitializer}
+  com.darinsoft.vimo/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{44df7f com.darinsoft.vimo/com.google.firebase.provider.FirebaseInitProvider}
+  com.darinsoft.vimo/com.facebook.internal.FacebookInitProvider:
+    Provider{4a60b4c com.darinsoft.vimo/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.darinsoft.vimo.firebaseinitprovider]:
+    Provider{44df7f com.darinsoft.vimo/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{cda70aa com.darinsoft.vimo}
+  [com.darinsoft.vimo.FacebookInitProvider]:
+    Provider{4a60b4c com.darinsoft.vimo/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{4d1f49b com.darinsoft.vimo}
+  [com.darinsoft.vimo.workmanager-init]:
+    Provider{594689e com.darinsoft.vimo/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{ce9038 com.darinsoft.vimo}
+
+Key Set Manager:
+  [com.darinsoft.vimo]
+      Signing KeySets: 5699
+
+Packages:
+  Package [com.darinsoft.vimo] (b34a811):
+    userId=10265
+    pkg=Package{ec6ed76 com.darinsoft.vimo}
+    codePath=/data/app/~~GsbdWnn_qIRvg4QBJpDk_g==/com.darinsoft.vimo-0ElWYsiJM-EK6mxyPR0Nkw==
+    resourcePath=/data/app/~~GsbdWnn_qIRvg4QBJpDk_g==/com.darinsoft.vimo-0ElWYsiJM-EK6mxyPR0Nkw==
+    legacyNativeLibraryDir=/data/app/~~GsbdWnn_qIRvg4QBJpDk_g==/com.darinsoft.vimo-0ElWYsiJM-EK6mxyPR0Nkw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=752 minSdk=23 targetSdk=30
+    minExtensionVersions=[]
+    versionName=7.5.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.google.android.youtube, com.instagram.android, com.facebook.katana]
+    queriesIntents=[Intent { act=android.intent.action.SEND dat=content://*/... typ=video/mp4 }, Intent { act=android.intent.action.SEND dat=content://*/... typ=image/gif }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.darinsoft.vimo
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 13:59:05
+    lastUpdateTime=2022-11-30 13:59:07
+    packageSource=0
+    signatures=PackageSignatures{ef877e4 version:2, signatures:[1f09083b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.RECORD_AUDIO
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_STATE
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.gms.permission.AD_ID
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=52852 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 13:59:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.darinsoft.vimo:
+      com.google.android.youtube
+  queries via component:
+    com.google.android.apps.messaging:
+      com.darinsoft.vimo
+    com.google.android.apps.diagnosticstool:
+      com.darinsoft.vimo
+    com.google.android.settings.intelligence:
+      com.darinsoft.vimo
+    com.google.android.youtube:
+      com.darinsoft.vimo
+    com.google.android.contacts:
+      com.darinsoft.vimo
+    com.google.android.apps.accessibility.voiceaccess:
+      com.darinsoft.vimo
+    com.google.android.gm:
+      com.darinsoft.vimo
+    com.darinsoft.vimo:
+      [com.google.android.bluetooth.services,com.android.bluetooth]
+      com.google.android.apps.nbu.files
+      com.google.android.apps.messaging
+      com.google.android.googlequicksearchbox
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.apps.docs
+      com.google.android.gm
+      com.pandavideocompressor
+      com.ninegag.android.app
+      com.lyrebirdstudio.photo_editor_pro
+      com.cam001.selfie
+      com.pranavpandey.rotation
+      com.utorrent.client.pro
+    com.zappcues.gamingmode:
+      com.darinsoft.vimo
+    com.jio.myjio:
+      com.darinsoft.vimo
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.darinsoft.vimo]
+    path: /data/app/~~GsbdWnn_qIRvg4QBJpDk_g==/com.darinsoft.vimo-0ElWYsiJM-EK6mxyPR0Nkw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:715017
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.darinsoft.vimo]
+     base.apk - 775
+/system/bin/sh: com.ninegag.android.app: inaccessible or not found

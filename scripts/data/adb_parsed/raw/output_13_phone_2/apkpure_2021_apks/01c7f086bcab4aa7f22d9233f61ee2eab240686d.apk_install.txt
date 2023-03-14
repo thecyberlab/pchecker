@@ -1,0 +1,304 @@
+Activity Resolver Table:
+  Schemes:
+      soliveapp:
+        c8d79a9 com.matchtech.solive/.activities.SplashActivity filter 404a6cf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "soliveapp"
+          Authority: "open": -1
+      fb2429093727139965:
+        31b0765 com.matchtech.solive/com.facebook.CustomTabActivity filter be11c3a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb2429093727139965"
+      https:
+        c8d79a9 com.matchtech.solive/.activities.SplashActivity filter 3e8485c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "kcup.app.link": -1
+          Authority: "kcup-alternate.app.link": -1
+          Authority: "kcup.test-app.link": -1
+          Authority: "kcup-alternate.test-app.link": -1
+          AutoVerify=true
+      fbconnect:
+        31b0765 com.matchtech.solive/com.facebook.CustomTabActivity filter 44ee0eb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.matchtech.solive": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        c8d79a9 com.matchtech.solive/.activities.SplashActivity filter 5047b2e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        caf892 com.matchtech.solive/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 1148263
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        2b4c206 com.matchtech.solive/com.adjust.sdk.AdjustReferrerReceiver filter b8a0c7
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        107de60 com.matchtech.solive/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 45b1f19
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      zendesk.support:
+        8346f4 com.matchtech.solive/zendesk.support.DeepLinkingBroadcastReceiver filter c3bbe1d
+          Action: "zendesk.support"
+      android.media.action.DISPLAY_NOTIFICATION:
+        edf8e48 com.matchtech.solive/.utilities.ScheduledNotificationPublisher filter 639b4e1
+          Action: "android.media.action.DISPLAY_NOTIFICATION"
+          Category: "android.intent.category.DEFAULT"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        49c0bde com.matchtech.solive/.services.MyFirebaseMessagingService filter dc2e1bf
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        57c808c com.matchtech.solive/com.google.firebase.messaging.FirebaseMessagingService filter d7593d5
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.matchtech.solive:
+    ID: ba2264a1-b8d8-49a4-9282-de76d1e2ba6d
+    Signatures: [3A:F8:80:5A:2A:0A:91:54:E7:35:8F:1A:52:E6:76:15:65:3E:0B:39:B3:9A:C6:9A:C8:5A:39:6A:B3:37:57:4F]
+    Domain verification state:
+      kcup-alternate.test-app.link: none
+      kcup-alternate.app.link: none
+      kcup.test-app.link: none
+      kcup.app.link: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          kcup-alternate.test-app.link
+          kcup-alternate.app.link
+          kcup.test-app.link
+          kcup.app.link
+
+Registered ContentProviders:
+  com.matchtech.solive/com.iceteck.silicompressorr.provider.GenericFileProvider:
+    Provider{9318874 com.matchtech.solive/com.iceteck.silicompressorr.provider.GenericFileProvider}
+  com.matchtech.solive/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{f62a19d com.matchtech.solive/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.matchtech.solive/androidx.core.content.FileProvider:
+    Provider{6aad612 com.matchtech.solive/androidx.core.content.FileProvider}
+  com.matchtech.solive/zendesk.support.SupportSdkStartupProvider:
+    Provider{7e2d1e3 com.matchtech.solive/zendesk.support.SupportSdkStartupProvider}
+  com.matchtech.solive/com.facebook.marketing.internal.MarketingInitProvider:
+    Provider{18b7e0 com.matchtech.solive/com.facebook.marketing.internal.MarketingInitProvider}
+  com.matchtech.solive/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{9ccba99 com.matchtech.solive/com.crashlytics.android.CrashlyticsInitProvider}
+  com.matchtech.solive/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{85c415e com.matchtech.solive/com.google.firebase.provider.FirebaseInitProvider}
+  com.matchtech.solive/com.facebook.internal.FacebookInitProvider:
+    Provider{7e6a93f com.matchtech.solive/com.facebook.internal.FacebookInitProvider}
+  com.matchtech.solive/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{a81720c com.matchtech.solive/com.facebook.ads.AudienceNetworkContentProvider}
+  com.matchtech.solive/zendesk.belvedere.BelvedereFileProvider:
+    Provider{b256755 com.matchtech.solive/zendesk.belvedere.BelvedereFileProvider}
+  com.matchtech.solive/com.jaiselrahman.filepicker.utils.FilePickerProvider:
+    Provider{527156a com.matchtech.solive/com.jaiselrahman.filepicker.utils.FilePickerProvider}
+  com.matchtech.solive/com.hyprmx.android.sdk.utility.HyprMXFileProvider:
+    Provider{4269a5b com.matchtech.solive/com.hyprmx.android.sdk.utility.HyprMXFileProvider}
+
+ContentProvider Authorities:
+  [com.matchtech.solive.silicompressor.provider]:
+    Provider{9318874 com.matchtech.solive/com.iceteck.silicompressorr.provider.GenericFileProvider}
+      applicationInfo=ApplicationInfo{4d9a2f8 com.matchtech.solive}
+  [com.matchtech.solive.belvedere2.attachments]:
+    Provider{b256755 com.matchtech.solive/zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{42223d1 com.matchtech.solive}
+  [com.matchtech.solive.zendesk.support.SupportSdkStartupProvider]:
+    Provider{7e2d1e3 com.matchtech.solive/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{e191e36 com.matchtech.solive}
+  [com.matchtech.solive.firebaseinitprovider]:
+    Provider{85c415e com.matchtech.solive/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{baa8137 com.matchtech.solive}
+  [com.matchtech.solive.AudienceNetworkContentProvider]:
+    Provider{a81720c com.matchtech.solive/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{281f6a4 com.matchtech.solive}
+  [com.matchtech.solive.com.hyprmx.android.hyprmxfileprovider]:
+    Provider{4269a5b com.matchtech.solive/com.hyprmx.android.sdk.utility.HyprMXFileProvider}
+      applicationInfo=ApplicationInfo{1542c0d com.matchtech.solive}
+  [com.matchtech.solive.FacebookInitProvider]:
+    Provider{7e6a93f com.matchtech.solive/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{550e7c2 com.matchtech.solive}
+  [com.matchtech.solive.MarketingInitProvider]:
+    Provider{18b7e0 com.matchtech.solive/com.facebook.marketing.internal.MarketingInitProvider}
+      applicationInfo=ApplicationInfo{c1bf9d3 com.matchtech.solive}
+  [com.matchtech.solive.fileprovider]:
+    Provider{6aad612 com.matchtech.solive/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{a39d910 com.matchtech.solive}
+  [com.matchtech.solive.filepicker.provider]:
+    Provider{527156a com.matchtech.solive/com.jaiselrahman.filepicker.utils.FilePickerProvider}
+      applicationInfo=ApplicationInfo{d247c09 com.matchtech.solive}
+  [com.matchtech.solive.mobileadsinitprovider]:
+    Provider{f62a19d com.matchtech.solive/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{e49be0e com.matchtech.solive}
+  [com.matchtech.solive.crashlyticsinitprovider]:
+    Provider{9ccba99 com.matchtech.solive/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{a22602f com.matchtech.solive}
+
+Key Set Manager:
+  [com.matchtech.solive]
+      Signing KeySets: 5010
+
+Packages:
+  Package [com.matchtech.solive] (d4b763c):
+    userId=10259
+    pkg=Package{58fcfc5 com.matchtech.solive}
+    codePath=/data/app/~~js91ANMfi6ImwU6al3FjDg==/com.matchtech.solive-2NEOO6LSZeL4b74eCHHFdQ==
+    resourcePath=/data/app/~~js91ANMfi6ImwU6al3FjDg==/com.matchtech.solive-2NEOO6LSZeL4b74eCHHFdQ==
+    legacyNativeLibraryDir=/data/app/~~js91ANMfi6ImwU6al3FjDg==/com.matchtech.solive-2NEOO6LSZeL4b74eCHHFdQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=56 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=1.4.6
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.matchtech.solive
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 11:31:14
+    lastUpdateTime=2022-11-30 11:31:16
+    packageSource=0
+    signatures=PackageSignatures{6e7ad1a version:3, signatures:[ce22f266], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.RECORD_AUDIO
+      android.permission.CAMERA
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.BLUETOOTH
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.VIBRATE
+      com.android.vending.BILLING
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WAKE_LOCK
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.USE_FULL_SCREEN_INTENT
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=51379 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 11:31:16
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.matchtech.solive
+    com.google.android.apps.diagnosticstool:
+      com.matchtech.solive
+    com.google.android.settings.intelligence:
+      com.matchtech.solive
+    com.google.android.apps.accessibility.voiceaccess:
+      com.matchtech.solive
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.matchtech.solive]
+    path: /data/app/~~js91ANMfi6ImwU6al3FjDg==/com.matchtech.solive-2NEOO6LSZeL4b74eCHHFdQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:110337
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.matchtech.solive]
+     base.apk - 876

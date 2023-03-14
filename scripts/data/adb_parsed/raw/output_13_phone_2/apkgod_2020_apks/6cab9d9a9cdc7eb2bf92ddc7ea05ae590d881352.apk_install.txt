@@ -1,0 +1,236 @@
+Activity Resolver Table:
+  Schemes:
+      strongapp:
+        7dc16e io.strongapp.strong/.share.BranchActivity filter f8f100f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "strongapp"
+          Authority: "open": -1
+      https:
+        7dc16e io.strongapp.strong/.share.BranchActivity filter 168989c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "strong.app.link": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        cb0b2a5 io.strongapp.strong/.MainActivity filter e48867a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        a369e2b io.strongapp.strong/androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity filter db4a288
+          Action: "android.intent.action.MAIN"
+        c9ed421 io.strongapp.strong/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity filter 6c89046
+          Action: "android.intent.action.MAIN"
+        b7ef207 io.strongapp.strong/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity filter b355f34
+          Action: "android.intent.action.MAIN"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        65a1aff io.strongapp.strong/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 8d160cc
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        ef3915d io.strongapp.strong/io.branch.referral.InstallListener filter eed6ad2
+          Action: "com.android.vending.INSTALL_REFERRER"
+        20ea7a3 io.strongapp.strong/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 2633aa0
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        7dce659 io.strongapp.strong/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 913621e
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.content.SyncAdapter:
+        9bf681b io.strongapp.strong/.data.sync.SyncService filter 819bdb8
+          Action: "android.content.SyncAdapter"
+      io.strongapp.strong.action.DELETED:
+        f140791 io.strongapp.strong/.log_workout.rest_timer.RestTimerService filter fb96f6
+          Action: "io.strongapp.strong.action.DELETED"
+      android.accounts.AccountAuthenticator:
+        66c8f15 io.strongapp.strong/.data.sync.AuthenticatorService filter f0f822a
+          Action: "android.accounts.AccountAuthenticator"
+
+Domain verification status:
+  io.strongapp.strong:
+    ID: 18a9cc2d-6a04-401b-8b0c-2dc8aae464f7
+    Signatures: [A4:0D:A8:0A:59:D1:70:CA:A9:50:CF:15:C1:8C:45:4D:47:A3:9B:26:98:9D:8B:64:0E:CD:74:5B:A7:1B:F5:DC]
+    Domain verification state:
+      strong.app.link: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          strong.app.link
+
+Registered ContentProviders:
+  io.strongapp.strong/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{2569b46 io.strongapp.strong/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  io.strongapp.strong/androidx.core.content.FileProvider:
+    Provider{53a107 io.strongapp.strong/androidx.core.content.FileProvider}
+  io.strongapp.strong/com.facebook.marketing.internal.MarketingInitProvider:
+    Provider{115e234 io.strongapp.strong/com.facebook.marketing.internal.MarketingInitProvider}
+  io.strongapp.strong/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{975585d io.strongapp.strong/com.crashlytics.android.CrashlyticsInitProvider}
+  io.strongapp.strong/.data.sync.StubProvider:
+    Provider{cd125d2 io.strongapp.strong/.data.sync.StubProvider}
+  io.strongapp.strong/com.squareup.picasso.PicassoProvider:
+    Provider{ff46a3 io.strongapp.strong/com.squareup.picasso.PicassoProvider}
+  io.strongapp.strong/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{948eda0 io.strongapp.strong/com.google.firebase.provider.FirebaseInitProvider}
+  io.strongapp.strong/com.facebook.internal.FacebookInitProvider:
+    Provider{6341d59 io.strongapp.strong/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [io.strongapp.strong]:
+    Provider{53a107 io.strongapp.strong/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{f7cd1e io.strongapp.strong}
+  [io.strongapp.strong.crashlyticsinitprovider]:
+    Provider{975585d io.strongapp.strong/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{d35a9ff io.strongapp.strong}
+  [io.strongapp.strong.firebaseinitprovider]:
+    Provider{948eda0 io.strongapp.strong/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{3df43cc io.strongapp.strong}
+  [io.strongapp.strong.FacebookInitProvider]:
+    Provider{6341d59 io.strongapp.strong/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{8803615 io.strongapp.strong}
+  [io.strongapp.strong.MarketingInitProvider]:
+    Provider{115e234 io.strongapp.strong/com.facebook.marketing.internal.MarketingInitProvider}
+      applicationInfo=ApplicationInfo{84f9d2a io.strongapp.strong}
+  [io.strongapp.strong.provider]:
+    Provider{cd125d2 io.strongapp.strong/.data.sync.StubProvider}
+      applicationInfo=ApplicationInfo{444e71b io.strongapp.strong}
+  [io.strongapp.strong.com.squareup.picasso]:
+    Provider{ff46a3 io.strongapp.strong/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{9a2d0b8 io.strongapp.strong}
+  [io.strongapp.strong.lifecycle-process]:
+    Provider{2569b46 io.strongapp.strong/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{da261f6 io.strongapp.strong}
+
+Key Set Manager:
+  [io.strongapp.strong]
+      Signing KeySets: 88
+
+Packages:
+  Package [io.strongapp.strong] (fe212cd):
+    userId=10463
+    pkg=Package{c8aa782 io.strongapp.strong}
+    codePath=/data/app/~~CbS9ME34s5bGLXmclM3fqQ==/io.strongapp.strong-IxU6s8gooKmv8s6TozWGjQ==
+    resourcePath=/data/app/~~CbS9ME34s5bGLXmclM3fqQ==/io.strongapp.strong-IxU6s8gooKmv8s6TozWGjQ==
+    legacyNativeLibraryDir=/data/app/~~CbS9ME34s5bGLXmclM3fqQ==/io.strongapp.strong-IxU6s8gooKmv8s6TozWGjQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=188 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2.4
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/io.strongapp.strong
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 10:33:51
+    lastUpdateTime=2022-11-30 10:33:55
+    packageSource=0
+    signatures=PackageSignatures{69f1e93 version:1, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.INTERNET
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_EXTERNAL_STORAGE
+      com.android.vending.BILLING
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.REORDER_TASKS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=44948 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 10:33:55
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      io.strongapp.strong
+    com.google.android.apps.diagnosticstool:
+      io.strongapp.strong
+    com.google.android.settings.intelligence:
+      io.strongapp.strong
+    com.google.android.contacts:
+      io.strongapp.strong
+    com.google.android.apps.accessibility.voiceaccess:
+      io.strongapp.strong
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [io.strongapp.strong]
+    path: /data/app/~~CbS9ME34s5bGLXmclM3fqQ==/io.strongapp.strong-IxU6s8gooKmv8s6TozWGjQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1624299
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [io.strongapp.strong]
+     base.apk - 607

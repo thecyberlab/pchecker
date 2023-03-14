@@ -1,0 +1,322 @@
+Activity Resolver Table:
+  Schemes:
+      clock-app:
+        e0977a6 com.google.android.deskclock/com.android.deskclock.HandleUris filter 125b864
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "clock-app"
+          Authority: "com.google.android.deskclock": -1
+      :
+        ce0b5e7 com.google.android.deskclock/com.spotify.sdk.android.authentication.AuthCallbackActivity filter c962acd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: ""
+          Authority: "": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        ac40594 com.google.android.deskclock/com.android.deskclock.DeskClock filter d5db691
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.SNOOZE_ALARM:
+        3a1a83d com.google.android.deskclock/com.android.deskclock.HandleApiCalls filter 3ad19f6
+          Action: "android.intent.action.DISMISS_ALARM"
+          Action: "android.intent.action.DISMISS_TIMER"
+          Action: "android.intent.action.SHOW_ALARMS"
+          Action: "android.intent.action.SHOW_TIMERS"
+          Action: "android.intent.action.SNOOZE_ALARM"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.VOICE"
+      android.intent.action.DISMISS_ALARM:
+        3a1a83d com.google.android.deskclock/com.android.deskclock.HandleApiCalls filter 3ad19f6
+          Action: "android.intent.action.DISMISS_ALARM"
+          Action: "android.intent.action.DISMISS_TIMER"
+          Action: "android.intent.action.SHOW_ALARMS"
+          Action: "android.intent.action.SHOW_TIMERS"
+          Action: "android.intent.action.SNOOZE_ALARM"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.VOICE"
+      android.intent.action.DISMISS_TIMER:
+        3a1a83d com.google.android.deskclock/com.android.deskclock.HandleApiCalls filter 3ad19f6
+          Action: "android.intent.action.DISMISS_ALARM"
+          Action: "android.intent.action.DISMISS_TIMER"
+          Action: "android.intent.action.SHOW_ALARMS"
+          Action: "android.intent.action.SHOW_TIMERS"
+          Action: "android.intent.action.SNOOZE_ALARM"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.VOICE"
+      android.intent.action.SET_ALARM:
+        9456832 com.google.android.deskclock/com.android.deskclock.HandleSetApiCalls filter 8e131f7
+          Action: "android.intent.action.SET_ALARM"
+          Action: "android.intent.action.SET_TIMER"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.VOICE"
+      android.intent.action.SET_TIMER:
+        9456832 com.google.android.deskclock/com.android.deskclock.HandleSetApiCalls filter 8e131f7
+          Action: "android.intent.action.SET_ALARM"
+          Action: "android.intent.action.SET_TIMER"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.VOICE"
+      android.intent.action.SHOW_ALARMS:
+        3a1a83d com.google.android.deskclock/com.android.deskclock.HandleApiCalls filter 3ad19f6
+          Action: "android.intent.action.DISMISS_ALARM"
+          Action: "android.intent.action.DISMISS_TIMER"
+          Action: "android.intent.action.SHOW_ALARMS"
+          Action: "android.intent.action.SHOW_TIMERS"
+          Action: "android.intent.action.SNOOZE_ALARM"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.VOICE"
+      android.intent.action.SHOW_TIMERS:
+        3a1a83d com.google.android.deskclock/com.android.deskclock.HandleApiCalls filter 3ad19f6
+          Action: "android.intent.action.DISMISS_ALARM"
+          Action: "android.intent.action.DISMISS_TIMER"
+          Action: "android.intent.action.SHOW_ALARMS"
+          Action: "android.intent.action.SHOW_TIMERS"
+          Action: "android.intent.action.SNOOZE_ALARM"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.VOICE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.appindexing.UPDATE_INDEX:
+        5a5e700 com.google.android.deskclock/com.android.deskclock.indexing.ReindexingReceiver filter 267a6c9
+          Action: "com.google.firebase.appindexing.UPDATE_INDEX"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        e058b39 com.google.android.deskclock/com.android.deskclock.AlarmInitReceiver filter 488df82
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.LOCALE_CHANGED:
+        e058b39 com.google.android.deskclock/com.android.deskclock.AlarmInitReceiver filter 488df82
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        fddd57e com.google.android.deskclock/com.android.alarmclock.DigitalAppWidgetProvider filter ab7f6d0
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIMEZONE_CHANGED:
+        e058b39 com.google.android.deskclock/com.android.deskclock.AlarmInitReceiver filter 488df82
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        fddd57e com.google.android.deskclock/com.android.alarmclock.DigitalAppWidgetProvider filter ab7f6d0
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        e058b39 com.google.android.deskclock/com.android.deskclock.AlarmInitReceiver filter 488df82
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        fddd57e com.google.android.deskclock/com.android.alarmclock.DigitalAppWidgetProvider filter ab7f6d0
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        e058b39 com.google.android.deskclock/com.android.deskclock.AlarmInitReceiver filter 488df82
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        5f47adf com.google.android.deskclock/com.android.alarmclock.AnalogAppWidgetProvider filter 2ecf693
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        fddd57e com.google.android.deskclock/com.android.alarmclock.DigitalAppWidgetProvider filter ab7f6d0
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        e058b39 com.google.android.deskclock/com.android.deskclock.AlarmInitReceiver filter 488df82
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        e02732c com.google.android.deskclock/com.android.deskclock.WearableMessageListenerService filter 7e668ef
+          Action: "com.google.android.gms.wearable.CAPABILITY_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+
+  Non-Data Actions:
+      android.service.dreams.DreamService:
+        62aa1f5 com.google.android.deskclock/com.android.deskclock.Screensaver filter 36971ce permission android.permission.BIND_DREAM_SERVICE
+          Action: "android.service.dreams.DreamService"
+          Category: "android.intent.category.DEFAULT"
+
+Permissions:
+  Permission [com.google.android.deskclock.permission.RECEIVE_ALERT_BROADCASTS] (5fdcb8a):
+    sourcePackage=com.google.android.deskclock
+    uid=10181 gids=null type=0 prot=signature|privileged
+    perm=Permission{7cfe5fb com.google.android.deskclock.permission.RECEIVE_ALERT_BROADCASTS}
+    packageSetting=PackageSetting{6b99618 com.google.android.deskclock/10181}
+
+Registered ContentProviders:
+  com.google.android.deskclock/com.android.deskclock.provider.ClockContentProvider:
+    Provider{7506871 com.google.android.deskclock/com.android.deskclock.provider.ClockContentProvider}
+  com.google.android.deskclock/android.arch.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{5751656 com.google.android.deskclock/android.arch.lifecycle.ProcessLifecycleOwnerInitializer}
+
+ContentProvider Authorities:
+  [com.google.android.deskclock.lifecycle-process]:
+    Provider{5751656 com.google.android.deskclock/android.arch.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{c2ce6d7 com.google.android.deskclock}
+  [com.google.android.deskclock.provider]:
+    Provider{7506871 com.google.android.deskclock/com.android.deskclock.provider.ClockContentProvider}
+      applicationInfo=ApplicationInfo{c2ce6d7 com.google.android.deskclock}
+
+Key Set Manager:
+  [com.google.android.deskclock]
+      Signing KeySets: 8
+
+Packages:
+  Package [com.google.android.deskclock] (6b99618):
+    userId=10181
+    pkg=Package{5d0c8b8 com.google.android.deskclock}
+    codePath=/data/app/com.google.android.deskclock-OvMKLq1rAo56zZmeIXT11g==
+    resourcePath=/data/app/com.google.android.deskclock-OvMKLq1rAo56zZmeIXT11g==
+    legacyNativeLibraryDir=/data/app/com.google.android.deskclock-OvMKLq1rAo56zZmeIXT11g==/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=63004298 minSdk=23 targetSdk=29
+    versionName=6.3 (313737636)
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{c2ce6d7 com.google.android.deskclock}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.google.android.deskclock
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 08:51:45
+    firstInstallTime=2021-03-06 08:51:45
+    lastUpdateTime=2021-03-06 08:51:45
+    signatures=PackageSignatures{ebdfbc4 version:3, signatures:[e3ca78d8], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    declared permissions:
+      com.google.android.deskclock.permission.RECEIVE_ALERT_BROADCASTS: prot=signature|privileged, INSTALLED
+    requested permissions:
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      android.permission.VIBRATE
+      android.permission.DISABLE_KEYGUARD
+      android.permission.READ_CALENDAR
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.FOREGROUND_SERVICE
+      android.permission.USE_FULL_SCREEN_INTENT
+      com.android.systemui.permission.SEND_ALERT_BROADCASTS
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.INTERACT_ACROSS_PROFILES
+    install permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=16930 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=90
+  User 0:
+    seq=2, package=com.yahoo.mobile.client.android.weather
+    seq=9, package=com.google.android.gms
+    seq=11, package=com.psiphon3.subscription
+    seq=13, package=com.tumblr
+    seq=16, package=com.google.android.apps.docs.editors.sheets
+    seq=17, package=com.google.android.apps.docs
+    seq=19, package=com.emoji.coolkeyboard
+    seq=21, package=com.ea.game.starwarscapital_row
+    seq=23, package=com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish
+    seq=25, package=com.virtualapplications.play
+    seq=27, package=com.appsomniacs.da2
+    seq=29, package=com.king.farmheroessupersaga
+    seq=31, package=com.rsupport.mvagent
+    seq=33, package=com.snkplaymore.android014
+    seq=35, package=com.intermedia.hq
+    seq=37, package=com.google.android.apps.adwords
+    seq=39, package=com.weheartit
+    seq=41, package=com.life360.android.safetymapd
+    seq=43, package=com.kabam.marvelbattle
+    seq=45, package=com.antutu.ABenchMark
+    seq=47, package=com.timehop
+    seq=49, package=com.flightradar24free
+    seq=51, package=com.dena.a12026418
+    seq=53, package=com.whatsapp
+    seq=55, package=com.feng.droid.tutu
+    seq=57, package=com.jsdev.instasize
+    seq=60, package=com.gombosdev.ampere
+    seq=62, package=com.sega.vtc
+    seq=64, package=com.google.android.street
+    seq=66, package=com.mobisystems.fileman
+    seq=68, package=com.secondarm.taptapdash
+    seq=70, package=com.kwai.global.video.social.kwaigo
+    seq=73, package=net.mobigame.zombietsunami
+    seq=76, package=com.nll.screenrecorder
+    seq=78, package=com.koushikdutta.vysor
+    seq=80, package=com.appnana.android.giftcardrewards
+    seq=82, package=com.ea.gp.pvz3
+    seq=84, package=com.ea.game.simcitymobile_row
+    seq=86, package=com.dv.adm
+    seq=88, package=com.google.android.apps.youtube.creator
+    seq=89, package=com.google.android.deskclock
+
+
+Dexopt state:
+  [com.google.android.deskclock]
+    path: /data/app/com.google.android.deskclock-OvMKLq1rAo56zZmeIXT11g==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.google.android.deskclock]
+     base.apk - 1479
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

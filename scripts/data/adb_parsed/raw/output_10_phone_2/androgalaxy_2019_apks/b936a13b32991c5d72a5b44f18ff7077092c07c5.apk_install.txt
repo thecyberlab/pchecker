@@ -1,0 +1,381 @@
+Activity Resolver Table:
+  Schemes:
+      fb316015891915907:
+        7968d5d com.fitapp/com.facebook.CustomTabActivity filter 20dc928
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb316015891915907"
+      fitapp:
+        d1ab6d2 com.fitapp/.activity.MainActivity filter 177bb4b
+          Action: "com.fitapp.action.DEEPLINK"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "fitapp"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d1ab6d2 com.fitapp/.activity.MainActivity filter cd5641a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        db3a259 com.fitapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 2a69540
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        ac96e1e com.fitapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e7248c3
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        8536ff com.fitapp/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 1e73c79
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        7b44ccc com.fitapp/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 277cdbe
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.fitapp.INTENT_DAILY_WEIGHT_REMINDER:
+        8f30b15 com.fitapp/.receiver.DailyReminderAlarmReceiver filter 7445c72
+          Action: "com.fitapp.INTENT_DAILY_WEIGHT_REMINDER"
+      com.fitapp.INTENT_ACTIVITY_COMPLETED:
+        41a4e2a com.fitapp/.receiver.ExportToFitReceiver filter 1d5a7e6
+          Action: "com.fitapp.INTENT_ACTIVITY_COMPLETED"
+        180441b com.fitapp/.receiver.LaunchResultsReceiver filter 304c127
+          Action: "com.fitapp.INTENT_ACTIVITY_COMPLETED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        3f69b8 com.fitapp/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 6962735
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        8536ff com.fitapp/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 1e73c79
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.fitapp.INTENT_LOCATION_SERVICE_START:
+        9864391 com.fitapp/.receiver.StartTrackingReceiver filter 190641
+          Action: "com.fitapp.INTENT_LOCATION_SERVICE_START"
+      com.fitapp.INTENT_LOCATION_SERVICE_START_WATCH:
+        9e722f6 com.fitapp/.receiver.StartWatchTrackingReceiver filter 70a4fd4
+          Action: "com.fitapp.INTENT_LOCATION_SERVICE_START_WATCH"
+      android.intent.action.BATTERY_LOW:
+        db3a259 com.fitapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 2a69540
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        45506f7 com.fitapp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ca6ae1f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        45506f7 com.fitapp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ca6ae1f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        a5d6964 com.fitapp/.receiver.StartupReceiver filter 5aec57d
+          Action: "android.intent.action.BOOT_COMPLETED"
+        45506f7 com.fitapp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ca6ae1f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        ac96e1e com.fitapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e7248c3
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        73a87cd com.fitapp/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 6ffc56c
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        a491b93 com.fitapp/.service.FitappFirebaseMessagingService filter 5df07ca
+          Action: "com.google.firebase.MESSAGING_EVENT"
+
+Registered ContentProviders:
+  com.fitapp/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{e39b7d0 com.fitapp/com.crashlytics.android.CrashlyticsInitProvider}
+  com.fitapp/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{f74d3c9 com.fitapp/com.google.firebase.provider.FirebaseInitProvider}
+  com.fitapp/com.facebook.internal.FacebookInitProvider:
+    Provider{3bb9ace com.fitapp/com.facebook.internal.FacebookInitProvider}
+  com.fitapp/com.mikepenz.iconics.IconicsContentProvider:
+    Provider{95fddef com.fitapp/com.mikepenz.iconics.IconicsContentProvider}
+  com.fitapp/.GenericFileProvider:
+    Provider{94a80fc com.fitapp/.GenericFileProvider}
+  com.fitapp/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{6ede385 com.fitapp/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.fitapp/.util.LogFileProvider:
+    Provider{c7a95da com.fitapp/.util.LogFileProvider}
+  com.fitapp/com.facebook.FacebookContentProvider:
+    Provider{a766a0b com.fitapp/com.facebook.FacebookContentProvider}
+  com.fitapp/androidx.work.impl.WorkManagerInitializer:
+    Provider{83cb0e8 com.fitapp/androidx.work.impl.WorkManagerInitializer}
+
+ContentProvider Authorities:
+  [com.fitapp.workmanager-init]:
+    Provider{83cb0e8 com.fitapp/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{b2e3301 com.fitapp}
+  [com.fitapp.crashlyticsinitprovider]:
+    Provider{e39b7d0 com.fitapp/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{b2e3301 com.fitapp}
+  [com.facebook.app.FacebookContentProvider316015891915907]:
+    Provider{a766a0b com.fitapp/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{b2e3301 com.fitapp}
+  [com.fitapp.GenericFileProvider]:
+    Provider{94a80fc com.fitapp/.GenericFileProvider}
+      applicationInfo=ApplicationInfo{b2e3301 com.fitapp}
+  [com.fitapp.iconics.core.provider]:
+    Provider{95fddef com.fitapp/com.mikepenz.iconics.IconicsContentProvider}
+      applicationInfo=ApplicationInfo{b2e3301 com.fitapp}
+  [com.fitapp.firebaseinitprovider]:
+    Provider{f74d3c9 com.fitapp/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{b2e3301 com.fitapp}
+  [com.fitapp.util.LogFileProvider]:
+    Provider{c7a95da com.fitapp/.util.LogFileProvider}
+      applicationInfo=ApplicationInfo{b2e3301 com.fitapp}
+  [com.fitapp.FacebookInitProvider]:
+    Provider{3bb9ace com.fitapp/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{b2e3301 com.fitapp}
+  [com.fitapp.lifecycle-process]:
+    Provider{6ede385 com.fitapp/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{b2e3301 com.fitapp}
+
+Key Set Manager:
+  [com.fitapp]
+      Signing KeySets: 133
+
+Packages:
+  Package [com.fitapp] (9fc35a6):
+    userId=10324
+    pkg=Package{25602c5 com.fitapp}
+    codePath=/data/app/com.fitapp-cKcuGylZ8LzkdkYyUr_LqQ==
+    resourcePath=/data/app/com.fitapp-cKcuGylZ8LzkdkYyUr_LqQ==
+    legacyNativeLibraryDir=/data/app/com.fitapp-cKcuGylZ8LzkdkYyUr_LqQ==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=418 minSdk=21 targetSdk=29
+    versionName=5.30
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{b2e3301 com.fitapp}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE ]
+    dataDir=/data/user/0/com.fitapp
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      com.google.android.maps
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /product/framework/com.google.android.maps.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 07:30:44
+    firstInstallTime=2021-03-06 07:30:46
+    lastUpdateTime=2021-03-06 07:30:46
+    signatures=PackageSignatures{d1f9be7 version:1, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    requested permissions:
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.GET_ACCOUNTS
+      android.permission.USE_CREDENTIALS
+      android.permission.BLUETOOTH
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WAKE_LOCK
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      com.android.vending.BILLING
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=8107 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=385
+  User 0:
+    seq=5, package=com.google.android.gms
+    seq=11, package=com.kajda.fuelio
+    seq=16, package=me.piere.christmas
+    seq=18, package=ak.alizandro.smartaudiobookplayer
+    seq=20, package=amazing.three_d.icons
+    seq=22, package=com.first75.voicerecorder2pro
+    seq=24, package=digifit.virtuagym.client.android
+    seq=26, package=com.paget96.lspeed
+    seq=32, package=com.in.w3d
+    seq=34, package=com.luzapplications.alessio.wallooppro
+    seq=36, package=com.alesp.orologiomondiale.pro
+    seq=40, package=com.yuanwofei.cardemulator.pro
+    seq=48, package=com.microblink.photomath
+    seq=50, package=studio14.application.caeluswhite
+    seq=54, package=com.perfectapps.muviz
+    seq=58, package=net.xnano.android.ftpserver
+    seq=60, package=com.aezowie.mycalpro
+    seq=62, package=com.bialy.zonelauncher
+    seq=66, package=com.indigomadina.tabloid
+    seq=70, package=com.mixplorer
+    seq=72, package=com.mobilefootie.wc2010
+    seq=74, package=de.dwd.warnapp
+    seq=76, package=oos.dark.material
+    seq=78, package=com.intsig.camscanner
+    seq=82, package=com.indigomadina.spheroid
+    seq=84, package=com.footej.camera
+    seq=89, package=com.cray.software.justreminderpro
+    seq=91, package=com.sofascore.results
+    seq=97, package=pl.solidexplorer2
+    seq=103, package=jp.gr.java_conf.soboku.batterymeter
+    seq=105, package=com.iioannou.phototools.pro
+    seq=108, package=com.unvoid.borealis
+    seq=112, package=com.happening.studios.swipeforfacebookfree
+    seq=114, package=com.rookiestudio.perfectviewer
+    seq=117, package=com.osheden.azulox
+    seq=124, package=com.pakdata.easyurdu
+    seq=126, package=eu.faircode.netguard
+    seq=132, package=indigomadina.furatto.ui
+    seq=134, package=com.brit.swiftblack.layers
+    seq=138, package=o.o.joey
+    seq=142, package=com.overlook.android.fing
+    seq=144, package=ru.involta.metro
+    seq=148, package=hastamev.oneuidark.com
+    seq=153, package=com.compscieddy.writeaday
+    seq=155, package=com.protectstar.ishredder.pro
+    seq=157, package=prism.kustom.pack
+    seq=161, package=com.protectstar.ishredder.mil
+    seq=163, package=com.androidev.xhafe.earthquakepro
+    seq=167, package=com.franco.doze
+    seq=169, package=com.mobisystems.fileman
+    seq=171, package=com.changemystyle.gentlewakeuppro
+    seq=175, package=studio14.application.juno
+    seq=177, package=com.thegrammaruniversity.drfrench
+    seq=179, package=com.medisafe.android.client
+    seq=187, package=com.bergin_it.gpsscatterplot
+    seq=189, package=com.zemana.msecurity
+    seq=191, package=be.inet.rainwidget.donate
+    seq=193, package=com.bergin_it.gpsattitude
+    seq=195, package=ru.yandex.music
+    seq=197, package=com.roamingsquirrel.android.calculator_plus
+    seq=200, package=com.aathifmahir.iconpack.kora.free
+    seq=202, package=com.iudesk.android.photo.editor
+    seq=204, package=com.franco.kernel
+    seq=206, package=com.magdalm.wifimasterpassword
+    seq=209, package=com.nll.asr
+    seq=211, package=com.crypter.cryptocyrrency
+    seq=213, package=com.kimcy929.screenrecorder
+    seq=215, package=com.pavelrekun.skit.premium
+    seq=221, package=com.wiseschematics.reeq01
+    seq=224, package=com.SearingMedia.Parrot
+    seq=226, package=com.fbreader
+    seq=228, package=com.bitsmedia.android.muslimpro
+    seq=230, package=com.mobisystems.office
+    seq=234, package=thanhletranngoc.calculator.pro
+    seq=238, package=com.edzondm.linebitse
+    seq=240, package=dkc.video.hdbox
+    seq=242, package=com.ideashower.readitlater.pro
+    seq=244, package=com.scan.srbd
+    seq=246, package=com.cinelensesapp.android.cinelenses
+    seq=248, package=de.j4velin.wallpaperChanger
+    seq=250, package=app.stellio.player
+    seq=252, package=com.itemstudio.castro.pro
+    seq=254, package=com.ffffstudio.kojicam
+    seq=256, package=com.united.art.lwp28
+    seq=260, package=com.kokoschka.michael.crypto
+    seq=262, package=com.sreerag.merlen
+    seq=264, package=ru.v_a_v.netmonitorpro
+    seq=266, package=com.ottplay.ottplay
+    seq=268, package=com.tools.netgel.netxpro
+    seq=270, package=com.n7mobile.nplayer
+    seq=272, package=ginlemon.flowerfree
+    seq=274, package=com.mrfarts.lwp24
+    seq=276, package=com.lb.app_manager
+    seq=278, package=com.samruston.twitter
+    seq=280, package=com.jndapp.redline.linex.iconpack
+    seq=282, package=com.sunnytapps.sunnytrack
+    seq=284, package=yo.app
+    seq=286, package=kha.prog.mikrotik
+    seq=290, package=com.simplehabit.simplehabitapp
+    seq=292, package=com.fullreader
+    seq=297, package=com.stark.griddle
+    seq=299, package=com.magdalm.freewifipassword
+    seq=301, package=com.foobnix.pro.pdf.reader
+    seq=303, package=com.sygic.aura
+    seq=305, package=com.twodoor.bookly
+    seq=307, package=com.iioannou.phototipspro
+    seq=309, package=com.jndapp.limeline.linex.iconpack
+    seq=311, package=com.indigomadina.tigadpro
+    seq=314, package=com.itunestoppodcastplayer.app
+    seq=316, package=studio14.application.caelusblack
+    seq=318, package=dp.ws.popcorntime
+    seq=320, package=com.light.simplephotowidget
+    seq=322, package=com.adguard.android
+    seq=324, package=dev.into.liveno.pro
+    seq=329, package=com.spartacus
+    seq=333, package=ru.englishtenses.index
+    seq=337, package=com.david.android.languageswitch
+    seq=339, package=com.getmimo
+    seq=341, package=de.ozerov.fully
+    seq=343, package=com.plexapp.android
+    seq=345, package=co.windyapp.android
+    seq=348, package=com.cloud3squared.meteogram.pro
+    seq=350, package=com.notebloc.app
+    seq=352, package=com.bhanu.smartnavbar
+    seq=354, package=com.icecoldapps.synchronizeultimate
+    seq=356, package=com.codium.hydrocoach.pro
+    seq=358, package=com.franco.servicely
+    seq=360, package=studio14.application.hera
+    seq=362, package=com.veitch.learntomaster.bgtp
+    seq=365, package=com.shaiban.audioplayer.mplayer
+    seq=367, package=com.lingodeer.plus
+    seq=369, package=com.feravolt.fdeai
+    seq=371, package=io.lingvist.android
+    seq=373, package=com.indigomadina.anoobul
+    seq=375, package=com.brit.swiftdark.substratum
+    seq=377, package=com.shazam.encore.android
+    seq=379, package=com.mobilefootie.fotmobpro
+    seq=381, package=com.jetblacksoftware.xmastreewallpaperpaid
+    seq=383, package=at.bitfire.davdroid
+    seq=384, package=com.fitapp
+
+
+Dexopt state:
+  [com.fitapp]
+    path: /data/app/com.fitapp-cKcuGylZ8LzkdkYyUr_LqQ==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.fitapp]
+     base.apk - 5258
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

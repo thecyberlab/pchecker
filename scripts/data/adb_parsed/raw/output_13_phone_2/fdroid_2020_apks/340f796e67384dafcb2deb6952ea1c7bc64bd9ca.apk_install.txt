@@ -1,0 +1,258 @@
+Activity Resolver Table:
+  Schemes:
+      market:
+        4076fea com.aurora.store/.ui.details.DetailsActivity filter 44022db
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "market"
+          Authority: "details": -1
+        b1411b7 com.aurora.store/.ui.search.activity.SearchActivity filter f7b7d24
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "market"
+          Authority: "search": -1
+      http:
+        4076fea com.aurora.store/.ui.details.DetailsActivity filter a4fc178
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "play.google.com": -1
+          Authority: "market.android.com": -1
+          Path: "PatternMatcher{LITERAL: /store/apps/details}"
+      https:
+        4076fea com.aurora.store/.ui.details.DetailsActivity filter a4fc178
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "play.google.com": -1
+          Authority: "market.android.com": -1
+          Path: "PatternMatcher{LITERAL: /store/apps/details}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        bb82051 com.aurora.store/.ui.single.activity.SplashActivity filter 6e4a0b6
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      android.intent.action.SEARCH:
+        b1411b7 com.aurora.store/.ui.search.activity.SearchActivity filter 58d708d
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        fb3108e com.aurora.store/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter a1d80af
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        7854790 com.aurora.store/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 8ed8889
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        21f4cbc com.aurora.store/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 61d2445
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        dd3a79a com.aurora.store/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter b4b78cb
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        21f4cbc com.aurora.store/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 61d2445
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        fb3108e com.aurora.store/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter a1d80af
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        5f278a8 com.aurora.store/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2f0bfc1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        5f278a8 com.aurora.store/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2f0bfc1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        f921242 com.aurora.store/.receiver.BootReceiver filter 3ce1253
+          Action: "android.intent.action.BOOT_COMPLETED"
+        5f278a8 com.aurora.store/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2f0bfc1
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        7854790 com.aurora.store/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 8ed8889
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        b34a366 com.aurora.store/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 616d6a7
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          play.google.com
+          market.android.com
+
+Registered ContentProviders:
+  com.aurora.store/org.acra.attachment.AcraContentProvider:
+    Provider{dacd18f com.aurora.store/org.acra.attachment.AcraContentProvider}
+  com.aurora.store/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{e08fc1c com.aurora.store/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.aurora.store/androidx.core.content.FileProvider:
+    Provider{4c1025 com.aurora.store/androidx.core.content.FileProvider}
+  com.aurora.store/androidx.work.impl.WorkManagerInitializer:
+    Provider{62ef7ab com.aurora.store/androidx.work.impl.WorkManagerInitializer}
+
+ContentProvider Authorities:
+  [com.aurora.store.acra]:
+    Provider{dacd18f com.aurora.store/org.acra.attachment.AcraContentProvider}
+      applicationInfo=ApplicationInfo{e5289a1 com.aurora.store}
+  [com.aurora.store.workmanager-init]:
+    Provider{62ef7ab com.aurora.store/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{299d7c6 com.aurora.store}
+  [com.aurora.store.fileProvider]:
+    Provider{4c1025 com.aurora.store/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{4636387 com.aurora.store}
+  [com.aurora.store.lifecycle-process]:
+    Provider{e08fc1c com.aurora.store/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{80eb2b4 com.aurora.store}
+
+Key Set Manager:
+  [com.aurora.store]
+      Signing KeySets: 6398
+
+Packages:
+  Package [com.aurora.store] (74baa52):
+    userId=10532
+    pkg=Package{688b123 com.aurora.store}
+    codePath=/data/app/~~blJADBr51MiaiLEd2rzVNw==/com.aurora.store-Hra8Xi73pZ0_Vl2sz63veQ==
+    resourcePath=/data/app/~~blJADBr51MiaiLEd2rzVNw==/com.aurora.store-Hra8Xi73pZ0_Vl2sz63veQ==
+    legacyNativeLibraryDir=/data/app/~~blJADBr51MiaiLEd2rzVNw==/com.aurora.store-Hra8Xi73pZ0_Vl2sz63veQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=27 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=3.2.7
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.aurora.store
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 20:52:17
+    lastUpdateTime=2022-11-30 20:52:18
+    packageSource=0
+    signatures=PackageSignatures{23e4620 version:1, signatures:[2ed54fa6], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.INSTALL_PACKAGES
+      android.permission.READ_LOGS
+      android.permission.ACCESS_MOCK_LOCATION
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+    User 0: ceDataInode=105853 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 20:52:18
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.aurora.store
+    com.google.android.apps.diagnosticstool:
+      com.aurora.store
+    com.google.android.settings.intelligence:
+      com.aurora.store
+    com.google.android.GoogleCamera:
+      com.aurora.store
+    com.google.android.apps.accessibility.voiceaccess:
+      com.aurora.store
+    com.zhiliaoapp.musically:
+      com.aurora.store
+    com.truecaller:
+      com.aurora.store
+    com.dv.adm:
+      com.aurora.store
+    com.zappcues.gamingmode:
+      com.aurora.store
+    com.jio.myjio:
+      com.aurora.store
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.aurora.store]
+    path: /data/app/~~blJADBr51MiaiLEd2rzVNw==/com.aurora.store-Hra8Xi73pZ0_Vl2sz63veQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:923380
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.aurora.store]
+     base.apk - 280

@@ -1,0 +1,606 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        ee4e779 io.funswitch.blocker/.activities.EmailLinkHandleFlotingActivity filter 6939cbe
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "blockerx.net": -1
+          AutoVerify=true
+        ee4e779 io.funswitch.blocker/.activities.EmailLinkHandleFlotingActivity filter f8fd11f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "blockerx.net": -1
+          Path: "PatternMatcher{PREFIX: /app-to-block-porn-on-android/}"
+        ee4e779 io.funswitch.blocker/.activities.EmailLinkHandleFlotingActivity filter eedac6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "accounts.blockerx.net": -1
+          Path: "PatternMatcher{PREFIX: /courseVideo/}"
+        ee4e779 io.funswitch.blocker/.activities.EmailLinkHandleFlotingActivity filter d438235
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "accounts.blockerx.net": -1
+      genericidp:
+        f3f2358 io.funswitch.blocker/com.google.firebase.auth.internal.GenericIdpActivity filter 8b70cb1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        db48596 io.funswitch.blocker/com.google.firebase.auth.internal.RecaptchaActivity filter e94c517
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        168c6ca io.funswitch.blocker/.activities.SplashScreenActivity filter 6a603b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        f95cf34 io.funswitch.blocker/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter e23415d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        db78046 io.funswitch.blocker/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c5b2207
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED:
+        32b6522 io.funswitch.blocker/.utils.MyDeviceAdminReceiver filter c969bb3
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.USER_ADDED"
+          Action: "android.app.action.USER_SWITCHED"
+      android.intent.action.QUICKBOOT_POWERON:
+        e3eb16e io.funswitch.blocker/.utils.MyAutoStartReceiver filter 3d5400f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.ACTION_LOCALE_CHANGED"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        e3eb16e io.funswitch.blocker/.utils.MyAutoStartReceiver filter 3d5400f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.ACTION_LOCALE_CHANGED"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.DEVICE_STORAGE_LOW:
+        ddb5ad2 io.funswitch.blocker/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter c7dd7a3
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        f030570 io.funswitch.blocker/com.vungle.warren.NetworkProviderReceiver filter 491a0e9
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Category: "android.intent.category.DEFAULT"
+        45aaaa0 io.funswitch.blocker/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 2579659
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        e3eb16e io.funswitch.blocker/.utils.MyAutoStartReceiver filter 3d5400f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.ACTION_LOCALE_CHANGED"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        38f2db8 io.funswitch.blocker/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 834b791
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        ddb5ad2 io.funswitch.blocker/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter c7dd7a3
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.app.action.DEVICE_ADMIN_DISABLED:
+        32b6522 io.funswitch.blocker/.utils.MyDeviceAdminReceiver filter c969bb3
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.USER_ADDED"
+          Action: "android.app.action.USER_SWITCHED"
+      android.app.action.DEVICE_ADMIN_ENABLED:
+        32b6522 io.funswitch.blocker/.utils.MyDeviceAdminReceiver filter c969bb3
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.USER_ADDED"
+          Action: "android.app.action.USER_SWITCHED"
+      com.android.vending.INSTALL_REFERRER:
+        2f1d04 io.funswitch.blocker/com.appsflyer.SingleInstallBroadcastReceiver filter 3fec2ed
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.app.action.USER_ADDED:
+        32b6522 io.funswitch.blocker/.utils.MyDeviceAdminReceiver filter c969bb3
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.USER_ADDED"
+          Action: "android.app.action.USER_SWITCHED"
+      com.google.android.c2dm.intent.RECEIVE:
+        fee1288 io.funswitch.blocker/com.google.firebase.iid.FirebaseInstanceIdReceiver filter f338421
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        f95cf34 io.funswitch.blocker/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter e23415d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        f0521e io.funswitch.blocker/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8c4aff
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        f0521e io.funswitch.blocker/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8c4aff
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        e3eb16e io.funswitch.blocker/.utils.MyAutoStartReceiver filter 3d5400f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.ACTION_LOCALE_CHANGED"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        f0521e io.funswitch.blocker/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8c4aff
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        db78046 io.funswitch.blocker/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c5b2207
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.ACTION_LOCALE_CHANGED:
+        e3eb16e io.funswitch.blocker/.utils.MyAutoStartReceiver filter 3d5400f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.ACTION_LOCALE_CHANGED"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.appwidget.action.APPWIDGET_UPDATE:
+        5eb089c io.funswitch.blocker/.widgets.SwitchOnDaysAppWidget filter 65a62a5
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        f28767a io.funswitch.blocker/.widgets.HelpMeAppWidget filter 4afce2b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        fcb722a io.funswitch.blocker/androidx.work.impl.diagnostics.DiagnosticsReceiver filter ce4981b
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        e3eb16e io.funswitch.blocker/.utils.MyAutoStartReceiver filter 3d5400f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.ACTION_LOCALE_CHANGED"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.app.action.USER_SWITCHED:
+        32b6522 io.funswitch.blocker/.utils.MyDeviceAdminReceiver filter c969bb3
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.USER_ADDED"
+          Action: "android.app.action.USER_SWITCHED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        acfd0cc io.funswitch.blocker/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 5e23f15
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.net.VpnService:
+        ce56d64 io.funswitch.blocker/.features.vpnService.vpnServices.MyVpnService filter 45c3bcd permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+      com.clevertap.PUSH_EVENT:
+        30c1c82 io.funswitch.blocker/com.clevertap.android.sdk.pushnotification.CTNotificationIntentService filter b63ef93
+          Action: "com.clevertap.PUSH_EVENT"
+      com.google.firebase.MESSAGING_EVENT:
+        b3dfbd0 io.funswitch.blocker/.features.blockerxDisplayNotification.MyFirebaseMessagingService filter efdc7c9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        8bcb9da io.funswitch.blocker/com.google.firebase.messaging.FirebaseMessagingService filter 197be0b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.accessibilityservice.AccessibilityService:
+        98686f6 io.funswitch.blocker/.features.accessibilityService.MyAccessibilityService filter 3aa9af7 permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.auth.api.gms.service.START:
+        c4f04fc io.funswitch.blocker/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 8121785
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+      com.clevertap.BG_EVENT:
+        3637ece io.funswitch.blocker/com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService filter 353f1ef permission android.permission.BIND_JOB_SERVICE
+          Action: "com.clevertap.BG_EVENT"
+
+Domain verification status:
+  io.funswitch.blocker:
+    ID: 6a403422-e519-4b0c-884e-5ecda30578be
+    Signatures: [3B:61:C2:A8:2A:FF:9F:76:52:FF:E0:B0:4B:E3:C8:F2:48:B5:E1:AA:70:63:F1:A3:84:6F:0C:F5:C7:78:62:8A]
+    Domain verification state:
+      accounts.blockerx.net: 1024
+      blockerx.net: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          accounts.blockerx.net
+          blockerx.net
+
+Registered ContentProviders:
+  io.funswitch.blocker/com.hyprmx.android.sdk.utility.HyprMXFileProvider:
+    Provider{c55502 io.funswitch.blocker/com.hyprmx.android.sdk.utility.HyprMXFileProvider}
+  io.funswitch.blocker/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{577fe13 io.funswitch.blocker/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  io.funswitch.blocker/com.vungle.warren.utility.VungleProvider:
+    Provider{9332850 io.funswitch.blocker/com.vungle.warren.utility.VungleProvider}
+  io.funswitch.blocker/androidx.core.content.FileProvider:
+    Provider{ef0ba49 io.funswitch.blocker/androidx.core.content.FileProvider}
+  io.funswitch.blocker/splitties.init.AppCtxInitProvider:
+    Provider{2b7bf4e io.funswitch.blocker/splitties.init.AppCtxInitProvider}
+  io.funswitch.blocker/androidx.work.impl.WorkManagerInitializer:
+    Provider{8da686f io.funswitch.blocker/androidx.work.impl.WorkManagerInitializer}
+  io.funswitch.blocker/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{5aa797c io.funswitch.blocker/com.google.firebase.perf.provider.FirebasePerfProvider}
+  io.funswitch.blocker/com.squareup.picasso.PicassoProvider:
+    Provider{c81b205 io.funswitch.blocker/com.squareup.picasso.PicassoProvider}
+  io.funswitch.blocker/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{c54825a io.funswitch.blocker/com.google.firebase.provider.FirebaseInitProvider}
+  io.funswitch.blocker/com.facebook.internal.FacebookInitProvider:
+    Provider{b4f1c8b io.funswitch.blocker/com.facebook.internal.FacebookInitProvider}
+  io.funswitch.blocker/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider:
+    Provider{9e3b168 io.funswitch.blocker/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+  io.funswitch.blocker/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{4706981 io.funswitch.blocker/com.facebook.ads.AudienceNetworkContentProvider}
+  io.funswitch.blocker/com.ironsource.lifecycle.IronsourceLifecycleProvider:
+    Provider{b10f667 io.funswitch.blocker/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+
+ContentProvider Authorities:
+  [io.funswitch.blocker.TTMultiProvider]:
+    Provider{9e3b168 io.funswitch.blocker/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+      applicationInfo=ApplicationInfo{fca99f8 io.funswitch.blocker}
+  [io.funswitch.blocker.firebaseperfprovider]:
+    Provider{5aa797c io.funswitch.blocker/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{1fd4ed1 io.funswitch.blocker}
+  [io.funswitch.blocker.com.squareup.picasso]:
+    Provider{c81b205 io.funswitch.blocker/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{d846d36 io.funswitch.blocker}
+  [io.funswitch.blocker.IronsourceLifecycleProvider]:
+    Provider{b10f667 io.funswitch.blocker/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+      applicationInfo=ApplicationInfo{86d2437 io.funswitch.blocker}
+  [io.funswitch.blocker.appctxinitprovider]:
+    Provider{2b7bf4e io.funswitch.blocker/splitties.init.AppCtxInitProvider}
+      applicationInfo=ApplicationInfo{10b5da4 io.funswitch.blocker}
+  [io.funswitch.blocker.vungle-provider]:
+    Provider{9332850 io.funswitch.blocker/com.vungle.warren.utility.VungleProvider}
+      applicationInfo=ApplicationInfo{937070d io.funswitch.blocker}
+  [io.funswitch.blocker.com.hyprmx.android.hyprmxfileprovider]:
+    Provider{c55502 io.funswitch.blocker/com.hyprmx.android.sdk.utility.HyprMXFileProvider}
+      applicationInfo=ApplicationInfo{1a226c2 io.funswitch.blocker}
+  [io.funswitch.blocker.workmanager-init]:
+    Provider{8da686f io.funswitch.blocker/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{5e5ccd3 io.funswitch.blocker}
+  [io.funswitch.blocker.fileprovider]:
+    Provider{ef0ba49 io.funswitch.blocker/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{572b010 io.funswitch.blocker}
+  [io.funswitch.blocker.lifecycle-process]:
+    Provider{577fe13 io.funswitch.blocker/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{fda0709 io.funswitch.blocker}
+  [io.funswitch.blocker.firebaseinitprovider]:
+    Provider{c54825a io.funswitch.blocker/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{7efed0e io.funswitch.blocker}
+  [io.funswitch.blocker.AudienceNetworkContentProvider]:
+    Provider{4706981 io.funswitch.blocker/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{236632f io.funswitch.blocker}
+  [io.funswitch.blocker.FacebookInitProvider]:
+    Provider{b4f1c8b io.funswitch.blocker/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{8babd3c io.funswitch.blocker}
+
+Key Set Manager:
+  [io.funswitch.blocker]
+      Signing KeySets: 6046
+
+Packages:
+  Package [io.funswitch.blocker] (5930ac5):
+    userId=10312
+    pkg=Package{de601f3 io.funswitch.blocker}
+    codePath=/data/app/~~PDNueJnlCThULcAA578RUg==/io.funswitch.blocker-Sv1kUUHUp_fWtXnz13KqYQ==
+    resourcePath=/data/app/~~PDNueJnlCThULcAA578RUg==/io.funswitch.blocker-Sv1kUUHUp_fWtXnz13KqYQ==
+    legacyNativeLibraryDir=/data/app/~~PDNueJnlCThULcAA578RUg==/io.funswitch.blocker-Sv1kUUHUp_fWtXnz13KqYQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=4642 minSdk=23 targetSdk=30
+    minExtensionVersions=[]
+    versionName=4.6.42
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.facebook.katana]
+    queriesIntents=[Intent { act=android.intent.action.MAIN }, Intent { act=android.intent.action.SENDTO }, Intent { act=android.intent.action.VIEW }, Intent { act=android.intent.action.PICK }, Intent { act=android.intent.action.DIAL }, Intent { act=android.intent.action.TTS_SERVICE }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }, Intent { act=androidx.browser.customtabs.CustomTabsService }]
+    dataDir=/data/user/0/io.funswitch.blocker
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 20:12:28
+    lastUpdateTime=2022-11-30 20:12:30
+    packageSource=0
+    signatures=PackageSignatures{354ca4f version:2, signatures:[9c12e809], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.CAMERA
+      android.permission.KILL_BACKGROUND_PROCESSES
+      android.permission.BLUETOOTH
+      android.permission.RECORD_AUDIO
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.INTERNET
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=102474 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 20:12:30
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        io.funswitch.blocker.widgets.HelpMeAppWidget
+        io.funswitch.blocker.widgets.SwitchOnDaysAppWidget
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      io.funswitch.blocker
+    com.google.android.apps.diagnosticstool:
+      io.funswitch.blocker
+    com.google.android.settings.intelligence:
+      io.funswitch.blocker
+    com.google.android.apps.accessibility.voiceaccess:
+      io.funswitch.blocker
+    com.zhiliaoapp.musically:
+      io.funswitch.blocker
+    com.truecaller:
+      io.funswitch.blocker
+    io.funswitch.blocker:
+      com.google.android.documentsui
+      com.verizon.services
+      com.google.android.projection.gearhead
+      com.google.android.apps.nbu.files
+      com.google.android.apps.recorder
+      com.google.android.apps.tips
+      com.google.android.wfcactivation
+      com.google.android.tetheringentitlement
+      com.google.android.apps.messaging
+      com.google.android.apps.safetyhub
+      com.google.android.carrierlocation
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.restore
+      com.google.android.googlequicksearchbox
+      com.google.android.dialer
+      com.google.android.as
+      com.google.android.settings.intelligence
+      com.google.android.GoogleCamera
+      com.google.android.setupwizard
+      com.google.android.calculator
+      com.android.chrome
+      com.google.android.deskclock
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.calendar
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.marvin.talkback
+      com.google.android.contacts
+      com.google.android.apps.docs
+      com.google.android.videos
+      com.google.android.apps.accessibility.voiceaccess
+      com.google.android.inputmethod.latin
+      com.google.android.apps.youtube.music
+      com.google.android.gm
+      [app id 10195 not installed]
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.shannon.rcsservice
+      com.google.android.pixel.setupwizard
+      com.android.cts.priv.ctsshim
+      com.android.cts.ctsshim
+      com.google.android.cellbroadcastreceiver
+      com.zhiliaoapp.musically
+      com.touchtype.swiftkey
+      com.pandavideocompressor
+      net.eagin.software.android.dejaloYa
+      radiotime.player
+      org.malwarebytes.antimalware
+      ru.iptvremote.android.iptv.pro
+      com.getmimo
+      net.zedge.android
+      com.truecaller
+      com.languagedrops.drops.international
+      hotspotshield.android.vpn
+      com.wallpaperscraft.wallpaper
+      com.kizeetech.newankaradesigns
+      com.zoho.assist.agent
+      deezer.android.app
+      ipnossoft.rma.free
+      wsj.reader_sp
+      com.callapp.contacts
+      com.duolingo
+      com.darinsoft.vimo
+      com.ninegag.android.app
+      cn.wps.moffice_eng
+      vsin.t16_funny_photo
+      com.mxtech.videoplayer.television
+      com.mcdonalds.app
+      com.catdaddy.cat22
+      com.fourchars.lmpfree
+      com.mycompany.app.soulbrowser
+      com.commsource.beautyplus
+      ringtone.maker.mp3.cutter.audio
+      ins.story.unfold
+      com.navimods.radio
+      com.lyrebirdstudio.photo_editor_pro
+      easynotes.notes.notepad.notebook.privatenotes.note
+      com.camerasideas.instashot
+      com.pikoo.app
+      com.mikewheelermedia
+      com.mobisystems.office
+      com.michaldrabik.showly2
+      com.shazam.android
+      com.dv.adm
+      com.frankthebrilliant.app
+      com.brit.swift.minimal
+      com.zappcues.gamingmode
+      com.cam001.selfie
+      com.fitapp
+      com.brit.swiftdark.substratum
+      com.hungama.myplay.activity
+      com.vicman.toonmeapp
+      com.subsplashconsulting.s_NKSKD3
+      deepfinity.android
+      com.king.blossomblast
+      com.bitsmedia.android.muslimpro
+      com.yahoo.mobile.client.android.weather
+      com.picsart.studio.light
+      com.simplehabit.simplehabitapp
+      com.ludia.jurassicworld
+      com.accuweather.android
+      com.weather.Weather
+      com.cooyostudio.marble.blast
+      com.cyberlink.powerdirector.DRA140225_01
+      com.videoeditorpro.android
+      com.tomtom.gplay.navapp.nds
+      com.jio.myjio
+      video.reface.app
+      com.ledblinker.pro
+      com.getepic.Epic
+      com.zombodroid.MemeGeneratorFullGplay
+      com.ufotosoft.justshot
+      com.pranavpandey.rotation
+      com.nikitadev.irregularverbspro
+      com.Wifi.lte5g.lte4g.lte3g.speedtest.Internetspeed
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+      com.unvoid.borealis
+      com.osheden.azulox
+    com.dv.adm:
+      io.funswitch.blocker
+    com.zappcues.gamingmode:
+      io.funswitch.blocker
+    com.jio.myjio:
+      io.funswitch.blocker
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.google.android.iwlan,com.android.keychain,com.android.server.telecom,com.android.location.fused,com.google.android.settings.future.biometrics.faceenroll,com.android.qns,com.android.wallpaperbackup,com.android.inputdevices,com.android.localtransport,com.android.providers.settings,android,com.android.settings,com.android.dynsystem]:
+        io.funswitch.blocker
+      [com.google.android.gms,com.google.android.gsf]:
+        io.funswitch.blocker
+  queryable via uses-library:
+
+Dexopt state:
+  [io.funswitch.blocker]
+    path: /data/app/~~PDNueJnlCThULcAA578RUg==/io.funswitch.blocker-Sv1kUUHUp_fWtXnz13KqYQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:809641
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [io.funswitch.blocker]
+     base.apk - 918

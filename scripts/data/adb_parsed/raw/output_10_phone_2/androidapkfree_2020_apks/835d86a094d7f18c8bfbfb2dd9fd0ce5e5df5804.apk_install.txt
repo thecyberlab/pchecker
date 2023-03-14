@@ -1,0 +1,222 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        52bfad8 com.vng.g6.a.zombie/com.unity3d.player.UnityPlayerActivity filter 6f0be7c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "deadtarget.onelink.me": -1
+          Path: "PatternMatcher{PREFIX: /CqR7}"
+          AutoVerify=true
+      fbconnect:
+        537ce31 com.vng.g6.a.zombie/com.facebook.CustomTabActivity filter e731305
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.vng.g6.a.zombie": -1
+
+  Non-Data Actions:
+      com.google.vr.vrcore.ACTION_NONE:
+        47be916 com.vng.g6.a.zombie/com.unity.purchasing.googleplay.VRPurchaseActivity filter 1a8cf5a
+          Action: "com.google.vr.vrcore.ACTION_NONE"
+          Category: "com.google.intent.category.DAYDREAM"
+      android.intent.action.MAIN:
+        52bfad8 com.vng.g6.a.zombie/com.unity3d.player.UnityPlayerActivity filter 7eaa16f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.net.conn.CONNECTIVITY_CHANGE:
+        6cb2297 com.vng.g6.a.zombie/com.vungle.warren.NetworkProviderReceiver filter 9948726
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Category: "android.intent.category.DEFAULT"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        d1ec84 com.vng.g6.a.zombie/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 9c94668
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        18a1c6d com.vng.g6.a.zombie/com.appsflyer.MultipleInstallBroadcastReceiver filter da9e58b
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        5c580a2 com.vng.g6.a.zombie/com.google.firebase.iid.FirebaseInstanceIdReceiver filter a96da81
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        1955133 com.vng.g6.a.zombie/com.google.firebase.messaging.FirebaseMessagingService filter 2cf4f67
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+        bc34cf0 com.vng.g6.a.zombie/com.google.firebase.messaging.cpp.ListenerService filter d206114
+          Action: "com.google.firebase.MESSAGING_EVENT"
+
+Permissions:
+  Permission [com.vng.g6.a.zombie.permission.C2D_MESSAGE] (5391269):
+    sourcePackage=com.vng.g6.a.zombie
+    uid=10160 gids=null type=0 prot=signature
+    perm=Permission{31f04ee com.vng.g6.a.zombie.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{5c9cd8f com.vng.g6.a.zombie/10160}
+
+Registered ContentProviders:
+  com.vng.g6.a.zombie/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{f28481c com.vng.g6.a.zombie/com.google.firebase.provider.FirebaseInitProvider}
+  com.vng.g6.a.zombie/com.facebook.internal.FacebookInitProvider:
+    Provider{bc76c25 com.vng.g6.a.zombie/com.facebook.internal.FacebookInitProvider}
+  com.vng.g6.a.zombie/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider:
+    Provider{7a81fa com.vng.g6.a.zombie/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+  com.vng.g6.a.zombie/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{91fb3ab com.vng.g6.a.zombie/com.facebook.ads.AudienceNetworkContentProvider}
+  com.vng.g6.a.zombie/com.vungle.warren.utility.VungleProvider:
+    Provider{c7fca08 com.vng.g6.a.zombie/com.vungle.warren.utility.VungleProvider}
+  com.vng.g6.a.zombie/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{c27a5a1 com.vng.g6.a.zombie/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.vng.g6.a.zombie/com.facebook.FacebookContentProvider:
+    Provider{cdec3c6 com.vng.g6.a.zombie/com.facebook.FacebookContentProvider}
+
+ContentProvider Authorities:
+  [com.vng.g6.a.zombie.firebaseinitprovider]:
+    Provider{f28481c com.vng.g6.a.zombie/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{ba3df87 com.vng.g6.a.zombie}
+  [com.facebook.app.FacebookContentProvider263896427126597]:
+    Provider{cdec3c6 com.vng.g6.a.zombie/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{ba3df87 com.vng.g6.a.zombie}
+  [com.vng.g6.a.zombie.TTMultiProvider]:
+    Provider{7a81fa com.vng.g6.a.zombie/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+      applicationInfo=ApplicationInfo{ba3df87 com.vng.g6.a.zombie}
+  [com.vng.g6.a.zombie.FacebookInitProvider]:
+    Provider{bc76c25 com.vng.g6.a.zombie/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{ba3df87 com.vng.g6.a.zombie}
+  [com.vng.g6.a.zombie.mobileadsinitprovider]:
+    Provider{c27a5a1 com.vng.g6.a.zombie/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{ba3df87 com.vng.g6.a.zombie}
+  [com.vng.g6.a.zombie.vungle-provider]:
+    Provider{c7fca08 com.vng.g6.a.zombie/com.vungle.warren.utility.VungleProvider}
+      applicationInfo=ApplicationInfo{ba3df87 com.vng.g6.a.zombie}
+  [com.vng.g6.a.zombie.AudienceNetworkContentProvider]:
+    Provider{91fb3ab com.vng.g6.a.zombie/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{ba3df87 com.vng.g6.a.zombie}
+
+Key Set Manager:
+  [com.vng.g6.a.zombie]
+      Signing KeySets: 333
+
+Packages:
+  Package [com.vng.g6.a.zombie] (5c9cd8f):
+    userId=10160
+    pkg=Package{9713c4e com.vng.g6.a.zombie}
+    codePath=/data/app/com.vng.g6.a.zombie-T87ZFTwKYZnO032m1Qkm2A==
+    resourcePath=/data/app/com.vng.g6.a.zombie-T87ZFTwKYZnO032m1Qkm2A==
+    legacyNativeLibraryDir=/data/app/com.vng.g6.a.zombie-T87ZFTwKYZnO032m1Qkm2A==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=431 minSdk=16 targetSdk=29
+    versionName=4.47.1.1
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{ba3df87 com.vng.g6.a.zombie}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.vng.g6.a.zombie
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 08:21:05
+    firstInstallTime=2021-03-06 08:21:07
+    lastUpdateTime=2021-03-06 08:21:07
+    signatures=PackageSignatures{c4b7eb4 version:3, signatures:[8cc09863], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      com.vng.g6.a.zombie.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      com.android.vending.BILLING
+      com.vng.g6.a.zombie.permission.C2D_MESSAGE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.WAKE_LOCK
+      android.permission.BIND_JOB_SERVICE
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.CHANGE_WIFI_STATE
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      android.permission.HARDWARE_TEST
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      com.vng.g6.a.zombie.permission.C2D_MESSAGE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=13954 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+
+Package Changes:
+  Sequence number=43
+  User 0:
+    seq=1, package=com.studioeleven.windfinder
+    seq=8, package=com.google.android.gms
+    seq=9, package=de.motain.iliga
+    seq=11, package=com.microsoft.office.word
+    seq=13, package=video.like
+    seq=15, package=com.netflix.mediaclient
+    seq=19, package=com.agilebits.onepassword
+    seq=21, package=com.rayark.valkyrie
+    seq=23, package=com.aa.generaladaptiveapps
+    seq=25, package=com.ea.gp.fifamobile
+    seq=27, package=com.instagram.igtv
+    seq=29, package=deezer.android.app
+    seq=31, package=com.square_enix.android_googleplay.FFBEWW
+    seq=33, package=com.google.android.calculator
+    seq=35, package=com.gamevilusa.mlbpilive.android.google.global.normal
+    seq=37, package=com.kabam.bigrobot
+    seq=39, package=io.enpass.app
+    seq=41, package=com.adobe.lrmobile
+    seq=42, package=com.vng.g6.a.zombie
+
+
+Dexopt state:
+  [com.vng.g6.a.zombie]
+    path: /data/app/com.vng.g6.a.zombie-T87ZFTwKYZnO032m1Qkm2A==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.vng.g6.a.zombie]
+     base.apk - 6238
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

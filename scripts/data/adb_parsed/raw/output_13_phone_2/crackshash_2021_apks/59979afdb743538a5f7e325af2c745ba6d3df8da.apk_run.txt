@@ -1,0 +1,240 @@
+Activity Resolver Table:
+  Schemes:
+      vzb2018122:
+        54c1048 com.abide.magellantv/tv.vizbee.api.RemoteActivity filter e090ee1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "vzb2018122"
+          Authority: "video": -1
+      tagmanager.c.com.abide.magellantv:
+        f6a1406 com.abide.magellantv/com.google.android.gms.tagmanager.TagManagerPreviewActivity filter 4e88ac7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tagmanager.c.com.abide.magellantv"
+      https:
+        4c8c165 com.abide.magellantv/com.magellan.tv.splash.SplashActivity filter a742aeb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "magellantv.onelink.me": -1
+          Path: "PatternMatcher{PREFIX: /6xaU}"
+          AutoVerify=true
+      fbconnect:
+        e35e8f4 com.abide.magellantv/com.facebook.CustomTabActivity filter aa6b81d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.abide.magellantv": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        4c8c165 com.abide.magellantv/com.magellan.tv.splash.SplashActivity filter d854e3a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.amazon.device.REQUEST_CAPABILITIES:
+        4699dde com.abide.magellantv/tv.vizbee.screen.launcher.CapabilityRequestReceiver filter 6c60bbf
+          Action: "com.amazon.device.REQUEST_CAPABILITIES"
+      android.net.wifi.WIFI_STATE_CHANGED:
+        442a060 com.abide.magellantv/com.magellan.tv.util.NetworkReceiver filter 77bb919
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.STATE_CHANGE"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        442a060 com.abide.magellantv/com.magellan.tv.util.NetworkReceiver filter 77bb919
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.STATE_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        ea1628c com.abide.magellantv/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter b05cdd5
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.net.wifi.STATE_CHANGE:
+        442a060 com.abide.magellantv/com.magellan.tv.util.NetworkReceiver filter 77bb919
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.STATE_CHANGE"
+      com.amazon.inapp.purchasing.NOTIFY:
+        8836a92 com.abide.magellantv/com.amazon.device.iap.ResponseReceiver filter 9590c63
+          Action: "com.amazon.inapp.purchasing.NOTIFY"
+
+Domain verification status:
+  com.abide.magellantv:
+    ID: 3cbb62ac-26fb-4653-931e-a1233735daab
+    Signatures: [A4:0D:A8:0A:59:D1:70:CA:A9:50:CF:15:C1:8C:45:4D:47:A3:9B:26:98:9D:8B:64:0E:CD:74:5B:A7:1B:F5:DC]
+    Domain verification state:
+      magellantv.onelink.me: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          magellantv.onelink.me
+
+Registered ContentProviders:
+  com.abide.magellantv/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{e645c22 com.abide.magellantv/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.abide.magellantv/androidx.core.content.FileProvider:
+    Provider{919c6b3 com.abide.magellantv/androidx.core.content.FileProvider}
+  com.abide.magellantv/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{bf65470 com.abide.magellantv/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.abide.magellantv/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{43c43e9 com.abide.magellantv/com.google.firebase.provider.FirebaseInitProvider}
+  com.abide.magellantv/com.facebook.internal.FacebookInitProvider:
+    Provider{990186e com.abide.magellantv/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.abide.magellantv.fileprovider]:
+    Provider{919c6b3 com.abide.magellantv/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{8951554 com.abide.magellantv}
+  [com.abide.magellantv.firebaseinitprovider]:
+    Provider{43c43e9 com.abide.magellantv/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{6f1dcfd com.abide.magellantv}
+  [com.abide.magellantv.FacebookInitProvider]:
+    Provider{990186e com.abide.magellantv/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{efe5df2 com.abide.magellantv}
+  [com.abide.magellantv.lifecycle-process]:
+    Provider{e645c22 com.abide.magellantv/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{e19ec43 com.abide.magellantv}
+  [com.abide.magellantv.firebaseperfprovider]:
+    Provider{bf65470 com.abide.magellantv/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{5d832c0 com.abide.magellantv}
+
+Key Set Manager:
+  [com.abide.magellantv]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.abide.magellantv] (d044bf9):
+    userId=10343
+    pkg=Package{f2f8721 com.abide.magellantv}
+    codePath=/data/app/~~nhpaO9Qb36nRDhwKqCHrgw==/com.abide.magellantv-w0cR0zITarcNqJRI43m8WA==
+    resourcePath=/data/app/~~nhpaO9Qb36nRDhwKqCHrgw==/com.abide.magellantv-w0cR0zITarcNqJRI43m8WA==
+    legacyNativeLibraryDir=/data/app/~~nhpaO9Qb36nRDhwKqCHrgw==/com.abide.magellantv-w0cR0zITarcNqJRI43m8WA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=173 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.1.40
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.abide.magellantv
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 17:22:06
+    lastUpdateTime=2022-11-30 17:22:07
+    packageSource=0
+    signatures=PackageSignatures{6eec746 version:3, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      com.android.providers.tv.permission.READ_EPG_DATA
+      com.android.providers.tv.permission.WRITE_EPG_DATA
+      android.permission.INTERNET
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.TRANSMIT_IR
+      com.android.vending.BILLING
+      android.permission.WAKE_LOCK
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.TRANSMIT_IR: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=83110 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 17:22:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.abide.magellantv
+    com.google.android.apps.diagnosticstool:
+      com.abide.magellantv
+    com.google.android.settings.intelligence:
+      com.abide.magellantv
+    com.google.android.apps.accessibility.voiceaccess:
+      com.abide.magellantv
+    com.truecaller:
+      com.abide.magellantv
+    com.dv.adm:
+      com.abide.magellantv
+    com.zappcues.gamingmode:
+      com.abide.magellantv
+    com.jio.myjio:
+      com.abide.magellantv
+  queryable via interaction:
+    User 0:
+      [com.android.keychain,com.android.location.fused,com.android.qns,com.android.providers.settings,com.google.android.settings.future.biometrics.faceenroll,com.android.localtransport,com.google.android.iwlan,com.android.server.telecom,com.android.inputdevices,com.android.settings,com.android.wallpaperbackup,android,com.android.dynsystem,com.google.SSRestartDetector]:
+        com.abide.magellantv
+      [com.google.android.gsf,com.google.android.gms]:
+        com.abide.magellantv
+  queryable via uses-library:
+
+Dexopt state:
+  [com.abide.magellantv]
+    path: /data/app/~~nhpaO9Qb36nRDhwKqCHrgw==/com.abide.magellantv-w0cR0zITarcNqJRI43m8WA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1015344
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.abide.magellantv]
+     base.apk - 874

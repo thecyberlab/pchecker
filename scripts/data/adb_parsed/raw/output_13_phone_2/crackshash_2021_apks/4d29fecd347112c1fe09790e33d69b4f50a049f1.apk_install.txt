@@ -1,0 +1,260 @@
+Activity Resolver Table:
+  Full MIME Types:
+      application/x-font-ttf:
+        f819c01 com.adobe.spark.post/com.adobe.creativesdk.typekit.TypekitActivity filter 17deaa6
+          Action: "adobe.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/x-font-ttf"
+
+  Base MIME Types:
+      application:
+        f819c01 com.adobe.spark.post/com.adobe.creativesdk.typekit.TypekitActivity filter 17deaa6
+          Action: "adobe.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/x-font-ttf"
+
+  Schemes:
+      https:
+        f72ceef com.adobe.spark.post/com.adobe.spark.view.main.SplashActivity filter bacbc85
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "branch-spark-post"
+          Scheme: "https"
+          Authority: "adobesparkpost.app.link": -1
+          Authority: "adobesparkpost.test-app.link": -1
+        ddafada com.adobe.spark.post/com.adobe.theo.view.main.MainActivity filter d476b0b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "spark.adobe.com": -1
+          Authority: "spark.adobe.com": -1
+          Path: "PatternMatcher{PREFIX: /post}"
+          Path: "PatternMatcher{PREFIX: /sp/remix/post}"
+      branch-spark-post:
+        f72ceef com.adobe.spark.post/com.adobe.spark.view.main.SplashActivity filter bacbc85
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "branch-spark-post"
+          Scheme: "https"
+          Authority: "adobesparkpost.app.link": -1
+          Authority: "adobesparkpost.test-app.link": -1
+      adobesparkpost:
+        ddafada com.adobe.spark.post/com.adobe.theo.view.main.MainActivity filter f881de8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "adobesparkpost"
+          Authority: "remix": -1
+          Authority: "pricing": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f72ceef com.adobe.spark.post/com.adobe.spark.view.main.SplashActivity filter ac91dfc
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      adobe.intent.action.GET_CONTENT:
+        f819c01 com.adobe.spark.post/com.adobe.creativesdk.typekit.TypekitActivity filter 17deaa6
+          Action: "adobe.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/x-font-ttf"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        f94ca39 com.adobe.spark.post/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 90da87e
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        27face7 com.adobe.spark.post/com.adobe.spark.helpers.InstallReferrerReceiver filter 8b53094
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        39b51df com.adobe.spark.post/com.google.firebase.iid.FirebaseInstanceIdReceiver filter d8dfe2c
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      zendesk.support:
+        7103083 com.adobe.spark.post/zendesk.support.DeepLinkingBroadcastReceiver filter 8fec200
+          Action: "zendesk.support"
+      com.adobe.spark.post.intent.APPBOY_NOTIFICATION_OPENED:
+        6af73d com.adobe.spark.post/com.adobe.spark.broadcastreceivers.BrazeNotificationClickReceiver filter b0e0b32
+          Action: "com.adobe.spark.post.intent.APPBOY_NOTIFICATION_OPENED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        aeed0f5 com.adobe.spark.post/com.appboy.AppboyFirebaseMessagingService filter dd7ce8a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        e8d2cfb com.adobe.spark.post/com.google.firebase.messaging.FirebaseMessagingService filter af2d118
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          adobesparkpost.app.link
+          adobesparkpost.test-app.link
+          spark.adobe.com
+
+Registered ContentProviders:
+  com.adobe.spark.post/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{edc382b com.adobe.spark.post/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.adobe.spark.post/androidx.core.content.FileProvider:
+    Provider{9233488 com.adobe.spark.post/androidx.core.content.FileProvider}
+  com.adobe.spark.post/zendesk.support.SupportSdkStartupProvider:
+    Provider{72efe21 com.adobe.spark.post/zendesk.support.SupportSdkStartupProvider}
+  com.adobe.spark.post/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{ef67246 com.adobe.spark.post/com.google.firebase.provider.FirebaseInitProvider}
+  com.adobe.spark.post/com.facebook.internal.FacebookInitProvider:
+    Provider{de42c07 com.adobe.spark.post/com.facebook.internal.FacebookInitProvider}
+  com.adobe.spark.post/zendesk.belvedere.BelvedereFileProvider:
+    Provider{3fb1134 com.adobe.spark.post/zendesk.belvedere.BelvedereFileProvider}
+
+ContentProvider Authorities:
+  [com.adobe.spark.post.zendesk.support.SupportSdkStartupProvider]:
+    Provider{72efe21 com.adobe.spark.post/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{35c5b5d com.adobe.spark.post}
+  [com.adobe.spark.post.belvedere2.attachments]:
+    Provider{3fb1134 com.adobe.spark.post/zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{9176cd2 com.adobe.spark.post}
+  [com.adobe.spark.post.firebaseinitprovider]:
+    Provider{ef67246 com.adobe.spark.post/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{e8d81a3 com.adobe.spark.post}
+  [com.adobe.spark.post.fileprovider]:
+    Provider{9233488 com.adobe.spark.post/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{6d20ca0 com.adobe.spark.post}
+  [com.adobe.spark.post.FacebookInitProvider]:
+    Provider{de42c07 com.adobe.spark.post/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{b085059 com.adobe.spark.post}
+  [com.adobe.spark.post.lifecycle-process]:
+    Provider{edc382b com.adobe.spark.post/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{8db841e com.adobe.spark.post}
+
+Key Set Manager:
+  [com.adobe.spark.post]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.adobe.spark.post] (4ec94ff):
+    userId=10243
+    pkg=Package{a5b52cc com.adobe.spark.post}
+    codePath=/data/app/~~bq6DWYy-O091TUHCXl-5Hg==/com.adobe.spark.post-FYooOqs6S1R2CwgYYFUHTg==
+    resourcePath=/data/app/~~bq6DWYy-O091TUHCXl-5Hg==/com.adobe.spark.post-FYooOqs6S1R2CwgYYFUHTg==
+    legacyNativeLibraryDir=/data/app/~~bq6DWYy-O091TUHCXl-5Hg==/com.adobe.spark.post-FYooOqs6S1R2CwgYYFUHTg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=316 minSdk=24 targetSdk=29
+    minExtensionVersions=[]
+    versionName=6.9.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.adobe.spark.post
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 17:03:09
+    lastUpdateTime=2022-11-30 17:03:12
+    packageSource=0
+    signatures=PackageSignatures{1e49915 version:2, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      com.android.vending.BILLING
+      com.samsung.android.iap.permission.BILLING
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=80052 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 17:03:12
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.adobe.spark.post
+    com.google.android.apps.diagnosticstool:
+      com.adobe.spark.post
+    com.google.android.settings.intelligence:
+      com.adobe.spark.post
+    com.google.android.apps.accessibility.voiceaccess:
+      com.adobe.spark.post
+    com.truecaller:
+      com.adobe.spark.post
+    com.dv.adm:
+      com.adobe.spark.post
+    com.zappcues.gamingmode:
+      com.adobe.spark.post
+    com.jio.myjio:
+      com.adobe.spark.post
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.adobe.spark.post]
+    path: /data/app/~~bq6DWYy-O091TUHCXl-5Hg==/com.adobe.spark.post-FYooOqs6S1R2CwgYYFUHTg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:50963
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.adobe.spark.post]
+     base.apk - 818

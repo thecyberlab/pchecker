@@ -1,0 +1,322 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        fea01c com.headway.books/.presentation.screens.splash.SplashActivity filter 2dae425
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: ".get-headway.com": -1 WILD
+          Path: "PatternMatcher{PREFIX: /confirm}"
+          Path: "PatternMatcher{PREFIX: /offer}"
+          Path: "PatternMatcher{PREFIX: /book}"
+          Path: "PatternMatcher{PREFIX: /feedback}"
+          Path: "PatternMatcher{PREFIX: /link}"
+          Path: "PatternMatcher{PREFIX: /zG5O}"
+          AutoVerify=true
+        fea01c com.headway.books/.presentation.screens.splash.SplashActivity filter 25499fa
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "headway.onelink.me": -1
+          Path: "PatternMatcher{PREFIX: /zG5O}"
+          AutoVerify=true
+      https:
+        fea01c com.headway.books/.presentation.screens.splash.SplashActivity filter 2dae425
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: ".get-headway.com": -1 WILD
+          Path: "PatternMatcher{PREFIX: /confirm}"
+          Path: "PatternMatcher{PREFIX: /offer}"
+          Path: "PatternMatcher{PREFIX: /book}"
+          Path: "PatternMatcher{PREFIX: /feedback}"
+          Path: "PatternMatcher{PREFIX: /link}"
+          Path: "PatternMatcher{PREFIX: /zG5O}"
+          AutoVerify=true
+        fea01c com.headway.books/.presentation.screens.splash.SplashActivity filter 25499fa
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "headway.onelink.me": -1
+          Path: "PatternMatcher{PREFIX: /zG5O}"
+          AutoVerify=true
+      fbconnect:
+        cfa9da1 com.headway.books/com.facebook.CustomTabActivity filter e425bc6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.headway.books": -1
+      genericidp:
+        b5b9787 com.headway.books/com.google.firebase.auth.internal.GenericIdpActivity filter 794d6b4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        70272dd com.headway.books/com.google.firebase.auth.internal.RecaptchaActivity filter ef86e52
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        64bebab com.headway.books/.Launcher filter 163a208
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        b53111 com.headway.books/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 63f4276
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        a83159b com.headway.books/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b479d38
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        c737077 com.headway.books/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter c7554e4
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        a2acd4d com.headway.books/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 5551002
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        575f07f com.headway.books/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 3b8484c
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        c737077 com.headway.books/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter c7554e4
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        2462095 com.headway.books/com.google.firebase.iid.FirebaseInstanceIdReceiver filter e0775aa
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        b53111 com.headway.books/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 63f4276
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        3a49d13 com.headway.books/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4a4db50
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        3a49d13 com.headway.books/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4a4db50
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        bb85fd9 com.headway.books/.BootReceiver filter 58b1d9e
+          Action: "android.intent.action.BOOT_COMPLETED"
+        3a49d13 com.headway.books/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4a4db50
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        a83159b com.headway.books/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b479d38
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        6b1f76f com.headway.books/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 2045c7c
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        6d02523 com.headway.books/.UpdateReceiver filter e02aa20
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        4e3f149 com.headway.books/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 82a4e
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        3f15905 com.headway.books/.notifications.NotificationService filter 5c09d5a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        b38081 com.headway.books/com.google.firebase.messaging.FirebaseMessagingService filter 25b3526
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.auth.api.gms.service.START:
+        909b8b com.headway.books/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 578c468
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+  com.headway.books:
+    ID: 098ccc48-8bc9-4f81-bc07-cccf61489e79
+    Signatures: [3B:61:C2:A8:2A:FF:9F:76:52:FF:E0:B0:4B:E3:C8:F2:48:B5:E1:AA:70:63:F1:A3:84:6F:0C:F5:C7:78:62:8A]
+    Domain verification state:
+      headway.onelink.me: none
+      *.get-headway.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          headway.onelink.me
+          *.get-headway.com
+
+Registered ContentProviders:
+  com.headway.books/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{7a5a27c com.headway.books/com.google.firebase.provider.FirebaseInitProvider}
+  com.headway.books/com.facebook.internal.FacebookInitProvider:
+    Provider{f02705 com.headway.books/com.facebook.internal.FacebookInitProvider}
+  com.headway.books/androidx.startup.InitializationProvider:
+    Provider{502535a com.headway.books/androidx.startup.InitializationProvider}
+  com.headway.books/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{8ff198b com.headway.books/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.headway.books/androidx.core.content.FileProvider:
+    Provider{ae86a68 com.headway.books/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.headway.books.provider]:
+    Provider{ae86a68 com.headway.books/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{9d12e81 com.headway.books}
+  [com.headway.books.firebaseinitprovider]:
+    Provider{7a5a27c com.headway.books/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{3024b26 com.headway.books}
+  [com.headway.books.FacebookInitProvider]:
+    Provider{f02705 com.headway.books/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{43c367 com.headway.books}
+  [com.headway.books.lifecycle-process]:
+    Provider{8ff198b com.headway.books/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{b0dc514 com.headway.books}
+  [com.headway.books.androidx-startup]:
+    Provider{502535a com.headway.books/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{86131bd com.headway.books}
+
+Key Set Manager:
+  [com.headway.books]
+      Signing KeySets: 5877
+
+Packages:
+  Package [com.headway.books] (f3f2f03):
+    userId=10253
+    pkg=Package{d8c1e80 com.headway.books}
+    codePath=/data/app/~~Uy-KSBULzCvZLvpIZxmNhA==/com.headway.books-sVo_VZMGK8fyoe0bGHwXnQ==
+    resourcePath=/data/app/~~Uy-KSBULzCvZLvpIZxmNhA==/com.headway.books-sVo_VZMGK8fyoe0bGHwXnQ==
+    legacyNativeLibraryDir=/data/app/~~Uy-KSBULzCvZLvpIZxmNhA==/com.headway.books-sVo_VZMGK8fyoe0bGHwXnQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1051149 minSdk=23 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.5.8.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.instagram.android]
+    queriesIntents=[Intent { act=com.appsflyer.oem.PRELOAD_PROVIDER }, Intent { act=android.media.browse.MediaBrowserService }]
+    dataDir=/data/user/0/com.headway.books
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 16:26:30
+    lastUpdateTime=2022-11-30 16:26:30
+    packageSource=0
+    signatures=PackageSignatures{cf42cb9 version:2, signatures:[9c12e809], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=73982 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 16:26:30
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.headway.books
+    com.google.android.apps.diagnosticstool:
+      com.headway.books
+    com.google.android.settings.intelligence:
+      com.headway.books
+    com.google.android.apps.accessibility.voiceaccess:
+      com.headway.books
+    com.truecaller:
+      com.headway.books
+    com.headway.books:
+      [com.android.bluetooth,com.google.android.bluetooth.services]
+      com.google.android.googlequicksearchbox
+      com.google.android.youtube
+      com.google.android.apps.youtube.music
+      radiotime.player
+      com.hungama.myplay.activity
+      com.clearchannel.iheartradio.controller
+    com.dv.adm:
+      com.headway.books
+    com.zappcues.gamingmode:
+      com.headway.books
+    com.jio.myjio:
+      com.headway.books
+    com.zombodroid.MemeGeneratorFullGplay:
+      com.headway.books
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.headway.books]
+    path: /data/app/~~Uy-KSBULzCvZLvpIZxmNhA==/com.headway.books-sVo_VZMGK8fyoe0bGHwXnQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:370809
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.headway.books]
+     base.apk - 472

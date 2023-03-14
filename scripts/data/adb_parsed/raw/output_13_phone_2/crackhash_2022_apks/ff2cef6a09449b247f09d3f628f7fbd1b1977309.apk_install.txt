@@ -1,0 +1,382 @@
+Activity Resolver Table:
+  Schemes:
+      fb_your_app_id:
+        a8c1ba6 com.methuselah/com.facebook.CustomTabActivity filter 67889e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb_your_app_id"
+      genericidp:
+        b014994 com.methuselah/com.google.firebase.auth.internal.GenericIdpActivity filter 6f9c3d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        54e4c32 com.methuselah/com.google.firebase.auth.internal.RecaptchaActivity filter e39dd83
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        fb81bda com.methuselah/xyz.vc.gogomovies.view.Splash filter e7c780b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      android.intent.action.VIEW:
+        b14a6e8 com.methuselah/com.onesignal.NotificationOpenedActivityHMS filter 215f101
+          Action: "android.intent.action.VIEW"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        ad43fc4 com.methuselah/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter d650ead
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        9e8ba56 com.methuselah/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 561bad7
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED:
+        d90f97e com.methuselah/xyz.vc.gogomovies.receiver.OnClickNotificationDownloadingReceiver filter 832cedf
+          Action: "android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"
+      android.intent.action.QUICKBOOT_POWERON:
+        5bf2f8a com.methuselah/com.onesignal.BootUpReceiver filter 19f79fb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        54e25e2 com.methuselah/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 9d2d73
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        b79430 com.methuselah/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter a70e8a9
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        54e25e2 com.methuselah/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 9d2d73
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        824372c com.methuselah/com.onesignal.FCMBroadcastReceiver filter 84315f5
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.methuselah"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        c4db948 com.methuselah/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 13c03e1
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        ad43fc4 com.methuselah/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter d650ead
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        4acbe2e com.methuselah/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5132dcf
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        4acbe2e com.methuselah/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5132dcf
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        5bf2f8a com.methuselah/com.onesignal.BootUpReceiver filter 19f79fb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+        4acbe2e com.methuselah/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5132dcf
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        9e8ba56 com.methuselah/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 561bad7
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DOWNLOAD_COMPLETE:
+        6736b00 com.methuselah/xyz.vc.gogomovies.receiver.DownloadCompletedReceiver filter bbebf39
+          Action: "android.intent.action.DOWNLOAD_COMPLETE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        14a8f3a com.methuselah/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 53ed7eb
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        b339a18 com.methuselah/com.onesignal.UpgradeReceiver filter 47c1c71
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        e39c35c com.methuselah/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter d466665
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        58fcb92 com.methuselah/com.google.firebase.messaging.FirebaseMessagingService filter 32c5963
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.auth.api.gms.service.START:
+        e2921f4 com.methuselah/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 693fd1d
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+      com.huawei.push.action.MESSAGING_EVENT:
+        c26506 com.methuselah/com.onesignal.HmsMessageServiceOneSignal filter 63107c7
+          Action: "com.huawei.push.action.MESSAGING_EVENT"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.methuselah.permission.C2D_MESSAGE] (6337a):
+    sourcePackage=com.methuselah
+    uid=10382 gids=[] type=0 prot=signature
+    perm=PermissionInfo{af472b com.methuselah.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.methuselah/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{bc62521 com.methuselah/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.methuselah/androidx.core.content.FileProvider:
+    Provider{b340d46 com.methuselah/androidx.core.content.FileProvider}
+  com.methuselah/com.firebase.ui.auth.data.client.AuthUiInitProvider:
+    Provider{b592b07 com.methuselah/com.firebase.ui.auth.data.client.AuthUiInitProvider}
+  com.methuselah/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{e7da434 com.methuselah/com.google.firebase.provider.FirebaseInitProvider}
+  com.methuselah/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{7bef25d com.methuselah/com.facebook.ads.AudienceNetworkContentProvider}
+  com.methuselah/com.applovin.sdk.AppLovinInitProvider:
+    Provider{b13b7d2 com.methuselah/com.applovin.sdk.AppLovinInitProvider}
+  com.methuselah/androidx.startup.InitializationProvider:
+    Provider{7d370a3 com.methuselah/androidx.startup.InitializationProvider}
+  com.methuselah/com.ironsource.lifecycle.IronsourceLifecycleProvider:
+    Provider{26acfa0 com.methuselah/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+
+ContentProvider Authorities:
+  [com.methuselah.IronsourceLifecycleProvider]:
+    Provider{26acfa0 com.methuselah/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+      applicationInfo=ApplicationInfo{87d5759 com.methuselah}
+  [com.methuselah.androidx-startup]:
+    Provider{7d370a3 com.methuselah/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{5d17f1e com.methuselah}
+  [com.methuselah.firebaseinitprovider]:
+    Provider{e7da434 com.methuselah/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{e2273ff com.methuselah}
+  [com.methuselah.authuiinitprovider]:
+    Provider{b592b07 com.methuselah/com.firebase.ui.auth.data.client.AuthUiInitProvider}
+      applicationInfo=ApplicationInfo{a3d45cc com.methuselah}
+  [com.methuselah.applovincontentprovider]:
+    Provider{b13b7d2 com.methuselah/com.applovin.sdk.AppLovinInitProvider}
+      applicationInfo=ApplicationInfo{f231015 com.methuselah}
+  [com.methuselah.AudienceNetworkContentProvider]:
+    Provider{7bef25d com.methuselah/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{6126f2a com.methuselah}
+  [com.methuselah.fileProvider]:
+    Provider{b340d46 com.methuselah/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{834511b com.methuselah}
+  [com.methuselah.mobileadsinitprovider]:
+    Provider{bc62521 com.methuselah/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{4def2b8 com.methuselah}
+
+Key Set Manager:
+  [com.methuselah]
+      Signing KeySets: 5784
+
+Packages:
+  Package [com.methuselah] (9c053f6):
+    userId=10382
+    pkg=Package{6bce3f7 com.methuselah}
+    codePath=/data/app/~~QWh3Ucp9FmwcdfZ3cFzkKg==/com.methuselah-ltURmaIGxCe6CZWLmfv1gw==
+    resourcePath=/data/app/~~QWh3Ucp9FmwcdfZ3cFzkKg==/com.methuselah-ltURmaIGxCe6CZWLmfv1gw==
+    legacyNativeLibraryDir=/data/app/~~QWh3Ucp9FmwcdfZ3cFzkKg==/com.methuselah-ltURmaIGxCe6CZWLmfv1gw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2 minSdk=21 targetSdk=31
+    minExtensionVersions=[]
+    versionName=1.01
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.facebook.katana, com.android.vending, com.amazon.venezia, com.sec.android.app.samsungapps, com.huawei.appmarket]
+    queriesIntents=[Intent { act=android.intent.action.VIEW dat=*:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.methuselah
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 15:23:08
+    lastUpdateTime=2022-11-30 15:23:10
+    packageSource=0
+    signatures=PackageSignatures{8c62ccd version:3, signatures:[e881ce59], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.methuselah.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.android.vending.BILLING
+      android.permission.FOREGROUND_SERVICE
+      com.methuselah.permission.C2D_MESSAGE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.WAKE_LOCK
+      android.permission.VIBRATE
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.BLUETOOTH
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.gms.permission.AD_ID
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      com.methuselah.permission.C2D_MESSAGE: granted=true
+    User 0: ceDataInode=65907 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:23:10
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.methuselah
+    com.google.android.apps.diagnosticstool:
+      com.methuselah
+    com.google.android.settings.intelligence:
+      com.methuselah
+    com.google.android.youtube:
+      com.methuselah
+    com.google.android.contacts:
+      com.methuselah
+    com.google.android.apps.accessibility.voiceaccess:
+      com.methuselah
+    com.google.android.gm:
+      com.methuselah
+    com.truecaller:
+      com.methuselah
+    com.dv.adm:
+      com.methuselah
+    com.zappcues.gamingmode:
+      com.methuselah
+    com.methuselah:
+      com.google.android.apps.messaging
+      com.google.android.googlequicksearchbox
+      com.google.android.euicc
+      com.google.android.dialer
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.contacts
+      com.google.android.apps.docs
+      com.google.android.apps.youtube.music
+      com.google.android.gm
+      radiotime.player
+      com.truecaller
+      com.darinsoft.vimo
+      com.mcdonalds.app
+      com.fourchars.lmpfree
+      com.pikoo.app
+      com.mikewheelermedia
+      com.mobisystems.office
+      com.shazam.android
+      com.dv.adm
+      com.frankthebrilliant.app
+      com.zappcues.gamingmode
+      com.cam001.selfie
+      com.fitapp
+      com.king.blossomblast
+      com.bitsmedia.android.muslimpro
+      com.yahoo.mobile.client.android.weather
+      com.ludia.jurassicworld
+      com.cooyostudio.marble.blast
+      com.jio.myjio
+      com.getepic.Epic
+      com.pranavpandey.rotation
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+    com.jio.myjio:
+      com.methuselah
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.methuselah]
+    path: /data/app/~~QWh3Ucp9FmwcdfZ3cFzkKg==/com.methuselah-ltURmaIGxCe6CZWLmfv1gw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:739545
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.methuselah]
+     base.apk - 1002

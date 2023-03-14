@@ -1,0 +1,243 @@
+Activity Resolver Table:
+  Schemes:
+      onepassword-help:
+        bbc346c com.agilebits.onepassword/.activity.LoginActivity filter f529b5d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "onepassword-help"
+      https:
+        bbc346c com.agilebits.onepassword/.activity.LoginActivity filter 4e06c07
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: ".1password.com": -1 WILD
+          Path: "PatternMatcher{PREFIX: /open/i}"
+          AutoVerify=true
+      db-bszlgqqpf1yne5x:
+        ea36a35 com.agilebits.onepassword/com.dropbox.core.android.AuthActivity filter 870acd2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "db-bszlgqqpf1yne5x"
+      onepassword:
+        bbc346c com.agilebits.onepassword/.activity.LoginActivity filter 8e25134
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "onepassword"
+
+  Non-Data Actions:
+      org.openyolo.credential.delete:
+        fee8eca com.agilebits.onepassword/.filling.openyolo.OpenYoloDeleteActivity filter 488c41e
+          Action: "org.openyolo.credential.delete"
+          Category: "org.openyolo"
+      android.intent.action.MAIN:
+        bbc346c com.agilebits.onepassword/.activity.LoginActivity filter f3bb246
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      org.openyolo.hint:
+        250883b com.agilebits.onepassword/.filling.openyolo.OpenYoloHintActivity filter 229059
+          Action: "org.openyolo.hint"
+          Category: "org.openyolo"
+      org.openyolo.credential.retrieve:
+        e6e2b58 com.agilebits.onepassword/.filling.openyolo.OpenYoloRetrieveActivity filter 90dc1a3
+          Action: "org.openyolo.credential.retrieve"
+          Category: "org.openyolo"
+      org.openyolo.credential.save:
+        42d74b1 com.agilebits.onepassword/.filling.openyolo.OpenYoloSaveActivity filter 2ed4ca0
+          Action: "org.openyolo.credential.save"
+          Category: "org.openyolo"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        2cecd96 com.agilebits.onepassword/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 979042a
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        cb56d17 com.agilebits.onepassword/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e62d915
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      org.openyolo.credential:
+        746a504 com.agilebits.onepassword/.filling.openyolo.CredentialQueryReceiver filter 730d4ff
+          Action: "org.openyolo.credential"
+          Category: "com.google.bbq.QUERY"
+      com.google.firebase.appindexing.UPDATE_INDEX:
+        473aaed com.agilebits.onepassword/.stickers.StickerIndexingReceiver filter cea92cc
+          Action: "com.google.firebase.appindexing.UPDATE_INDEX"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        3a22d22 com.agilebits.onepassword/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter a47c21b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        19c3b3 com.agilebits.onepassword/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 9940fb8
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        3a22d22 com.agilebits.onepassword/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter a47c21b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        2cecd96 com.agilebits.onepassword/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 979042a
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        40b0d70 com.agilebits.onepassword/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 124f191
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        40b0d70 com.agilebits.onepassword/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 124f191
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        40b0d70 com.agilebits.onepassword/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 124f191
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        cb56d17 com.agilebits.onepassword/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e62d915
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        b6d08e9 com.agilebits.onepassword/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 57b38f6
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.autofill.AutofillService:
+        359f96e com.agilebits.onepassword/.filling.autofill.MyAutofillService filter b566f64 permission android.permission.BIND_AUTOFILL_SERVICE
+          Action: "android.service.autofill.AutofillService"
+      android.view.InputMethod:
+        62e80f com.agilebits.onepassword/.filling.keyboard.FillingInputMethodService filter 51664f7 permission android.permission.BIND_INPUT_METHOD
+          Action: "android.view.InputMethod"
+      android.accessibilityservice.AccessibilityService:
+        76b909c com.agilebits.onepassword/.filling.accessibility.FillingAccessibilityService filter 51615cd permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+
+Registered ContentProviders:
+  com.agilebits.onepassword/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{3844aa5 com.agilebits.onepassword/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.agilebits.onepassword/androidx.core.content.FileProvider:
+    Provider{eb03e7a com.agilebits.onepassword/androidx.core.content.FileProvider}
+  com.agilebits.onepassword/androidx.work.impl.WorkManagerInitializer:
+    Provider{6ff62b com.agilebits.onepassword/androidx.work.impl.WorkManagerInitializer}
+  com.agilebits.onepassword/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{cef1a88 com.agilebits.onepassword/com.google.firebase.provider.FirebaseInitProvider}
+  com.agilebits.onepassword/.stickers.StickerProvider:
+    Provider{913ec21 com.agilebits.onepassword/.stickers.StickerProvider}
+
+ContentProvider Authorities:
+  [com.agilebits.onepassword.lifecycle-process]:
+    Provider{3844aa5 com.agilebits.onepassword/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{1f3c846 com.agilebits.onepassword}
+  [com.agilebits.onepassword.workmanager-init]:
+    Provider{6ff62b com.agilebits.onepassword/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{1f3c846 com.agilebits.onepassword}
+  [com.agilebits.onepassword.fileprovider]:
+    Provider{eb03e7a com.agilebits.onepassword/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{1f3c846 com.agilebits.onepassword}
+  [com.agilebits.onepassword.firebaseinitprovider]:
+    Provider{cef1a88 com.agilebits.onepassword/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{1f3c846 com.agilebits.onepassword}
+  [com.agilebits.onepassword.stickers.StickerProvider]:
+    Provider{913ec21 com.agilebits.onepassword/.stickers.StickerProvider}
+      applicationInfo=ApplicationInfo{1f3c846 com.agilebits.onepassword}
+
+Key Set Manager:
+  [com.agilebits.onepassword]
+      Signing KeySets: 321
+
+Packages:
+  Package [com.agilebits.onepassword] (7f5ca07):
+    userId=10148
+    pkg=Package{4413e21 com.agilebits.onepassword}
+    codePath=/data/app/com.agilebits.onepassword-HTsrcJktUR3ZjYRKWXfPYw==
+    resourcePath=/data/app/com.agilebits.onepassword-HTsrcJktUR3ZjYRKWXfPYw==
+    legacyNativeLibraryDir=/data/app/com.agilebits.onepassword-HTsrcJktUR3ZjYRKWXfPYw==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=70602002 minSdk=21 targetSdk=29
+    versionName=7.6.2
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{1f3c846 com.agilebits.onepassword}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.agilebits.onepassword
+    supportsScreens=[medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      com.google.android.chromeos
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 08:18:19
+    firstInstallTime=2021-03-06 08:18:19
+    lastUpdateTime=2021-03-06 08:18:19
+    signatures=PackageSignatures{f9f5734 version:3, signatures:[cc1ff1c7], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.VIBRATE
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.USE_FINGERPRINT
+      android.permission.CAMERA
+      android.permission.SYSTEM_ALERT_WINDOW
+      com.android.vending.BILLING
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=12757 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=17
+  User 0:
+    seq=1, package=com.studioeleven.windfinder
+    seq=8, package=com.google.android.gms
+    seq=9, package=de.motain.iliga
+    seq=11, package=com.microsoft.office.word
+    seq=13, package=video.like
+    seq=15, package=com.netflix.mediaclient
+    seq=16, package=com.agilebits.onepassword
+
+
+Dexopt state:
+  [com.agilebits.onepassword]
+    path: /data/app/com.agilebits.onepassword-HTsrcJktUR3ZjYRKWXfPYw==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.agilebits.onepassword]
+     base.apk - 7035
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

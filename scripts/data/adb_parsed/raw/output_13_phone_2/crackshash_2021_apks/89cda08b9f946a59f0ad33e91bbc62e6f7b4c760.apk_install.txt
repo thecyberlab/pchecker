@@ -1,0 +1,304 @@
+Activity Resolver Table:
+  Schemes:
+      medium:
+        6c0d11d com.medium.reader/com.medium.android.donkey.start.SplashActivity filter 2124d60
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "medium"
+      http:
+        6c0d11d com.medium.reader/com.medium.android.donkey.start.SplashActivity filter 5174d63
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "medium.com": -1
+          Authority: "medium.com": -1
+          AutoVerify=true
+      https:
+        6c0d11d com.medium.reader/com.medium.android.donkey.start.SplashActivity filter 5174d63
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "medium.com": -1
+          Authority: "medium.com": -1
+          AutoVerify=true
+        6c0d11d com.medium.reader/com.medium.android.donkey.start.SplashActivity filter d9e6219
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "link.medium.com": -1
+          Authority: "rsci.app.link": -1
+          Authority: "rsci-alternate.app.link": -1
+          Authority: "link.medium.com": -1
+          Authority: "rsci.test-app.link": -1
+          Authority: "rsci-alternate.test-app.link": -1
+          AutoVerify=true
+        6c0d11d com.medium.reader/com.medium.android.donkey.start.SplashActivity filter 6a992de
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "thebolditalic.com": -1
+          Authority: "towardsdatascience.com": -1
+          Authority: ".medium.com": -1 WILD
+          AutoVerify=true
+      fbconnect:
+        6a75cbf com.medium.reader/com.facebook.CustomTabActivity filter e3edf8c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.medium.reader": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        6c0d11d com.medium.reader/com.medium.android.donkey.start.SplashActivity filter 93e0f92
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.MANAGE_NETWORK_USAGE:
+        394bbc7 com.medium.reader/com.medium.android.donkey.settings.SettingsActivity filter a74c5f4
+          Action: "android.intent.action.MANAGE_NETWORK_USAGE"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Schemes:
+      medium:
+        cff05db com.medium.reader/com.medium.android.donkey.notif.InternalBroadcastReceiver filter ec06878
+          Action: "com.medium.android.donkey.notif.HomepageUpdatedNotificationService$Action.DISPLAY"
+          Scheme: "medium"
+          Authority: "homepage-updated-notification-service": -1
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        3265553 com.medium.reader/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 683ce90
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        a5d3b8d com.medium.reader/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter de58142
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        26f0389 com.medium.reader/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 14e6f8e
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        a36f3af com.medium.reader/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter fff43bc
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        c913b51 com.medium.reader/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter b8f1fb6
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        26f0389 com.medium.reader/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 14e6f8e
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        45e24b7 com.medium.reader/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 7cf9424
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        3265553 com.medium.reader/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 683ce90
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        5bb4f45 com.medium.reader/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 745f69a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        5bb4f45 com.medium.reader/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 745f69a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        5bb4f45 com.medium.reader/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 745f69a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        a5d3b8d com.medium.reader/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter de58142
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        b2a06d5 com.medium.reader/com.medium.android.donkey.widget.MediumAppWidgetProvider filter cb7feea
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        5c69ac1 com.medium.reader/androidx.work.impl.diagnostics.DiagnosticsReceiver filter afce266
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        f091bcb com.medium.reader/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 75adfa8
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        b8ba9a7 com.medium.reader/com.medium.android.donkey.push.gcm.PushListenerService filter 6524e54
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        de121fd com.medium.reader/com.google.firebase.messaging.FirebaseMessagingService filter 7e4bef2
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.medium.reader:
+    ID: 0a84a6e8-4c69-4dce-b1ae-58cc3c3b633b
+    Signatures: [43:A7:FC:F5:21:79:BB:27:55:5D:55:04:36:5D:15:76:95:57:66:2D:AA:08:E3:21:CC:19:17:31:26:B2:EF:5F]
+    Domain verification state:
+      medium.com: none
+      link.medium.com: none
+      *.medium.com: none
+      towardsdatascience.com: none
+      thebolditalic.com: none
+      rsci-alternate.test-app.link: none
+      rsci.app.link: none
+      rsci-alternate.app.link: none
+      rsci.test-app.link: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          medium.com
+          link.medium.com
+          *.medium.com
+          towardsdatascience.com
+          thebolditalic.com
+          rsci-alternate.test-app.link
+          rsci.app.link
+          rsci-alternate.app.link
+          rsci.test-app.link
+
+Registered ContentProviders:
+  com.medium.reader/com.facebook.internal.FacebookInitProvider:
+    Provider{735276a com.medium.reader/com.facebook.internal.FacebookInitProvider}
+  com.medium.reader/androidx.core.content.FileProvider:
+    Provider{14cb37 com.medium.reader/androidx.core.content.FileProvider}
+  com.medium.reader/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{c5b300e com.medium.reader/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.medium.reader.firebaseinitprovider]:
+    Provider{c5b300e com.medium.reader/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{1d132e6 com.medium.reader}
+  [com.medium.reader.FacebookInitProvider]:
+    Provider{735276a com.medium.reader/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{b9c0c7d com.medium.reader}
+  [com.medium.reader.fileprovider]:
+    Provider{14cb37 com.medium.reader/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{791bd1f com.medium.reader}
+
+Key Set Manager:
+  [com.medium.reader]
+      Signing KeySets: 6026
+
+Packages:
+  Package [com.medium.reader] (bfb849c):
+    userId=10319
+    pkg=Package{9272ea5 com.medium.reader}
+    codePath=/data/app/~~-hX_9s7Z1cv6pCAgwBnbIw==/com.medium.reader-hKKcEY9rAJ_ZjR2Iayi3LA==
+    resourcePath=/data/app/~~-hX_9s7Z1cv6pCAgwBnbIw==/com.medium.reader-hKKcEY9rAJ_ZjR2Iayi3LA==
+    legacyNativeLibraryDir=/data/app/~~-hX_9s7Z1cv6pCAgwBnbIw==/com.medium.reader-hKKcEY9rAJ_ZjR2Iayi3LA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1113192 minSdk=23 targetSdk=30
+    minExtensionVersions=[]
+    versionName=4.5.1113192
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.medium.reader
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 18:06:23
+    lastUpdateTime=2022-11-30 18:06:24
+    packageSource=0
+    signatures=PackageSignatures{e83527a version:3, signatures:[b8bb4cf2], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      com.android.vending.BILLING
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=80515 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 18:06:24
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.medium.reader
+    com.google.android.apps.diagnosticstool:
+      com.medium.reader
+    com.google.android.settings.intelligence:
+      com.medium.reader
+    com.google.android.apps.accessibility.voiceaccess:
+      com.medium.reader
+    com.truecaller:
+      com.medium.reader
+    com.dv.adm:
+      com.medium.reader
+    com.zappcues.gamingmode:
+      com.medium.reader
+    com.jio.myjio:
+      com.medium.reader
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.medium.reader]
+    path: /data/app/~~-hX_9s7Z1cv6pCAgwBnbIw==/com.medium.reader-hKKcEY9rAJ_ZjR2Iayi3LA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:270355
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.medium.reader]
+     base.apk - 1252

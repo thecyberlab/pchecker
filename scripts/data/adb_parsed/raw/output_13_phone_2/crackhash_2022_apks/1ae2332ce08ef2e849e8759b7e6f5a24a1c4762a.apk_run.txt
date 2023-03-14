@@ -1,0 +1,396 @@
+Activity Resolver Table:
+  Schemes:
+      fbconnect:
+        ccc0ae0 com.cleanteam.oneboost/com.facebook.CustomTabActivity filter 7711199
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.cleanteam.oneboost": -1
+      deeplink:
+        89f889d com.cleanteam.oneboost/com.cleanteam.mvp.ui.activity.StartActivity filter 2d390e3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "deeplink"
+          Authority: "authority": -1
+          Authority: "authority": -1
+          Authority: "authority": -1
+          Authority: "authority": -1
+          Authority: "authority": -1
+          Path: "PatternMatcher{LITERAL: /boost}"
+          Path: "PatternMatcher{LITERAL: /clean}"
+          Path: "PatternMatcher{LITERAL: /cooler}"
+          Path: "PatternMatcher{LITERAL: /saver}"
+          Path: "PatternMatcher{LITERAL: /security}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        89f889d com.cleanteam.oneboost/com.cleanteam.mvp.ui.activity.StartActivity filter dfb3112
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        89f889d com.cleanteam.oneboost/com.cleanteam.mvp.ui.activity.StartActivity filter dfb3112
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        e65abe6 com.cleanteam.oneboost/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 58e7527
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        a752d28 com.cleanteam.oneboost/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c969a41
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.TIME_TICK:
+        1d890e com.cleanteam.oneboost/com.amber.lib.applive.assist.receiver.OtherReceiver filter b29cf2f
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.intent.action.TIME_TICK"
+          mPriority=90000, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.DEVICE_STORAGE_LOW:
+        883f3d4 com.cleanteam.oneboost/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e71997d
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        1d890e com.cleanteam.oneboost/com.amber.lib.applive.assist.receiver.OtherReceiver filter b29cf2f
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.intent.action.TIME_TICK"
+          mPriority=90000, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        6d0a072 com.cleanteam.oneboost/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 1e33cc3
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        b47b93c com.cleanteam.oneboost/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 86256c5
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.amber.action.com.cleanteam.oneboost:
+        68a8936 com.cleanteam.oneboost/com.cleanteam.mvp.ui.notification.NotificationActionReceiver filter 48f1037
+          Action: "com.amber.action.com.cleanteam.oneboost"
+      android.intent.action.DEVICE_STORAGE_OK:
+        883f3d4 com.cleanteam.oneboost/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e71997d
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        964d9a4 com.cleanteam.oneboost/com.adjust.sdk.AdjustReferrerReceiver filter 318d30d
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        9ad281a com.cleanteam.oneboost/com.google.firebase.iid.FirebaseInstanceIdReceiver filter f0e2f4b
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        e65abe6 com.cleanteam.oneboost/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 58e7527
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        c167940 com.cleanteam.oneboost/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6035079
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        c167940 com.cleanteam.oneboost/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6035079
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      this.is.inner.log.INNER_ACTION:
+        aee02c2 com.cleanteam.oneboost/com.amber.lib.config.GlobalLogReceiver filter 3a78d3
+          Action: "this.is.inner.log.INNER_ACTION"
+      android.intent.action.BOOT_COMPLETED:
+        fe7ec10 com.cleanteam.oneboost/com.amber.lib.applive.assist.receiver.BootCompletedReceiver filter 40c9309
+          Action: "android.intent.action.BOOT_COMPLETED"
+        c167940 com.cleanteam.oneboost/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6035079
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.USER_PRESENT:
+        1d890e com.cleanteam.oneboost/com.amber.lib.applive.assist.receiver.OtherReceiver filter b29cf2f
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.intent.action.TIME_TICK"
+          mPriority=90000, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.ACTION_POWER_CONNECTED:
+        a752d28 com.cleanteam.oneboost/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c969a41
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        3d74c5e com.cleanteam.oneboost/com.cleanteam.mvp.model.PhoneStatusWidget filter aa4583f
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        a96f50c com.cleanteam.oneboost/com.cleanteam.mvp.model.BatteryUseWidget filter 4382e55
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        4c7d06a com.cleanteam.oneboost/com.cleanteam.mvp.model.StorageUseWidget filter 690395b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        44455f8 com.cleanteam.oneboost/com.cleanteam.mvp.widget.CpuTemperatureWidget filter 91a5ad1
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        88451be com.cleanteam.oneboost/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 832e21f
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        875fa04 com.cleanteam.oneboost/com.amber.lib.applive.assist.gcm.PlatformGcmService filter f80dbed permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        c66da96 com.cleanteam.oneboost/com.cleanteam.mvp.service.FCMService filter 468f617
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        32e0a22 com.cleanteam.oneboost/com.google.firebase.messaging.FirebaseMessagingService filter 9fcdcb3
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.cleanteam.billing.aidl.TestVipService:
+        a2fcbca com.cleanteam.oneboost/com.cleanteam.billing.aidl.BillingTestService filter ead813b
+          Action: "com.cleanteam.billing.aidl.TestVipService"
+      android.service.notification.NotificationListenerService:
+        be23058 com.cleanteam.oneboost/com.cleanteam.notification.BoosterNotificationListeneService filter 61995b1 permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+      android.accessibilityservice.AccessibilityService:
+        189e96c com.cleanteam.oneboost/com.cleanteam.cleaner.CleanAccessbilityService filter 25f7b35 permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.cleanteam.oneboost/com.amber.lib.billing.BillingProvider:
+    Provider{8e3a89c com.cleanteam.oneboost/com.amber.lib.billing.BillingProvider}
+  com.cleanteam.oneboost/com.spirit.ads.utils.SdkContentProvider:
+    Provider{af682a5 com.cleanteam.oneboost/com.spirit.ads.utils.SdkContentProvider}
+  com.cleanteam.oneboost/com.sdk.imp.internal.loader.MultiProcessPreferences:
+    Provider{762167a com.cleanteam.oneboost/com.sdk.imp.internal.loader.MultiProcessPreferences}
+  com.cleanteam.oneboost/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{3f8ee2b com.cleanteam.oneboost/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.cleanteam.oneboost/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{9d0b288 com.cleanteam.oneboost/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.cleanteam.oneboost/androidx.core.content.FileProvider:
+    Provider{171a421 com.cleanteam.oneboost/androidx.core.content.FileProvider}
+  com.cleanteam.oneboost/androidx.work.impl.WorkManagerInitializer:
+    Provider{feb2046 com.cleanteam.oneboost/androidx.work.impl.WorkManagerInitializer}
+  com.cleanteam.oneboost/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{7164207 com.cleanteam.oneboost/com.google.firebase.provider.FirebaseInitProvider}
+  com.cleanteam.oneboost/com.facebook.internal.FacebookInitProvider:
+    Provider{5026f34 com.cleanteam.oneboost/com.facebook.internal.FacebookInitProvider}
+  com.cleanteam.oneboost/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider:
+    Provider{623615d com.cleanteam.oneboost/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+  com.cleanteam.oneboost/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{fa8fad2 com.cleanteam.oneboost/com.facebook.ads.AudienceNetworkContentProvider}
+  com.cleanteam.oneboost/com.applovin.sdk.AppLovinInitProvider:
+    Provider{7caf7a3 com.cleanteam.oneboost/com.applovin.sdk.AppLovinInitProvider}
+  com.cleanteam.oneboost/com.amber.lib.applive.wake.AppLiveWakeProvider:
+    Provider{3f14aa0 com.cleanteam.oneboost/com.amber.lib.applive.wake.AppLiveWakeProvider}
+
+ContentProvider Authorities:
+  [com.cleanteam.oneboost.applovincontentprovider]:
+    Provider{7caf7a3 com.cleanteam.oneboost/com.applovin.sdk.AppLovinInitProvider}
+      applicationInfo=ApplicationInfo{6415e4d com.cleanteam.oneboost}
+  [com.cleanteam.oneboost.mobileadsinitprovider]:
+    Provider{9d0b288 com.cleanteam.oneboost/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{11ecd02 com.cleanteam.oneboost}
+  [com.cleanteam.oneboost.TTMultiProvider]:
+    Provider{623615d com.cleanteam.oneboost/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+      applicationInfo=ApplicationInfo{e201613 com.cleanteam.oneboost}
+  [com.cleanteam.oneboost.spirit.ads.sdk]:
+    Provider{af682a5 com.cleanteam.oneboost/com.spirit.ads.utils.SdkContentProvider}
+      applicationInfo=ApplicationInfo{156050 com.cleanteam.oneboost}
+  [com.cleanteam.oneboost.provider]:
+    Provider{171a421 com.cleanteam.oneboost/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{a529249 com.cleanteam.oneboost}
+  [com.cleanteam.oneboost.applive.WakeProvider]:
+    Provider{3f14aa0 com.cleanteam.oneboost/com.amber.lib.applive.wake.AppLiveWakeProvider}
+      applicationInfo=ApplicationInfo{b30b74e com.cleanteam.oneboost}
+  [com.cleanteam.oneboost.us.PREFERENCE_AUTHORITY]:
+    Provider{762167a com.cleanteam.oneboost/com.sdk.imp.internal.loader.MultiProcessPreferences}
+      applicationInfo=ApplicationInfo{fec006f com.cleanteam.oneboost}
+  [com.cleanteam.oneboost.lifecycle-process]:
+    Provider{3f8ee2b com.cleanteam.oneboost/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{478317c com.cleanteam.oneboost}
+  [com.cleanteam.oneboost.workmanager-init]:
+    Provider{feb2046 com.cleanteam.oneboost/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{8290a05 com.cleanteam.oneboost}
+  [com.cleanteam.oneboost.firebaseinitprovider]:
+    Provider{7164207 com.cleanteam.oneboost/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{f64fa5a com.cleanteam.oneboost}
+  [com.cleanteam.oneboost.AudienceNetworkContentProvider]:
+    Provider{fa8fad2 com.cleanteam.oneboost/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{de2348b com.cleanteam.oneboost}
+  [com.cleanteam.oneboost.billing]:
+    Provider{8e3a89c com.cleanteam.oneboost/com.amber.lib.billing.BillingProvider}
+      applicationInfo=ApplicationInfo{3d4e968 com.cleanteam.oneboost}
+  [com.cleanteam.oneboost.FacebookInitProvider]:
+    Provider{5026f34 com.cleanteam.oneboost/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{f354181 com.cleanteam.oneboost}
+
+Key Set Manager:
+  [com.cleanteam.oneboost]
+      Signing KeySets: 5510
+
+Packages:
+  Package [com.cleanteam.oneboost] (e686226):
+    userId=10614
+    pkg=Package{4390f93 com.cleanteam.oneboost}
+    codePath=/data/app/~~YpFe5K4WqtGwtHL7tncFXw==/com.cleanteam.oneboost-L-zXNuTwoyU4_rfE80pMUQ==
+    resourcePath=/data/app/~~YpFe5K4WqtGwtHL7tncFXw==/com.cleanteam.oneboost-L-zXNuTwoyU4_rfE80pMUQ==
+    legacyNativeLibraryDir=/data/app/~~YpFe5K4WqtGwtHL7tncFXw==/com.cleanteam.oneboost-L-zXNuTwoyU4_rfE80pMUQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1900 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.9.0.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.facebook.katana]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.media.browse.MediaBrowserService }, Intent { act=androidx.media2.session.MediaSessionService }, Intent { act=androidx.media2.session.MediaLibraryService }]
+    dataDir=/data/user/0/com.cleanteam.oneboost
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 12:40:43
+    lastUpdateTime=2022-11-30 12:40:44
+    packageSource=0
+    signatures=PackageSignatures{dbc9bd0 version:2, signatures:[1f09083b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.CAMERA
+      android.permission.INTERNET
+      android.permission.REORDER_TASKS
+      android.permission.VIBRATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WAKE_LOCK
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.BIND_ACCESSIBILITY_SERVICE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      com.android.launcher.permission.UNINSTALL_SHORTCUT
+      android.permission.WRITE_SETTINGS
+      android.permission.MANAGE_EXTERNAL_STORAGE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.KILL_BACKGROUND_PROCESSES
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      com.android.vending.BILLING
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.launcher.permission.UNINSTALL_SHORTCUT: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=48980 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 12:40:44
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.cleanteam.oneboost
+    com.google.android.apps.diagnosticstool:
+      com.cleanteam.oneboost
+    com.google.android.settings.intelligence:
+      com.cleanteam.oneboost
+    com.google.android.youtube:
+      com.cleanteam.oneboost
+    com.google.android.contacts:
+      com.cleanteam.oneboost
+    com.google.android.apps.accessibility.voiceaccess:
+      com.cleanteam.oneboost
+    com.google.android.gm:
+      com.cleanteam.oneboost
+    com.cleanteam.oneboost:
+      [com.android.bluetooth,com.google.android.bluetooth.services]
+      com.google.android.googlequicksearchbox
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.youtube
+      com.google.android.apps.docs
+      com.google.android.apps.youtube.music
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.localtransport,com.android.qns,com.android.keychain,com.android.providers.settings,com.android.location.fused,com.android.wallpaperbackup,com.google.android.iwlan,com.android.inputdevices,com.android.settings,android,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem]:
+        com.cleanteam.oneboost
+      [com.google.android.gms,com.google.android.gsf]:
+        com.cleanteam.oneboost
+      com.android.vending:
+        com.cleanteam.oneboost
+      com.google.android.webview:
+        com.cleanteam.oneboost
+      com.cleanteam.oneboost:
+        com.google.android.webview
+  queryable via uses-library:
+
+Dexopt state:
+  [com.cleanteam.oneboost]
+    path: /data/app/~~YpFe5K4WqtGwtHL7tncFXw==/com.cleanteam.oneboost-L-zXNuTwoyU4_rfE80pMUQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:2590935
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.cleanteam.oneboost]
+     base.apk - 879

@@ -1,0 +1,256 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.app.action.GET_PROVISIONING_MODE:
+        de9adec com.afwsamples.testdpc/.provision.DpcLoginActivity filter 4c4e6af
+          Action: "android.app.action.GET_PROVISIONING_MODE"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        525b5 com.afwsamples.testdpc/.PolicyManagementActivity filter f65868d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        525b5 com.afwsamples.testdpc/.PolicyManagementActivity filter b477042
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+        2ac644a com.afwsamples.testdpc/.SetupManagementLaunchActivity filter b74d590
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.INFO"
+        5316fbb com.afwsamples.testdpc/.policy.locktask.KioskModeActivity filter 4604e8e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+      android.app.action.CHECK_POLICY_COMPLIANCE:
+        525b5 com.afwsamples.testdpc/.PolicyManagementActivity filter 6ab1853
+          Action: "android.app.action.CHECK_POLICY_COMPLIANCE"
+          Category: "android.intent.category.DEFAULT"
+      android.app.action.PROVISIONING_SUCCESSFUL:
+        bb9bcd8 com.afwsamples.testdpc/.provision.ProvisioningSuccessActivity filter 79babc
+          Action: "android.app.action.PROVISIONING_SUCCESSFUL"
+          Category: "android.intent.category.DEFAULT"
+      android.app.action.ADMIN_POLICY_COMPLIANCE:
+        caf6831 com.afwsamples.testdpc/.FinalizeActivity filter 730fe89
+          Action: "android.app.action.ADMIN_POLICY_COMPLIANCE"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.app.action.PROFILE_PROVISIONING_COMPLETE:
+        f547b16 com.afwsamples.testdpc/.DeviceAdminReceiver filter 421fa45
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.PROFILE_PROVISIONING_COMPLETE"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.app.action.PROFILE_OWNER_CHANGED"
+          Action: "android.app.action.DEVICE_OWNER_CHANGED"
+      android.app.action.PROFILE_OWNER_CHANGED:
+        f547b16 com.afwsamples.testdpc/.DeviceAdminReceiver filter 421fa45
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.PROFILE_PROVISIONING_COMPLETE"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.app.action.PROFILE_OWNER_CHANGED"
+          Action: "android.app.action.DEVICE_OWNER_CHANGED"
+      android.app.action.CHOOSE_PRIVATE_KEY_ALIAS:
+        d7d4c97 com.afwsamples.testdpc/.DelegatedAdminReceiver filter 316c59a
+          Action: "android.app.action.CHOOSE_PRIVATE_KEY_ALIAS"
+          Action: "android.app.action.NETWORK_LOGS_AVAILABLE"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        f79ce84 com.afwsamples.testdpc/.policy.resetpassword.ResetPasswordService$LockedBootCompletedReceiver filter a85c6a8
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+      android.app.action.DEVICE_ADMIN_ENABLED:
+        f547b16 com.afwsamples.testdpc/.DeviceAdminReceiver filter 421fa45
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.PROFILE_PROVISIONING_COMPLETE"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.app.action.PROFILE_OWNER_CHANGED"
+          Action: "android.app.action.DEVICE_OWNER_CHANGED"
+      android.app.action.DEVICE_OWNER_CHANGED:
+        f547b16 com.afwsamples.testdpc/.DeviceAdminReceiver filter 421fa45
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.PROFILE_PROVISIONING_COMPLETE"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.app.action.PROFILE_OWNER_CHANGED"
+          Action: "android.app.action.DEVICE_OWNER_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        f547b16 com.afwsamples.testdpc/.DeviceAdminReceiver filter 421fa45
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+          Action: "android.app.action.PROFILE_PROVISIONING_COMPLETE"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.app.action.PROFILE_OWNER_CHANGED"
+          Action: "android.app.action.DEVICE_OWNER_CHANGED"
+        1e1566d com.afwsamples.testdpc/.BootReceiver filter 33ecb
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.app.action.NETWORK_LOGS_AVAILABLE:
+        d7d4c97 com.afwsamples.testdpc/.DelegatedAdminReceiver filter 316c59a
+          Action: "android.app.action.CHOOSE_PRIVATE_KEY_ALIAS"
+          Action: "android.app.action.NETWORK_LOGS_AVAILABLE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.android.vending.dpc.APPLICATION_RESTRICTIONS_PROXY:
+        a9532a2 com.afwsamples.testdpc/.profilepolicy.apprestrictions.AppRestrictionsProxy filter b6cf5c1
+          Action: "com.android.vending.dpc.APPLICATION_RESTRICTIONS_PROXY"
+      android.app.action.DEVICE_ADMIN_SERVICE:
+        2401b33 com.afwsamples.testdpc/.DeviceAdminService filter 48ba166 permission android.permission.BIND_DEVICE_ADMIN
+          Action: "android.app.action.DEVICE_ADMIN_SERVICE"
+      androidx.enterprise.feedback.action.APP_STATES:
+        a074ef0 com.afwsamples.testdpc/.feedback.AppStatesService filter 584fca7
+          Action: "androidx.enterprise.feedback.action.APP_STATES"
+
+Registered ContentProviders:
+  com.afwsamples.testdpc/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{cc9ec69 com.afwsamples.testdpc/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.afwsamples.testdpc/androidx.core.content.FileProvider:
+    Provider{a37d6ee com.afwsamples.testdpc/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.afwsamples.testdpc.fileprovider]:
+    Provider{a37d6ee com.afwsamples.testdpc/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{757378f com.afwsamples.testdpc}
+  [com.afwsamples.testdpc.lifecycle-process]:
+    Provider{cc9ec69 com.afwsamples.testdpc/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{757378f com.afwsamples.testdpc}
+
+Key Set Manager:
+  [com.afwsamples.testdpc]
+      Signing KeySets: 372
+
+Packages:
+  Package [com.afwsamples.testdpc] (aaa6a1c):
+    userId=10200
+    pkg=Package{3ee2b24 com.afwsamples.testdpc}
+    codePath=/data/app/com.afwsamples.testdpc-1E1NKddElK3EJssTXDV7-Q==
+    resourcePath=/data/app/com.afwsamples.testdpc-1E1NKddElK3EJssTXDV7-Q==
+    legacyNativeLibraryDir=/data/app/com.afwsamples.testdpc-1E1NKddElK3EJssTXDV7-Q==/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=7002 minSdk=21 targetSdk=29
+    versionName=7.0.2
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{757378f com.afwsamples.testdpc}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.afwsamples.testdpc
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 08:29:13
+    firstInstallTime=2021-03-06 08:29:13
+    lastUpdateTime=2021-03-06 08:29:13
+    signatures=PackageSignatures{48be625 version:3, signatures:[b25059a5], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    requested permissions:
+      android.permission.GET_ACCOUNTS
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.INTERNET
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.REQUEST_PASSWORD_COMPLEXITY
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.ACCESS_COARSE_LOCATION
+    install permissions:
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REQUEST_PASSWORD_COMPLEXITY: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+    User 0: ceDataInode=13868 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=125
+  User 0:
+    seq=1, package=com.studioeleven.windfinder
+    seq=8, package=com.google.android.gms
+    seq=9, package=de.motain.iliga
+    seq=11, package=com.microsoft.office.word
+    seq=13, package=video.like
+    seq=15, package=com.netflix.mediaclient
+    seq=19, package=com.agilebits.onepassword
+    seq=21, package=com.rayark.valkyrie
+    seq=23, package=com.aa.generaladaptiveapps
+    seq=25, package=com.ea.gp.fifamobile
+    seq=27, package=com.instagram.igtv
+    seq=29, package=deezer.android.app
+    seq=31, package=com.square_enix.android_googleplay.FFBEWW
+    seq=33, package=com.google.android.calculator
+    seq=35, package=com.gamevilusa.mlbpilive.android.google.global.normal
+    seq=37, package=com.kabam.bigrobot
+    seq=39, package=io.enpass.app
+    seq=41, package=com.adobe.lrmobile
+    seq=43, package=com.vng.g6.a.zombie
+    seq=45, package=com.microblink.photomath
+    seq=47, package=com.scopely.whiplash
+    seq=49, package=com.iudesk.android.photo.editor
+    seq=51, package=com.microsoft.office.officehubrow
+    seq=53, package=com.whatsapp
+    seq=55, package=com.joeware.android.gpulumera
+    seq=57, package=com.anslayer
+    seq=59, package=com.apkupdater
+    seq=62, package=com.android.vending
+    seq=63, package=com.google.android.wearable.app
+    seq=65, package=com.zqlabs.filechef
+    seq=67, package=com.wondershare.filmorago
+    seq=69, package=com.outfit7.mytalkingangelafree
+    seq=71, package=com.truecaller
+    seq=73, package=com.ea.games.r3_row
+    seq=75, package=com.google.ar.lens
+    seq=77, package=com.fusionmedia.investing
+    seq=79, package=com.king.candycrushsodasaga
+    seq=81, package=com.seleuco.mame4droid
+    seq=83, package=com.Slack
+    seq=85, package=com.liquidum.rocketvpn
+    seq=87, package=com.sec.android.easyMover
+    seq=89, package=com.fingersoft.hillclimb
+    seq=91, package=com.cpuid.cpu_z
+    seq=93, package=com.piriform.ccleaner
+    seq=95, package=com.tencent.ibg.joox
+    seq=97, package=com.netease.lztgglobal
+    seq=99, package=com.youthhr.phonto
+    seq=101, package=com.nintendo.zaba
+    seq=103, package=com.idleif.abyssrium
+    seq=105, package=com.facebook.orca
+    seq=107, package=com.amazon.mShop.android.shopping
+    seq=109, package=com.google.android.apps.cloudconsole
+    seq=111, package=com.app.onlyvpn
+    seq=113, package=com.rayark.pluto
+    seq=115, package=wp.wattpad
+    seq=117, package=com.adguard.android
+    seq=119, package=com.lomotif.android
+    seq=121, package=com.infraware.office.link
+    seq=123, package=com.ea.game.pvz2_row
+    seq=124, package=com.afwsamples.testdpc
+
+
+Dexopt state:
+  [com.afwsamples.testdpc]
+    path: /data/app/com.afwsamples.testdpc-1E1NKddElK3EJssTXDV7-Q==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.afwsamples.testdpc]
+     base.apk - 3695
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

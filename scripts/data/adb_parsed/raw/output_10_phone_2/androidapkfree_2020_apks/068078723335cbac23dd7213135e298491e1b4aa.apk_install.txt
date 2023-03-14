@@ -1,0 +1,357 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      eu.faircode.netguard.START_PORT_FORWARD:
+        7a0b932 eu.faircode.netguard/.ActivityForwardApproval filter c2c62a
+          Action: "eu.faircode.netguard.START_PORT_FORWARD"
+          Action: "eu.faircode.netguard.STOP_PORT_FORWARD"
+      android.intent.action.MAIN:
+        6884683 eu.faircode.netguard/.ActivityMain filter 35a661e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.MANAGE_NETWORK_USAGE:
+        6884683 eu.faircode.netguard/.ActivityMain filter 1ceceff
+          Action: "android.intent.action.MANAGE_NETWORK_USAGE"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.APPLICATION_PREFERENCES:
+        9d42000 eu.faircode.netguard/.ActivitySettings filter 5926315
+          Action: "android.intent.action.APPLICATION_PREFERENCES"
+          Category: "android.intent.category.DEFAULT"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        9d42000 eu.faircode.netguard/.ActivitySettings filter 5a04cc
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+      eu.faircode.netguard.STOP_PORT_FORWARD:
+        7a0b932 eu.faircode.netguard/.ActivityForwardApproval filter c2c62a
+          Action: "eu.faircode.netguard.START_PORT_FORWARD"
+          Action: "eu.faircode.netguard.STOP_PORT_FORWARD"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        111d039 eu.faircode.netguard/.ReceiverPackageRemoved filter 988a1b8
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      eu.faircode.netguard.ON:
+        71d367e eu.faircode.netguard/.WidgetAdmin filter 2399ef7
+          Action: "eu.faircode.netguard.ON"
+          Action: "eu.faircode.netguard.OFF"
+          Action: "eu.faircode.netguard.LOCKDOWN_ON"
+          Action: "eu.faircode.netguard.LOCKDOWN_OFF"
+      eu.faircode.netguard.OFF:
+        71d367e eu.faircode.netguard/.WidgetAdmin filter 2399ef7
+          Action: "eu.faircode.netguard.ON"
+          Action: "eu.faircode.netguard.OFF"
+          Action: "eu.faircode.netguard.LOCKDOWN_ON"
+          Action: "eu.faircode.netguard.LOCKDOWN_OFF"
+      eu.faircode.netguard.LOCKDOWN_ON:
+        71d367e eu.faircode.netguard/.WidgetAdmin filter 2399ef7
+          Action: "eu.faircode.netguard.ON"
+          Action: "eu.faircode.netguard.OFF"
+          Action: "eu.faircode.netguard.LOCKDOWN_ON"
+          Action: "eu.faircode.netguard.LOCKDOWN_OFF"
+      android.intent.action.BOOT_COMPLETED:
+        17ec7df eu.faircode.netguard/.ReceiverAutostart filter 9cb5c1b
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          mPriority=999, mOrder=0, mHasPartialTypes=false
+      android.appwidget.action.APPWIDGET_UPDATE:
+        95b3c2c eu.faircode.netguard/.WidgetMain filter cc31b91
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        e3636f5 eu.faircode.netguard/.WidgetLockdown filter 49f1af6
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        17ec7df eu.faircode.netguard/.ReceiverAutostart filter 9cb5c1b
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          mPriority=999, mOrder=0, mHasPartialTypes=false
+      eu.faircode.netguard.LOCKDOWN_OFF:
+        71d367e eu.faircode.netguard/.WidgetAdmin filter 2399ef7
+          Action: "eu.faircode.netguard.ON"
+          Action: "eu.faircode.netguard.OFF"
+          Action: "eu.faircode.netguard.LOCKDOWN_ON"
+          Action: "eu.faircode.netguard.LOCKDOWN_OFF"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        8523c8a eu.faircode.netguard/.ServiceTileMain filter 919f082 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+        63202fb eu.faircode.netguard/.ServiceTileGraph filter ddf3393 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+        955ef18 eu.faircode.netguard/.ServiceTileFilter filter 71efd0 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+        d004d71 eu.faircode.netguard/.ServiceTileLockdown filter 274abc9 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.net.VpnService:
+        71f9756 eu.faircode.netguard/.ServiceSinkhole filter b022164 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+      eu.faircode.netguard.DOWNLOAD_HOSTS_FILE:
+        b13d3d7 eu.faircode.netguard/.ServiceExternal filter d6cdfcd
+          Action: "eu.faircode.netguard.DOWNLOAD_HOSTS_FILE"
+
+Permissions:
+  Permission [eu.faircode.netguard.permission.ADMIN] (146e4c4):
+    sourcePackage=eu.faircode.netguard
+    uid=10407 gids=null type=0 prot=signature
+    perm=Permission{87b4fad eu.faircode.netguard.permission.ADMIN}
+    packageSetting=PackageSetting{b95d2e2 eu.faircode.netguard/10407}
+
+Key Set Manager:
+  [eu.faircode.netguard]
+      Signing KeySets: 189
+
+Packages:
+  Package [eu.faircode.netguard] (b95d2e2):
+    userId=10407
+    pkg=Package{a8d7a59 eu.faircode.netguard}
+    codePath=/data/app/eu.faircode.netguard-o_ZoAY4eD9bXm5fP92OhoQ==
+    resourcePath=/data/app/eu.faircode.netguard-o_ZoAY4eD9bXm5fP92OhoQ==
+    legacyNativeLibraryDir=/data/app/eu.faircode.netguard-o_ZoAY4eD9bXm5fP92OhoQ==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=2020082601 minSdk=22 targetSdk=30
+    versionName=2.288
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{1d7d673 eu.faircode.netguard}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE ]
+    dataDir=/data/user/0/eu.faircode.netguard
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 07:43:02
+    firstInstallTime=2021-03-06 07:43:02
+    lastUpdateTime=2021-03-06 07:43:02
+    signatures=PackageSignatures{c2f8930 version:2, signatures:[182049aa], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      eu.faircode.netguard.permission.ADMIN: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      com.android.vending.BILLING
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.QUERY_ALL_PACKAGES
+      eu.faircode.netguard.permission.ADMIN
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      eu.faircode.netguard.permission.ADMIN: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=7941 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+
+Package Changes:
+  Sequence number=558
+  User 0:
+    seq=5, package=com.google.android.gms
+    seq=11, package=com.kajda.fuelio
+    seq=16, package=me.piere.christmas
+    seq=18, package=ak.alizandro.smartaudiobookplayer
+    seq=20, package=amazing.three_d.icons
+    seq=22, package=com.first75.voicerecorder2pro
+    seq=24, package=digifit.virtuagym.client.android
+    seq=32, package=com.in.w3d
+    seq=34, package=com.luzapplications.alessio.wallooppro
+    seq=36, package=com.alesp.orologiomondiale.pro
+    seq=40, package=com.yuanwofei.cardemulator.pro
+    seq=48, package=com.microblink.photomath
+    seq=50, package=studio14.application.caeluswhite
+    seq=54, package=com.perfectapps.muviz
+    seq=58, package=net.xnano.android.ftpserver
+    seq=60, package=com.aezowie.mycalpro
+    seq=62, package=com.bialy.zonelauncher
+    seq=66, package=com.indigomadina.tabloid
+    seq=70, package=com.mixplorer
+    seq=74, package=de.dwd.warnapp
+    seq=76, package=oos.dark.material
+    seq=78, package=com.intsig.camscanner
+    seq=82, package=com.indigomadina.spheroid
+    seq=84, package=com.footej.camera
+    seq=89, package=com.cray.software.justreminderpro
+    seq=91, package=com.sofascore.results
+    seq=103, package=jp.gr.java_conf.soboku.batterymeter
+    seq=105, package=com.iioannou.phototools.pro
+    seq=112, package=com.happening.studios.swipeforfacebookfree
+    seq=114, package=com.rookiestudio.perfectviewer
+    seq=117, package=com.osheden.azulox
+    seq=124, package=com.pakdata.easyurdu
+    seq=132, package=indigomadina.furatto.ui
+    seq=138, package=o.o.joey
+    seq=142, package=com.overlook.android.fing
+    seq=144, package=ru.involta.metro
+    seq=148, package=hastamev.oneuidark.com
+    seq=153, package=com.compscieddy.writeaday
+    seq=155, package=com.protectstar.ishredder.pro
+    seq=157, package=prism.kustom.pack
+    seq=163, package=com.androidev.xhafe.earthquakepro
+    seq=167, package=com.franco.doze
+    seq=171, package=com.changemystyle.gentlewakeuppro
+    seq=175, package=studio14.application.juno
+    seq=177, package=com.thegrammaruniversity.drfrench
+    seq=179, package=com.medisafe.android.client
+    seq=187, package=com.bergin_it.gpsscatterplot
+    seq=189, package=com.zemana.msecurity
+    seq=191, package=be.inet.rainwidget.donate
+    seq=193, package=com.bergin_it.gpsattitude
+    seq=195, package=ru.yandex.music
+    seq=197, package=com.roamingsquirrel.android.calculator_plus
+    seq=204, package=com.franco.kernel
+    seq=206, package=com.magdalm.wifimasterpassword
+    seq=209, package=com.nll.asr
+    seq=211, package=com.crypter.cryptocyrrency
+    seq=213, package=com.kimcy929.screenrecorder
+    seq=215, package=com.pavelrekun.skit.premium
+    seq=221, package=com.wiseschematics.reeq01
+    seq=224, package=com.SearingMedia.Parrot
+    seq=234, package=thanhletranngoc.calculator.pro
+    seq=238, package=com.edzondm.linebitse
+    seq=240, package=dkc.video.hdbox
+    seq=242, package=com.ideashower.readitlater.pro
+    seq=244, package=com.scan.srbd
+    seq=246, package=com.cinelensesapp.android.cinelenses
+    seq=248, package=de.j4velin.wallpaperChanger
+    seq=250, package=app.stellio.player
+    seq=256, package=com.united.art.lwp28
+    seq=260, package=com.kokoschka.michael.crypto
+    seq=262, package=com.sreerag.merlen
+    seq=264, package=ru.v_a_v.netmonitorpro
+    seq=268, package=com.tools.netgel.netxpro
+    seq=270, package=com.n7mobile.nplayer
+    seq=274, package=com.mrfarts.lwp24
+    seq=276, package=com.lb.app_manager
+    seq=280, package=com.jndapp.redline.linex.iconpack
+    seq=282, package=com.sunnytapps.sunnytrack
+    seq=284, package=yo.app
+    seq=286, package=kha.prog.mikrotik
+    seq=292, package=com.fullreader
+    seq=299, package=com.magdalm.freewifipassword
+    seq=301, package=com.foobnix.pro.pdf.reader
+    seq=305, package=com.twodoor.bookly
+    seq=307, package=com.iioannou.phototipspro
+    seq=309, package=com.jndapp.limeline.linex.iconpack
+    seq=314, package=com.itunestoppodcastplayer.app
+    seq=316, package=studio14.application.caelusblack
+    seq=318, package=dp.ws.popcorntime
+    seq=320, package=com.light.simplephotowidget
+    seq=324, package=dev.into.liveno.pro
+    seq=329, package=com.spartacus
+    seq=333, package=ru.englishtenses.index
+    seq=337, package=com.david.android.languageswitch
+    seq=339, package=com.getmimo
+    seq=341, package=de.ozerov.fully
+    seq=348, package=com.cloud3squared.meteogram.pro
+    seq=350, package=com.notebloc.app
+    seq=352, package=com.bhanu.smartnavbar
+    seq=354, package=com.icecoldapps.synchronizeultimate
+    seq=358, package=com.franco.servicely
+    seq=360, package=studio14.application.hera
+    seq=362, package=com.veitch.learntomaster.bgtp
+    seq=365, package=com.shaiban.audioplayer.mplayer
+    seq=371, package=io.lingvist.android
+    seq=373, package=com.indigomadina.anoobul
+    seq=377, package=com.shazam.encore.android
+    seq=381, package=com.jetblacksoftware.xmastreewallpaperpaid
+    seq=383, package=at.bitfire.davdroid
+    seq=385, package=com.fitapp
+    seq=389, package=com.coccco28.athys
+    seq=393, package=com.rupiapps.cameraprocontrol
+    seq=397, package=com.magdalm.apkextractor
+    seq=403, package=com.mobilefootie.fotmobpro
+    seq=405, package=com.surodev.arielapro
+    seq=409, package=com.agilebits.onepassword
+    seq=411, package=com.free.compress.decompress.all.files
+    seq=415, package=com.samruston.twitter
+    seq=419, package=com.paget96.lspeed
+    seq=421, package=il.talent.parking.premium
+    seq=423, package=com.iudesk.android.photo.editor
+    seq=425, package=com.OGR.vipnotesfull
+    seq=427, package=com.adguard.android
+    seq=431, package=com.ottplay.ottplay
+    seq=433, package=com.ddm.iptools
+    seq=436, package=com.busuu.android.enc
+    seq=438, package=com.mobisystems.fileman
+    seq=440, package=com.codium.hydrocoach.pro
+    seq=442, package=org.oftn.rainpaper
+    seq=447, package=com.medium.reader
+    seq=449, package=com.stark.griddle
+    seq=451, package=com.fbreader
+    seq=453, package=com.countercultured.irc4android
+    seq=457, package=com.bitsmedia.android.muslimpro
+    seq=459, package=com.stoik.mdscan
+    seq=462, package=com.gmail.jmartindev.timetune
+    seq=467, package=com.unvoid.borealis
+    seq=469, package=com.fitifyworkouts.bodyweight.workoutapp
+    seq=471, package=com.brit.swiftblack.layers
+    seq=473, package=net.darksky.darksky
+    seq=475, package=ua.com.streamsoft.pingtoolspro
+    seq=477, package=com.mixplorer.silver
+    seq=481, package=com.aathifmahir.iconpack.kora.free
+    seq=483, package=com.zima.mobileobservatorypro
+    seq=485, package=com.brit.swiftdark.substratum
+    seq=487, package=com.light.textwidget
+    seq=490, package=com.osheden.raya.black
+    seq=494, package=com.mobisystems.editor.office_registered
+    seq=496, package=com.ffffstudio.kojicam
+    seq=498, package=com.indigomadina.tigadpro
+    seq=500, package=com.lingodeer.plus
+    seq=502, package=com.waze
+    seq=504, package=com.filepursuit.filepursuitpro
+    seq=506, package=ginlemon.flowerfree
+    seq=508, package=com.mobisystems.office
+    seq=510, package=co.windyapp.android
+    seq=512, package=com.protectstar.ishredder.mil
+    seq=514, package=com.plexapp.android
+    seq=516, package=com.mobilefootie.wc2010
+    seq=520, package=org.eobdfacile.android
+    seq=522, package=pl.solidexplorer2
+    seq=524, package=com.coconuts.webnavigator
+    seq=526, package=com.devsense.symbolab
+    seq=530, package=com.itemstudio.castro.pro
+    seq=532, package=com.kaeriasarl.vps
+    seq=534, package=com.lingodeer
+    seq=536, package=com.simplehabit.simplehabitapp
+    seq=538, package=com.feravolt.fdeai
+    seq=540, package=com.applay.overlay
+    seq=542, package=com.ludia.jurassicworld
+    seq=544, package=com.accuweather.android
+    seq=546, package=com.hotheadgames.google.free.ks2
+    seq=550, package=com.google.android.contacts
+    seq=552, package=com.sygic.aura
+    seq=554, package=com.fgol.HungrySharkEvolution
+    seq=556, package=com.ocapps.routerpage
+    seq=557, package=eu.faircode.netguard
+
+
+Dexopt state:
+  [eu.faircode.netguard]
+    path: /data/app/eu.faircode.netguard-o_ZoAY4eD9bXm5fP92OhoQ==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [eu.faircode.netguard]
+     base.apk - 782
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

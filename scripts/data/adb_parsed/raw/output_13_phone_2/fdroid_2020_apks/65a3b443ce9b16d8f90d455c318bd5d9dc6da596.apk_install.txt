@@ -1,0 +1,154 @@
+Activity Resolver Table:
+  Schemes:
+      otpauth:
+        a7836e0 com.yubico.yubioath/.ui.add.AddCredentialActivity filter 727cd99
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "otpauth"
+      https:
+        6471774 com.yubico.yubioath/.ui.main.MainActivity filter a887d12
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          Authority: "my.yubico.com": -1
+        6471774 com.yubico.yubioath/.ui.main.MainActivity filter 24ece3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "my.yubico.com": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.hardware.usb.action.USB_DEVICE_ATTACHED:
+        6471774 com.yubico.yubioath/.ui.main.MainActivity filter d22849d
+          Action: "android.intent.action.MAIN"
+          Action: "android.hardware.usb.action.USB_DEVICE_ATTACHED"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.MAIN:
+        6471774 com.yubico.yubioath/.ui.main.MainActivity filter d22849d
+          Action: "android.intent.action.MAIN"
+          Action: "android.hardware.usb.action.USB_DEVICE_ATTACHED"
+          Category: "android.intent.category.LAUNCHER"
+
+Domain verification status:
+  com.yubico.yubioath:
+    ID: 681893ef-76bc-4927-a69f-7b237886be60
+    Signatures: [D8:67:8C:5E:E2:C5:E8:F8:0D:5D:24:F6:64:D8:6E:F3:F8:ED:69:19:14:89:D5:4D:66:49:5F:76:6A:25:6D:47]
+    Domain verification state:
+      my.yubico.com: none
+
+Registered ContentProviders:
+  com.yubico.yubioath/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{6f0626d com.yubico.yubioath/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+
+ContentProvider Authorities:
+  [com.yubico.yubioath.lifecycle-process]:
+    Provider{6f0626d com.yubico.yubioath/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{fa54ea2 com.yubico.yubioath}
+
+Key Set Manager:
+  [com.yubico.yubioath]
+      Signing KeySets: 6634
+
+Packages:
+  Package [com.yubico.yubioath] (aa40733):
+    userId=10540
+    pkg=Package{67acaf0 com.yubico.yubioath}
+    codePath=/data/app/~~BG0_wMVu3Q3Red4zMznRLg==/com.yubico.yubioath-9egnhTzXxKhySzYNiV3KrQ==
+    resourcePath=/data/app/~~BG0_wMVu3Q3Red4zMznRLg==/com.yubico.yubioath-9egnhTzXxKhySzYNiV3KrQ==
+    legacyNativeLibraryDir=/data/app/~~BG0_wMVu3Q3Red4zMznRLg==/com.yubico.yubioath-9egnhTzXxKhySzYNiV3KrQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=20199 minSdk=15 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2.2.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.yubico.yubioath
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 21:04:18
+    lastUpdateTime=2022-11-30 21:04:19
+    packageSource=0
+    signatures=PackageSignatures{1bdb869 version:1, signatures:[4011301d], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.CAMERA
+      android.permission.NFC
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      android.permission.NFC: granted=true
+    User 0: ceDataInode=104174 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 21:04:19
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.yubico.yubioath
+    com.google.android.apps.diagnosticstool:
+      com.yubico.yubioath
+    com.google.android.settings.intelligence:
+      com.yubico.yubioath
+    com.google.android.apps.accessibility.voiceaccess:
+      com.yubico.yubioath
+    com.zhiliaoapp.musically:
+      com.yubico.yubioath
+    com.truecaller:
+      com.yubico.yubioath
+    com.dv.adm:
+      com.yubico.yubioath
+    com.zappcues.gamingmode:
+      com.yubico.yubioath
+    com.jio.myjio:
+      com.yubico.yubioath
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.yubico.yubioath]
+    path: /data/app/~~BG0_wMVu3Q3Red4zMznRLg==/com.yubico.yubioath-9egnhTzXxKhySzYNiV3KrQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:672875
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.yubico.yubioath]
+     base.apk - 184

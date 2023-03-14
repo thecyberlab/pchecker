@@ -1,0 +1,343 @@
+Activity Resolver Table:
+  Schemes:
+      stritz:
+        13e76f3 com.king.candycrushsodasaga/.StritzActivity filter ced728b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "stritz"
+      http:
+        13e76f3 com.king.candycrushsodasaga/.StritzActivity filter bc69805
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "apps.facebook.com": -1
+          Path: "PatternMatcher{PREFIX: /candycrushsoda}"
+        13e76f3 com.king.candycrushsodasaga/.StritzActivity filter c824f68
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "ccss.play.king.com": -1
+          Authority: "ccss.play.king.com": -1
+          AutoVerify=true
+      https:
+        13e76f3 com.king.candycrushsodasaga/.StritzActivity filter ebe705a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "apps.facebook.com": -1
+          Path: "PatternMatcher{PREFIX: /candycrushsoda}"
+        13e76f3 com.king.candycrushsodasaga/.StritzActivity filter c824f68
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "ccss.play.king.com": -1
+          Authority: "ccss.play.king.com": -1
+          AutoVerify=true
+      fbconnect:
+        2c8dfb0 com.king.candycrushsodasaga/com.facebook.CustomTabActivity filter 8e33826
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.king.candycrushsodasaga": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        13e76f3 com.king.candycrushsodasaga/.StritzActivity filter fb377c
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        5cf0e29 com.king.candycrushsodasaga/com.king.core.VideoPlayerActivity filter a1daf81
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.EMBED"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.android.vending.billing.IN_APP_NOTIFY:
+        c2fb5ae com.king.candycrushsodasaga/com.king.store.billing.BillingReceiver filter ce0fa14
+          Action: "com.android.vending.billing.IN_APP_NOTIFY"
+          Action: "com.android.vending.billing.RESPONSE_CODE"
+          Action: "com.android.vending.billing.PURCHASE_STATE_CHANGED"
+      android.intent.action.BATTERY_OKAY:
+        c3f8f4f com.king.candycrushsodasaga/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 24ac15f
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        ad446dc com.king.candycrushsodasaga/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 31f25fe
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.king.analytics.BOOT_COMPLETED:
+        42163e5 com.king.candycrushsodasaga/com.king.analytics.AnalyticsReceiver filter b3ab0b2
+          Action: "com.king.analytics.BOOT_COMPLETED"
+          Action: "com.king.analytics.REQUEST_VALUE"
+          Action: "com.king.analytics.RECEIVE_VALUE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        6c57eba com.king.candycrushsodasaga/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter f3977ac
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        c8fd16b com.king.candycrushsodasaga/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 8f68c75
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        eccf4c8 com.king.candycrushsodasaga/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 57fa803
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        6c57eba com.king.candycrushsodasaga/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter f3977ac
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        a895961 com.king.candycrushsodasaga/com.king.core.ReferrerReceiver filter 774c2bd
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.android.vending.billing.RESPONSE_CODE:
+        c2fb5ae com.king.candycrushsodasaga/com.king.store.billing.BillingReceiver filter ce0fa14
+          Action: "com.android.vending.billing.IN_APP_NOTIFY"
+          Action: "com.android.vending.billing.RESPONSE_CODE"
+          Action: "com.android.vending.billing.PURCHASE_STATE_CHANGED"
+      com.amazon.inapp.purchasing.NOTIFY:
+        7bccc86 com.king.candycrushsodasaga/com.amazon.device.iap.ResponseReceiver filter 73eac67
+          Action: "com.amazon.inapp.purchasing.NOTIFY"
+      com.google.android.c2dm.intent.RECEIVE:
+        7581947 com.king.candycrushsodasaga/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 82fcdb9
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.king.candycrushsodasaga"
+      android.intent.action.BATTERY_LOW:
+        c3f8f4f com.king.candycrushsodasaga/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 24ac15f
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        c209574 com.king.candycrushsodasaga/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 743a40a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        c209574 com.king.candycrushsodasaga/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 743a40a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.king.analytics.REQUEST_VALUE:
+        42163e5 com.king.candycrushsodasaga/com.king.analytics.AnalyticsReceiver filter b3ab0b2
+          Action: "com.king.analytics.BOOT_COMPLETED"
+          Action: "com.king.analytics.REQUEST_VALUE"
+          Action: "com.king.analytics.RECEIVE_VALUE"
+      android.intent.action.BOOT_COMPLETED:
+        c209574 com.king.candycrushsodasaga/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 743a40a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.king.analytics.RECEIVE_VALUE:
+        42163e5 com.king.candycrushsodasaga/com.king.analytics.AnalyticsReceiver filter b3ab0b2
+          Action: "com.king.analytics.BOOT_COMPLETED"
+          Action: "com.king.analytics.REQUEST_VALUE"
+          Action: "com.king.analytics.RECEIVE_VALUE"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        ad446dc com.king.candycrushsodasaga/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 31f25fe
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      notification_discarded:
+        3212a9d com.king.candycrushsodasaga/com.king.notification.NotificationBroadcastReceiver filter 1dda380
+          Action: "notification_discarded"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        2892b12 com.king.candycrushsodasaga/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter d84147b
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.android.vending.billing.PURCHASE_STATE_CHANGED:
+        c2fb5ae com.king.candycrushsodasaga/com.king.store.billing.BillingReceiver filter ce0fa14
+          Action: "com.android.vending.billing.IN_APP_NOTIFY"
+          Action: "com.android.vending.billing.RESPONSE_CODE"
+          Action: "com.android.vending.billing.PURCHASE_STATE_CHANGED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        17302e3 com.king.candycrushsodasaga/com.google.firebase.iid.FirebaseInstanceIdService filter 47ff6d6
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        76b94e0 com.king.candycrushsodasaga/com.king.notification.fcm.FcmListenerService filter 19c6298
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        56ad399 com.king.candycrushsodasaga/com.google.firebase.messaging.FirebaseMessagingService filter f307af1
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+
+Permissions:
+  Permission [com.king.cross.kingapp.provider.ACCESS] (c4ae65e):
+    sourcePackage=com.king.candycrushsodasaga
+    uid=10177 gids=null type=0 prot=signature
+    perm=Permission{8c8ea3f com.king.cross.kingapp.provider.ACCESS}
+    packageSetting=PackageSetting{a51f0c com.king.candycrushsodasaga/10177}
+
+Permissions:
+  Permission [com.king.candycrushsodasaga.permission.C2D_MESSAGE] (50c1055):
+    sourcePackage=com.king.candycrushsodasaga
+    uid=10177 gids=null type=0 prot=signature
+    perm=Permission{9db0a6a com.king.candycrushsodasaga.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{a51f0c com.king.candycrushsodasaga/10177}
+
+Registered ContentProviders:
+  com.king.candycrushsodasaga/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{76beb5b com.king.candycrushsodasaga/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.king.candycrushsodasaga/androidx.work.impl.WorkManagerInitializer:
+    Provider{e0b1ff8 com.king.candycrushsodasaga/androidx.work.impl.WorkManagerInitializer}
+  com.king.candycrushsodasaga/android.arch.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{4a5cd1 com.king.candycrushsodasaga/android.arch.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.king.candycrushsodasaga/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{2976336 com.king.candycrushsodasaga/com.google.firebase.provider.FirebaseInitProvider}
+  com.king.candycrushsodasaga/com.facebook.internal.FacebookInitProvider:
+    Provider{c73e237 com.king.candycrushsodasaga/com.facebook.internal.FacebookInitProvider}
+  com.king.candycrushsodasaga/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{9ce43a4 com.king.candycrushsodasaga/com.facebook.ads.AudienceNetworkContentProvider}
+  com.king.candycrushsodasaga/android.support.v4.content.FileProvider:
+    Provider{a46f50d com.king.candycrushsodasaga/android.support.v4.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.king.candycrushsodasaga.mobileadsinitprovider]:
+    Provider{76beb5b com.king.candycrushsodasaga/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{3ee7cc2 com.king.candycrushsodasaga}
+  [com.king.candycrushsodasaga.AudienceNetworkContentProvider]:
+    Provider{9ce43a4 com.king.candycrushsodasaga/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{3ee7cc2 com.king.candycrushsodasaga}
+  [com.king.candycrushsodasaga.fileprovider]:
+    Provider{a46f50d com.king.candycrushsodasaga/android.support.v4.content.FileProvider}
+      applicationInfo=ApplicationInfo{3ee7cc2 com.king.candycrushsodasaga}
+  [com.king.candycrushsodasaga.firebaseinitprovider]:
+    Provider{2976336 com.king.candycrushsodasaga/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{3ee7cc2 com.king.candycrushsodasaga}
+  [com.king.candycrushsodasaga.FacebookInitProvider]:
+    Provider{c73e237 com.king.candycrushsodasaga/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{3ee7cc2 com.king.candycrushsodasaga}
+  [com.king.candycrushsodasaga.workmanager-init]:
+    Provider{e0b1ff8 com.king.candycrushsodasaga/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{3ee7cc2 com.king.candycrushsodasaga}
+  [com.king.candycrushsodasaga.lifecycle-trojan]:
+    Provider{4a5cd1 com.king.candycrushsodasaga/android.arch.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{3ee7cc2 com.king.candycrushsodasaga}
+
+Key Set Manager:
+  [com.king.candycrushsodasaga]
+      Signing KeySets: 350
+
+Packages:
+  Package [com.king.candycrushsodasaga] (a51f0c):
+    userId=10177
+    pkg=Package{c1f5e6f com.king.candycrushsodasaga}
+    codePath=/data/app/com.king.candycrushsodasaga-47SJ4HubHAv4o6ROLc7Fpw==
+    resourcePath=/data/app/com.king.candycrushsodasaga-47SJ4HubHAv4o6ROLc7Fpw==
+    legacyNativeLibraryDir=/data/app/com.king.candycrushsodasaga-47SJ4HubHAv4o6ROLc7Fpw==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=11770070 minSdk=16 targetSdk=29
+    versionName=1.177.7
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{3ee7cc2 com.king.candycrushsodasaga}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/com.king.candycrushsodasaga
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 08:24:18
+    firstInstallTime=2021-03-06 08:24:20
+    lastUpdateTime=2021-03-06 08:24:20
+    signatures=PackageSignatures{69a6ad3 version:2, signatures:[33409d03], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      com.king.cross.kingapp.provider.ACCESS: prot=signature, INSTALLED
+      com.king.candycrushsodasaga.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      com.android.vending.BILLING
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      com.king.cross.kingapp.provider.ACCESS
+      com.google.android.c2dm.permission.RECEIVE
+      com.king.candycrushsodasaga.permission.C2D_MESSAGE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+    install permissions:
+      com.king.cross.kingapp.provider.ACCESS: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.king.candycrushsodasaga.permission.C2D_MESSAGE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=11763 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+
+Package Changes:
+  Sequence number=79
+  User 0:
+    seq=1, package=com.studioeleven.windfinder
+    seq=8, package=com.google.android.gms
+    seq=9, package=de.motain.iliga
+    seq=11, package=com.microsoft.office.word
+    seq=13, package=video.like
+    seq=15, package=com.netflix.mediaclient
+    seq=19, package=com.agilebits.onepassword
+    seq=21, package=com.rayark.valkyrie
+    seq=23, package=com.aa.generaladaptiveapps
+    seq=25, package=com.ea.gp.fifamobile
+    seq=27, package=com.instagram.igtv
+    seq=29, package=deezer.android.app
+    seq=31, package=com.square_enix.android_googleplay.FFBEWW
+    seq=33, package=com.google.android.calculator
+    seq=35, package=com.gamevilusa.mlbpilive.android.google.global.normal
+    seq=37, package=com.kabam.bigrobot
+    seq=39, package=io.enpass.app
+    seq=41, package=com.adobe.lrmobile
+    seq=43, package=com.vng.g6.a.zombie
+    seq=45, package=com.microblink.photomath
+    seq=47, package=com.scopely.whiplash
+    seq=49, package=com.iudesk.android.photo.editor
+    seq=51, package=com.microsoft.office.officehubrow
+    seq=53, package=com.whatsapp
+    seq=55, package=com.joeware.android.gpulumera
+    seq=57, package=com.anslayer
+    seq=59, package=com.apkupdater
+    seq=62, package=com.android.vending
+    seq=63, package=com.google.android.wearable.app
+    seq=65, package=com.zqlabs.filechef
+    seq=67, package=com.wondershare.filmorago
+    seq=69, package=com.outfit7.mytalkingangelafree
+    seq=71, package=com.truecaller
+    seq=73, package=com.ea.games.r3_row
+    seq=75, package=com.google.ar.lens
+    seq=77, package=com.fusionmedia.investing
+    seq=78, package=com.king.candycrushsodasaga
+
+
+Dexopt state:
+  [com.king.candycrushsodasaga]
+    path: /data/app/com.king.candycrushsodasaga-47SJ4HubHAv4o6ROLc7Fpw==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.king.candycrushsodasaga]
+     base.apk - 4562
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

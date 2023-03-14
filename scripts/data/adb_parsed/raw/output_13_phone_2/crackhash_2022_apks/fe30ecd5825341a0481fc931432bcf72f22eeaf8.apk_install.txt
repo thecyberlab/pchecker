@@ -1,0 +1,450 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        471d939 com.vuclip.viu/com.viu.player.sdk.ui.ViuVideoPlayerActivity filter fbf0b7e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "www.viu.com": -1
+          Authority: "watch.viu.com": -1
+          Path: "PatternMatcher{LITERAL: /player}"
+          Path: "PatternMatcher{LITERAL: /player}"
+          AutoVerify=true
+      https:
+        4bda8e8 com.vuclip.viu/.ui.screens.MainActivity filter 11eda6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.viu.com": -1
+          Authority: "viu.com": -1
+          Authority: "watch.viu.com": -1
+          Path: "PatternMatcher{PREFIX: /ott/}"
+          Path: "PatternMatcher{PREFIX: /ott/}"
+          Path: "PatternMatcher{PREFIX: /ott}"
+          AutoVerify=true
+        4bda8e8 com.vuclip.viu/.ui.screens.MainActivity filter 845163d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "viu.app.link": -1
+          AutoVerify=true
+        4bda8e8 com.vuclip.viu/.ui.screens.MainActivity filter 25f3e32
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "viu.test-app.link": -1
+          AutoVerify=true
+        471d939 com.vuclip.viu/com.viu.player.sdk.ui.ViuVideoPlayerActivity filter b4c78df
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.viu.com": -1
+          Authority: "watch.viu.com": -1
+          Path: "PatternMatcher{LITERAL: /player}"
+          Path: "PatternMatcher{LITERAL: /player}"
+          AutoVerify=true
+      fbconnect:
+        7dd992c com.vuclip.viu/com.facebook.CustomTabActivity filter 20dcff5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.vuclip.viu": -1
+      com.vuclip.viu:
+        4bda8e8 com.vuclip.viu/.ui.screens.MainActivity filter 26ef3e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.vuclip.viu"
+          AutoVerify=true
+        4bda8e8 com.vuclip.viu/.ui.screens.MainActivity filter 3386b94
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.vuclip.viu"
+          Authority: "open": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        4bda8e8 com.vuclip.viu/.ui.screens.MainActivity filter 9a7cb01
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        42ce783 com.vuclip.viu/com.viu.player.sdk.chromeCast.ExpandedControlsActivity filter 7faad00
+          Action: "android.intent.action.MAIN"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        7f8413a com.vuclip.viu/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 56fa1eb
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        80fa55c com.vuclip.viu/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 433a065
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.google.android.gms.auth.api.phone.SMS_RETRIEVED:
+        97f97e2 com.vuclip.viu/.login.utils.SMSBroadcastReceiver filter 666b773
+          Action: "com.google.android.gms.auth.api.phone.SMS_RETRIEVED"
+      com.huawei.android.push.intent.REGISTRATION:
+        4b51d8c com.vuclip.viu/com.huawei.hms.support.api.push.PushReceiver filter 6666cd5
+          Action: "com.huawei.android.push.intent.REGISTRATION"
+          Action: "com.huawei.android.push.intent.RECEIVE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        a9fbb48 com.vuclip.viu/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 2c2dde1
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        817e1c4 com.vuclip.viu/com.vuclip.viu_base.receiver.NetworkBroadcastReceiver filter a8d08ad
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        9993706 com.vuclip.viu/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 9a471c7
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.huawei.intent.action.PUSH_DELAY_NOTIFY:
+        afa20de com.vuclip.viu/com.huawei.hms.support.api.push.PushMsgReceiver filter c37d2bf
+          Action: "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+          Action: "com.huawei.intent.action.PUSH"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        f83502e com.vuclip.viu/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter eeb57cf
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        a9fbb48 com.vuclip.viu/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 2c2dde1
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        1bc618a com.vuclip.viu/com.appsflyer.MultipleInstallBroadcastReceiver filter da9c3fb
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.huawei.android.push.intent.RECEIVE:
+        4b51d8c com.vuclip.viu/com.huawei.hms.support.api.push.PushReceiver filter 6666cd5
+          Action: "com.huawei.android.push.intent.REGISTRATION"
+          Action: "com.huawei.android.push.intent.RECEIVE"
+      com.vuclip.viu.receivers.NOTIFICATION_ALARM:
+        a211c18 com.vuclip.viu/.receivers.NotificationAlarmReceiver filter 9387671
+          Action: "com.vuclip.viu.receivers.NOTIFICATION_ALARM"
+      com.google.android.c2dm.intent.RECEIVE:
+        b935630 com.vuclip.viu/com.google.firebase.iid.FirebaseInstanceIdReceiver filter b1e82a9
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        7f8413a com.vuclip.viu/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 56fa1eb
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        c9943f4 com.vuclip.viu/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2ae771d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        c9943f4 com.vuclip.viu/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2ae771d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        d870c56 com.vuclip.viu/.local_notification.NotificationReceiver filter 8c6a4d7
+          Action: "android.intent.action.BOOT_COMPLETED"
+        c9943f4 com.vuclip.viu/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2ae771d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        80fa55c com.vuclip.viu/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 433a065
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        500ab60 com.vuclip.viu/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 1c06819
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.huawei.intent.action.PUSH:
+        afa20de com.vuclip.viu/com.huawei.hms.support.api.push.PushMsgReceiver filter c37d2bf
+          Action: "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+          Action: "com.huawei.intent.action.PUSH"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        a01bd92 com.vuclip.viu/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter b6c6363
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.huawei.push.msg.NOTIFY_MSG:
+        5f0af42 com.vuclip.viu/com.huawei.hms.support.api.push.service.HmsMsgService filter beceb53
+          Action: "com.huawei.push.msg.NOTIFY_MSG"
+          Action: "com.huawei.push.msg.PASSBY_MSG"
+      com.google.firebase.MESSAGING_EVENT:
+        836cea com.vuclip.viu/.deeplink.service.GoogleMessageListenerService filter a20dbdb
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        30f9224 com.vuclip.viu/com.google.firebase.messaging.FirebaseMessagingService filter 800618d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.huawei.push.msg.PASSBY_MSG:
+        5f0af42 com.vuclip.viu/com.huawei.hms.support.api.push.service.HmsMsgService filter beceb53
+          Action: "com.huawei.push.msg.NOTIFY_MSG"
+          Action: "com.huawei.push.msg.PASSBY_MSG"
+      com.clevertap.BG_EVENT:
+        ba36db6 com.vuclip.viu/com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService filter c75ab7 permission android.permission.BIND_JOB_SERVICE
+          Action: "com.clevertap.BG_EVENT"
+      com.huawei.push.action.MESSAGING_EVENT:
+        95c8678 com.vuclip.viu/.deeplink.service.HuaweiMessageListenerService filter 62e0151
+          Action: "com.huawei.push.action.MESSAGING_EVENT"
+
+Domain verification status:
+  com.vuclip.viu:
+    ID: ee1a8358-9047-41ab-9492-1772668ca78c
+    Signatures: [62:15:F0:0B:AA:4B:F1:8B:AB:57:92:FC:79:6B:FC:55:55:91:72:40:F1:4F:7C:7E:67:2D:95:68:88:D7:5C:96]
+    Domain verification state:
+      watch.viu.com: none
+      viu.com: none
+      viu.app.link: none
+      viu.test-app.link: none
+      www.viu.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          watch.viu.com
+          viu.com
+          viu.app.link
+          viu.test-app.link
+          www.viu.com
+
+Permissions:
+  Permission [com.vuclip.viu.permission.PUSH_PROVIDER] (7ae60eb):
+    sourcePackage=com.vuclip.viu
+    uid=10377 gids=[] type=0 prot=signature
+    perm=PermissionInfo{7890e48 com.vuclip.viu.permission.PUSH_PROVIDER}
+
+Permissions:
+  Permission [com.vuclip.viu.permission.PUSH_WRITE_PROVIDER] (b6534e1):
+    sourcePackage=com.vuclip.viu
+    uid=10377 gids=[] type=0 prot=signature
+    perm=PermissionInfo{73a4206 com.vuclip.viu.permission.PUSH_WRITE_PROVIDER}
+
+Permissions:
+  Permission [com.vuclip.viu.permission.PROCESS_PUSH_MSG] (a9020c7):
+    sourcePackage=com.vuclip.viu
+    uid=10377 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a44c6f4 com.vuclip.viu.permission.PROCESS_PUSH_MSG}
+
+Registered ContentProviders:
+  com.vuclip.viu/com.huawei.hms.update.provider.UpdateProvider:
+    Provider{89f3e1d com.vuclip.viu/com.huawei.hms.update.provider.UpdateProvider}
+  com.vuclip.viu/com.huawei.hms.support.api.push.PushProvider:
+    Provider{8287892 com.vuclip.viu/com.huawei.hms.support.api.push.PushProvider}
+  com.vuclip.viu/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{e40263 com.vuclip.viu/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.vuclip.viu/com.huawei.hms.aaid.InitProvider:
+    Provider{5615e60 com.vuclip.viu/com.huawei.hms.aaid.InitProvider}
+  com.vuclip.viu/com.squareup.picasso.PicassoProvider:
+    Provider{3769f19 com.vuclip.viu/com.squareup.picasso.PicassoProvider}
+  com.vuclip.viu/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{4518bde com.vuclip.viu/com.google.firebase.provider.FirebaseInitProvider}
+  com.vuclip.viu/com.facebook.internal.FacebookInitProvider:
+    Provider{b0a61bf com.vuclip.viu/com.facebook.internal.FacebookInitProvider}
+  com.vuclip.viu/androidx.startup.InitializationProvider:
+    Provider{5ee008c com.vuclip.viu/androidx.startup.InitializationProvider}
+  com.vuclip.viu/com.huawei.agconnect.core.provider.AGConnectInitializeProvider:
+    Provider{2c913d5 com.vuclip.viu/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+  com.vuclip.viu/com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider:
+    Provider{f6687ea com.vuclip.viu/com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider}
+  com.vuclip.viu/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{50d5adb com.vuclip.viu/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.vuclip.viu/com.huawei.hms.device.provider.CheckHmsProvider:
+    Provider{8c09978 com.vuclip.viu/com.huawei.hms.device.provider.CheckHmsProvider}
+  com.vuclip.viu/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{3941851 com.vuclip.viu/com.google.android.gms.ads.MobileAdsInitProvider}
+
+ContentProvider Authorities:
+  [com.vuclip.viu.firebaseinitprovider]:
+    Provider{4518bde com.vuclip.viu/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{51d38b6 com.vuclip.viu}
+  [com.vuclip.viu.aaidinitprovider]:
+    Provider{5615e60 com.vuclip.viu/com.huawei.hms.aaid.InitProvider}
+      applicationInfo=ApplicationInfo{77cc9b7 com.vuclip.viu}
+  [com.vuclip.viu.androidx-startup]:
+    Provider{5ee008c com.vuclip.viu/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{21d524 com.vuclip.viu}
+  [com.vuclip.viu.FacebookInitProvider]:
+    Provider{b0a61bf com.vuclip.viu/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{b30e88d com.vuclip.viu}
+  [com.vuclip.viu.mobileadsinitprovider]:
+    Provider{3941851 com.vuclip.viu/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{4bc2a42 com.vuclip.viu}
+  [com.vuclip.viu.updateSdk.fileProvider]:
+    Provider{f6687ea com.vuclip.viu/com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider}
+      applicationInfo=ApplicationInfo{a0a4a53 com.vuclip.viu}
+  [com.vuclip.viu.hms.device.validate.spoofprovider]:
+    Provider{8c09978 com.vuclip.viu/com.huawei.hms.device.provider.CheckHmsProvider}
+      applicationInfo=ApplicationInfo{8391f90 com.vuclip.viu}
+  [com.vuclip.viu.firebaseperfprovider]:
+    Provider{e40263 com.vuclip.viu/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{1508089 com.vuclip.viu}
+  [com.vuclip.viu.com.squareup.picasso]:
+    Provider{3769f19 com.vuclip.viu/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{966a88e com.vuclip.viu}
+  [com.vuclip.viu.AGCInitializeProvider]:
+    Provider{2c913d5 com.vuclip.viu/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+      applicationInfo=ApplicationInfo{3e538af com.vuclip.viu}
+  [androidx.lifecycle.ProcessLifecycleOwnerInitializer]:
+    Provider{50d5adb com.vuclip.viu/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{638a4bc com.vuclip.viu}
+  [com.vuclip.viu.huawei.push.provider]:
+    Provider{8287892 com.vuclip.viu/com.huawei.hms.support.api.push.PushProvider}
+      applicationInfo=ApplicationInfo{db79c45 com.vuclip.viu}
+  [com.vuclip.viu.hms.update.provider]:
+    Provider{89f3e1d com.vuclip.viu/com.huawei.hms.update.provider.UpdateProvider}
+      applicationInfo=ApplicationInfo{b28bf9a com.vuclip.viu}
+
+Key Set Manager:
+  [com.vuclip.viu]
+      Signing KeySets: 5780
+
+Packages:
+  Package [com.vuclip.viu] (5d6b0cb):
+    userId=10377
+    pkg=Package{e4950a8 com.vuclip.viu}
+    codePath=/data/app/~~9DEcccnxuEMRk0I7DMeNag==/com.vuclip.viu-5a1tLxRjVSEgbaHGHDxbnw==
+    resourcePath=/data/app/~~9DEcccnxuEMRk0I7DMeNag==/com.vuclip.viu-5a1tLxRjVSEgbaHGHDxbnw==
+    legacyNativeLibraryDir=/data/app/~~9DEcccnxuEMRk0I7DMeNag==/com.vuclip.viu-5a1tLxRjVSEgbaHGHDxbnw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=316 minSdk=21 targetSdk=31
+    minExtensionVersions=[]
+    versionName=1.1.14
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.hisilicon.android.hiRMService]
+    queriesIntents=[Intent { act=android.media.browse.MediaBrowserService }, Intent { act=com.apptouch.intent.action.update_hms }, Intent { act=com.huawei.appmarket.intent.action.AppDetail }, Intent { act=com.huawei.hms.core.aidlservice }, Intent { act=com.huawei.hms.core }]
+    dataDir=/data/user/0/com.vuclip.viu
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 15:22:42
+    lastUpdateTime=2022-11-30 15:22:44
+    packageSource=0
+    signatures=PackageSignatures{5bab7c1 version:3, signatures:[85bcdd46], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.vuclip.viu.permission.PROCESS_PUSH_MSG: prot=signature, INSTALLED
+      com.vuclip.viu.permission.PUSH_PROVIDER: prot=signature, INSTALLED
+      com.vuclip.viu.permission.PUSH_WRITE_PROVIDER: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.USE_CREDENTIALS
+      android.permission.INTERNET
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.VIBRATE
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.gms.permission.AD_ID
+      com.amazon.permission.media.session.voicecommandcontrol
+      com.google.android.c2dm.permission.RECEIVE
+      com.vuclip.viu.permission.PROCESS_PUSH_MSG
+      com.vuclip.viu.permission.PUSH_PROVIDER
+      com.android.vending.BILLING
+      android.permission.REQUEST_INSTALL_PACKAGES
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      com.vuclip.viu.permission.PUSH_PROVIDER: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      com.vuclip.viu.permission.PROCESS_PUSH_MSG: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SCHEDULE_EXACT_ALARM: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=65045 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:22:44
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.vuclip.viu
+    com.google.android.apps.diagnosticstool:
+      com.vuclip.viu
+    com.google.android.settings.intelligence:
+      com.vuclip.viu
+    com.google.android.apps.accessibility.voiceaccess:
+      com.vuclip.viu
+    com.truecaller:
+      com.vuclip.viu
+    com.dv.adm:
+      com.vuclip.viu
+    com.zappcues.gamingmode:
+      com.vuclip.viu
+    com.vuclip.viu:
+      [com.google.android.bluetooth.services,com.android.bluetooth]
+      com.google.android.googlequicksearchbox
+      com.google.android.youtube
+      com.google.android.apps.youtube.music
+      radiotime.player
+      com.clearchannel.iheartradio.controller
+    com.jio.myjio:
+      com.vuclip.viu
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.vuclip.viu]
+    path: /data/app/~~9DEcccnxuEMRk0I7DMeNag==/com.vuclip.viu-5a1tLxRjVSEgbaHGHDxbnw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:713264
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.vuclip.viu]
+     base.apk - 984

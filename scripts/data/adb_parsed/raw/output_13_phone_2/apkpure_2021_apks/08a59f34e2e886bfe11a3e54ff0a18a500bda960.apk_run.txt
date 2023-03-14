@@ -1,0 +1,206 @@
+Activity Resolver Table:
+  Schemes:
+      dailystrength:
+        a4fa50b com.anthonyng.workoutapp/.deeplinking.DeepLinkingActivity filter 9b4cfe8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dailystrength"
+      https:
+        a4fa50b com.anthonyng.workoutapp/.deeplinking.DeepLinkingActivity filter ec56601
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "dailystrength.app.link": -1
+          Authority: "dailystrength-alternate.app.link": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        967e685 com.anthonyng.workoutapp/.splash.SplashActivity filter 957dcda
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.android.vending.INSTALL_REFERRER:
+        dfb0294 com.anthonyng.workoutapp/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 121613d
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        9052d32 com.anthonyng.workoutapp/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 1a5aa83
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.anthonyng.workoutapp"
+      android.intent.action.BOOT_COMPLETED:
+        4e6eca6 com.anthonyng.workoutapp/.reminders.ReminderRebootReceiver filter d186e7
+          Action: "android.intent.action.BOOT_COMPLETED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        1cfb400 com.anthonyng.workoutapp/com.google.firebase.iid.FirebaseInstanceIdService filter 647d439
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.anthonyng.workoutapp:
+    ID: 6cb11ec6-c379-4ab4-b60c-d1de76ae8c90
+    Signatures: [07:D5:FD:0D:FD:1E:13:7F:42:B2:78:05:E8:63:0C:0E:D1:EB:A3:6F:04:BF:D1:16:F0:11:C5:43:C8:D4:B5:CB]
+    Domain verification state:
+      dailystrength.app.link: 1024
+      dailystrength-alternate.app.link: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          dailystrength.app.link
+          dailystrength-alternate.app.link
+
+Permissions:
+  Permission [com.anthonyng.workoutapp.permission.C2D_MESSAGE] (603faeb):
+    sourcePackage=com.anthonyng.workoutapp
+    uid=10252 gids=[] type=0 prot=signature
+    perm=PermissionInfo{51f85b2 com.anthonyng.workoutapp.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.anthonyng.workoutapp/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{2d45903 com.anthonyng.workoutapp/com.google.firebase.provider.FirebaseInitProvider}
+  com.anthonyng.workoutapp/android.support.v4.content.FileProvider:
+    Provider{2db0080 com.anthonyng.workoutapp/android.support.v4.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.anthonyng.workoutapp.firebaseinitprovider]:
+    Provider{2d45903 com.anthonyng.workoutapp/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{2e7a048 com.anthonyng.workoutapp}
+  [com.anthonyng.workoutapp.fileprovider]:
+    Provider{2db0080 com.anthonyng.workoutapp/android.support.v4.content.FileProvider}
+      applicationInfo=ApplicationInfo{f255ee1 com.anthonyng.workoutapp}
+
+Key Set Manager:
+  [com.anthonyng.workoutapp]
+      Signing KeySets: 5065
+
+Packages:
+  Package [com.anthonyng.workoutapp] (8d82406):
+    userId=10252
+    pkg=Package{f2fa4ac com.anthonyng.workoutapp}
+    codePath=/data/app/~~eeaFEuLj5lGERcJqV6x27g==/com.anthonyng.workoutapp-hvqALophH1K6CBOXc_19kA==
+    resourcePath=/data/app/~~eeaFEuLj5lGERcJqV6x27g==/com.anthonyng.workoutapp-hvqALophH1K6CBOXc_19kA==
+    legacyNativeLibraryDir=/data/app/~~eeaFEuLj5lGERcJqV6x27g==/com.anthonyng.workoutapp-hvqALophH1K6CBOXc_19kA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=51 minSdk=16 targetSdk=29
+    minExtensionVersions=[]
+    versionName=1.37.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.anthonyng.workoutapp
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 11:40:07
+    lastUpdateTime=2022-11-30 11:40:08
+    packageSource=0
+    signatures=PackageSignatures{47db575 version:3, signatures:[f24a44a3], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.anthonyng.workoutapp.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      com.anthonyng.workoutapp.permission.C2D_MESSAGE
+      com.android.vending.BILLING
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      com.anthonyng.workoutapp.permission.C2D_MESSAGE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=50226 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 11:40:08
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.anthonyng.workoutapp
+    com.google.android.apps.diagnosticstool:
+      com.anthonyng.workoutapp
+    com.google.android.settings.intelligence:
+      com.anthonyng.workoutapp
+    com.google.android.apps.accessibility.voiceaccess:
+      com.anthonyng.workoutapp
+  queryable via interaction:
+    User 0:
+      [android,com.android.keychain,com.android.settings,com.android.dynsystem,com.google.android.settings.future.biometrics.faceenroll,com.android.location.fused,com.google.SSRestartDetector,com.android.localtransport,com.android.inputdevices,com.android.providers.settings,com.android.wallpaperbackup,com.android.server.telecom,com.google.android.iwlan,com.android.qns]:
+        com.anthonyng.workoutapp
+      [com.google.android.gms,com.google.android.gsf]:
+        com.anthonyng.workoutapp
+      com.android.vending:
+        com.anthonyng.workoutapp
+  queryable via uses-library:
+
+Dexopt state:
+  [com.anthonyng.workoutapp]
+    path: /data/app/~~eeaFEuLj5lGERcJqV6x27g==/com.anthonyng.workoutapp-hvqALophH1K6CBOXc_19kA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:78498
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.anthonyng.workoutapp]
+     base.apk - 334

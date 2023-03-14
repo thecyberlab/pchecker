@@ -1,0 +1,234 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        a6ead51 io.lingvist.android/.registration.activity.ResetPasswordInputsActivity filter 794a9b6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "go.lingvist.com": -1
+          Path: "PatternMatcher{PREFIX: /resetpassword}"
+          AutoVerify=true
+        d9fcd8d io.lingvist.android/.base.activity.LingvistUriTargetActivity filter 9483753
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "lingvist.com": -1
+          Authority: "lingvist.com": -1
+          Path: "PatternMatcher{LITERAL: /go}"
+          Path: "PatternMatcher{PREFIX: /go/}"
+          AutoVerify=true
+        d9fcd8d io.lingvist.android/.base.activity.LingvistUriTargetActivity filter 1cd0890
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "learn.lingvist.com": -1
+          Authority: "learn.lingvist.com": -1
+          Path: "PatternMatcher{LITERAL: /go}"
+          Path: "PatternMatcher{PREFIX: /go/}"
+          AutoVerify=true
+      lingvist:
+        d9fcd8d io.lingvist.android/.base.activity.LingvistUriTargetActivity filter 5b9ab42
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "lingvist"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        ec5e6b7 io.lingvist.android/.hub.activity.LingvistActivity filter f192e24
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.google.android.gms.analytics.ANALYTICS_DISPATCH:
+        87e2145 io.lingvist.android/com.google.android.gms.analytics.AnalyticsReceiver filter c35609a
+          Action: "com.google.android.gms.analytics.ANALYTICS_DISPATCH"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        7ec33fd io.lingvist.android/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter a1768f2
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        c48b589 io.lingvist.android/com.appsflyer.MultipleInstallBroadcastReceiver filter 33b398e
+          Action: "com.android.vending.INSTALL_REFERRER"
+        d94f5af io.lingvist.android/com.google.android.gms.analytics.CampaignTrackingReceiver filter fa21dbc
+          Action: "com.android.vending.INSTALL_REFERRER"
+        7453dcb io.lingvist.android/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 75159a8
+          Action: "com.android.vending.INSTALL_REFERRER"
+        b1d9b43 io.lingvist.android/com.facebook.CampaignTrackingReceiver filter 9bbb5c0
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        867eba7 io.lingvist.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 8366854
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.leanplum.LeanplumPushFirebaseMessagingService:
+        6e48cc1 io.lingvist.android/com.leanplum.LeanplumPushReceiver filter 78ec66
+          Action: "com.leanplum.LeanplumPushFirebaseMessagingService"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        8cd12f9 io.lingvist.android/.base.service.LingvistFcmService filter af223e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        f4a89f io.lingvist.android/com.leanplum.LeanplumPushFirebaseMessagingService filter d866dec
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        842e5b5 io.lingvist.android/com.google.firebase.messaging.FirebaseMessagingService filter 577244a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  io.lingvist.android:
+    ID: 4da11204-9bce-4855-88e6-2cfe9df5f98f
+    Signatures: [62:EA:B3:38:67:01:06:B3:30:82:A2:DD:86:D9:3A:71:67:0C:13:0B:A8:02:4A:E4:56:DE:97:49:B1:37:90:B7]
+    Domain verification state:
+      go.lingvist.com: none
+      lingvist.com: none
+      learn.lingvist.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          go.lingvist.com
+          lingvist.com
+          learn.lingvist.com
+
+Registered ContentProviders:
+  io.lingvist.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{69d25a9 io.lingvist.android/com.google.firebase.provider.FirebaseInitProvider}
+  io.lingvist.android/com.facebook.internal.FacebookInitProvider:
+    Provider{c18b72e io.lingvist.android/com.facebook.internal.FacebookInitProvider}
+  io.lingvist.android/androidx.core.content.FileProvider:
+    Provider{9ea32cf io.lingvist.android/androidx.core.content.FileProvider}
+  io.lingvist.android/com.facebook.FacebookContentProvider:
+    Provider{f4ce45c io.lingvist.android/com.facebook.FacebookContentProvider}
+
+ContentProvider Authorities:
+  [com.facebook.app.FacebookContentProvider726931020757973]:
+    Provider{f4ce45c io.lingvist.android/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{5fd183a io.lingvist.android}
+  [io.lingvist.android.PS.fileProvider]:
+    Provider{9ea32cf io.lingvist.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{1012ceb io.lingvist.android}
+  [io.lingvist.android.firebaseinitprovider]:
+    Provider{69d25a9 io.lingvist.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{1f1ea48 io.lingvist.android}
+  [io.lingvist.android.FacebookInitProvider]:
+    Provider{c18b72e io.lingvist.android/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{512e0e1 io.lingvist.android}
+
+Key Set Manager:
+  [io.lingvist.android]
+      Signing KeySets: 4630
+
+Packages:
+  Package [io.lingvist.android] (443acc7):
+    userId=10337
+    pkg=Package{d7baa1d io.lingvist.android}
+    codePath=/data/app/~~GiaBF5q6GmaUL9rtl3tS7g==/io.lingvist.android-1IYBTbeEydr5OYRCqVJzRg==
+    resourcePath=/data/app/~~GiaBF5q6GmaUL9rtl3tS7g==/io.lingvist.android-1IYBTbeEydr5OYRCqVJzRg==
+    legacyNativeLibraryDir=/data/app/~~GiaBF5q6GmaUL9rtl3tS7g==/io.lingvist.android-1IYBTbeEydr5OYRCqVJzRg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1025 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2.43.5
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/io.lingvist.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 08:58:40
+    lastUpdateTime=2022-11-30 08:58:41
+    packageSource=0
+    signatures=PackageSignatures{444e63 version:2, signatures:[5ed99421], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.USE_CREDENTIALS
+      android.permission.RECORD_AUDIO
+      com.android.vending.BILLING
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=41808 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 08:58:41
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      io.lingvist.android
+    com.google.android.apps.diagnosticstool:
+      io.lingvist.android
+    com.google.android.settings.intelligence:
+      io.lingvist.android
+    com.google.android.apps.accessibility.voiceaccess:
+      io.lingvist.android
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [io.lingvist.android]
+    path: /data/app/~~GiaBF5q6GmaUL9rtl3tS7g==/io.lingvist.android-1IYBTbeEydr5OYRCqVJzRg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1341386
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [io.lingvist.android]
+     base.apk - 422

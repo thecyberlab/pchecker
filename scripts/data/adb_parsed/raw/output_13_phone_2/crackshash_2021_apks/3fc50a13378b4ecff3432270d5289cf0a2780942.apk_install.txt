@@ -1,0 +1,356 @@
+Activity Resolver Table:
+  Schemes:
+      genericidp:
+        dd561ec wifisecurity.ufovpn.android/com.google.firebase.auth.internal.GenericIdpActivity filter 38c9b5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        ca1384a wifisecurity.ufovpn.android/com.google.firebase.auth.internal.RecaptchaActivity filter 307b3bb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        79ff63e wifisecurity.ufovpn.android/ufovpn.free.unblock.proxy.vpn.home.ui.WelcomeActivity filter e16ec9f
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        79ff63e wifisecurity.ufovpn.android/ufovpn.free.unblock.proxy.vpn.home.ui.WelcomeActivity filter e16ec9f
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        90901ab wifisecurity.ufovpn.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c9a0008
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        5c28f16 wifisecurity.ufovpn.android/com.matrix.framework.receiver.StateReceiver filter 2a80284
+          Action: "android.intent.action.BATTERY_CHANGED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        af08a25 wifisecurity.ufovpn.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 2047fa
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.net.wifi.WIFI_STATE_CHANGED:
+        5c28f16 wifisecurity.ufovpn.android/com.matrix.framework.receiver.StateReceiver filter 8657a6d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.intent.action.ANY_DATA_STATE"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.STATE_CHANGE"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.BATTERY_CHANGED:
+        5c28f16 wifisecurity.ufovpn.android/com.matrix.framework.receiver.StateReceiver filter 2a80284
+          Action: "android.intent.action.BATTERY_CHANGED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.bluetooth.adapter.action.STATE_CHANGED:
+        5c28f16 wifisecurity.ufovpn.android/com.matrix.framework.receiver.StateReceiver filter bd086a2
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.MEDIA_MOUNTED:
+        5c28f16 wifisecurity.ufovpn.android/com.matrix.framework.receiver.StateReceiver filter c73d097
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MEDIA_MOUNTED"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        7c4a3a1 wifisecurity.ufovpn.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 81ae9c6
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        5c28f16 wifisecurity.ufovpn.android/com.matrix.framework.receiver.StateReceiver filter 8657a6d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.intent.action.ANY_DATA_STATE"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.STATE_CHANGE"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        bd40d87 wifisecurity.ufovpn.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 2d314b4
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        acb0d8 wifisecurity.ufovpn.android/com.ufovpn.connect.base.BootReceiver filter 6794c31
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.ANY_DATA_STATE:
+        5c28f16 wifisecurity.ufovpn.android/com.matrix.framework.receiver.StateReceiver filter 8657a6d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.intent.action.ANY_DATA_STATE"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.STATE_CHANGE"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        16c5069 wifisecurity.ufovpn.android/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 5d46aee
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        7c4a3a1 wifisecurity.ufovpn.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 81ae9c6
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        61a3b8f wifisecurity.ufovpn.android/com.facebook.CampaignTrackingReceiver filter 6eb1e1c
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.net.wifi.STATE_CHANGE:
+        5c28f16 wifisecurity.ufovpn.android/com.matrix.framework.receiver.StateReceiver filter 8657a6d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.intent.action.ANY_DATA_STATE"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.STATE_CHANGE"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.c2dm.intent.RECEIVE:
+        41adf33 wifisecurity.ufovpn.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 3e4c2f0
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        90901ab wifisecurity.ufovpn.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c9a0008
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        b66d8dd wifisecurity.ufovpn.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8cbdc52
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        b66d8dd wifisecurity.ufovpn.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8cbdc52
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        acb0d8 wifisecurity.ufovpn.android/com.ufovpn.connect.base.BootReceiver filter 6794c31
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        5c28f16 wifisecurity.ufovpn.android/com.matrix.framework.receiver.StateReceiver filter c73d097
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MEDIA_MOUNTED"
+          Category: "android.intent.category.LAUNCHER"
+        b66d8dd wifisecurity.ufovpn.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8cbdc52
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.USER_PRESENT:
+        5c28f16 wifisecurity.ufovpn.android/com.matrix.framework.receiver.StateReceiver filter 8657a6d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.intent.action.ANY_DATA_STATE"
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.wifi.STATE_CHANGE"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.ACTION_POWER_CONNECTED:
+        5c28f16 wifisecurity.ufovpn.android/com.matrix.framework.receiver.StateReceiver filter 2a80284
+          Action: "android.intent.action.BATTERY_CHANGED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        af08a25 wifisecurity.ufovpn.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 2047fa
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED:
+        5c28f16 wifisecurity.ufovpn.android/com.matrix.framework.receiver.StateReceiver filter bd086a2
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.MY_PACKAGE_REPLACED:
+        acb0d8 wifisecurity.ufovpn.android/com.ufovpn.connect.base.BootReceiver filter 6794c31
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        559fb23 wifisecurity.ufovpn.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 1e6c820
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.net.VpnService:
+        1c7267f wifisecurity.ufovpn.android/com.ufovpn.connect.bg.VpnService filter 4c0464c permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+      com.google.firebase.MESSAGING_EVENT:
+        8fd25d9 wifisecurity.ufovpn.android/ufovpn.free.unblock.proxy.vpn.message.FCMessagingService filter 4276b9e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        9b1ab9b wifisecurity.ufovpn.android/com.google.firebase.messaging.FirebaseMessagingService filter 7d17b38
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.auth.api.gms.service.START:
+        6114695 wifisecurity.ufovpn.android/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter 51aa3aa
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+
+Registered ContentProviders:
+  wifisecurity.ufovpn.android/androidx.work.impl.WorkManagerInitializer:
+    Provider{232ed95 wifisecurity.ufovpn.android/androidx.work.impl.WorkManagerInitializer}
+  wifisecurity.ufovpn.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{a50beaa wifisecurity.ufovpn.android/com.google.firebase.provider.FirebaseInitProvider}
+  wifisecurity.ufovpn.android/com.facebook.internal.FacebookInitProvider:
+    Provider{ff52a9b wifisecurity.ufovpn.android/com.facebook.internal.FacebookInitProvider}
+  wifisecurity.ufovpn.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{d408e38 wifisecurity.ufovpn.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  wifisecurity.ufovpn.android/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{721ce11 wifisecurity.ufovpn.android/com.google.android.gms.ads.MobileAdsInitProvider}
+  wifisecurity.ufovpn.android/androidx.core.content.FileProvider:
+    Provider{8541b76 wifisecurity.ufovpn.android/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [wifisecurity.ufovpn.android.lifecycle-process]:
+    Provider{d408e38 wifisecurity.ufovpn.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{f71d577 wifisecurity.ufovpn.android}
+  [wifisecurity.ufovpn.android.firebaseinitprovider]:
+    Provider{a50beaa wifisecurity.ufovpn.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{38c55e4 wifisecurity.ufovpn.android}
+  [wifisecurity.ufovpn.android.FacebookInitProvider]:
+    Provider{ff52a9b wifisecurity.ufovpn.android/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{7443a4d wifisecurity.ufovpn.android}
+  [wifisecurity.ufovpn.android.fileProvider]:
+    Provider{8541b76 wifisecurity.ufovpn.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{65e7902 wifisecurity.ufovpn.android}
+  [wifisecurity.ufovpn.android.mobileadsinitprovider]:
+    Provider{721ce11 wifisecurity.ufovpn.android/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{8a45213 wifisecurity.ufovpn.android}
+  [wifisecurity.ufovpn.android.workmanager-init]:
+    Provider{232ed95 wifisecurity.ufovpn.android/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{caaec50 wifisecurity.ufovpn.android}
+
+Key Set Manager:
+  [wifisecurity.ufovpn.android]
+      Signing KeySets: 88
+
+Packages:
+  Package [wifisecurity.ufovpn.android] (ea72e49):
+    userId=10411
+    pkg=Package{2bf234e wifisecurity.ufovpn.android}
+    codePath=/data/app/~~93EkGItdc0GELQiXiCDmWA==/wifisecurity.ufovpn.android-VguxWR1fvSPg6nst8erPPg==
+    resourcePath=/data/app/~~93EkGItdc0GELQiXiCDmWA==/wifisecurity.ufovpn.android-VguxWR1fvSPg6nst8erPPg==
+    legacyNativeLibraryDir=/data/app/~~93EkGItdc0GELQiXiCDmWA==/wifisecurity.ufovpn.android-VguxWR1fvSPg6nst8erPPg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=204090 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2.4.9
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/wifisecurity.ufovpn.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 16:43:34
+    lastUpdateTime=2022-11-30 16:43:34
+    packageSource=0
+    signatures=PackageSignatures{477fc6f version:3, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      com.android.vending.BILLING
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.INTERNET
+      android.permission.FOREGROUND_SERVICE
+      android.permission.VIBRATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=74155 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 16:43:34
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      wifisecurity.ufovpn.android
+    com.google.android.apps.diagnosticstool:
+      wifisecurity.ufovpn.android
+    com.google.android.settings.intelligence:
+      wifisecurity.ufovpn.android
+    com.google.android.youtube:
+      wifisecurity.ufovpn.android
+    com.google.android.contacts:
+      wifisecurity.ufovpn.android
+    com.google.android.apps.accessibility.voiceaccess:
+      wifisecurity.ufovpn.android
+    com.google.android.gm:
+      wifisecurity.ufovpn.android
+    com.truecaller:
+      wifisecurity.ufovpn.android
+    com.dv.adm:
+      wifisecurity.ufovpn.android
+    com.zappcues.gamingmode:
+      wifisecurity.ufovpn.android
+    com.jio.myjio:
+      wifisecurity.ufovpn.android
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [wifisecurity.ufovpn.android]
+    path: /data/app/~~93EkGItdc0GELQiXiCDmWA==/wifisecurity.ufovpn.android-VguxWR1fvSPg6nst8erPPg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:661075
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [wifisecurity.ufovpn.android]
+     base.apk - 536

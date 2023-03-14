@@ -1,0 +1,337 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        39fba78 iflix.play/my.com.iflix.mobile.ui.SplashActivity filter 80806da
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "iflix.com": -1
+          Authority: "m.iflix.com": -1
+          Authority: "www.iflix.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{PREFIX: /title}"
+          Path: "PatternMatcher{PREFIX: /browse/genres}"
+          Path: "PatternMatcher{PREFIX: /browse/studios}"
+          Path: "PatternMatcher{PREFIX: /collections}"
+          Path: "PatternMatcher{PREFIX: /search}"
+          Path: "PatternMatcher{PREFIX: /live}"
+          Path: "PatternMatcher{PREFIX: /kids}"
+          Path: "PatternMatcher{PREFIX: /play}"
+          AutoVerify=true
+        39fba78 iflix.play/my.com.iflix.mobile.ui.SplashActivity filter 41d870b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "iflix"
+          Authority: "piay.iflix.com": -1
+          Authority: "play.iflix.com": -1
+      https:
+        39fba78 iflix.play/my.com.iflix.mobile.ui.SplashActivity filter 80806da
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "iflix.com": -1
+          Authority: "m.iflix.com": -1
+          Authority: "www.iflix.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{PREFIX: /title}"
+          Path: "PatternMatcher{PREFIX: /browse/genres}"
+          Path: "PatternMatcher{PREFIX: /browse/studios}"
+          Path: "PatternMatcher{PREFIX: /collections}"
+          Path: "PatternMatcher{PREFIX: /search}"
+          Path: "PatternMatcher{PREFIX: /live}"
+          Path: "PatternMatcher{PREFIX: /kids}"
+          Path: "PatternMatcher{PREFIX: /play}"
+          AutoVerify=true
+        39fba78 iflix.play/my.com.iflix.mobile.ui.SplashActivity filter 41d870b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "iflix"
+          Authority: "piay.iflix.com": -1
+          Authority: "play.iflix.com": -1
+      iflix:
+        39fba78 iflix.play/my.com.iflix.mobile.ui.SplashActivity filter 41d870b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "iflix"
+          Authority: "piay.iflix.com": -1
+          Authority: "play.iflix.com": -1
+      fbconnect:
+        6a32551 iflix.play/com.facebook.CustomTabActivity filter 69b88e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.iflix.play": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        39fba78 iflix.play/my.com.iflix.mobile.ui.SplashActivity filter 2f449fc
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        39fba78 iflix.play/my.com.iflix.mobile.ui.SplashActivity filter 5767885
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+        67bc1b6 iflix.play/my.com.iflix.core.ui.cast.CastControlsActivity filter d3a09e8
+          Action: "android.intent.action.MAIN"
+      com.google.android.gms.actions.SEARCH_ACTION:
+        7b1eb7 iflix.play/my.core.iflix.search.v2.SearchActivity filter f6fb6a6
+          Action: "com.google.android.gms.actions.SEARCH_ACTION"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        7b1eb7 iflix.play/my.core.iflix.search.v2.SearchActivity filter 22b1801
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        520624 iflix.play/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 89f8cf5
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        4a3c58d iflix.play/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter cdc2a2c
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        7fa4342 iflix.play/my.com.iflix.downloads.BootCompletedReceiver filter 5822e00
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      com.iflix.event.DOWNLOAD_EXPIRING_ACTION:
+        d18ef53 iflix.play/my.com.iflix.downloads.DownloadExpirationReceiver filter 70dcc83
+          Action: "com.iflix.event.DOWNLOAD_EXPIRING_ACTION"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        9bb6090 iflix.play/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 35fda8a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        b942d89 iflix.play/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 52248fb
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        4ed518e iflix.play/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter bd6addf
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        9bb6090 iflix.play/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 35fda8a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        9b92daf iflix.play/my.com.iflix.mobile.ReferrerReceiver filter a30333d
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.intent.action.LOCALE_CHANGED:
+        41df5bc iflix.play/my.com.iflix.core.utils.DeviceLocaleChangeReceiver filter d99dc94
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        d091945 iflix.play/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 1ecf47e
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        520624 iflix.play/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 89f8cf5
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        2f0f89a iflix.play/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ef7bd18
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        2f0f89a iflix.play/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ef7bd18
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        7fa4342 iflix.play/my.com.iflix.downloads.BootCompletedReceiver filter 5822e00
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+        2f0f89a iflix.play/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ef7bd18
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        4a3c58d iflix.play/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter cdc2a2c
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.leanplum.LeanplumPushFirebaseMessagingService:
+        d74f5cb iflix.play/com.leanplum.LeanplumPushReceiver filter 671c639
+          Action: "com.leanplum.LeanplumPushFirebaseMessagingService"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        3b2b1a8 iflix.play/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 8691556
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        52704c1 iflix.play/my.com.iflix.home.UpgradeReceiver filter 4509732
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        3560466 iflix.play/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 3a90371
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.exoplayer.downloadService.action.RESTART:
+        ddb23a7 iflix.play/my.com.iflix.downloads.exoplayer.ExoDownloadService filter a3792c4
+          Action: "com.google.android.exoplayer.downloadService.action.RESTART"
+          Category: "android.intent.category.DEFAULT"
+      com.google.firebase.MESSAGING_EVENT:
+        5554054 iflix.play/my.com.iflix.mobile.push.FirebaseService filter fc279d7
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          Category: "iflix.play"
+        3de2bfd iflix.play/com.leanplum.LeanplumPushFirebaseMessagingService filter ff965ad
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        9ae00f2 iflix.play/com.google.firebase.messaging.FirebaseMessagingService filter af930e2
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+
+Permissions:
+  Permission [iflix.play.permission.C2D_MESSAGE] (8c5343):
+    sourcePackage=iflix.play
+    uid=10154 gids=null type=0 prot=signature
+    perm=Permission{5f00dc0 iflix.play.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{de68af9 iflix.play/10154}
+
+Registered ContentProviders:
+  iflix.play/my.com.iflix.core.ui.title.PosterImageProvider:
+    Provider{f173a3e iflix.play/my.com.iflix.core.ui.title.PosterImageProvider}
+  iflix.play/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{a96e09f iflix.play/com.google.android.gms.ads.MobileAdsInitProvider}
+  iflix.play/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{4a845ec iflix.play/com.google.firebase.provider.FirebaseInitProvider}
+  iflix.play/com.facebook.internal.FacebookInitProvider:
+    Provider{17bddb5 iflix.play/com.facebook.internal.FacebookInitProvider}
+  iflix.play/my.core.iflix.search.provider.VideoSearchProvider:
+    Provider{e48bc4a iflix.play/my.core.iflix.search.provider.VideoSearchProvider}
+
+ContentProvider Authorities:
+  [iflix.play.firebaseinitprovider]:
+    Provider{4a845ec iflix.play/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{992e7bb iflix.play}
+  [iflix.play.FacebookInitProvider]:
+    Provider{17bddb5 iflix.play/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{992e7bb iflix.play}
+  [iflix.play.mobileadsinitprovider]:
+    Provider{a96e09f iflix.play/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{992e7bb iflix.play}
+  [iflix.play.provider]:
+    Provider{f173a3e iflix.play/my.com.iflix.core.ui.title.PosterImageProvider}
+      applicationInfo=ApplicationInfo{992e7bb iflix.play}
+  [iflix.play.search.provider]:
+    Provider{e48bc4a iflix.play/my.core.iflix.search.provider.VideoSearchProvider}
+      applicationInfo=ApplicationInfo{992e7bb iflix.play}
+
+Key Set Manager:
+  [iflix.play]
+      Signing KeySets: 209
+
+Packages:
+  Package [iflix.play] (de68af9):
+    userId=10154
+    pkg=Package{5df2aef iflix.play}
+    codePath=/data/app/iflix.play-3b1zyfXbmQISGpoZfE3LEQ==
+    resourcePath=/data/app/iflix.play-3b1zyfXbmQISGpoZfE3LEQ==
+    legacyNativeLibraryDir=/data/app/iflix.play-3b1zyfXbmQISGpoZfE3LEQ==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=603540016 minSdk=18 targetSdk=29
+    versionName=3.52.0-20016
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{992e7bb iflix.play}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/iflix.play
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 07:49:08
+    firstInstallTime=2021-03-06 07:49:08
+    lastUpdateTime=2021-03-06 07:49:08
+    signatures=PackageSignatures{bc9d4d8 version:3, signatures:[78e92c28], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    declared permissions:
+      iflix.play.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      com.android.vending.BILLING
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      android.permission.VIBRATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      iflix.play.permission.C2D_MESSAGE
+      android.permission.ACCESS_FINE_LOCATION
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.ACCESS_COARSE_LOCATION
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      iflix.play.permission.C2D_MESSAGE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=7460 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=29
+  User 0:
+    seq=6, package=com.google.android.gms
+    seq=7, package=com.ultimateguitar.tabs
+    seq=9, package=com.anddoes.launcher
+    seq=11, package=tv.twitch.android.app
+    seq=13, package=com.ludo.king
+    seq=15, package=net.zedge.android
+    seq=17, package=com.shazam.android
+    seq=19, package=com.whatsweb.app
+    seq=21, package=com.yahoo.mobile.client.android.finance
+    seq=23, package=com.yahoo.mobile.client.android.mail
+    seq=25, package=de.resolution.yf_android
+    seq=27, package=com.ninegag.android.app
+    seq=28, package=iflix.play
+
+
+Dexopt state:
+  [iflix.play]
+    path: /data/app/iflix.play-3b1zyfXbmQISGpoZfE3LEQ==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [iflix.play]
+     base.apk - 13109
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

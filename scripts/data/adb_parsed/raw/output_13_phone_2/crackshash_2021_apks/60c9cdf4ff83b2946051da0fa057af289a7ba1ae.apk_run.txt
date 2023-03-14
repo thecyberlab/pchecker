@@ -1,0 +1,259 @@
+Activity Resolver Table:
+  Schemes:
+      fbconnect:
+        ada0e71 com.vpn.deltavpn/com.facebook.CustomTabActivity filter ba4c456
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.vpn.deltavpn": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        2d87139 com.vpn.deltavpn/com.vpn.playvpn.SplashActivity filter 3bdc37e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        ad0d0df com.vpn.deltavpn/de.blinkt.openvpn.api.GrantPermissionsActivity filter 607112c
+          Action: "android.intent.action.MAIN"
+        c45e7f5 com.vpn.deltavpn/de.blinkt.openvpn.api.ConfirmDialog filter 2ee998a
+          Action: "android.intent.action.MAIN"
+        d1b9bfb com.vpn.deltavpn/de.blinkt.openvpn.LaunchVPN filter d6a1418
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        c5b1aa9 com.vpn.deltavpn/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter ca0082e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        73b8f73 com.vpn.deltavpn/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 34e30
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        435afcf com.vpn.deltavpn/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter f871d5c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        8a1b865 com.vpn.deltavpn/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 628793a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        b020ad com.vpn.deltavpn/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 7c0cfe2
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        435afcf com.vpn.deltavpn/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter f871d5c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        c5b1aa9 com.vpn.deltavpn/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter ca0082e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        10779eb com.vpn.deltavpn/androidx.work.impl.background.systemalarm.RescheduleReceiver filter e16b348
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        10779eb com.vpn.deltavpn/androidx.work.impl.background.systemalarm.RescheduleReceiver filter e16b348
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        97dfcd7 com.vpn.deltavpn/de.blinkt.openvpn.OnBootReceiver filter 2f859c4
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        10779eb com.vpn.deltavpn/androidx.work.impl.background.systemalarm.RescheduleReceiver filter e16b348
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        73b8f73 com.vpn.deltavpn/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 34e30
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        97dfcd7 com.vpn.deltavpn/de.blinkt.openvpn.OnBootReceiver filter 2f859c4
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        bfa75e1 com.vpn.deltavpn/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 694ef06
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        3c78f1d com.vpn.deltavpn/de.blinkt.openvpn.OpenVPNTileService filter 700f592 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.net.VpnService:
+        2e1c9c7 com.vpn.deltavpn/de.blinkt.openvpn.core.OpenVPNService filter c87bbf4 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.vpn.deltavpn/androidx.work.impl.WorkManagerInitializer:
+    Provider{89856b3 com.vpn.deltavpn/androidx.work.impl.WorkManagerInitializer}
+  com.vpn.deltavpn/com.facebook.internal.FacebookInitProvider:
+    Provider{4b9a470 com.vpn.deltavpn/com.facebook.internal.FacebookInitProvider}
+  com.vpn.deltavpn/de.blinkt.openvpn.FileProvider:
+    Provider{1c553e9 com.vpn.deltavpn/de.blinkt.openvpn.FileProvider}
+  com.vpn.deltavpn/androidx.startup.InitializationProvider:
+    Provider{fcbe86e com.vpn.deltavpn/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.vpn.deltavpn.androidx-startup]:
+    Provider{fcbe86e com.vpn.deltavpn/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{9f56f4c com.vpn.deltavpn}
+  [com.deltavpn.FileProvider]:
+    Provider{1c553e9 com.vpn.deltavpn/de.blinkt.openvpn.FileProvider}
+      applicationInfo=ApplicationInfo{631bb95 com.vpn.deltavpn}
+  [com.vpn.deltavpn.FacebookInitProvider]:
+    Provider{4b9a470 com.vpn.deltavpn/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{49274aa com.vpn.deltavpn}
+  [com.vpn.deltavpn.workmanager-init]:
+    Provider{89856b3 com.vpn.deltavpn/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{763a89b com.vpn.deltavpn}
+
+Key Set Manager:
+  [com.vpn.deltavpn]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.vpn.deltavpn] (5b03438):
+    userId=10410
+    pkg=Package{3f99188 com.vpn.deltavpn}
+    codePath=/data/app/~~4orywFdKCQg6Ennv3MqZ1g==/com.vpn.deltavpn-VH4ZiyTwF1O4kPTk3yeN4Q==
+    resourcePath=/data/app/~~4orywFdKCQg6Ennv3MqZ1g==/com.vpn.deltavpn-VH4ZiyTwF1O4kPTk3yeN4Q==
+    legacyNativeLibraryDir=/data/app/~~4orywFdKCQg6Ennv3MqZ1g==/com.vpn.deltavpn-VH4ZiyTwF1O4kPTk3yeN4Q==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=88 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.7
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.vpn.deltavpn
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 17:26:36
+    lastUpdateTime=2022-11-30 17:26:37
+    packageSource=0
+    signatures=PackageSignatures{ed49746 version:3, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.VIBRATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.android.vending.BILLING
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=75152 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 17:26:37
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.vpn.deltavpn
+    com.google.android.apps.diagnosticstool:
+      com.vpn.deltavpn
+    com.google.android.settings.intelligence:
+      com.vpn.deltavpn
+    com.google.android.apps.accessibility.voiceaccess:
+      com.vpn.deltavpn
+    com.truecaller:
+      com.vpn.deltavpn
+    com.dv.adm:
+      com.vpn.deltavpn
+    com.zappcues.gamingmode:
+      com.vpn.deltavpn
+    com.vpn.deltavpn:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      com.dv.adm
+      com.utorrent.client.pro
+    com.jio.myjio:
+      com.vpn.deltavpn
+  queryable via interaction:
+    User 0:
+      [com.android.keychain,com.android.location.fused,com.android.qns,com.android.providers.settings,com.google.android.settings.future.biometrics.faceenroll,com.android.localtransport,com.google.android.iwlan,com.android.server.telecom,com.android.inputdevices,com.android.settings,com.android.wallpaperbackup,android,com.android.dynsystem,com.google.SSRestartDetector]:
+        com.vpn.deltavpn
+      [com.google.android.gsf,com.google.android.gms]:
+        com.vpn.deltavpn
+      com.android.vending:
+        com.vpn.deltavpn
+  queryable via uses-library:
+
+Dexopt state:
+  [com.vpn.deltavpn]
+    path: /data/app/~~4orywFdKCQg6Ennv3MqZ1g==/com.vpn.deltavpn-VH4ZiyTwF1O4kPTk3yeN4Q==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1285753
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.vpn.deltavpn]
+     base.apk - 745

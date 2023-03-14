@@ -1,0 +1,249 @@
+Activity Resolver Table:
+  Schemes:
+      vhxbouncepatrol:
+        836d363 com.bouncepatrol/tv.vhx.LauncherActivity filter 8285819
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "vhxbouncepatrol"
+      com.bouncepatrol:
+        2c79cea com.bouncepatrol/tv.vhx.util.ui.WebViewActivity filter 7c94bdb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "com.bouncepatrol"
+      fbconnect:
+        3b24224 com.bouncepatrol/com.facebook.CustomTabActivity filter ee5518d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.bouncepatrol": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        836d363 com.bouncepatrol/tv.vhx.LauncherActivity filter 5525b60
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        c343678 com.bouncepatrol/tv.vhx.tv.home.TvHomeActivity filter 3a3f151
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      android.intent.action.SEARCH:
+        5b50de com.bouncepatrol/tv.vhx.tablet.HomeTabletActivity filter 33942bf
+          Action: "android.intent.action.SEARCH"
+        71cd8c com.bouncepatrol/tv.vhx.home.HomeActivity filter 35d5cd5
+          Action: "android.intent.action.SEARCH"
+        5fa9db6 com.bouncepatrol/tv.vhx.tv.home.search.GlobalSearchSelectActivity filter 886cab7
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      DownloadNotificationManager.RESUME_DOWNLOAD:
+        8e35c90 com.bouncepatrol/tv.vhx.util.download.DownloadNotificationClickReceiver filter 6627989
+          Action: "DownloadNotificationManager.CANCEL"
+          Action: "DownloadNotificationManager.PAUSE_DOWNLOAD"
+          Action: "DownloadNotificationManager.RESUME_DOWNLOAD"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        779149a com.bouncepatrol/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter bf0e1cb
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      DownloadNotificationManager.PAUSE_DOWNLOAD:
+        8e35c90 com.bouncepatrol/tv.vhx.util.download.DownloadNotificationClickReceiver filter 6627989
+          Action: "DownloadNotificationManager.CANCEL"
+          Action: "DownloadNotificationManager.PAUSE_DOWNLOAD"
+          Action: "DownloadNotificationManager.RESUME_DOWNLOAD"
+      com.amazon.inapp.purchasing.NOTIFY:
+        68adf42 com.bouncepatrol/com.amazon.device.iap.ResponseReceiver filter 8335b53
+          Action: "com.amazon.inapp.purchasing.NOTIFY"
+      com.google.android.c2dm.intent.RECEIVE:
+        3c9b1bc com.bouncepatrol/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 4702545
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      zendesk.support:
+        1ebad8e com.bouncepatrol/zendesk.support.DeepLinkingBroadcastReceiver filter a0e59af
+          Action: "zendesk.support"
+      DownloadNotificationManager.CANCEL:
+        8e35c90 com.bouncepatrol/tv.vhx.util.download.DownloadNotificationClickReceiver filter 6627989
+          Action: "DownloadNotificationManager.CANCEL"
+          Action: "DownloadNotificationManager.PAUSE_DOWNLOAD"
+          Action: "DownloadNotificationManager.RESUME_DOWNLOAD"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        85e2da8 com.bouncepatrol/tv.vhx.firebase.VHXFirebaseMessagingService filter 9f2d0c1
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        e43e066 com.bouncepatrol/com.google.firebase.messaging.FirebaseMessagingService filter 629cfa7
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+
+Permissions:
+  Permission [com.bouncepatrol.SYSTEM_ALERT_WINDOW] (b9195e2):
+    sourcePackage=com.bouncepatrol
+    uid=10260 gids=[] type=0 prot=signature
+    perm=PermissionInfo{b6ad12a com.bouncepatrol.SYSTEM_ALERT_WINDOW}
+
+Registered ContentProviders:
+  com.bouncepatrol/io.sentry.android.core.SentryInitProvider:
+    Provider{8b20b1b com.bouncepatrol/io.sentry.android.core.SentryInitProvider}
+  com.bouncepatrol/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{51324b8 com.bouncepatrol/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.bouncepatrol/zendesk.support.SupportSdkStartupProvider:
+    Provider{ca6e291 com.bouncepatrol/zendesk.support.SupportSdkStartupProvider}
+  com.bouncepatrol/tv.vhx.util.VideoContentProvider:
+    Provider{93cd5f6 com.bouncepatrol/tv.vhx.util.VideoContentProvider}
+  com.bouncepatrol/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{a5c3df7 com.bouncepatrol/com.google.firebase.provider.FirebaseInitProvider}
+  com.bouncepatrol/com.facebook.internal.FacebookInitProvider:
+    Provider{831d464 com.bouncepatrol/com.facebook.internal.FacebookInitProvider}
+  com.bouncepatrol/zendesk.belvedere.BelvedereFileProvider:
+    Provider{54616cd com.bouncepatrol/zendesk.belvedere.BelvedereFileProvider}
+
+ContentProvider Authorities:
+  [com.bouncepatrol.zendesk.support.SupportSdkStartupProvider]:
+    Provider{ca6e291 com.bouncepatrol/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{773dd73 com.bouncepatrol}
+  [com.bouncepatrol.SentryInitProvider]:
+    Provider{8b20b1b com.bouncepatrol/io.sentry.android.core.SentryInitProvider}
+      applicationInfo=ApplicationInfo{3c08430 com.bouncepatrol}
+  [com.bouncepatrol.lifecycle-process]:
+    Provider{51324b8 com.bouncepatrol/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{e5f18a9 com.bouncepatrol}
+  [com.bouncepatrol.firebaseinitprovider]:
+    Provider{a5c3df7 com.bouncepatrol/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{3b72e2e com.bouncepatrol}
+  [com.bouncepatrol.FacebookInitProvider]:
+    Provider{831d464 com.bouncepatrol/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{aa4ddcf com.bouncepatrol}
+  [com.bouncepatrol.provider]:
+    Provider{93cd5f6 com.bouncepatrol/tv.vhx.util.VideoContentProvider}
+      applicationInfo=ApplicationInfo{e1b35c com.bouncepatrol}
+  [com.bouncepatrol.belvedere2.attachments]:
+    Provider{54616cd com.bouncepatrol/zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{9e79665 com.bouncepatrol}
+
+Key Set Manager:
+  [com.bouncepatrol]
+      Signing KeySets: 5011
+
+Packages:
+  Package [com.bouncepatrol] (e8bff3a):
+    userId=10260
+    pkg=Package{671d8da com.bouncepatrol}
+    codePath=/data/app/~~zL76t7ObFCpMQfXK37-kzA==/com.bouncepatrol-SkvB5W-lhP7yUSTZ0CgWZA==
+    resourcePath=/data/app/~~zL76t7ObFCpMQfXK37-kzA==/com.bouncepatrol-SkvB5W-lhP7yUSTZ0CgWZA==
+    legacyNativeLibraryDir=/data/app/~~zL76t7ObFCpMQfXK37-kzA==/com.bouncepatrol-SkvB5W-lhP7yUSTZ0CgWZA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=11208 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=6.000.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.bouncepatrol
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 11:31:19
+    lastUpdateTime=2022-11-30 11:31:21
+    packageSource=0
+    signatures=PackageSignatures{127f10b version:3, signatures:[ad562fa9], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.bouncepatrol.SYSTEM_ALERT_WINDOW: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      com.android.vending.BILLING
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      android.permission.READ_EXTERNAL_STORAGE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=51530 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 11:31:21
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.bouncepatrol
+    com.google.android.apps.diagnosticstool:
+      com.bouncepatrol
+    com.google.android.settings.intelligence:
+      com.bouncepatrol
+    com.google.android.GoogleCamera:
+      com.bouncepatrol
+    com.google.android.apps.accessibility.voiceaccess:
+      com.bouncepatrol
+  queryable via interaction:
+    User 0:
+      [com.android.inputdevices,com.google.SSRestartDetector,com.android.providers.settings,com.android.location.fused,com.google.android.settings.future.biometrics.faceenroll,com.android.localtransport,com.android.settings,com.android.keychain,com.android.qns,com.google.android.iwlan,com.android.wallpaperbackup,android,com.android.server.telecom,com.android.dynsystem]:
+        com.bouncepatrol
+      [com.google.android.gsf,com.google.android.gms]:
+        com.bouncepatrol
+  queryable via uses-library:
+
+Dexopt state:
+  [com.bouncepatrol]
+    path: /data/app/~~zL76t7ObFCpMQfXK37-kzA==/com.bouncepatrol-SkvB5W-lhP7yUSTZ0CgWZA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:115581
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.bouncepatrol]
+     base.apk - 854

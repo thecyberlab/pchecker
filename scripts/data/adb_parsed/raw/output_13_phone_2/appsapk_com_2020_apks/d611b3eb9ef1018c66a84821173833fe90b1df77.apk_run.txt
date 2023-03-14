@@ -1,0 +1,518 @@
+Activity Resolver Table:
+  Schemes:
+      noom:
+        e29d70b com.wsl.noom/.NoomLaunchActivity filter 957e801
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "noom"
+      https:
+        e29d70b com.wsl.noom/.NoomLaunchActivity filter 4e446a6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "noomcoach.app.link": -1
+          Authority: "noomcoach-alternate.app.link": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        e29d70b com.wsl.noom/.NoomLaunchActivity filter 4d819e8
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+        d1cd8e7 com.wsl.noom/com.noom.wlc.ui.HomeActivity filter 908ec94
+          Action: "android.intent.action.MAIN"
+
+Receiver Resolver Table:
+  Schemes:
+      noom:
+        5452c73 com.wsl.noom/.trainer.notification.MedicationRefillNotifier filter 5f12730
+          Action: "com.wsl.noom.trainer.notification.MEDICATION_REFILL_NOTIFICATION"
+          Scheme: "noom"
+      cardiotrainer:
+        c689639 com.wsl.noom/com.wsl.CardioTrainer.weightloss.reminders.SystemAlarmReceiver filter f63847e
+          Action: "com.wsl.CardioTrainer.weightloss.reminders.REMINDER_ALERT"
+          Scheme: "cardiotrainer"
+          Path: "PatternMatcher{GLOB: *}"
+
+  Non-Data Actions:
+      com.noom.wlc.curriculum.CURRICULUM_START_REMINDER:
+        728d6c7 com.wsl.noom/com.noom.wlc.curriculum.CurriculumReminderManager filter 2be44f4
+          Action: "com.noom.wlc.curriculum.CURRICULUM_START_REMINDER"
+      android.intent.action.BATTERY_OKAY:
+        f6a8245 com.wsl.noom/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter a68ad9a
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        907b6eb com.wsl.noom/com.wsl.activitymonitor.PhoneStateReceiver filter 6c6ac48
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+        c682eaf com.wsl.noom/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter ef62bc
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.noom.wlc.content.NEW_CONTENT_REMINDER:
+        cbde41d com.wsl.noom/com.noom.wlc.content.ContentReminderManager filter 3c92692
+          Action: "com.noom.wlc.content.NEW_CONTENT_REMINDER"
+      com.noom.android.datasync.DELAYED_DATA_SYNC:
+        f335cf5 com.wsl.noom/com.noom.android.datasync.DelayedDataSyncScheduler filter 9af6a8a
+          Action: "com.noom.android.datasync.DELAYED_DATA_SYNC"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        29306cb com.wsl.noom/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter adeea8
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        6b5fdc1 com.wsl.noom/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 3140966
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.wsl.noom.noomwalk.PERIODIC_ALERT:
+        566d65 com.wsl.noom/com.wsl.activitymonitor.PeriodicAlarmReceiver filter b3f8a3a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.wsl.noom.noomwalk.PERIODIC_ALERT"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        9810689 com.wsl.noom/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 2e3b68e
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.noom.walk.hammerhead.PERIODIC_ALARM:
+        f43d7bf com.wsl.noom/com.noom.walk.hammerhead.HardwarePedometerKeepAliveManager filter 8593e8c
+          Action: "com.noom.walk.hammerhead.PERIODIC_ALARM"
+      android.intent.action.DEVICE_STORAGE_OK:
+        29306cb com.wsl.noom/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter adeea8
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.ACTION_MEDIA_MOUNTED:
+        c541c83 com.wsl.noom/com.wsl.CardioTrainer.weightloss.reminders.BootAndTimeChangeReceiver filter d23e00
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.ACTION_MEDIA_MOUNTED"
+        be7fa9 com.wsl.noom/.trainer.notification.BootAndTimeChangeReceiver filter 1b8092e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.ACTION_MEDIA_MOUNTED"
+      com.android.vending.INSTALL_REFERRER:
+        f5a033d com.wsl.noom/io.branch.referral.InstallListener filter 47e2732
+          Action: "com.android.vending.INSTALL_REFERRER"
+        731fddf com.wsl.noom/com.wsl.common.android.utils.AndroidMarketReferrerTracker filter 51d3a2c
+          Action: "com.android.vending.INSTALL_REFERRER"
+        129e053 com.wsl.noom/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 45ffd90
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.wsl.noom.trainer.notification.MEDICATION_NOTIFICATION:
+        b3735ad com.wsl.noom/.trainer.notification.MedicationNotifier filter 9aac0e2
+          Action: "com.wsl.noom.trainer.notification.MEDICATION_NOTIFICATION"
+      com.wsl.activitymonitor.sync.NoomWalkStepSyncer:
+        5bc1ccf com.wsl.noom/com.wsl.activitymonitor.sync.NoomWalkStepSyncer filter 8f9865c
+          Action: "com.wsl.activitymonitor.sync.NoomWalkStepSyncer"
+      com.google.android.c2dm.intent.RECEIVE:
+        f450e8d com.wsl.noom/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 8e45842
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        f6a8245 com.wsl.noom/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter a68ad9a
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        c541c83 com.wsl.noom/com.wsl.CardioTrainer.weightloss.reminders.BootAndTimeChangeReceiver filter d23e00
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.ACTION_MEDIA_MOUNTED"
+        be7fa9 com.wsl.noom/.trainer.notification.BootAndTimeChangeReceiver filter 1b8092e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.ACTION_MEDIA_MOUNTED"
+        566d65 com.wsl.noom/com.wsl.activitymonitor.PeriodicAlarmReceiver filter b3f8a3a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.wsl.noom.noomwalk.PERIODIC_ALERT"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        d521863 com.wsl.noom/.trainer.notification.OfferNotificationManager filter ef4bc60
+          Action: "com.wsl.noom.trainer.notification.SPECIAL_OFFER_REMINDER"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        54944a7 com.wsl.noom/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3474d54
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        c541c83 com.wsl.noom/com.wsl.CardioTrainer.weightloss.reminders.BootAndTimeChangeReceiver filter d23e00
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.ACTION_MEDIA_MOUNTED"
+        be7fa9 com.wsl.noom/.trainer.notification.BootAndTimeChangeReceiver filter 1b8092e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.ACTION_MEDIA_MOUNTED"
+        566d65 com.wsl.noom/com.wsl.activitymonitor.PeriodicAlarmReceiver filter b3f8a3a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.wsl.noom.noomwalk.PERIODIC_ALERT"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        d521863 com.wsl.noom/.trainer.notification.OfferNotificationManager filter ef4bc60
+          Action: "com.wsl.noom.trainer.notification.SPECIAL_OFFER_REMINDER"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        54944a7 com.wsl.noom/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3474d54
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.wsl.activitymonitor.widget.REFRESH:
+        2e298fb com.wsl.noom/com.wsl.activitymonitor.widget.SmallWidgetProvider filter 239cd18
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.wsl.activitymonitor.widget.REFRESH"
+        7a9d371 com.wsl.noom/com.wsl.activitymonitor.widget.LargeWidgetProvider filter c21a556
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.wsl.activitymonitor.widget.REFRESH"
+      com.noom.wlc.databases.download.DownloadableDatabaseUpdateRetryReceiver.RETRY:
+        e91de51 com.wsl.noom/com.noom.wlc.databases.download.DownloadableDatabaseUpdateRetryReceiver filter 97e86b6
+          Action: "com.noom.wlc.databases.download.DownloadableDatabaseUpdateRetryReceiver.RETRY"
+      android.intent.action.BOOT_COMPLETED:
+        c541c83 com.wsl.noom/com.wsl.CardioTrainer.weightloss.reminders.BootAndTimeChangeReceiver filter d23e00
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.ACTION_MEDIA_MOUNTED"
+        be7fa9 com.wsl.noom/.trainer.notification.BootAndTimeChangeReceiver filter 1b8092e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.ACTION_MEDIA_MOUNTED"
+        566d65 com.wsl.noom/com.wsl.activitymonitor.PeriodicAlarmReceiver filter b3f8a3a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.wsl.noom.noomwalk.PERIODIC_ALERT"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        d521863 com.wsl.noom/.trainer.notification.OfferNotificationManager filter ef4bc60
+          Action: "com.wsl.noom.trainer.notification.SPECIAL_OFFER_REMINDER"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        1d9a519 com.wsl.noom/com.noom.walk.hammerhead.BootReciver filter 44f19de
+          Action: "android.intent.action.BOOT_COMPLETED"
+        54944a7 com.wsl.noom/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3474d54
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.noom.android.events.DelayedEventTrackerManager.FIRE_EVENT:
+        eaeffb7 com.wsl.noom/com.noom.android.events.DelayedEventTrackerManager filter f6d324
+          Action: "com.noom.android.events.DelayedEventTrackerManager.FIRE_EVENT"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        907b6eb com.wsl.noom/com.wsl.activitymonitor.PhoneStateReceiver filter 6c6ac48
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+        c682eaf com.wsl.noom/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter ef62bc
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.wsl.noom.trainer.notification.SPECIAL_OFFER_REMINDER:
+        d521863 com.wsl.noom/.trainer.notification.OfferNotificationManager filter ef4bc60
+          Action: "com.wsl.noom.trainer.notification.SPECIAL_OFFER_REMINDER"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.wsl.noom.trainer.notification.MEAL_TIME_REMINDER:
+        2c57ae1 com.wsl.noom/.trainer.notification.MealReminderManager filter 48c1006
+          Action: "com.wsl.noom.trainer.notification.MEAL_TIME_REMINDER"
+      android.intent.action.DOWNLOAD_COMPLETE:
+        b5679d5 com.wsl.noom/com.noom.wlc.databases.download.DatabaseDownloadEventListener filter caef5ea
+          Action: "android.intent.action.DOWNLOAD_COMPLETE"
+      com.noom.wlc.databases.download.DownloadableDatabaseDownloadRetryReceiver.RETRY:
+        26830db com.wsl.noom/com.noom.wlc.databases.download.DownloadableDatabaseDownloadRetryReceiver filter 9a1b778
+          Action: "com.noom.wlc.databases.download.DownloadableDatabaseDownloadRetryReceiver.RETRY"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        2e298fb com.wsl.noom/com.wsl.activitymonitor.widget.SmallWidgetProvider filter 239cd18
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.wsl.activitymonitor.widget.REFRESH"
+        7a9d371 com.wsl.noom/com.wsl.activitymonitor.widget.LargeWidgetProvider filter c21a556
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.wsl.activitymonitor.widget.REFRESH"
+      com.wsl.noom.trainer.notification.TASK_NOTIFICATION:
+        137c9d7 com.wsl.noom/.trainer.notification.TaskNotifier filter 78aa2c4
+          Action: "com.wsl.noom.trainer.notification.TASK_NOTIFICATION"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        1e3b4fd com.wsl.noom/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 7c755f2
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        73b8443 com.wsl.noom/com.noom.service.notification.FirebaseNotificationService filter 575eac0
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        13ba3f9 com.wsl.noom/com.google.firebase.messaging.FirebaseMessagingService filter df0df3e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.wsl.noom:
+    ID: 842bf791-dbe8-46b6-947e-8d948f4f45d8
+    Signatures: [09:94:0E:B9:1E:52:3B:19:0E:7D:31:EE:5D:D0:F1:D1:0C:81:53:CF:D5:CB:26:A8:35:DE:3B:09:9F:F0:A1:BB]
+    Domain verification state:
+      noomcoach.app.link: verified
+      noomcoach-alternate.app.link: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          noomcoach.app.link
+          noomcoach-alternate.app.link
+
+Permissions:
+  Permission [com.wsl.noom.permission.C2D_MESSAGE] (776ab96):
+    sourcePackage=com.wsl.noom
+    uid=10497 gids=[] type=0 prot=signature
+    perm=PermissionInfo{4ba2a95 com.wsl.noom.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.wsl.noom/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{7bb7aa com.wsl.noom/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.wsl.noom/com.facebook.marketing.internal.MarketingInitProvider:
+    Provider{e1f2f9b com.wsl.noom/com.facebook.marketing.internal.MarketingInitProvider}
+  com.wsl.noom/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{aaaf38 com.wsl.noom/com.crashlytics.android.CrashlyticsInitProvider}
+  com.wsl.noom/com.squareup.picasso.PicassoProvider:
+    Provider{75fdb11 com.wsl.noom/com.squareup.picasso.PicassoProvider}
+  com.wsl.noom/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{8b5a476 com.wsl.noom/com.google.firebase.provider.FirebaseInitProvider}
+  com.wsl.noom/com.facebook.internal.FacebookInitProvider:
+    Provider{6b72a77 com.wsl.noom/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.wsl.noom.firebaseinitprovider]:
+    Provider{8b5a476 com.wsl.noom/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{1d2f317 com.wsl.noom}
+  [com.wsl.noom.FacebookInitProvider]:
+    Provider{6b72a77 com.wsl.noom/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{7acb304 com.wsl.noom}
+  [com.wsl.noom.lifecycle-process]:
+    Provider{7bb7aa com.wsl.noom/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{c2ba0ed com.wsl.noom}
+  [com.wsl.noom.crashlyticsinitprovider]:
+    Provider{aaaf38 com.wsl.noom/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{de9eb22 com.wsl.noom}
+  [com.wsl.noom.com.squareup.picasso]:
+    Provider{75fdb11 com.wsl.noom/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{89a9b3 com.wsl.noom}
+  [com.wsl.noom.MarketingInitProvider]:
+    Provider{e1f2f9b com.wsl.noom/com.facebook.marketing.internal.MarketingInitProvider}
+      applicationInfo=ApplicationInfo{fc3fb70 com.wsl.noom}
+
+Key Set Manager:
+  [com.wsl.noom]
+      Signing KeySets: 5423
+
+Packages:
+  Package [com.wsl.noom] (d218c5f):
+    userId=10497
+    sharedUser=SharedUserSetting{5ae5ee9 com.wsl.CardioTrainer/10497}
+    pkg=Package{35ace7c com.wsl.noom}
+    codePath=/data/app/~~JW0biv91uuFoHjoKyPCngw==/com.wsl.noom-9VwsKOHpDBWPGneACzN7bw==
+    resourcePath=/data/app/~~JW0biv91uuFoHjoKyPCngw==/com.wsl.noom-9VwsKOHpDBWPGneACzN7bw==
+    legacyNativeLibraryDir=/data/app/~~JW0biv91uuFoHjoKyPCngw==/com.wsl.noom-9VwsKOHpDBWPGneACzN7bw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=821 minSdk=23 targetSdk=29
+    minExtensionVersions=[]
+    versionName=8.6.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.wsl.noom
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 12:26:45
+    lastUpdateTime=2022-11-30 12:26:46
+    packageSource=0
+    signatures=PackageSignatures{6c95f5a version:2, signatures:[fbf812f6], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.wsl.noom.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.ACTIVITY_RECOGNITION
+      com.android.vending.BILLING
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+      android.permission.INTERNET
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.USE_CREDENTIALS
+      android.permission.VIBRATE
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.BLUETOOTH
+      android.permission.CAMERA
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.READ_SYNC_STATS
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY
+      com.wsl.noom.permission.C2D_MESSAGE
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.wsl.noom.permission.C2D_MESSAGE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=48779 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 12:26:46
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.wsl.noom
+    com.google.android.apps.diagnosticstool:
+      com.wsl.noom
+    com.google.android.settings.intelligence:
+      com.wsl.noom
+    com.google.android.apps.accessibility.voiceaccess:
+      com.wsl.noom
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.localtransport,com.android.qns,com.android.keychain,com.android.providers.settings,com.android.location.fused,com.android.wallpaperbackup,com.google.android.iwlan,com.android.inputdevices,com.android.settings,android,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem]:
+        com.wsl.noom
+      [com.google.android.gms,com.google.android.gsf]:
+        com.wsl.noom
+      com.android.vending:
+        com.wsl.noom
+  queryable via uses-library:
+
+Shared users:
+  SharedUser [com.wsl.CardioTrainer] (5ae5ee9):
+    userId=10497
+    Packages
+      PackageSetting{d218c5f com.wsl.noom/10497}
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.wsl.noom.permission.C2D_MESSAGE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: 
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACTIVITY_RECOGNITION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Dexopt state:
+  [com.wsl.noom]
+    path: /data/app/~~JW0biv91uuFoHjoKyPCngw==/com.wsl.noom-9VwsKOHpDBWPGneACzN7bw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1753129
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.wsl.noom]
+     base.apk - 733

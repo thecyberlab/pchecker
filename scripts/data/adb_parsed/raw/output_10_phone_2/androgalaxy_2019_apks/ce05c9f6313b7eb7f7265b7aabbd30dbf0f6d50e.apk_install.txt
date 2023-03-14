@@ -1,0 +1,448 @@
+Activity Resolver Table:
+  Schemes:
+      com.busuu.android.enc.braintree:
+        964d89a com.busuu.android.enc/com.braintreepayments.api.BraintreeBrowserSwitchActivity filter a7d565c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.busuu.android.enc.braintree"
+      busuupayment:
+        b0b55cb com.busuu.android.enc/com.busuu.android.purchase.stripe.StripeCheckoutActivity filter 3443519
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "busuupayment"
+          Authority: "success": -1
+          Authority: "error": -1
+      busuu:
+        df991a8 com.busuu.android.enc/com.busuu.android.ui.deeplink.DeepLinkActivity filter 56fda3a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "busuu"
+          Authority: "open": -1
+          Authority: "payment_paywall": -1
+          Authority: "subscribe": -1
+          Authority: "my_profile": -1
+          Authority: "dashboard": -1
+          Authority: "placement_test": -1
+          Authority: "open_unit": -1
+          Authority: "select_course": -1
+          Authority: "smart_review": -1
+          Authority: "review_weak": -1
+          Authority: "review_medium": -1
+          Authority: "review_strong": -1
+          Authority: "review_strong": -1
+          Authority: "premium_plus_free_trial": -1
+      https:
+        df991a8 com.busuu.android.enc/com.busuu.android.ui.deeplink.DeepLinkActivity filter ed5fd65
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Authority: "www.busuu.com": -1
+          Path: "PatternMatcher{LITERAL: /autologin}"
+          Path: "PatternMatcher{LITERAL: /dashboard}"
+          Path: "PatternMatcher{LITERAL: /dashboard/vocabulary_quiz}"
+          Path: "PatternMatcher{LITERAL: /view_study_plan}"
+          Path: "PatternMatcher{LITERAL: /create_study_plan}"
+          Path: "PatternMatcher{LITERAL: /select_course}"
+          Path: "PatternMatcher{LITERAL: /conversation}"
+          Path: "PatternMatcher{LITERAL: /smart_review}"
+          Path: "PatternMatcher{LITERAL: /review_weak}"
+          Path: "PatternMatcher{LITERAL: /review_medium}"
+          Path: "PatternMatcher{LITERAL: /review_strong}"
+          Path: "PatternMatcher{LITERAL: /plans}"
+          Path: "PatternMatcher{LITERAL: /prices}"
+          Path: "PatternMatcher{LITERAL: /vocab}"
+          Path: "PatternMatcher{LITERAL: /my_profile}"
+          Path: "PatternMatcher{LITERAL: /premium_plus_free_trial}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d9464c1 com.busuu.android.enc/com.busuu.android.oldui.BootStrapActivity filter ead2ccf
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.VIEW:
+        d27e466 com.busuu.android.enc/com.busuu.android.cancellation.recap.SubscriptionDetailsActivity filter 7f9c6eb
+          Action: "android.intent.action.VIEW"
+        e7783a7 com.busuu.android.enc/com.busuu.android.premium.studyplan.StudyPlanTieredPlansActivity filter 4b77c48
+          Action: "android.intent.action.VIEW"
+        d2a2054 com.busuu.android.enc/com.busuu.android.premium.studyplan.NewStudyPlanTieredPlansActivity filter 1ae0ae1
+          Action: "android.intent.action.VIEW"
+        5c18bfd com.busuu.android.enc/com.busuu.android.premium.forkscreen.ForkScreenActivity filter 9716006
+          Action: "android.intent.action.VIEW"
+        ebde0f2 com.busuu.android.enc/com.busuu.android.premium.onboarding.firstpage.TieredPlanOnboardingActivity filter b2be6c7
+          Action: "android.intent.action.VIEW"
+        e8eb343 com.busuu.android.enc/com.busuu.android.premium.paywall.TieredPlansPaywallActivity filter 6ec14f4
+          Action: "android.intent.action.VIEW"
+        632edc0 com.busuu.android.enc/com.busuu.android.premium.paywall.new_paywall.SinglePagePaywallActivity filter 99f741d
+          Action: "android.intent.action.VIEW"
+        a9feaf9 com.busuu.android.enc/com.busuu.android.premium.onboarding.lastchance.TieredPlansLastChanceActivity filter 9b37692
+          Action: "android.intent.action.VIEW"
+        5451a3e com.busuu.android.enc/com.busuu.android.premium.onboarding.lastchance.LastChanceWithDiscountActivity filter 6762863
+          Action: "android.intent.action.VIEW"
+        65f409f com.busuu.android.enc/com.busuu.android.premium.premiumplus_freetrial.PremiumPlusFreeTrialPaywallActivity filter 2f8c60
+          Action: "android.intent.action.VIEW"
+        63925ec com.busuu.android.enc/com.busuu.android.cancellation.flow.CancellationFlowActivity filter 68e69de
+          Action: "android.intent.action.VIEW"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        6b3db5 com.busuu.android.enc/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 9fe40db
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        9749c4a com.busuu.android.enc/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b9345ea
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      io.intercom.android.sdk.INTERCOM_PUSH_OPENED:
+        98147bb com.busuu.android.enc/io.intercom.android.sdk.push.IntercomPushBroadcastReceiver filter a710e8c
+          Action: "io.intercom.android.sdk.INTERCOM_PUSH_OPENED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        588b4d8 com.busuu.android.enc/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d668778
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        95f0031 com.busuu.android.enc/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter be6e51
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        6683316 com.busuu.android.enc/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 438a324
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        588b4d8 com.busuu.android.enc/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d668778
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.LOCALE_CHANGED:
+        2f2a497 com.busuu.android.enc/com.busuu.android.ui.course.LocaleChangedBroadcastReceiver filter e98e7bf
+          Action: "android.intent.action.LOCALE_CHANGED"
+      io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED:
+        98147bb com.busuu.android.enc/io.intercom.android.sdk.push.IntercomPushBroadcastReceiver filter da09d5
+          Action: "io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED"
+      android.intent.action.BATTERY_LOW:
+        6b3db5 com.busuu.android.enc/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 9fe40db
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        3404684 com.busuu.android.enc/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a57d6b6
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        3404684 com.busuu.android.enc/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a57d6b6
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        3404684 com.busuu.android.enc/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a57d6b6
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        9749c4a com.busuu.android.enc/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b9345ea
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        5f26e6d com.busuu.android.enc/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 1960fb7
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Permissions:
+  Permission [com.busuu.android.PAYMENT_BROADCAST_PERMISSION] (b2c6aa2):
+    sourcePackage=com.busuu.android.enc
+    uid=10349 gids=null type=0 prot=signature
+    perm=Permission{5b2f333 com.busuu.android.PAYMENT_BROADCAST_PERMISSION}
+    packageSetting=PackageSetting{fbd46f0 com.busuu.android.enc/10349}
+
+Registered ContentProviders:
+  com.busuu.android.enc/androidx.work.impl.WorkManagerInitializer:
+    Provider{cd48469 com.busuu.android.enc/androidx.work.impl.WorkManagerInitializer}
+  com.busuu.android.enc/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{90a8eee com.busuu.android.enc/com.crashlytics.android.CrashlyticsInitProvider}
+  com.busuu.android.enc/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{b1f8f8f com.busuu.android.enc/com.google.firebase.provider.FirebaseInitProvider}
+  com.busuu.android.enc/com.facebook.internal.FacebookInitProvider:
+    Provider{1c7e21c com.busuu.android.enc/com.facebook.internal.FacebookInitProvider}
+  com.busuu.android.enc/io.intercom.android.sdk.IntercomInitializeContentProvider:
+    Provider{6a7fe25 com.busuu.android.enc/io.intercom.android.sdk.IntercomInitializeContentProvider}
+  com.busuu.android.enc/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{a94abfa com.busuu.android.enc/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.busuu.android.enc/androidx.core.content.FileProvider:
+    Provider{b0f95ab com.busuu.android.enc/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.busuu.android.enc.firebaseinitprovider]:
+    Provider{b1f8f8f com.busuu.android.enc/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{27f0408 com.busuu.android.enc}
+  [com.busuu.android.enc.FacebookInitProvider]:
+    Provider{1c7e21c com.busuu.android.enc/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{27f0408 com.busuu.android.enc}
+  [com.busuu.android.enc.photo.provider]:
+    Provider{b0f95ab com.busuu.android.enc/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{27f0408 com.busuu.android.enc}
+  [com.busuu.android.enc.crashlyticsinitprovider]:
+    Provider{90a8eee com.busuu.android.enc/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{27f0408 com.busuu.android.enc}
+  [com.busuu.android.enc.IntercomInitializeContentProvider]:
+    Provider{6a7fe25 com.busuu.android.enc/io.intercom.android.sdk.IntercomInitializeContentProvider}
+      applicationInfo=ApplicationInfo{27f0408 com.busuu.android.enc}
+  [com.busuu.android.enc.workmanager-init]:
+    Provider{cd48469 com.busuu.android.enc/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{27f0408 com.busuu.android.enc}
+  [com.busuu.android.enc.lifecycle-process]:
+    Provider{a94abfa com.busuu.android.enc/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{27f0408 com.busuu.android.enc}
+
+Key Set Manager:
+  [com.busuu.android.enc]
+      Signing KeySets: 151
+
+Packages:
+  Package [com.busuu.android.enc] (fbd46f0):
+    userId=10349
+    pkg=Package{283592e com.busuu.android.enc}
+    codePath=/data/app/com.busuu.android.enc--i7EVgthFekGWGMn93Fgbw==
+    resourcePath=/data/app/com.busuu.android.enc--i7EVgthFekGWGMn93Fgbw==
+    legacyNativeLibraryDir=/data/app/com.busuu.android.enc--i7EVgthFekGWGMn93Fgbw==/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=2615 minSdk=21 targetSdk=29
+    versionName=17.11.0.301
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{27f0408 com.busuu.android.enc}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/com.busuu.android.enc
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-03-06 07:34:09
+    firstInstallTime=2021-03-06 07:34:11
+    lastUpdateTime=2021-03-06 07:34:11
+    signatures=PackageSignatures{97f57a1 version:1, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      com.busuu.android.PAYMENT_BROADCAST_PERMISSION: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECORD_AUDIO
+      android.permission.FOREGROUND_SERVICE
+      android.permission.VIBRATE
+      android.permission.USE_CREDENTIALS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.REQUEST_INSTALL_PACKAGES
+      com.busuu.android.PAYMENT_BROADCAST_PERMISSION
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      com.busuu.android.PAYMENT_BROADCAST_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=6427 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+
+Package Changes:
+  Sequence number=435
+  User 0:
+    seq=5, package=com.google.android.gms
+    seq=11, package=com.kajda.fuelio
+    seq=16, package=me.piere.christmas
+    seq=18, package=ak.alizandro.smartaudiobookplayer
+    seq=20, package=amazing.three_d.icons
+    seq=22, package=com.first75.voicerecorder2pro
+    seq=24, package=digifit.virtuagym.client.android
+    seq=32, package=com.in.w3d
+    seq=34, package=com.luzapplications.alessio.wallooppro
+    seq=36, package=com.alesp.orologiomondiale.pro
+    seq=40, package=com.yuanwofei.cardemulator.pro
+    seq=48, package=com.microblink.photomath
+    seq=50, package=studio14.application.caeluswhite
+    seq=54, package=com.perfectapps.muviz
+    seq=58, package=net.xnano.android.ftpserver
+    seq=60, package=com.aezowie.mycalpro
+    seq=62, package=com.bialy.zonelauncher
+    seq=66, package=com.indigomadina.tabloid
+    seq=70, package=com.mixplorer
+    seq=72, package=com.mobilefootie.wc2010
+    seq=74, package=de.dwd.warnapp
+    seq=76, package=oos.dark.material
+    seq=78, package=com.intsig.camscanner
+    seq=82, package=com.indigomadina.spheroid
+    seq=84, package=com.footej.camera
+    seq=89, package=com.cray.software.justreminderpro
+    seq=91, package=com.sofascore.results
+    seq=97, package=pl.solidexplorer2
+    seq=103, package=jp.gr.java_conf.soboku.batterymeter
+    seq=105, package=com.iioannou.phototools.pro
+    seq=108, package=com.unvoid.borealis
+    seq=112, package=com.happening.studios.swipeforfacebookfree
+    seq=114, package=com.rookiestudio.perfectviewer
+    seq=117, package=com.osheden.azulox
+    seq=124, package=com.pakdata.easyurdu
+    seq=126, package=eu.faircode.netguard
+    seq=132, package=indigomadina.furatto.ui
+    seq=138, package=o.o.joey
+    seq=142, package=com.overlook.android.fing
+    seq=144, package=ru.involta.metro
+    seq=148, package=hastamev.oneuidark.com
+    seq=153, package=com.compscieddy.writeaday
+    seq=155, package=com.protectstar.ishredder.pro
+    seq=157, package=prism.kustom.pack
+    seq=161, package=com.protectstar.ishredder.mil
+    seq=163, package=com.androidev.xhafe.earthquakepro
+    seq=167, package=com.franco.doze
+    seq=169, package=com.mobisystems.fileman
+    seq=171, package=com.changemystyle.gentlewakeuppro
+    seq=175, package=studio14.application.juno
+    seq=177, package=com.thegrammaruniversity.drfrench
+    seq=179, package=com.medisafe.android.client
+    seq=187, package=com.bergin_it.gpsscatterplot
+    seq=189, package=com.zemana.msecurity
+    seq=191, package=be.inet.rainwidget.donate
+    seq=193, package=com.bergin_it.gpsattitude
+    seq=195, package=ru.yandex.music
+    seq=197, package=com.roamingsquirrel.android.calculator_plus
+    seq=200, package=com.aathifmahir.iconpack.kora.free
+    seq=204, package=com.franco.kernel
+    seq=206, package=com.magdalm.wifimasterpassword
+    seq=209, package=com.nll.asr
+    seq=211, package=com.crypter.cryptocyrrency
+    seq=213, package=com.kimcy929.screenrecorder
+    seq=215, package=com.pavelrekun.skit.premium
+    seq=221, package=com.wiseschematics.reeq01
+    seq=224, package=com.SearingMedia.Parrot
+    seq=226, package=com.fbreader
+    seq=228, package=com.bitsmedia.android.muslimpro
+    seq=234, package=thanhletranngoc.calculator.pro
+    seq=238, package=com.edzondm.linebitse
+    seq=240, package=dkc.video.hdbox
+    seq=242, package=com.ideashower.readitlater.pro
+    seq=244, package=com.scan.srbd
+    seq=246, package=com.cinelensesapp.android.cinelenses
+    seq=248, package=de.j4velin.wallpaperChanger
+    seq=250, package=app.stellio.player
+    seq=252, package=com.itemstudio.castro.pro
+    seq=254, package=com.ffffstudio.kojicam
+    seq=256, package=com.united.art.lwp28
+    seq=260, package=com.kokoschka.michael.crypto
+    seq=262, package=com.sreerag.merlen
+    seq=264, package=ru.v_a_v.netmonitorpro
+    seq=268, package=com.tools.netgel.netxpro
+    seq=270, package=com.n7mobile.nplayer
+    seq=272, package=ginlemon.flowerfree
+    seq=274, package=com.mrfarts.lwp24
+    seq=276, package=com.lb.app_manager
+    seq=280, package=com.jndapp.redline.linex.iconpack
+    seq=282, package=com.sunnytapps.sunnytrack
+    seq=284, package=yo.app
+    seq=286, package=kha.prog.mikrotik
+    seq=290, package=com.simplehabit.simplehabitapp
+    seq=292, package=com.fullreader
+    seq=297, package=com.stark.griddle
+    seq=299, package=com.magdalm.freewifipassword
+    seq=301, package=com.foobnix.pro.pdf.reader
+    seq=303, package=com.sygic.aura
+    seq=305, package=com.twodoor.bookly
+    seq=307, package=com.iioannou.phototipspro
+    seq=309, package=com.jndapp.limeline.linex.iconpack
+    seq=311, package=com.indigomadina.tigadpro
+    seq=314, package=com.itunestoppodcastplayer.app
+    seq=316, package=studio14.application.caelusblack
+    seq=318, package=dp.ws.popcorntime
+    seq=320, package=com.light.simplephotowidget
+    seq=324, package=dev.into.liveno.pro
+    seq=329, package=com.spartacus
+    seq=333, package=ru.englishtenses.index
+    seq=337, package=com.david.android.languageswitch
+    seq=339, package=com.getmimo
+    seq=341, package=de.ozerov.fully
+    seq=343, package=com.plexapp.android
+    seq=345, package=co.windyapp.android
+    seq=348, package=com.cloud3squared.meteogram.pro
+    seq=350, package=com.notebloc.app
+    seq=352, package=com.bhanu.smartnavbar
+    seq=354, package=com.icecoldapps.synchronizeultimate
+    seq=356, package=com.codium.hydrocoach.pro
+    seq=358, package=com.franco.servicely
+    seq=360, package=studio14.application.hera
+    seq=362, package=com.veitch.learntomaster.bgtp
+    seq=365, package=com.shaiban.audioplayer.mplayer
+    seq=367, package=com.lingodeer.plus
+    seq=371, package=io.lingvist.android
+    seq=373, package=com.indigomadina.anoobul
+    seq=377, package=com.shazam.encore.android
+    seq=381, package=com.jetblacksoftware.xmastreewallpaperpaid
+    seq=383, package=at.bitfire.davdroid
+    seq=385, package=com.fitapp
+    seq=387, package=com.mobisystems.office
+    seq=389, package=com.coccco28.athys
+    seq=391, package=com.mixplorer.silver
+    seq=393, package=com.rupiapps.cameraprocontrol
+    seq=397, package=com.magdalm.apkextractor
+    seq=403, package=com.mobilefootie.fotmobpro
+    seq=405, package=com.surodev.arielapro
+    seq=407, package=com.feravolt.fdeai
+    seq=409, package=com.agilebits.onepassword
+    seq=411, package=com.free.compress.decompress.all.files
+    seq=413, package=com.brit.swiftdark.substratum
+    seq=415, package=com.samruston.twitter
+    seq=419, package=com.paget96.lspeed
+    seq=421, package=il.talent.parking.premium
+    seq=423, package=com.iudesk.android.photo.editor
+    seq=425, package=com.OGR.vipnotesfull
+    seq=427, package=com.adguard.android
+    seq=429, package=com.brit.swiftblack.layers
+    seq=431, package=com.ottplay.ottplay
+    seq=433, package=com.ddm.iptools
+    seq=434, package=com.busuu.android.enc
+
+
+Dexopt state:
+  [com.busuu.android.enc]
+    path: /data/app/com.busuu.android.enc--i7EVgthFekGWGMn93Fgbw==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.busuu.android.enc]
+     base.apk - 5661
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

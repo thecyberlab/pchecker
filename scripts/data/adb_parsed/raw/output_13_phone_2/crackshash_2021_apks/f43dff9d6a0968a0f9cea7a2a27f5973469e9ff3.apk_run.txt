@@ -1,0 +1,454 @@
+Activity Resolver Table:
+  Schemes:
+      expressvpn:
+        ba00cf3 com.expressvpn.vpn/.ui.user.MagicUrlLoginActivity filter 8119429
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "expressvpn"
+      http:
+        ba00cf3 com.expressvpn.vpn/.ui.user.MagicUrlLoginActivity filter e09bdb0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "www.expressvpn.com": -1
+          Authority: "www.expressvpn.xyz": -1
+          Path: "PatternMatcher{LITERAL: /launch-app}"
+          AutoVerify=true
+      https:
+        ba00cf3 com.expressvpn.vpn/.ui.user.MagicUrlLoginActivity filter e09bdb0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "www.expressvpn.com": -1
+          Authority: "www.expressvpn.xyz": -1
+          Path: "PatternMatcher{LITERAL: /launch-app}"
+          AutoVerify=true
+      repro-steps-disclaimer:
+        a6618e3 com.expressvpn.vpn/com.instabug.bug.view.reporting.ReportingContainerActivity filter b9ff2e0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "instabug-bug"
+          Scheme: "repro-steps-disclaimer"
+          Authority: "instabug-disclaimer.com": -1
+          Authority: "instabug-disclaimer.com": -1
+      instabug-bug:
+        a6618e3 com.expressvpn.vpn/com.instabug.bug.view.reporting.ReportingContainerActivity filter b9ff2e0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "instabug-bug"
+          Scheme: "repro-steps-disclaimer"
+          Authority: "instabug-disclaimer.com": -1
+          Authority: "instabug-disclaimer.com": -1
+
+  Non-Data Actions:
+      com.expressvpn.sharedandroid.action_home:
+        b56c3ae com.expressvpn.vpn/.ui.home.HomeActivity filter a24854f
+          Action: "com.expressvpn.sharedandroid.action_home"
+          Category: "android.intent.category.DEFAULT"
+      com.expressvpn.sharedandroid.action_network_lock_settings:
+        225cf47 com.expressvpn.vpn/.ui.user.NetworkLockPreferenceActivity filter 72b1374
+          Action: "com.expressvpn.sharedandroid.action_network_lock_settings"
+          Category: "android.intent.category.DEFAULT"
+      com.expressvpn.vpn.ui.home.action_quick_recent_location:
+        b56c3ae com.expressvpn.vpn/.ui.home.HomeActivity filter c4f6cba
+          Action: "com.expressvpn.vpn.ui.home.action_quick_recent_location"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        8ea022d com.expressvpn.vpn/.ui.SplashActivity filter 41ad362
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      com.expressvpn.sharedandroid.action_auto_connect_settings:
+        cfcd09d com.expressvpn.vpn/.ui.user.autoconnect.AutoConnectPreferenceActivity filter 5a2d912
+          Action: "com.expressvpn.sharedandroid.action_auto_connect_settings"
+          Category: "android.intent.category.DEFAULT"
+      com.expressvpn.vpn.ui.home.action_quick_smart_location:
+        b56c3ae com.expressvpn.vpn/.ui.home.HomeActivity filter c4504dc
+          Action: "com.expressvpn.vpn.ui.home.action_quick_smart_location"
+          Category: "android.intent.category.DEFAULT"
+      com.expressvpn.vpn.ui.home.action_quick_choose_location:
+        b56c3ae com.expressvpn.vpn/.ui.home.HomeActivity filter f0649e5
+          Action: "com.expressvpn.vpn.ui.home.action_quick_choose_location"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        2ce276b com.expressvpn.vpn/.ui.location.SearchLocationActivity filter 98b92c8
+          Action: "android.intent.action.SEARCH"
+        5d69f61 com.expressvpn.vpn/.ui.user.splittunneling.SplitTunnelingSearchActivity filter 6f79a86
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        91b1837 com.expressvpn.vpn/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 37441a4
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        47522d1 com.expressvpn.vpn/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 521b136
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        d581b0d com.expressvpn.vpn/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter fcfaac2
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        85ad999 com.expressvpn.vpn/.data.autoconnect.AutoConnectNetworkChangeReceiverApi21 filter 251745e
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        57f00d3 com.expressvpn.vpn/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter f85d410
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        df67655 com.expressvpn.vpn/.receiver.BootReceiver filter 4bc786a
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=1000, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.DEVICE_STORAGE_OK:
+        d581b0d com.expressvpn.vpn/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter fcfaac2
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        91b1837 com.expressvpn.vpn/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 37441a4
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        6f85b09 com.expressvpn.vpn/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 571b10e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        6f85b09 com.expressvpn.vpn/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 571b10e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        df67655 com.expressvpn.vpn/.receiver.BootReceiver filter 4bc786a
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=1000, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        6f85b09 com.expressvpn.vpn/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 571b10e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        47522d1 com.expressvpn.vpn/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 521b136
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        cebc15b com.expressvpn.vpn/.ui.widget.LargeWidgetProvider filter cad3df8
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        cd7603f com.expressvpn.vpn/.receiver.PackageReplacedReceiver filter 6c15d0c
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        42ed72f com.expressvpn.vpn/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter adc213c
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        75bb74b com.expressvpn.vpn/.ui.tile.NotificationTileService filter 2e81528 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.net.VpnService:
+        2429ec5 com.expressvpn.vpn/com.expressvpn.sharedandroid.vpn.XVVpnService filter 41bd01a permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+
+Domain verification status:
+  com.expressvpn.vpn:
+    ID: 192d3ac8-367a-40d5-a620-23686328115b
+    Signatures: [3B:61:C2:A8:2A:FF:9F:76:52:FF:E0:B0:4B:E3:C8:F2:48:B5:E1:AA:70:63:F1:A3:84:6F:0C:F5:C7:78:62:8A]
+    Domain verification state:
+      www.expressvpn.com: 1024
+      www.expressvpn.xyz: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.expressvpn.com
+          www.expressvpn.xyz
+
+Registered ContentProviders:
+  com.expressvpn.vpn/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{97c4d69 com.expressvpn.vpn/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.expressvpn.vpn/com.instabug.apm.contentprovider.APMContentProvider:
+    Provider{1b923ee com.expressvpn.vpn/com.instabug.apm.contentprovider.APMContentProvider}
+  com.expressvpn.vpn/androidx.work.impl.WorkManagerInitializer:
+    Provider{cdb008f com.expressvpn.vpn/androidx.work.impl.WorkManagerInitializer}
+  com.expressvpn.vpn/com.instabug.library.internal.contentprovider.InstabugContentProvider:
+    Provider{104ff1c com.expressvpn.vpn/com.instabug.library.internal.contentprovider.InstabugContentProvider}
+
+ContentProvider Authorities:
+  [com.expressvpn.vpn.applaunch.contentprovider.AppLaunchContentProvider]:
+    Provider{1b923ee com.expressvpn.vpn/com.instabug.apm.contentprovider.APMContentProvider}
+      applicationInfo=ApplicationInfo{e7d8022 com.expressvpn.vpn}
+  [com.expressvpn.vpn.lifecycle-process]:
+    Provider{97c4d69 com.expressvpn.vpn/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{4c61ab3 com.expressvpn.vpn}
+  [com.expressvpn.vpn.workmanager-init]:
+    Provider{cdb008f com.expressvpn.vpn/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{dee1870 com.expressvpn.vpn}
+  [com.expressvpn.vpn.internal.contentprovider.InstabugContentProvider]:
+    Provider{104ff1c com.expressvpn.vpn/com.instabug.library.internal.contentprovider.InstabugContentProvider}
+      applicationInfo=ApplicationInfo{72b7e9 com.expressvpn.vpn}
+
+Key Set Manager:
+  [com.expressvpn.vpn]
+      Signing KeySets: 6046
+
+Packages:
+  Package [com.expressvpn.vpn] (c177c6e):
+    userId=10292
+    pkg=Package{7487287 com.expressvpn.vpn}
+    codePath=/data/app/~~jHU-1mpmQHOtgl0byL878Q==/com.expressvpn.vpn-IEsWir0OjRUDp1N7aSa0zw==
+    resourcePath=/data/app/~~jHU-1mpmQHOtgl0byL878Q==/com.expressvpn.vpn-IEsWir0OjRUDp1N7aSa0zw==
+    legacyNativeLibraryDir=/data/app/~~jHU-1mpmQHOtgl0byL878Q==/com.expressvpn.vpn-IEsWir0OjRUDp1N7aSa0zw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=10030170 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=10.3.1-beta
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] }, Intent { act=android.intent.action.MAIN cat=[android.intent.category.LEANBACK_LAUNCHER] }, Intent { act=android.intent.action.VIEW }]
+    dataDir=/data/user/0/com.expressvpn.vpn
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 20:11:37
+    lastUpdateTime=2022-11-30 20:11:38
+    packageSource=0
+    signatures=PackageSignatures{ce645dd version:2, signatures:[9c12e809], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.INTERNET
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.android.vending.BILLING
+      android.permission.BLUETOOTH
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.WAKE_LOCK
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=103227 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 20:11:38
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.expressvpn.vpn
+    com.google.android.apps.diagnosticstool:
+      com.expressvpn.vpn
+    com.google.android.settings.intelligence:
+      com.expressvpn.vpn
+    com.google.android.apps.accessibility.voiceaccess:
+      com.expressvpn.vpn
+    com.zhiliaoapp.musically:
+      com.expressvpn.vpn
+    com.truecaller:
+      com.expressvpn.vpn
+    com.expressvpn.vpn:
+      com.google.android.documentsui
+      com.verizon.services
+      com.google.android.projection.gearhead
+      com.google.android.apps.nbu.files
+      com.google.android.apps.recorder
+      com.google.android.apps.tips
+      com.google.android.apps.messaging
+      com.google.android.apps.safetyhub
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.googlequicksearchbox
+      com.google.android.dialer
+      com.google.android.GoogleCamera
+      com.google.android.setupwizard
+      com.google.android.calculator
+      com.android.chrome
+      com.google.android.deskclock
+      com.google.android.accessibility.soundamplifier
+      com.google.android.calendar
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.contacts
+      com.google.android.apps.docs
+      com.google.android.videos
+      com.google.android.apps.accessibility.voiceaccess
+      com.google.android.inputmethod.latin
+      com.google.android.apps.youtube.music
+      com.google.android.gm
+      [app id 10195 not installed]
+      com.android.cts.priv.ctsshim
+      com.android.cts.ctsshim
+      com.google.android.cellbroadcastreceiver
+      com.zhiliaoapp.musically
+      com.touchtype.swiftkey
+      com.pandavideocompressor
+      net.eagin.software.android.dejaloYa
+      radiotime.player
+      org.malwarebytes.antimalware
+      ru.iptvremote.android.iptv.pro
+      com.getmimo
+      net.zedge.android
+      com.truecaller
+      com.languagedrops.drops.international
+      hotspotshield.android.vpn
+      com.wallpaperscraft.wallpaper
+      com.kizeetech.newankaradesigns
+      com.zoho.assist.agent
+      deezer.android.app
+      ipnossoft.rma.free
+      wsj.reader_sp
+      com.callapp.contacts
+      com.duolingo
+      com.darinsoft.vimo
+      com.ninegag.android.app
+      cn.wps.moffice_eng
+      vsin.t16_funny_photo
+      com.mxtech.videoplayer.television
+      com.mcdonalds.app
+      com.catdaddy.cat22
+      com.fourchars.lmpfree
+      com.mycompany.app.soulbrowser
+      com.commsource.beautyplus
+      ringtone.maker.mp3.cutter.audio
+      ins.story.unfold
+      com.navimods.radio
+      com.lyrebirdstudio.photo_editor_pro
+      easynotes.notes.notepad.notebook.privatenotes.note
+      com.camerasideas.instashot
+      com.pikoo.app
+      com.mikewheelermedia
+      com.mobisystems.office
+      com.michaldrabik.showly2
+      com.shazam.android
+      com.dv.adm
+      com.frankthebrilliant.app
+      com.brit.swift.minimal
+      com.zappcues.gamingmode
+      com.cam001.selfie
+      com.fitapp
+      com.brit.swiftdark.substratum
+      com.hungama.myplay.activity
+      com.vicman.toonmeapp
+      com.subsplashconsulting.s_NKSKD3
+      deepfinity.android
+      com.king.blossomblast
+      com.bitsmedia.android.muslimpro
+      com.yahoo.mobile.client.android.weather
+      com.picsart.studio.light
+      com.simplehabit.simplehabitapp
+      com.ludia.jurassicworld
+      com.accuweather.android
+      com.weather.Weather
+      com.cooyostudio.marble.blast
+      com.cyberlink.powerdirector.DRA140225_01
+      com.videoeditorpro.android
+      com.tomtom.gplay.navapp.nds
+      com.jio.myjio
+      video.reface.app
+      com.ledblinker.pro
+      com.getepic.Epic
+      com.zombodroid.MemeGeneratorFullGplay
+      com.ufotosoft.justshot
+      com.pranavpandey.rotation
+      com.nikitadev.irregularverbspro
+      com.Wifi.lte5g.lte4g.lte3g.speedtest.Internetspeed
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+      com.unvoid.borealis
+      com.osheden.azulox
+    com.dv.adm:
+      com.expressvpn.vpn
+    com.zappcues.gamingmode:
+      com.expressvpn.vpn
+    com.jio.myjio:
+      com.expressvpn.vpn
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.google.android.iwlan,com.android.keychain,com.android.server.telecom,com.android.location.fused,com.google.android.settings.future.biometrics.faceenroll,com.android.qns,com.android.wallpaperbackup,com.android.inputdevices,com.android.localtransport,com.android.providers.settings,android,com.android.settings,com.android.dynsystem]:
+        com.expressvpn.vpn
+      [com.google.android.gms,com.google.android.gsf]:
+        com.expressvpn.vpn
+      com.expressvpn.vpn:
+        [com.google.SSRestartDetector,com.google.android.iwlan,com.android.keychain,com.android.server.telecom,com.android.location.fused,com.google.android.settings.future.biometrics.faceenroll,com.android.qns,com.android.wallpaperbackup,com.android.inputdevices,com.android.localtransport,com.android.providers.settings,android,com.android.settings,com.android.dynsystem]
+  queryable via uses-library:
+
+Dexopt state:
+  [com.expressvpn.vpn]
+    path: /data/app/~~jHU-1mpmQHOtgl0byL878Q==/com.expressvpn.vpn-IEsWir0OjRUDp1N7aSa0zw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:757145
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.expressvpn.vpn]
+     base.apk - 522

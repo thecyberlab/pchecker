@@ -1,0 +1,520 @@
+Activity Resolver Table:
+  Schemes:
+      moengage:
+        a84e8ec com.arcsoft.perfect365/com.moengage.integrationverifier.internal.IntegrationVerificationActivity filter c1744b5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "moengage"
+          Authority: "integration": -1
+      http:
+        fb2b243 com.arcsoft.perfect365/.features.welcome.activity.SplashActivity filter 7c981f9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "stgexplorer.perfect365.com": -1
+          Authority: "explorer.perfect365.com": -1
+          Authority: "stgexpsvr.perfect365.com": -1
+          Authority: "user.perfect365.com": -1
+          Path: "PatternMatcher{PREFIX: /in-app}"
+          Path: "PatternMatcher{PREFIX: /in-app}"
+          Path: "PatternMatcher{LITERAL: /account/account/SendMailAction_activate.action}"
+          Path: "PatternMatcher{LITERAL: /account/account/SendMailAction_activate.action}"
+          AutoVerify=true
+      p365launch:
+        4afb2fd com.arcsoft.perfect365/.common.activity.TransferActivity filter 4067bf2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "p365launch"
+      https:
+        fb2b243 com.arcsoft.perfect365/.features.welcome.activity.SplashActivity filter 7c981f9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "stgexplorer.perfect365.com": -1
+          Authority: "explorer.perfect365.com": -1
+          Authority: "stgexpsvr.perfect365.com": -1
+          Authority: "user.perfect365.com": -1
+          Path: "PatternMatcher{PREFIX: /in-app}"
+          Path: "PatternMatcher{PREFIX: /in-app}"
+          Path: "PatternMatcher{LITERAL: /account/account/SendMailAction_activate.action}"
+          Path: "PatternMatcher{LITERAL: /account/account/SendMailAction_activate.action}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        fb2b243 com.arcsoft.perfect365/.features.welcome.activity.SplashActivity filter 43880c0
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        5d5974a com.arcsoft.perfect365/io.presage.mraid.browser.ShortcutActivity filter d4626bb
+          Action: "android.intent.action.MAIN"
+        64da7d8 com.arcsoft.perfect365/io.presage.mraid.browser.Android8AndLaterShortcutActivity filter 1447731
+          Action: "android.intent.action.MAIN"
+      com.arcsoft.perfect365.SHARE:
+        5fc653e com.arcsoft.perfect365/.features.share.activity.ShareActivity filter f442f9f
+          Action: "com.arcsoft.perfect365.SHARE"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        656a17c com.arcsoft.perfect365/com.ogury.analytics.receiver.PackageFullyRemovedReceiver filter 9feba05
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+      content:
+        3ecd050 com.arcsoft.perfect365/com.ogury.analytics.receiver.EventReminderReceiver filter 12d4249
+          Action: "android.intent.action.EVENT_REMINDER"
+          Scheme: "content"
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        aa7f8c6 com.arcsoft.perfect365/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6757087
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        e0a651c com.arcsoft.perfect365/com.inmarket.notouch.altbeacon.beacon.startup.StartupBroadcastReceiver filter 4e3c525
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+        3e6b708 com.arcsoft.perfect365/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d308ea1
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        7aa99ee com.arcsoft.perfect365/com.inmarket.m2m.internal.BootReceiver filter a9e3e8f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.REBOOT"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        7aa99ee com.arcsoft.perfect365/com.inmarket.m2m.internal.BootReceiver filter a9e3e8f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.REBOOT"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        7b43bb4 com.arcsoft.perfect365/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 32673dd
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        89adb52 com.arcsoft.perfect365/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter c2e8e23
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        1bf4d4c com.arcsoft.perfect365/com.pubmatic.sdk.common.network.PMNetworkMonitor$POBNetworkUpdateReceiver filter cc94195
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.telephony.action.CARRIER_CONFIG_CHANGED:
+        9b7f9e4 com.arcsoft.perfect365/com.ogury.analytics.receiver.CarrierConfigChangedReceiver filter bd10e4d
+          Action: "android.telephony.action.CARRIER_CONFIG_CHANGED"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        339f238 com.arcsoft.perfect365/com.ogury.analytics.receiver.BootCompletedReceiver filter 6c96211
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.ogury.sdk.intent.ENABLE_LOGS:
+        300ea5a com.arcsoft.perfect365/com.ogury.core.internal.OguryLogEnablerReceiver filter a67648b
+          Action: "com.ogury.sdk.intent.ENABLE_LOGS"
+      android.intent.action.DEVICE_STORAGE_OK:
+        7b43bb4 com.arcsoft.perfect365/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 32673dd
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.app.action.NEXT_ALARM_CLOCK_CHANGED:
+        6ecbd02 com.arcsoft.perfect365/com.ogury.analytics.receiver.NextAlarmClockChangedReceiver filter 5ef4613
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+      android.bluetooth.device.action.ACL_CONNECTED:
+        7eda74e com.arcsoft.perfect365/com.ogury.analytics.receiver.BluetoothReceiver filter d7e306f
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      android.intent.action.LOCALE_CHANGED:
+        75dde16 com.arcsoft.perfect365/.managers.system.language.LanguageChangeBroadcast filter 7a67397
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        aaa66fa com.arcsoft.perfect365/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 54a34ab
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        aa7f8c6 com.arcsoft.perfect365/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6757087
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        1335f20 com.arcsoft.perfect365/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c9b70d9
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        1335f20 com.arcsoft.perfect365/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c9b70d9
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        9c61f76 com.arcsoft.perfect365/com.ogury.analytics.receiver.TimeSetReceiver filter 2358977
+          Action: "android.intent.action.TIME_SET"
+      com.inmarket.m2m.internal.beaconservice.BeaconPeriodicTasksBroadcast.SYNC:
+        d51c5a2 com.arcsoft.perfect365/com.inmarket.m2m.internal.beaconservice.ScanSyncReceiver filter 354b233
+          Action: "com.inmarket.m2m.internal.beaconservice.BeaconPeriodicTasksBroadcast.SYNC"
+      android.intent.action.BOOT_COMPLETED:
+        7aa99ee com.arcsoft.perfect365/com.inmarket.m2m.internal.BootReceiver filter a9e3e8f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.REBOOT"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+        1335f20 com.arcsoft.perfect365/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c9b70d9
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        339f238 com.arcsoft.perfect365/com.ogury.analytics.receiver.BootCompletedReceiver filter 6c96211
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.USER_PRESENT:
+        1ea82aa com.arcsoft.perfect365/com.ogury.analytics.receiver.UserPresentReceiver filter e259e9b
+          Action: "android.intent.action.USER_PRESENT"
+      com.inmarket.m2m.internal.beaconservice.BeaconPeriodicTasksBroadcastReceiver:
+        6e16984 com.arcsoft.perfect365/com.inmarket.m2m.internal.beaconservice.BeaconPeriodicTasksBroadcastReceiver filter c38556d
+          Action: "com.inmarket.m2m.internal.beaconservice.BeaconPeriodicTasksBroadcastReceiver"
+          Action: "com.inmarket.m2m.internal.beaconservice.BeaconPeriodicTasksBroadcastReceiver.STOP_SCAN"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        e0a651c com.arcsoft.perfect365/com.inmarket.notouch.altbeacon.beacon.startup.StartupBroadcastReceiver filter 4e3c525
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+        3e6b708 com.arcsoft.perfect365/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d308ea1
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.inmarket.m2m.internal.beaconservice.BeaconPeriodicTasksBroadcastReceiver.STOP_SCAN:
+        6e16984 com.arcsoft.perfect365/com.inmarket.m2m.internal.beaconservice.BeaconPeriodicTasksBroadcastReceiver filter c38556d
+          Action: "com.inmarket.m2m.internal.beaconservice.BeaconPeriodicTasksBroadcastReceiver"
+          Action: "com.inmarket.m2m.internal.beaconservice.BeaconPeriodicTasksBroadcastReceiver.STOP_SCAN"
+      android.hardware.usb.action.USB_ACCESSORY_DETACHED:
+        7eda74e com.arcsoft.perfect365/com.ogury.analytics.receiver.BluetoothReceiver filter d7e306f
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        fcd99f0 com.arcsoft.perfect365/com.inmarket.m2m.internal.UpgradeReceiver filter f11db69
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.bluetooth.device.action.ACL_DISCONNECTED:
+        7eda74e com.arcsoft.perfect365/com.ogury.analytics.receiver.BluetoothReceiver filter d7e306f
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        b675a9e com.arcsoft.perfect365/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter cd1e97f
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.REBOOT:
+        7aa99ee com.arcsoft.perfect365/com.inmarket.m2m.internal.BootReceiver filter a9e3e8f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.REBOOT"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        ffa414 com.arcsoft.perfect365/com.arcsoft.gms.P365FcmListenerService filter c4f24bd
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=1000, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        2126ab2 com.arcsoft.perfect365/com.google.firebase.messaging.FirebaseMessagingService filter 605da03
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.arcsoft.perfect365.intentservice:
+        7d35226 com.arcsoft.perfect365/.features.welcome.activity.SyncDataService filter 765be67
+          Action: "com.arcsoft.perfect365.intentservice"
+      com.arcsoft.perfect365.shakeService:
+        d2a5968 com.arcsoft.perfect365/.features.welcome.activity.ShakeService filter b5f181
+          Action: "com.arcsoft.perfect365.shakeService"
+
+Domain verification status:
+  com.arcsoft.perfect365:
+    ID: e70eee9c-903b-49f8-8259-4fd1435f9ad1
+    Signatures: [66:92:05:77:93:26:81:08:D3:91:AA:71:20:3E:26:C5:2F:E6:E4:FD:EA:81:FE:E7:79:AB:1B:BC:05:BA:4E:27]
+    Domain verification state:
+      stgexpsvr.perfect365.com: none
+      explorer.perfect365.com: none
+      user.perfect365.com: none
+      stgexplorer.perfect365.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          stgexpsvr.perfect365.com
+          explorer.perfect365.com
+          user.perfect365.com
+          stgexplorer.perfect365.com
+
+Registered ContentProviders:
+  com.arcsoft.perfect365/com.flurry.android.agent.FlurryContentProvider:
+    Provider{9455fe com.arcsoft.perfect365/com.flurry.android.agent.FlurryContentProvider}
+  com.arcsoft.perfect365/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{1d0315f com.arcsoft.perfect365/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.arcsoft.perfect365/androidx.core.content.FileProvider:
+    Provider{32a27ac com.arcsoft.perfect365/androidx.core.content.FileProvider}
+  com.arcsoft.perfect365/kin.backupandrestore.KinRecoveryFileProvider:
+    Provider{c117c75 com.arcsoft.perfect365/kin.backupandrestore.KinRecoveryFileProvider}
+  com.arcsoft.perfect365/androidx.work.impl.WorkManagerInitializer:
+    Provider{edbd40a com.arcsoft.perfect365/androidx.work.impl.WorkManagerInitializer}
+  com.arcsoft.perfect365/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{7f0847b com.arcsoft.perfect365/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.arcsoft.perfect365/com.squareup.picasso.PicassoProvider:
+    Provider{10a6af1 com.arcsoft.perfect365/com.squareup.picasso.PicassoProvider}
+  com.arcsoft.perfect365/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{56b26d6 com.arcsoft.perfect365/com.google.firebase.provider.FirebaseInitProvider}
+  com.arcsoft.perfect365/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{3f8ed57 com.arcsoft.perfect365/com.facebook.ads.AudienceNetworkContentProvider}
+  com.arcsoft.perfect365/com.applovin.sdk.AppLovinInitProvider:
+    Provider{197c044 com.arcsoft.perfect365/com.applovin.sdk.AppLovinInitProvider}
+  com.arcsoft.perfect365/androidx.startup.InitializationProvider:
+    Provider{2c9c52d com.arcsoft.perfect365/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.arcsoft.perfect365.KinRecoveryFileProvider]:
+    Provider{c117c75 com.arcsoft.perfect365/kin.backupandrestore.KinRecoveryFileProvider}
+      applicationInfo=ApplicationInfo{fb05d31 com.arcsoft.perfect365}
+  [com.arcsoft.perfect365.workmanager-init]:
+    Provider{edbd40a com.arcsoft.perfect365/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{f62cc16 com.arcsoft.perfect365}
+  [com.arcsoft.perfect365.firebaseperfprovider]:
+    Provider{7f0847b com.arcsoft.perfect365/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{643c997 com.arcsoft.perfect365}
+  [com.arcsoft.perfect365.FlurryContentProvider]:
+    Provider{9455fe com.arcsoft.perfect365/com.flurry.android.agent.FlurryContentProvider}
+      applicationInfo=ApplicationInfo{4130784 com.arcsoft.perfect365}
+  [com.arcsoft.perfect365.com.squareup.picasso]:
+    Provider{10a6af1 com.arcsoft.perfect365/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{c7c9b6d com.arcsoft.perfect365}
+  [com.arcsoft.perfect365.AudienceNetworkContentProvider]:
+    Provider{3f8ed57 com.arcsoft.perfect365/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{bb793a2 com.arcsoft.perfect365}
+  [com.arcsoft.perfect365.androidx-startup]:
+    Provider{2c9c52d com.arcsoft.perfect365/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{d716833 com.arcsoft.perfect365}
+  [com.arcsoft.perfect365.applovincontentprovider]:
+    Provider{197c044 com.arcsoft.perfect365/com.applovin.sdk.AppLovinInitProvider}
+      applicationInfo=ApplicationInfo{17b17f0 com.arcsoft.perfect365}
+  [com.arcsoft.perfect365.provider]:
+    Provider{32a27ac com.arcsoft.perfect365/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{6548169 com.arcsoft.perfect365}
+  [com.arcsoft.perfect365.firebaseinitprovider]:
+    Provider{56b26d6 com.arcsoft.perfect365/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{19f47ee com.arcsoft.perfect365}
+  [com.arcsoft.perfect365.mobileadsinitprovider]:
+    Provider{1d0315f com.arcsoft.perfect365/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{8d0548f com.arcsoft.perfect365}
+
+Key Set Manager:
+  [com.arcsoft.perfect365]
+      Signing KeySets: 5699
+
+Packages:
+  Package [com.arcsoft.perfect365] (11c31c):
+    userId=10364
+    pkg=Package{439da47 com.arcsoft.perfect365}
+    codePath=/data/app/~~2wM8M6hUdKzP0oTsxeOIEA==/com.arcsoft.perfect365-F-LrpYTGxAzxlFWkfaQewg==
+    resourcePath=/data/app/~~2wM8M6hUdKzP0oTsxeOIEA==/com.arcsoft.perfect365-F-LrpYTGxAzxlFWkfaQewg==
+    legacyNativeLibraryDir=/data/app/~~2wM8M6hUdKzP0oTsxeOIEA==/com.arcsoft.perfect365-F-LrpYTGxAzxlFWkfaQewg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=3275 minSdk=23 targetSdk=30
+    minExtensionVersions=[]
+    versionName=8.89.20
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.facebook.katana]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.media.browse.MediaBrowserService }, Intent { act=androidx.media2.session.MediaSessionService }, Intent { act=androidx.media2.session.MediaLibraryService }]
+    dataDir=/data/user/0/com.arcsoft.perfect365
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 18:09:57
+    lastUpdateTime=2022-11-30 18:10:00
+    packageSource=0
+    signatures=PackageSignatures{bd3539d version:2, signatures:[1f09083b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_MEDIA_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.CAMERA
+      com.android.vending.BILLING
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.EXPAND_STATUS_BAR
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.GET_ACCOUNTS
+      android.permission.VIBRATE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.DISABLE_KEYGUARD
+      android.permission.BLUETOOTH
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.READ_SYNC_STATS
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.USE_CREDENTIALS
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.BATTERY_STATS
+      android.permission.REORDER_TASKS
+      android.permission.GET_TASKS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      com.android.alarm.permission.SET_ALARM
+      com.android.browser.permission.READ_HISTORY_BOOKMARKS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      android.permission.FOREGROUND_SERVICE 
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      com.google.android.gms.permission.AD_ID
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.EXPAND_STATUS_BAR: granted=true
+      android.permission.BLUETOOTH: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.android.browser.permission.READ_HISTORY_BOOKMARKS: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=83017 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 18:10:00
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_MEDIA_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.arcsoft.perfect365
+    com.google.android.apps.diagnosticstool:
+      com.arcsoft.perfect365
+    com.google.android.settings.intelligence:
+      com.arcsoft.perfect365
+    com.google.android.apps.accessibility.voiceaccess:
+      com.arcsoft.perfect365
+    com.google.android.storagemanager:
+      com.arcsoft.perfect365
+    com.google.android.pixel.setupwizard:
+      com.arcsoft.perfect365
+    com.truecaller:
+      com.arcsoft.perfect365
+    com.dv.adm:
+      com.arcsoft.perfect365
+    com.zappcues.gamingmode:
+      com.arcsoft.perfect365
+    com.arcsoft.perfect365:
+      [com.android.bluetooth,com.google.android.bluetooth.services]
+      com.google.android.googlequicksearchbox
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.youtube
+      com.google.android.apps.docs
+      com.google.android.apps.youtube.music
+      radiotime.player
+      ru.iptvremote.android.iptv.pro
+      wsj.reader_sp
+      com.dv.adm
+      com.hungama.myplay.activity
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+    com.jio.myjio:
+      com.arcsoft.perfect365
+  queryable via interaction:
+    User 0:
+      [com.android.settings,com.google.android.iwlan,com.android.providers.settings,com.google.SSRestartDetector,com.android.qns,android,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem,com.android.wallpaperbackup,com.android.location.fused,com.android.server.telecom,com.android.inputdevices,com.android.localtransport,com.android.keychain]:
+        com.arcsoft.perfect365
+      [com.google.android.gsf,com.google.android.gms]:
+        com.arcsoft.perfect365
+  queryable via uses-library:
+
+Dexopt state:
+  [com.arcsoft.perfect365]
+    path: /data/app/~~2wM8M6hUdKzP0oTsxeOIEA==/com.arcsoft.perfect365-F-LrpYTGxAzxlFWkfaQewg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:487307
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.arcsoft.perfect365]
+     base.apk - 1789

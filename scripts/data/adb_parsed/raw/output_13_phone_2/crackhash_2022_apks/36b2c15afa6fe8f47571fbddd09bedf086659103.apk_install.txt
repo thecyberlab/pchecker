@@ -1,0 +1,206 @@
+Activity Resolver Table:
+  Schemes:
+      freerdp:
+        720011a com.necta.wifimouse/com.freerdp.freerdpcore.presentation.SessionActivity filter d12944b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "freerdp"
+          Authority: "": -1 WILD
+      http:
+        fa2bbc2 com.necta.wifimouse/com.necta.wifimousefree.material.MainActivity filter 4af6009
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "wifimouse.necta.us": -1
+          Path: "PatternMatcher{GLOB: /com.necta.wifimousefree}"
+          AutoVerify=true
+      preferences:
+        5eeaa3c com.necta.wifimouse/com.freerdp.freerdpcore.presentation.BookmarkActivity filter 4e4f3c5
+          Action: "freerdp.intent.action.BOOKMARK"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "preferences"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        fa2bbc2 com.necta.wifimouse/com.necta.wifimousefree.material.MainActivity filter 78b3dd3
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        de4d20e com.necta.wifimouse/com.freerdp.freerdpcore.presentation.ShortcutsActivity filter 741e42f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.auto_connect:
+        fa2bbc2 com.necta.wifimouse/com.necta.wifimousefree.material.MainActivity filter 751cd10
+          Action: "android.intent.action.auto_connect"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.net.wifi.WIFI_STATE_CHANGED:
+        2ad14e6 com.necta.wifimouse/coelib.c.couluslibrary.plugin.NetworkChangeReceiver filter ff42a27
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        2ad14e6 com.necta.wifimouse/coelib.c.couluslibrary.plugin.NetworkChangeReceiver filter ff42a27
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+        f804d4 com.necta.wifimouse/com.freerdp.freerdpcore.application.NetworkStateReceiver filter b0ad67d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.google.android.c2dm.intent.RECEIVE:
+        2a59972 com.necta.wifimouse/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 56f41c3
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        71a2e28 com.necta.wifimouse/coelib.c.couluslibrary.plugin.SurveyReceiver filter b260741
+          Action: "android.intent.action.BOOT_COMPLETED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        63a9a40 com.necta.wifimouse/com.necta.wifimousefree.material.firebaseMessage filter f735d79
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        f2fdabe com.necta.wifimouse/com.google.firebase.messaging.FirebaseMessagingService filter 8fa371f
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.necta.wifimouse:
+    ID: e379c252-e1a7-462d-9cbe-60c05b5a0fda
+    Signatures: [1C:87:19:36:B9:5B:E7:18:5A:B8:0C:74:C0:9D:90:44:12:04:70:6A:2D:A4:77:8B:4C:54:53:50:53:01:16:A3]
+    Domain verification state:
+      wifimouse.necta.us: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          wifimouse.necta.us
+
+Registered ContentProviders:
+  com.necta.wifimouse/com.squareup.picasso.PicassoProvider:
+    Provider{ffb1479 com.necta.wifimouse/com.squareup.picasso.PicassoProvider}
+  com.necta.wifimouse/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{cbac5be com.necta.wifimouse/com.google.firebase.provider.FirebaseInitProvider}
+  com.necta.wifimouse/androidx.startup.InitializationProvider:
+    Provider{2ba461f com.necta.wifimouse/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.necta.wifimouse.com.squareup.picasso]:
+    Provider{ffb1479 com.necta.wifimouse/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{5a77d6c com.necta.wifimouse}
+  [com.necta.wifimouse.androidx-startup]:
+    Provider{2ba461f com.necta.wifimouse/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{e0f7f35 com.necta.wifimouse}
+  [com.necta.wifimouse.firebaseinitprovider]:
+    Provider{cbac5be com.necta.wifimouse/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{d597fca com.necta.wifimouse}
+
+Key Set Manager:
+  [com.necta.wifimouse]
+      Signing KeySets: 5575
+
+Packages:
+  Package [com.necta.wifimouse] (270bc15):
+    userId=10731
+    pkg=Package{1198eb8 com.necta.wifimouse}
+    codePath=/data/app/~~qNSUP4ZInMZUplvYef7l3A==/com.necta.wifimouse-yL9rLB_QyhEIYvRq0C2QFg==
+    resourcePath=/data/app/~~qNSUP4ZInMZUplvYef7l3A==/com.necta.wifimouse-yL9rLB_QyhEIYvRq0C2QFg==
+    legacyNativeLibraryDir=/data/app/~~qNSUP4ZInMZUplvYef7l3A==/com.necta.wifimouse-yL9rLB_QyhEIYvRq0C2QFg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=277 minSdk=21 targetSdk=31
+    minExtensionVersions=[]
+    versionName=4.4.5
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.twitter.android]
+    dataDir=/data/user/0/com.necta.wifimouse
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 12:50:18
+    lastUpdateTime=2022-11-30 12:50:19
+    packageSource=0
+    signatures=PackageSignatures{f34de64 version:3, signatures:[2d4493a2], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.TRANSMIT_IR
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.TRANSMIT_IR: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=54149 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 12:50:19
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.necta.wifimouse
+    com.google.android.apps.diagnosticstool:
+      com.necta.wifimouse
+    com.google.android.settings.intelligence:
+      com.necta.wifimouse
+    com.google.android.apps.accessibility.voiceaccess:
+      com.necta.wifimouse
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.necta.wifimouse]
+    path: /data/app/~~qNSUP4ZInMZUplvYef7l3A==/com.necta.wifimouse-yL9rLB_QyhEIYvRq0C2QFg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:3164305
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.necta.wifimouse]
+     base.apk - 380

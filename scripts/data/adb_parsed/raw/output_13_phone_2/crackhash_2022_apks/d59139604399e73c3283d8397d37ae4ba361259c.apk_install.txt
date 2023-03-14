@@ -1,0 +1,458 @@
+Activity Resolver Table:
+  Schemes:
+      shielder:
+        89093bb com.shielder.pro/.activities.SplashActivity filter 25d2c31
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "shielder"
+          Authority: "deeplink.handler": -1
+          Path: "PatternMatcher{PREFIX: /fb}"
+        408ef16 com.shielder.pro/.activities.InstallHandlerActivity filter 1aab097
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "shielder"
+          Authority: "deeplink.handler": -1
+          Path: "PatternMatcher{PREFIX: /install}"
+      fbconnect:
+        3456284 com.shielder.pro/com.facebook.CustomTabActivity filter ea75a6d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.shielder.pro": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        89093bb com.shielder.pro/.activities.SplashActivity filter 3410d8
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        f822f0 com.shielder.pro/com.rc.features.gamebooster.ui.GBBoostingActivity filter 9ec3069
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.metrica.push.action.NOTIFICATION_ACTION:
+        81ce6a2 com.shielder.pro/com.yandex.metrica.push.core.notification.MetricaPushDummyActivity filter 5dfbf33
+          Action: "com.yandex.metrica.push.action.NOTIFICATION_ACTION"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        cc1a64c com.shielder.pro/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 9e72695
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        a31cb9e com.shielder.pro/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d72067f
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.shielder.pro.action.ymp.SILENT_PUSH_RECEIVE:
+        d98a7fa com.shielder.pro/org.smartsdk.receivers.SilentPushReceiver filter 289e1ab
+          Action: "com.shielder.pro.action.ymp.SILENT_PUSH_RECEIVE"
+      android.intent.action.QUICKBOOT_POWERON:
+        a86caee com.shielder.pro/.receivers.PowerOnReceiver filter f4d1b8f
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.DEVICE_STORAGE_LOW:
+        16b03aa com.shielder.pro/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 52a8b9b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        e88db38 com.shielder.pro/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 8609711
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        a922820 com.shielder.pro/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 13505d9
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        16b03aa com.shielder.pro/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 52a8b9b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        1d47e1c com.shielder.pro/com.yandex.metrica.MetricaEventHandler filter b8e6a25
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.yandex.metrica.configuration.service.PLC:
+        f03c52 com.shielder.pro/com.yandex.metrica.ConfigurationServiceReceiver filter 216db23
+          Action: "com.yandex.metrica.configuration.service.PLC"
+      com.yandex.metrica.push.action.NOTIFICATION_ACTION:
+        cb96008 com.shielder.pro/com.yandex.metrica.push.core.notification.MetricaPushBroadcastReceiver filter 46083a1
+          Action: "com.yandex.metrica.push.action.NOTIFICATION_ACTION"
+      com.yandex.metrica.push.action.EXPIRED_BY_TTL_ACTION:
+        58874b4 com.shielder.pro/com.yandex.metrica.push.core.notification.TtlBroadcastReceiver filter 5e0b8dd
+          Action: "com.yandex.metrica.push.action.EXPIRED_BY_TTL_ACTION"
+      com.google.android.c2dm.intent.RECEIVE:
+        b0fd950 com.shielder.pro/com.google.firebase.iid.FirebaseInstanceIdReceiver filter dd61749
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        4b949c6 com.shielder.pro/com.yandex.metrica.push.core.notification.MetricaPushNotificationStatusChangeHandler filter c82ed87
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      android.intent.action.BATTERY_LOW:
+        cc1a64c com.shielder.pro/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 9e72695
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        74db076 com.shielder.pro/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 91c4677
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        74db076 com.shielder.pro/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 91c4677
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        a86caee com.shielder.pro/.receivers.PowerOnReceiver filter f4d1b8f
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=2147483647, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        74db076 com.shielder.pro/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 91c4677
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        3dc5e02 com.shielder.pro/com.rc.features.applock.receivers.BootBroadcastReceiver filter 104d313
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Category: "android.intent.category.LAUNCHER"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        4b949c6 com.shielder.pro/com.yandex.metrica.push.core.notification.MetricaPushNotificationStatusChangeHandler filter c82ed87
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        a31cb9e com.shielder.pro/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d72067f
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        4b949c6 com.shielder.pro/com.yandex.metrica.push.core.notification.MetricaPushNotificationStatusChangeHandler filter c82ed87
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        58c72e4 com.shielder.pro/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 826934d
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      metrica:
+        7213a7c com.shielder.pro/com.yandex.metrica.MetricaService filter dfdf05
+          Action: "com.yandex.metrica.IMetricaService"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "metrica"
+
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        ab6584e com.shielder.pro/org.smartsdk.FirebaseMessagingMasterService filter 8df8d6f
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        2858268 com.shielder.pro/com.google.firebase.messaging.FirebaseMessagingService filter 5046681
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.yandex.metrica.configuration.ACTION_INIT:
+        823ab5a com.shielder.pro/com.yandex.metrica.ConfigurationService filter 701918b
+          Action: "com.yandex.metrica.configuration.ACTION_INIT"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.shielder.pro/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{52354d2 com.shielder.pro/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.shielder.pro/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{4f49a3 com.shielder.pro/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.shielder.pro/com.rc.features.mediacleaner.base.providers.GenericFileProvider:
+    Provider{14434a0 com.shielder.pro/com.rc.features.mediacleaner.base.providers.GenericFileProvider}
+  com.shielder.pro/androidx.work.impl.WorkManagerInitializer:
+    Provider{5d35859 com.shielder.pro/androidx.work.impl.WorkManagerInitializer}
+  com.shielder.pro/com.yandex.metrica.PreloadInfoContentProvider:
+    Provider{dbdec1e com.shielder.pro/com.yandex.metrica.PreloadInfoContentProvider}
+  com.shielder.pro/com.facebook.marketing.internal.MarketingInitProvider:
+    Provider{502dcff com.shielder.pro/com.facebook.marketing.internal.MarketingInitProvider}
+  com.shielder.pro/com.squareup.picasso.PicassoProvider:
+    Provider{dc7facc com.shielder.pro/com.squareup.picasso.PicassoProvider}
+  com.shielder.pro/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{2582115 com.shielder.pro/com.google.firebase.provider.FirebaseInitProvider}
+  com.shielder.pro/com.facebook.internal.FacebookInitProvider:
+    Provider{4d8ac2a com.shielder.pro/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.shielder.pro.com.squareup.picasso]:
+    Provider{dc7facc com.shielder.pro/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{7324a1b com.shielder.pro}
+  [com.shielder.pro.provider]:
+    Provider{14434a0 com.shielder.pro/com.rc.features.mediacleaner.base.providers.GenericFileProvider}
+      applicationInfo=ApplicationInfo{edff7b8 com.shielder.pro}
+  [com.shielder.pro.workmanager-init]:
+    Provider{5d35859 com.shielder.pro/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{326b991 com.shielder.pro}
+  [com.shielder.pro.MarketingInitProvider]:
+    Provider{502dcff com.shielder.pro/com.facebook.marketing.internal.MarketingInitProvider}
+      applicationInfo=ApplicationInfo{b2d60f6 com.shielder.pro}
+  [com.shielder.pro.lifecycle-process]:
+    Provider{52354d2 com.shielder.pro/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{a216cf7 com.shielder.pro}
+  [com.shielder.pro.firebaseinitprovider]:
+    Provider{2582115 com.shielder.pro/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{d78d764 com.shielder.pro}
+  [com.shielder.pro.appmetrica.preloadinfo.retail]:
+    Provider{dbdec1e com.shielder.pro/com.yandex.metrica.PreloadInfoContentProvider}
+      applicationInfo=ApplicationInfo{96c5dcd com.shielder.pro}
+  [com.shielder.pro.mobileadsinitprovider]:
+    Provider{4f49a3 com.shielder.pro/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{1469682 com.shielder.pro}
+  [com.shielder.pro.FacebookInitProvider]:
+    Provider{4d8ac2a com.shielder.pro/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{775e193 com.shielder.pro}
+
+Key Set Manager:
+  [com.shielder.pro]
+      Signing KeySets: 5699
+
+Packages:
+  Package [com.shielder.pro] (29e05d0):
+    userId=10302
+    pkg=Package{1ee09c9 com.shielder.pro}
+    codePath=/data/app/~~CGzllaxFoKDgy2Z4FjRqmQ==/com.shielder.pro-DjsBCf-HLKroDINWteKWxQ==
+    resourcePath=/data/app/~~CGzllaxFoKDgy2Z4FjRqmQ==/com.shielder.pro-DjsBCf-HLKroDINWteKWxQ==
+    legacyNativeLibraryDir=/data/app/~~CGzllaxFoKDgy2Z4FjRqmQ==/com.shielder.pro-DjsBCf-HLKroDINWteKWxQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=17 minSdk=16 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.25
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.huawei.appmarket, com.facebook.katana, com.instagram.android, com.facebook.orca, com.skype.raider, com.snapchat.android, org.telegram.messenger, com.viber.voip, com.whatsapp]
+    queriesIntents=[Intent { act=com.yandex.android.advid.IDENTIFIER_SERVICE }, Intent { act=com.uodis.opendevice.OPENIDS_SERVICE }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] }]
+    dataDir=/data/user/0/com.shielder.pro
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 15:03:08
+    lastUpdateTime=2022-11-30 15:03:09
+    packageSource=0
+    signatures=PackageSignatures{3cb98ce version:3, signatures:[1f09083b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      com.android.vending.BILLING
+      android.permission.INTERNET
+      android.permission.KILL_BACKGROUND_PROCESSES
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.WRITE_SETTINGS
+      android.permission.BLUETOOTH
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.VIBRATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.android.alarm.permission.SET_ALARM
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.GET_TASKS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.WAKE_LOCK
+      com.google.android.gms.permission.AD_ID
+      BIND_GET_INSTALL_REFERRER_SERVICE
+      com.android.vending.CHECK_LICENSE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.SYSTEM_OVERLAY_WINDOW
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.ACTION_MANAGE_OVERLAY_PERMISSION
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.REORDER_TASKS
+      com.google.android.c2dm.permission.RECEIVE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      com.android.launcher.permission.UNINSTALL_SHORTCUT
+      android.permission.ACCESS_MEDIA_LOCATION
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.launcher.permission.UNINSTALL_SHORTCUT: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.BLUETOOTH: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=59781 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:03:09
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_MEDIA_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.shielder.pro
+    com.google.android.apps.diagnosticstool:
+      com.shielder.pro
+    com.google.android.settings.intelligence:
+      com.shielder.pro
+    com.google.android.youtube:
+      com.shielder.pro
+    com.google.android.contacts:
+      com.shielder.pro
+    com.google.android.apps.accessibility.voiceaccess:
+      com.shielder.pro
+    com.google.android.gm:
+      com.shielder.pro
+    com.truecaller:
+      com.shielder.pro
+    com.shielder.pro:
+      com.google.android.documentsui
+      com.verizon.services
+      com.google.android.projection.gearhead
+      com.google.android.apps.nbu.files
+      com.google.android.apps.recorder
+      com.google.android.apps.tips
+      com.google.android.apps.messaging
+      com.google.android.apps.safetyhub
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.googlequicksearchbox
+      com.google.android.dialer
+      com.google.android.GoogleCamera
+      com.google.android.setupwizard
+      com.google.android.calculator
+      com.android.chrome
+      com.google.android.deskclock
+      com.google.android.accessibility.soundamplifier
+      com.google.android.calendar
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.contacts
+      com.google.android.apps.docs
+      com.google.android.videos
+      com.google.android.apps.accessibility.voiceaccess
+      com.google.android.inputmethod.latin
+      com.google.android.apps.youtube.music
+      com.google.android.gm
+      [app id 10195 not installed]
+      com.google.android.cellbroadcastreceiver
+      com.pandavideocompressor
+      net.eagin.software.android.dejaloYa
+      radiotime.player
+      org.malwarebytes.antimalware
+      com.truecaller
+      com.kizeetech.newankaradesigns
+      com.zoho.assist.agent
+      com.darinsoft.vimo
+      com.ninegag.android.app
+      com.mxtech.videoplayer.television
+      com.mcdonalds.app
+      com.catdaddy.cat22
+      com.fourchars.lmpfree
+      com.lyrebirdstudio.photo_editor_pro
+      com.pikoo.app
+      com.mikewheelermedia
+      com.mobisystems.office
+      com.michaldrabik.showly2
+      com.frankthebrilliant.app
+      com.brit.swift.minimal
+      com.zappcues.gamingmode
+      com.cam001.selfie
+      com.fitapp
+      com.brit.swiftdark.substratum
+      com.subsplashconsulting.s_NKSKD3
+      deepfinity.android
+      com.king.blossomblast
+      com.bitsmedia.android.muslimpro
+      com.yahoo.mobile.client.android.weather
+      com.simplehabit.simplehabitapp
+      com.ludia.jurassicworld
+      com.accuweather.android
+      com.cooyostudio.marble.blast
+      com.jio.myjio
+      com.getepic.Epic
+      com.pranavpandey.rotation
+      com.nikitadev.irregularverbspro
+      com.Wifi.lte5g.lte4g.lte3g.speedtest.Internetspeed
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+      com.unvoid.borealis
+      com.osheden.azulox
+    com.zappcues.gamingmode:
+      com.shielder.pro
+    com.jio.myjio:
+      com.shielder.pro
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.shielder.pro]
+    path: /data/app/~~CGzllaxFoKDgy2Z4FjRqmQ==/com.shielder.pro-DjsBCf-HLKroDINWteKWxQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:582392
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.shielder.pro]
+     base.apk - 585

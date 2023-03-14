@@ -1,0 +1,362 @@
+Activity Resolver Table:
+  Schemes:
+      viz:
+        b4e57a9 com.globaldelight.vizmato/.activity.DZMainActivity filter 2abb4cf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "viz"
+          Authority: "open": -1
+      https:
+        b4e57a9 com.globaldelight.vizmato/.activity.DZMainActivity filter b4d3e5c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "vizmato.test-app.link": -1
+          Authority: "vizmato.app.link": -1
+          AutoVerify=true
+      hwpps:
+        b7af460 com.globaldelight.vizmato/com.huawei.openalliance.ad.activity.PPSLauncherActivity filter c0f7d19
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "hwpps"
+          Authority: "com.globaldelight.vizmato": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        bc565 com.globaldelight.vizmato/.activity.SplashScreenActivity filter c46023a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        b4e57a9 com.globaldelight.vizmato/.activity.DZMainActivity filter 4c7012e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+        bc565 com.globaldelight.vizmato/.activity.SplashScreenActivity filter 158ceeb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+        69de448 com.globaldelight.vizmato/.activity.LibraryActivity filter 47852e1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+        b820806 com.globaldelight.vizmato/.activity.ExploreActivity filter f736ec7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+        269e92 com.globaldelight.vizmato/.activity.DZMyVideosActivity filter bae3063
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+      VZ_ERROR:
+        4d0fcf4 com.globaldelight.vizmato/.activity.VZTestErrorActivity filter 2c63c1d
+          Action: "VZ_ERROR"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.globaldelight.vizmato.notificationtransmitter:
+        9b6ef78 com.globaldelight.vizmato/.receiver.NotificationTransmitter filter eaab651
+          Action: "com.globaldelight.vizmato.notificationtransmitter"
+      com.huawei.android.push.intent.REGISTRATION:
+        ae43590 com.globaldelight.vizmato/com.huawei.hms.support.api.push.PushReceiver filter 8dcde89
+          Action: "com.huawei.android.push.intent.REGISTRATION"
+          Action: "com.huawei.android.push.intent.RECEIVE"
+      com.huawei.intent.action.PUSH_DELAY_NOTIFY:
+        38fd042 com.globaldelight.vizmato/com.huawei.hms.support.api.push.PushMsgReceiver filter abbf853
+          Action: "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+          Action: "com.huawei.intent.action.PUSH"
+      com.huawei.hms.analytics.pps.event:
+        9278b24 com.globaldelight.vizmato/com.huawei.hms.analytics.receiver.HiAnalyticsSvcEvtReceiver filter 413668d
+          Action: "com.huawei.hms.analytics.pps.event"
+      com.android.vending.INSTALL_REFERRER:
+        50c11de com.globaldelight.vizmato/io.branch.referral.InstallListener filter 3496fbf
+          Action: "com.android.vending.INSTALL_REFERRER"
+        8436dea com.globaldelight.vizmato/com.mixpanel.android.mpmetrics.InstallReferrerReceiver filter d2f48db
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.huawei.android.push.intent.RECEIVE:
+        ae43590 com.globaldelight.vizmato/com.huawei.hms.support.api.push.PushReceiver filter 8dcde89
+          Action: "com.huawei.android.push.intent.REGISTRATION"
+          Action: "com.huawei.android.push.intent.RECEIVE"
+      com.google.android.c2dm.intent.RECEIVE:
+        30af68c com.globaldelight.vizmato/.receiver.GcmReceiver filter f11d1d5
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Action: "com.google.android.c2dm.intent.REGISTRATION"
+          Category: "com.globaldelight.vizmato"
+      android.intent.action.BOOT_COMPLETED:
+        5e27eb6 com.globaldelight.vizmato/.referrals.DZInAppNotificationReceiver filter acf97b7
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.huawei.intent.action.PUSH:
+        38fd042 com.globaldelight.vizmato/com.huawei.hms.support.api.push.PushMsgReceiver filter abbf853
+          Action: "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+          Action: "com.huawei.intent.action.PUSH"
+      com.google.android.c2dm.intent.REGISTRATION:
+        30af68c com.globaldelight.vizmato/.receiver.GcmReceiver filter f11d1d5
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Action: "com.google.android.c2dm.intent.REGISTRATION"
+          Category: "com.globaldelight.vizmato"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.huawei.push.msg.NOTIFY_MSG:
+        77f1abc com.globaldelight.vizmato/com.huawei.hms.support.api.push.service.HmsMsgService filter 4abda45
+          Action: "com.huawei.push.msg.NOTIFY_MSG"
+          Action: "com.huawei.push.msg.PASSBY_MSG"
+      com.huawei.push.msg.PASSBY_MSG:
+        77f1abc com.globaldelight.vizmato/com.huawei.hms.support.api.push.service.HmsMsgService filter 4abda45
+          Action: "com.huawei.push.msg.NOTIFY_MSG"
+          Action: "com.huawei.push.msg.PASSBY_MSG"
+      com.huawei.push.action.MESSAGING_EVENT:
+        8ceae8e com.globaldelight.vizmato/.services.MyFirebaseMessagingService filter 903c6af permission com.globaldelight.vizmato.permission.PROCESS_PUSH_MSG
+          Action: "com.huawei.push.action.MESSAGING_EVENT"
+
+Domain verification status:
+  com.globaldelight.vizmato:
+    ID: a527e32b-474b-48be-bda3-a340b12996c1
+    Signatures: [3B:61:C2:A8:2A:FF:9F:76:52:FF:E0:B0:4B:E3:C8:F2:48:B5:E1:AA:70:63:F1:A3:84:6F:0C:F5:C7:78:62:8A]
+    Domain verification state:
+      vizmato.test-app.link: 1024
+      vizmato.app.link: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          vizmato.test-app.link
+          vizmato.app.link
+
+Permissions:
+  Permission [com.globaldelight.vizmato.permission.PUSH_PROVIDER] (e65da3d):
+    sourcePackage=com.globaldelight.vizmato
+    uid=10277 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{da51028 com.globaldelight.vizmato.permission.PUSH_PROVIDER}
+
+Permissions:
+  Permission [com.globaldelight.vizmato.permission.C2D_MESSAGE] (20ab232):
+    sourcePackage=com.globaldelight.vizmato
+    uid=10277 gids=[] type=0 prot=signature
+    perm=PermissionInfo{197c6e6 com.globaldelight.vizmato.permission.C2D_MESSAGE}
+
+Permissions:
+  Permission [com.globaldelight.vizmato.permission.PUSH_WRITE_PROVIDER] (5854b83):
+    sourcePackage=com.globaldelight.vizmato
+    uid=10277 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{24f06d4 com.globaldelight.vizmato.permission.PUSH_WRITE_PROVIDER}
+
+Permissions:
+  Permission [com.globaldelight.vizmato.permission.PROCESS_PUSH_MSG] (1154100):
+    sourcePackage=com.globaldelight.vizmato
+    uid=10277 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{a896b72 com.globaldelight.vizmato.permission.PROCESS_PUSH_MSG}
+
+Registered ContentProviders:
+  com.globaldelight.vizmato/com.huawei.hms.support.api.push.PushProvider:
+    Provider{76babc3 com.globaldelight.vizmato/com.huawei.hms.support.api.push.PushProvider}
+  com.globaldelight.vizmato/com.huawei.hms.aaid.InitProvider:
+    Provider{2ffbc40 com.globaldelight.vizmato/com.huawei.hms.aaid.InitProvider}
+  com.globaldelight.vizmato/com.squareup.picasso.PicassoProvider:
+    Provider{67eccbe com.globaldelight.vizmato/com.squareup.picasso.PicassoProvider}
+  com.globaldelight.vizmato/com.facebook.internal.FacebookInitProvider:
+    Provider{f53411f com.globaldelight.vizmato/com.facebook.internal.FacebookInitProvider}
+  com.globaldelight.vizmato/com.huawei.agconnect.core.provider.AGConnectInitializeProvider:
+    Provider{1445c6c com.globaldelight.vizmato/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+  com.globaldelight.vizmato/com.huawei.agconnect.apms.APMSInitializeProvider:
+    Provider{5cc7235 com.globaldelight.vizmato/com.huawei.agconnect.apms.APMSInitializeProvider}
+  com.globaldelight.vizmato/com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider:
+    Provider{cd6f6ca com.globaldelight.vizmato/com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider}
+  com.globaldelight.vizmato/com.facebook.FacebookContentProvider:
+    Provider{f4d03b com.globaldelight.vizmato/com.facebook.FacebookContentProvider}
+  com.globaldelight.vizmato/com.huawei.hms.update.provider.UpdateProvider:
+    Provider{850d358 com.globaldelight.vizmato/com.huawei.hms.update.provider.UpdateProvider}
+
+ContentProvider Authorities:
+  [com.globaldelight.vizmato.com.squareup.picasso]:
+    Provider{67eccbe com.globaldelight.vizmato/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{5dadd39 com.globaldelight.vizmato}
+  [com.globaldelight.vizmato.huawei.push.provider]:
+    Provider{76babc3 com.globaldelight.vizmato/com.huawei.hms.support.api.push.PushProvider}
+      applicationInfo=ApplicationInfo{adbf7e com.globaldelight.vizmato}
+  [com.globaldelight.vizmato.AGCInitializeProvider]:
+    Provider{1445c6c com.globaldelight.vizmato/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+      applicationInfo=ApplicationInfo{3c71cdf com.globaldelight.vizmato}
+  [com.globaldelight.vizmato.updateSdk.fileProvider]:
+    Provider{cd6f6ca com.globaldelight.vizmato/com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider}
+      applicationInfo=ApplicationInfo{a0d6d2c com.globaldelight.vizmato}
+  [com.globaldelight.vizmato.APMSInitializeProvider]:
+    Provider{5cc7235 com.globaldelight.vizmato/com.huawei.agconnect.apms.APMSInitializeProvider}
+      applicationInfo=ApplicationInfo{b0313f5 com.globaldelight.vizmato}
+  [com.globaldelight.vizmato.hms.update.provider]:
+    Provider{850d358 com.globaldelight.vizmato/com.huawei.hms.update.provider.UpdateProvider}
+      applicationInfo=ApplicationInfo{4e2558a com.globaldelight.vizmato}
+  [com.globaldelight.vizmato.FacebookInitProvider]:
+    Provider{f53411f com.globaldelight.vizmato/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{d2aa7fb com.globaldelight.vizmato}
+  [com.globaldelight.vizmato.aaidinitprovider]:
+    Provider{2ffbc40 com.globaldelight.vizmato/com.huawei.hms.aaid.InitProvider}
+      applicationInfo=ApplicationInfo{17a3018 com.globaldelight.vizmato}
+  [com.facebook.app.FacebookContentProvider230655790718554]:
+    Provider{f4d03b com.globaldelight.vizmato/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{63dfa71 com.globaldelight.vizmato}
+
+Key Set Manager:
+  [com.globaldelight.vizmato]
+      Signing KeySets: 5679
+
+Packages:
+  Package [com.globaldelight.vizmato] (f184056):
+    userId=10277
+    pkg=Package{354b00f com.globaldelight.vizmato}
+    codePath=/data/app/~~QTGCH5yDykI9a9jHv5hsJA==/com.globaldelight.vizmato-KLqk5AF6AZ9NNz-wc0Zc7g==
+    resourcePath=/data/app/~~QTGCH5yDykI9a9jHv5hsJA==/com.globaldelight.vizmato-KLqk5AF6AZ9NNz-wc0Zc7g==
+    legacyNativeLibraryDir=/data/app/~~QTGCH5yDykI9a9jHv5hsJA==/com.globaldelight.vizmato-KLqk5AF6AZ9NNz-wc0Zc7g==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=501 minSdk=19 targetSdk=30
+    minExtensionVersions=[]
+    versionName=2.4.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.globaldelight.vizmato
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 13:37:31
+    lastUpdateTime=2022-11-30 13:37:32
+    packageSource=0
+    signatures=PackageSignatures{34db89c version:2, signatures:[9c12e809], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.globaldelight.vizmato.permission.C2D_MESSAGE: prot=signature, INSTALLED
+      com.globaldelight.vizmato.permission.PROCESS_PUSH_MSG: prot=signature|privileged, INSTALLED
+      com.globaldelight.vizmato.permission.PUSH_PROVIDER: prot=signature|privileged, INSTALLED
+      com.globaldelight.vizmato.permission.PUSH_WRITE_PROVIDER: prot=signature|privileged, INSTALLED
+    requested permissions:
+      android.permission.FOREGROUND_SERVICE
+      com.globaldelight.vizmato.permission.C2D_MESSAGE
+      android.permission.WAKE_LOCK
+      android.permission.INTERNET
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.SYSTEM_OVERLAY_WINDOW
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.CAMERA
+      android.permission.RECORD_AUDIO
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.USE_CREDENTIALS
+      android.permission.GET_ACCOUNTS
+      android.permission.BLUETOOTH
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+      com.globaldelight.vizmato.permission.PROCESS_PUSH_MSG
+      com.globaldelight.vizmato.permission.PUSH_PROVIDER
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.BROADCAST_STICKY
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.globaldelight.vizmato.permission.PUSH_PROVIDER: granted=true
+      com.globaldelight.vizmato.permission.C2D_MESSAGE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.globaldelight.vizmato.permission.PROCESS_PUSH_MSG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=55711 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 13:37:32
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.globaldelight.vizmato
+    com.google.android.apps.diagnosticstool:
+      com.globaldelight.vizmato
+    com.google.android.settings.intelligence:
+      com.globaldelight.vizmato
+    com.google.android.youtube:
+      com.globaldelight.vizmato
+    com.google.android.contacts:
+      com.globaldelight.vizmato
+    com.google.android.apps.accessibility.voiceaccess:
+      com.globaldelight.vizmato
+    com.google.android.gm:
+      com.globaldelight.vizmato
+    com.jio.myjio:
+      com.globaldelight.vizmato
+  queryable via interaction:
+    User 0:
+      [com.android.localtransport,com.android.providers.settings,android,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem,com.android.server.telecom,com.android.location.fused,com.android.settings,com.android.keychain,com.android.wallpaperbackup,com.android.inputdevices,com.android.qns,com.google.SSRestartDetector,com.google.android.iwlan]:
+        com.globaldelight.vizmato
+      [com.google.android.gms,com.google.android.gsf]:
+        com.globaldelight.vizmato
+  queryable via uses-library:
+
+Dexopt state:
+  [com.globaldelight.vizmato]
+    path: /data/app/~~QTGCH5yDykI9a9jHv5hsJA==/com.globaldelight.vizmato-KLqk5AF6AZ9NNz-wc0Zc7g==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:178718
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.globaldelight.vizmato]
+     base.apk - 640

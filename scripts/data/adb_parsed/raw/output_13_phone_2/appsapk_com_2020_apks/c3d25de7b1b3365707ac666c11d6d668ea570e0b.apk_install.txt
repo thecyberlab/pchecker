@@ -1,0 +1,310 @@
+Activity Resolver Table:
+  Schemes:
+      msal211e5a3c-79d3-4be1-9f31-64b9b769d5b5:
+        4ecc00e org.swiftapps.swiftbackup/com.microsoft.identity.client.BrowserTabActivity filter 4263a2f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "msal211e5a3c-79d3-4be1-9f31-64b9b769d5b5"
+          Authority: "auth": -1
+      db-mzc5bxvbe0960q1:
+        2908b10 org.swiftapps.swiftbackup/com.dropbox.core.android.AuthActivity filter 4a4609
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "db-mzc5bxvbe0960q1"
+      mms:
+        95b483c org.swiftapps.swiftbackup/.messagescalls.defaulthandler.ComposeSmsActivity filter 64839c5
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sms"
+          Scheme: "smsto"
+          Scheme: "mms"
+          Scheme: "mmsto"
+      sms:
+        95b483c org.swiftapps.swiftbackup/.messagescalls.defaulthandler.ComposeSmsActivity filter 64839c5
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sms"
+          Scheme: "smsto"
+          Scheme: "mms"
+          Scheme: "mmsto"
+      mmsto:
+        95b483c org.swiftapps.swiftbackup/.messagescalls.defaulthandler.ComposeSmsActivity filter 64839c5
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sms"
+          Scheme: "smsto"
+          Scheme: "mms"
+          Scheme: "mmsto"
+      smsto:
+        95b483c org.swiftapps.swiftbackup/.messagescalls.defaulthandler.ComposeSmsActivity filter 64839c5
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sms"
+          Scheme: "smsto"
+          Scheme: "mms"
+          Scheme: "mmsto"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        467c9c2 org.swiftapps.swiftbackup/.intro.IntroActivity filter db633d3
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Full MIME Types:
+      application/vnd.wap.mms-message:
+        1ca2772 org.swiftapps.swiftbackup/.messagescalls.defaulthandler.MmsReceiver filter f43b7c3
+          Action: "android.provider.Telephony.WAP_PUSH_DELIVER"
+          StaticType: "application/vnd.wap.mms-message"
+
+  Base MIME Types:
+      application:
+        1ca2772 org.swiftapps.swiftbackup/.messagescalls.defaulthandler.MmsReceiver filter f43b7c3
+          Action: "android.provider.Telephony.WAP_PUSH_DELIVER"
+          StaticType: "application/vnd.wap.mms-message"
+
+  Non-Data Actions:
+      org.swiftapps.swiftbackup.ACTION_CANCEL_TASK:
+        7b2ac28 org.swiftapps.swiftbackup/.tasks.NotificationTaskCancelReceiver filter 677ad41
+          Action: "org.swiftapps.swiftbackup.ACTION_CANCEL_TASK"
+      com.android.vending.INSTALL_REFERRER:
+        70f48be org.swiftapps.swiftbackup/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter aa00d1f
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.provider.Telephony.SMS_DELIVER:
+        59a62d4 org.swiftapps.swiftbackup/.messagescalls.defaulthandler.SmsReceiver filter d0dc7d
+          Action: "android.provider.Telephony.SMS_DELIVER"
+      org.swiftapps.swiftbackup.DETAIL_SHORTCUT_PINNED:
+        904c2e6 org.swiftapps.swiftbackup/.detail.ShortcutPinnedReceiver filter e4d4027
+          Action: "org.swiftapps.swiftbackup.DETAIL_SHORTCUT_PINNED"
+      com.google.android.c2dm.intent.RECEIVE:
+        5a4d840 org.swiftapps.swiftbackup/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 293c379
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        1b8cf1a org.swiftapps.swiftbackup/.jobs.BootReceiver filter 2e64a4b
+          Action: "android.intent.action.BOOT_COMPLETED"
+
+  MIME Typed Actions:
+      android.provider.Telephony.WAP_PUSH_DELIVER:
+        1ca2772 org.swiftapps.swiftbackup/.messagescalls.defaulthandler.MmsReceiver filter f43b7c3
+          Action: "android.provider.Telephony.WAP_PUSH_DELIVER"
+          StaticType: "application/vnd.wap.mms-message"
+
+Service Resolver Table:
+  Schemes:
+      mms:
+        f1f386c org.swiftapps.swiftbackup/.messagescalls.defaulthandler.HeadlessSmsSendService filter 3041e35 permission android.permission.SEND_RESPOND_VIA_MESSAGE
+          Action: "android.intent.action.RESPOND_VIA_MESSAGE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "sms"
+          Scheme: "smsto"
+          Scheme: "mms"
+          Scheme: "mmsto"
+      sms:
+        f1f386c org.swiftapps.swiftbackup/.messagescalls.defaulthandler.HeadlessSmsSendService filter 3041e35 permission android.permission.SEND_RESPOND_VIA_MESSAGE
+          Action: "android.intent.action.RESPOND_VIA_MESSAGE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "sms"
+          Scheme: "smsto"
+          Scheme: "mms"
+          Scheme: "mmsto"
+      mmsto:
+        f1f386c org.swiftapps.swiftbackup/.messagescalls.defaulthandler.HeadlessSmsSendService filter 3041e35 permission android.permission.SEND_RESPOND_VIA_MESSAGE
+          Action: "android.intent.action.RESPOND_VIA_MESSAGE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "sms"
+          Scheme: "smsto"
+          Scheme: "mms"
+          Scheme: "mmsto"
+      smsto:
+        f1f386c org.swiftapps.swiftbackup/.messagescalls.defaulthandler.HeadlessSmsSendService filter 3041e35 permission android.permission.SEND_RESPOND_VIA_MESSAGE
+          Action: "android.intent.action.RESPOND_VIA_MESSAGE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "sms"
+          Scheme: "smsto"
+          Scheme: "mms"
+          Scheme: "mmsto"
+
+Domain verification status:
+
+Registered ContentProviders:
+  org.swiftapps.swiftbackup/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{90c556f org.swiftapps.swiftbackup/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  org.swiftapps.swiftbackup/androidx.core.content.FileProvider:
+    Provider{f22627c org.swiftapps.swiftbackup/androidx.core.content.FileProvider}
+  org.swiftapps.swiftbackup/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{38de705 org.swiftapps.swiftbackup/com.crashlytics.android.CrashlyticsInitProvider}
+  org.swiftapps.swiftbackup/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{2ad135a org.swiftapps.swiftbackup/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [org.swiftapps.swiftbackup.crashlyticsinitprovider]:
+    Provider{38de705 org.swiftapps.swiftbackup/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{132d98b org.swiftapps.swiftbackup}
+  [org.swiftapps.swiftbackup.firebaseinitprovider]:
+    Provider{2ad135a org.swiftapps.swiftbackup/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{d712a68 org.swiftapps.swiftbackup}
+  [org.swiftapps.swiftbackup.fileprovider]:
+    Provider{f22627c org.swiftapps.swiftbackup/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{88aee81 org.swiftapps.swiftbackup}
+  [org.swiftapps.swiftbackup.lifecycle-process]:
+    Provider{90c556f org.swiftapps.swiftbackup/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{990b26 org.swiftapps.swiftbackup}
+
+Key Set Manager:
+  [org.swiftapps.swiftbackup]
+      Signing KeySets: 5411
+
+Packages:
+  Package [org.swiftapps.swiftbackup] (7f38367):
+    userId=10485
+    pkg=Package{d628514 org.swiftapps.swiftbackup}
+    codePath=/data/app/~~uU0DF5-MJR6EcHv-9cvc_g==/org.swiftapps.swiftbackup-Fz4LCGH9M0UPPPT94l-rzA==
+    resourcePath=/data/app/~~uU0DF5-MJR6EcHv-9cvc_g==/org.swiftapps.swiftbackup-Fz4LCGH9M0UPPPT94l-rzA==
+    legacyNativeLibraryDir=/data/app/~~uU0DF5-MJR6EcHv-9cvc_g==/org.swiftapps.swiftbackup-Fz4LCGH9M0UPPPT94l-rzA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=387 minSdk=23 targetSdk=29
+    minExtensionVersions=[]
+    versionName=3.1.3
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/org.swiftapps.swiftbackup
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 12:25:58
+    lastUpdateTime=2022-11-30 12:25:59
+    packageSource=0
+    signatures=PackageSignatures{8f6f1bd version:2, signatures:[21c098dc], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_SMS
+      android.permission.WRITE_SMS
+      android.permission.READ_CONTACTS
+      android.permission.READ_CALL_LOG
+      android.permission.WRITE_CALL_LOG
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      com.android.vending.BILLING
+      android.permission.SET_WALLPAPER
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.INSTALL_SHORTCUT
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.WRITE_SMS: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=54818 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 12:25:59
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CALL_LOG: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALL_LOG: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      org.swiftapps.swiftbackup
+    com.google.android.apps.diagnosticstool:
+      org.swiftapps.swiftbackup
+    com.google.android.settings.intelligence:
+      org.swiftapps.swiftbackup
+    com.google.android.contacts:
+      org.swiftapps.swiftbackup
+    com.google.android.apps.accessibility.voiceaccess:
+      org.swiftapps.swiftbackup
+    com.google.android.gm:
+      org.swiftapps.swiftbackup
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [org.swiftapps.swiftbackup]
+    path: /data/app/~~uU0DF5-MJR6EcHv-9cvc_g==/org.swiftapps.swiftbackup-Fz4LCGH9M0UPPPT94l-rzA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1705134
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [org.swiftapps.swiftbackup]
+     base.apk - 677

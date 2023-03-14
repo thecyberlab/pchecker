@@ -1,0 +1,210 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      eu.faircode.netguard.START_PORT_FORWARD:
+        3f3b5c2 eu.faircode.netguard/.ActivityForwardApproval filter 631afd3
+          Action: "eu.faircode.netguard.START_PORT_FORWARD"
+          Action: "eu.faircode.netguard.STOP_PORT_FORWARD"
+      android.intent.action.MAIN:
+        af260f8 eu.faircode.netguard/.ActivityMain filter a8f09d1
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.MANAGE_NETWORK_USAGE:
+        af260f8 eu.faircode.netguard/.ActivityMain filter c8b0c36
+          Action: "android.intent.action.MANAGE_NETWORK_USAGE"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.APPLICATION_PREFERENCES:
+        cb0d737 eu.faircode.netguard/.ActivitySettings filter 8a9720d
+          Action: "android.intent.action.APPLICATION_PREFERENCES"
+          Category: "android.intent.category.DEFAULT"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        cb0d737 eu.faircode.netguard/.ActivitySettings filter 46894a4
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+      eu.faircode.netguard.STOP_PORT_FORWARD:
+        3f3b5c2 eu.faircode.netguard/.ActivityForwardApproval filter 631afd3
+          Action: "eu.faircode.netguard.START_PORT_FORWARD"
+          Action: "eu.faircode.netguard.STOP_PORT_FORWARD"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        f4b6c0e eu.faircode.netguard/.ReceiverPackageRemoved filter edd762f
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      eu.faircode.netguard.ON:
+        a3bf828 eu.faircode.netguard/.WidgetAdmin filter 8150941
+          Action: "eu.faircode.netguard.ON"
+          Action: "eu.faircode.netguard.OFF"
+          Action: "eu.faircode.netguard.LOCKDOWN_ON"
+          Action: "eu.faircode.netguard.LOCKDOWN_OFF"
+      eu.faircode.netguard.OFF:
+        a3bf828 eu.faircode.netguard/.WidgetAdmin filter 8150941
+          Action: "eu.faircode.netguard.ON"
+          Action: "eu.faircode.netguard.OFF"
+          Action: "eu.faircode.netguard.LOCKDOWN_ON"
+          Action: "eu.faircode.netguard.LOCKDOWN_OFF"
+      eu.faircode.netguard.LOCKDOWN_ON:
+        a3bf828 eu.faircode.netguard/.WidgetAdmin filter 8150941
+          Action: "eu.faircode.netguard.ON"
+          Action: "eu.faircode.netguard.OFF"
+          Action: "eu.faircode.netguard.LOCKDOWN_ON"
+          Action: "eu.faircode.netguard.LOCKDOWN_OFF"
+      android.intent.action.BOOT_COMPLETED:
+        6ec5710 eu.faircode.netguard/.ReceiverAutostart filter b882209
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        5a7d43c eu.faircode.netguard/.WidgetMain filter d87d5c5
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        1563b1a eu.faircode.netguard/.WidgetLockdown filter 7d5464b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        6ec5710 eu.faircode.netguard/.ReceiverAutostart filter b882209
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      eu.faircode.netguard.LOCKDOWN_OFF:
+        a3bf828 eu.faircode.netguard/.WidgetAdmin filter 8150941
+          Action: "eu.faircode.netguard.ON"
+          Action: "eu.faircode.netguard.OFF"
+          Action: "eu.faircode.netguard.LOCKDOWN_ON"
+          Action: "eu.faircode.netguard.LOCKDOWN_OFF"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        2291372 eu.faircode.netguard/.ServiceTileMain filter b9633c3 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+        e8ba440 eu.faircode.netguard/.ServiceTileGraph filter 7009f79 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+        c70f4be eu.faircode.netguard/.ServiceTileFilter filter f9e491f permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+        da6c46c eu.faircode.netguard/.ServiceTileLockdown filter 762ba35 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.net.VpnService:
+        30ceee6 eu.faircode.netguard/.ServiceSinkhole filter 92ffc27 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+      eu.faircode.netguard.DOWNLOAD_HOSTS_FILE:
+        56c6ed4 eu.faircode.netguard/.ServiceExternal filter 4e7f87d
+          Action: "eu.faircode.netguard.DOWNLOAD_HOSTS_FILE"
+
+Domain verification status:
+
+Permissions:
+  Permission [eu.faircode.netguard.permission.ADMIN] (1dcc050):
+    sourcePackage=eu.faircode.netguard
+    uid=10243 gids=[] type=0 prot=signature
+    perm=PermissionInfo{b767249 eu.faircode.netguard.permission.ADMIN}
+
+Key Set Manager:
+  [eu.faircode.netguard]
+      Signing KeySets: 88
+
+Packages:
+  Package [eu.faircode.netguard] (5b7174e):
+    userId=10243
+    pkg=Package{c62e06f eu.faircode.netguard}
+    codePath=/data/app/~~XzIKBLspnMAIlBFvzA1OYQ==/eu.faircode.netguard-J2Aqg6Vo9ZZPd8xYhoE5tw==
+    resourcePath=/data/app/~~XzIKBLspnMAIlBFvzA1OYQ==/eu.faircode.netguard-J2Aqg6Vo9ZZPd8xYhoE5tw==
+    legacyNativeLibraryDir=/data/app/~~XzIKBLspnMAIlBFvzA1OYQ==/eu.faircode.netguard-J2Aqg6Vo9ZZPd8xYhoE5tw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2019070901 minSdk=22 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2.252
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/eu.faircode.netguard
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 08:37:09
+    lastUpdateTime=2022-11-30 08:37:10
+    packageSource=0
+    signatures=PackageSignatures{b55917c version:1, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ ]
+    declared permissions:
+      eu.faircode.netguard.permission.ADMIN: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      com.android.vending.BILLING
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.FOREGROUND_SERVICE
+      eu.faircode.netguard.permission.ADMIN
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      eu.faircode.netguard.permission.ADMIN: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=43374 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 08:37:10
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.diagnosticstool:
+      eu.faircode.netguard
+    com.google.android.settings.intelligence:
+      eu.faircode.netguard
+    com.google.android.apps.accessibility.voiceaccess:
+      eu.faircode.netguard
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [eu.faircode.netguard]
+    path: /data/app/~~XzIKBLspnMAIlBFvzA1OYQ==/eu.faircode.netguard-J2Aqg6Vo9ZZPd8xYhoE5tw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:50160
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [eu.faircode.netguard]
+     base.apk - 130

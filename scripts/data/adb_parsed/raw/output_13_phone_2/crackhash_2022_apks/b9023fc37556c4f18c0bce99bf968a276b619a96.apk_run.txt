@@ -1,0 +1,604 @@
+Activity Resolver Table:
+  Schemes:
+      fb462888358684368:
+        77b4337 com.pobreflixplus/com.facebook.CustomTabActivity filter 18090a4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb462888358684368"
+      io.rzp:
+        a19406c com.pobreflixplus/com.razorpay.CheckoutActivity filter de98635
+          Action: "android.intent.action.MAIN"
+          Scheme: "io.rzp"
+          Authority: "rzp.io": -1
+      stripesdk:
+        ba810be com.pobreflixplus/com.stripe.android.payments.StripeBrowserLauncherActivity filter c9d351f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "stripesdk"
+          Authority: "payment_return_url": -1
+          Path: "PatternMatcher{LITERAL: /com.pobreflixplus}"
+      https:
+        243880e com.pobreflixplus/.ui.streaming.StreamingetailsActivity filter 309622f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "com.pobreflixplus.app": -1
+          Path: "PatternMatcher{PREFIX: /streaming}"
+        643503c com.pobreflixplus/.ui.moviedetails.MovieDetailsActivity filter 783a1c5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "com.pobreflixplus.app": -1
+          Path: "PatternMatcher{PREFIX: /movies}"
+        1b4171a com.pobreflixplus/.ui.seriedetails.SerieDetailsActivity filter d3f24b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "com.pobreflixplus.app": -1
+          Path: "PatternMatcher{PREFIX: /series}"
+        f133428 com.pobreflixplus/.ui.animes.AnimeDetailsActivity filter 4019541
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "com.pobreflixplus.app": -1
+          Path: "PatternMatcher{PREFIX: /animes}"
+      fbconnect:
+        77b4337 com.pobreflixplus/com.facebook.CustomTabActivity filter 2a7be0d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.pobreflixplus": -1
+      com.pobreflixplus:
+        ce66f72 com.pobreflixplus/com.paypal.pyplcheckout.home.view.activities.PYPLInitiateCheckoutActivity filter 83e5fc3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.pobreflixplus"
+          Authority: "paypalxo": -1
+          AutoVerify=true
+        78e6040 com.pobreflixplus/com.paypal.openid.RedirectUriReceiverActivity filter a72ab79
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.pobreflixplus"
+          Authority: "paypalpay": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        86211c2 com.pobreflixplus/.ui.splash.SplashActivity filter 136dbd3
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        3881310 com.pobreflixplus/.ui.player.cast.ExpandedControlsActivity filter 51f2e09
+          Action: "android.intent.action.MAIN"
+        16c8ae6 com.pobreflixplus/.ui.player.cast.settings.CastPreference filter 16d6827
+          Action: "android.intent.action.MAIN"
+        67b6ad4 com.pobreflixplus/.ui.player.cast.queue.ui.QueueListViewActivity filter 111447d
+          Action: "android.intent.action.MAIN"
+        5507aca com.pobreflixplus/io.presage.mraid.browser.ShortcutActivity filter aea043b
+          Action: "android.intent.action.MAIN"
+        38ff758 com.pobreflixplus/io.presage.mraid.browser.Android8AndLaterShortcutActivity filter 7b950b1
+          Action: "android.intent.action.MAIN"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        b5564cc com.pobreflixplus/com.appodeal.ads.AppodealPackageAddedReceiver filter 9da4315
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Scheme: "package"
+        8ad48e8 com.pobreflixplus/com.ogury.analytics.receiver.PackageFullyRemovedReceiver filter 96eeb01
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+      content:
+        36198fc com.pobreflixplus/com.ogury.analytics.receiver.EventReminderReceiver filter c131b85
+          Action: "android.intent.action.EVENT_REMINDER"
+          Scheme: "content"
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        b58256e com.pobreflixplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 103a40f
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        a1a5970 com.pobreflixplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 11864e9
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        ab93104 com.pobreflixplus/.ui.downloadmanager.receiver.BootReceiver filter ae146ed
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        ab93104 com.pobreflixplus/.ui.downloadmanager.receiver.BootReceiver filter ae146ed
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        d239c9c com.pobreflixplus/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e8966a5
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        6652a7a com.pobreflixplus/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 60722b
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      .ui.downloadmanager.receiver.NotificationReceiver.NOTIFY_ACTION_SHUTDOWN_APP:
+        a637996 com.pobreflixplus/.ui.downloadmanager.receiver.NotificationReceiver filter b6aa917
+          Action: ".ui.downloadmanager.receiver.NotificationReceiver.NOTIFY_ACTION_SHUTDOWN_APP"
+      android.telephony.action.CARRIER_CONFIG_CHANGED:
+        c8f4fd0 com.pobreflixplus/com.ogury.analytics.receiver.CarrierConfigChangedReceiver filter e368bc9
+          Action: "android.telephony.action.CARRIER_CONFIG_CHANGED"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        e098164 com.pobreflixplus/com.ogury.analytics.receiver.BootCompletedReceiver filter 6d0bfcd
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        dd59922 com.pobreflixplus/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter ae6bfb3
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        d239c9c com.pobreflixplus/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e8966a5
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        99d262a com.pobreflixplus/com.yandex.metrica.MetricaEventHandler filter 8063c1b
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.app.action.NEXT_ALARM_CLOCK_CHANGED:
+        246f2ce com.pobreflixplus/com.ogury.analytics.receiver.NextAlarmClockChangedReceiver filter f8455ef
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+      android.bluetooth.device.action.ACL_CONNECTED:
+        4636dda com.pobreflixplus/com.ogury.analytics.receiver.BluetoothReceiver filter a6a620b
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      com.yandex.metrica.configuration.service.PLC:
+        8da01b8 com.pobreflixplus/com.yandex.metrica.ConfigurationServiceReceiver filter da8fb91
+          Action: "com.yandex.metrica.configuration.service.PLC"
+      com.google.android.c2dm.intent.RECEIVE:
+        deefea0 com.pobreflixplus/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 175a59
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        b58256e com.pobreflixplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 103a40f
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        41be688 com.pobreflixplus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 54ec821
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        41be688 com.pobreflixplus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 54ec821
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        6e05082 com.pobreflixplus/com.ogury.analytics.receiver.TimeSetReceiver filter c961393
+          Action: "android.intent.action.TIME_SET"
+      android.intent.action.BOOT_COMPLETED:
+        ab93104 com.pobreflixplus/.ui.downloadmanager.receiver.BootReceiver filter ae146ed
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+        41be688 com.pobreflixplus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 54ec821
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        14ec61e com.pobreflixplus/com.startapp.sdk.adsbase.remoteconfig.BootCompleteListener filter 81baeff
+          Action: "android.intent.action.BOOT_COMPLETED"
+        e098164 com.pobreflixplus/com.ogury.analytics.receiver.BootCompletedReceiver filter 6d0bfcd
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.USER_PRESENT:
+        bf7af6 com.pobreflixplus/com.ogury.analytics.receiver.UserPresentReceiver filter 9427ef7
+          Action: "android.intent.action.USER_PRESENT"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        a1a5970 com.pobreflixplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 11864e9
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      rzp.device_token.share:
+        17a8ed2 com.pobreflixplus/com.razorpay.RzpTokenReceiver filter 11efba3
+          Action: "rzp.device_token.share"
+      android.hardware.usb.action.USB_ACCESSORY_DETACHED:
+        4636dda com.pobreflixplus/com.ogury.analytics.receiver.BluetoothReceiver filter a6a620b
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        acce334 com.pobreflixplus/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 4aec55d
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.bluetooth.device.action.ACL_DISCONNECTED:
+        4636dda com.pobreflixplus/com.ogury.analytics.receiver.BluetoothReceiver filter a6a620b
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.hardware.usb.action.USB_ACCESSORY_DETACHED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        e0b7446 com.pobreflixplus/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter c720607
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      metrica:
+        5d1de32 com.pobreflixplus/com.yandex.metrica.MetricaService filter 8bb0783
+          Action: "com.yandex.metrica.IMetricaService"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "metrica"
+
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        39a8da6 com.pobreflixplus/.ui.notifications.NotificationManager filter 45b13e7
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        6820b94 com.pobreflixplus/com.google.firebase.messaging.FirebaseMessagingService filter d5e363d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.yandex.metrica.configuration.ACTION_INIT:
+        63e4d00 com.pobreflixplus/com.yandex.metrica.ConfigurationService filter 1fcf939
+          Action: "com.yandex.metrica.configuration.ACTION_INIT"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          com.pobreflixplus.app
+
+Registered ContentProviders:
+  com.pobreflixplus/com.download.library.DownloadFileProvider:
+    Provider{b3c7c50 com.pobreflixplus/com.download.library.DownloadFileProvider}
+  com.pobreflixplus/com.appodeal.ads.adapters.bidmachine.ApdBidMachineContentProvider:
+    Provider{c817e49 com.pobreflixplus/com.appodeal.ads.adapters.bidmachine.ApdBidMachineContentProvider}
+  com.pobreflixplus/com.squareup.picasso.PicassoProvider:
+    Provider{d13334e com.pobreflixplus/com.squareup.picasso.PicassoProvider}
+  com.pobreflixplus/com.appodeal.ads.services.crash_hunter.ApdCrashHunterContentProvider:
+    Provider{722cc6f com.pobreflixplus/com.appodeal.ads.services.crash_hunter.ApdCrashHunterContentProvider}
+  com.pobreflixplus/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{f50d7c com.pobreflixplus/com.google.firebase.provider.FirebaseInitProvider}
+  com.pobreflixplus/com.facebook.internal.FacebookInitProvider:
+    Provider{c5ab605 com.pobreflixplus/com.facebook.internal.FacebookInitProvider}
+  com.pobreflixplus/com.github.dhaval2404.imagepicker.ImagePickerFileProvider:
+    Provider{2f3365a com.pobreflixplus/com.github.dhaval2404.imagepicker.ImagePickerFileProvider}
+  com.pobreflixplus/com.smaato.sdk.sys.LifecycleProvider:
+    Provider{fb9c08b com.pobreflixplus/com.smaato.sdk.sys.LifecycleProvider}
+  com.pobreflixplus/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{1438568 com.pobreflixplus/com.facebook.ads.AudienceNetworkContentProvider}
+  com.pobreflixplus/com.applovin.sdk.AppLovinInitProvider:
+    Provider{2d5ad81 com.pobreflixplus/com.applovin.sdk.AppLovinInitProvider}
+  com.pobreflixplus/androidx.startup.InitializationProvider:
+    Provider{29e5e26 com.pobreflixplus/androidx.startup.InitializationProvider}
+  com.pobreflixplus/com.cardinalcommerce.shared.cs.utils.CCInitProvider:
+    Provider{b7f9014 com.pobreflixplus/com.cardinalcommerce.shared.cs.utils.CCInitProvider}
+  com.pobreflixplus/com.ironsource.lifecycle.IronsourceLifecycleProvider:
+    Provider{6aea0bd com.pobreflixplus/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+  com.pobreflixplus/org.acra.attachment.AcraContentProvider:
+    Provider{c8236b2 com.pobreflixplus/org.acra.attachment.AcraContentProvider}
+  com.pobreflixplus/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{fc7b603 com.pobreflixplus/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.pobreflixplus/com.vungle.warren.utility.VungleProvider:
+    Provider{acf9980 com.pobreflixplus/com.vungle.warren.utility.VungleProvider}
+  com.pobreflixplus/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{4298bb9 com.pobreflixplus/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.pobreflixplus/androidx.core.content.FileProvider:
+    Provider{8590bfe com.pobreflixplus/androidx.core.content.FileProvider}
+  com.pobreflixplus/com.startapp.sdk.adsbase.StartAppInitProvider:
+    Provider{405af5f com.pobreflixplus/com.startapp.sdk.adsbase.StartAppInitProvider}
+  com.pobreflixplus/com.appodeal.ads.ApdContentProvider:
+    Provider{454cdac com.pobreflixplus/com.appodeal.ads.ApdContentProvider}
+  com.pobreflixplus/com.yandex.metrica.PreloadInfoContentProvider:
+    Provider{dce2a75 com.pobreflixplus/com.yandex.metrica.PreloadInfoContentProvider}
+  com.pobreflixplus/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{d35ea0a com.pobreflixplus/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer}
+
+ContentProvider Authorities:
+  [com.pobreflixplus.applovincontentprovider]:
+    Provider{2d5ad81 com.pobreflixplus/com.applovin.sdk.AppLovinInitProvider}
+      applicationInfo=ApplicationInfo{d82b15b com.pobreflixplus}
+  [com.pobreflixplus.firebaseinitprovider]:
+    Provider{f50d7c com.pobreflixplus/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{a116df8 com.pobreflixplus}
+  [com.pobreflixplus.provider]:
+    Provider{8590bfe com.pobreflixplus/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{ebd92d1 com.pobreflixplus}
+  [com.pobreflixplus.startappinitprovider]:
+    Provider{405af5f com.pobreflixplus/com.startapp.sdk.adsbase.StartAppInitProvider}
+      applicationInfo=ApplicationInfo{8196136 com.pobreflixplus}
+  [com.pobreflixplus.FacebookInitProvider]:
+    Provider{c5ab605 com.pobreflixplus/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{4310837 com.pobreflixplus}
+  [com.pobreflixplus.androidx-startup]:
+    Provider{29e5e26 com.pobreflixplus/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{aeb71a4 com.pobreflixplus}
+  [com.pobreflixplus.CCInitProvider]:
+    Provider{b7f9014 com.pobreflixplus/com.cardinalcommerce.shared.cs.utils.CCInitProvider}
+      applicationInfo=ApplicationInfo{bb78b0d com.pobreflixplus}
+  [com.pobreflixplus.AppSessionManagerContentProvider]:
+    Provider{454cdac com.pobreflixplus/com.appodeal.ads.ApdContentProvider}
+      applicationInfo=ApplicationInfo{2925ac2 com.pobreflixplus}
+  [com.pobreflixplus.vungle-provider]:
+    Provider{acf9980 com.pobreflixplus/com.vungle.warren.utility.VungleProvider}
+      applicationInfo=ApplicationInfo{403f0d3 com.pobreflixplus}
+  [com.pobreflixplus.ApdCrashHunterContentProvider]:
+    Provider{722cc6f com.pobreflixplus/com.appodeal.ads.services.crash_hunter.ApdCrashHunterContentProvider}
+      applicationInfo=ApplicationInfo{f400410 com.pobreflixplus}
+  [com.pobreflixplus.acra]:
+    Provider{c8236b2 com.pobreflixplus/org.acra.attachment.AcraContentProvider}
+      applicationInfo=ApplicationInfo{3decb09 com.pobreflixplus}
+  [com.pobreflixplus.ApdBidMachineContentProvider]:
+    Provider{c817e49 com.pobreflixplus/com.appodeal.ads.adapters.bidmachine.ApdBidMachineContentProvider}
+      applicationInfo=ApplicationInfo{9af610e com.pobreflixplus}
+  [com.pobreflixplus.smaato-lifecycling]:
+    Provider{fb9c08b com.pobreflixplus/com.smaato.sdk.sys.LifecycleProvider}
+      applicationInfo=ApplicationInfo{e12c72f com.pobreflixplus}
+  [com.pobreflixplus.com.squareup.picasso]:
+    Provider{d13334e com.pobreflixplus/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{409513c com.pobreflixplus}
+  [com.pobreflixplus.imagepicker.provider]:
+    Provider{2f3365a com.pobreflixplus/com.github.dhaval2404.imagepicker.ImagePickerFileProvider}
+      applicationInfo=ApplicationInfo{f200ec5 com.pobreflixplus}
+  [com.pobreflixplus.mobileadsinitprovider]:
+    Provider{4298bb9 com.pobreflixplus/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{684801a com.pobreflixplus}
+  [com.pobreflixplus.appmetrica.preloadinfo.retail]:
+    Provider{dce2a75 com.pobreflixplus/com.yandex.metrica.PreloadInfoContentProvider}
+      applicationInfo=ApplicationInfo{38ea74b com.pobreflixplus}
+  [com.pobreflixplus.smaato-lifecycle-process]:
+    Provider{d35ea0a com.pobreflixplus/com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{9b84528 com.pobreflixplus}
+  [com.pobreflixplus.AudienceNetworkContentProvider]:
+    Provider{1438568 com.pobreflixplus/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{d77d241 com.pobreflixplus}
+  [com.pobreflixplus.DownloadFileProvider]:
+    Provider{b3c7c50 com.pobreflixplus/com.download.library.DownloadFileProvider}
+      applicationInfo=ApplicationInfo{d5a83e6 com.pobreflixplus}
+  [com.pobreflixplus.lifecycle-process]:
+    Provider{fc7b603 com.pobreflixplus/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{d9e6d27 com.pobreflixplus}
+  [com.pobreflixplus.IronsourceLifecycleProvider]:
+    Provider{6aea0bd com.pobreflixplus/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+      applicationInfo=ApplicationInfo{4e08bd4 com.pobreflixplus}
+
+Key Set Manager:
+  [com.pobreflixplus]
+      Signing KeySets: 5741
+
+Packages:
+  Package [com.pobreflixplus] (82e517d):
+    userId=10295
+    pkg=Package{3c5d7e0 com.pobreflixplus}
+    codePath=/data/app/~~o2f5hUXPESOGYwqXSRbOPQ==/com.pobreflixplus-1Xv6VZcvGHadpG5GzVdckw==
+    resourcePath=/data/app/~~o2f5hUXPESOGYwqXSRbOPQ==/com.pobreflixplus-1Xv6VZcvGHadpG5GzVdckw==
+    legacyNativeLibraryDir=/data/app/~~o2f5hUXPESOGYwqXSRbOPQ==/com.pobreflixplus-1Xv6VZcvGHadpG5GzVdckw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=3 minSdk=23 targetSdk=30
+    minExtensionVersions=[]
+    versionName=1.3
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.android.chrome, com.facebook.katana, com.appnext.core, com.huawei.appmarket]
+    queriesIntents=[Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.OPEN_DOCUMENT_TREE }, Intent { act=android.intent.action.SEND dat=content://*/... typ=message/rfc822 }, Intent { act=android.intent.action.SEND_MULTIPLE dat=content://*/... typ=message/rfc822 }, Intent { act=android.intent.action.SENDTO }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.media.browse.MediaBrowserService }, Intent { act=android.intent.action.MAIN }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }, Intent { act=com.yandex.android.advid.IDENTIFIER_SERVICE }, Intent { act=com.uodis.opendevice.OPENIDS_SERVICE }]
+    dataDir=/data/user/0/com.pobreflixplus
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 14:32:20
+    lastUpdateTime=2022-11-30 14:32:22
+    packageSource=0
+    signatures=PackageSignatures{f9e615e version:3, signatures:[85bcdd46], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.WRITE_INTERNAL_STORAGE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permifControllerActivityssion.RECEIVE_BOOT_COMPLETED
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.EXPAND_STATUS_BAR
+      android.permission.READ_PHONE_STATE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.WRITE_SETTINGS
+      com.android.vending.CHECK_LICENSE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.gms.permission.AD_ID
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.EXPAND_STATUS_BAR: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=47966 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 14:32:22
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.pobreflixplus:
+      com.android.chrome
+  queries via component:
+    com.google.android.apps.messaging:
+      com.pobreflixplus
+    com.google.android.apps.diagnosticstool:
+      com.pobreflixplus
+    com.google.android.settings.intelligence:
+      com.pobreflixplus
+    com.google.android.apps.accessibility.voiceaccess:
+      com.pobreflixplus
+    com.google.android.storagemanager:
+      com.pobreflixplus
+    com.google.android.pixel.setupwizard:
+      com.pobreflixplus
+    com.pobreflixplus:
+      [com.android.bluetooth,com.google.android.bluetooth.services]
+      com.google.android.documentsui
+      com.verizon.services
+      com.google.android.projection.gearhead
+      com.google.android.apps.nbu.files
+      com.google.android.apps.recorder
+      com.google.android.apps.tips
+      com.google.android.wfcactivation
+      com.google.android.tetheringentitlement
+      com.google.android.apps.messaging
+      com.google.android.apps.safetyhub
+      com.google.android.carrierlocation
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.restore
+      com.google.android.googlequicksearchbox
+      com.google.android.dialer
+      com.google.android.as
+      com.google.android.settings.intelligence
+      com.google.android.GoogleCamera
+      com.google.android.setupwizard
+      com.google.android.calculator
+      com.android.chrome
+      com.google.android.deskclock
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.calendar
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.marvin.talkback
+      com.google.android.contacts
+      com.google.android.apps.docs
+      com.google.android.videos
+      com.google.android.apps.accessibility.voiceaccess
+      com.google.android.inputmethod.latin
+      com.google.android.apps.youtube.music
+      com.google.android.gm
+      [app id 10195 not installed]
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.shannon.rcsservice
+      com.google.android.pixel.setupwizard
+      com.android.cts.priv.ctsshim
+      com.android.cts.ctsshim
+      com.google.android.cellbroadcastreceiver
+      com.pandavideocompressor
+      net.eagin.software.android.dejaloYa
+      radiotime.player
+      org.malwarebytes.antimalware
+      com.kizeetech.newankaradesigns
+      com.zoho.assist.agent
+      com.darinsoft.vimo
+      com.ninegag.android.app
+      com.mxtech.videoplayer.television
+      com.mcdonalds.app
+      com.catdaddy.cat22
+      com.fourchars.lmpfree
+      com.lyrebirdstudio.photo_editor_pro
+      com.pikoo.app
+      com.mikewheelermedia
+      com.frankthebrilliant.app
+      com.brit.swift.minimal
+      com.zappcues.gamingmode
+      com.cam001.selfie
+      com.fitapp
+      com.brit.swiftdark.substratum
+      com.subsplashconsulting.s_NKSKD3
+      deepfinity.android
+      com.king.blossomblast
+      com.bitsmedia.android.muslimpro
+      com.yahoo.mobile.client.android.weather
+      com.simplehabit.simplehabitapp
+      com.ludia.jurassicworld
+      com.accuweather.android
+      com.cooyostudio.marble.blast
+      com.jio.myjio
+      com.getepic.Epic
+      com.pranavpandey.rotation
+      com.nikitadev.irregularverbspro
+      com.Wifi.lte5g.lte4g.lte3g.speedtest.Internetspeed
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+      com.unvoid.borealis
+      com.osheden.azulox
+    com.zappcues.gamingmode:
+      com.pobreflixplus
+    com.jio.myjio:
+      com.pobreflixplus
+  queryable via interaction:
+    User 0:
+      [com.android.dynsystem,com.android.keychain,com.android.localtransport,com.android.wallpaperbackup,com.google.android.settings.future.biometrics.faceenroll,com.android.providers.settings,com.android.inputdevices,com.android.settings,com.android.qns,com.google.android.iwlan,android,com.google.SSRestartDetector,com.android.server.telecom,com.android.location.fused]:
+        com.pobreflixplus
+      [com.google.android.gsf,com.google.android.gms]:
+        com.pobreflixplus
+      com.google.android.webview:
+        com.pobreflixplus
+      com.pobreflixplus:
+        com.google.android.webview
+  queryable via uses-library:
+
+Dexopt state:
+  [com.pobreflixplus]
+    path: /data/app/~~o2f5hUXPESOGYwqXSRbOPQ==/com.pobreflixplus-1Xv6VZcvGHadpG5GzVdckw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:263379
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.pobreflixplus]
+     base.apk - 1564

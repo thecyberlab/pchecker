@@ -1,0 +1,186 @@
+Activity Resolver Table:
+  Full MIME Types:
+      application/be.digitalia.fosdem-bookmarks:
+        a121faf be.digitalia.fosdem/.activities.ExternalBookmarksActivity filter fb8ffbc
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/be.digitalia.fosdem-bookmarks"
+      application/be.digitalia.fosdem:
+        c741d42 be.digitalia.fosdem/.activities.EventDetailsActivity filter 166c153
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/be.digitalia.fosdem"
+
+  Base MIME Types:
+      application:
+        c741d42 be.digitalia.fosdem/.activities.EventDetailsActivity filter 166c153
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/be.digitalia.fosdem"
+        a121faf be.digitalia.fosdem/.activities.ExternalBookmarksActivity filter fb8ffbc
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/be.digitalia.fosdem-bookmarks"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f7dd024 be.digitalia.fosdem/.activities.MainActivity filter dd4c78d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        7185b45 be.digitalia.fosdem/.activities.SettingsActivity filter d8c129a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+      com.google.android.gms.actions.SEARCH_ACTION:
+        d9ca90 be.digitalia.fosdem/.activities.SearchResultActivity filter 2acb8e
+          Action: "com.google.android.gms.actions.SEARCH_ACTION"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        d9ca90 be.digitalia.fosdem/.activities.SearchResultActivity filter 3d34f89
+          Action: "android.intent.action.SEARCH"
+
+  MIME Typed Actions:
+      android.nfc.action.NDEF_DISCOVERED:
+        c741d42 be.digitalia.fosdem/.activities.EventDetailsActivity filter 166c153
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/be.digitalia.fosdem"
+        a121faf be.digitalia.fosdem/.activities.ExternalBookmarksActivity filter fb8ffbc
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/be.digitalia.fosdem-bookmarks"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BOOT_COMPLETED:
+        f6b07cb be.digitalia.fosdem/.receivers.AlarmReceiver filter ef45ba8
+          Action: "android.intent.action.BOOT_COMPLETED"
+
+Domain verification status:
+
+Registered ContentProviders:
+  be.digitalia.fosdem/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{94c368b be.digitalia.fosdem/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  be.digitalia.fosdem/.providers.SearchSuggestionProvider:
+    Provider{6e41381 be.digitalia.fosdem/.providers.SearchSuggestionProvider}
+  be.digitalia.fosdem/.providers.BookmarksExportProvider:
+    Provider{4c5b067 be.digitalia.fosdem/.providers.BookmarksExportProvider}
+
+ContentProvider Authorities:
+  [be.digitalia.fosdem.search]:
+    Provider{6e41381 be.digitalia.fosdem/.providers.SearchSuggestionProvider}
+      applicationInfo=ApplicationInfo{a95ae14 be.digitalia.fosdem}
+  [be.digitalia.fosdem.bookmarks]:
+    Provider{4c5b067 be.digitalia.fosdem/.providers.BookmarksExportProvider}
+      applicationInfo=ApplicationInfo{43d66bd be.digitalia.fosdem}
+  [be.digitalia.fosdem.lifecycle-process]:
+    Provider{94c368b be.digitalia.fosdem/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{6a084b2 be.digitalia.fosdem}
+
+Key Set Manager:
+  [be.digitalia.fosdem]
+      Signing KeySets: 6845
+
+Packages:
+  Package [be.digitalia.fosdem] (10e39fe):
+    userId=10753
+    pkg=Package{12e455f be.digitalia.fosdem}
+    codePath=/data/app/~~sRorqRHMQ-IZ786jqFZSvw==/be.digitalia.fosdem-LljChQ3toRfimeATy9ikQQ==
+    resourcePath=/data/app/~~sRorqRHMQ-IZ786jqFZSvw==/be.digitalia.fosdem-LljChQ3toRfimeATy9ikQQ==
+    legacyNativeLibraryDir=/data/app/~~sRorqRHMQ-IZ786jqFZSvw==/be.digitalia.fosdem-LljChQ3toRfimeATy9ikQQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1700172 minSdk=17 targetSdk=29
+    minExtensionVersions=[]
+    versionName=1.7.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/be.digitalia.fosdem
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 21:19:51
+    lastUpdateTime=2022-11-30 21:19:52
+    packageSource=0
+    signatures=PackageSignatures{11bd87b version:1, signatures:[71117ed2], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.NFC
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      android.permission.NFC: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+    User 0: ceDataInode=106001 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 21:19:52
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.diagnosticstool:
+      be.digitalia.fosdem
+    com.google.android.settings.intelligence:
+      be.digitalia.fosdem
+    com.google.android.GoogleCamera:
+      be.digitalia.fosdem
+    com.google.android.apps.accessibility.voiceaccess:
+      be.digitalia.fosdem
+    com.zhiliaoapp.musically:
+      be.digitalia.fosdem
+    com.truecaller:
+      be.digitalia.fosdem
+    com.dv.adm:
+      be.digitalia.fosdem
+    com.zappcues.gamingmode:
+      be.digitalia.fosdem
+    com.jio.myjio:
+      be.digitalia.fosdem
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [be.digitalia.fosdem]
+    path: /data/app/~~sRorqRHMQ-IZ786jqFZSvw==/be.digitalia.fosdem-LljChQ3toRfimeATy9ikQQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1605948
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [be.digitalia.fosdem]
+     base.apk - 177

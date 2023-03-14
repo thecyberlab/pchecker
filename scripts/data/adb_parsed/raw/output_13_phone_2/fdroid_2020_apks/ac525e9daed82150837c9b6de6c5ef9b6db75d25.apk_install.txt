@@ -1,0 +1,254 @@
+Activity Resolver Table:
+  Schemes:
+      tachiyomi:
+        6f8b677 eu.kanade.tachiyomi/.ui.setting.track.AnilistLoginActivity filter 68822e4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tachiyomi"
+          Authority: "anilist-auth": -1
+        2f0834d eu.kanade.tachiyomi/.ui.setting.track.ShikimoriLoginActivity filter 2f78e02
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tachiyomi"
+          Authority: "shikimori-auth": -1
+        8384313 eu.kanade.tachiyomi/.ui.setting.track.BangumiLoginActivity filter 8168950
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tachiyomi"
+          Authority: "bangumi-auth": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        71033aa eu.kanade.tachiyomi/.ui.main.MainActivity filter 11ffb9b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      eu.kanade.tachiyomi.SEARCH:
+        e298b38 eu.kanade.tachiyomi/.ui.main.DeepLinkActivity filter a15e076
+          Action: "eu.kanade.tachiyomi.SEARCH"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.actions.SEARCH_ACTION:
+        e298b38 eu.kanade.tachiyomi/.ui.main.DeepLinkActivity filter 56b8711
+          Action: "android.intent.action.SEARCH"
+          Action: "com.google.android.gms.actions.SEARCH_ACTION"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        e298b38 eu.kanade.tachiyomi/.ui.main.DeepLinkActivity filter 56b8711
+          Action: "android.intent.action.SEARCH"
+          Action: "com.google.android.gms.actions.SEARCH_ACTION"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        7d9fd6f eu.kanade.tachiyomi/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 5e2ea7c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        34f0749 eu.kanade.tachiyomi/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 854884e
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        cf7cf05 eu.kanade.tachiyomi/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 974db5a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        333018b eu.kanade.tachiyomi/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 3b23268
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        cf7cf05 eu.kanade.tachiyomi/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 974db5a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        7d9fd6f eu.kanade.tachiyomi/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 5e2ea7c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        2ab5681 eu.kanade.tachiyomi/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 155326
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        2ab5681 eu.kanade.tachiyomi/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 155326
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        2ab5681 eu.kanade.tachiyomi/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 155326
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        34f0749 eu.kanade.tachiyomi/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 854884e
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        8b5d9bd eu.kanade.tachiyomi/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 2f37bb2
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        dce2b67 eu.kanade.tachiyomi/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter aac0d14
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Domain verification status:
+
+Registered ContentProviders:
+  eu.kanade.tachiyomi/org.acra.attachment.AcraContentProvider:
+    Provider{9045a67 eu.kanade.tachiyomi/org.acra.attachment.AcraContentProvider}
+  eu.kanade.tachiyomi/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{d101014 eu.kanade.tachiyomi/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  eu.kanade.tachiyomi/androidx.core.content.FileProvider:
+    Provider{83520bd eu.kanade.tachiyomi/androidx.core.content.FileProvider}
+  eu.kanade.tachiyomi/androidx.work.impl.WorkManagerInitializer:
+    Provider{dc6b6b2 eu.kanade.tachiyomi/androidx.work.impl.WorkManagerInitializer}
+
+ContentProvider Authorities:
+  [eu.kanade.tachiyomi.acra]:
+    Provider{9045a67 eu.kanade.tachiyomi/org.acra.attachment.AcraContentProvider}
+      applicationInfo=ApplicationInfo{8f23603 eu.kanade.tachiyomi}
+  [eu.kanade.tachiyomi.workmanager-init]:
+    Provider{dc6b6b2 eu.kanade.tachiyomi/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{4e81980 eu.kanade.tachiyomi}
+  [eu.kanade.tachiyomi.lifecycle-process]:
+    Provider{d101014 eu.kanade.tachiyomi/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{9658bfe eu.kanade.tachiyomi}
+  [eu.kanade.tachiyomi.provider]:
+    Provider{83520bd eu.kanade.tachiyomi/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{5582f5f eu.kanade.tachiyomi}
+
+Key Set Manager:
+  [eu.kanade.tachiyomi]
+      Signing KeySets: 6954
+
+Packages:
+  Package [eu.kanade.tachiyomi] (7754dac):
+    userId=10862
+    pkg=Package{9a4aa75 eu.kanade.tachiyomi}
+    codePath=/data/app/~~xeLc27Nx7OhIaZmSUQMvug==/eu.kanade.tachiyomi-FOeSUs0HQCEYFwLts7aaCw==
+    resourcePath=/data/app/~~xeLc27Nx7OhIaZmSUQMvug==/eu.kanade.tachiyomi-FOeSUs0HQCEYFwLts7aaCw==
+    legacyNativeLibraryDir=/data/app/~~xeLc27Nx7OhIaZmSUQMvug==/eu.kanade.tachiyomi-FOeSUs0HQCEYFwLts7aaCw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=51 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=0.10.5
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/eu.kanade.tachiyomi
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 21:26:09
+    lastUpdateTime=2022-11-30 21:26:11
+    packageSource=0
+    signatures=PackageSignatures{28a6a0a version:1, signatures:[753edc8f], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.USE_BIOMETRIC
+      android.permission.USE_FINGERPRINT
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=104944 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 21:26:11
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      eu.kanade.tachiyomi
+    com.google.android.apps.diagnosticstool:
+      eu.kanade.tachiyomi
+    com.google.android.settings.intelligence:
+      eu.kanade.tachiyomi
+    com.google.android.GoogleCamera:
+      eu.kanade.tachiyomi
+    com.google.android.apps.accessibility.voiceaccess:
+      eu.kanade.tachiyomi
+    com.zhiliaoapp.musically:
+      eu.kanade.tachiyomi
+    com.truecaller:
+      eu.kanade.tachiyomi
+    com.dv.adm:
+      eu.kanade.tachiyomi
+    com.zappcues.gamingmode:
+      eu.kanade.tachiyomi
+    com.jio.myjio:
+      eu.kanade.tachiyomi
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [eu.kanade.tachiyomi]
+    path: /data/app/~~xeLc27Nx7OhIaZmSUQMvug==/eu.kanade.tachiyomi-FOeSUs0HQCEYFwLts7aaCw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1985858
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [eu.kanade.tachiyomi]
+     base.apk - 535

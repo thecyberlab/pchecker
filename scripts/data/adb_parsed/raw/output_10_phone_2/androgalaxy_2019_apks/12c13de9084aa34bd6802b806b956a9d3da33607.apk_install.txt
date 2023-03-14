@@ -1,0 +1,267 @@
+Activity Resolver Table:
+  Schemes:
+      windyapp:
+        28b26cd co.windyapp.android/.ui.mainscreen.GeneralActivity filter 1459428
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "windyapp"
+          Authority: "open": -1
+      https:
+        aa02b82 co.windyapp.android/.ui.spot.tabs.SpotTabbedActivity filter 5d5eae6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "windy.app": -1
+          Authority: "windy.app": -1
+          Path: "PatternMatcher{PREFIX: /forecast2/spot}"
+          Path: "PatternMatcher{GLOB: /forecast2/spot/.*/offer/}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        c005293 co.windyapp.android/.ui.mainscreen.SplashActivity filter 973cad4
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        5fe22d0 co.windyapp.android/com.facebook.CustomTabActivity filter d8b4827
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        8b062c9 co.windyapp.android/.ui.appwidget.SpotAppWidgetConfigure filter cb47541
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.net.wifi.WIFI_STATE_CHANGED:
+        1a97dce co.windyapp.android/.network.NetworkStateReceiver filter 212247d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+      android.intent.action.QUICKBOOT_POWERON:
+        4d384ef co.windyapp.android/com.onesignal.BootUpReceiver filter 7dd70be
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      com.google.firebase.appindexing.UPDATE_INDEX:
+        6a9bfc co.windyapp.android/.AppIndexingUpdateReceiver filter 1acc040
+          Action: "com.google.firebase.appindexing.UPDATE_INDEX"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        1a97dce co.windyapp.android/.network.NetworkStateReceiver filter 212247d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        9d36285 co.windyapp.android/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter f7bdaca
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        ee3a8da co.windyapp.android/.backend.analytics.WindyInstallReceiver filter 85a3fc3
+          Action: "com.android.vending.INSTALL_REFERRER"
+        6fd810b co.windyapp.android/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 2266635
+          Action: "com.android.vending.INSTALL_REFERRER"
+        c37be8 co.windyapp.android/com.facebook.CampaignTrackingReceiver filter 6a1e43b
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        6ca201 co.windyapp.android/com.onesignal.GcmBroadcastReceiver filter aa18b79
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "co.windyapp.android"
+          mPriority=999, mOrder=0, mHasPartialTypes=false
+        56378a6 co.windyapp.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 7bda06c
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.appwidget.action.APPWIDGET_DELETED:
+        8122e7 co.windyapp.android/.ui.appwidget.SpotAppWidgetProvider filter e85cf72
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+      android.intent.action.BOOT_COMPLETED:
+        4d384ef co.windyapp.android/com.onesignal.BootUpReceiver filter 7dd70be
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        8122e7 co.windyapp.android/.ui.appwidget.SpotAppWidgetProvider filter e85cf72
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        5486e94 co.windyapp.android/com.onesignal.UpgradeReceiver filter 297151f
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        c005d3d co.windyapp.android/com.pusher.android.notifications.fcm.FCMInstanceIDService filter be4d996
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+      com.google.firebase.MESSAGING_EVENT:
+        2be7932 co.windyapp.android/com.google.firebase.messaging.FirebaseMessagingService filter 2e430b1
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      com.onesignal.NotificationExtender:
+        2b30683 co.windyapp.android/.backend.push.NotificationService filter 71a5758 permission android.permission.BIND_JOB_SERVICE
+          Action: "com.onesignal.NotificationExtender"
+
+Permissions:
+  Permission [co.windyapp.android.permission.C2D_MESSAGE] (e87e000):
+    sourcePackage=co.windyapp.android
+    uid=10158 gids=null type=0 prot=signature
+    perm=Permission{61a9039 co.windyapp.android.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{656f67e co.windyapp.android/10158}
+
+Registered ContentProviders:
+  co.windyapp.android/androidx.core.content.FileProvider:
+    Provider{59587df co.windyapp.android/androidx.core.content.FileProvider}
+  co.windyapp.android/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{58afc2c co.windyapp.android/com.crashlytics.android.CrashlyticsInitProvider}
+  co.windyapp.android/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{b0af6f5 co.windyapp.android/com.google.firebase.perf.provider.FirebasePerfProvider}
+  co.windyapp.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{167fc8a co.windyapp.android/com.google.firebase.provider.FirebaseInitProvider}
+  co.windyapp.android/com.facebook.internal.FacebookInitProvider:
+    Provider{4f4c2fb co.windyapp.android/com.facebook.internal.FacebookInitProvider}
+  co.windyapp.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{8c1af18 co.windyapp.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+
+ContentProvider Authorities:
+  [co.windyapp.android.FacebookInitProvider]:
+    Provider{4f4c2fb co.windyapp.android/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{2610d71 co.windyapp.android}
+  [co.windyapp.android.crashlyticsinitprovider]:
+    Provider{58afc2c co.windyapp.android/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{2610d71 co.windyapp.android}
+  [co.windyapp.android.fileprovider]:
+    Provider{59587df co.windyapp.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{2610d71 co.windyapp.android}
+  [co.windyapp.android.firebaseperfprovider]:
+    Provider{b0af6f5 co.windyapp.android/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{2610d71 co.windyapp.android}
+  [co.windyapp.android.lifecycle-process]:
+    Provider{8c1af18 co.windyapp.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{2610d71 co.windyapp.android}
+  [co.windyapp.android.firebaseinitprovider]:
+    Provider{167fc8a co.windyapp.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{2610d71 co.windyapp.android}
+
+Key Set Manager:
+  [co.windyapp.android]
+      Signing KeySets: 9
+
+Packages:
+  Package [co.windyapp.android] (656f67e):
+    userId=10158
+    pkg=Package{cd3d24b co.windyapp.android}
+    codePath=/data/app/co.windyapp.android-5YBH8alQL7Iw5HhM_8n0UA==
+    resourcePath=/data/app/co.windyapp.android-5YBH8alQL7Iw5HhM_8n0UA==
+    legacyNativeLibraryDir=/data/app/co.windyapp.android-5YBH8alQL7Iw5HhM_8n0UA==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=391 minSdk=16 targetSdk=29
+    versionName=6.9.2
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{2610d71 co.windyapp.android}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/co.windyapp.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 07:07:46
+    firstInstallTime=2021-03-06 07:07:48
+    lastUpdateTime=2021-03-06 07:07:48
+    signatures=PackageSignatures{bd15756 version:1, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    declared permissions:
+      co.windyapp.android.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.VIBRATE
+      co.windyapp.android.permission.C2D_MESSAGE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      com.android.vending.BILLING
+      android.permission.FOREGROUND_SERVICE
+      android.permission.CAMERA
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      co.windyapp.android.permission.C2D_MESSAGE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=6376 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=38
+  User 0:
+    seq=5, package=com.google.android.gms
+    seq=7, package=com.brit.swiftdark.substratum
+    seq=11, package=com.kajda.fuelio
+    seq=14, package=com.unvoid.borealis
+    seq=16, package=me.piere.christmas
+    seq=18, package=ak.alizandro.smartaudiobookplayer
+    seq=20, package=amazing.three_d.icons
+    seq=22, package=com.first75.voicerecorder2pro
+    seq=24, package=digifit.virtuagym.client.android
+    seq=26, package=com.paget96.lspeed
+    seq=28, package=yo.app
+    seq=30, package=com.lb.app_manager
+    seq=32, package=com.in.w3d
+    seq=34, package=com.luzapplications.alessio.wallooppro
+    seq=36, package=com.alesp.orologiomondiale.pro
+    seq=37, package=co.windyapp.android
+
+
+Dexopt state:
+  [co.windyapp.android]
+    path: /data/app/co.windyapp.android-5YBH8alQL7Iw5HhM_8n0UA==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [co.windyapp.android]
+     base.apk - 3951
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

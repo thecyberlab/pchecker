@@ -1,0 +1,682 @@
+Activity Resolver Table:
+  Schemes:
+      com.yahoo.mobile.client.android.weather:
+        546341a com.yahoo.mobile.client.android.weather/com.oath.mobile.platform.phoenix.core.RedirectUriReceiverActivity filter f6907b2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.yahoo.mobile.client.android.weather"
+          Authority: "phoenix": -1
+          Path: "PatternMatcher{PREFIX: /callback_auth}"
+      http:
+        8e04b4b com.yahoo.mobile.client.android.weather/.ui.WeatherMainActivity filter 4cbb914
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "weather.yahoo.com": -1
+          AutoVerify=true
+      https:
+        8e04b4b com.yahoo.mobile.client.android.weather/.ui.WeatherMainActivity filter 4cbb914
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "weather.yahoo.com": -1
+          AutoVerify=true
+        5731928 com.yahoo.mobile.client.android.weather/com.oath.mobile.platform.phoenix.core.QRExternalLinkActivity filter 7133f75
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "login.yahoo.com": -1
+          Path: "PatternMatcher{LITERAL: /qr/session}"
+          AutoVerify=true
+      com.oath.mobile.phoenix.placeholder:
+        9c1641 com.yahoo.mobile.client.android.weather/net.openid.appauth.RedirectUriReceiverActivity filter a05db0a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.oath.mobile.phoenix.placeholder"
+      yweather:
+        8e04b4b com.yahoo.mobile.client.android.weather/.ui.WeatherMainActivity filter b310767
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "yweather"
+
+  Non-Data Actions:
+      com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED:
+        88377e6 com.yahoo.mobile.client.android.weather/.WeatherWidgetConfigure filter 5bcb303
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        665127 com.yahoo.mobile.client.android.weather/.WeatherWidget4x2Configure filter 7355280
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        3749fd4 com.yahoo.mobile.client.android.weather/.WeatherWidget4x2ConfigureBigClock filter fd750b9
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        352d57d com.yahoo.mobile.client.android.weather/.WeatherWidgetHourlyConfigure filter 15becfe
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        2ff2c72 com.yahoo.mobile.client.android.weather/.WeatherWidget4x1Configure filter cd7c5f
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        85cd8c3 com.yahoo.mobile.client.android.weather/.WeatherWidgetSmallConfigure filter 3dd16ac
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+      com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY:
+        88377e6 com.yahoo.mobile.client.android.weather/.WeatherWidgetConfigure filter 5bcb303
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        665127 com.yahoo.mobile.client.android.weather/.WeatherWidget4x2Configure filter 7355280
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        3749fd4 com.yahoo.mobile.client.android.weather/.WeatherWidget4x2ConfigureBigClock filter fd750b9
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        352d57d com.yahoo.mobile.client.android.weather/.WeatherWidgetHourlyConfigure filter 15becfe
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        2ff2c72 com.yahoo.mobile.client.android.weather/.WeatherWidget4x1Configure filter cd7c5f
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        85cd8c3 com.yahoo.mobile.client.android.weather/.WeatherWidgetSmallConfigure filter 3dd16ac
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+      com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED:
+        88377e6 com.yahoo.mobile.client.android.weather/.WeatherWidgetConfigure filter 5bcb303
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        665127 com.yahoo.mobile.client.android.weather/.WeatherWidget4x2Configure filter 7355280
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        3749fd4 com.yahoo.mobile.client.android.weather/.WeatherWidget4x2ConfigureBigClock filter fd750b9
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        352d57d com.yahoo.mobile.client.android.weather/.WeatherWidgetHourlyConfigure filter 15becfe
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        2ff2c72 com.yahoo.mobile.client.android.weather/.WeatherWidget4x1Configure filter cd7c5f
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        85cd8c3 com.yahoo.mobile.client.android.weather/.WeatherWidgetSmallConfigure filter 3dd16ac
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+      android.intent.action.MAIN:
+        8e04b4b com.yahoo.mobile.client.android.weather/.ui.WeatherMainActivity filter 69a15bd
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        88377e6 com.yahoo.mobile.client.android.weather/.WeatherWidgetConfigure filter 5bcb303
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        665127 com.yahoo.mobile.client.android.weather/.WeatherWidget4x2Configure filter 7355280
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        3749fd4 com.yahoo.mobile.client.android.weather/.WeatherWidget4x2ConfigureBigClock filter fd750b9
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        352d57d com.yahoo.mobile.client.android.weather/.WeatherWidgetHourlyConfigure filter 15becfe
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        2ff2c72 com.yahoo.mobile.client.android.weather/.WeatherWidget4x1Configure filter cd7c5f
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        85cd8c3 com.yahoo.mobile.client.android.weather/.WeatherWidgetSmallConfigure filter 3dd16ac
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+      com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED:
+        88377e6 com.yahoo.mobile.client.android.weather/.WeatherWidgetConfigure filter 5bcb303
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        665127 com.yahoo.mobile.client.android.weather/.WeatherWidget4x2Configure filter 7355280
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        3749fd4 com.yahoo.mobile.client.android.weather/.WeatherWidget4x2ConfigureBigClock filter fd750b9
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        352d57d com.yahoo.mobile.client.android.weather/.WeatherWidgetHourlyConfigure filter 15becfe
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        2ff2c72 com.yahoo.mobile.client.android.weather/.WeatherWidget4x1Configure filter cd7c5f
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+        85cd8c3 com.yahoo.mobile.client.android.weather/.WeatherWidgetSmallConfigure filter 3dd16ac
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        365e540 com.yahoo.mobile.client.android.weather/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter df64547
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        dbc4c79 com.yahoo.mobile.client.android.weather/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 2882886
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.yahoo.snp.android.notif.com.yahoo.mobile.client.android.weather:
+        70f9dbe com.yahoo.mobile.client.android.weather/.receivers.NotificationReceiver filter f4ec162
+          Action: "com.yahoo.snp.android.notif.com.yahoo.mobile.client.android.weather"
+          Category: "com.yahoo.snp.android.NOTIFICATION_SERVICE"
+      com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY:
+        70f9dbe com.yahoo.mobile.client.android.weather/.receivers.NotificationReceiver filter 74062f3
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+      com.yahoo.android.account.cookie:
+        2aa3e1f com.yahoo.mobile.client.android.weather/com.oath.mobile.platform.phoenix.core.AccountDataReceiver filter 531aba
+          Action: "com.yahoo.android.account.cookie"
+          Category: "android.intent.category.DEFAULT"
+      com.yahoo.mobile.client.android.weathersdk.action.ACTION_START_WIDGET_ALARM:
+        c64156c com.yahoo.mobile.client.android.weather/com.yahoo.mobile.client.android.weathersdk.service.WidgetAlarmReceiver filter e743b4f
+          Action: "android.permission.RECEIVE_BOOT_COMPLETED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_START_WIDGET_ALARM"
+      com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED:
+        70f9dbe com.yahoo.mobile.client.android.weather/.receivers.NotificationReceiver filter 74062f3
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+        2ac3735 com.yahoo.mobile.client.android.weather/com.yahoo.mobile.client.android.weathersdk.service.WeatherServiceReceiver filter db91ae
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_ALERT_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_LOCATION_ADDED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_LOCATION_REMOVED"
+          Action: "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.USER_PRESENT"
+          Category: "android.intent.category.DEFAULT"
+      com.yahoo.mobile.client.android.weathersdk.ACTION_CURRENT_LOCATION_CHANGED:
+        423d7ca com.yahoo.mobile.client.android.weather/.receivers.CurrentLocationChangedReceiver filter f825bb0
+          Action: "com.yahoo.mobile.client.android.weathersdk.ACTION_CURRENT_LOCATION_CHANGED"
+          Category: "android.intent.category.DEFAULT"
+      com.yahoo.android.account.auth.no:
+        f3e9d3b com.yahoo.mobile.client.android.weather/com.oath.mobile.platform.phoenix.core.NotificationReceiver filter 333efe5
+          Action: "com.yahoo.android.account.auth.yes"
+          Action: "com.yahoo.android.account.auth.no"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        8331c58 com.yahoo.mobile.client.android.weather/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 6e15174
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        47611b1 com.yahoo.mobile.client.android.weather/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 879369d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.permission.RECEIVE_BOOT_COMPLETED:
+        c64156c com.yahoo.mobile.client.android.weather/com.yahoo.mobile.client.android.weathersdk.service.WidgetAlarmReceiver filter e743b4f
+          Action: "android.permission.RECEIVE_BOOT_COMPLETED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_START_WIDGET_ALARM"
+      android.intent.action.DEVICE_STORAGE_OK:
+        8331c58 com.yahoo.mobile.client.android.weather/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 6e15174
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        f8fa696 com.yahoo.mobile.client.android.weather/com.yahoo.mobile.client.android.snoopy.partner.InstallReferrerBroadcastReceiver filter b633d6b
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.yahoo.android.account.auth.yes:
+        f3e9d3b com.yahoo.mobile.client.android.weather/com.oath.mobile.platform.phoenix.core.NotificationReceiver filter 333efe5
+          Action: "com.yahoo.android.account.auth.yes"
+          Action: "com.yahoo.android.account.auth.no"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.LOCALE_CHANGED:
+        2ac3735 com.yahoo.mobile.client.android.weather/com.yahoo.mobile.client.android.weathersdk.service.WeatherServiceReceiver filter db91ae
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_ALERT_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_LOCATION_ADDED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_LOCATION_REMOVED"
+          Action: "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.USER_PRESENT"
+          Category: "android.intent.category.DEFAULT"
+      com.mapquest.observer.wake.LOCATION:
+        2efd217 com.yahoo.mobile.client.android.weather/com.mapquest.observer.wake.ObserverWakeManager filter 1b9f0c8
+          Action: "com.mapquest.observer.wake.ALARM"
+          Action: "com.mapquest.observer.wake.LOCATION"
+          Action: "com.mapquest.observer.wake.LEADER"
+          Action: "com.mapquest.observer.wake.ACTIVITY_TRANSITION"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.android.c2dm.intent.RECEIVE:
+        6e9a604 com.yahoo.mobile.client.android.weather/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 638a561
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        365e540 com.yahoo.mobile.client.android.weather/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter df64547
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        d2917ed com.yahoo.mobile.client.android.weather/.service.DailyNotificationManager$OnTimeChangedReceiver filter c90da29
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        e179622 com.yahoo.mobile.client.android.weather/com.yahoo.mobile.client.android.weathersdk.service.WidgetUpdateReceiver filter fa982dc
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_UPDATE_WIDGET_TIME"
+        1578b3 com.yahoo.mobile.client.android.weather/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4ae4712
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        d2917ed com.yahoo.mobile.client.android.weather/.service.DailyNotificationManager$OnTimeChangedReceiver filter c90da29
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        e179622 com.yahoo.mobile.client.android.weather/com.yahoo.mobile.client.android.weathersdk.service.WidgetUpdateReceiver filter fa982dc
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_UPDATE_WIDGET_TIME"
+        1578b3 com.yahoo.mobile.client.android.weather/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4ae4712
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_LOCATION_REMOVED:
+        2ac3735 com.yahoo.mobile.client.android.weather/com.yahoo.mobile.client.android.weathersdk.service.WeatherServiceReceiver filter db91ae
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_ALERT_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_LOCATION_ADDED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_LOCATION_REMOVED"
+          Action: "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.USER_PRESENT"
+          Category: "android.intent.category.DEFAULT"
+      android.net.conn.BACKGROUND_DATA_SETTING_CHANGED:
+        2ac3735 com.yahoo.mobile.client.android.weather/com.yahoo.mobile.client.android.weathersdk.service.WeatherServiceReceiver filter db91ae
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_ALERT_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_LOCATION_ADDED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_LOCATION_REMOVED"
+          Action: "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.USER_PRESENT"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.BOOT_COMPLETED:
+        2efd217 com.yahoo.mobile.client.android.weather/com.mapquest.observer.wake.ObserverWakeManager filter 1b9f0c8
+          Action: "com.mapquest.observer.wake.ALARM"
+          Action: "com.mapquest.observer.wake.LOCATION"
+          Action: "com.mapquest.observer.wake.LEADER"
+          Action: "com.mapquest.observer.wake.ACTIVITY_TRANSITION"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+        1578b3 com.yahoo.mobile.client.android.weather/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4ae4712
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.USER_PRESENT:
+        2ac3735 com.yahoo.mobile.client.android.weather/com.yahoo.mobile.client.android.weathersdk.service.WeatherServiceReceiver filter db91ae
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_ALERT_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_LOCATION_ADDED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_LOCATION_REMOVED"
+          Action: "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.USER_PRESENT"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        2efd217 com.yahoo.mobile.client.android.weather/com.mapquest.observer.wake.ObserverWakeManager filter 1b9f0c8
+          Action: "com.mapquest.observer.wake.ALARM"
+          Action: "com.mapquest.observer.wake.LOCATION"
+          Action: "com.mapquest.observer.wake.LEADER"
+          Action: "com.mapquest.observer.wake.ACTIVITY_TRANSITION"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+        dbc4c79 com.yahoo.mobile.client.android.weather/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 2882886
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.mapquest.observer.wake.ACTIVITY_TRANSITION:
+        2efd217 com.yahoo.mobile.client.android.weather/com.mapquest.observer.wake.ObserverWakeManager filter 1b9f0c8
+          Action: "com.mapquest.observer.wake.ALARM"
+          Action: "com.mapquest.observer.wake.LOCATION"
+          Action: "com.mapquest.observer.wake.LEADER"
+          Action: "com.mapquest.observer.wake.ACTIVITY_TRANSITION"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_ALERT_UPDATED:
+        2ac3735 com.yahoo.mobile.client.android.weather/com.yahoo.mobile.client.android.weathersdk.service.WeatherServiceReceiver filter db91ae
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_ALERT_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_LOCATION_ADDED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_LOCATION_REMOVED"
+          Action: "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.USER_PRESENT"
+          Category: "android.intent.category.DEFAULT"
+      com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED:
+        70f9dbe com.yahoo.mobile.client.android.weather/.receivers.NotificationReceiver filter 74062f3
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_ALERT_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WIDGET_IMAGE_READY"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        15d1e70 com.yahoo.mobile.client.android.weather/.WeatherWidgetProvider filter f77f7b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        e8c45e9 com.yahoo.mobile.client.android.weather/.WeatherWidget4x2Provider filter 65af198
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        a3cf26e com.yahoo.mobile.client.android.weather/.WeatherWidget4x2ProviderBigClock filter de55df1
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        ce4ed0f com.yahoo.mobile.client.android.weather/.WeatherWidget4x2ProviderCurrentLocation filter 6ae9dd6
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        64db19c com.yahoo.mobile.client.android.weather/.WeatherWidgetHourlyProvider filter 5f49857
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        5da57a5 com.yahoo.mobile.client.android.weather/.WeatherWidget4x1Provider filter 9d98f44
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        349c77a com.yahoo.mobile.client.android.weather/.WeatherWidgetSmallProvider filter de0e82d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        2efd217 com.yahoo.mobile.client.android.weather/com.mapquest.observer.wake.ObserverWakeManager filter 1b9f0c8
+          Action: "com.mapquest.observer.wake.ALARM"
+          Action: "com.mapquest.observer.wake.LOCATION"
+          Action: "com.mapquest.observer.wake.LEADER"
+          Action: "com.mapquest.observer.wake.ACTIVITY_TRANSITION"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.yahoo.mobile.client.android.weathersdk.action.ACTION_LOCATION_ADDED:
+        2ac3735 com.yahoo.mobile.client.android.weather/com.yahoo.mobile.client.android.weathersdk.service.WeatherServiceReceiver filter db91ae
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_WEATHER_FORECAST_CHANGED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_ALERT_UPDATED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_LOCATION_ADDED"
+          Action: "com.yahoo.mobile.client.android.weathersdk.partner.action.ACTION_LOCATION_REMOVED"
+          Action: "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.USER_PRESENT"
+          Category: "android.intent.category.DEFAULT"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        38d4b2b com.yahoo.mobile.client.android.weather/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 1c7eee3
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.yahoo.mobile.client.android.weathersdk.action.ACTION_UPDATE_WIDGET_TIME:
+        e179622 com.yahoo.mobile.client.android.weather/com.yahoo.mobile.client.android.weathersdk.service.WidgetUpdateReceiver filter fa982dc
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "com.yahoo.mobile.client.android.weathersdk.action.ACTION_UPDATE_WIDGET_TIME"
+      com.mapquest.observer.wake.ALARM:
+        2efd217 com.yahoo.mobile.client.android.weather/com.mapquest.observer.wake.ObserverWakeManager filter 1b9f0c8
+          Action: "com.mapquest.observer.wake.ALARM"
+          Action: "com.mapquest.observer.wake.LOCATION"
+          Action: "com.mapquest.observer.wake.LEADER"
+          Action: "com.mapquest.observer.wake.ACTIVITY_TRANSITION"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.mapquest.observer.wake.LEADER:
+        2efd217 com.yahoo.mobile.client.android.weather/com.mapquest.observer.wake.ObserverWakeManager filter 1b9f0c8
+          Action: "com.mapquest.observer.wake.ALARM"
+          Action: "com.mapquest.observer.wake.LOCATION"
+          Action: "com.mapquest.observer.wake.LEADER"
+          Action: "com.mapquest.observer.wake.ACTIVITY_TRANSITION"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        e524b88 com.yahoo.mobile.client.android.weather/com.google.firebase.iid.FirebaseInstanceIdService filter 780963f
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+        f3dc921 com.yahoo.mobile.client.android.weather/com.flurry.android.marketing.messaging.FCM.FlurryInstanceIDListenerService filter 3d99c55
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+      com.yahoo.android.yconfig.optin_message:
+        11ce146 com.yahoo.mobile.client.android.weather/com.yahoo.android.yconfig.OptInService filter 6379f99
+          Action: "com.yahoo.android.yconfig.optin_message"
+      com.google.firebase.MESSAGING_EVENT:
+        8136f07 com.yahoo.mobile.client.android.weather/com.google.firebase.messaging.FirebaseMessagingService filter 1a5c25e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+        2849834 com.yahoo.mobile.client.android.weather/com.flurry.android.marketing.messaging.FCM.FlurryMessageListenerService filter 3415b0c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+      android.accounts.AccountAuthenticator:
+        50cd65d com.yahoo.mobile.client.android.weather/com.oath.mobile.platform.phoenix.core.AuthenticatorService filter 37c10e0
+          Action: "android.accounts.AccountAuthenticator"
+
+Permissions:
+  Permission [com.yahoo.snp.android.permission.ACCESS_PUSHAGENT] (8b5cbd2):
+    sourcePackage=com.yahoo.mobile.client.android.weather
+    uid=10143 gids=null type=0 prot=signature
+    perm=Permission{fedf4a3 com.yahoo.snp.android.permission.ACCESS_PUSHAGENT}
+    packageSetting=PackageSetting{1ed03a0 com.yahoo.mobile.client.android.weather/10143}
+
+Permissions:
+  Permission [com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP] (6c57b59):
+    sourcePackage=com.yahoo.mobile.client.android.weather
+    uid=10143 gids=null type=0 prot=signature
+    perm=Permission{d80d31e com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP}
+    packageSetting=PackageSetting{1ed03a0 com.yahoo.mobile.client.android.weather/10143}
+
+Registered ContentProviders:
+  com.yahoo.mobile.client.android.weather/com.ryot.arsdk.util.ARSDKWarmupContentProvider:
+    Provider{76137ff com.yahoo.mobile.client.android.weather/com.ryot.arsdk.util.ARSDKWarmupContentProvider}
+  com.yahoo.mobile.client.android.weather/com.oath.mobile.platform.phoenix.core.PhoenixFileProvider:
+    Provider{1aeb9cc com.yahoo.mobile.client.android.weather/com.oath.mobile.platform.phoenix.core.PhoenixFileProvider}
+  com.yahoo.mobile.client.android.weather/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{3c97415 com.yahoo.mobile.client.android.weather/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.yahoo.mobile.client.android.weather/androidx.core.content.FileProvider:
+    Provider{b63032a com.yahoo.mobile.client.android.weather/androidx.core.content.FileProvider}
+  com.yahoo.mobile.client.android.weather/androidx.work.impl.WorkManagerInitializer:
+    Provider{9b551b com.yahoo.mobile.client.android.weather/androidx.work.impl.WorkManagerInitializer}
+  com.yahoo.mobile.client.android.weather/.provider.WeatherProvider:
+    Provider{3f3a6b8 com.yahoo.mobile.client.android.weather/.provider.WeatherProvider}
+  com.yahoo.mobile.client.android.weather/com.ryot.arsdk.util.ARSDKFileProvider:
+    Provider{5da3c91 com.yahoo.mobile.client.android.weather/com.ryot.arsdk.util.ARSDKFileProvider}
+  com.yahoo.mobile.client.android.weather/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{58627f6 com.yahoo.mobile.client.android.weather/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.yahoo.mobile.client.android.weather.ARSDKInitProvider]:
+    Provider{76137ff com.yahoo.mobile.client.android.weather/com.ryot.arsdk.util.ARSDKWarmupContentProvider}
+      applicationInfo=ApplicationInfo{89027f7 com.yahoo.mobile.client.android.weather}
+  [com.yahoo.mobile.client.android.weather.provider]:
+    Provider{b63032a com.yahoo.mobile.client.android.weather/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{89027f7 com.yahoo.mobile.client.android.weather}
+  [com.yahoo.mobile.client.android.weather.account.file.provider]:
+    Provider{1aeb9cc com.yahoo.mobile.client.android.weather/com.oath.mobile.platform.phoenix.core.PhoenixFileProvider}
+      applicationInfo=ApplicationInfo{89027f7 com.yahoo.mobile.client.android.weather}
+  [com.yahoo.mobile.client.android.weather.workmanager-init]:
+    Provider{9b551b com.yahoo.mobile.client.android.weather/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{89027f7 com.yahoo.mobile.client.android.weather}
+  [com.yahoo.mobile.client.android.weather.media_fileprovider]:
+    Provider{5da3c91 com.yahoo.mobile.client.android.weather/com.ryot.arsdk.util.ARSDKFileProvider}
+      applicationInfo=ApplicationInfo{89027f7 com.yahoo.mobile.client.android.weather}
+  [com.yahoo.mobile.client.android.weather.provider.Weather]:
+    Provider{3f3a6b8 com.yahoo.mobile.client.android.weather/.provider.WeatherProvider}
+      applicationInfo=ApplicationInfo{89027f7 com.yahoo.mobile.client.android.weather}
+  [com.yahoo.mobile.client.android.weather.lifecycle-process]:
+    Provider{3c97415 com.yahoo.mobile.client.android.weather/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{89027f7 com.yahoo.mobile.client.android.weather}
+  [com.yahoo.mobile.client.android.weather.firebaseinitprovider]:
+    Provider{58627f6 com.yahoo.mobile.client.android.weather/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{89027f7 com.yahoo.mobile.client.android.weather}
+
+Key Set Manager:
+  [com.yahoo.mobile.client.android.weather]
+      Signing KeySets: 428
+
+Packages:
+  Package [com.yahoo.mobile.client.android.weather] (1ed03a0):
+    userId=10143
+    pkg=Package{40a1f26 com.yahoo.mobile.client.android.weather}
+    codePath=/data/app/com.yahoo.mobile.client.android.weather-EzVGyHC6lwGlJjlgTEg1kA==
+    resourcePath=/data/app/com.yahoo.mobile.client.android.weather-EzVGyHC6lwGlJjlgTEg1kA==
+    legacyNativeLibraryDir=/data/app/com.yahoo.mobile.client.android.weather-EzVGyHC6lwGlJjlgTEg1kA==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=91596575 minSdk=21 targetSdk=29
+    versionName=1.30.55
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{89027f7 com.yahoo.mobile.client.android.weather}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/com.yahoo.mobile.client.android.weather
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 08:44:24
+    firstInstallTime=2021-03-06 08:44:25
+    lastUpdateTime=2021-03-06 08:44:25
+    signatures=PackageSignatures{1987664 version:3, signatures:[17cb6d90], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    declared permissions:
+      com.yahoo.snp.android.permission.ACCESS_PUSHAGENT: prot=signature, INSTALLED
+      com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP: prot=signature, INSTALLED
+    requested permissions:
+      com.yahoo.mobile.client.android.weather.permission.MAPS_RECEIVE
+      com.yahoo.snp.android.permission.ACCESS_PUSHAGENT
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_BACKGROUND_LOCATION: restricted=true
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.INTERNET
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.CAMERA
+      android.permission.USE_BIOMETRIC
+      com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP
+      android.permission.RECORD_AUDIO
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.ACCESS_COARSE_LOCATION
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.yahoo.snp.android.permission.ACCESS_PUSHAGENT: granted=true
+      android.permission.VIBRATE: granted=true
+      com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=17090 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=1
+  User 0:
+    seq=0, package=com.yahoo.mobile.client.android.weather
+
+
+Dexopt state:
+  [com.yahoo.mobile.client.android.weather]
+    path: /data/app/com.yahoo.mobile.client.android.weather-EzVGyHC6lwGlJjlgTEg1kA==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.yahoo.mobile.client.android.weather]
+     base.apk - 7680
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

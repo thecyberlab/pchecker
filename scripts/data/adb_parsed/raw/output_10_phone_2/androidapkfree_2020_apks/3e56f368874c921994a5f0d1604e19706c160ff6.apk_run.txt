@@ -1,0 +1,822 @@
+Activity Resolver Table:
+  Full MIME Types:
+      application/com.whatsapp.identity:
+        d5e249f com.whatsapp.w4b/com.whatsapp.identity.IdentityVerificationActivity filter eb8dd5
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/com.whatsapp.identity"
+      vnd.android.cursor.item/vnd.com.whatsapp.w4b.profile:
+        23839ec com.whatsapp.w4b/com.whatsapp.accountsync.ProfileActivity filter 6857919
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.profile"
+      vnd.android.cursor.item/vnd.com.whatsapp.w4b.voip.call:
+        c1ec1b5 com.whatsapp.w4b/com.whatsapp.accountsync.CallContactLandingActivity filter 4105dde
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.voip.call"
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.video.call"
+      */*:
+        b8a6bbb com.whatsapp.w4b/com.whatsapp.ContactPicker filter 80cd048
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        b8a6bbb com.whatsapp.w4b/com.whatsapp.ContactPicker filter 49acee1
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      audio/wav:
+        46508d8 com.whatsapp.w4b/com.whatsapp.VoiceMessagingActivity filter 986228c
+          Action: "com.google.android.voicesearch.SEND_MESSAGE_TO_CONTACTS"
+          Category: "android.intent.category.DEFAULT"
+          Type: "text/plain"
+          Type: "audio/wav"
+      text/plain:
+        46508d8 com.whatsapp.w4b/com.whatsapp.VoiceMessagingActivity filter 986228c
+          Action: "com.google.android.voicesearch.SEND_MESSAGE_TO_CONTACTS"
+          Category: "android.intent.category.DEFAULT"
+          Type: "text/plain"
+          Type: "audio/wav"
+      vnd.android.cursor.item/vnd.com.whatsapp.w4b.video.call:
+        c1ec1b5 com.whatsapp.w4b/com.whatsapp.accountsync.CallContactLandingActivity filter 4105dde
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.voip.call"
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.video.call"
+      image/*:
+        6c6c431 com.whatsapp.w4b/com.whatsapp.SetAsProfilePhoto filter 4e04d2e
+          Action: "android.intent.action.ATTACH_DATA"
+          Category: "android.intent.category.DEFAULT"
+          Type: "image"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      application/com.whatsapp.chat:
+        14ea716 com.whatsapp.w4b/com.whatsapp.HomeActivity filter c42a8f4
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/com.whatsapp.chat"
+          Type: "application/com.whatsapp.join"
+      application/com.whatsapp.join:
+        14ea716 com.whatsapp.w4b/com.whatsapp.HomeActivity filter c42a8f4
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/com.whatsapp.chat"
+          Type: "application/com.whatsapp.join"
+
+  Base MIME Types:
+      vnd.android.cursor.item:
+        23839ec com.whatsapp.w4b/com.whatsapp.accountsync.ProfileActivity filter 6857919
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.profile"
+        c1ec1b5 com.whatsapp.w4b/com.whatsapp.accountsync.CallContactLandingActivity filter 4105dde
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.voip.call"
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.video.call"
+        c1ec1b5 com.whatsapp.w4b/com.whatsapp.accountsync.CallContactLandingActivity filter 4105dde
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.voip.call"
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.video.call"
+      text:
+        46508d8 com.whatsapp.w4b/com.whatsapp.VoiceMessagingActivity filter 986228c
+          Action: "com.google.android.voicesearch.SEND_MESSAGE_TO_CONTACTS"
+          Category: "android.intent.category.DEFAULT"
+          Type: "text/plain"
+          Type: "audio/wav"
+      audio:
+        46508d8 com.whatsapp.w4b/com.whatsapp.VoiceMessagingActivity filter 986228c
+          Action: "com.google.android.voicesearch.SEND_MESSAGE_TO_CONTACTS"
+          Category: "android.intent.category.DEFAULT"
+          Type: "text/plain"
+          Type: "audio/wav"
+      application:
+        14ea716 com.whatsapp.w4b/com.whatsapp.HomeActivity filter c42a8f4
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/com.whatsapp.chat"
+          Type: "application/com.whatsapp.join"
+        14ea716 com.whatsapp.w4b/com.whatsapp.HomeActivity filter c42a8f4
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/com.whatsapp.chat"
+          Type: "application/com.whatsapp.join"
+        d5e249f com.whatsapp.w4b/com.whatsapp.identity.IdentityVerificationActivity filter eb8dd5
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/com.whatsapp.identity"
+
+  Wild MIME Types:
+      *:
+        b8a6bbb com.whatsapp.w4b/com.whatsapp.ContactPicker filter 80cd048
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        b8a6bbb com.whatsapp.w4b/com.whatsapp.ContactPicker filter 49acee1
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      image:
+        6c6c431 com.whatsapp.w4b/com.whatsapp.SetAsProfilePhoto filter 4e04d2e
+          Action: "android.intent.action.ATTACH_DATA"
+          Category: "android.intent.category.DEFAULT"
+          Type: "image"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+
+  Schemes:
+      sms:
+        66a0897 com.whatsapp.w4b/com.whatsapp.Conversation filter 2a6cb30
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sms"
+          Scheme: "smsto"
+      http:
+        c12726d com.whatsapp.w4b/com.whatsapp.VerifySmsDeepLink filter 5656a5c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "b.whatsapp.com": -1
+          Authority: "b.whatsapp.com": -1
+          AutoVerify=true
+        61ea2 com.whatsapp.w4b/com.whatsapp.TextAndDirectChatDeepLink filter 4304ac7
+          Action: "android.intent.action.VIEW"
+          Action: "com.whatsapp.w4b.DEEP_LINK_REDIRECT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "whatsapp"
+          Scheme: "whatsapp-smb"
+          Authority: "api.whatsapp.com": -1
+          Authority: "api.whatsapp.com": -1
+          Authority: "wa.me": -1
+          Authority: "wa.me": -1
+          Authority: "send": -1
+          Authority: "catalog": -1
+          Authority: "product": -1
+          Authority: "message": -1
+          Authority: "send": -1
+          Authority: "pay": -1
+          AutoVerify=true
+        33c9733 com.whatsapp.w4b/com.whatsapp.AcceptInviteLinkActivityDeepLink filter 55ccc63
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "chat.whatsapp.com": -1
+          Authority: "chat.whatsapp.com": -1
+          AutoVerify=true
+      https:
+        c12726d com.whatsapp.w4b/com.whatsapp.VerifySmsDeepLink filter 5656a5c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "b.whatsapp.com": -1
+          Authority: "b.whatsapp.com": -1
+          AutoVerify=true
+        61ea2 com.whatsapp.w4b/com.whatsapp.TextAndDirectChatDeepLink filter 4304ac7
+          Action: "android.intent.action.VIEW"
+          Action: "com.whatsapp.w4b.DEEP_LINK_REDIRECT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "whatsapp"
+          Scheme: "whatsapp-smb"
+          Authority: "api.whatsapp.com": -1
+          Authority: "api.whatsapp.com": -1
+          Authority: "wa.me": -1
+          Authority: "wa.me": -1
+          Authority: "send": -1
+          Authority: "catalog": -1
+          Authority: "product": -1
+          Authority: "message": -1
+          Authority: "send": -1
+          Authority: "pay": -1
+          AutoVerify=true
+        33c9733 com.whatsapp.w4b/com.whatsapp.AcceptInviteLinkActivityDeepLink filter 55ccc63
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "chat.whatsapp.com": -1
+          Authority: "chat.whatsapp.com": -1
+          AutoVerify=true
+      smsto:
+        66a0897 com.whatsapp.w4b/com.whatsapp.Conversation filter 2a6cb30
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sms"
+          Scheme: "smsto"
+      content:
+        23839ec com.whatsapp.w4b/com.whatsapp.accountsync.ProfileActivity filter 6857919
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.profile"
+        c1ec1b5 com.whatsapp.w4b/com.whatsapp.accountsync.CallContactLandingActivity filter 4105dde
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.voip.call"
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.video.call"
+      whatsapp-smb:
+        61ea2 com.whatsapp.w4b/com.whatsapp.TextAndDirectChatDeepLink filter 4304ac7
+          Action: "android.intent.action.VIEW"
+          Action: "com.whatsapp.w4b.DEEP_LINK_REDIRECT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "whatsapp"
+          Scheme: "whatsapp-smb"
+          Authority: "api.whatsapp.com": -1
+          Authority: "api.whatsapp.com": -1
+          Authority: "wa.me": -1
+          Authority: "wa.me": -1
+          Authority: "send": -1
+          Authority: "catalog": -1
+          Authority: "product": -1
+          Authority: "message": -1
+          Authority: "send": -1
+          Authority: "pay": -1
+          AutoVerify=true
+      whatsapp:
+        ef0c869 com.whatsapp.w4b/com.whatsapp.registration.VerifySms filter a9910cf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "whatsapp"
+          Authority: "r": -1
+        61ea2 com.whatsapp.w4b/com.whatsapp.TextAndDirectChatDeepLink filter 4304ac7
+          Action: "android.intent.action.VIEW"
+          Action: "com.whatsapp.w4b.DEEP_LINK_REDIRECT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "whatsapp"
+          Scheme: "whatsapp-smb"
+          Authority: "api.whatsapp.com": -1
+          Authority: "api.whatsapp.com": -1
+          Authority: "wa.me": -1
+          Authority: "wa.me": -1
+          Authority: "send": -1
+          Authority: "catalog": -1
+          Authority: "product": -1
+          Authority: "message": -1
+          Authority: "send": -1
+          Authority: "pay": -1
+          AutoVerify=true
+        14ea716 com.whatsapp.w4b/com.whatsapp.HomeActivity filter 894781d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "whatsapp"
+          Authority: "chat": -1
+        14ea716 com.whatsapp.w4b/com.whatsapp.HomeActivity filter 73e2a92
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "whatsapp"
+          Authority: "status": -1
+
+  Non-Data Actions:
+      com.whatsapp.w4b.Conversation:
+        66a0897 com.whatsapp.w4b/com.whatsapp.Conversation filter a0d53a9
+          Action: "com.whatsapp.w4b.Conversation"
+          Category: "android.intent.category.DEFAULT"
+      com.whatsapp.intent.action.ENABLE_STICKER_PACK:
+        3cb82ee com.whatsapp.w4b/com.whatsapp.stickers.AddThirdPartyStickerPackActivity filter 14079ea
+          Action: "com.whatsapp.intent.action.ENABLE_STICKER_PACK"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        5b3f61c com.whatsapp.w4b/com.whatsapp.Main filter a7ae073
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.MULTIWINDOW_LAUNCHER"
+        8448225 com.whatsapp.w4b/com.whatsapp.SettingsNotifications filter 2a80e3a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+      android.intent.action.PICK:
+        b8a6bbb com.whatsapp.w4b/com.whatsapp.ContactPicker filter bfeaeb
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          Category: "com.whatsapp"
+      android.intent.action.VIEW:
+        270dffa com.whatsapp.w4b/com.whatsapp.accountsync.LoginActivity filter 65b6060
+          Action: "android.intent.action.VIEW"
+      android.intent.action.MANAGE_NETWORK_USAGE:
+        3a9b9ab com.whatsapp.w4b/com.whatsapp.SettingsDataUsageActivity filter 1be8165
+          Action: "android.intent.action.MANAGE_NETWORK_USAGE"
+          Category: "android.intent.category.DEFAULT"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        2601ba1 com.whatsapp.w4b/com.whatsapp.AppAuthenticationActivity filter 29564db
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      android.intent.action.CREATE_SHORTCUT:
+        add01c6 com.whatsapp.w4b/com.whatsapp.CreateConversationShortcut filter 3f8d406
+          Action: "android.intent.action.CREATE_SHORTCUT"
+        bc84587 com.whatsapp.w4b/com.whatsapp.camera.CameraActivity filter f45cbbf
+          Action: "android.intent.action.CREATE_SHORTCUT"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        b8a6bbb com.whatsapp.w4b/com.whatsapp.ContactPicker filter 80cd048
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      android.intent.action.VIEW:
+        23839ec com.whatsapp.w4b/com.whatsapp.accountsync.ProfileActivity filter 6857919
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.profile"
+        c1ec1b5 com.whatsapp.w4b/com.whatsapp.accountsync.CallContactLandingActivity filter 4105dde
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.voip.call"
+          Type: "vnd.android.cursor.item/vnd.com.whatsapp.w4b.video.call"
+      com.google.android.voicesearch.SEND_MESSAGE_TO_CONTACTS:
+        46508d8 com.whatsapp.w4b/com.whatsapp.VoiceMessagingActivity filter 986228c
+          Action: "com.google.android.voicesearch.SEND_MESSAGE_TO_CONTACTS"
+          Category: "android.intent.category.DEFAULT"
+          Type: "text/plain"
+          Type: "audio/wav"
+      android.intent.action.SEND_MULTIPLE:
+        b8a6bbb com.whatsapp.w4b/com.whatsapp.ContactPicker filter 49acee1
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      android.nfc.action.NDEF_DISCOVERED:
+        14ea716 com.whatsapp.w4b/com.whatsapp.HomeActivity filter c42a8f4
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/com.whatsapp.chat"
+          Type: "application/com.whatsapp.join"
+        d5e249f com.whatsapp.w4b/com.whatsapp.identity.IdentityVerificationActivity filter eb8dd5
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/com.whatsapp.identity"
+      android.intent.action.ATTACH_DATA:
+        6c6c431 com.whatsapp.w4b/com.whatsapp.SetAsProfilePhoto filter 4e04d2e
+          Action: "android.intent.action.ATTACH_DATA"
+          Category: "android.intent.category.DEFAULT"
+          Type: "image"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+
+Receiver Resolver Table:
+  Schemes:
+      file:
+        6deecb4 com.whatsapp.w4b/com.whatsapp.ExternalMediaManager$ExternalMediaStateReceiver filter fa44ab6
+          Action: "android.intent.action.MEDIA_BAD_REMOVAL"
+          Action: "android.intent.action.MEDIA_EJECT"
+          Action: "android.intent.action.MEDIA_MOUNTED"
+          Action: "android.intent.action.MEDIA_REMOVED"
+          Action: "android.intent.action.MEDIA_SHARED"
+          Action: "android.intent.action.MEDIA_UNMOUNTED"
+          Scheme: "file"
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        41d0dd com.whatsapp.w4b/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 91d46bc
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        1977452 com.whatsapp.w4b/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter acf22af
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.google.android.gms.auth.START_ACCOUNT_EXPORT:
+        c59b323 com.whatsapp.w4b/com.whatsapp.accounttransfer.AccountTransferReceiver filter 4b7a190
+          Action: "com.google.android.gms.auth.START_ACCOUNT_EXPORT"
+      com.whatsapp.registration.directmigration.initialMigrationInfoAction:
+        6d82020 com.whatsapp.w4b/com.whatsapp.registration.directmigration.MigrationProviderOrderedBroadcastReceiver filter 7e8a28d
+          Action: "com.whatsapp.registration.directmigration.initialMigrationInfoAction"
+          Action: "com.whatsapp.registration.directmigration.recoveryTokenAction"
+          Action: "com.whatsapp.registration.directmigration.setMigrationStateOnProviderSide"
+      com.whatsapp.registration.directmigration.setMigrationStateOnProviderSide:
+        6d82020 com.whatsapp.w4b/com.whatsapp.registration.directmigration.MigrationProviderOrderedBroadcastReceiver filter 7e8a28d
+          Action: "com.whatsapp.registration.directmigration.initialMigrationInfoAction"
+          Action: "com.whatsapp.registration.directmigration.recoveryTokenAction"
+          Action: "com.whatsapp.registration.directmigration.setMigrationStateOnProviderSide"
+      com.whatsapp.SMBRegistrationCompleted:
+        a14839e com.whatsapp.w4b/com.whatsapp.RegistrationCompletedReceiver filter 65c3724
+          Action: "com.whatsapp.SMBRegistrationCompleted"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        50a5e7f com.whatsapp.w4b/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e6c9645
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        36f1e4c com.whatsapp.w4b/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 863319a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.whatsapp.registration.directmigration.providerIsLoggedOutAction:
+        c533e95 com.whatsapp.w4b/com.whatsapp.registration.directmigration.MigrationRequesterBroadcastReceiver filter 5a25c42
+          Action: "com.whatsapp.registration.directmigration.providerIsLoggedOutAction"
+          Action: "com.whatsapp.registration.directmigration.providerAppMigrationSpaceNeededAction"
+      android.intent.action.DEVICE_STORAGE_OK:
+        50a5e7f com.whatsapp.w4b/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e6c9645
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.whatsapp.registration.directmigration.providerAppMigrationSpaceNeededAction:
+        c533e95 com.whatsapp.w4b/com.whatsapp.registration.directmigration.MigrationRequesterBroadcastReceiver filter 5a25c42
+          Action: "com.whatsapp.registration.directmigration.providerIsLoggedOutAction"
+          Action: "com.whatsapp.registration.directmigration.providerAppMigrationSpaceNeededAction"
+      com.facebook.rti.fbns.intent.RECEIVE:
+        8c13baa com.whatsapp.w4b/com.whatsapp.push.WAFbnsPreloadReceiver filter ac9da89
+          Action: "com.facebook.rti.fbns.intent.RECEIVE"
+          Category: "com.whatsapp.w4b"
+      com.google.android.c2dm.intent.RECEIVE:
+        9f0639b com.whatsapp.w4b/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 5c551c1
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        41d0dd com.whatsapp.w4b/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 91d46bc
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        e95d338 com.whatsapp.w4b/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2753acb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        e95d338 com.whatsapp.w4b/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2753acb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.whatsapp.alarm.REGISTRATION_RETRY:
+        1762f11 com.whatsapp.w4b/com.whatsapp.registration.RegRetryVerificationReceiver filter b499453
+          Action: "com.whatsapp.alarm.REGISTRATION_RETRY"
+      android.intent.action.BOOT_COMPLETED:
+        9cf6876 com.whatsapp.w4b/com.whatsapp.BootReceiver filter ab8db78
+          Action: "android.intent.action.BOOT_COMPLETED"
+        e95d338 com.whatsapp.w4b/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2753acb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        1977452 com.whatsapp.w4b/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter acf22af
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.facebook.GET_PHONE_ID:
+        679e77 com.whatsapp.w4b/com.whatsapp.phoneid.PhoneIdRequestReceiver filter 77dfa8e
+          Action: "com.facebook.GET_PHONE_ID"
+      com.whatsapp.registration.directmigration.recoveryTokenAction:
+        6d82020 com.whatsapp.w4b/com.whatsapp.registration.directmigration.MigrationProviderOrderedBroadcastReceiver filter 7e8a28d
+          Action: "com.whatsapp.registration.directmigration.initialMigrationInfoAction"
+          Action: "com.whatsapp.registration.directmigration.recoveryTokenAction"
+          Action: "com.whatsapp.registration.directmigration.setMigrationStateOnProviderSide"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        570eae4 com.whatsapp.w4b/com.whatsapp.appwidget.WidgetProvider filter 67b73b7
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        8fdab4d com.whatsapp.w4b/com.whatsapp.UpdatedOurAppReceiver filter a643251
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        8c19602 com.whatsapp.w4b/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 7d612a8
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.content.SyncAdapter:
+        c3d150 com.whatsapp.w4b/com.whatsapp.contact.sync.ContactsSyncAdapterService filter 31ab8a7
+          Action: "android.content.SyncAdapter"
+      com.google.firebase.INSTANCE_ID_EVENT:
+        106af49 com.whatsapp.w4b/com.whatsapp.push.InstanceIdListenerService filter 20e59f2
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+        4b7104e com.whatsapp.w4b/com.google.firebase.iid.FirebaseInstanceIdService filter cfe8ec0
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        33de56f com.whatsapp.w4b/com.whatsapp.push.GcmListenerService filter 49448fd
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        1cb27c com.whatsapp.w4b/com.google.firebase.messaging.FirebaseMessagingService filter 2b03843
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+      android.telecom.ConnectionService:
+        281f705 com.whatsapp.w4b/com.whatsapp.voipcalling.SelfManagedConnectionService filter ecdb154 permission android.permission.BIND_TELECOM_CONNECTION_SERVICE
+          Action: "android.telecom.ConnectionService"
+      android.accounts.AccountAuthenticator:
+        d77e35a com.whatsapp.w4b/com.whatsapp.accountsync.AccountAuthenticatorService filter 32cd66
+          Action: "android.accounts.AccountAuthenticator"
+      android.service.chooser.ChooserTargetService:
+        4ed698b com.whatsapp.w4b/androidx.sharetarget.ChooserTargetServiceCompat filter 6177f9 permission android.permission.BIND_CHOOSER_TARGET_SERVICE
+          Action: "android.service.chooser.ChooserTargetService"
+
+Permissions:
+  Permission [com.whatsapp.w4b.permission.MAPS_RECEIVE] (bc07a68):
+    sourcePackage=com.whatsapp.w4b
+    uid=10195 gids=null type=0 prot=signature
+    perm=Permission{aaffe81 com.whatsapp.w4b.permission.MAPS_RECEIVE}
+    packageSetting=PackageSetting{540db26 com.whatsapp.w4b/10195}
+
+Permissions:
+  Permission [com.whatsapp.permission.REGISTRATION] (4c71367):
+    sourcePackage=com.whatsapp.w4b
+    uid=10195 gids=null type=0 prot=signature
+    perm=Permission{956d514 com.whatsapp.permission.REGISTRATION}
+    packageSetting=PackageSetting{540db26 com.whatsapp.w4b/10195}
+
+Permissions:
+  Permission [com.whatsapp.w4b.permission.BROADCAST] (5d01bd):
+    sourcePackage=com.whatsapp.w4b
+    uid=10195 gids=null type=0 prot=signature
+    perm=Permission{34f83b2 com.whatsapp.w4b.permission.BROADCAST}
+    packageSetting=PackageSetting{540db26 com.whatsapp.w4b/10195}
+
+Permissions:
+  Permission [com.whatsapp.sticker.READ] (a77f03):
+    sourcePackage=com.whatsapp.w4b
+    uid=10195 gids=null type=0 prot=normal
+    perm=Permission{f562e80 com.whatsapp.sticker.READ}
+    packageSetting=PackageSetting{540db26 com.whatsapp.w4b/10195}
+
+Registered ContentProviders:
+  com.whatsapp.w4b/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{dcfcb9 com.whatsapp.w4b/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.whatsapp.w4b/com.whatsapp.stickers.WhitelistPackQueryContentProvider:
+    Provider{32e28fe com.whatsapp.w4b/com.whatsapp.stickers.WhitelistPackQueryContentProvider}
+  com.whatsapp.w4b/androidx.core.content.FileProvider:
+    Provider{d99085f com.whatsapp.w4b/androidx.core.content.FileProvider}
+  com.whatsapp.w4b/com.whatsapp.contentprovider.MediaProvider:
+    Provider{32fb2ac com.whatsapp.w4b/com.whatsapp.contentprovider.MediaProvider}
+  com.whatsapp.w4b/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{c7ab75 com.whatsapp.w4b/com.google.firebase.provider.FirebaseInitProvider}
+  com.whatsapp.w4b/com.whatsapp.contact.ContactProvider:
+    Provider{cbfd70a com.whatsapp.w4b/com.whatsapp.contact.ContactProvider}
+
+ContentProvider Authorities:
+  [com.whatsapp.w4b.lifecycle-process]:
+    Provider{dcfcb9 com.whatsapp.w4b/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{cefcb7b com.whatsapp.w4b}
+  [com.whatsapp.w4b.fileprovider]:
+    Provider{d99085f com.whatsapp.w4b/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{cefcb7b com.whatsapp.w4b}
+  [com.whatsapp.w4b.provider.sticker_whitelist_check]:
+    Provider{32e28fe com.whatsapp.w4b/com.whatsapp.stickers.WhitelistPackQueryContentProvider}
+      applicationInfo=ApplicationInfo{cefcb7b com.whatsapp.w4b}
+  [com.whatsapp.w4b.provider.contact]:
+    Provider{cbfd70a com.whatsapp.w4b/com.whatsapp.contact.ContactProvider}
+      applicationInfo=ApplicationInfo{cefcb7b com.whatsapp.w4b}
+  [com.whatsapp.w4b.provider.media]:
+    Provider{32fb2ac com.whatsapp.w4b/com.whatsapp.contentprovider.MediaProvider}
+      applicationInfo=ApplicationInfo{cefcb7b com.whatsapp.w4b}
+  [com.whatsapp.w4b.firebaseinitprovider]:
+    Provider{c7ab75 com.whatsapp.w4b/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{cefcb7b com.whatsapp.w4b}
+
+Key Set Manager:
+  [com.whatsapp.w4b]
+      Signing KeySets: 246
+
+Packages:
+  Package [com.whatsapp.w4b] (540db26):
+    userId=10195
+    pkg=Package{816c4e2 com.whatsapp.w4b}
+    codePath=/data/app/com.whatsapp.w4b-CtmfGlVAPaIa6R64bJLxQg==
+    resourcePath=/data/app/com.whatsapp.w4b-CtmfGlVAPaIa6R64bJLxQg==
+    legacyNativeLibraryDir=/data/app/com.whatsapp.w4b-CtmfGlVAPaIa6R64bJLxQg==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=204914001 minSdk=16 targetSdk=29
+    versionName=2.20.199.14
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{cefcb7b com.whatsapp.w4b}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS ]
+    dataDir=/data/user/0/com.whatsapp.w4b
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      com.sec.android.app.multiwindow
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 07:57:06
+    firstInstallTime=2021-03-06 07:57:06
+    lastUpdateTime=2021-03-06 07:57:06
+    signatures=PackageSignatures{e3b4d98 version:2, signatures:[2b6cb416], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    declared permissions:
+      com.whatsapp.w4b.permission.BROADCAST: prot=signature, INSTALLED
+      com.whatsapp.w4b.permission.MAPS_RECEIVE: prot=signature, INSTALLED
+      com.whatsapp.permission.REGISTRATION: prot=signature, INSTALLED
+      com.whatsapp.sticker.READ: prot=normal, INSTALLED
+    requested permissions:
+      com.whatsapp.permission.MIGRATION_CONTENT_PROVIDER
+      android.permission.USE_FINGERPRINT
+      android.permission.CAMERA
+      android.permission.USE_BIOMETRIC
+      android.permission.VIBRATE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.BLUETOOTH
+      android.permission.BROADCAST_STICKY
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.GET_ACCOUNTS
+      android.permission.GET_TASKS
+      android.permission.INSTALL_SHORTCUT
+      android.permission.INTERNET
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.MANAGE_OWN_CALLS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.NFC
+      android.permission.READ_CONTACTS
+      android.permission.READ_PHONE_STATE
+      android.permission.READ_PROFILE
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.READ_SYNC_STATS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.RECORD_AUDIO
+      android.permission.USE_CREDENTIALS
+      android.permission.WAKE_LOCK
+      android.permission.WRITE_CONTACTS
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.USE_FULL_SCREEN_INTENT
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      com.android.launcher.permission.UNINSTALL_SHORTCUT
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.whatsapp.w4b.permission.BROADCAST
+      com.whatsapp.w4b.permission.MAPS_RECEIVE
+      com.whatsapp.permission.REGISTRATION
+      com.whatsapp.sticker.READ
+      android.permission.CALL_PHONE
+      android.permission.ANSWER_PHONE_CALLS
+      android.permission.READ_CALL_LOG: restricted=true
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.NFC: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.launcher.permission.UNINSTALL_SHORTCUT: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      com.whatsapp.w4b.permission.MAPS_RECEIVE: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      com.whatsapp.permission.REGISTRATION: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.MANAGE_OWN_CALLS: granted=true
+      com.whatsapp.w4b.permission.BROADCAST: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      com.whatsapp.sticker.READ: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=6258 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.READ_CALL_LOG: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ANSWER_PHONE_CALLS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Package Changes:
+  Sequence number=116
+  User 0:
+    seq=6, package=com.google.android.gms
+    seq=7, package=com.ultimateguitar.tabs
+    seq=9, package=com.anddoes.launcher
+    seq=11, package=tv.twitch.android.app
+    seq=13, package=com.ludo.king
+    seq=15, package=net.zedge.android
+    seq=17, package=com.shazam.android
+    seq=19, package=com.whatsweb.app
+    seq=21, package=com.yahoo.mobile.client.android.finance
+    seq=23, package=com.yahoo.mobile.client.android.mail
+    seq=25, package=de.resolution.yf_android
+    seq=27, package=com.ninegag.android.app
+    seq=29, package=iflix.play
+    seq=31, package=com.gamestar.perfectpiano
+    seq=33, package=com.gbwhatsapp
+    seq=35, package=com.instagram.android
+    seq=37, package=com.opera.touch
+    seq=39, package=com.ea.game.pvzfree_row
+    seq=41, package=com.paget96.lspeed
+    seq=43, package=jp.konami.duellinks
+    seq=46, package=com.google.android.apps.walletnfcrel
+    seq=48, package=com.mufumbo.android.recipe.search
+    seq=51, package=com.google.android.apps.docs.editors.docs
+    seq=52, package=com.google.android.apps.docs
+    seq=54, package=io.friendly
+    seq=56, package=com.gamestar.pianoperfect
+    seq=58, package=com.bethsoft.falloutshelter
+    seq=60, package=com.midasplayer.apps.bubblewitchsaga2
+    seq=62, package=com.google.android.apps.adm
+    seq=64, package=it.medieval.blueftp
+    seq=66, package=com.bandainamcogames.dbzdokkanww
+    seq=68, package=com.quirky.android.wink.wink
+    seq=70, package=com.king.candycrushjellysaga
+    seq=72, package=com.microsoft.office.powerpoint
+    seq=74, package=com.yowhatsapp
+    seq=77, package=com.rarlab.rar
+    seq=79, package=com.internet.speed.meter.lite
+    seq=81, package=com.sega.sprint
+    seq=83, package=com.defianttech.diskdigger
+    seq=85, package=com.mcdonalds.app
+    seq=87, package=com.catdaddy.cat22
+    seq=89, package=org.ppsspp.ppsspp
+    seq=91, package=com.creativemobile.DragRacing
+    seq=93, package=kik.android
+    seq=95, package=sg.bigo.live
+    seq=97, package=com.imo.android.imoim
+    seq=99, package=mega.privacy.android.app
+    seq=101, package=com.instagram.lite
+    seq=103, package=air.com.befunky.BeFunkyPhotoEditor
+    seq=106, package=com.picsart.studio
+    seq=108, package=com.adobe.reader
+    seq=110, package=com.edengames.GTSpirit
+    seq=112, package=com.mixplorer.addon.archive
+    seq=114, package=com.ridewith
+    seq=115, package=com.whatsapp.w4b
+
+
+Dexopt state:
+  [com.whatsapp.w4b]
+    path: /data/app/com.whatsapp.w4b-CtmfGlVAPaIa6R64bJLxQg==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.whatsapp.w4b]
+     base.apk - 4645
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

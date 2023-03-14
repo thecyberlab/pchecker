@@ -1,0 +1,340 @@
+Activity Resolver Table:
+  Schemes:
+      pinpoint:
+        2600050 co.unstatic.habitify/me.habitify.kbdev.remastered.mvvm.views.activities.CampaignPinpointActivity filter d8b249
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "pinpoint"
+          Authority: "deeplink": -1
+      http:
+        436d211 co.unstatic.habitify/me.habitify.kbdev.remastered.mvvm.views.activities.MainActivity filter 9787977
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "downloadhabitify.page.link": -1
+          Authority: "downloadhabitify.page.link": -1
+          AutoVerify=true
+      https:
+        436d211 co.unstatic.habitify/me.habitify.kbdev.remastered.mvvm.views.activities.MainActivity filter 9787977
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "downloadhabitify.page.link": -1
+          Authority: "downloadhabitify.page.link": -1
+          AutoVerify=true
+      fbconnect:
+        c574e co.unstatic.habitify/com.facebook.CustomTabActivity filter c2f206f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.co.unstatic.habitify": -1
+      genericidp:
+        ccd17c co.unstatic.habitify/com.google.firebase.auth.internal.GenericIdpActivity filter f12a05
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        65a9a5a co.unstatic.habitify/com.google.firebase.auth.internal.RecaptchaActivity filter b37548b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        436d211 co.unstatic.habitify/me.habitify.kbdev.remastered.mvvm.views.activities.MainActivity filter 97ecf76
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        65829e4 co.unstatic.habitify/me.habitify.kbdev.remastered.mvvm.views.widgets.habitsingle.SingleHabitConfigActivity filter aa57e4d
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        1806d02 co.unstatic.habitify/me.habitify.kbdev.remastered.mvvm.views.widgets.habitlist.WidgetHabitFilterChooseActivity filter 6713613
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        ba591ac co.unstatic.habitify/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter ee99e75
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        de32ffe co.unstatic.habitify/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter ecf035f
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        d38968 co.unstatic.habitify/me.habitify.kbdev.BootReceiver filter c5f6181
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        d38968 co.unstatic.habitify/me.habitify.kbdev.BootReceiver filter c5f6181
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        b3e4e0a co.unstatic.habitify/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b0a767b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        1b01c98 co.unstatic.habitify/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 642acf1
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        f21ab2 co.unstatic.habitify/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 2e3ca03
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        b3e4e0a co.unstatic.habitify/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b0a767b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        3dc1d80 co.unstatic.habitify/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 6b5bfb9
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        ba591ac co.unstatic.habitify/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter ee99e75
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        e7b40d6 co.unstatic.habitify/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3bfff57
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        e7b40d6 co.unstatic.habitify/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3bfff57
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        d38968 co.unstatic.habitify/me.habitify.kbdev.BootReceiver filter c5f6181
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+        e7b40d6 co.unstatic.habitify/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3bfff57
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        de32ffe co.unstatic.habitify/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter ecf035f
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        f180226 co.unstatic.habitify/me.habitify.kbdev.remastered.mvvm.views.widgets.habitlist.HabitListAppWidgetProvider filter d44ae67
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        e0bd414 co.unstatic.habitify/me.habitify.kbdev.remastered.mvvm.views.widgets.habitsingle.SingleHabitAppWidgetProvider filter 11f94bd
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        ac29462 co.unstatic.habitify/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 3db39f3
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        cd66a44 co.unstatic.habitify/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 44272d
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        4f1e6b0 co.unstatic.habitify/me.habitify.kbdev.remastered.service.FirebaseCloudMessageService filter b690929
+          Action: "com.google.firebase.MESSAGING_EVENT"
+      com.google.firebase.auth.api.gms.service.START:
+        b3994ae co.unstatic.habitify/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter f65824f
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+  co.unstatic.habitify:
+    ID: 953c60f8-8270-4689-905a-c07f814951c2
+    Signatures: [0C:FB:46:63:83:1A:0F:B8:D6:97:3A:AD:44:E2:21:A8:BA:78:F7:F6:84:BD:0B:17:D3:B4:4B:EC:82:31:64:84]
+    Domain verification state:
+      downloadhabitify.page.link: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          downloadhabitify.page.link
+
+Registered ContentProviders:
+  co.unstatic.habitify/androidx.core.content.FileProvider:
+    Provider{36b2ec8 co.unstatic.habitify/androidx.core.content.FileProvider}
+  co.unstatic.habitify/androidx.work.impl.WorkManagerInitializer:
+    Provider{3940b61 co.unstatic.habitify/androidx.work.impl.WorkManagerInitializer}
+  co.unstatic.habitify/pl.aprilapps.easyphotopicker.EasyImageFileProvider:
+    Provider{f869686 co.unstatic.habitify/pl.aprilapps.easyphotopicker.EasyImageFileProvider}
+  co.unstatic.habitify/com.squareup.picasso.PicassoProvider:
+    Provider{fcf1b47 co.unstatic.habitify/com.squareup.picasso.PicassoProvider}
+  co.unstatic.habitify/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{5686f74 co.unstatic.habitify/com.google.firebase.provider.FirebaseInitProvider}
+  co.unstatic.habitify/com.facebook.internal.FacebookInitProvider:
+    Provider{724fc9d co.unstatic.habitify/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [co.unstatic.habitify]:
+    Provider{36b2ec8 co.unstatic.habitify/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{e259512 co.unstatic.habitify}
+  [co.unstatic.habitify.workmanager-init]:
+    Provider{3940b61 co.unstatic.habitify/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{75824e3 co.unstatic.habitify}
+  [co.unstatic.habitify.easyphotopicker.fileprovider]:
+    Provider{f869686 co.unstatic.habitify/pl.aprilapps.easyphotopicker.EasyImageFileProvider}
+      applicationInfo=ApplicationInfo{6570ee0 co.unstatic.habitify}
+  [co.unstatic.habitify.firebaseinitprovider]:
+    Provider{5686f74 co.unstatic.habitify/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{ad9c599 co.unstatic.habitify}
+  [co.unstatic.habitify.FacebookInitProvider]:
+    Provider{724fc9d co.unstatic.habitify/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{643f05e co.unstatic.habitify}
+  [co.unstatic.habitify.com.squareup.picasso]:
+    Provider{fcf1b47 co.unstatic.habitify/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{4de2c3f co.unstatic.habitify}
+
+Key Set Manager:
+  [co.unstatic.habitify]
+      Signing KeySets: 4656
+
+Packages:
+  Package [co.unstatic.habitify] (7782255):
+    userId=10391
+    pkg=Package{b5ab46a co.unstatic.habitify}
+    codePath=/data/app/~~HpGFBVphtUkwnKLvRi_iFA==/co.unstatic.habitify-SpJrxQNwC2Xni1h775ojkQ==
+    resourcePath=/data/app/~~HpGFBVphtUkwnKLvRi_iFA==/co.unstatic.habitify-SpJrxQNwC2Xni1h775ojkQ==
+    legacyNativeLibraryDir=/data/app/~~HpGFBVphtUkwnKLvRi_iFA==/co.unstatic.habitify-SpJrxQNwC2Xni1h775ojkQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=72 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=10.7.4
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/co.unstatic.habitify
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 19:14:48
+    lastUpdateTime=2022-11-30 19:14:50
+    packageSource=0
+    signatures=PackageSignatures{c934d5b version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.CAMERA
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.INTERNET
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.USE_BIOMETRIC
+      android.permission.USE_FINGERPRINT
+      android.permission.VIBRATE
+      android.permission.READ_CALENDAR
+      android.permission.WRITE_CALENDAR
+      android.permission.ACTIVITY_RECOGNITION
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=91769 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 19:14:50
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALENDAR: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACTIVITY_RECOGNITION: granted=false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      co.unstatic.habitify
+    com.google.android.apps.diagnosticstool:
+      co.unstatic.habitify
+    com.google.android.settings.intelligence:
+      co.unstatic.habitify
+    com.google.android.apps.accessibility.voiceaccess:
+      co.unstatic.habitify
+    com.zhiliaoapp.musically:
+      co.unstatic.habitify
+    com.truecaller:
+      co.unstatic.habitify
+    com.dv.adm:
+      co.unstatic.habitify
+    com.zappcues.gamingmode:
+      co.unstatic.habitify
+    com.jio.myjio:
+      co.unstatic.habitify
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [co.unstatic.habitify]
+    path: /data/app/~~HpGFBVphtUkwnKLvRi_iFA==/co.unstatic.habitify-SpJrxQNwC2Xni1h775ojkQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:931715
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [co.unstatic.habitify]
+     base.apk - 839

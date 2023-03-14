@@ -1,0 +1,288 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        b259dc5 chat.rocket.android/.authentication.ui.AuthenticationActivity filter 7dc4e4b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "rocketchat"
+          Scheme: "https"
+          Authority: "auth": -1
+          Authority: "go.rocket.chat": -1
+          Path: "PatternMatcher{LITERAL: /auth}"
+        b259dc5 chat.rocket.android/.authentication.ui.AuthenticationActivity filter 1aa6028
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          Authority: "rocketchat.page.link": -1
+      rocketchat:
+        b259dc5 chat.rocket.android/.authentication.ui.AuthenticationActivity filter 7dc4e4b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "rocketchat"
+          Scheme: "https"
+          Authority: "auth": -1
+          Authority: "go.rocket.chat": -1
+          Path: "PatternMatcher{LITERAL: /auth}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        b259dc5 chat.rocket.android/.authentication.ui.AuthenticationActivity filter 74631a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        f76c07d chat.rocket.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1e43b72
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        69f8427 chat.rocket.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 95956d4
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        4763bc3 chat.rocket.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 85f0c40
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        fb3e779 chat.rocket.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter b69cbe
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        4763bc3 chat.rocket.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 85f0c40
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        f76c07d chat.rocket.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1e43b72
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        a76d11f chat.rocket.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 548ac6c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        a76d11f chat.rocket.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 548ac6c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        a76d11f chat.rocket.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 548ac6c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        69f8427 chat.rocket.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 95956d4
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        c028235 chat.rocket.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter abbc6ca
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      chat.rocket.android.ACTION_REPLY:
+        5c75141 chat.rocket.android/.push.DirectReplyReceiver filter 9e596e6
+          Action: "chat.rocket.android.ACTION_REPLY"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.telecom.ConnectionService:
+        2c1603b chat.rocket.android/org.jitsi.meet.sdk.ConnectionService filter 4a2358 permission android.permission.BIND_TELECOM_CONNECTION_SERVICE
+          Action: "android.telecom.ConnectionService"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          go.rocket.chat
+          rocketchat.page.link
+
+Registered ContentProviders:
+  chat.rocket.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{a9b0283 chat.rocket.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  chat.rocket.android/androidx.core.content.FileProvider:
+    Provider{3162c00 chat.rocket.android/androidx.core.content.FileProvider}
+  chat.rocket.android/androidx.work.impl.WorkManagerInitializer:
+    Provider{9d8ec39 chat.rocket.android/androidx.work.impl.WorkManagerInitializer}
+  chat.rocket.android/com.reactnativecommunity.webview.RNCWebViewFileProvider:
+    Provider{66c227e chat.rocket.android/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+
+ContentProvider Authorities:
+  [chat.rocket.android.lifecycle-process]:
+    Provider{a9b0283 chat.rocket.android/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{a0143df chat.rocket.android}
+  [chat.rocket.android.fileprovider]:
+    Provider{3162c00 chat.rocket.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{2b2082c chat.rocket.android}
+  [chat.rocket.android.workmanager-init]:
+    Provider{9d8ec39 chat.rocket.android/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{25312f5 chat.rocket.android}
+
+Key Set Manager:
+  [chat.rocket.android]
+      Signing KeySets: 6766
+
+Packages:
+  Package [chat.rocket.android] (c85aaa0):
+    userId=10672
+    sharedUser=SharedUserSetting{f4d7b18 chat.rocket.android/10672}
+    pkg=Package{c0ee971 chat.rocket.android}
+    codePath=/data/app/~~DDISUIV-MIQYKF-cbhKqBg==/chat.rocket.android-cH_BtRJ9FPSExlrw9oCSOQ==
+    resourcePath=/data/app/~~DDISUIV-MIQYKF-cbhKqBg==/chat.rocket.android-cH_BtRJ9FPSExlrw9oCSOQ==
+    legacyNativeLibraryDir=/data/app/~~DDISUIV-MIQYKF-cbhKqBg==/chat.rocket.android-cH_BtRJ9FPSExlrw9oCSOQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2077 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=3.5.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/chat.rocket.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 21:15:48
+    lastUpdateTime=2022-11-30 21:15:52
+    packageSource=0
+    signatures=PackageSignatures{be00356 version:1, signatures:[8d27aa28], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.CAMERA
+      android.permission.RECORD_AUDIO
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.BLUETOOTH
+      android.permission.MANAGE_OWN_CALLS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_CALENDAR
+      android.permission.READ_CALENDAR
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.MANAGE_OWN_CALLS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=62755 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 21:15:52
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      chat.rocket.android
+    com.google.android.apps.diagnosticstool:
+      chat.rocket.android
+    com.google.android.settings.intelligence:
+      chat.rocket.android
+    com.google.android.apps.accessibility.voiceaccess:
+      chat.rocket.android
+    com.zhiliaoapp.musically:
+      chat.rocket.android
+    com.truecaller:
+      chat.rocket.android
+    com.dv.adm:
+      chat.rocket.android
+    com.zappcues.gamingmode:
+      chat.rocket.android
+    com.jio.myjio:
+      chat.rocket.android
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Shared users:
+  SharedUser [chat.rocket.android] (f4d7b18):
+    userId=10672
+    Packages
+      PackageSetting{c85aaa0 chat.rocket.android/10672}
+    install permissions:
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.MANAGE_OWN_CALLS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: 
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.CAMERA: granted=false
+        android.permission.WRITE_CALENDAR: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+
+Dexopt state:
+  [chat.rocket.android]
+    path: /data/app/~~DDISUIV-MIQYKF-cbhKqBg==/chat.rocket.android-cH_BtRJ9FPSExlrw9oCSOQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1366620
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [chat.rocket.android]
+     base.apk - 698

@@ -1,0 +1,253 @@
+Activity Resolver Table:
+  Schemes:
+      your_scheme:
+        44ee72e com.sega.sprint/com.appsflyer.GetDeepLinkingActivity filter 72cb794
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "your_scheme"
+      https:
+        b9ca2cf com.sega.sprint/im.getsocial.sdk.internal.unity.GetSocialDeepLinkingActivity filter 27e7e0b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "sonicforcesstaging.gsc.im": -1
+          Authority: "sonicforcesstaging-gsalt.gsc.im": -1
+          Authority: "sonicforcesspeedbattle.gsc.im": -1
+          Authority: "sonicforcesspeedbattle-gsalt.gsc.im": -1
+          Authority: "sonicforcesdev.gsc.im": -1
+          Authority: "sonicforcesdev-gsalt.gsc.im": -1
+          Authority: "sonicforcesqa.gsc.im": -1
+          Authority: "sonicforcesqa-gsalt.gsc.im": -1
+          AutoVerify=true
+      getsocial:
+        b9ca2cf com.sega.sprint/im.getsocial.sdk.internal.unity.GetSocialDeepLinkingActivity filter 1c534e8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "getsocial"
+          Authority: "LuDPp7W0J4": -1
+        b9ca2cf com.sega.sprint/im.getsocial.sdk.internal.unity.GetSocialDeepLinkingActivity filter a866701
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "getsocial"
+          Authority: "E8809076N8vgL": -1
+        b9ca2cf com.sega.sprint/im.getsocial.sdk.internal.unity.GetSocialDeepLinkingActivity filter a6259a6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "getsocial"
+          Authority: "A96O7RZzwT1": -1
+        b9ca2cf com.sega.sprint/im.getsocial.sdk.internal.unity.GetSocialDeepLinkingActivity filter f94efe7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "getsocial"
+          Authority: "A966l6n6707w71": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        666945c com.sega.sprint/com.sega.gamelib.ActivityGame filter 60679da
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      android.intent.action.VIEW:
+        666945c com.sega.sprint/com.sega.gamelib.ActivityGame filter 60679da
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+
+Receiver Resolver Table:
+  Schemes:
+      getSocialNotificationId:
+        6096365 com.sega.sprint/im.getsocial.sdk.PushNotificationsReceiver filter 4e7b900
+          Action: "im.getsocial.sdk.intent.RECEIVE"
+          Scheme: "getSocialNotificationId"
+
+  Non-Data Actions:
+      android.net.conn.CONNECTIVITY_CHANGE:
+        366483a com.sega.sprint/com.vungle.warren.NetworkProviderReceiver filter fb5f4df
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Category: "android.intent.category.DEFAULT"
+      com.android.vending.INSTALL_REFERRER:
+        36a9ceb com.sega.sprint/im.getsocial.sdk.invites.MultipleInstallReferrerReceiver filter e71723d
+          Action: "com.android.vending.INSTALL_REFERRER"
+        8f69a48 com.sega.sprint/com.appsflyer.MultipleInstallBroadcastReceiver filter f4a6a32
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.intent.action.LOCALE_CHANGED:
+        fb1d0e1 com.sega.sprint/im.getsocial.sdk.LocaleChangeReceiver filter 707f539
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        6096365 com.sega.sprint/im.getsocial.sdk.PushNotificationsReceiver filter 3b6a383
+          Action: "com.google.android.c2dm.intent.REGISTRATION"
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: ".gcm"
+        b60ae06 com.sega.sprint/com.google.firebase.iid.FirebaseInstanceIdReceiver filter e30f77e
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.google.android.c2dm.intent.REGISTRATION:
+        6096365 com.sega.sprint/im.getsocial.sdk.PushNotificationsReceiver filter 3b6a383
+          Action: "com.google.android.c2dm.intent.REGISTRATION"
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: ".gcm"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        bd41cc7 com.sega.sprint/hardlight.hlnotifications.PushNotificationInterface filter 48f652c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        2ff12f4 com.sega.sprint/com.google.firebase.messaging.FirebaseMessagingService filter de9abf5
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+
+Registered ContentProviders:
+  com.sega.sprint/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{b199a1d com.sega.sprint/com.google.firebase.provider.FirebaseInitProvider}
+  com.sega.sprint/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{649a492 com.sega.sprint/com.facebook.ads.AudienceNetworkContentProvider}
+  com.sega.sprint/im.getsocial.sdk.invites.ImageContentProvider:
+    Provider{86bbe63 com.sega.sprint/im.getsocial.sdk.invites.ImageContentProvider}
+  com.sega.sprint/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{d746a60 com.sega.sprint/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.sega.sprint/im.getsocial.sdk.AutoInitSdkContentProvider:
+    Provider{93abb19 com.sega.sprint/im.getsocial.sdk.AutoInitSdkContentProvider}
+
+ContentProvider Authorities:
+  [com.sega.sprint.smartinvite.images.provider]:
+    Provider{86bbe63 com.sega.sprint/im.getsocial.sdk.invites.ImageContentProvider}
+      applicationInfo=ApplicationInfo{15977de com.sega.sprint}
+  [com.sega.sprint.firebaseinitprovider]:
+    Provider{b199a1d com.sega.sprint/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{15977de com.sega.sprint}
+  [com.sega.sprint.AutoInitSdkContentProvider]:
+    Provider{93abb19 com.sega.sprint/im.getsocial.sdk.AutoInitSdkContentProvider}
+      applicationInfo=ApplicationInfo{15977de com.sega.sprint}
+  [com.sega.sprint.mobileadsinitprovider]:
+    Provider{d746a60 com.sega.sprint/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{15977de com.sega.sprint}
+  [com.sega.sprint.AudienceNetworkContentProvider]:
+    Provider{649a492 com.sega.sprint/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{15977de com.sega.sprint}
+
+Key Set Manager:
+  [com.sega.sprint]
+      Signing KeySets: 230
+
+Packages:
+  Package [com.sega.sprint] (951ddbf):
+    userId=10178
+    pkg=Package{96ad785 com.sega.sprint}
+    codePath=/data/app/com.sega.sprint-nHQ_uJdvsSu16b4R-eML3A==
+    resourcePath=/data/app/com.sega.sprint-nHQ_uJdvsSu16b4R-eML3A==
+    legacyNativeLibraryDir=/data/app/com.sega.sprint-nHQ_uJdvsSu16b4R-eML3A==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=1120232150 minSdk=19 targetSdk=29
+    versionName=2.20.0
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{15977de com.sega.sprint}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.sega.sprint
+    supportsScreens=[medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 07:53:20
+    firstInstallTime=2021-03-06 07:53:22
+    lastUpdateTime=2021-03-06 07:53:22
+    signatures=PackageSignatures{a25cc8c version:2, signatures:[42569b68], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      com.android.vending.BILLING
+      android.permission.ACCESS_WIFI_STATE
+      com.android.vending.CHECK_LICENSE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=7052 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=81
+  User 0:
+    seq=6, package=com.google.android.gms
+    seq=7, package=com.ultimateguitar.tabs
+    seq=9, package=com.anddoes.launcher
+    seq=11, package=tv.twitch.android.app
+    seq=13, package=com.ludo.king
+    seq=15, package=net.zedge.android
+    seq=17, package=com.shazam.android
+    seq=19, package=com.whatsweb.app
+    seq=21, package=com.yahoo.mobile.client.android.finance
+    seq=23, package=com.yahoo.mobile.client.android.mail
+    seq=25, package=de.resolution.yf_android
+    seq=27, package=com.ninegag.android.app
+    seq=29, package=iflix.play
+    seq=31, package=com.gamestar.perfectpiano
+    seq=33, package=com.gbwhatsapp
+    seq=35, package=com.instagram.android
+    seq=37, package=com.opera.touch
+    seq=39, package=com.ea.game.pvzfree_row
+    seq=41, package=com.paget96.lspeed
+    seq=43, package=jp.konami.duellinks
+    seq=46, package=com.google.android.apps.walletnfcrel
+    seq=48, package=com.mufumbo.android.recipe.search
+    seq=51, package=com.google.android.apps.docs.editors.docs
+    seq=52, package=com.google.android.apps.docs
+    seq=54, package=io.friendly
+    seq=56, package=com.gamestar.pianoperfect
+    seq=58, package=com.bethsoft.falloutshelter
+    seq=60, package=com.midasplayer.apps.bubblewitchsaga2
+    seq=62, package=com.google.android.apps.adm
+    seq=64, package=it.medieval.blueftp
+    seq=66, package=com.bandainamcogames.dbzdokkanww
+    seq=68, package=com.quirky.android.wink.wink
+    seq=70, package=com.king.candycrushjellysaga
+    seq=72, package=com.microsoft.office.powerpoint
+    seq=74, package=com.yowhatsapp
+    seq=77, package=com.rarlab.rar
+    seq=79, package=com.internet.speed.meter.lite
+    seq=80, package=com.sega.sprint
+
+
+Dexopt state:
+  [com.sega.sprint]
+    path: /data/app/com.sega.sprint-nHQ_uJdvsSu16b4R-eML3A==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.sega.sprint]
+     base.apk - 7735
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

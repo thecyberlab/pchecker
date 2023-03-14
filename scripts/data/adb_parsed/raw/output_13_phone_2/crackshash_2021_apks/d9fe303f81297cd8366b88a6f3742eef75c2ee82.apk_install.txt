@@ -1,0 +1,345 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        ddb260a com.tempmail/.splash.SplashActivity filter df4b498
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "tempmail.page.link": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        ddb260a com.tempmail/.splash.SplashActivity filter 1a26e7b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        fccc129 com.tempmail/com.kidoz.sdk.api.receivers.SdkReceiver filter bbeecae
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        bc746e5 com.tempmail/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 59125ba
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        8fbfa4f com.tempmail/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1a7d5dc
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        27ec6b com.tempmail/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ca73c8
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        f5c5f2d com.tempmail/com.vungle.warren.NetworkProviderReceiver filter 9226c62
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Category: "android.intent.category.DEFAULT"
+        a2a6c61 com.tempmail/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 51be386
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        27ec6b com.tempmail/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ca73c8
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        5c764f1 com.tempmail/com.appsflyer.SingleInstallBroadcastReceiver filter a0d98d6
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.fyber.inneractive.sdk.intent.action.REGISTER_KIT:
+        6937de3 com.tempmail/com.fyber.inneractive.sdk.dv.DVKit filter db9f3e0
+          Action: "com.fyber.inneractive.sdk.intent.action.REGISTER_KIT"
+        fbb4699 com.tempmail/com.fyber.inneractive.sdk.mraid.IAMraidKit filter 595dd5e
+          Action: "com.fyber.inneractive.sdk.intent.action.REGISTER_KIT"
+        ef6153f com.tempmail/com.fyber.inneractive.sdk.video.IAVideoKit filter 6fa6e0c
+          Action: "com.fyber.inneractive.sdk.intent.action.REGISTER_KIT"
+      com.amazon.inapp.purchasing.NOTIFY:
+        7df7757 com.tempmail/com.amazon.device.iap.ResponseReceiver filter 4cc8244
+          Action: "com.amazon.inapp.purchasing.NOTIFY"
+      com.google.android.c2dm.intent.RECEIVE:
+        67a31f3 com.tempmail/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 2317eb0
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        bc746e5 com.tempmail/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 59125ba
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        bd6e447 com.tempmail/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9f70474
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        bd6e447 com.tempmail/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9f70474
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        bd6e447 com.tempmail/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 9f70474
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        8fbfa4f com.tempmail/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1a7d5dc
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        7406d9d com.tempmail/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter c42b212
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.autofill.AutofillService:
+        fd62fd1 com.tempmail/.services.AutofillNativeService filter d6a3a36 permission android.permission.BIND_AUTOFILL_SERVICE
+          Action: "android.service.autofill.AutofillService"
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        ac0c65b com.tempmail/.services.SyncMailsService filter 5e65ef8 permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        f70b355 com.tempmail/.services.MyFirebaseMessagingService filter 25e716a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        23cf80d com.tempmail/com.google.firebase.messaging.FirebaseMessagingService filter e97c3c2
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.accessibilityservice.AccessibilityService:
+        fbb6d37 com.tempmail/.services.AutoFillAccessibilityService filter d9e72a4 permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          tempmail.page.link
+
+Registered ContentProviders:
+  com.tempmail/com.ironsource.lifecycle.IronsourceLifecycleProvider:
+    Provider{87ffd75 com.tempmail/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+  com.tempmail/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{b36c10a com.tempmail/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.tempmail/com.vungle.warren.utility.VungleProvider:
+    Provider{cdd6d7b com.tempmail/com.vungle.warren.utility.VungleProvider}
+  com.tempmail/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{9c54798 com.tempmail/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.tempmail/androidx.core.content.FileProvider:
+    Provider{c5ffbf1 com.tempmail/androidx.core.content.FileProvider}
+  com.tempmail/com.fyber.fairbid.internal.UncaughtExceptionHandlerContentProvider:
+    Provider{107e3d6 com.tempmail/com.fyber.fairbid.internal.UncaughtExceptionHandlerContentProvider}
+  com.tempmail/androidx.work.impl.WorkManagerInitializer:
+    Provider{54b6657 com.tempmail/androidx.work.impl.WorkManagerInitializer}
+  com.tempmail/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{8934544 com.tempmail/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.tempmail/com.squareup.picasso.PicassoProvider:
+    Provider{c67662d com.tempmail/com.squareup.picasso.PicassoProvider}
+  com.tempmail/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{cf66762 com.tempmail/com.google.firebase.provider.FirebaseInitProvider}
+  com.tempmail/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{3610f3 com.tempmail/com.facebook.ads.AudienceNetworkContentProvider}
+  com.tempmail/com.applovin.sdk.AppLovinInitProvider:
+    Provider{f2171b0 com.tempmail/com.applovin.sdk.AppLovinInitProvider}
+
+ContentProvider Authorities:
+  [com.tempmail.lifecycle-process]:
+    Provider{b36c10a com.tempmail/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{13829 com.tempmail}
+  [com.tempmail.firebaseperfprovider]:
+    Provider{8934544 com.tempmail/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{85797ae com.tempmail}
+  [com.tempmail.IronsourceLifecycleProvider]:
+    Provider{87ffd75 com.tempmail/com.ironsource.lifecycle.IronsourceLifecycleProvider}
+      applicationInfo=ApplicationInfo{c16c94f com.tempmail}
+  [com.tempmail.com.squareup.picasso]:
+    Provider{c67662d com.tempmail/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{923f8dc com.tempmail}
+  [com.tempmail.mobileadsinitprovider]:
+    Provider{9c54798 com.tempmail/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{4c2de5 com.tempmail}
+  [com.tempmail.vungle-provider]:
+    Provider{cdd6d7b com.tempmail/com.vungle.warren.utility.VungleProvider}
+      applicationInfo=ApplicationInfo{a8980ba com.tempmail}
+  [com.tempmail.AudienceNetworkContentProvider]:
+    Provider{3610f3 com.tempmail/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{ba0ab6b com.tempmail}
+  [com.tempmail.applovincontentprovider]:
+    Provider{f2171b0 com.tempmail/com.applovin.sdk.AppLovinInitProvider}
+      applicationInfo=ApplicationInfo{765c6c8 com.tempmail}
+  [com.tempmail]:
+    Provider{107e3d6 com.tempmail/com.fyber.fairbid.internal.UncaughtExceptionHandlerContentProvider}
+      applicationInfo=ApplicationInfo{f96c361 com.tempmail}
+  [com.tempmail.fileprovider]:
+    Provider{c5ffbf1 com.tempmail/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{beee86 com.tempmail}
+  [com.tempmail.firebaseinitprovider]:
+    Provider{cf66762 com.tempmail/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{f9c9347 com.tempmail}
+  [com.tempmail.workmanager-init]:
+    Provider{54b6657 com.tempmail/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{a748774 com.tempmail}
+
+Key Set Manager:
+  [com.tempmail]
+      Signing KeySets: 6101
+
+Packages:
+  Package [com.tempmail] (c9b349d):
+    userId=10279
+    pkg=Package{68b6d12 com.tempmail}
+    codePath=/data/app/~~9wKRoQX2bCTikR8x_RLGww==/com.tempmail-qEgsDM7vrfRNn4avEo9i1g==
+    resourcePath=/data/app/~~9wKRoQX2bCTikR8x_RLGww==/com.tempmail-qEgsDM7vrfRNn4avEo9i1g==
+    legacyNativeLibraryDir=/data/app/~~9wKRoQX2bCTikR8x_RLGww==/com.tempmail-qEgsDM7vrfRNn4avEo9i1g==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=188 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=2.88
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.facebook.katana]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=androidx.browser.customtabs.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }]
+    dataDir=/data/user/0/com.tempmail
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.test.runner
+      android.test.base
+      android.test.mock
+    usesLibraryFiles:
+      /system/framework/android.test.runner.jar
+      /system/framework/android.test.base.jar
+      /system/framework/android.test.mock.jar
+    timeStamp=2022-11-30 19:27:11
+    lastUpdateTime=2022-11-30 19:27:11
+    packageSource=0
+    signatures=PackageSignatures{2851ce3 version:2, signatures:[2b3ca9a9], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.CAMERA
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_EXTERNAL_STORAGE
+      com.android.vending.BILLING
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.VIBRATE
+      android.permission.ACCESS_FINE_LOCATION
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=95025 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 19:27:11
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.tempmail
+    com.google.android.apps.diagnosticstool:
+      com.tempmail
+    com.google.android.settings.intelligence:
+      com.tempmail
+    com.google.android.apps.accessibility.voiceaccess:
+      com.tempmail
+    com.zhiliaoapp.musically:
+      com.tempmail
+    com.truecaller:
+      com.tempmail
+    com.tempmail:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      ru.iptvremote.android.iptv.pro
+      com.mycompany.app.soulbrowser
+      com.dv.adm
+      com.utorrent.client.pro
+    com.dv.adm:
+      com.tempmail
+    com.zappcues.gamingmode:
+      com.tempmail
+    com.jio.myjio:
+      com.tempmail
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.tempmail]
+    path: /data/app/~~9wKRoQX2bCTikR8x_RLGww==/com.tempmail-qEgsDM7vrfRNn4avEo9i1g==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:97523
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.tempmail]
+     base.apk - 1022

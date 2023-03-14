@@ -1,0 +1,576 @@
+Activity Resolver Table:
+  Full MIME Types:
+      vnd.android.cursor.dir/audio:
+        cd62c22 com.nll.acr/.activity.MainActivity filter 9d1a40c
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          Type: "vnd.android.cursor.dir/audio"
+      audio/*:
+        cd62c22 com.nll.acr/.activity.MainActivity filter 270633f
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          Type: "audio"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+
+  Base MIME Types:
+      vnd.android.cursor.dir:
+        cd62c22 com.nll.acr/.activity.MainActivity filter 9d1a40c
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          Type: "vnd.android.cursor.dir/audio"
+
+  Wild MIME Types:
+      audio:
+        cd62c22 com.nll.acr/.activity.MainActivity filter 270633f
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          Type: "audio"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+
+  Schemes:
+      msal377c7c93-ef01-49bd-a101-436f8a0f36c1:
+        cef56b3 com.nll.acr/com.microsoft.identity.client.BrowserTabActivity filter f1f976a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "msal377c7c93-ef01-49bd-a101-436f8a0f36c1"
+          Authority: "auth": -1
+      db-22tyvtsvuwivgod:
+        fc4a470 com.nll.acr/com.dropbox.core.android.AuthActivity filter b86b155
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "db-22tyvtsvuwivgod"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        cd62c22 com.nll.acr/.activity.MainActivity filter 870a35e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.PICK:
+        cd62c22 com.nll.acr/.activity.MainActivity filter 9d1a40c
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          Type: "vnd.android.cursor.dir/audio"
+      android.intent.action.GET_CONTENT:
+        cd62c22 com.nll.acr/.activity.MainActivity filter 270633f
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          Type: "audio"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        f7453e9 com.nll.acr/.receiver.LicenseReceiver filter 16668a4
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Scheme: "package"
+          Ssp: "PatternMatcher{PREFIX: com.nll.acr.license}"
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        54ee86e com.nll.acr/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 197a9c2
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        7eab0f com.nll.acr/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f54b60d
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.PHONE_STATE:
+        aa7979c com.nll.acr/.receiver.CallReceiver filter dfaf4f8
+          Action: "android.intent.action.PHONE_STATE"
+          Action: "android.intent.action.NEW_OUTGOING_CALL"
+          mPriority=999, mOrder=0, mHasPartialTypes=false
+      android.intent.action.DEVICE_STORAGE_LOW:
+        83545a5 com.nll.acr/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 15893d3
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        c851d7a com.nll.acr/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 7f36b10
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.nll.recording.DELETE:
+        a04e92b com.nll.acr/.receiver.KeepRecordingNotificationReceiver filter 691f45b
+          Action: "com.nll.recording.DELETE"
+          Action: "com.nll.recording.KEEP"
+      com.nll.recording.KEEP:
+        a04e92b com.nll.acr/.receiver.KeepRecordingNotificationReceiver filter 691f45b
+          Action: "com.nll.recording.DELETE"
+          Action: "com.nll.recording.KEEP"
+      android.intent.action.DEVICE_STORAGE_OK:
+        83545a5 com.nll.acr/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 15893d3
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.bluetooth.device.action.ACL_CONNECTED:
+        5649188 com.nll.acr/.receiver.BluetoothReceiverNew filter a4e0dd1
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      android.intent.action.BATTERY_LOW:
+        54ee86e com.nll.acr/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 197a9c2
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        7599721 com.nll.acr/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ba3a609
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        7599721 com.nll.acr/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ba3a609
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        1b79746 com.nll.acr/.receiver.BootReceiver filter c17c036
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=999, mOrder=0, mHasPartialTypes=false
+        7599721 com.nll.acr/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ba3a609
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        7eab0f com.nll.acr/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f54b60d
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        1b79746 com.nll.acr/.receiver.BootReceiver filter 2717b37
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.bluetooth.device.action.ACL_DISCONNECTED:
+        5649188 com.nll.acr/.receiver.BluetoothReceiverNew filter a4e0dd1
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        166ed07 com.nll.acr/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 53aa00e
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.NEW_OUTGOING_CALL:
+        aa7979c com.nll.acr/.receiver.CallReceiver filter dfaf4f8
+          Action: "android.intent.action.PHONE_STATE"
+          Action: "android.intent.action.NEW_OUTGOING_CALL"
+          mPriority=999, mOrder=0, mHasPartialTypes=false
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        f753e34 com.nll.acr/.tile.AcrTileService filter 20c283c permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      com.google.firebase.MESSAGING_EVENT:
+        e17845d com.nll.acr/com.nll.messaging.fcm.FCMMessagingService filter dd799c5
+          Action: "com.google.firebase.MESSAGING_EVENT"
+      android.accessibilityservice.AccessibilityService:
+        745e1d2 com.nll.acr/.service.CallRecorderService filter f8e9a2f permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+
+Registered ContentProviders:
+  com.nll.acr/.provider.AttachmentProvider:
+    Provider{dfb52a3 com.nll.acr/.provider.AttachmentProvider}
+  com.nll.acr/org.acra.attachment.AcraContentProvider:
+    Provider{44209a0 com.nll.acr/org.acra.attachment.AcraContentProvider}
+  com.nll.acr/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{cd0959 com.nll.acr/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.nll.acr/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{3fc491e com.nll.acr/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.nll.acr/androidx.work.impl.WorkManagerInitializer:
+    Provider{be675ff com.nll.acr/androidx.work.impl.WorkManagerInitializer}
+  com.nll.acr/com.nll.cloud2.provider.ItemProvider:
+    Provider{b4e1fcc com.nll.acr/com.nll.cloud2.provider.ItemProvider}
+  com.nll.acr/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{1bbe215 com.nll.acr/com.google.firebase.provider.FirebaseInitProvider}
+  com.nll.acr/.debug.DebugLogAttachmentProvider:
+    Provider{d1fd92a com.nll.acr/.debug.DebugLogAttachmentProvider}
+  com.nll.acr/com.nll.messaging.fcm.FCMAppCommandProvider:
+    Provider{b36731b com.nll.acr/com.nll.messaging.fcm.FCMAppCommandProvider}
+
+ContentProvider Authorities:
+  [com.nll.acr.acra]:
+    Provider{44209a0 com.nll.acr/org.acra.attachment.AcraContentProvider}
+      applicationInfo=ApplicationInfo{f236cb8 com.nll.acr}
+  [com.nll.acr.lifecycle-process]:
+    Provider{cd0959 com.nll.acr/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{f236cb8 com.nll.acr}
+  [com.nll.acr.workmanager-init]:
+    Provider{be675ff com.nll.acr/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{f236cb8 com.nll.acr}
+  [com.nll.acr.provider.AttachmentProvider]:
+    Provider{dfb52a3 com.nll.acr/.provider.AttachmentProvider}
+      applicationInfo=ApplicationInfo{f236cb8 com.nll.acr}
+  [com.nll.acr.cloud2.provider.itemprovider]:
+    Provider{b4e1fcc com.nll.acr/com.nll.cloud2.provider.ItemProvider}
+      applicationInfo=ApplicationInfo{f236cb8 com.nll.acr}
+  [com.nll.acr.messaging.fcm.provider.appcommandprovider]:
+    Provider{b36731b com.nll.acr/com.nll.messaging.fcm.FCMAppCommandProvider}
+      applicationInfo=ApplicationInfo{f236cb8 com.nll.acr}
+  [com.nll.acr.firebaseinitprovider]:
+    Provider{1bbe215 com.nll.acr/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{f236cb8 com.nll.acr}
+  [com.nll.acr.mobileadsinitprovider]:
+    Provider{3fc491e com.nll.acr/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{f236cb8 com.nll.acr}
+  [com.nll.acr.debug.DebugLogAttachmentProvider]:
+    Provider{d1fd92a com.nll.acr/.debug.DebugLogAttachmentProvider}
+      applicationInfo=ApplicationInfo{f236cb8 com.nll.acr}
+
+Key Set Manager:
+  [com.nll.acr]
+      Signing KeySets: 600
+
+Packages:
+  Package [com.nll.acr] (b858a91):
+    userId=10483
+    pkg=Package{9cd6499 com.nll.acr}
+    codePath=/data/app/com.nll.acr-IxPyyXD-P1h1m8cI-1e4mA==
+    resourcePath=/data/app/com.nll.acr-IxPyyXD-P1h1m8cI-1e4mA==
+    legacyNativeLibraryDir=/data/app/com.nll.acr-IxPyyXD-P1h1m8cI-1e4mA==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=10330 minSdk=21 targetSdk=29
+    versionName=33.0-unChained
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{f236cb8 com.nll.acr}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.nll.acr
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 09:34:42
+    firstInstallTime=2021-03-06 09:34:43
+    lastUpdateTime=2021-03-06 09:34:43
+    signatures=PackageSignatures{53a5df6 version:1, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    requested permissions:
+      com.android.vending.BILLING
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_CALL_LOG: restricted=true
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.BLUETOOTH
+      android.permission.READ_PHONE_STATE
+      android.permission.RECORD_AUDIO
+      android.permission.STORAGE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.PROCESS_OUTGOING_CALLS: restricted=true
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.READ_CONTACTS
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.GET_ACCOUNTS
+      org.skvalex.cr.permission.CALL_RECORDING
+      com.google.android.c2dm.permission.RECEIVE
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=19905 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.READ_CALL_LOG: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.PROCESS_OUTGOING_CALLS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Package Changes:
+  Sequence number=737
+  User 0:
+    seq=2, package=com.yahoo.mobile.client.android.weather
+    seq=9, package=com.google.android.gms
+    seq=11, package=com.psiphon3.subscription
+    seq=13, package=com.tumblr
+    seq=16, package=com.google.android.apps.docs.editors.sheets
+    seq=17, package=com.google.android.apps.docs
+    seq=19, package=com.emoji.coolkeyboard
+    seq=21, package=com.ea.game.starwarscapital_row
+    seq=23, package=com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish
+    seq=25, package=com.virtualapplications.play
+    seq=27, package=com.appsomniacs.da2
+    seq=29, package=com.king.farmheroessupersaga
+    seq=31, package=com.rsupport.mvagent
+    seq=33, package=com.snkplaymore.android014
+    seq=35, package=com.intermedia.hq
+    seq=37, package=com.google.android.apps.adwords
+    seq=39, package=com.weheartit
+    seq=41, package=com.life360.android.safetymapd
+    seq=43, package=com.kabam.marvelbattle
+    seq=45, package=com.antutu.ABenchMark
+    seq=47, package=com.timehop
+    seq=49, package=com.flightradar24free
+    seq=51, package=com.dena.a12026418
+    seq=53, package=com.whatsapp
+    seq=55, package=com.feng.droid.tutu
+    seq=57, package=com.jsdev.instasize
+    seq=60, package=com.gombosdev.ampere
+    seq=62, package=com.sega.vtc
+    seq=64, package=com.google.android.street
+    seq=68, package=com.secondarm.taptapdash
+    seq=70, package=com.kwai.global.video.social.kwaigo
+    seq=73, package=net.mobigame.zombietsunami
+    seq=76, package=com.nll.screenrecorder
+    seq=78, package=com.koushikdutta.vysor
+    seq=80, package=com.appnana.android.giftcardrewards
+    seq=82, package=com.ea.gp.pvz3
+    seq=84, package=com.ea.game.simcitymobile_row
+    seq=86, package=com.dv.adm
+    seq=88, package=com.google.android.apps.youtube.creator
+    seq=90, package=com.google.android.deskclock
+    seq=92, package=com.tubitv
+    seq=94, package=com.rtsoft.growtopia
+    seq=96, package=com.azure.authenticator
+    seq=98, package=com.com2us.smon.normal.freefull.google.kr.android.common
+    seq=100, package=com.king.farmheroessaga
+    seq=102, package=com.mobdro.android
+    seq=105, package=com.google.android.apps.books
+    seq=107, package=com.fifa.fifaapp.android
+    seq=109, package=co.triller.droid
+    seq=111, package=com.bsplayer.bspandroid.free
+    seq=113, package=com.kokteyl.goal
+    seq=115, package=com.skgames.trafficrider
+    seq=117, package=com.google.earth
+    seq=119, package=com.genius.android
+    seq=121, package=com.dewmobile.kuaiya.play
+    seq=123, package=net.zhuoweizhang.mcpelauncher
+    seq=125, package=com.gameloft.android.ANMP.GloftDMHM
+    seq=127, package=com.protheme.launcher.winx.launcher
+    seq=132, package=com.universallauncher.universallauncher
+    seq=136, package=com.glextor.appmanager.paid
+    seq=142, package=com.itemstudio.castro.pro
+    seq=148, package=com.skyclock.skyclock
+    seq=158, package=com.chimbori.hermitcrab
+    seq=160, package=com.hktechno.live.photo.motion
+    seq=162, package=com.inglesdivino.addmusictovoice
+    seq=168, package=com.one.ui.dark.s10.iconpack
+    seq=173, package=com.kimcy929.hashtags
+    seq=179, package=melstudio.mstretch
+    seq=183, package=com.maxelus.galaxypacklivewallpaper
+    seq=185, package=com.mybedy.antiradar
+    seq=187, package=com.pavelrekun.skit
+    seq=190, package=air.stellio.player
+    seq=194, package=hastamev.shadow.com
+    seq=196, package=com.ottplay.ottplay
+    seq=198, package=uk.co.serenity.guided.meditation
+    seq=200, package=com.jriver.jremote2
+    seq=205, package=com.mango.android
+    seq=212, package=com.jndapp.pixel.pie.dark.iconpack
+    seq=218, package=com.bravolang.phrasebook
+    seq=220, package=com.coccco28.elixir
+    seq=225, package=com.drikp.core
+    seq=229, package=com.joshy21.vera.calendarplus
+    seq=231, package=com.technoapps.webdevelopmentpro
+    seq=235, package=com.mkreidl.astrolapp
+    seq=237, package=com.snowberry.vpn_ghost.ghost_paid_vpn
+    seq=241, package=com.livephoto.live_wallpaper.ocean3dpro
+    seq=243, package=com.round_tower.app.android.wallpaper.cartogram
+    seq=247, package=com.ghthome.clickpic
+    seq=250, package=com.softoneui.volokitta
+    seq=252, package=com.kubix.creative
+    seq=254, package=net.tsapps.appsales
+    seq=256, package=studio14.application.caelus
+    seq=263, package=com.osheden.raya.black
+    seq=265, package=com.zymbia.carpm_mechanic
+    seq=267, package=ninja.sesame.app.edge
+    seq=269, package=eu.darken.bluemusic
+    seq=279, package=hu.oandras.newsfeedlauncher
+    seq=291, package=ua.com.streamsoft.pingtoolspro
+    seq=295, package=io.appground.blek
+    seq=297, package=com.magdalm.freewifipassword
+    seq=302, package=com.alesp.orologiomondiale.pro
+    seq=304, package=com.coccco28.rustic
+    seq=308, package=com.barcode.qrcode.scanner.reader.pro
+    seq=310, package=com.jndapp.line.x.iconpack
+    seq=315, package=com.sofascore.results
+    seq=317, package=com.sportstreaming.ncaafootball
+    seq=323, package=com.livingearth.pro
+    seq=325, package=com.magdalm.updatesoftwarepro
+    seq=332, package=com.ddm.blocknet
+    seq=334, package=com.accuweather.android
+    seq=337, package=com.indigomadina.tigadpro
+    seq=341, package=com.diune.pictures
+    seq=343, package=com.pandavideocompressor
+    seq=345, package=studio14.application.hera
+    seq=348, package=com.osheden.bestia
+    seq=350, package=com.lb.app_manager
+    seq=352, package=com.ilyas.ilyasapps.wifistrengthmeterpro
+    seq=354, package=ginlemon.flowerfree
+    seq=356, package=studio14.application.caelusblack
+    seq=359, package=com.stoik.mdscan
+    seq=368, package=com.usefullapps.fakegpslocationpro
+    seq=375, package=com.osheden.raya
+    seq=382, package=com.ttxapps.megasync
+    seq=395, package=com.sonyericsson.music
+    seq=401, package=com.dfstream.nfl
+    seq=403, package=com.joshy21.vera.calendarplus.widgets
+    seq=405, package=com.medisafe.android.client
+    seq=407, package=com.appums.music_pitcher_pro
+    seq=409, package=ru.v_a_v.celltowerlocator
+    seq=414, package=com.eytus_android_10_pack
+    seq=420, package=com.guardian
+    seq=422, package=com.OGR.vipnotesfull
+    seq=424, package=com.bluecorner.totalgympro
+    seq=426, package=com.sunshine.maki
+    seq=430, package=br.com.rodrigokolb.realdrum
+    seq=432, package=com.iudesk.android.photo.editor
+    seq=436, package=cs14.pixelperfect.iconpack.nova
+    seq=444, package=com.vdv.circuitcalculator
+    seq=446, package=com.shanga.walli
+    seq=448, package=org.eobdfacile.android
+    seq=450, package=com.baranakco.supergrampro
+    seq=452, package=com.princevegeta.nightowl
+    seq=454, package=com.shopmoment.momentprocamera
+    seq=456, package=hastamev.vibranticons.com
+    seq=458, package=com.ttop.kaaip
+    seq=460, package=com.itunestoppodcastplayer.app
+    seq=462, package=com.adguard.android
+    seq=465, package=com.SearingMedia.Parrot
+    seq=467, package=com.mantratech.bluetooth.device.manager
+    seq=471, package=com.used.aoe
+    seq=473, package=com.artsol.android.extra.high.volume.booster
+    seq=475, package=com.lonelycatgames.Xplore
+    seq=479, package=vitalypanov.phototracker.pro
+    seq=481, package=com.wiseschematics.reeq01
+    seq=486, package=indigomadina.furatto.ui
+    seq=488, package=com.kimcy929.screenrecorder
+    seq=492, package=com.kimcy92.wavelock
+    seq=495, package=com.busuu.android.enc
+    seq=499, package=com.truecaller
+    seq=504, package=photo.editor.polarr
+    seq=508, package=com.ddm.intrace
+    seq=512, package=com.pinkfroot.planefinder
+    seq=514, package=xyz.eutvpn.app
+    seq=516, package=hastamev.masha.com
+    seq=518, package=com.fitnesskeeper.runkeeper.pro
+    seq=520, package=com.lkr.ledscrollerpro
+    seq=522, package=com.mixplorer.silver
+    seq=525, package=com.indigomadina.tabloid
+    seq=527, package=com.fbreader
+    seq=531, package=free.tnt.live.app
+    seq=533, package=com.ddm.ethwork
+    seq=537, package=com.ray.glass.icons.paid
+    seq=541, package=at.bitfire.davdroid
+    seq=543, package=com.ppn.harmonium.sound
+    seq=546, package=com.dreamon.ruzits
+    seq=548, package=com.kibiteam.androidnightmode
+    seq=552, package=com.adobe.lrmobile
+    seq=554, package=io.enpass.app
+    seq=556, package=com.scan.srbd
+    seq=558, package=com.appums.music_pitcher_love_pro
+    seq=560, package=moviefy.winktech.moviefire
+    seq=562, package=cs14.pixelperfect.iconpack.heradark
+    seq=564, package=com.onelook.oneui.circle.iconpack
+    seq=568, package=io.strongapp.strong
+    seq=570, package=com.angel.auto.wifimanager.dp
+    seq=572, package=com.funanduseful.earlybirdalarm
+    seq=574, package=com.klinker.android.twitter_l
+    seq=576, package=com.coccco28.athys
+    seq=579, package=jp.snowlife01.android.rotationcontrolpro
+    seq=582, package=com.freshart.myios13
+    seq=589, package=com.apptivateme.next.sdut
+    seq=593, package=com.grindrapp.android
+    seq=595, package=com.atanusanyal.ascio
+    seq=597, package=com.franco.agenda
+    seq=599, package=com.waze
+    seq=601, package=com.oh.bro
+    seq=603, package=com.arthurivanets.reminderpro
+    seq=605, package=com.burakgon.dnschanger
+    seq=607, package=org.hola.prem
+    seq=609, package=jp.scn.android
+    seq=611, package=com.jndapp.pixel.pie.iconpack
+    seq=613, package=com.natgeomobile.ngmagazine
+    seq=615, package=com.ivianuu.immersivemodemanager
+    seq=618, package=com.freshart.myneoptic
+    seq=620, package=yo.app
+    seq=622, package=com.pavelrekun.skit.premium
+    seq=624, package=com.scannerradio_pro
+    seq=626, package=com.luzapplications.alessio.topwallpapers
+    seq=628, package=com.magdalm.wifipasswordwpa3
+    seq=630, package=izzl.gruvy.pack
+    seq=636, package=com.zemana.msecurity
+    seq=638, package=com.borisov.strelokpro
+    seq=640, package=com.edzondm.astrix
+    seq=642, package=com.ttxapps.dropsync
+    seq=644, package=com.jndapp.hexagonal.hexa.iconpack
+    seq=646, package=com.finazzi.distquakenoads
+    seq=648, package=com.pro.miui9.iconpack
+    seq=650, package=com.ttxapps.boxsync
+    seq=652, package=eu.lindentree.sounds
+    seq=654, package=com.metalsoft.trackchecker_mobile
+    seq=656, package=com.cheddar.iconapck
+    seq=659, package=com.freshart.mypixelpie
+    seq=662, package=com.pranavpandey.rotation
+    seq=664, package=com.nikitadev.irregularverbspro
+    seq=666, package=com.pierx.kuro
+    seq=668, package=com.codium.hydrocoach.pro
+    seq=670, package=com.pierx.biohazard.theme
+    seq=672, package=com.stefsoftware.android.photographerscompanionpro
+    seq=674, package=com.indigomadina.anoobul
+    seq=676, package=com.vbms.ninexcallrecpro
+    seq=678, package=com.brit.swiftdark.substratum
+    seq=680, package=com.angel.edge.musicplayer
+    seq=682, package=net.xnano.android.ftpserver
+    seq=684, package=launcher.alpha.prime
+    seq=686, package=com.runtastic.android.results.lite
+    seq=689, package=com.minma.icon.free
+    seq=691, package=com.codepoint.learnpython3pro
+    seq=694, package=com.indigomadina.anoo
+    seq=698, package=com.onecode.livestream.iptv
+    seq=700, package=com.endless.kitchenbook
+    seq=702, package=thanhletranngoc.calculator.pro
+    seq=705, package=com.unvoid.borealis
+    seq=708, package=com.freshart.myoneui
+    seq=710, package=com.mobilefootie.wc2010
+    seq=712, package=com.coconuts.webnavigator
+    seq=714, package=co.windyapp.android
+    seq=716, package=com.hookah.gardroid
+    seq=718, package=com.kmshack.mute
+    seq=720, package=net.tandem
+    seq=722, package=uhd.hd.amoled.wallpapers.wallhub
+    seq=724, package=com.lunafaqt
+    seq=726, package=sk.kyzek.guess
+    seq=728, package=com.mobisystems.fileman
+    seq=731, package=com.shaiban.audioplayer.mplayer
+    seq=733, package=com.brit.swiftblack.layers
+    seq=735, package=com.lingodeer
+    seq=736, package=com.nll.acr
+
+
+Dexopt state:
+  [com.nll.acr]
+    path: /data/app/com.nll.acr-IxPyyXD-P1h1m8cI-1e4mA==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.nll.acr]
+     base.apk - 3958
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

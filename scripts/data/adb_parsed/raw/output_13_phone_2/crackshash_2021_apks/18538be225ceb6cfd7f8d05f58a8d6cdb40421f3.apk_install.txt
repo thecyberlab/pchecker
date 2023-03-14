@@ -1,0 +1,241 @@
+Activity Resolver Table:
+  Schemes:
+      psiphon:
+        ff173a1 com.psiphon3.subscription/com.psiphon3.MainActivity filter b555d87
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "psiphon"
+          Authority: "settings": -1
+          Authority: "psicash": -1
+          Authority: "subscribe": -1
+        34224b4 com.psiphon3.subscription/com.psiphon3.FeedbackActivity filter 190a8dd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "psiphon"
+          Authority: "feedback": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        ff173a1 com.psiphon3.subscription/com.psiphon3.MainActivity filter a8f79c6
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        236d820 com.psiphon3.subscription/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter ff3f5d9
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        5f96c52 com.psiphon3.subscription/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 3a04b23
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        e9dfb9e com.psiphon3.subscription/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 622767f
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        201564c com.psiphon3.subscription/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter da51695
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        e9dfb9e com.psiphon3.subscription/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 622767f
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        236d820 com.psiphon3.subscription/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter ff3f5d9
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        86a33aa com.psiphon3.subscription/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 71fb9b
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        86a33aa com.psiphon3.subscription/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 71fb9b
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        86a33aa com.psiphon3.subscription/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 71fb9b
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        5f96c52 com.psiphon3.subscription/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 3a04b23
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        70fe076 com.psiphon3.subscription/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 96ab677
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        138b38 com.psiphon3.subscription/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 20d8711
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.net.VpnService:
+        d1222e4 com.psiphon3.subscription/com.psiphon3.psiphonlibrary.TunnelVpnService filter 7b2834d permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.psiphon3.subscription/com.squareup.picasso.PicassoProvider:
+    Provider{8311340 com.psiphon3.subscription/com.squareup.picasso.PicassoProvider}
+  com.psiphon3.subscription/net.grandcentrix.tray.provider.TrayContentProvider:
+    Provider{442e279 com.psiphon3.subscription/net.grandcentrix.tray.provider.TrayContentProvider}
+  com.psiphon3.subscription/com.psiphon3.psiphonlibrary.LoggingProvider:
+    Provider{219c41f com.psiphon3.subscription/com.psiphon3.psiphonlibrary.LoggingProvider}
+  com.psiphon3.subscription/androidx.work.impl.WorkManagerInitializer:
+    Provider{db4236c com.psiphon3.subscription/androidx.work.impl.WorkManagerInitializer}
+
+ContentProvider Authorities:
+  [com.psiphon3.subscription.workmanager-init]:
+    Provider{db4236c com.psiphon3.subscription/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{a062d35 com.psiphon3.subscription}
+  [com.psiphon3.subscription.LoggingProvider]:
+    Provider{219c41f com.psiphon3.subscription/com.psiphon3.psiphonlibrary.LoggingProvider}
+      applicationInfo=ApplicationInfo{26595ca com.psiphon3.subscription}
+  [com.psiphon3.subscription.tray]:
+    Provider{442e279 com.psiphon3.subscription/net.grandcentrix.tray.provider.TrayContentProvider}
+      applicationInfo=ApplicationInfo{d20833b com.psiphon3.subscription}
+  [com.psiphon3.subscription.com.squareup.picasso]:
+    Provider{8311340 com.psiphon3.subscription/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{9760a58 com.psiphon3.subscription}
+
+Key Set Manager:
+  [com.psiphon3.subscription]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.psiphon3.subscription] (67967b1):
+    userId=10289
+    pkg=Package{32f4496 com.psiphon3.subscription}
+    codePath=/data/app/~~TfezpuCxljqUbwkmRkai2w==/com.psiphon3.subscription-zK5oOayhbY89bJGjHEO5Fw==
+    resourcePath=/data/app/~~TfezpuCxljqUbwkmRkai2w==/com.psiphon3.subscription-zK5oOayhbY89bJGjHEO5Fw==
+    legacyNativeLibraryDir=/data/app/~~TfezpuCxljqUbwkmRkai2w==/com.psiphon3.subscription-zK5oOayhbY89bJGjHEO5Fw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=334 minSdk=14 targetSdk=30
+    minExtensionVersions=[]
+    versionName=334
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.facebook.katana]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.media.browse.MediaBrowserService }, Intent { act=androidx.media2.session.MediaSessionService }, Intent { act=androidx.media2.session.MediaLibraryService }]
+    dataDir=/data/user/0/com.psiphon3.subscription
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 15:55:27
+    lastUpdateTime=2022-11-30 15:55:27
+    packageSource=0
+    signatures=PackageSignatures{46d7404 version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.VIBRATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=67382 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:55:27
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.psiphon3.subscription
+    com.google.android.apps.diagnosticstool:
+      com.psiphon3.subscription
+    com.google.android.settings.intelligence:
+      com.psiphon3.subscription
+    com.google.android.apps.accessibility.voiceaccess:
+      com.psiphon3.subscription
+    com.truecaller:
+      com.psiphon3.subscription
+    com.psiphon3.subscription:
+      [com.google.android.bluetooth.services,com.android.bluetooth]
+      com.google.android.googlequicksearchbox
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.youtube
+      com.google.android.apps.docs
+      com.google.android.apps.youtube.music
+      radiotime.player
+      com.dv.adm
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+    com.dv.adm:
+      com.psiphon3.subscription
+    com.zappcues.gamingmode:
+      com.psiphon3.subscription
+    com.jio.myjio:
+      com.psiphon3.subscription
+    com.zombodroid.MemeGeneratorFullGplay:
+      com.psiphon3.subscription
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.psiphon3.subscription]
+    path: /data/app/~~TfezpuCxljqUbwkmRkai2w==/com.psiphon3.subscription-zK5oOayhbY89bJGjHEO5Fw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:487390
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.psiphon3.subscription]
+     base.apk - 873

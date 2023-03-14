@@ -1,0 +1,359 @@
+Activity Resolver Table:
+  Schemes:
+      betternet:
+        d0294dd com.freevpnintouch/com.anchorfree.betternet.ui.BetternetActivity filter 5521723
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "betternet"
+          Authority: "promotion": -1
+      stripesdk:
+        f23379e com.freevpnintouch/com.stripe.android.payments.StripeBrowserLauncherActivity filter f25027f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "stripesdk"
+          Authority: "payment_return_url": -1
+          Path: "PatternMatcher{LITERAL: /com.freevpnintouch}"
+      https:
+        d0294dd com.freevpnintouch/com.anchorfree.betternet.ui.BetternetActivity filter f12b420
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "betternet.co": -1
+          Authority: "betternet.co": -1
+          Path: "PatternMatcher{PREFIX: /winback}"
+          Path: "PatternMatcher{PREFIX: /discounted_offer}"
+        d0294dd com.freevpnintouch/com.anchorfree.betternet.ui.BetternetActivity filter e98a1d9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "get.betternet.co": -1
+          Path: "PatternMatcher{LITERAL: }"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d0294dd com.freevpnintouch/com.anchorfree.betternet.ui.BetternetActivity filter 362e852
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        e520a02 com.freevpnintouch/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7870f13
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        673ee4 com.freevpnintouch/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9776f4d
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        6bef24c com.freevpnintouch/com.anchorfree.autoconnectonboot.AutoConnectOnBootReceiver filter fe88295
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.REBOOT"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        6cb6550 com.freevpnintouch/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 958b349
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        4dac44e com.freevpnintouch/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter b49896f
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        6cb6550 com.freevpnintouch/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 958b349
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        3809c76 com.freevpnintouch/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 6b2c277
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      zendesk.support:
+        90ee738 com.freevpnintouch/zendesk.support.DeepLinkingBroadcastReceiver filter 31bb311
+          Action: "zendesk.support"
+      android.intent.action.BATTERY_LOW:
+        e520a02 com.freevpnintouch/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7870f13
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        109867c com.freevpnintouch/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 7f03b05
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        109867c com.freevpnintouch/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 7f03b05
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        6bef24c com.freevpnintouch/com.anchorfree.autoconnectonboot.AutoConnectOnBootReceiver filter fe88295
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.REBOOT"
+          Category: "android.intent.category.DEFAULT"
+        109867c com.freevpnintouch/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 7f03b05
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        673ee4 com.freevpnintouch/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9776f4d
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        a68e68 com.freevpnintouch/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 2be8281
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        2072faa com.freevpnintouch/com.anchorfree.updatereceiver.UpdateReceiver filter 511479b
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        e22d75a com.freevpnintouch/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter c0f4d8b
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.REBOOT:
+        6bef24c com.freevpnintouch/com.anchorfree.autoconnectonboot.AutoConnectOnBootReceiver filter fe88295
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.REBOOT"
+          Category: "android.intent.category.DEFAULT"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.net.VpnService:
+        7e4f7b2 com.freevpnintouch/unified.vpn.sdk.AFVpnService filter 5a1e303 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        6ac280 com.freevpnintouch/androidx.work.impl.background.gcm.WorkManagerGcmService filter 3b800b9 permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+        2f986ac com.freevpnintouch/com.firebase.jobdispatcher.GooglePlayReceiver filter 4eef75 permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        7a70f26 com.freevpnintouch/com.anchorfree.firebasepushnotifications.MessagingService filter 6233767
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        da6dcfe com.freevpnintouch/com.google.firebase.messaging.FirebaseMessagingService filter 1d5ac5f
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.firebase.jobdispatcher.ACTION_EXECUTE:
+        88a2914 com.freevpnintouch/com.anchorfree.wakeservice.WakeService filter 4cfc5bd
+          Action: "com.firebase.jobdispatcher.ACTION_EXECUTE"
+
+Domain verification status:
+  com.freevpnintouch:
+    ID: be15cfd5-9221-4b96-a8d9-cec00393cfa7
+    Signatures: [A4:0D:A8:0A:59:D1:70:CA:A9:50:CF:15:C1:8C:45:4D:47:A3:9B:26:98:9D:8B:64:0E:CD:74:5B:A7:1B:F5:DC]
+    Domain verification state:
+      betternet.co: none
+      get.betternet.co: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          betternet.co
+          get.betternet.co
+
+Permissions:
+  Permission [com.freevpnintouch.notification.NOTIFICATION_RECEIVER_PERMISSION] (3d27bd6):
+    sourcePackage=com.freevpnintouch
+    uid=10682 gids=[] type=0 prot=signature
+    perm=PermissionInfo{1974809 com.freevpnintouch.notification.NOTIFICATION_RECEIVER_PERMISSION}
+
+Registered ContentProviders:
+  com.freevpnintouch/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{5529a0e com.freevpnintouch/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.freevpnintouch/zendesk.support.SupportSdkStartupProvider:
+    Provider{c45b23c com.freevpnintouch/zendesk.support.SupportSdkStartupProvider}
+  com.freevpnintouch/com.anchorfree.eliteapi.wl.provider.EliteAuthProvider:
+    Provider{c635bc5 com.freevpnintouch/com.anchorfree.eliteapi.wl.provider.EliteAuthProvider}
+  com.freevpnintouch/androidx.work.impl.WorkManagerInitializer:
+    Provider{ba2491a com.freevpnintouch/androidx.work.impl.WorkManagerInitializer}
+  com.freevpnintouch/zendesk.support.guide.GuideSdkStartupProvider:
+    Provider{a7b3c4b com.freevpnintouch/zendesk.support.guide.GuideSdkStartupProvider}
+  com.freevpnintouch/unified.vpn.sdk.VpnConfigProvider:
+    Provider{22ef41 com.freevpnintouch/unified.vpn.sdk.VpnConfigProvider}
+  com.freevpnintouch/com.squareup.picasso.PicassoProvider:
+    Provider{10bdce6 com.freevpnintouch/com.squareup.picasso.PicassoProvider}
+  com.freevpnintouch/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{a280cd4 com.freevpnintouch/com.google.firebase.provider.FirebaseInitProvider}
+  com.freevpnintouch/net.grandcentrix.tray.provider.TrayContentProvider:
+    Provider{6ee3e7d com.freevpnintouch/net.grandcentrix.tray.provider.TrayContentProvider}
+  com.freevpnintouch/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{a254579 com.freevpnintouch/com.facebook.ads.AudienceNetworkContentProvider}
+  com.freevpnintouch/unified.vpn.sdk.CredentialsContentProvider:
+    Provider{19fa2be com.freevpnintouch/unified.vpn.sdk.CredentialsContentProvider}
+  com.freevpnintouch/zendesk.belvedere.BelvedereFileProvider:
+    Provider{e78226c com.freevpnintouch/zendesk.belvedere.BelvedereFileProvider}
+
+ContentProvider Authorities:
+  [com.freevpnintouch.com.squareup.picasso]:
+    Provider{10bdce6 com.freevpnintouch/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{fde1e57 com.freevpnintouch}
+  [com.freevpnintouch.AudienceNetworkContentProvider]:
+    Provider{a254579 com.freevpnintouch/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{d1b9d44 com.freevpnintouch}
+  [com.freevpnintouch.zendesk.support.SupportSdkStartupProvider]:
+    Provider{c45b23c com.freevpnintouch/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{544de2d com.freevpnintouch}
+  [com.freevpnintouch.belvedere2.attachments]:
+    Provider{e78226c com.freevpnintouch/zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{dd27f62 com.freevpnintouch}
+  [com.freevpnintouch.EliteAuthProvider]:
+    Provider{c635bc5 com.freevpnintouch/com.anchorfree.eliteapi.wl.provider.EliteAuthProvider}
+      applicationInfo=ApplicationInfo{d3c48f3 com.freevpnintouch}
+  [com.freevpnintouch.tray]:
+    Provider{6ee3e7d com.freevpnintouch/net.grandcentrix.tray.provider.TrayContentProvider}
+      applicationInfo=ApplicationInfo{fd749b0 com.freevpnintouch}
+  [com.freevpnintouch.firebaseinitprovider]:
+    Provider{a280cd4 com.freevpnintouch/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{53e3029 com.freevpnintouch}
+  [com.freevpnintouch.workmanager-init]:
+    Provider{ba2491a com.freevpnintouch/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{6dd2fae com.freevpnintouch}
+  [com.freevpnintouch.vpn_config]:
+    Provider{22ef41 com.freevpnintouch/unified.vpn.sdk.VpnConfigProvider}
+      applicationInfo=ApplicationInfo{f48814f com.freevpnintouch}
+  [com.freevpnintouch.mobileadsinitprovider]:
+    Provider{5529a0e com.freevpnintouch/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{b5f50dc com.freevpnintouch}
+  [com.freevpnintouch.zendesk.support.GuideSdkStartupProvider]:
+    Provider{a7b3c4b com.freevpnintouch/zendesk.support.guide.GuideSdkStartupProvider}
+      applicationInfo=ApplicationInfo{860a5e5 com.freevpnintouch}
+  [com.freevpnintouch.credentials]:
+    Provider{19fa2be com.freevpnintouch/unified.vpn.sdk.CredentialsContentProvider}
+      applicationInfo=ApplicationInfo{7d098ba com.freevpnintouch}
+
+Key Set Manager:
+  [com.freevpnintouch]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.freevpnintouch] (c35e36b):
+    userId=10682
+    pkg=Package{7d80beb com.freevpnintouch}
+    codePath=/data/app/~~YSsog603ZUnijhrBSLzpDQ==/com.freevpnintouch-c-Yr5BrKFB99jL_kP6ue_Q==
+    resourcePath=/data/app/~~YSsog603ZUnijhrBSLzpDQ==/com.freevpnintouch-c-Yr5BrKFB99jL_kP6ue_Q==
+    legacyNativeLibraryDir=/data/app/~~YSsog603ZUnijhrBSLzpDQ==/com.freevpnintouch-c-Yr5BrKFB99jL_kP6ue_Q==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=52200 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=5.22.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.android.chrome, com.facebook.katana]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.media.browse.MediaBrowserService }]
+    dataDir=/data/user/0/com.freevpnintouch
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 12:46:19
+    lastUpdateTime=2022-11-30 12:46:21
+    packageSource=0
+    signatures=PackageSignatures{ff11bab version:2, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.freevpnintouch.notification.NOTIFICATION_RECEIVER_PERMISSION: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.FOREGROUND_SERVICE
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.firstorion.android.roboshield.READ_WL
+      com.freevpnintouch.notification.NOTIFICATION_RECEIVER_PERMISSION
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.WAKE_LOCK
+      com.google.android.gms.permission.AD_ID
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.freevpnintouch.notification.NOTIFICATION_RECEIVER_PERMISSION: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=53555 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 12:46:21
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.freevpnintouch:
+      com.android.chrome
+  queries via component:
+    com.google.android.apps.messaging:
+      com.freevpnintouch
+    com.google.android.apps.diagnosticstool:
+      com.freevpnintouch
+    com.google.android.settings.intelligence:
+      com.freevpnintouch
+    com.google.android.apps.accessibility.voiceaccess:
+      com.freevpnintouch
+    com.freevpnintouch:
+      [com.android.bluetooth,com.google.android.bluetooth.services]
+      com.google.android.googlequicksearchbox
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.youtube
+      com.google.android.apps.docs
+      com.google.android.apps.youtube.music
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.localtransport,com.android.qns,com.android.keychain,com.android.providers.settings,com.android.location.fused,com.android.wallpaperbackup,com.google.android.iwlan,com.android.inputdevices,com.android.settings,android,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem]:
+        com.freevpnintouch
+      [com.google.android.gms,com.google.android.gsf]:
+        com.freevpnintouch
+  queryable via uses-library:
+
+Dexopt state:
+  [com.freevpnintouch]
+    path: /data/app/~~YSsog603ZUnijhrBSLzpDQ==/com.freevpnintouch-c-Yr5BrKFB99jL_kP6ue_Q==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:2927971
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.freevpnintouch]
+     base.apk - 1640

@@ -1,0 +1,444 @@
+Activity Resolver Table:
+  Schemes:
+      duolingo:
+        30321fa com.duolingo/.splash.LaunchActivity filter e0bd3ab
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "duolingo"
+          Authority: "home": -1
+          Authority: "lesson": -1
+          Authority: "o": -1
+          Authority: "practice": -1
+          Authority: "premium": -1
+          Authority: "profile": -1
+          Authority: "skill": -1
+          Authority: "switch_course": -1
+          Authority: "shop": -1
+          Authority: "reset_password": -1
+          Authority: "leaderboard": -1
+          Authority: "stories": -1
+        30321fa com.duolingo/.splash.LaunchActivity filter 6c96a08
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "duolingo"
+      https:
+        30321fa com.duolingo/.splash.LaunchActivity filter c40c5a1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.duolingo.com": -1
+          Authority: "ar.duolingo.com": -1
+          Authority: "cs.duolingo.com": -1
+          Authority: "de.duolingo.com": -1
+          Authority: "el.duolingo.com": -1
+          Authority: "es.duolingo.com": -1
+          Authority: "fr.duolingo.com": -1
+          Authority: "hi.duolingo.com": -1
+          Authority: "hu.duolingo.com": -1
+          Authority: "id.duolingo.com": -1
+          Authority: "it.duolingo.com": -1
+          Authority: "ja.duolingo.com": -1
+          Authority: "ko.duolingo.com": -1
+          Authority: "nl-nl.duolingo.com": -1
+          Authority: "pl.duolingo.com": -1
+          Authority: "pt.duolingo.com": -1
+          Authority: "ro.duolingo.com": -1
+          Authority: "ru.duolingo.com": -1
+          Authority: "th.duolingo.com": -1
+          Authority: "tr.duolingo.com": -1
+          Authority: "uk.duolingo.com": -1
+          Authority: "vi.duolingo.com": -1
+          Authority: "stories.duolingo.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{PREFIX: /course/}"
+          Path: "PatternMatcher{PREFIX: /skill/}"
+          Path: "PatternMatcher{PREFIX: /users/}"
+          Path: "PatternMatcher{PREFIX: /u/}"
+          Path: "PatternMatcher{PREFIX: /c/}"
+          Path: "PatternMatcher{PREFIX: /p/}"
+          Path: "PatternMatcher{LITERAL: /shop}"
+          Path: "PatternMatcher{LITERAL: /leaderboard}"
+          Path: "PatternMatcher{GLOB: /reset_password/i}"
+          Path: "PatternMatcher{GLOB: /home}"
+          Path: "PatternMatcher{PREFIX: /stories}"
+          AutoVerify=true
+        30321fa com.duolingo/.splash.LaunchActivity filter f5163c6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "blast.duolingo.com": -1
+          Path: "PatternMatcher{PREFIX: /redirect/}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        331ff87 com.duolingo/.app.LoginActivity filter 18f1eb4
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        60cfd9b com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 9af6538
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        e33c895 com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b67fdaa
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        1d55911 com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d204a76
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        ab3d877 com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter d919ce4
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        9a50d23 com.duolingo/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 1597220
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        1d55911 com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d204a76
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        89b87d9 com.duolingo/com.facebook.CampaignTrackingReceiver filter 873259e
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        4b1587f com.duolingo/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 9b3904c
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      zendesk.support:
+        8831add com.duolingo/zendesk.support.DeepLinkingBroadcastReceiver filter 5eff652
+          Action: "zendesk.support"
+      android.intent.action.BATTERY_LOW:
+        60cfd9b com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 9af6538
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        125754d com.duolingo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d3e9802
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        125754d com.duolingo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d3e9802
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        125754d com.duolingo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d3e9802
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        e33c895 com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b67fdaa
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        9838513 com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter f3da350
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.duolingo.action.PRACTICE_ALARM:
+        f975f6f com.duolingo/.notifications.NotificationIntentService filter 161a47c
+          Action: "com.duolingo.action.FOLLOW_BACK"
+          Action: "com.duolingo.action.REMIND_LATER"
+          Action: "com.duolingo.action.PRACTICE_LATER_ALARM"
+          Action: "com.duolingo.action.PRACTICE_ALARM"
+      com.duolingo.action.PRACTICE_LATER_ALARM:
+        f975f6f com.duolingo/.notifications.NotificationIntentService filter 161a47c
+          Action: "com.duolingo.action.FOLLOW_BACK"
+          Action: "com.duolingo.action.REMIND_LATER"
+          Action: "com.duolingo.action.PRACTICE_LATER_ALARM"
+          Action: "com.duolingo.action.PRACTICE_ALARM"
+      com.google.firebase.MESSAGING_EVENT:
+        4e11949 com.duolingo/.notifications.FcmIntentService filter 102324e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        664838b com.duolingo/com.google.firebase.messaging.FirebaseMessagingService filter 1628c68
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.duolingo.action.FOLLOW_BACK:
+        f975f6f com.duolingo/.notifications.NotificationIntentService filter 161a47c
+          Action: "com.duolingo.action.FOLLOW_BACK"
+          Action: "com.duolingo.action.REMIND_LATER"
+          Action: "com.duolingo.action.PRACTICE_LATER_ALARM"
+          Action: "com.duolingo.action.PRACTICE_ALARM"
+      android.accounts.AccountAuthenticator:
+        a990105 com.duolingo/.core.account.AccountService filter 53255a
+          Action: "android.accounts.AccountAuthenticator"
+      com.duolingo.action.REMIND_LATER:
+        f975f6f com.duolingo/.notifications.NotificationIntentService filter 161a47c
+          Action: "com.duolingo.action.FOLLOW_BACK"
+          Action: "com.duolingo.action.REMIND_LATER"
+          Action: "com.duolingo.action.PRACTICE_LATER_ALARM"
+          Action: "com.duolingo.action.PRACTICE_ALARM"
+
+Domain verification status:
+  com.duolingo:
+    ID: 41f3f74d-3d10-463b-a8fa-d1019ad89d8e
+    Signatures: [12:33:FF:6D:E4:C7:0E:F4:D7:DE:AE:54:AF:15:B1:67:FC:7C:FD:25:39:51:7B:D2:17:58:70:F3:CB:77:17:31]
+    Domain verification state:
+      id.duolingo.com: verified
+      hi.duolingo.com: verified
+      it.duolingo.com: verified
+      de.duolingo.com: verified
+      cs.duolingo.com: verified
+      ru.duolingo.com: none
+      tr.duolingo.com: none
+      fr.duolingo.com: none
+      blast.duolingo.com: none
+      uk.duolingo.com: none
+      th.duolingo.com: none
+      ko.duolingo.com: none
+      pl.duolingo.com: none
+      www.duolingo.com: none
+      ar.duolingo.com: none
+      pt.duolingo.com: none
+      hu.duolingo.com: none
+      el.duolingo.com: none
+      ja.duolingo.com: none
+      stories.duolingo.com: none
+      es.duolingo.com: none
+      ro.duolingo.com: none
+      nl-nl.duolingo.com: none
+      vi.duolingo.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          id.duolingo.com
+          hi.duolingo.com
+          it.duolingo.com
+          de.duolingo.com
+          cs.duolingo.com
+          ru.duolingo.com
+          tr.duolingo.com
+          fr.duolingo.com
+          blast.duolingo.com
+          uk.duolingo.com
+          th.duolingo.com
+          ko.duolingo.com
+          pl.duolingo.com
+          www.duolingo.com
+          ar.duolingo.com
+          pt.duolingo.com
+          hu.duolingo.com
+          el.duolingo.com
+          ja.duolingo.com
+          stories.duolingo.com
+          es.duolingo.com
+          ro.duolingo.com
+          nl-nl.duolingo.com
+          vi.duolingo.com
+
+Registered ContentProviders:
+  com.duolingo/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{3e45a67 com.duolingo/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.duolingo/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{e1520bd com.duolingo/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.duolingo/androidx.core.content.FileProvider:
+    Provider{e26b6b2 com.duolingo/androidx.core.content.FileProvider}
+  com.duolingo/zendesk.support.SupportSdkStartupProvider:
+    Provider{1d23603 com.duolingo/zendesk.support.SupportSdkStartupProvider}
+  com.duolingo/androidx.work.impl.WorkManagerInitializer:
+    Provider{b780bb9 com.duolingo/androidx.work.impl.WorkManagerInitializer}
+  com.duolingo/com.squareup.picasso.PicassoProvider:
+    Provider{fc58bfe com.duolingo/com.squareup.picasso.PicassoProvider}
+  com.duolingo/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{c382f5f com.duolingo/com.google.firebase.provider.FirebaseInitProvider}
+  com.duolingo/com.facebook.internal.FacebookInitProvider:
+    Provider{4d54dac com.duolingo/com.facebook.internal.FacebookInitProvider}
+  com.duolingo/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{eea6a0a com.duolingo/com.facebook.ads.AudienceNetworkContentProvider}
+  com.duolingo/zendesk.belvedere.BelvedereFileProvider:
+    Provider{3da627b com.duolingo/zendesk.belvedere.BelvedereFileProvider}
+
+ContentProvider Authorities:
+  [com.duolingo.zendesk.support.SupportSdkStartupProvider]:
+    Provider{1d23603 com.duolingo/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{9c6bf49 com.duolingo}
+  [com.duolingo.lifecycle-process]:
+    Provider{3e45a67 com.duolingo/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{35de04e com.duolingo}
+  [com.duolingo.firebaseinitprovider]:
+    Provider{c382f5f com.duolingo/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{3a4756f com.duolingo}
+  [com.duolingo.AudienceNetworkContentProvider]:
+    Provider{eea6a0a com.duolingo/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{ba8027c com.duolingo}
+  [com.duolingo.mobileadsinitprovider]:
+    Provider{e1520bd com.duolingo/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{f330705 com.duolingo}
+  [com.duolingo.FacebookInitProvider]:
+    Provider{4d54dac com.duolingo/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{7bbb35a com.duolingo}
+  [com.duolingo.com.squareup.picasso]:
+    Provider{fc58bfe com.duolingo/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{d2cf98b com.duolingo}
+  [com.duolingo.belvedere2.attachments]:
+    Provider{3da627b com.duolingo/zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{cb0ca68 com.duolingo}
+  [com.duolingo.workmanager-init]:
+    Provider{b780bb9 com.duolingo/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{9620e81 com.duolingo}
+  [com.duolingo.fileprovider]:
+    Provider{e26b6b2 com.duolingo/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{7f1ab26 com.duolingo}
+
+Key Set Manager:
+  [com.duolingo]
+      Signing KeySets: 4668
+
+Packages:
+  Package [com.duolingo] (96fa367):
+    userId=10243
+    pkg=Package{455c19d com.duolingo}
+    codePath=/data/app/~~lMy0rFJuUK1376LSJTUaag==/com.duolingo-g-wxXDwe0DDlxYhrY8btUg==
+    resourcePath=/data/app/~~lMy0rFJuUK1376LSJTUaag==/com.duolingo-g-wxXDwe0DDlxYhrY8btUg==
+    legacyNativeLibraryDir=/data/app/~~lMy0rFJuUK1376LSJTUaag==/com.duolingo-g-wxXDwe0DDlxYhrY8btUg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=992 minSdk=22 targetSdk=29
+    minExtensionVersions=[]
+    versionName=4.79.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.duolingo
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 09:33:20
+    lastUpdateTime=2022-11-30 09:33:22
+    packageSource=0
+    signatures=PackageSignatures{daf1e3 version:3, signatures:[283d0627], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.VIBRATE
+      android.permission.GET_ACCOUNTS
+      android.permission.RECORD_AUDIO
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.CAMERA
+      com.google.android.c2dm.permission.RECEIVE
+      com.android.vending.BILLING
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=45991 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 09:33:22
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.duolingo
+    com.google.android.apps.diagnosticstool:
+      com.duolingo
+    com.google.android.settings.intelligence:
+      com.duolingo
+    com.google.android.contacts:
+      com.duolingo
+    com.google.android.apps.accessibility.voiceaccess:
+      com.duolingo
+  queryable via interaction:
+    User 0:
+      [com.android.localtransport,com.google.SSRestartDetector,com.google.android.iwlan,com.android.dynsystem,com.android.wallpaperbackup,android,com.android.location.fused,com.android.server.telecom,com.android.qns,com.android.inputdevices,com.android.providers.settings,com.google.android.settings.future.biometrics.faceenroll,com.android.keychain,com.android.settings]:
+        com.duolingo
+      [com.google.android.gsf,com.google.android.gms]:
+        com.duolingo
+      com.android.vending:
+        com.duolingo
+  queryable via uses-library:
+
+Dexopt state:
+  [com.duolingo]
+    path: /data/app/~~lMy0rFJuUK1376LSJTUaag==/com.duolingo-g-wxXDwe0DDlxYhrY8btUg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:54183
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.duolingo]
+     base.apk - 686

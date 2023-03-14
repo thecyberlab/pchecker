@@ -1,0 +1,255 @@
+Activity Resolver Table:
+  Schemes:
+      com.touchtype.swiftkey:
+        bad9e02 com.touchtype.swiftkey/com.touchtype.deeplinking.DeepLinkingHandlerActivity filter fc85749
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.touchtype.swiftkey"
+      swiftkey:
+        bad9e02 com.touchtype.swiftkey/com.touchtype.deeplinking.DeepLinkingHandlerActivity filter 631950
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "swiftkey"
+      https:
+        bad9e02 com.touchtype.swiftkey/com.touchtype.deeplinking.DeepLinkingHandlerActivity filter 69d1313
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "open.swiftkey.com": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        88af076 com.touchtype.swiftkey/com.touchtype.LauncherActivity filter 9b08677
+          Action: "android.intent.action.MAIN"
+        2bb2e4 com.touchtype.swiftkey/com.touchtype.LauncherActivityIcon filter 374d34d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.SEARCH:
+        e5b984e com.touchtype.swiftkey/com.touchtype.materialsettings.languagepreferences.LanguagePreferencesActivity filter fbbcd6f
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        42be1d6 com.touchtype.swiftkey/com.microsoft.tokenshare.AccountChangeReceiver filter 7028c57
+          Action: "com.microsoft.tokenshare.SIGNIN_COMPLETED"
+          Scheme: "package"
+      telemetry:
+        e1d9598 com.touchtype.swiftkey/com.touchtype.telemetry.TelemetryExposeReceiver$TelemetryExposeDoneReceiver filter 1bd31f1
+          Action: "com.touchtype.action.EXPOSE_TELEMETRY_DONE"
+          Scheme: "telemetry"
+
+  Non-Data Actions:
+      android.net.conn.CONNECTIVITY_CHANGE:
+        c539d14 com.touchtype.swiftkey/com.touchtype_fluency.service.receiver.ConnectivityReceiver filter aee29bd
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.android.vending.INSTALL_REFERRER:
+        dee6326 com.touchtype.swiftkey/com.touchtype.InstallReferrerReceiver filter 619fb67
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.touchtype.action.EXPOSE_TELEMETRY:
+        776df0a com.touchtype.swiftkey/com.touchtype.telemetry.TelemetryExposeReceiver filter 14e337b
+          Action: "com.touchtype.action.EXPOSE_TELEMETRY"
+      android.intent.action.SIM_STATE_CHANGED:
+        ffd7aac com.touchtype.swiftkey/com.touchtype.SimStateReceiver filter 755d375
+          Action: "android.intent.action.SIM_STATE_CHANGED"
+      android.intent.action.LOCALE_CHANGED:
+        304b0fe com.touchtype.swiftkey/com.touchtype.LocaleChangeReceiver filter 960f05f
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.touchtype.ACTION_SCHEDULED_JOB:
+        e687a7c com.touchtype.swiftkey/com.touchtype.RefreshLanguageConfigurationScheduledJob filter fb61f05
+          Action: "com.touchtype.ACTION_SCHEDULED_JOB"
+        dceb5a com.touchtype.swiftkey/com.touchtype.cloud.sync.SyncScheduledJob filter f61d18b
+          Action: "com.touchtype.ACTION_SCHEDULED_JOB"
+        700c268 com.touchtype.swiftkey/com.touchtype.AddKeyboardDeltaToSyncPushQueueJob filter afea681
+          Action: "com.touchtype.ACTION_SCHEDULED_JOB"
+      com.google.android.c2dm.intent.RECEIVE:
+        5227344 com.touchtype.swiftkey/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 961fc2d
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        9577680 com.touchtype.swiftkey/com.touchtype.BootReceiver filter 758a4b9
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        d4d8bb2 com.touchtype.swiftkey/com.touchtype.PackageReplacedReceiver filter 840e703
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        6aae6dc com.touchtype.swiftkey/com.google.firebase.iid.FirebaseInstanceIdService filter 34383e5
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        757fb0 com.touchtype.swiftkey/com.touchtype.cloudmessaging.SwiftKeyFirebaseMessagingService filter 10f2e29
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        3d55ae com.touchtype.swiftkey/com.google.firebase.messaging.FirebaseMessagingService filter cccaf4f
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.view.InputMethod:
+        15c4562 com.touchtype.swiftkey/com.touchtype.KeyboardService filter d3996f3 permission android.permission.BIND_INPUT_METHOD
+          Action: "android.view.InputMethod"
+      com.microsoft.tokenshare.TokenSharingService:
+        e0d1eba com.touchtype.swiftkey/com.microsoft.tokenshare.TokenSharingService filter 8cef16b
+          Action: "com.microsoft.tokenshare.TokenSharingService"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          open.swiftkey.com
+
+Registered ContentProviders:
+  com.touchtype.swiftkey/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{e50ac2c com.touchtype.swiftkey/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.touchtype.swiftkey/androidx.core.content.FileProvider:
+    Provider{2d6e6f5 com.touchtype.swiftkey/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.touchtype.swiftkey.fileprovider]:
+    Provider{2d6e6f5 com.touchtype.swiftkey/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{5fa32fb com.touchtype.swiftkey}
+  [com.touchtype.swiftkey.lifecycle-process]:
+    Provider{e50ac2c com.touchtype.swiftkey/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{325f18 com.touchtype.swiftkey}
+
+Key Set Manager:
+  [com.touchtype.swiftkey]
+      Signing KeySets: 88
+
+Packages:
+  Package [com.touchtype.swiftkey] (17a54c4):
+    userId=10271
+    pkg=Package{a81ffad com.touchtype.swiftkey}
+    codePath=/data/app/~~gBtKD7HiqAB2-KW1Dp8kVQ==/com.touchtype.swiftkey-qYj0PLQSjS_kcVJ0kwpmqA==
+    resourcePath=/data/app/~~gBtKD7HiqAB2-KW1Dp8kVQ==/com.touchtype.swiftkey-qYj0PLQSjS_kcVJ0kwpmqA==
+    legacyNativeLibraryDir=/data/app/~~gBtKD7HiqAB2-KW1Dp8kVQ==/com.touchtype.swiftkey-qYj0PLQSjS_kcVJ0kwpmqA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=956366992 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=7.8.1.9
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.swiftkey.swiftkeyconfigurator, com.swiftkey.swiftkeyconfigurator.debug, com.swiftkey.languageprovider, com.microsoft.emmx, com.microsoft.emmx.selfhost, com.microsoft.emmx.daily, com.microsoft.emmx.development, com.microsoft.translator, com.microsoft.todos, androidx.test.orchestrator]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    dataDir=/data/user/0/com.touchtype.swiftkey
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 15:54:23
+    lastUpdateTime=2022-11-30 15:54:24
+    packageSource=0
+    signatures=PackageSignatures{20ec2e2 version:3, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.WAKE_LOCK
+      android.permission.VIBRATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.GET_ACCOUNTS
+      com.swiftkey.languageprovider.READLANG
+      com.swiftkey.swiftkeyconfigurator.READCONFIG
+      android.permission.RECORD_AUDIO
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=67531 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 15:54:24
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.touchtype.swiftkey
+    com.google.android.apps.diagnosticstool:
+      com.touchtype.swiftkey
+    com.google.android.settings.intelligence:
+      com.touchtype.swiftkey
+    com.google.android.apps.accessibility.voiceaccess:
+      com.touchtype.swiftkey
+    com.truecaller:
+      com.touchtype.swiftkey
+    com.touchtype.swiftkey:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      com.dv.adm
+      com.utorrent.client.pro
+    com.dv.adm:
+      com.touchtype.swiftkey
+    com.zappcues.gamingmode:
+      com.touchtype.swiftkey
+    com.jio.myjio:
+      com.touchtype.swiftkey
+    com.zombodroid.MemeGeneratorFullGplay:
+      com.touchtype.swiftkey
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.touchtype.swiftkey]
+    path: /data/app/~~gBtKD7HiqAB2-KW1Dp8kVQ==/com.touchtype.swiftkey-qYj0PLQSjS_kcVJ0kwpmqA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:423221
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.touchtype.swiftkey]
+     base.apk - 563

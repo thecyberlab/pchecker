@@ -1,0 +1,460 @@
+Activity Resolver Table:
+  Full MIME Types:
+      */*:
+        4c23ea com.nextcloud.client/com.owncloud.android.ui.activity.ReceiveExternalFilesActivity filter 458c6db
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4c23ea com.nextcloud.client/com.owncloud.android.ui.activity.ReceiveExternalFilesActivity filter ec59578
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      *:
+        4c23ea com.nextcloud.client/com.owncloud.android.ui.activity.ReceiveExternalFilesActivity filter 458c6db
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4c23ea com.nextcloud.client/com.owncloud.android.ui.activity.ReceiveExternalFilesActivity filter ec59578
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      nc:
+        e12f5b7 com.nextcloud.client/com.owncloud.android.authentication.DeepLinkLoginActivity filter 77a9124
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "nc"
+          Authority: "login": -1
+      http:
+        ad567de com.nextcloud.client/com.owncloud.android.ui.activity.FileDisplayActivity filter f939fd5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: /f/..*}"
+          Path: "PatternMatcher{GLOB: /..*/f/..*}"
+          Path: "PatternMatcher{GLOB: /..*/..*/f/..*}"
+          Path: "PatternMatcher{GLOB: /..*/..*/..*/f/..*}"
+      https:
+        ad567de com.nextcloud.client/com.owncloud.android.ui.activity.FileDisplayActivity filter f939fd5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: /f/..*}"
+          Path: "PatternMatcher{GLOB: /..*/f/..*}"
+          Path: "PatternMatcher{GLOB: /..*/..*/f/..*}"
+          Path: "PatternMatcher{GLOB: /..*/..*/..*/f/..*}"
+
+  Non-Data Actions:
+      com.owncloud.android.workaround.accounts.CREATE:
+        7b6451 com.nextcloud.client/com.owncloud.android.authentication.AuthenticatorActivity filter 4c094b6
+          Action: "com.owncloud.android.workaround.accounts.CREATE"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        ad567de com.nextcloud.client/com.owncloud.android.ui.activity.FileDisplayActivity filter 6370dbf
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.SEARCH:
+        ad567de com.nextcloud.client/com.owncloud.android.ui.activity.FileDisplayActivity filter c5b3c8c
+          Action: "android.intent.action.SEARCH"
+        d40f48d com.nextcloud.client/com.owncloud.android.ui.activity.ShareActivity filter 1394642
+          Action: "android.intent.action.SEARCH"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        4c23ea com.nextcloud.client/com.owncloud.android.ui.activity.ReceiveExternalFilesActivity filter 458c6db
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.SEND_MULTIPLE:
+        4c23ea com.nextcloud.client/com.owncloud.android.ui.activity.ReceiveExternalFilesActivity filter ec59578
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        994e4af com.nextcloud.client/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6ce0bc
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        2554c89 com.nextcloud.client/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 699848e
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        1d73653 com.nextcloud.client/com.owncloud.android.files.BootupBroadcastReceiver filter 2619b90
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        1d73653 com.nextcloud.client/com.owncloud.android.files.BootupBroadcastReceiver filter 2619b90
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        83d2845 com.nextcloud.client/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ead5b9a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        4d51ccb com.nextcloud.client/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter d854ca8
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        83d2845 com.nextcloud.client/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ead5b9a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        994e4af com.nextcloud.client/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6ce0bc
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        10d03c1 com.nextcloud.client/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1f59766
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        10d03c1 com.nextcloud.client/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1f59766
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        1d73653 com.nextcloud.client/com.owncloud.android.files.BootupBroadcastReceiver filter 2619b90
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        10d03c1 com.nextcloud.client/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1f59766
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        2554c89 com.nextcloud.client/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 699848e
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        1a51afd com.nextcloud.client/androidx.work.impl.diagnostics.DiagnosticsReceiver filter e33c3f2
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        1d73653 com.nextcloud.client/com.owncloud.android.files.BootupBroadcastReceiver filter 2619b90
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        896baa7 com.nextcloud.client/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 9368b54
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.content.SyncAdapter:
+        4e579f com.nextcloud.client/com.owncloud.android.syncadapter.FileSyncService filter 407f0ec
+          Action: "android.content.SyncAdapter"
+      android.accounts.AccountAuthenticator:
+        2ad69f9 com.nextcloud.client/com.owncloud.android.authentication.AccountAuthenticatorService filter 9b62d3e
+          Action: "android.accounts.AccountAuthenticator"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Provider Resolver Table:
+  Non-Data Actions:
+      android.content.action.DOCUMENTS_PROVIDER:
+        ea5a43 com.nextcloud.client/com.owncloud.android.providers.DocumentsStorageProvider filter e1b08c0
+          Action: "android.content.action.DOCUMENTS_PROVIDER"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.nextcloud.client/com.owncloud.android.providers.DiskLruImageCacheFileProvider:
+    Provider{6b82ab6 com.nextcloud.client/com.owncloud.android.providers.DiskLruImageCacheFileProvider}
+  com.nextcloud.client/androidx.core.content.FileProvider:
+    Provider{831d3b7 com.nextcloud.client/androidx.core.content.FileProvider}
+  com.nextcloud.client/com.owncloud.android.providers.UsersAndGroupsSearchProvider:
+    Provider{2431724 com.nextcloud.client/com.owncloud.android.providers.UsersAndGroupsSearchProvider}
+  com.nextcloud.client/com.owncloud.android.providers.FileContentProvider:
+    Provider{176028d com.nextcloud.client/com.owncloud.android.providers.FileContentProvider}
+  com.nextcloud.client/com.owncloud.android.providers.DocumentsStorageProvider:
+    Provider{ea5a43 com.nextcloud.client/com.owncloud.android.providers.DocumentsStorageProvider}
+
+ContentProvider Authorities:
+  [org.nextcloud]:
+    Provider{176028d com.nextcloud.client/com.owncloud.android.providers.FileContentProvider}
+      applicationInfo=ApplicationInfo{a143c42 com.nextcloud.client}
+  [org.nextcloud.documents]:
+    Provider{ea5a43 com.nextcloud.client/com.owncloud.android.providers.DocumentsStorageProvider}
+      applicationInfo=ApplicationInfo{205f453 com.nextcloud.client}
+  [com.nextcloud.android.providers.UsersAndGroupsSearchProvider]:
+    Provider{2431724 com.nextcloud.client/com.owncloud.android.providers.UsersAndGroupsSearchProvider}
+      applicationInfo=ApplicationInfo{82c8190 com.nextcloud.client}
+  [org.nextcloud.files]:
+    Provider{831d3b7 com.nextcloud.client/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{fcd3a89 com.nextcloud.client}
+  [org.nextcloud.imageCache.provider]:
+    Provider{6b82ab6 com.nextcloud.client/com.owncloud.android.providers.DiskLruImageCacheFileProvider}
+      applicationInfo=ApplicationInfo{12dda8e com.nextcloud.client}
+
+Key Set Manager:
+  [com.nextcloud.client]
+      Signing KeySets: 6767
+
+Packages:
+  Package [com.nextcloud.client] (f182af):
+    userId=10673
+    pkg=Package{f0026bc com.nextcloud.client}
+    codePath=/data/app/~~vmqqbtQZvT4n7GzJAw-izQ==/com.nextcloud.client-F_3sAlbgFqBy4oe8BQYL-w==
+    resourcePath=/data/app/~~vmqqbtQZvT4n7GzJAw-izQ==/com.nextcloud.client-F_3sAlbgFqBy4oe8BQYL-w==
+    legacyNativeLibraryDir=/data/app/~~vmqqbtQZvT4n7GzJAw-izQ==/com.nextcloud.client-F_3sAlbgFqBy4oe8BQYL-w==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=30130190 minSdk=18 targetSdk=29
+    minExtensionVersions=[]
+    versionName=3.13.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.nextcloud.client
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 21:15:54
+    lastUpdateTime=2022-11-30 21:15:56
+    packageSource=0
+    signatures=PackageSignatures{45f645 version:1, signatures:[483e7122], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.READ_CONTACTS
+      android.permission.WRITE_CONTACTS
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.CAMERA
+      android.permission.VIBRATE
+      android.permission.INTERNET
+      android.permission.READ_SYNC_STATS
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.BROADCAST_STICKY
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      android.permission.USE_FINGERPRINT
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.NFC
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=104953 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 21:15:56
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.nbu.files:
+      com.nextcloud.client
+    [com.google.android.gsf,com.google.android.gms]:
+      com.nextcloud.client
+    com.google.android.apps.messaging:
+      com.nextcloud.client
+    com.google.android.apps.safetyhub:
+      com.nextcloud.client
+    com.android.vending:
+      com.nextcloud.client
+    com.google.android.apps.restore:
+      com.nextcloud.client
+    com.google.android.apps.diagnosticstool:
+      com.nextcloud.client
+    com.google.android.dialer:
+      com.nextcloud.client
+    com.google.android.apps.wellbeing:
+      com.nextcloud.client
+    com.google.android.settings.intelligence:
+      com.nextcloud.client
+    com.google.android.GoogleCamera:
+      com.nextcloud.client
+    com.google.android.calendar:
+      com.nextcloud.client
+    com.google.android.apps.maps:
+      com.nextcloud.client
+    com.google.android.apps.photos:
+      com.nextcloud.client
+    com.google.android.youtube:
+      com.nextcloud.client
+    com.google.android.contacts:
+      com.nextcloud.client
+    com.google.android.apps.docs:
+      com.nextcloud.client
+    com.google.android.apps.accessibility.voiceaccess:
+      com.nextcloud.client
+    com.google.android.apps.youtube.music:
+      com.nextcloud.client
+    com.google.android.gm:
+      com.nextcloud.client
+    com.google.android.apps.wallpaper:
+      com.nextcloud.client
+    com.zhiliaoapp.musically:
+      com.nextcloud.client
+    com.touchtype.swiftkey:
+      com.nextcloud.client
+    com.pandavideocompressor:
+      com.nextcloud.client
+    radiotime.player:
+      com.nextcloud.client
+    net.zedge.android:
+      com.nextcloud.client
+    com.truecaller:
+      com.nextcloud.client
+    com.languagedrops.drops.international:
+      com.nextcloud.client
+    com.wallpaperscraft.wallpaper:
+      com.nextcloud.client
+    deezer.android.app:
+      com.nextcloud.client
+    ipnossoft.rma.free:
+      com.nextcloud.client
+    wsj.reader_sp:
+      com.nextcloud.client
+    com.callapp.contacts:
+      com.nextcloud.client
+    com.duolingo:
+      com.nextcloud.client
+    com.darinsoft.vimo:
+      com.nextcloud.client
+    com.ninegag.android.app:
+      com.nextcloud.client
+    vsin.t16_funny_photo:
+      com.nextcloud.client
+    com.mxtech.videoplayer.television:
+      com.nextcloud.client
+    com.fourchars.lmpfree:
+      com.nextcloud.client
+    com.mycompany.app.soulbrowser:
+      com.nextcloud.client
+    ins.story.unfold:
+      com.nextcloud.client
+    com.lyrebirdstudio.photo_editor_pro:
+      com.nextcloud.client
+    easynotes.notes.notepad.notebook.privatenotes.note:
+      com.nextcloud.client
+    com.camerasideas.instashot:
+      com.nextcloud.client
+    com.mobisystems.office:
+      com.nextcloud.client
+    com.shazam.android:
+      com.nextcloud.client
+    com.dv.adm:
+      com.nextcloud.client
+    com.zappcues.gamingmode:
+      com.nextcloud.client
+    com.cam001.selfie:
+      com.nextcloud.client
+    com.vicman.toonmeapp:
+      com.nextcloud.client
+    com.picsart.studio.light:
+      com.nextcloud.client
+    com.weather.Weather:
+      com.nextcloud.client
+    com.cyberlink.powerdirector.DRA140225_01:
+      com.nextcloud.client
+    com.videoeditorpro.android:
+      com.nextcloud.client
+    com.jio.myjio:
+      com.nextcloud.client
+    video.reface.app:
+      com.nextcloud.client
+    com.zombodroid.MemeGeneratorFullGplay:
+      com.nextcloud.client
+    com.ufotosoft.justshot:
+      com.nextcloud.client
+    com.clearchannel.iheartradio.controller:
+      com.nextcloud.client
+    com.utorrent.client.pro:
+      com.nextcloud.client
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.nextcloud.client]
+    path: /data/app/~~vmqqbtQZvT4n7GzJAw-izQ==/com.nextcloud.client-F_3sAlbgFqBy4oe8BQYL-w==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1370471
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.nextcloud.client]
+     base.apk - 700

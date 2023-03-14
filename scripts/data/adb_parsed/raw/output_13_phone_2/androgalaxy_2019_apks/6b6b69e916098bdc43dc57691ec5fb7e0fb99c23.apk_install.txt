@@ -1,0 +1,246 @@
+Activity Resolver Table:
+  Full MIME Types:
+      image/*:
+        968ece4 de.j4velin.wallpaperChanger/.ShareWithActivity filter 632854d
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        968ece4 de.j4velin.wallpaperChanger/.ShareWithActivity filter eae6802
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      image:
+        968ece4 de.j4velin.wallpaperChanger/.ShareWithActivity filter 632854d
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        968ece4 de.j4velin.wallpaperChanger/.ShareWithActivity filter eae6802
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        5316911 de.j4velin.wallpaperChanger/.settings.Settings filter 8331a76
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      de.j4velin.wallpaperChanger.SETTINGS:
+        5316911 de.j4velin.wallpaperChanger/.settings.Settings filter d166877
+          Action: "de.j4velin.wallpaperChanger.SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        77f1513 de.j4velin.wallpaperChanger/.widget.WidgetConfig filter 939f350
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      android.intent.action.CREATE_SHORTCUT:
+        5af2949 de.j4velin.wallpaperChanger/.widget.Shortcut filter 19f024e
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        968ece4 de.j4velin.wallpaperChanger/.ShareWithActivity filter 632854d
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.SEND_MULTIPLE:
+        968ece4 de.j4velin.wallpaperChanger/.ShareWithActivity filter eae6802
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        2381105 de.j4velin.wallpaperChanger/.receiver.UpdateReceiver filter 5ecf55a
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Scheme: "package"
+          Path: "PatternMatcher{LITERAL: de.j4velin.wallpaperChanger}"
+      file:
+        498dc68 de.j4velin.wallpaperChanger/.receiver.MediaMountedReceiver filter 8adb881
+          Action: "android.intent.action.MEDIA_MOUNTED"
+          Scheme: "file"
+
+  Non-Data Actions:
+      android.intent.action.BOOT_COMPLETED:
+        9bbef6f de.j4velin.wallpaperChanger/.receiver.WallpaperController filter 6d2f47c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "de.j4velin.wallpaperChanger.intent.NEXT"
+      de.j4velin.wallpaperChanger.intent.NEXT:
+        9bbef6f de.j4velin.wallpaperChanger/.receiver.WallpaperController filter 6d2f47c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "de.j4velin.wallpaperChanger.intent.NEXT"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        4f50d26 de.j4velin.wallpaperChanger/.widget.Widget filter 7bc5d67
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        2381105 de.j4velin.wallpaperChanger/.receiver.UpdateReceiver filter 642138b
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        a98d080 de.j4velin.wallpaperChanger/.widget.QSTileService filter 597f6b9 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.service.wallpaper.WallpaperService:
+        f14d5b2 de.j4velin.wallpaperChanger/.LiveWallpaper filter ea76903 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      com.google.android.apps.muzei.api.MuzeiArtProvider:
+        4535714 de.j4velin.wallpaperChanger/.MuzeiService filter 97c5bbd
+          Action: "com.google.android.apps.muzei.api.MuzeiArtProvider"
+
+Domain verification status:
+
+Registered ContentProviders:
+  de.j4velin.wallpaperChanger/android.support.v4.content.FileProvider:
+    Provider{6ce310 de.j4velin.wallpaperChanger/android.support.v4.content.FileProvider}
+  de.j4velin.wallpaperChanger/.MuzeiService:
+    Provider{4535714 de.j4velin.wallpaperChanger/.MuzeiService}
+
+ContentProvider Authorities:
+  [de.j4velin.wallpaperChanger]:
+    Provider{4535714 de.j4velin.wallpaperChanger/.MuzeiService}
+      applicationInfo=ApplicationInfo{13cd80e de.j4velin.wallpaperChanger}
+  [de.j4velin.wallpaperChanger.provider]:
+    Provider{6ce310 de.j4velin.wallpaperChanger/android.support.v4.content.FileProvider}
+      applicationInfo=ApplicationInfo{990722f de.j4velin.wallpaperChanger}
+
+Key Set Manager:
+  [de.j4velin.wallpaperChanger]
+      Signing KeySets: 4600
+
+Packages:
+  Package [de.j4velin.wallpaperChanger] (4a5203c):
+    userId=10288
+    pkg=Package{48931c5 de.j4velin.wallpaperChanger}
+    codePath=/data/app/~~jcoCpP-AqADB_9Zt3KQF5A==/de.j4velin.wallpaperChanger-p781ON5Tx6JF6Jth3hUeuw==
+    resourcePath=/data/app/~~jcoCpP-AqADB_9Zt3KQF5A==/de.j4velin.wallpaperChanger-p781ON5Tx6JF6Jth3hUeuw==
+    legacyNativeLibraryDir=/data/app/~~jcoCpP-AqADB_9Zt3KQF5A==/de.j4velin.wallpaperChanger-p781ON5Tx6JF6Jth3hUeuw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=4897 minSdk=14 targetSdk=29
+    minExtensionVersions=[]
+    versionName=4.8.13
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/de.j4velin.wallpaperChanger
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 08:51:00
+    lastUpdateTime=2022-11-30 08:51:01
+    packageSource=0
+    signatures=PackageSignatures{3d02541 version:3, signatures:[7f088282], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.SET_WALLPAPER
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WRITE_EXTERNAL_STORAGE
+      com.android.vending.BILLING
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.WAKE_LOCK
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=55344 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 08:51:01
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.diagnosticstool:
+      de.j4velin.wallpaperChanger
+    com.google.android.settings.intelligence:
+      de.j4velin.wallpaperChanger
+    com.google.android.GoogleCamera:
+      de.j4velin.wallpaperChanger
+    com.google.android.apps.maps:
+      de.j4velin.wallpaperChanger
+    com.google.android.apps.photos:
+      de.j4velin.wallpaperChanger
+    com.google.android.apps.accessibility.voiceaccess:
+      de.j4velin.wallpaperChanger
+    com.google.android.apps.wallpaper:
+      de.j4velin.wallpaperChanger
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [de.j4velin.wallpaperChanger]
+    path: /data/app/~~jcoCpP-AqADB_9Zt3KQF5A==/de.j4velin.wallpaperChanger-p781ON5Tx6JF6Jth3hUeuw==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:881150
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [de.j4velin.wallpaperChanger]
+     base.apk - 155

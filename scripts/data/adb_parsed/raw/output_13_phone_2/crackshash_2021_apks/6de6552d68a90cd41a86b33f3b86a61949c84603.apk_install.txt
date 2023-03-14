@@ -1,0 +1,215 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        f85e9b3 eu.thedarken.sdm/.main.ui.upgrades.UpgradeActivity filter cab3b70
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "apps.darken.eu": -1
+          Path: "PatternMatcher{LITERAL: /inapp/eu.thedarken.sdm/licenses}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        89ff304 eu.thedarken.sdm/.main.ui.SDMMainActivity filter 13de0ed
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        89ff304 eu.thedarken.sdm/.main.ui.SDMMainActivity filter 62f2b22
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        9a49ee9 eu.thedarken.sdm/.oneclick.widget.OneClickWidgetConfigActivity filter 4b8d76e
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        16b6e0f eu.thedarken.sdm/.corpsefinder.core.watcher.UninstallWatcherReceiver filter 4e09e9c
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      eu.thedarken.sdm.ACTION_EXTERNAL_EVENT:
+        7a70888 eu.thedarken.sdm/.oneclick.widget.QuickAccessWidgetProvider filter 7e84221
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "eu.thedarken.sdm.ACTION_EXTERNAL_EVENT"
+      android.intent.action.BOOT_COMPLETED:
+        c9f40a5 eu.thedarken.sdm/.scheduler.core.SchedulerWard filter 7adc2b
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        7a70888 eu.thedarken.sdm/.oneclick.widget.QuickAccessWidgetProvider filter 7e84221
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "eu.thedarken.sdm.ACTION_EXTERNAL_EVENT"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        c9f40a5 eu.thedarken.sdm/.scheduler.core.SchedulerWard filter a1efc7a
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.accessibilityservice.AccessibilityService:
+        8906646 eu.thedarken.sdm/.accessibility.core.ACCService filter 4c91007 permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+
+Domain verification status:
+  eu.thedarken.sdm:
+    ID: 69afee43-99fd-459f-ad09-ab1dee3804c5
+    Signatures: [0C:FB:46:63:83:1A:0F:B8:D6:97:3A:AD:44:E2:21:A8:BA:78:F7:F6:84:BD:0B:17:D3:B4:4B:EC:82:31:64:84]
+    Domain verification state:
+      apps.darken.eu: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          apps.darken.eu
+
+Registered ContentProviders:
+  eu.thedarken.sdm/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{e310508 eu.thedarken.sdm/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  eu.thedarken.sdm/androidx.core.content.FileProvider:
+    Provider{697c4a1 eu.thedarken.sdm/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [eu.thedarken.sdm.provider]:
+    Provider{697c4a1 eu.thedarken.sdm/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{20df6c6 eu.thedarken.sdm}
+  [eu.thedarken.sdm.lifecycle-process]:
+    Provider{e310508 eu.thedarken.sdm/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{4469687 eu.thedarken.sdm}
+
+Key Set Manager:
+  [eu.thedarken.sdm]
+      Signing KeySets: 4656
+
+Packages:
+  Package [eu.thedarken.sdm] (75569b4):
+    userId=10292
+    pkg=Package{acb09dd eu.thedarken.sdm}
+    codePath=/data/app/~~6DWnAYL3a5NOQ8oyUaUl1Q==/eu.thedarken.sdm-QXXWOOpuPIKn55ts_ZjLfA==
+    resourcePath=/data/app/~~6DWnAYL3a5NOQ8oyUaUl1Q==/eu.thedarken.sdm-QXXWOOpuPIKn55ts_ZjLfA==
+    legacyNativeLibraryDir=/data/app/~~6DWnAYL3a5NOQ8oyUaUl1Q==/eu.thedarken.sdm-QXXWOOpuPIKn55ts_ZjLfA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=50305 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=5.3.5
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[eu.thedarken.sdm.unlocker, eu.thedarken.sdm.huawei]
+    dataDir=/data/user/0/eu.thedarken.sdm
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 17:43:16
+    lastUpdateTime=2022-11-30 17:43:16
+    packageSource=0
+    signatures=PackageSignatures{362b952 version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.READ_MEDIA_STORAGE
+      android.permission.WRITE_MEDIA_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.KILL_BACKGROUND_PROCESSES
+      android.permission.ACCESS_SUPERUSER
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.VIBRATE
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.WAKE_LOCK
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.REQUEST_DELETE_PACKAGES
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.FOREGROUND_SERVICE
+      android.permission.CLEAR_APP_CACHE
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.MANAGE_EXTERNAL_STORAGE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.VIBRATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=81360 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 17:43:16
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      eu.thedarken.sdm
+    com.google.android.apps.diagnosticstool:
+      eu.thedarken.sdm
+    com.google.android.settings.intelligence:
+      eu.thedarken.sdm
+    com.google.android.apps.accessibility.voiceaccess:
+      eu.thedarken.sdm
+    com.truecaller:
+      eu.thedarken.sdm
+    com.dv.adm:
+      eu.thedarken.sdm
+    com.zappcues.gamingmode:
+      eu.thedarken.sdm
+    com.jio.myjio:
+      eu.thedarken.sdm
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [eu.thedarken.sdm]
+    path: /data/app/~~6DWnAYL3a5NOQ8oyUaUl1Q==/eu.thedarken.sdm-QXXWOOpuPIKn55ts_ZjLfA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:197414
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [eu.thedarken.sdm]
+     base.apk - 320

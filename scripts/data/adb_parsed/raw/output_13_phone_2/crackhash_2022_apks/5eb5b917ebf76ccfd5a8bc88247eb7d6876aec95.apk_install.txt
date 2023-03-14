@@ -1,0 +1,541 @@
+Activity Resolver Table:
+  Schemes:
+      juspay:
+        9eb8852 in.startv.hotstar.dplus/in.juspay.godel.core.CustomtabActivity filter e3e3723
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "juspay"
+          Authority: "in.startv.hotstar.dplus": -1
+      http:
+        7c3e625 in.startv.hotstar.dplus/in.startv.hotstar.rocky.launch.deeplink.DeeplinkActivity filter 19a0c08
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "www.hotstar.com": -1
+          AutoVerify=true
+        9eb8852 in.startv.hotstar.dplus/in.juspay.godel.core.CustomtabActivity filter d5c5420
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "api.juspay.in": -1
+          Path: "PatternMatcher{LITERAL: /pay/sdk-response/apps/in.startv.hotstar.dplus}"
+          AutoVerify=true
+        9eb8852 in.startv.hotstar.dplus/in.juspay.godel.core.CustomtabActivity filter 595d79e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "sandbox.juspay.in": -1
+          Path: "PatternMatcher{LITERAL: /pay/sdk-response/apps/in.startv.hotstar.dplus}"
+          AutoVerify=true
+      https:
+        7c3e625 in.startv.hotstar.dplus/in.startv.hotstar.rocky.launch.deeplink.DeeplinkActivity filter 471bfa1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.hotstar.com": -1
+          AutoVerify=true
+        7c3e625 in.startv.hotstar.dplus/in.startv.hotstar.rocky.launch.deeplink.DeeplinkActivity filter 457d5c6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "hotstarid.onelink.me": -1
+          AutoVerify=true
+        9eb8852 in.startv.hotstar.dplus/in.juspay.godel.core.CustomtabActivity filter 2b1c1d9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "api.juspay.in": -1
+          Path: "PatternMatcher{LITERAL: /pay/sdk-response/apps/in.startv.hotstar.dplus}"
+          AutoVerify=true
+        9eb8852 in.startv.hotstar.dplus/in.juspay.godel.core.CustomtabActivity filter ab3227f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "sandbox.juspay.in": -1
+          Path: "PatternMatcher{LITERAL: /pay/sdk-response/apps/in.startv.hotstar.dplus}"
+          AutoVerify=true
+      fbconnect:
+        9ac8987 in.startv.hotstar.dplus/com.facebook.CustomTabActivity filter bc9b4dd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.in.startv.hotstar.dplus": -1
+      fb1439455966343706:
+        9ac8987 in.startv.hotstar.dplus/com.facebook.CustomTabActivity filter 5c7e0b4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb1439455966343706"
+      hotstar:
+        7c3e625 in.startv.hotstar.dplus/in.startv.hotstar.rocky.launch.deeplink.DeeplinkActivity filter 42673fa
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "hotstar"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        c81ec69 in.startv.hotstar.dplus/in.startv.hotstar.rocky.chromecast.HSCastExpandActivity filter b8fd6ee
+          Action: "android.intent.action.MAIN"
+        9cf378f in.startv.hotstar.dplus/in.startv.hotstar.rocky.launch.splash.SplashActivity filter 7c26a1c
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      in.startv.hotstar.action.WATCH:
+        7c3e625 in.startv.hotstar.dplus/in.startv.hotstar.rocky.launch.deeplink.DeeplinkActivity filter 911bdab
+          Action: "in.startv.hotstar.action.WATCH"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      z.broadcast.action.DESTROY:
+        2ec8738 in.startv.hotstar.dplus/com.hotstar.transform.acrsdk.receivers.AcrSDKStartServiceReceiver filter d38d311
+          Action: "z.broadcast.action.START"
+          Action: "z.broadcast.action.STOP"
+          Action: "z.broadcast.action.KILL_SDK"
+          Action: "z.broadcast.action.DESTROY"
+          Action: "z.broadcast.action.CONFIG_UPDATE"
+          Action: "z.broadcast.action.ACTION_LOW_PRIORITY_OR_NO_PERM"
+      android.intent.action.BATTERY_OKAY:
+        d35644e in.startv.hotstar.dplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 69fa96f
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        abd0550 in.startv.hotstar.dplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 5f9d349
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        275267c in.startv.hotstar.dplus/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d835b05
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        187775a in.startv.hotstar.dplus/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 6a76d8b
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      z.broadcast.action.ACTION_LOW_PRIORITY_OR_NO_PERM:
+        2ec8738 in.startv.hotstar.dplus/com.hotstar.transform.acrsdk.receivers.AcrSDKStartServiceReceiver filter d38d311
+          Action: "z.broadcast.action.START"
+          Action: "z.broadcast.action.STOP"
+          Action: "z.broadcast.action.KILL_SDK"
+          Action: "z.broadcast.action.DESTROY"
+          Action: "z.broadcast.action.CONFIG_UPDATE"
+          Action: "z.broadcast.action.ACTION_LOW_PRIORITY_OR_NO_PERM"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        f3d97b2 in.startv.hotstar.dplus/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 71e0303
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.PACKAGE_REPLACED:
+        2924c in.startv.hotstar.dplus/com.hotstar.transform.basedatasdk.receivers.BaseSDKBroadcastReceiver filter c73a295
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        275267c in.startv.hotstar.dplus/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d835b05
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      z.broadcast.action.START:
+        2ec8738 in.startv.hotstar.dplus/com.hotstar.transform.acrsdk.receivers.AcrSDKStartServiceReceiver filter d38d311
+          Action: "z.broadcast.action.START"
+          Action: "z.broadcast.action.STOP"
+          Action: "z.broadcast.action.KILL_SDK"
+          Action: "z.broadcast.action.DESTROY"
+          Action: "z.broadcast.action.CONFIG_UPDATE"
+          Action: "z.broadcast.action.ACTION_LOW_PRIORITY_OR_NO_PERM"
+      z.broadcast.action.CONFIG_UPDATE:
+        2ec8738 in.startv.hotstar.dplus/com.hotstar.transform.acrsdk.receivers.AcrSDKStartServiceReceiver filter d38d311
+          Action: "z.broadcast.action.START"
+          Action: "z.broadcast.action.STOP"
+          Action: "z.broadcast.action.KILL_SDK"
+          Action: "z.broadcast.action.DESTROY"
+          Action: "z.broadcast.action.CONFIG_UPDATE"
+          Action: "z.broadcast.action.ACTION_LOW_PRIORITY_OR_NO_PERM"
+      com.google.android.c2dm.intent.RECEIVE:
+        842aa02 in.startv.hotstar.dplus/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 3bb2f13
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        d35644e in.startv.hotstar.dplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 69fa96f
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        d2c2e68 in.startv.hotstar.dplus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter e63a281
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        d2c2e68 in.startv.hotstar.dplus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter e63a281
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        2924c in.startv.hotstar.dplus/com.hotstar.transform.basedatasdk.receivers.BaseSDKBroadcastReceiver filter c73a295
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        d2c2e68 in.startv.hotstar.dplus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter e63a281
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      z.broadcast.action.STOP:
+        2ec8738 in.startv.hotstar.dplus/com.hotstar.transform.acrsdk.receivers.AcrSDKStartServiceReceiver filter d38d311
+          Action: "z.broadcast.action.START"
+          Action: "z.broadcast.action.STOP"
+          Action: "z.broadcast.action.KILL_SDK"
+          Action: "z.broadcast.action.DESTROY"
+          Action: "z.broadcast.action.CONFIG_UPDATE"
+          Action: "z.broadcast.action.ACTION_LOW_PRIORITY_OR_NO_PERM"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        2924c in.startv.hotstar.dplus/com.hotstar.transform.basedatasdk.receivers.BaseSDKBroadcastReceiver filter c73a295
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        abd0550 in.startv.hotstar.dplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 5f9d349
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      z.broadcast.action.KILL_SDK:
+        2ec8738 in.startv.hotstar.dplus/com.hotstar.transform.acrsdk.receivers.AcrSDKStartServiceReceiver filter d38d311
+          Action: "z.broadcast.action.START"
+          Action: "z.broadcast.action.STOP"
+          Action: "z.broadcast.action.KILL_SDK"
+          Action: "z.broadcast.action.DESTROY"
+          Action: "z.broadcast.action.CONFIG_UPDATE"
+          Action: "z.broadcast.action.ACTION_LOW_PRIORITY_OR_NO_PERM"
+      com.hotstar.transformSdkBase.PRIORITY_ACTION:
+        d03cfaa in.startv.hotstar.dplus/com.hotstar.transform.basedatasdk.receivers.PriorityReceiver filter b61679b
+          Action: "com.hotstar.transformSdkBase.PRIORITY_ACTION"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        7c9c914 in.startv.hotstar.dplus/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 5a6e5bd
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        2924c in.startv.hotstar.dplus/com.hotstar.transform.basedatasdk.receivers.BaseSDKBroadcastReceiver filter c73a295
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      ALARM_FP_ACTION:
+        1a73c76 in.startv.hotstar.dplus/com.hotstar.transform.acrsdk.receivers.FPReceiver filter 1e4e277
+          Action: "ALARM_FP_ACTION"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        cb5af26 in.startv.hotstar.dplus/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 21d5767
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      ALARM_PERIODIC_CHECK:
+        a7edee4 in.startv.hotstar.dplus/com.hotstar.transform.acrsdk.receivers.ServiceRestartReceiver filter 8468f4d
+          Action: "ALARM_PERIODIC_CHECK"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.clevertap.PUSH_EVENT:
+        1e97cfe in.startv.hotstar.dplus/in.startv.hotstar.rocky.notification.NotificationCTAService filter ef3cc5f
+          Action: "com.clevertap.PUSH_EVENT"
+      com.google.firebase.MESSAGING_EVENT:
+        4046280 in.startv.hotstar.dplus/in.startv.hotstar.rocky.notification.HotstarFcmTokenListenerService filter ae120b9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        ddc6b0a in.startv.hotstar.dplus/com.google.firebase.messaging.FirebaseMessagingService filter 332cf7b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.exoplayer.downloadService.action.INIT:
+        68d26ac in.startv.hotstar.dplus/com.hotstar.android.downloads.ExoDownloadService filter ea0f75
+          Action: "com.google.android.exoplayer.downloadService.action.INIT"
+          Category: "android.intent.category.DEFAULT"
+      com.clevertap.BG_EVENT:
+        bfc0198 in.startv.hotstar.dplus/com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService filter 6592df1 permission android.permission.BIND_JOB_SERVICE
+          Action: "com.clevertap.BG_EVENT"
+
+Domain verification status:
+  in.startv.hotstar.dplus:
+    ID: 71adb6fb-dc42-445b-9eb2-d3209a380133
+    Signatures: [62:15:F0:0B:AA:4B:F1:8B:AB:57:92:FC:79:6B:FC:55:55:91:72:40:F1:4F:7C:7E:67:2D:95:68:88:D7:5C:96]
+    Domain verification state:
+      hotstarid.onelink.me: none
+      www.hotstar.com: none
+      api.juspay.in: none
+      sandbox.juspay.in: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          hotstarid.onelink.me
+          www.hotstar.com
+          api.juspay.in
+          sandbox.juspay.in
+
+Registered ContentProviders:
+  in.startv.hotstar.dplus/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{11852a4 in.startv.hotstar.dplus/com.google.firebase.perf.provider.FirebasePerfProvider}
+  in.startv.hotstar.dplus/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{f61580d in.startv.hotstar.dplus/com.google.firebase.provider.FirebaseInitProvider}
+  in.startv.hotstar.dplus/com.facebook.internal.FacebookInitProvider:
+    Provider{c54a3c2 in.startv.hotstar.dplus/com.facebook.internal.FacebookInitProvider}
+  in.startv.hotstar.dplus/com.hotstar.transform.basedatasdk.db.ConfigContentProvider:
+    Provider{1d9f510 in.startv.hotstar.dplus/com.hotstar.transform.basedatasdk.db.ConfigContentProvider}
+  in.startv.hotstar.dplus/com.cocos.game.content.AppProvider:
+    Provider{cd86809 in.startv.hotstar.dplus/com.cocos.game.content.AppProvider}
+  in.startv.hotstar.dplus/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{7cd3a0e in.startv.hotstar.dplus/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  in.startv.hotstar.dplus/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{ee62c2f in.startv.hotstar.dplus/com.google.android.gms.ads.MobileAdsInitProvider}
+  in.startv.hotstar.dplus/androidx.core.content.FileProvider:
+    Provider{4d1523c in.startv.hotstar.dplus/androidx.core.content.FileProvider}
+  in.startv.hotstar.dplus/com.myelin.myelinexoplayer.MyelinCheckupProvider:
+    Provider{a967bc5 in.startv.hotstar.dplus/com.myelin.myelinexoplayer.MyelinCheckupProvider}
+
+ContentProvider Authorities:
+  [in.startv.hotstar.dplus.firebaseinitprovider]:
+    Provider{f61580d in.startv.hotstar.dplus/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{b26e91a in.startv.hotstar.dplus}
+  [in.startv.hotstar.dplus.MyelinCheckupProvider]:
+    Provider{a967bc5 in.startv.hotstar.dplus/com.myelin.myelinexoplayer.MyelinCheckupProvider}
+      applicationInfo=ApplicationInfo{eb35c4b in.startv.hotstar.dplus}
+  [in.startv.hotstar.dplus.FacebookInitProvider]:
+    Provider{c54a3c2 in.startv.hotstar.dplus/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{57f5628 in.startv.hotstar.dplus}
+  [in.startv.hotstar.dplus.lifecycle-process]:
+    Provider{7cd3a0e in.startv.hotstar.dplus/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{e680f41 in.startv.hotstar.dplus}
+  [in.startv.hotstar.dplus.fileprovider]:
+    Provider{4d1523c in.startv.hotstar.dplus/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{43a7ce6 in.startv.hotstar.dplus}
+  [in.startv.hotstar.dplus.firebaseperfprovider]:
+    Provider{11852a4 in.startv.hotstar.dplus/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{ed97227 in.startv.hotstar.dplus}
+  [in.startv.hotstar.dplus.db.ConfigContentProvider]:
+    Provider{1d9f510 in.startv.hotstar.dplus/com.hotstar.transform.basedatasdk.db.ConfigContentProvider}
+      applicationInfo=ApplicationInfo{487acd4 in.startv.hotstar.dplus}
+  [in.startv.hotstar.dplus.mobileadsinitprovider]:
+    Provider{ee62c2f in.startv.hotstar.dplus/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{4655e7d in.startv.hotstar.dplus}
+  [in.startv.hotstar.dplus.appProvider]:
+    Provider{cd86809 in.startv.hotstar.dplus/com.cocos.game.content.AppProvider}
+      applicationInfo=ApplicationInfo{3a18172 in.startv.hotstar.dplus}
+
+Key Set Manager:
+  [in.startv.hotstar.dplus]
+      Signing KeySets: 5654
+
+Packages:
+  Package [in.startv.hotstar.dplus] (6407f1f):
+    userId=10400
+    pkg=Package{12bc26c in.startv.hotstar.dplus}
+    codePath=/data/app/~~I2zwBj1NZ7BZD86YFW9yeg==/in.startv.hotstar.dplus-1UPAEKToZhUfFS5v6NXjEQ==
+    resourcePath=/data/app/~~I2zwBj1NZ7BZD86YFW9yeg==/in.startv.hotstar.dplus-1UPAEKToZhUfFS5v6NXjEQ==
+    legacyNativeLibraryDir=/data/app/~~I2zwBj1NZ7BZD86YFW9yeg==/in.startv.hotstar.dplus-1UPAEKToZhUfFS5v6NXjEQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1106 minSdk=16 targetSdk=30
+    minExtensionVersions=[]
+    versionName=12.2.8
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.MAIN }]
+    dataDir=/data/user/0/in.startv.hotstar.dplus
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 13:20:49
+    lastUpdateTime=2022-11-30 13:20:50
+    packageSource=0
+    signatures=PackageSignatures{21bccca version:2, signatures:[85bcdd46], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.GET_TASKS
+      android.permission.RECORD_AUDIO
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_CONTACTS
+      android.permission.CHANGE_WIFI_STATE
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      android.permission.BLUETOOTH
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.android.vending.BILLING
+      android.permission.VIBRATE
+      android.permission.CAMERA
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.WAKE_LOCK
+      android.permission.READ_EXTERNAL_STORAGE
+      net.one97.paytm.upi.provider.permission.READ_MODES
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=48249 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 13:20:50
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false
+        android.permission.READ_PHONE_STATE: granted=false
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false
+        android.permission.READ_MEDIA_AUDIO: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false
+        android.permission.READ_CONTACTS: granted=false
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      in.startv.hotstar.dplus
+    com.google.android.apps.diagnosticstool:
+      in.startv.hotstar.dplus
+    com.google.android.settings.intelligence:
+      in.startv.hotstar.dplus
+    com.google.android.apps.accessibility.voiceaccess:
+      in.startv.hotstar.dplus
+    in.startv.hotstar.dplus:
+      com.google.android.documentsui
+      com.verizon.services
+      com.google.android.projection.gearhead
+      com.google.android.apps.nbu.files
+      com.google.android.apps.recorder
+      com.google.android.apps.tips
+      com.google.android.wfcactivation
+      com.google.android.tetheringentitlement
+      com.google.android.apps.messaging
+      com.google.android.apps.safetyhub
+      com.google.android.carrierlocation
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.restore
+      com.google.android.googlequicksearchbox
+      com.google.android.dialer
+      com.google.android.as
+      com.google.android.settings.intelligence
+      com.google.android.GoogleCamera
+      com.google.android.setupwizard
+      com.google.android.calculator
+      com.android.chrome
+      com.google.android.deskclock
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.calendar
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.google.android.youtube
+      com.google.android.marvin.talkback
+      com.google.android.contacts
+      com.google.android.apps.docs
+      com.google.android.videos
+      com.google.android.apps.accessibility.voiceaccess
+      com.google.android.inputmethod.latin
+      com.google.android.apps.youtube.music
+      com.google.android.gm
+      [app id 10195 not installed]
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.shannon.rcsservice
+      com.google.android.pixel.setupwizard
+      com.google.android.cellbroadcastreceiver
+      net.eagin.software.android.dejaloYa
+      radiotime.player
+      org.malwarebytes.antimalware
+      com.kizeetech.newankaradesigns
+      com.zoho.assist.agent
+      com.mcdonalds.app
+      com.catdaddy.cat22
+      com.lyrebirdstudio.photo_editor_pro
+      com.pikoo.app
+      com.mikewheelermedia
+      com.frankthebrilliant.app
+      com.brit.swift.minimal
+      com.fitapp
+      com.brit.swiftdark.substratum
+      com.subsplashconsulting.s_NKSKD3
+      deepfinity.android
+      com.king.blossomblast
+      com.bitsmedia.android.muslimpro
+      com.yahoo.mobile.client.android.weather
+      com.simplehabit.simplehabitapp
+      com.ludia.jurassicworld
+      com.accuweather.android
+      com.cooyostudio.marble.blast
+      com.pranavpandey.rotation
+      com.nikitadev.irregularverbspro
+      com.Wifi.lte5g.lte4g.lte3g.speedtest.Internetspeed
+      com.clearchannel.iheartradio.controller
+      com.utorrent.client.pro
+      com.unvoid.borealis
+      com.osheden.azulox
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [in.startv.hotstar.dplus]
+    path: /data/app/~~I2zwBj1NZ7BZD86YFW9yeg==/in.startv.hotstar.dplus-1UPAEKToZhUfFS5v6NXjEQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1036264
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [in.startv.hotstar.dplus]
+     base.apk - 1061

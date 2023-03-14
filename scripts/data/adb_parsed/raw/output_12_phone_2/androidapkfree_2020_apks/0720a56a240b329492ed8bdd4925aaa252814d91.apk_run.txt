@@ -1,0 +1,824 @@
+Activity Resolver Table:
+  Schemes:
+      duolingo:
+        736378d com.duolingo/.splash.LaunchActivity filter b10cd42
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "duolingo"
+          Authority: "home": -1
+          Authority: "lesson": -1
+          Authority: "o": -1
+          Authority: "practice": -1
+          Authority: "premium": -1
+          Authority: "profile": -1
+          Authority: "skill": -1
+          Authority: "switch_course": -1
+          Authority: "shop": -1
+          Authority: "reset_password": -1
+          Authority: "leaderboard": -1
+          Authority: "stories": -1
+        736378d com.duolingo/.splash.LaunchActivity filter 7bdb153
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "duolingo"
+      https:
+        736378d com.duolingo/.splash.LaunchActivity filter fdfa90
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.duolingo.com": -1
+          Authority: "ar.duolingo.com": -1
+          Authority: "cs.duolingo.com": -1
+          Authority: "de.duolingo.com": -1
+          Authority: "el.duolingo.com": -1
+          Authority: "es.duolingo.com": -1
+          Authority: "fr.duolingo.com": -1
+          Authority: "hi.duolingo.com": -1
+          Authority: "hu.duolingo.com": -1
+          Authority: "id.duolingo.com": -1
+          Authority: "it.duolingo.com": -1
+          Authority: "ja.duolingo.com": -1
+          Authority: "ko.duolingo.com": -1
+          Authority: "nl-nl.duolingo.com": -1
+          Authority: "pl.duolingo.com": -1
+          Authority: "pt.duolingo.com": -1
+          Authority: "ro.duolingo.com": -1
+          Authority: "ru.duolingo.com": -1
+          Authority: "th.duolingo.com": -1
+          Authority: "tr.duolingo.com": -1
+          Authority: "uk.duolingo.com": -1
+          Authority: "vi.duolingo.com": -1
+          Authority: "stories.duolingo.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{PREFIX: /course/}"
+          Path: "PatternMatcher{PREFIX: /skill/}"
+          Path: "PatternMatcher{PREFIX: /users/}"
+          Path: "PatternMatcher{PREFIX: /u/}"
+          Path: "PatternMatcher{PREFIX: /c/}"
+          Path: "PatternMatcher{PREFIX: /p/}"
+          Path: "PatternMatcher{LITERAL: /shop}"
+          Path: "PatternMatcher{LITERAL: /leaderboard}"
+          Path: "PatternMatcher{GLOB: /reset_password/i}"
+          Path: "PatternMatcher{GLOB: /home}"
+          Path: "PatternMatcher{PREFIX: /stories}"
+          AutoVerify=true
+        736378d com.duolingo/.splash.LaunchActivity filter 9dbbf89
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "blast.duolingo.com": -1
+          Path: "PatternMatcher{PREFIX: /redirect/}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        3e27b8e com.duolingo/.app.LoginActivity filter 6e80faf
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        c7b0af2 com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6e59543
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        3f4ba54 com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f11dfd
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        80d27c0 com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e369cf9
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        2aae43e com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter a42429f
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        d0ec29a com.duolingo/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter baff7cb
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        80d27c0 com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e369cf9
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        96e8ba8 com.duolingo/com.facebook.CampaignTrackingReceiver filter e8ed6c1
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        2866e66 com.duolingo/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 1c445a7
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      zendesk.support:
+        5f02fbc com.duolingo/zendesk.support.DeepLinkingBroadcastReceiver filter d37cb45
+          Action: "zendesk.support"
+      android.intent.action.BATTERY_LOW:
+        c7b0af2 com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6e59543
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        47cffec com.duolingo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bbb0fb5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        47cffec com.duolingo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bbb0fb5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        47cffec com.duolingo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bbb0fb5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        3f4ba54 com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f11dfd
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        86d064a com.duolingo/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 59269bb
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.duolingo.action.PRACTICE_ALARM:
+        d7d3d16 com.duolingo/.notifications.NotificationIntentService filter bf3e697
+          Action: "com.duolingo.action.FOLLOW_BACK"
+          Action: "com.duolingo.action.REMIND_LATER"
+          Action: "com.duolingo.action.PRACTICE_LATER_ALARM"
+          Action: "com.duolingo.action.PRACTICE_ALARM"
+      com.duolingo.action.PRACTICE_LATER_ALARM:
+        d7d3d16 com.duolingo/.notifications.NotificationIntentService filter bf3e697
+          Action: "com.duolingo.action.FOLLOW_BACK"
+          Action: "com.duolingo.action.REMIND_LATER"
+          Action: "com.duolingo.action.PRACTICE_LATER_ALARM"
+          Action: "com.duolingo.action.PRACTICE_ALARM"
+      com.google.firebase.MESSAGING_EVENT:
+        d302ed8 com.duolingo/.notifications.FcmIntentService filter ed9f231
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        f8814a2 com.duolingo/com.google.firebase.messaging.FirebaseMessagingService filter a865533
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.duolingo.action.FOLLOW_BACK:
+        d7d3d16 com.duolingo/.notifications.NotificationIntentService filter bf3e697
+          Action: "com.duolingo.action.FOLLOW_BACK"
+          Action: "com.duolingo.action.REMIND_LATER"
+          Action: "com.duolingo.action.PRACTICE_LATER_ALARM"
+          Action: "com.duolingo.action.PRACTICE_ALARM"
+      android.accounts.AccountAuthenticator:
+        6e56084 com.duolingo/.core.account.AccountService filter d2a806d
+          Action: "android.accounts.AccountAuthenticator"
+      com.duolingo.action.REMIND_LATER:
+        d7d3d16 com.duolingo/.notifications.NotificationIntentService filter bf3e697
+          Action: "com.duolingo.action.FOLLOW_BACK"
+          Action: "com.duolingo.action.REMIND_LATER"
+          Action: "com.duolingo.action.PRACTICE_LATER_ALARM"
+          Action: "com.duolingo.action.PRACTICE_ALARM"
+
+Domain verification status:
+  com.duolingo:
+    ID: d72b4f3c-f450-42b5-938d-6a90d04437d9
+    Signatures: [12:33:FF:6D:E4:C7:0E:F4:D7:DE:AE:54:AF:15:B1:67:FC:7C:FD:25:39:51:7B:D2:17:58:70:F3:CB:77:17:31]
+    Domain verification state:
+      id.duolingo.com: verified
+      hi.duolingo.com: verified
+      it.duolingo.com: verified
+      de.duolingo.com: verified
+      cs.duolingo.com: verified
+      ru.duolingo.com: verified
+      tr.duolingo.com: verified
+      fr.duolingo.com: verified
+      blast.duolingo.com: verified
+      uk.duolingo.com: verified
+      th.duolingo.com: verified
+      ko.duolingo.com: verified
+      pl.duolingo.com: verified
+      www.duolingo.com: verified
+      ar.duolingo.com: verified
+      pt.duolingo.com: none
+      hu.duolingo.com: none
+      el.duolingo.com: none
+      ja.duolingo.com: none
+      stories.duolingo.com: none
+      es.duolingo.com: none
+      ro.duolingo.com: none
+      nl-nl.duolingo.com: none
+      vi.duolingo.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          id.duolingo.com
+          hi.duolingo.com
+          it.duolingo.com
+          de.duolingo.com
+          cs.duolingo.com
+          ru.duolingo.com
+          tr.duolingo.com
+          fr.duolingo.com
+          blast.duolingo.com
+          uk.duolingo.com
+          th.duolingo.com
+          ko.duolingo.com
+          pl.duolingo.com
+          www.duolingo.com
+          ar.duolingo.com
+          pt.duolingo.com
+          hu.duolingo.com
+          el.duolingo.com
+          ja.duolingo.com
+          stories.duolingo.com
+          es.duolingo.com
+          ro.duolingo.com
+          nl-nl.duolingo.com
+          vi.duolingo.com
+
+Registered ContentProviders:
+  com.duolingo/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{181bf6f com.duolingo/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.duolingo/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{b6c847c com.duolingo/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.duolingo/androidx.core.content.FileProvider:
+    Provider{17a6105 com.duolingo/androidx.core.content.FileProvider}
+  com.duolingo/zendesk.support.SupportSdkStartupProvider:
+    Provider{989055a com.duolingo/zendesk.support.SupportSdkStartupProvider}
+  com.duolingo/androidx.work.impl.WorkManagerInitializer:
+    Provider{c94e38b com.duolingo/androidx.work.impl.WorkManagerInitializer}
+  com.duolingo/com.squareup.picasso.PicassoProvider:
+    Provider{13b6c68 com.duolingo/com.squareup.picasso.PicassoProvider}
+  com.duolingo/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{1c50881 com.duolingo/com.google.firebase.provider.FirebaseInitProvider}
+  com.duolingo/com.facebook.internal.FacebookInitProvider:
+    Provider{e421d26 com.duolingo/com.facebook.internal.FacebookInitProvider}
+  com.duolingo/com.facebook.ads.AudienceNetworkContentProvider:
+    Provider{86c2d67 com.duolingo/com.facebook.ads.AudienceNetworkContentProvider}
+  com.duolingo/zendesk.belvedere.BelvedereFileProvider:
+    Provider{8ee714 com.duolingo/zendesk.belvedere.BelvedereFileProvider}
+
+ContentProvider Authorities:
+  [com.duolingo.zendesk.support.SupportSdkStartupProvider]:
+    Provider{989055a com.duolingo/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{14b6589 com.duolingo}
+  [com.duolingo.lifecycle-process]:
+    Provider{181bf6f com.duolingo/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{700298e com.duolingo}
+  [com.duolingo.firebaseinitprovider]:
+    Provider{1c50881 com.duolingo/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{98f25af com.duolingo}
+  [com.duolingo.AudienceNetworkContentProvider]:
+    Provider{86c2d67 com.duolingo/com.facebook.ads.AudienceNetworkContentProvider}
+      applicationInfo=ApplicationInfo{3c88dbc com.duolingo}
+  [com.duolingo.mobileadsinitprovider]:
+    Provider{b6c847c com.duolingo/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{2fbd145 com.duolingo}
+  [com.duolingo.FacebookInitProvider]:
+    Provider{e421d26 com.duolingo/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{f59509a com.duolingo}
+  [com.duolingo.com.squareup.picasso]:
+    Provider{13b6c68 com.duolingo/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{b26dcb com.duolingo}
+  [com.duolingo.belvedere2.attachments]:
+    Provider{8ee714 com.duolingo/zendesk.belvedere.BelvedereFileProvider}
+      applicationInfo=ApplicationInfo{f6ec9a8 com.duolingo}
+  [com.duolingo.workmanager-init]:
+    Provider{c94e38b com.duolingo/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{38d3cc1 com.duolingo}
+  [com.duolingo.fileprovider]:
+    Provider{17a6105 com.duolingo/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{9ebdc66 com.duolingo}
+
+Key Set Manager:
+  [com.duolingo]
+      Signing KeySets: 307088
+
+Packages:
+  Package [com.duolingo] (956bf98):
+    userId=10123
+    pkg=Package{fe013f1 com.duolingo}
+    codePath=/data/app/~~Akes2Uqd6_W1-iHdQU6hUg==/com.duolingo-sGbXTztByFbIBO1IA8MjeQ==
+    resourcePath=/data/app/~~Akes2Uqd6_W1-iHdQU6hUg==/com.duolingo-sGbXTztByFbIBO1IA8MjeQ==
+    legacyNativeLibraryDir=/data/app/~~Akes2Uqd6_W1-iHdQU6hUg==/com.duolingo-sGbXTztByFbIBO1IA8MjeQ==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=992 minSdk=22 targetSdk=29
+    minExtensionVersions=[]
+    versionName=4.79.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=PackageImpl{fe013f1 com.duolingo}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[]
+    dataDir=/data/user/0/com.duolingo
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-28 12:26:53
+    firstInstallTime=2022-11-28 12:26:53
+    lastUpdateTime=2022-11-28 12:26:53
+    signatures=PackageSignatures{c3bf32f version:3, signatures:[283d0627], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.VIBRATE
+      android.permission.GET_ACCOUNTS
+      android.permission.RECORD_AUDIO
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.CAMERA
+      com.google.android.c2dm.permission.RECEIVE
+      com.android.vending.BILLING
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.READ_APP_BADGE
+      com.oppo.launcher.permission.READ_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.sec.android.provider.badge.permission.READ: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=52013 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+SkippingApks:
+  name : 100Game_MOVISTAR_4x3_KU84_2009_2.0.9.apk
+  name : 100Game_PERSONAL_4x4_PF36_2009_2.0.2.apk
+  name : 149_companion-release.apk
+  name : Adalyst_ZTA.apk
+  name : AirtelStub.apk
+  name : AlticeMusic_2.3.apk
+  name : AmazonMDIP_CAN.apk
+  name : AmazonShopping-32bit.apk
+  name : AmazonShopping_CAN.apk
+  name : AppCenter_v5.9.18-6851_signed-aligned-signing.apk
+  name : BellTVWidget.apk
+  name : ClaroContenedor_Full.apk
+  name : ClaroContenedor_Stub.apk
+  name : ClaroJuegos_Stub.apk
+  name : CombinedStarter_T31-14.05.00-build_5265-Release-signed-aligned-pd.apk
+  name : DeviceCheckup_TLS.apk
+  name : DigitalKey.apk
+  name : HPSClient.apk
+  name : HpsAgreement.apk
+  name : Ignite-Singtel.apk
+  name : Ignite-Tigo.apk
+  name : Ignite-aoneSamsungAgent_8.1.098-5783_release.apk
+  name : Ignite-attMexico.apk
+  name : Ignite-timSamsungAgent_7.1.300-5521_release.apk
+  name : KT114Provider2.apk
+  name : KTAuth.apk
+  name : KTCustomerService.apk
+  name : KTHiddenMenu.apk
+  name : KTOneStore.apk
+  name : KTPushNotiService.apk
+  name : KTServiceAgent.apk
+  name : KTServiceMenu.apk
+  name : KTUsimManager.apk
+  name : LGUGPSnWPS.apk
+  name : LGUHiddenMenu.apk
+  name : LGUMiniCustomerCenter.apk
+  name : LGUOZStore.apk
+  name : LGUplusTsmProxy.apk
+  name : MDIP-TIM_O2UK_DTDE_VFAU_OPTUSAU_3IT_sdk-30.apk
+  name : MDIP.apk
+  name : MaftPreloadManagerAndroidApp-MovistarMX.apk
+  name : MaftPreloadManagerAndroidApp-TEF_LATAM.apk
+  name : MaftPreloadManagerAndroidApp-release-signed-tagged.apk
+  name : MeuTIM.apk
+  name : MinhaOi.apk
+  name : MovitarPlayTGU_b_stub_v1.1_20180517.apk
+  name : Musica_VIVA_v1.1.apk
+  name : MyAccount_FMC.apk
+  name : MyAccount_GLW.apk
+  name : MyAccount_VMC.apk
+  name : MyApps-1.7.2-logoff-obson-prodSamsungRelease.apk
+  name : MyBell.apk
+  name : MyGalaxy.apk
+  name : MyGalaxy_NEBANGS.apk
+  name : MyRogers.apk
+  name : MySingtel.apk
+  name : MyTELUS.apk
+  name : NaverV_N.apk
+  name : OPENMarketHiddenMenu.apk
+  name : OiApps.apk
+  name : OiAppsClube.apk
+  name : OiRecarga.apk
+  name : OiWiFi.apk
+  name : Omc.apk
+  name : OnStart_Notification_V30.apk
+  name : OneStoreService.apk
+  name : ProductSearch.apk
+  name : Push_To_Talk_BMC.apk
+  name : RRO_NBS_stk1.apk
+  name : RRO_NBS_stk2.apk
+  name : SEIOAgent.apk
+  name : SFRJeux-8.2.2-logoff-obson-samsungRelease.apk
+  name : SKTHiddenMenu.apk
+  name : SKTMemberShip.apk
+  name : SKTOneStore.apk
+  name : SYSdll.apk
+  name : SafetyCleaner.apk
+  name : SamsungCarKeyFw.apk
+  name : SamsungPayStub.apk
+  name : SelfCareMobile-6.0.3-prod-signed.apk
+  name : SktUsimService.apk
+  name : SmartPush.apk
+  name : TPhoneOnePackage.apk
+  name : TPhoneSetup.apk
+  name : TWorld.apk
+  name : TelcelContenedor_Full.apk
+  name : UnifiedVVM.apk
+  name : Upday.apk
+  name : UserManual.apk
+  name : VivoAppsClube.apk
+  name : VivoMaisApps.apk
+  name : WebManual.apk
+  name : app-a1telekomaustriaSamsung-1.0.73.108(841)-release.apk
+  name : appcloud_oobe_hutchison-release_V4.3.4.6.apk
+  name : appcloud_oobe_samsungDeutscheTelekom-release_V5.2.4.1.apk
+  name : appcloud_oobe_samsungGlobal-release_V5.0.0.0.apk
+  name : appcloud_oobe_samsungOrange-release_V5.2.8.1.apk
+  name : appcloud_oobe_samsungVodafone-release_V5.2.4.6.apk
+  name : che_notification_6.apk
+  name : entelPlay_20122016.apk
+  name : entel_peru_6-10.apk
+  name : instagram-stub-BR.apk
+  name : instagram-stub.apk
+  name : instagram-stub_33-1-8.apk
+  name : kolbi_5.0.19.apk
+  name : koodo.apk
+  name : messenger-stub-BR.apk
+  name : messenger-stub_33-1-8.apk
+  name : messenger_stub.apk
+  name : miTelcel_Stub.apk
+  name : mySaskTel.apk
+  name : myflow_cww_6-3-2-131.apk
+  name : noticias_aro_52.apk
+  name : samsung_club_bo_4.3.4.apk
+  name : samsung_club_uy_access_release_v1_3.apk
+  name : samsungclub_py.apk
+  name : samsungclub_py_3-7-1.apk
+  name : samsungclub_uy.apk
+  name : signatureClub.apk
+  name : tickantel_1.0_stub.apk
+  name : trendystub_1.apk
+  name : tuapp_1.0_stub.apk
+  name : veramas_1.0_stub.apk
+  name : veratv_1.0_stub.apk
+  name : videotron_usercentre_plus.apk
+  name : virginmobile_mybenefits.apk
+  name : SearchSelector.apk
+
+Queries:
+  system apps queryable: false
+  queries via package name:
+  queries via intent:
+    [com.samsung.android.bixby.service,com.samsung.android.bixby.agent]:
+      com.duolingo
+    com.google.android.apps.messaging:
+      com.duolingo
+  queryable via interaction:
+    User 0:
+      [com.wssyncmldm,com.sec.enterprise.mdm.services.simpin,com.sec.android.app.bluetoothtest,com.sec.android.app.applinker,com.android.providers.settings,com.samsung.android.tadownloader,com.samsung.android.stickercenter,com.samsung.android.sume.nn.service,com.samsung.android.bixby.wakeup,com.sec.android.app.hwmoduletest,com.android.wallpaperbackup,com.sec.android.sdhms,com.sec.android.app.quicktool,com.sec.modem.settings,com.android.inputdevices,com.samsung.android.biometrics.app.setting,com.sec.android.app.SecSetupWizard,com.sec.android.emergencylauncher,com.sec.android.app.desktoplauncher,com.samsung.android.aircommandmanager,com.samsung.android.peripheral.framework,com.samsung.android.app.dressroom,com.samsung.android.app.settings.bixby,com.sec.sve,com.sec.android.app.dexonpc,com.samsung.android.svcagent,com.samsung.android.bbc.bbcagent,com.sem.factoryapp,com.samsung.android.vtcamerasettings,com.sec.android.app.parser,com.samsung.android.forest,com.sec.app.RilErrorNotifier,com.samsung.android.bluelightfilter,com.sec.android.app.personalization,com.samsung.android.smartswitchassistant,android,com.android.location.fused,com.sec.mhs.smarttethering,com.android.settings,com.android.dynsystem,com.samsung.android.hdmapp,com.samsung.android.brightnessbackupservice,com.qti.snapdragon.qdcm_ff,com.samsung.android.fmm,com.skms.android.agent,com.samsung.android.lool,com.sec.android.diagmonagent,com.samsung.android.knox.attestation,com.sec.epdg,com.samsung.android.cameraxservice,com.android.server.telecom,com.samsung.android.app.omcagent,com.qualcomm.qti.services.secureui,com.sec.factory.camera,com.sec.usbsettings,com.samsung.clipboardsaveservice,com.sec.automation,com.sec.imsservice,com.samsung.android.knox.pushmanager,com.android.localtransport,com.samsung.gpuwatchapp,com.samsung.android.smartface,com.samsung.aasaservice,com.sec.android.app.factorykeystring,com.samsung.android.provider.filterprovider,com.samsung.accessibility,com.sec.android.smartfpsadjuster,com.android.keychain,com.sec.imslogger,com.samsung.android.localeoverlaymanager,com.samsung.sait.sohservice,com.sec.bcservice,com.sec.android.emergencymode.service,com.samsung.cmfa.AuthTouch,com.sec.android.app.wlantest,com.sec.android.app.apex,com.samsung.SMT,com.sec.android.systemupdate,com.sec.android.soagent,com.samsung.android.da.daagent,com.samsung.android.camerasdkservice,com.samsung.android.themecenter,com.sec.android.app.servicemodeapp,com.sec.factory,com.samsung.android.dqagent,com.samsung.android.shortcutbackupservice,com.samsung.android.mdecservice,com.samsung.android.cmfa.framework]:
+        com.duolingo
+      com.duolingo:
+        com.google.android.webview
+      com.samsung.android.honeyboard:
+        com.duolingo
+      [com.google.android.gms,com.google.android.gsf]:
+        com.duolingo
+      com.android.vending:
+        com.duolingo
+      com.google.android.webview:
+        com.duolingo
+  queryable via uses-library:
+
+Package Changes:
+  Sequence number=1043
+  User 0:
+    seq=2, package=com.android.bluetooth
+    seq=5, package=com.sec.unifiedwfc
+    seq=13, package=com.google.android.gms
+    seq=68, package=com.google.android.apps.messaging
+    seq=95, package=org.tlhInganHol.android.klingonassistant
+    seq=98, package=org.eehouse.android.xw4
+    seq=99, package=de.audioattack.openlink
+    seq=172, package=com.example.permissiongrant
+    seq=188, package=com.example.permissiontest
+    seq=226, package=com.example.rtpc
+    seq=269, package=com.google.android.trichromelibrary_530414133
+    seq=270, package=com.google.android.webview
+    seq=404, package=com.samsung.android.forest
+    seq=406, package=com.samsung.android.app.sharelive
+    seq=412, package=com.samsung.android.sm.policy
+    seq=414, package=com.microsoft.appmanager
+    seq=417, package=com.google.android.youtube
+    seq=418, package=com.google.android.apps.maps
+    seq=419, package=com.example.testpermissionsdk
+    seq=420, package=com.example.bevigil
+    seq=421, package=com.microsoft.skydrive
+    seq=429, package=com.kajda.fuelio
+    seq=434, package=me.piere.christmas
+    seq=436, package=ak.alizandro.smartaudiobookplayer
+    seq=438, package=amazing.three_d.icons
+    seq=440, package=com.first75.voicerecorder2pro
+    seq=442, package=digifit.virtuagym.client.android
+    seq=453, package=izzl.gruvy.pack
+    seq=455, package=com.android.chrome
+    seq=456, package=com.in.w3d
+    seq=458, package=com.luzapplications.alessio.wallooppro
+    seq=460, package=com.alesp.orologiomondiale.pro
+    seq=464, package=com.yuanwofei.cardemulator.pro
+    seq=473, package=com.microblink.photomath
+    seq=475, package=studio14.application.caeluswhite
+    seq=479, package=com.perfectapps.muviz
+    seq=483, package=net.xnano.android.ftpserver
+    seq=485, package=org.khankids.android
+    seq=487, package=com.aezowie.mycalpro
+    seq=489, package=com.bialy.zonelauncher
+    seq=493, package=com.indigomadina.tabloid
+    seq=497, package=com.mixplorer
+    seq=501, package=de.dwd.warnapp
+    seq=503, package=oos.dark.material
+    seq=505, package=com.intsig.camscanner
+    seq=509, package=com.indigomadina.spheroid
+    seq=511, package=com.footej.camera
+    seq=515, package=net.sourceforge.photomaton18
+    seq=518, package=com.cray.software.justreminderpro
+    seq=520, package=com.sofascore.results
+    seq=532, package=jp.gr.java_conf.soboku.batterymeter
+    seq=534, package=com.iioannou.phototools.pro
+    seq=541, package=com.happening.studios.swipeforfacebookfree
+    seq=543, package=com.rookiestudio.perfectviewer
+    seq=546, package=com.osheden.azulox
+    seq=553, package=com.pakdata.easyurdu
+    seq=561, package=indigomadina.furatto.ui
+    seq=567, package=o.o.joey
+    seq=571, package=com.overlook.android.fing
+    seq=573, package=ru.involta.metro
+    seq=577, package=hastamev.oneuidark.com
+    seq=582, package=com.compscieddy.writeaday
+    seq=584, package=vitalypanov.personalaccounting.pro
+    seq=586, package=com.protectstar.ishredder.pro
+    seq=588, package=prism.kustom.pack
+    seq=594, package=com.androidev.xhafe.earthquakepro
+    seq=598, package=com.franco.doze
+    seq=604, package=com.changemystyle.gentlewakeuppro
+    seq=610, package=studio14.application.juno
+    seq=612, package=com.thegrammaruniversity.drfrench
+    seq=614, package=com.medisafe.android.client
+    seq=623, package=com.bergin_it.gpsscatterplot
+    seq=625, package=com.zemana.msecurity
+    seq=627, package=be.inet.rainwidget.donate
+    seq=629, package=com.bergin_it.gpsattitude
+    seq=631, package=ru.yandex.music
+    seq=633, package=com.roamingsquirrel.android.calculator_plus
+    seq=640, package=com.franco.kernel
+    seq=642, package=com.magdalm.wifimasterpassword
+    seq=645, package=com.nll.asr
+    seq=648, package=com.crypter.cryptocyrrency
+    seq=650, package=com.kimcy929.screenrecorder
+    seq=652, package=com.pavelrekun.skit.premium
+    seq=660, package=com.wiseschematics.reeq01
+    seq=664, package=com.SearingMedia.Parrot
+    seq=674, package=thanhletranngoc.calculator.pro
+    seq=680, package=com.edzondm.linebitse
+    seq=682, package=dkc.video.hdbox
+    seq=685, package=com.ideashower.readitlater.pro
+    seq=687, package=com.scan.srbd
+    seq=690, package=com.cinelensesapp.android.cinelenses
+    seq=692, package=de.j4velin.wallpaperChanger
+    seq=695, package=app.stellio.player
+    seq=701, package=com.united.art.lwp28
+    seq=705, package=com.kmshack.mute
+    seq=707, package=com.kokoschka.michael.crypto
+    seq=709, package=com.sreerag.merlen
+    seq=711, package=com.choco.silentmode
+    seq=713, package=ru.v_a_v.netmonitorpro
+    seq=717, package=com.tools.netgel.netxpro
+    seq=719, package=com.orbit.orbitsmarthome.pro
+    seq=721, package=com.n7mobile.nplayer
+    seq=725, package=com.mrfarts.lwp24
+    seq=728, package=com.lb.app_manager
+    seq=732, package=com.jndapp.redline.linex.iconpack
+    seq=734, package=com.sunnytapps.sunnytrack
+    seq=738, package=yo.app
+    seq=740, package=kha.prog.mikrotik
+    seq=746, package=com.fullreader
+    seq=753, package=com.magdalm.freewifipassword
+    seq=755, package=com.foobnix.pro.pdf.reader
+    seq=761, package=com.twodoor.bookly
+    seq=763, package=com.iioannou.phototipspro
+    seq=765, package=com.jndapp.limeline.linex.iconpack
+    seq=771, package=com.itunestoppodcastplayer.app
+    seq=773, package=studio14.application.caelusblack
+    seq=775, package=dp.ws.popcorntime
+    seq=777, package=com.light.simplephotowidget
+    seq=782, package=dev.into.liveno.pro
+    seq=787, package=com.spartacus
+    seq=791, package=ru.englishtenses.index
+    seq=795, package=com.david.android.languageswitch
+    seq=797, package=com.getmimo
+    seq=799, package=de.ozerov.fully
+    seq=806, package=com.cloud3squared.meteogram.pro
+    seq=808, package=com.notebloc.app
+    seq=810, package=com.bhanu.smartnavbar
+    seq=812, package=com.icecoldapps.synchronizeultimate
+    seq=815, package=skr.susanta.mangos.premium
+    seq=819, package=com.franco.servicely
+    seq=821, package=studio14.application.hera
+    seq=823, package=com.veitch.learntomaster.bgtp
+    seq=826, package=com.shaiban.audioplayer.mplayer
+    seq=832, package=io.lingvist.android
+    seq=834, package=com.indigomadina.anoobul
+    seq=841, package=com.shazam.encore.android
+    seq=845, package=com.jetblacksoftware.xmastreewallpaperpaid
+    seq=847, package=at.bitfire.davdroid
+    seq=850, package=com.fitapp
+    seq=854, package=com.coccco28.athys
+    seq=858, package=com.rupiapps.cameraprocontrol
+    seq=862, package=com.magdalm.apkextractor
+    seq=868, package=com.mobilefootie.fotmobpro
+    seq=870, package=com.surodev.arielapro
+    seq=874, package=com.agilebits.onepassword
+    seq=876, package=com.free.compress.decompress.all.files
+    seq=880, package=com.samruston.twitter
+    seq=885, package=com.paget96.lspeed
+    seq=887, package=il.talent.parking.premium
+    seq=889, package=com.iudesk.android.photo.editor
+    seq=892, package=com.OGR.vipnotesfull
+    seq=895, package=com.adguard.android
+    seq=899, package=com.ottplay.ottplay
+    seq=901, package=com.ddm.iptools
+    seq=905, package=com.busuu.android.enc
+    seq=909, package=com.mobisystems.fileman
+    seq=911, package=com.codium.hydrocoach.pro
+    seq=913, package=org.oftn.rainpaper
+    seq=918, package=com.medium.reader
+    seq=920, package=com.stark.griddle
+    seq=922, package=com.fbreader
+    seq=924, package=com.countercultured.irc4android
+    seq=928, package=com.bitsmedia.android.muslimpro
+    seq=930, package=com.stoik.mdscan
+    seq=934, package=com.gmail.jmartindev.timetune
+    seq=939, package=com.unvoid.borealis
+    seq=941, package=com.fitifyworkouts.bodyweight.workoutapp
+    seq=943, package=com.brit.swiftblack.layers
+    seq=945, package=net.darksky.darksky
+    seq=947, package=ua.com.streamsoft.pingtoolspro
+    seq=949, package=com.mixplorer.silver
+    seq=954, package=com.aathifmahir.iconpack.kora.free
+    seq=956, package=com.zima.mobileobservatorypro
+    seq=958, package=com.brit.swiftdark.substratum
+    seq=960, package=com.light.textwidget
+    seq=962, package=in.stylishtext
+    seq=965, package=com.osheden.raya.black
+    seq=969, package=com.mobisystems.editor.office_registered
+    seq=971, package=com.ffffstudio.kojicam
+    seq=973, package=com.indigomadina.tigadpro
+    seq=975, package=com.lingodeer.plus
+    seq=977, package=com.waze
+    seq=979, package=com.filepursuit.filepursuitpro
+    seq=981, package=ginlemon.flowerfree
+    seq=983, package=com.mobisystems.office
+    seq=986, package=co.windyapp.android
+    seq=988, package=com.protectstar.ishredder.mil
+    seq=990, package=com.plexapp.android
+    seq=992, package=com.mobilefootie.wc2010
+    seq=996, package=org.eobdfacile.android
+    seq=998, package=pl.solidexplorer2
+    seq=1000, package=com.coconuts.webnavigator
+    seq=1002, package=com.devsense.symbolab
+    seq=1006, package=com.itemstudio.castro.pro
+    seq=1008, package=com.kaeriasarl.vps
+    seq=1010, package=com.lingodeer
+    seq=1012, package=com.simplehabit.simplehabitapp
+    seq=1014, package=com.feravolt.fdeai
+    seq=1016, package=com.applay.overlay
+    seq=1020, package=com.ludia.jurassicworld
+    seq=1022, package=com.accuweather.android
+    seq=1024, package=com.hotheadgames.google.free.ks2
+    seq=1031, package=com.google.android.contacts
+    seq=1034, package=com.sygic.aura
+    seq=1036, package=com.fgol.HungrySharkEvolution
+    seq=1038, package=com.ocapps.routerpage
+    seq=1040, package=eu.faircode.netguard
+    seq=1042, package=com.duolingo
+
+
+Dexopt state:
+  [com.duolingo]
+    path: /data/app/~~Akes2Uqd6_W1-iHdQU6hUg==/com.duolingo-sGbXTztByFbIBO1IA8MjeQ==/base.apk
+      arm64: [status=verify] [reason=install]
+
+
+HeimdAllFS state:
+  [com.duolingo]
+    path: /data/app/~~Akes2Uqd6_W1-iHdQU6hUg==/com.duolingo-sGbXTztByFbIBO1IA8MjeQ==/base.apk
+    Compressed? False
+  [ Summary ]
+    # of packages: 1 / # of packages in DATA: 1 (1)
+    Compressed apks info - sum of orig size: 0 / sum of compr size : 0
+
+
+Compiler stats:
+  [com.duolingo]
+     base.apk - 2689
+
+APEX session state:
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+
+Historical install Logging info(9/10):
+  []
+    1669660012411: "Ver":"", "Session":"0", "Write":"18", "Commit":"822", "Stage":"1", "Copy":"14", "Sign":"1", "DexOpt"
+    :"4", 
+Snapshot statistics
+   Unrecorded-hits: 46  Cork-level: 0
+   Summary stats               TotBlds     TotUsed     TotCork     BigBlds    ShortLvd     TotTime     MaxTime
+          0:03         now          16       27179           0           0           1          18           5
+          1:03        0:03         137      778565           0           6          36         284          22
+          2:03        1:03         165     1004853           0          11          37         519          55
+          3:03        2:03         128      854967           0           4          29         281          23
+          4:03        3:03         144      906254           0          13          36         572         145
+          5:03        4:03         145     1068711           0           7          36         369          41
+          6:04        5:03         191     1192597           0          10          42         464          63
+          7:04        6:04         200     1248415           0           6          48         366          15
+          8:04        7:04         178     1217286           0           7          50         357          56
+          9:04        8:04         182     1173315           0           5          37         371          51
+    5:17:25:00         now        5402    33800700           0         190        1159       12684         148
+
+   Build times                  <= 1ms      <= 2ms      <= 5ms     <= 10ms     <= 20ms     <= 50ms    <= 100ms     > 100ms
+          0:03         now          13           0           3           0           0           0           0           0
+          1:03        0:03         103           5          19           4           5           1           0           0
+          2:03        1:03         115           5          19          15           6           4           1           0
+          3:03        2:03          90           7          19           9           2           1           0           0
+          4:03        3:03         100           7          19           7           7           2           1           1
+          5:03        4:03         101          10          23           4           5           2           0           0
+          6:04        5:03         145           4          28           5           6           1           2           0
+          7:04        6:04         147           9          31           8           5           0           0           0
+          8:04        7:04         135           5          29           3           5           0           1           0
+          9:04        8:04         141           5          28           3           2           2           1           0
+    5:17:25:00         now        3758         187        1027         262         127          27           9           5
+
+   Use counters                   <= 1        <= 2        <= 5       <= 10       <= 20       <= 50      <= 100       > 100
+          0:03         now           1           0           0           1           1           5           0           8
+          1:03        0:03          29           3           4           4           6           9          11          71
+          2:03        1:03          35           1           1           3           4          19          18          84
+          3:03        2:03          26           1           2           4           6           8           9          72
+          4:03        3:03          35           1           0           6           8           9          11          74
+          5:03        4:03          33           0           3           5           2          11          17          74
+          6:04        5:03          38           3           1           5           7          10          11         116
+          7:04        6:04          43           3           2           5           7          19          16         105
+          8:04        7:04          45           5           0           5           6           8          11          98
+          9:04        8:04          29           4           4           2           9          16          13         105
+    5:17:25:00         now         935         106         117         163         200         380         451        3049

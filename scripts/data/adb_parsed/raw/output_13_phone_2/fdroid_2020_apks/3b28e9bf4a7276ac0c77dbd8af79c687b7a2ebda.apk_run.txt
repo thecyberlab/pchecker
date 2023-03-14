@@ -1,0 +1,302 @@
+Activity Resolver Table:
+  Full MIME Types:
+      text/plain:
+        f5fea32 net.kourlas.voipms_sms/.newConversation.NewConversationActivity filter 9de2383
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Base MIME Types:
+      text:
+        f5fea32 net.kourlas.voipms_sms/.newConversation.NewConversationActivity filter 9de2383
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Schemes:
+      voipmssms:
+        a446fe7 net.kourlas.voipms_sms/.conversation.ConversationActivity filter ce63794
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "voipmssms"
+          Authority: "conversation": -1
+          AutoVerify=true
+        a446fe7 net.kourlas.voipms_sms/.conversation.ConversationActivity filter 36cf23d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "voipmssms"
+          Authority: "message": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      .preferences.SynchronizationPreferencesActivity:
+        e0343e2 net.kourlas.voipms_sms/.preferences.activities.SynchronizationPreferencesActivity filter 8def373
+          Action: ".preferences.SynchronizationPreferencesActivity"
+          Category: "android.intent.category.DEFAULT"
+      .preferences.DidPreferencesActivity:
+        cb93900 net.kourlas.voipms_sms/.preferences.activities.DidPreferencesActivity filter 3b7539
+          Action: ".preferences.DidPreferencesActivity"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        ec9e701 net.kourlas.voipms_sms/.conversations.ConversationsActivity filter c1fd9a6
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      .preferences.DidsPreferencesActivity:
+        a1e777e net.kourlas.voipms_sms/.preferences.activities.DidsPreferencesActivity filter d574df
+          Action: ".preferences.DidsPreferencesActivity"
+          Category: "android.intent.category.DEFAULT"
+      .preferences.DatabasePreferencesActivity:
+        ea52818 net.kourlas.voipms_sms/.preferences.activities.DatabasePreferencesActivity filter 9199271
+          Action: ".preferences.DatabasePreferencesActivity"
+          Category: "android.intent.category.DEFAULT"
+      .preferences.NotificationsPreferencesActivity:
+        ed0adc4 net.kourlas.voipms_sms/.preferences.activities.NotificationsPreferencesActivity filter d63e4ad
+          Action: ".preferences.NotificationsPreferencesActivity"
+          Category: "android.intent.category.DEFAULT"
+      .preferences.AppearancePreferencesActivity:
+        a68d8a net.kourlas.voipms_sms/.preferences.activities.AppearancePreferencesActivity filter 8c67ffb
+          Action: ".preferences.AppearancePreferencesActivity"
+          Category: "android.intent.category.DEFAULT"
+      .signin.SignInActivity:
+        30ce230 net.kourlas.voipms_sms/.signIn.SignInActivity filter a871ea9
+          Action: ".signin.SignInActivity"
+          Category: "android.intent.category.DEFAULT"
+      .preferences.AccountPreferencesActivity:
+        7f8e52c net.kourlas.voipms_sms/.preferences.activities.AccountPreferencesActivity filter 6d52bf5
+          Action: ".preferences.AccountPreferencesActivity"
+          Category: "android.intent.category.DEFAULT"
+      .preferences.NetworkPreferencesActivity:
+        ee7f856 net.kourlas.voipms_sms/.preferences.activities.NetworkPreferencesActivity filter ef320d7
+          Action: ".preferences.NetworkPreferencesActivity"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        f5fea32 net.kourlas.voipms_sms/.newConversation.NewConversationActivity filter 9de2383
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        bc56d3a net.kourlas.voipms_sms/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f335deb
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        b95f15c net.kourlas.voipms_sms/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 789fc65
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        e3ec748 net.kourlas.voipms_sms/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b22f9e1
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        b0d2306 net.kourlas.voipms_sms/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 1e7edc7
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        e3ec748 net.kourlas.voipms_sms/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b22f9e1
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.ACTION_LOCKED_BOOT_COMPLETED:
+        695bc2e net.kourlas.voipms_sms/.sms.receivers.SyncBootReceiver filter 6ab53cf
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_LOCKED_BOOT_COMPLETED"
+      android.intent.action.BATTERY_LOW:
+        bc56d3a net.kourlas.voipms_sms/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f335deb
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        91d0ff4 net.kourlas.voipms_sms/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6f4531d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        91d0ff4 net.kourlas.voipms_sms/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6f4531d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        695bc2e net.kourlas.voipms_sms/.sms.receivers.SyncBootReceiver filter 6ab53cf
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_LOCKED_BOOT_COMPLETED"
+        91d0ff4 net.kourlas.voipms_sms/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6f4531d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        b95f15c net.kourlas.voipms_sms/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 789fc65
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        3f53760 net.kourlas.voipms_sms/androidx.work.impl.diagnostics.DiagnosticsReceiver filter a880419
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        cc86992 net.kourlas.voipms_sms/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter a6b9f63
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Domain verification status:
+
+Registered ContentProviders:
+  net.kourlas.voipms_sms/androidx.work.impl.WorkManagerInitializer:
+    Provider{a5754e4 net.kourlas.voipms_sms/androidx.work.impl.WorkManagerInitializer}
+
+ContentProvider Authorities:
+  [net.kourlas.voipms_sms.workmanager-init]:
+    Provider{a5754e4 net.kourlas.voipms_sms/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{483907e net.kourlas.voipms_sms}
+
+Key Set Manager:
+  [net.kourlas.voipms_sms]
+      Signing KeySets: 6424
+
+Packages:
+  Package [net.kourlas.voipms_sms] (17f19df):
+    userId=10281
+    pkg=Package{c6e9d13 net.kourlas.voipms_sms}
+    codePath=/data/app/~~3Jd5RkF0Hq75JQmTsTgZ9w==/net.kourlas.voipms_sms-MxAFBqWTrkCvaZWFdWA6sg==
+    resourcePath=/data/app/~~3Jd5RkF0Hq75JQmTsTgZ9w==/net.kourlas.voipms_sms-MxAFBqWTrkCvaZWFdWA6sg==
+    legacyNativeLibraryDir=/data/app/~~3Jd5RkF0Hq75JQmTsTgZ9w==/net.kourlas.voipms_sms-MxAFBqWTrkCvaZWFdWA6sg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=124 minSdk=21 targetSdk=30
+    minExtensionVersions=[]
+    versionName=0.6.6-fdroid
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/net.kourlas.voipms_sms
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2022-11-30 20:54:11
+    lastUpdateTime=2022-11-30 20:54:12
+    packageSource=0
+    signatures=PackageSignatures{22ed57d version:3, signatures:[2ca6d72f], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.READ_CONTACTS
+      android.permission.READ_PROFILE
+      android.permission.CALL_PHONE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.VIBRATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=105473 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 20:54:12
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      net.kourlas.voipms_sms
+    com.google.android.apps.diagnosticstool:
+      net.kourlas.voipms_sms
+    com.google.android.settings.intelligence:
+      net.kourlas.voipms_sms
+    com.google.android.apps.maps:
+      net.kourlas.voipms_sms
+    com.google.android.apps.photos:
+      net.kourlas.voipms_sms
+    com.google.android.youtube:
+      net.kourlas.voipms_sms
+    com.google.android.apps.accessibility.voiceaccess:
+      net.kourlas.voipms_sms
+    com.google.android.apps.youtube.music:
+      net.kourlas.voipms_sms
+    com.zhiliaoapp.musically:
+      net.kourlas.voipms_sms
+    com.truecaller:
+      net.kourlas.voipms_sms
+    deezer.android.app:
+      net.kourlas.voipms_sms
+    com.duolingo:
+      net.kourlas.voipms_sms
+    vsin.t16_funny_photo:
+      net.kourlas.voipms_sms
+    com.shazam.android:
+      net.kourlas.voipms_sms
+    com.dv.adm:
+      net.kourlas.voipms_sms
+    com.zappcues.gamingmode:
+      net.kourlas.voipms_sms
+    com.cam001.selfie:
+      net.kourlas.voipms_sms
+    com.jio.myjio:
+      net.kourlas.voipms_sms
+  queryable via interaction:
+    User 0:
+      [com.android.location.fused,com.android.localtransport,com.google.android.iwlan,com.android.wallpaperbackup,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem,com.android.settings,com.android.server.telecom,com.android.inputdevices,android,com.android.providers.settings,com.google.SSRestartDetector,com.android.keychain,com.android.qns]:
+        net.kourlas.voipms_sms
+      com.google.android.permissioncontroller:
+        net.kourlas.voipms_sms
+      net.kourlas.voipms_sms:
+        [com.android.location.fused,com.android.localtransport,com.google.android.iwlan,com.android.wallpaperbackup,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem,com.android.settings,com.android.server.telecom,com.android.inputdevices,android,com.android.providers.settings,com.google.SSRestartDetector,com.android.keychain,com.android.qns]
+  queryable via uses-library:
+
+Dexopt state:
+  [net.kourlas.voipms_sms]
+    path: /data/app/~~3Jd5RkF0Hq75JQmTsTgZ9w==/net.kourlas.voipms_sms-MxAFBqWTrkCvaZWFdWA6sg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:66842
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [net.kourlas.voipms_sms]
+     base.apk - 340

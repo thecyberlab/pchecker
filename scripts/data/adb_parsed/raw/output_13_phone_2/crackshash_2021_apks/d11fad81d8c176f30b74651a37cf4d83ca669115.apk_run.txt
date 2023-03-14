@@ -1,0 +1,375 @@
+Activity Resolver Table:
+  Schemes:
+      fb30119633160:
+        76bd9b9 com.cricbuzz.android/com.facebook.CustomTabActivity filter 35841fe
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb30119633160"
+      http:
+        9cb8b68 com.cricbuzz.android/.lithium.app.view.activity.DeeplinkActivity filter 161867
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "www.cricbuzz.com": -1
+          Path: "PatternMatcher{PREFIX: /}"
+        9cb8b68 com.cricbuzz.android/.lithium.app.view.activity.DeeplinkActivity filter b81f614
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "www.cricbuzz.com": -1
+        9cb8b68 com.cricbuzz.android/.lithium.app.view.activity.DeeplinkActivity filter 261d403
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "m.cricbuzz.com": -1
+        9cb8b68 com.cricbuzz.android/.lithium.app.view.activity.DeeplinkActivity filter f925f80
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "m.cricbuzz.com": -1
+          Path: "PatternMatcher{PREFIX: /}"
+        923ad5f com.cricbuzz.android/com.til.colombia.dmp.android.PsA filter 97df3ac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "colombia-sdk"
+          Scheme: "http"
+          Authority: "dl": -1
+          Authority: "www.colombia-sdk.com": -1
+          Path: "PatternMatcher{PREFIX: /dl}"
+      https:
+        9cb8b68 com.cricbuzz.android/.lithium.app.view.activity.DeeplinkActivity filter a943b81
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.cricbuzz.com": -1
+          Path: "PatternMatcher{PREFIX: /}"
+        9cb8b68 com.cricbuzz.android/.lithium.app.view.activity.DeeplinkActivity filter 204d426
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.cricbuzz.com": -1
+        9cb8b68 com.cricbuzz.android/.lithium.app.view.activity.DeeplinkActivity filter 6c80ebd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "m.cricbuzz.com": -1
+        9cb8b68 com.cricbuzz.android/.lithium.app.view.activity.DeeplinkActivity filter ada0cb2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "m.cricbuzz.com": -1
+          Path: "PatternMatcher{PREFIX: /}"
+      colombia-sdk:
+        923ad5f com.cricbuzz.android/com.til.colombia.dmp.android.PsA filter 97df3ac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "colombia-sdk"
+          Scheme: "http"
+          Authority: "dl": -1
+          Authority: "www.colombia-sdk.com": -1
+          Path: "PatternMatcher{PREFIX: /dl}"
+      cricbuzz:
+        1be4c5a com.cricbuzz.android/.lithium.app.view.activity.AppLinkActivity filter e61e8b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "cricbuzz"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        38e94e com.cricbuzz.android/.lithium.app.view.activity.NyitoActivity filter fa54a6f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      .opt_in_noti:
+        6e8b37c com.cricbuzz.android/.lithium.app.view.activity.NotificationSettingsActivity filter 5ac6405
+          Action: ".opt_in_noti"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        5ff212d com.cricbuzz.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f8b0662
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        abfe957 com.cricbuzz.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d190c44
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.net.wifi.WIFI_STATE_CHANGED:
+        de75875 com.cricbuzz.android/.lithium.app.receiver.NetworkChangeReceiver filter 7f2800a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        befc3f3 com.cricbuzz.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 3bca8b0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        de75875 com.cricbuzz.android/.lithium.app.receiver.NetworkChangeReceiver filter 7f2800a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+        ad9a329 com.cricbuzz.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 91726ae
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        8b7d647 com.cricbuzz.android/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter b7a0e74
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.cricbuzz.android.widget.DATA_FETCHED:
+        6ffc07b com.cricbuzz.android/.lithium.app.view.widget.WidgetProvider filter 1ac9e98
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.cricbuzz.android.widget.DATA_FETCHED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        befc3f3 com.cricbuzz.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 3bca8b0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        6206f1 com.cricbuzz.android/.lithium.app.receiver.InstallTrackingReceiver filter 74092d6
+          Action: "com.android.vending.INSTALL_REFERRER"
+        87dbe6b com.cricbuzz.android/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter f50ddc8
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        9b18e61 com.cricbuzz.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter a015d86
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        5ff212d com.cricbuzz.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f8b0662
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        538ac4f com.cricbuzz.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1bb9fdc
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        538ac4f com.cricbuzz.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1bb9fdc
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        538ac4f com.cricbuzz.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1bb9fdc
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        abfe957 com.cricbuzz.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d190c44
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        6ffc07b com.cricbuzz.android/.lithium.app.view.widget.WidgetProvider filter 1ac9e98
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.cricbuzz.android.widget.DATA_FETCHED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        7c048e5 com.cricbuzz.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 932ffba
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        517af9d com.cricbuzz.android/.lithium.app.services.sync.SyncTaskService filter 305cc12 permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+        5918fe3 com.cricbuzz.android/.lithium.app.services.notification.fcm.FcmTokenUpdateService filter 5639de0 permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+        c4a899 com.cricbuzz.android/.lithium.app.services.notification.NotificationSubscriptionTaskService filter e70975e permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        4c3473f com.cricbuzz.android/.lithium.app.services.notification.fcm.FCMService filter 94b80c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        4ae3555 com.cricbuzz.android/com.google.firebase.messaging.FirebaseMessagingService filter 72acb6a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          m.cricbuzz.com
+          www.cricbuzz.com
+          www.colombia-sdk.com
+
+Permissions:
+  Permission [com.cricbuzz.android.permission.C2D_MESSAGE] (c5c0c1b):
+    sourcePackage=com.cricbuzz.android
+    uid=10409 gids=[] type=0 prot=signature
+    perm=PermissionInfo{742e1ca com.cricbuzz.android.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.cricbuzz.android/androidx.core.content.FileProvider:
+    Provider{481df3b com.cricbuzz.android/androidx.core.content.FileProvider}
+  com.cricbuzz.android/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{ff23658 com.cricbuzz.android/com.google.firebase.perf.provider.FirebasePerfProvider}
+  com.cricbuzz.android/com.squareup.picasso.PicassoProvider:
+    Provider{6c023b1 com.cricbuzz.android/com.squareup.picasso.PicassoProvider}
+  com.cricbuzz.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{6955096 com.cricbuzz.android/com.google.firebase.provider.FirebaseInitProvider}
+  com.cricbuzz.android/com.facebook.internal.FacebookInitProvider:
+    Provider{6253417 com.cricbuzz.android/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.cricbuzz.android.fileProvider]:
+    Provider{481df3b com.cricbuzz.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{6c391b8 com.cricbuzz.android}
+  [com.cricbuzz.android.firebaseinitprovider]:
+    Provider{6955096 com.cricbuzz.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{3fb4b91 com.cricbuzz.android}
+  [com.cricbuzz.android.FacebookInitProvider]:
+    Provider{6253417 com.cricbuzz.android/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{62b8af6 com.cricbuzz.android}
+  [com.cricbuzz.android.firebaseperfprovider]:
+    Provider{ff23658 com.cricbuzz.android/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{5254ef7 com.cricbuzz.android}
+  [com.cricbuzz.android.com.squareup.picasso]:
+    Provider{6c023b1 com.cricbuzz.android/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{8fc1164 com.cricbuzz.android}
+
+Key Set Manager:
+  [com.cricbuzz.android]
+      Signing KeySets: 6046
+
+Packages:
+  Package [com.cricbuzz.android] (7f80fcd):
+    userId=10409
+    pkg=Package{83dd234 com.cricbuzz.android}
+    codePath=/data/app/~~YXk-CHImh7LdeJR4wf0Rvg==/com.cricbuzz.android-GaJ34DFvK6Yx4sRs-vCKdg==
+    resourcePath=/data/app/~~YXk-CHImh7LdeJR4wf0Rvg==/com.cricbuzz.android-GaJ34DFvK6Yx4sRs-vCKdg==
+    legacyNativeLibraryDir=/data/app/~~YXk-CHImh7LdeJR4wf0Rvg==/com.cricbuzz.android-GaJ34DFvK6Yx4sRs-vCKdg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1521050309 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=5.03.09
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.facebook.katana]
+    queriesIntents=[Intent { act=androidx.browser.customtabs.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }, Intent { act=android.intent.action.VIEW dat=market:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    dataDir=/data/user/0/com.cricbuzz.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 19:15:56
+    lastUpdateTime=2022-11-30 19:15:57
+    packageSource=0
+    signatures=PackageSignatures{a1533cc version:2, signatures:[9c12e809], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.cricbuzz.android.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      com.cricbuzz.android.permission.C2D_MESSAGE
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.cricbuzz.android.permission.C2D_MESSAGE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=91707 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 19:15:57
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.cricbuzz.android
+    com.google.android.apps.diagnosticstool:
+      com.cricbuzz.android
+    com.google.android.settings.intelligence:
+      com.cricbuzz.android
+    com.google.android.apps.accessibility.voiceaccess:
+      com.cricbuzz.android
+    com.zhiliaoapp.musically:
+      com.cricbuzz.android
+    com.truecaller:
+      com.cricbuzz.android
+    com.dv.adm:
+      com.cricbuzz.android
+    com.zappcues.gamingmode:
+      com.cricbuzz.android
+    com.cricbuzz.android:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.apps.docs
+      ru.iptvremote.android.iptv.pro
+      com.mycompany.app.soulbrowser
+      com.dv.adm
+      com.utorrent.client.pro
+    com.jio.myjio:
+      com.cricbuzz.android
+  queryable via interaction:
+    User 0:
+      [com.android.server.telecom,com.google.android.iwlan,com.android.wallpaperbackup,com.android.qns,com.google.SSRestartDetector,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem,com.android.keychain,android,com.android.location.fused,com.android.providers.settings,com.android.settings,com.android.localtransport,com.android.inputdevices]:
+        com.cricbuzz.android
+      [com.google.android.gsf,com.google.android.gms]:
+        com.cricbuzz.android
+  queryable via uses-library:
+
+Dexopt state:
+  [com.cricbuzz.android]
+    path: /data/app/~~YXk-CHImh7LdeJR4wf0Rvg==/com.cricbuzz.android-GaJ34DFvK6Yx4sRs-vCKdg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:999460
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.cricbuzz.android]
+     base.apk - 789

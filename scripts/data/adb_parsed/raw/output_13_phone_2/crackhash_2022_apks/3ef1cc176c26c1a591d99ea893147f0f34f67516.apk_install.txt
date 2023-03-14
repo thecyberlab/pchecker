@@ -1,0 +1,554 @@
+Activity Resolver Table:
+  Schemes:
+      sleepcycle:
+        8ad003c com.northcube.sleepcycle/.LauncherActivity filter 2ed471a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sleepcycle"
+          Authority: "open": -1
+        f9b79 com.northcube.sleepcycle/.ui.DeepLinkActivity filter 9a40be
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sleepcycle"
+          AutoVerify=true
+      https:
+        8ad003c com.northcube.sleepcycle/.LauncherActivity filter 2cd624b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "sleepcycle.app.link": -1
+          Authority: "sleepcycle.test-app.link": -1
+          AutoVerify=true
+        f9b79 com.northcube.sleepcycle/.ui.DeepLinkActivity filter 25ba51f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "link.sleepcycle.com": -1
+          Path: "PatternMatcher{PREFIX: /weekly-report}"
+          AutoVerify=true
+      genericidp:
+        f35aaca com.northcube.sleepcycle/com.google.firebase.auth.internal.GenericIdpActivity filter 61f743b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        170a758 com.northcube.sleepcycle/com.google.firebase.auth.internal.RecaptchaActivity filter 60440b1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      INCOMING_FRIEND_REQUEST_ACTION:
+        8ad003c com.northcube.sleepcycle/.LauncherActivity filter 667e428
+          Action: "INCOMING_FRIEND_REQUEST_ACTION"
+          Action: "FRIEND_REQUEST_ACCEPTED_ACTION"
+          Action: "WAKEUP_NOTIFICATION_ACTION"
+          Action: "SHARE_CODE_USED_ACTION"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        8ad003c com.northcube.sleepcycle/.LauncherActivity filter 22391c5
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      FRIEND_REQUEST_ACCEPTED_ACTION:
+        8ad003c com.northcube.sleepcycle/.LauncherActivity filter 667e428
+          Action: "INCOMING_FRIEND_REQUEST_ACTION"
+          Action: "FRIEND_REQUEST_ACCEPTED_ACTION"
+          Action: "WAKEUP_NOTIFICATION_ACTION"
+          Action: "SHARE_CODE_USED_ACTION"
+          Category: "android.intent.category.DEFAULT"
+      com.northcube.sleepcycle.SET_SLEEPAID_SOUND:
+        1bf347d com.northcube.sleepcycle/.ui.SelectAlarmSongActivity filter 6159f72
+          Action: "com.northcube.sleepcycle.SELECT_SONG"
+          Action: "com.northcube.sleepcycle.SET_SLEEPAID_SOUND"
+          Category: "android.intent.category.DEFAULT"
+      com.northcube.sleepcycle.UPGRADE_TO_PREMIUM:
+        24ef06c com.northcube.sleepcycle/.ui.sleepsecure.PremiumTrialActivity filter 8657635
+          Action: "com.northcube.sleepcycle.UPGRADE_TO_PREMIUM"
+          Category: "android.intent.category.DEFAULT"
+      com.northcube.sleepcycle.STARTUP_ALARM:
+        18dd827 com.northcube.sleepcycle/.ui.StartupAlarmActivity filter 66b1ad4
+          Action: "com.northcube.sleepcycle.STARTUP_ALARM"
+          Category: "android.intent.category.DEFAULT"
+      SHARE_CODE_USED_ACTION:
+        8ad003c com.northcube.sleepcycle/.LauncherActivity filter 667e428
+          Action: "INCOMING_FRIEND_REQUEST_ACTION"
+          Action: "FRIEND_REQUEST_ACCEPTED_ACTION"
+          Action: "WAKEUP_NOTIFICATION_ACTION"
+          Action: "SHARE_CODE_USED_ACTION"
+          Category: "android.intent.category.DEFAULT"
+      com.northcube.sleepcycle.DATABASE_EDIT:
+        b08541 com.northcube.sleepcycle/.ui.settings.DatabaseSettingsActivity filter 508bae6
+          Action: "com.northcube.sleepcycle.DATABASE_EDIT"
+          Category: "android.intent.category.DEFAULT"
+      WAKEUP_NOTIFICATION_ACTION:
+        8ad003c com.northcube.sleepcycle/.LauncherActivity filter 667e428
+          Action: "INCOMING_FRIEND_REQUEST_ACTION"
+          Action: "FRIEND_REQUEST_ACCEPTED_ACTION"
+          Action: "WAKEUP_NOTIFICATION_ACTION"
+          Action: "SHARE_CODE_USED_ACTION"
+          Category: "android.intent.category.DEFAULT"
+      com.northcube.sleepcycle.INSTRUCTIONS:
+        1f5cfc3 com.northcube.sleepcycle/.ui.InstructionsActivity filter ec91040
+          Action: "com.northcube.sleepcycle.INSTRUCTIONS"
+          Category: "android.intent.category.DEFAULT"
+      com.northcube.sleepcycle.SELECT_SONG:
+        1bf347d com.northcube.sleepcycle/.ui.SelectAlarmSongActivity filter 6159f72
+          Action: "com.northcube.sleepcycle.SELECT_SONG"
+          Action: "com.northcube.sleepcycle.SET_SLEEPAID_SOUND"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        6254c9c com.northcube.sleepcycle/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7e156a5
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        936556e com.northcube.sleepcycle/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b3e140f
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        bf65a7a com.northcube.sleepcycle/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter bd1e22b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        3889688 com.northcube.sleepcycle/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 435b821
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        bf65a7a com.northcube.sleepcycle/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter bd1e22b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        201bed2 com.northcube.sleepcycle/com.google.firebase.iid.FirebaseInstanceIdReceiver filter b4e6ba3
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        6254c9c com.northcube.sleepcycle/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7e156a5
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        930c922 com.northcube.sleepcycle/.TimeChangeReceiver filter 95a2fb3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        37fa446 com.northcube.sleepcycle/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 58a7607
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        37fa446 com.northcube.sleepcycle/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 58a7607
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        37fa446 com.northcube.sleepcycle/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 58a7607
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        936556e com.northcube.sleepcycle/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b3e140f
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.northcube.sleepcycle.ALARM:
+        df4e104 com.northcube.sleepcycle/.AlarmReceiver filter aeb36ed
+          Action: "com.northcube.sleepcycle.ALARM"
+          Category: "com.northcube.sleepcycle.ALARM_SERVICE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        56ba996 com.northcube.sleepcycle/.logic.weeklyreport.OnPackageUpgradeReceiver filter c871917
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        d610970 com.northcube.sleepcycle/.AppUpdateReceiver filter fd154e9
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        c549334 com.northcube.sleepcycle/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 314b55d
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        dda562a com.northcube.sleepcycle/.service.WearableMessageService filter ab3ac1b
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /sleepcycle}"
+
+  Non-Data Actions:
+      com.northcube.sleepcycle.ENTER_FOREGROUND:
+        841aea0 com.northcube.sleepcycle/.service.AlarmService filter 6ec4a59
+          Action: "com.northcube.sleepcycle.SET_ALARM"
+          Action: "com.northcube.sleepcycle.GET_ALARM"
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Action: "com.northcube.sleepcycle.ENTER_FOREGROUND"
+          Action: "com.northcube.sleepcycle.LEAVE_FOREGROUND"
+          Action: "com.northcube.sleepcycle.PLAY_ALARM_SOUND"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND"
+          Category: "com.northcube.sleepcycle.ALARM_SERVICE"
+      com.northcube.sleepcycle.SET_ALARM:
+        841aea0 com.northcube.sleepcycle/.service.AlarmService filter 6ec4a59
+          Action: "com.northcube.sleepcycle.SET_ALARM"
+          Action: "com.northcube.sleepcycle.GET_ALARM"
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Action: "com.northcube.sleepcycle.ENTER_FOREGROUND"
+          Action: "com.northcube.sleepcycle.LEAVE_FOREGROUND"
+          Action: "com.northcube.sleepcycle.PLAY_ALARM_SOUND"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND"
+          Category: "com.northcube.sleepcycle.ALARM_SERVICE"
+      com.northcube.sleepcycle.PLAY_ALARM_SOUND:
+        841aea0 com.northcube.sleepcycle/.service.AlarmService filter 6ec4a59
+          Action: "com.northcube.sleepcycle.SET_ALARM"
+          Action: "com.northcube.sleepcycle.GET_ALARM"
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Action: "com.northcube.sleepcycle.ENTER_FOREGROUND"
+          Action: "com.northcube.sleepcycle.LEAVE_FOREGROUND"
+          Action: "com.northcube.sleepcycle.PLAY_ALARM_SOUND"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND"
+          Category: "com.northcube.sleepcycle.ALARM_SERVICE"
+      com.northcube.sleepcycle.GET_ALARM:
+        841aea0 com.northcube.sleepcycle/.service.AlarmService filter 6ec4a59
+          Action: "com.northcube.sleepcycle.SET_ALARM"
+          Action: "com.northcube.sleepcycle.GET_ALARM"
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Action: "com.northcube.sleepcycle.ENTER_FOREGROUND"
+          Action: "com.northcube.sleepcycle.LEAVE_FOREGROUND"
+          Action: "com.northcube.sleepcycle.PLAY_ALARM_SOUND"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND"
+          Category: "com.northcube.sleepcycle.ALARM_SERVICE"
+      com.northcube.sleepcycle.SNOOZE_ALARM:
+        841aea0 com.northcube.sleepcycle/.service.AlarmService filter 6ec4a59
+          Action: "com.northcube.sleepcycle.SET_ALARM"
+          Action: "com.northcube.sleepcycle.GET_ALARM"
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Action: "com.northcube.sleepcycle.ENTER_FOREGROUND"
+          Action: "com.northcube.sleepcycle.LEAVE_FOREGROUND"
+          Action: "com.northcube.sleepcycle.PLAY_ALARM_SOUND"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND"
+          Category: "com.northcube.sleepcycle.ALARM_SERVICE"
+        b18f61e com.northcube.sleepcycle/.sleepanalysis.SleepAnalysisService filter dd21eff
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Category: "com.northcube.sleepcycle.SLEEP_ANALYSIS_SERVICE"
+      com.northcube.sleepcycle.RESCHEDULE_ALARM:
+        841aea0 com.northcube.sleepcycle/.service.AlarmService filter 6ec4a59
+          Action: "com.northcube.sleepcycle.SET_ALARM"
+          Action: "com.northcube.sleepcycle.GET_ALARM"
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Action: "com.northcube.sleepcycle.ENTER_FOREGROUND"
+          Action: "com.northcube.sleepcycle.LEAVE_FOREGROUND"
+          Action: "com.northcube.sleepcycle.PLAY_ALARM_SOUND"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND"
+          Category: "com.northcube.sleepcycle.ALARM_SERVICE"
+        b18f61e com.northcube.sleepcycle/.sleepanalysis.SleepAnalysisService filter dd21eff
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Category: "com.northcube.sleepcycle.SLEEP_ANALYSIS_SERVICE"
+      com.google.firebase.MESSAGING_EVENT:
+        39faaf6 com.northcube.sleepcycle/com.google.firebase.messaging.FirebaseMessagingService filter 156eef7
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.northcube.sleepcycle.sleepsecure.START_SYNC:
+        2314cc com.northcube.sleepcycle/.sleepsecure.SleepSecureService filter 10e3315
+          Action: "com.northcube.sleepcycle.sleepsecure.START_SYNC"
+      com.northcube.sleepcycle.STOP_ALARM_SOUND:
+        841aea0 com.northcube.sleepcycle/.service.AlarmService filter 6ec4a59
+          Action: "com.northcube.sleepcycle.SET_ALARM"
+          Action: "com.northcube.sleepcycle.GET_ALARM"
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Action: "com.northcube.sleepcycle.ENTER_FOREGROUND"
+          Action: "com.northcube.sleepcycle.LEAVE_FOREGROUND"
+          Action: "com.northcube.sleepcycle.PLAY_ALARM_SOUND"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND"
+          Category: "com.northcube.sleepcycle.ALARM_SERVICE"
+      com.northcube.sleepcycle.LEAVE_FOREGROUND:
+        841aea0 com.northcube.sleepcycle/.service.AlarmService filter 6ec4a59
+          Action: "com.northcube.sleepcycle.SET_ALARM"
+          Action: "com.northcube.sleepcycle.GET_ALARM"
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Action: "com.northcube.sleepcycle.ENTER_FOREGROUND"
+          Action: "com.northcube.sleepcycle.LEAVE_FOREGROUND"
+          Action: "com.northcube.sleepcycle.PLAY_ALARM_SOUND"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND"
+          Category: "com.northcube.sleepcycle.ALARM_SERVICE"
+      com.google.firebase.auth.api.gms.service.START:
+        4d2b1b8 com.northcube.sleepcycle/com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService filter c2beb91
+          Action: "com.google.firebase.auth.api.gms.service.START"
+          Category: "android.intent.category.DEFAULT"
+      com.northcube.sleepcycle.STOP_ALARM:
+        841aea0 com.northcube.sleepcycle/.service.AlarmService filter 6ec4a59
+          Action: "com.northcube.sleepcycle.SET_ALARM"
+          Action: "com.northcube.sleepcycle.GET_ALARM"
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Action: "com.northcube.sleepcycle.ENTER_FOREGROUND"
+          Action: "com.northcube.sleepcycle.LEAVE_FOREGROUND"
+          Action: "com.northcube.sleepcycle.PLAY_ALARM_SOUND"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND"
+          Category: "com.northcube.sleepcycle.ALARM_SERVICE"
+        b18f61e com.northcube.sleepcycle/.sleepanalysis.SleepAnalysisService filter dd21eff
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Category: "com.northcube.sleepcycle.SLEEP_ANALYSIS_SERVICE"
+      com.northcube.sleepcycle.ACTIVATE_ALARM:
+        841aea0 com.northcube.sleepcycle/.service.AlarmService filter 6ec4a59
+          Action: "com.northcube.sleepcycle.SET_ALARM"
+          Action: "com.northcube.sleepcycle.GET_ALARM"
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Action: "com.northcube.sleepcycle.ENTER_FOREGROUND"
+          Action: "com.northcube.sleepcycle.LEAVE_FOREGROUND"
+          Action: "com.northcube.sleepcycle.PLAY_ALARM_SOUND"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND"
+          Category: "com.northcube.sleepcycle.ALARM_SERVICE"
+        b18f61e com.northcube.sleepcycle/.sleepanalysis.SleepAnalysisService filter dd21eff
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Category: "com.northcube.sleepcycle.SLEEP_ANALYSIS_SERVICE"
+      com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY:
+        841aea0 com.northcube.sleepcycle/.service.AlarmService filter 6ec4a59
+          Action: "com.northcube.sleepcycle.SET_ALARM"
+          Action: "com.northcube.sleepcycle.GET_ALARM"
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Action: "com.northcube.sleepcycle.ENTER_FOREGROUND"
+          Action: "com.northcube.sleepcycle.LEAVE_FOREGROUND"
+          Action: "com.northcube.sleepcycle.PLAY_ALARM_SOUND"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND"
+          Category: "com.northcube.sleepcycle.ALARM_SERVICE"
+        b18f61e com.northcube.sleepcycle/.sleepanalysis.SleepAnalysisService filter dd21eff
+          Action: "com.northcube.sleepcycle.ACTIVATE_ALARM"
+          Action: "com.northcube.sleepcycle.SNOOZE_ALARM"
+          Action: "com.northcube.sleepcycle.RESCHEDULE_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM"
+          Action: "com.northcube.sleepcycle.STOP_ALARM_SOUND_ONLY"
+          Category: "com.northcube.sleepcycle.SLEEP_ANALYSIS_SERVICE"
+
+Domain verification status:
+  com.northcube.sleepcycle:
+    ID: 2c1d6eae-76ad-4108-8c75-1bab519484b9
+    Signatures: [0C:FB:46:63:83:1A:0F:B8:D6:97:3A:AD:44:E2:21:A8:BA:78:F7:F6:84:BD:0B:17:D3:B4:4B:EC:82:31:64:84]
+    Domain verification state:
+      sleepcycle.app.link: none
+      sleepcycle.test-app.link: none
+      link.sleepcycle.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          sleepcycle.app.link
+          sleepcycle.test-app.link
+          link.sleepcycle.com
+
+Registered ContentProviders:
+  com.northcube.sleepcycle/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{24545e6 com.northcube.sleepcycle/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.northcube.sleepcycle/androidx.core.content.FileProvider:
+    Provider{8af0727 com.northcube.sleepcycle/androidx.core.content.FileProvider}
+  com.northcube.sleepcycle/androidx.work.impl.WorkManagerInitializer:
+    Provider{5de1dd4 com.northcube.sleepcycle/androidx.work.impl.WorkManagerInitializer}
+  com.northcube.sleepcycle/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{2a17b7d com.northcube.sleepcycle/com.google.firebase.provider.FirebaseInitProvider}
+  com.northcube.sleepcycle/.storage.GenericFileProvider:
+    Provider{20fda72 com.northcube.sleepcycle/.storage.GenericFileProvider}
+
+ContentProvider Authorities:
+  [com.northcube.sleepcycle.lifecycle-process]:
+    Provider{24545e6 com.northcube.sleepcycle/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{b7aeec3 com.northcube.sleepcycle}
+  [com.northcube.sleepcycle.fileprovider]:
+    Provider{8af0727 com.northcube.sleepcycle/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{5e94340 com.northcube.sleepcycle}
+  [com.northcube.sleepcycle.workmanager-init]:
+    Provider{5de1dd4 com.northcube.sleepcycle/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{a4f5279 com.northcube.sleepcycle}
+  [com.northcube.sleepcycle.firebaseinitprovider]:
+    Provider{2a17b7d com.northcube.sleepcycle/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{17d2bbe com.northcube.sleepcycle}
+  [com.northcube.sleepcycle.com.northcube.sleepcycle.genericprovider]:
+    Provider{20fda72 com.northcube.sleepcycle/.storage.GenericFileProvider}
+      applicationInfo=ApplicationInfo{893b41f com.northcube.sleepcycle}
+
+Key Set Manager:
+  [com.northcube.sleepcycle]
+      Signing KeySets: 4656
+
+Packages:
+  Package [com.northcube.sleepcycle] (5a3c67e):
+    userId=10244
+    pkg=Package{aa17df com.northcube.sleepcycle}
+    codePath=/data/app/~~_dXPtKvI_Y1XE1r7eCcTLQ==/com.northcube.sleepcycle-OVSHC7Eu60m00crgqQyqCQ==
+    resourcePath=/data/app/~~_dXPtKvI_Y1XE1r7eCcTLQ==/com.northcube.sleepcycle-OVSHC7Eu60m00crgqQyqCQ==
+    legacyNativeLibraryDir=/data/app/~~_dXPtKvI_Y1XE1r7eCcTLQ==/com.northcube.sleepcycle-OVSHC7Eu60m00crgqQyqCQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=6344 minSdk=23 targetSdk=30
+    minExtensionVersions=[]
+    versionName=3.22.1.6344-release
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.media.browse.MediaBrowserService }]
+    dataDir=/data/user/0/com.northcube.sleepcycle
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 13:04:33
+    lastUpdateTime=2022-11-30 13:04:36
+    packageSource=0
+    signatures=PackageSignatures{12c4c2c version:3, signatures:[a5345e0d], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.WAKE_LOCK
+      android.permission.VIBRATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.ACTIVITY_RECOGNITION
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      android.permission.RECORD_AUDIO
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=49180 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 13:04:36
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_COARSE_LOCATION: granted=false
+        android.permission.ACTIVITY_RECOGNITION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.northcube.sleepcycle
+    com.google.android.apps.diagnosticstool:
+      com.northcube.sleepcycle
+    com.google.android.settings.intelligence:
+      com.northcube.sleepcycle
+    com.google.android.apps.accessibility.voiceaccess:
+      com.northcube.sleepcycle
+    com.northcube.sleepcycle:
+      [com.android.bluetooth,com.google.android.bluetooth.services]
+      com.google.android.googlequicksearchbox
+      com.google.android.youtube
+      com.google.android.apps.youtube.music
+      radiotime.player
+      com.clearchannel.iheartradio.controller
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.northcube.sleepcycle]
+    path: /data/app/~~_dXPtKvI_Y1XE1r7eCcTLQ==/com.northcube.sleepcycle-OVSHC7Eu60m00crgqQyqCQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:61479
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.northcube.sleepcycle]
+     base.apk - 615

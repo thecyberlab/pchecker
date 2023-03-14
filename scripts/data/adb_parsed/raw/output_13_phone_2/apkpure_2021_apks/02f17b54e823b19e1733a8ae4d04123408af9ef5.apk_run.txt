@@ -1,0 +1,287 @@
+Activity Resolver Table:
+  Schemes:
+      anantara:
+        605fed9 com.anantara.android.app/com.okkami.android.app.MainActivity filter 909d09e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "anantara"
+      lineauth:
+        63e58aa com.anantara.android.app/com.linecorp.linesdk.auth.internal.LineAuthenticationCallbackActivity filter 50bbc9b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "lineauth"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        605fed9 com.anantara.android.app/com.okkami.android.app.MainActivity filter ef2277f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.pusher.pushnotifications.OPEN_TRACKING:
+        5db34c com.anantara.android.app/com.pusher.pushnotifications.reporting.OpenNotificationActivity filter d4eaf95
+          Action: "com.pusher.pushnotifications.OPEN_TRACKING"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        55e5650 com.anantara.android.app/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 9575049
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        458b838 com.anantara.android.app/com.learnium.RNDeviceInfo.RNDeviceReceiver filter 537b011
+          Action: "com.android.vending.INSTALL_REFERRER"
+        6199d4e com.anantara.android.app/com.facebook.CampaignTrackingReceiver filter f29ee6f
+          Action: "com.android.vending.INSTALL_REFERRER"
+        45a877c com.anantara.android.app/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 5bba805
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        4fd1fe4 com.anantara.android.app/com.pusher.pushnotifications.reporting.FCMMessageReceiver filter dd63c4d
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.anantara.android.app"
+        b255302 com.anantara.android.app/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 3bb2413
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      io.smooch.NOTIFICATION:
+        e815576 com.anantara.android.app/io.smooch.ui.notification.NotificationReceiver filter 45f8777
+          Action: "io.smooch.NOTIFICATION"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.nfc.cardemulation.action.HOST_APDU_SERVICE:
+        10cc7ac com.anantara.android.app/com.assaabloy.mobilekeys.api.hce.HceService filter 24f9c75 permission android.permission.BIND_NFC_SERVICE
+          Action: "android.nfc.cardemulation.action.HOST_APDU_SERVICE"
+        50f740a com.anantara.android.app/com.saltosystems.justinmobile.sdk.hce.JustinHceService filter 6aba47b permission android.permission.BIND_NFC_SERVICE
+          Action: "android.nfc.cardemulation.action.HOST_APDU_SERVICE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.gcm.ACTION_TASK_READY:
+        ccdf5fe com.anantara.android.app/com.firebase.jobdispatcher.GooglePlayReceiver filter 519515f permission com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+          Action: "com.google.android.gms.gcm.ACTION_TASK_READY"
+      com.google.firebase.MESSAGING_EVENT:
+        6f6405a com.anantara.android.app/com.okkami.android.app.OkkamiFirebaseMessagingService filter e11028b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=2, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        e869f68 com.anantara.android.app/io.invertase.firebase.messaging.RNFirebaseMessagingService filter 653bf81
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        2da4a14 com.anantara.android.app/com.pusher.pushnotifications.fcm.EmptyMessagingService filter 8fbd2bd
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        89c80b2 com.anantara.android.app/io.smooch.core.FcmService filter 5853803
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        61bf380 com.anantara.android.app/com.google.firebase.messaging.FirebaseMessagingService filter 317ddb9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.firebase.jobdispatcher.ACTION_EXECUTE:
+        4c80826 com.anantara.android.app/com.pusher.pushnotifications.reporting.ReportingJobService filter f0b3c67 permission android.permission.BIND_JOB_SERVICE
+          Action: "com.firebase.jobdispatcher.ACTION_EXECUTE"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.anantara.android.app.permission.C2D_MESSAGE] (879e6ff):
+    sourcePackage=com.anantara.android.app
+    uid=10271 gids=[] type=0 prot=signature
+    perm=PermissionInfo{38f35d9 com.anantara.android.app.permission.C2D_MESSAGE}
+
+Registered ContentProviders:
+  com.anantara.android.app/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{1c5964c com.anantara.android.app/com.crashlytics.android.CrashlyticsInitProvider}
+  com.anantara.android.app/com.imagepicker.FileProvider:
+    Provider{fb45695 com.anantara.android.app/com.imagepicker.FileProvider}
+  com.anantara.android.app/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{5333b9b com.anantara.android.app/com.google.firebase.provider.FirebaseInitProvider}
+  com.anantara.android.app/com.facebook.internal.FacebookInitProvider:
+    Provider{7dbcb38 com.anantara.android.app/com.facebook.internal.FacebookInitProvider}
+  com.anantara.android.app/com.RNFetchBlob.Utils.FileProvider:
+    Provider{5d0c711 com.anantara.android.app/com.RNFetchBlob.Utils.FileProvider}
+  com.anantara.android.app/com.reactnativecommunity.webview.RNCWebViewFileProvider:
+    Provider{eb22076 com.anantara.android.app/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+  com.anantara.android.app/com.pusher.pushnotifications.internal.PushNotificationsInitProvider:
+    Provider{91e62e4 com.anantara.android.app/com.pusher.pushnotifications.internal.PushNotificationsInitProvider}
+  com.anantara.android.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{469c34d com.anantara.android.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.anantara.android.app/androidx.core.content.FileProvider:
+    Provider{517ce02 com.anantara.android.app/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.anantara.android.app.FacebookInitProvider]:
+    Provider{7dbcb38 com.anantara.android.app/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{8833ccc com.anantara.android.app}
+  [com.anantara.android.app.fileprovider]:
+    Provider{eb22076 com.anantara.android.app/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+      applicationInfo=ApplicationInfo{e2f3b15 com.anantara.android.app}
+  [com.anantara.android.app.pushnotificationsinitprovider]:
+    Provider{91e62e4 com.anantara.android.app/com.pusher.pushnotifications.internal.PushNotificationsInitProvider}
+      applicationInfo=ApplicationInfo{55abe2a com.anantara.android.app}
+  [com.anantara.android.app.lifecycle-process]:
+    Provider{469c34d com.anantara.android.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{c0ff41b com.anantara.android.app}
+  [com.anantara.android.app.provider]:
+    Provider{5d0c711 com.anantara.android.app/com.RNFetchBlob.Utils.FileProvider}
+      applicationInfo=ApplicationInfo{70d59b8 com.anantara.android.app}
+  [com.anantara.android.app.crashlyticsinitprovider]:
+    Provider{1c5964c com.anantara.android.app/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{e557391 com.anantara.android.app}
+  [com.anantara.android.app.firebaseinitprovider]:
+    Provider{5333b9b com.anantara.android.app/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{6be92f6 com.anantara.android.app}
+
+Key Set Manager:
+  [com.anantara.android.app]
+      Signing KeySets: 5022
+
+Packages:
+  Package [com.anantara.android.app] (2fb6f7):
+    userId=10271
+    pkg=Package{da3bbb2 com.anantara.android.app}
+    codePath=/data/app/~~dr8fjPWf7uqC_-wiie6ZpQ==/com.anantara.android.app-KkG9nhlckzjtgvIc_ZioEA==
+    resourcePath=/data/app/~~dr8fjPWf7uqC_-wiie6ZpQ==/com.anantara.android.app-KkG9nhlckzjtgvIc_ZioEA==
+    legacyNativeLibraryDir=/data/app/~~dr8fjPWf7uqC_-wiie6ZpQ==/com.anantara.android.app-KkG9nhlckzjtgvIc_ZioEA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=35 minSdk=23 targetSdk=29
+    minExtensionVersions=[]
+    versionName=3.59.8
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.anantara.android.app
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 11:31:58
+    lastUpdateTime=2022-11-30 11:32:00
+    packageSource=0
+    signatures=PackageSignatures{b6a605f version:2, signatures:[4e005135], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    declared permissions:
+      com.anantara.android.app.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.CAMERA
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_PHONE_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.GET_TASKS
+      android.permission.VIBRATE
+      android.permission.BLUETOOTH
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.ACCESS_COARSE_LOCATION
+      com.android.vending.CHECK_LICENSE
+      android.permission.WAKE_LOCK
+      com.anantara.android.app.permission.C2D_MESSAGE
+      com.sec.android.provider.badge.permission.READ
+      com.sec.android.provider.badge.permission.WRITE
+      com.htc.launcher.permission.READ_SETTINGS
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.anantara.android.app.permission.C2D_MESSAGE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=51130 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 11:32:00
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.anantara.android.app
+    com.google.android.apps.diagnosticstool:
+      com.anantara.android.app
+    com.google.android.settings.intelligence:
+      com.anantara.android.app
+    com.google.android.apps.accessibility.voiceaccess:
+      com.anantara.android.app
+  queryable via interaction:
+    User 0:
+      [com.android.inputdevices,com.google.SSRestartDetector,com.android.providers.settings,com.android.location.fused,com.google.android.settings.future.biometrics.faceenroll,com.android.localtransport,com.android.settings,com.android.keychain,com.android.qns,com.google.android.iwlan,com.android.wallpaperbackup,android,com.android.server.telecom,com.android.dynsystem]:
+        com.anantara.android.app
+      [com.google.android.gsf,com.google.android.gms]:
+        com.anantara.android.app
+  queryable via uses-library:
+
+Dexopt state:
+  [com.anantara.android.app]
+    path: /data/app/~~dr8fjPWf7uqC_-wiie6ZpQ==/com.anantara.android.app-KkG9nhlckzjtgvIc_ZioEA==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:154339
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.anantara.android.app]
+     base.apk - 833

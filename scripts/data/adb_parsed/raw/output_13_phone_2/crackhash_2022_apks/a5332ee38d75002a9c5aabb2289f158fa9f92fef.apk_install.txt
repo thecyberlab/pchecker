@@ -1,0 +1,317 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        814817d calm.sleep.headspace.relaxingsounds/com.calm.sleep.activities.landing.LandingActivity filter 3dd6872
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "thecalmsleep.com": -1
+          Path: "PatternMatcher{LITERAL: /payments}"
+      fbconnect:
+        aecb879 calm.sleep.headspace.relaxingsounds/com.facebook.CustomTabActivity filter d9599be
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.calm.sleep.headspace.relaxingsounds": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        54464c3 calm.sleep.headspace.relaxingsounds/com.calm.sleep.activities.splash.SplashActivity filter 6a48140
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        80ba93b calm.sleep.headspace.relaxingsounds/com.calm.sleep.receiver.BatteryBroadcastReceiver filter 9293858
+          Action: "android.intent.action.BATTERY_LOW"
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_CHANGED"
+        9819e17 calm.sleep.headspace.relaxingsounds/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7258204
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        1c7fdb1 calm.sleep.headspace.relaxingsounds/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9592296
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        47e8a1f calm.sleep.headspace.relaxingsounds/com.calm.sleep.receiver.BootCompletedIntentReceiver filter af0716c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.BATTERY_CHANGED:
+        80ba93b calm.sleep.headspace.relaxingsounds/com.calm.sleep.receiver.BatteryBroadcastReceiver filter 9293858
+          Action: "android.intent.action.BATTERY_LOW"
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_CHANGED"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        47e8a1f calm.sleep.headspace.relaxingsounds/com.calm.sleep.receiver.BootCompletedIntentReceiver filter af0716c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED:
+        cb03b07 calm.sleep.headspace.relaxingsounds/com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver filter 76f7434
+          Action: "com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        badc3ed calm.sleep.headspace.relaxingsounds/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter fcd222
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        bf804b3 calm.sleep.headspace.relaxingsounds/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter f7aba70
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        ae2b521 calm.sleep.headspace.relaxingsounds/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter e3d5d46
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        badc3ed calm.sleep.headspace.relaxingsounds/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter fcd222
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.c2dm.intent.RECEIVE:
+        fb5572b calm.sleep.headspace.relaxingsounds/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 7076788
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        80ba93b calm.sleep.headspace.relaxingsounds/com.calm.sleep.receiver.BatteryBroadcastReceiver filter 9293858
+          Action: "android.intent.action.BATTERY_LOW"
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_CHANGED"
+        9819e17 calm.sleep.headspace.relaxingsounds/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7258204
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        776335 calm.sleep.headspace.relaxingsounds/com.calm.sleep.receiver.TimeZoneChangeReceiver filter 30d93ca
+          Action: "android.intent.action.DATE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          mPriority=1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        eafb1e9 calm.sleep.headspace.relaxingsounds/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c39ee6e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        eafb1e9 calm.sleep.headspace.relaxingsounds/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c39ee6e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        47e8a1f calm.sleep.headspace.relaxingsounds/com.calm.sleep.receiver.BootCompletedIntentReceiver filter af0716c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        eafb1e9 calm.sleep.headspace.relaxingsounds/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c39ee6e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        1c7fdb1 calm.sleep.headspace.relaxingsounds/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9592296
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.intent.action.DATE_CHANGED:
+        776335 calm.sleep.headspace.relaxingsounds/com.calm.sleep.receiver.TimeZoneChangeReceiver filter 30d93ca
+          Action: "android.intent.action.DATE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          mPriority=1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        2c883a5 calm.sleep.headspace.relaxingsounds/androidx.work.impl.diagnostics.DiagnosticsReceiver filter e1a837a
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        264390f calm.sleep.headspace.relaxingsounds/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter ea90d9c
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        414825d calm.sleep.headspace.relaxingsounds/com.calm.sleep.services.CalmSleepFirebaseMessagingService filter d6207d2
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        f8b80a3 calm.sleep.headspace.relaxingsounds/com.google.firebase.messaging.FirebaseMessagingService filter a99fa0
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        c9be759 calm.sleep.headspace.relaxingsounds/com.apxor.androidsdk.plugins.push.FCMListenerService filter 6b4cf1e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          thecalmsleep.com
+
+Registered ContentProviders:
+  calm.sleep.headspace.relaxingsounds/androidx.core.content.FileProvider:
+    Provider{812139a calm.sleep.headspace.relaxingsounds/androidx.core.content.FileProvider}
+  calm.sleep.headspace.relaxingsounds/splitties.init.AppCtxInitProvider:
+    Provider{4c774cb calm.sleep.headspace.relaxingsounds/splitties.init.AppCtxInitProvider}
+  calm.sleep.headspace.relaxingsounds/com.apxor.androidsdk.core.ApxorInitProvider:
+    Provider{e84c4a8 calm.sleep.headspace.relaxingsounds/com.apxor.androidsdk.core.ApxorInitProvider}
+  calm.sleep.headspace.relaxingsounds/com.google.firebase.perf.provider.FirebasePerfProvider:
+    Provider{4631bc1 calm.sleep.headspace.relaxingsounds/com.google.firebase.perf.provider.FirebasePerfProvider}
+  calm.sleep.headspace.relaxingsounds/com.squareup.picasso.PicassoProvider:
+    Provider{8edcf66 calm.sleep.headspace.relaxingsounds/com.squareup.picasso.PicassoProvider}
+  calm.sleep.headspace.relaxingsounds/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{15692a7 calm.sleep.headspace.relaxingsounds/com.google.firebase.provider.FirebaseInitProvider}
+  calm.sleep.headspace.relaxingsounds/com.facebook.internal.FacebookInitProvider:
+    Provider{6b58354 calm.sleep.headspace.relaxingsounds/com.facebook.internal.FacebookInitProvider}
+  calm.sleep.headspace.relaxingsounds/androidx.startup.InitializationProvider:
+    Provider{44b2fd calm.sleep.headspace.relaxingsounds/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [calm.sleep.headspace.relaxingsounds.apxorsdk.core]:
+    Provider{e84c4a8 calm.sleep.headspace.relaxingsounds/com.apxor.androidsdk.core.ApxorInitProvider}
+      applicationInfo=ApplicationInfo{8777bf2 calm.sleep.headspace.relaxingsounds}
+  [calm.sleep.headspace.relaxingsounds.firebaseinitprovider]:
+    Provider{15692a7 calm.sleep.headspace.relaxingsounds/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{1cfb243 calm.sleep.headspace.relaxingsounds}
+  [calm.sleep.headspace.relaxingsounds.androidx-startup]:
+    Provider{44b2fd calm.sleep.headspace.relaxingsounds/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{9180c0 calm.sleep.headspace.relaxingsounds}
+  [calm.sleep.headspace.relaxingsounds.FacebookInitProvider]:
+    Provider{6b58354 calm.sleep.headspace.relaxingsounds/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{7ae81f9 calm.sleep.headspace.relaxingsounds}
+  [calm.sleep.headspace.relaxingsounds.appctxinitprovider]:
+    Provider{4c774cb calm.sleep.headspace.relaxingsounds/splitties.init.AppCtxInitProvider}
+      applicationInfo=ApplicationInfo{7d653e calm.sleep.headspace.relaxingsounds}
+  [calm.sleep.headspace.relaxingsounds.fileprovider]:
+    Provider{812139a calm.sleep.headspace.relaxingsounds/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{36de8ec calm.sleep.headspace.relaxingsounds}
+  [calm.sleep.headspace.relaxingsounds.firebaseperfprovider]:
+    Provider{4631bc1 calm.sleep.headspace.relaxingsounds/com.google.firebase.perf.provider.FirebasePerfProvider}
+      applicationInfo=ApplicationInfo{54c44b5 calm.sleep.headspace.relaxingsounds}
+  [calm.sleep.headspace.relaxingsounds.com.squareup.picasso]:
+    Provider{8edcf66 calm.sleep.headspace.relaxingsounds/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{766974a calm.sleep.headspace.relaxingsounds}
+
+Key Set Manager:
+  [calm.sleep.headspace.relaxingsounds]
+      Signing KeySets: 88
+
+Packages:
+  Package [calm.sleep.headspace.relaxingsounds] (4c6a7d8):
+    userId=10281
+    pkg=Package{8c97731 calm.sleep.headspace.relaxingsounds}
+    codePath=/data/app/~~gaNHin3h6J-Y2Srw9-K2Kw==/calm.sleep.headspace.relaxingsounds-lx0PLiDDBgwYPkIbFPypFQ==
+    resourcePath=/data/app/~~gaNHin3h6J-Y2Srw9-K2Kw==/calm.sleep.headspace.relaxingsounds-lx0PLiDDBgwYPkIbFPypFQ==
+    legacyNativeLibraryDir=/data/app/~~gaNHin3h6J-Y2Srw9-K2Kw==/calm.sleep.headspace.relaxingsounds-lx0PLiDDBgwYPkIbFPypFQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=113 minSdk=21 targetSdk=31
+    minExtensionVersions=[]
+    versionName=0.113-bf816dd3
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.VIEW dat=https:/... }]
+    dataDir=/data/user/0/calm.sleep.headspace.relaxingsounds
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2022-11-30 14:26:56
+    lastUpdateTime=2022-11-30 14:26:57
+    packageSource=0
+    signatures=PackageSignatures{70d556d version:2, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.FOREGROUND_SERVICE
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.QUICKBOOT_POWERON
+      android.permission.ACTION_TIME_CHANGE
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.READ_CONTACTS
+      android.permission.SCHEDULE_EXACT_ALARM
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.gms.permission.AD_ID
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SCHEDULE_EXACT_ALARM: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=53979 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 14:26:57
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      calm.sleep.headspace.relaxingsounds
+    com.google.android.apps.diagnosticstool:
+      calm.sleep.headspace.relaxingsounds
+    com.google.android.settings.intelligence:
+      calm.sleep.headspace.relaxingsounds
+    com.google.android.apps.accessibility.voiceaccess:
+      calm.sleep.headspace.relaxingsounds
+    calm.sleep.headspace.relaxingsounds:
+      com.google.android.setupwizard
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      com.utorrent.client.pro
+    com.zappcues.gamingmode:
+      calm.sleep.headspace.relaxingsounds
+    com.jio.myjio:
+      calm.sleep.headspace.relaxingsounds
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [calm.sleep.headspace.relaxingsounds]
+    path: /data/app/~~gaNHin3h6J-Y2Srw9-K2Kw==/calm.sleep.headspace.relaxingsounds-lx0PLiDDBgwYPkIbFPypFQ==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:160613
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [calm.sleep.headspace.relaxingsounds]
+     base.apk - 901

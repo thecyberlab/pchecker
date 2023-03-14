@@ -1,0 +1,181 @@
+Activity Resolver Table:
+  Schemes:
+      labcoat:
+        a6e572 com.commit451.gitlab/.activity.RoutingActivity filter 9249dc3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "labcoat"
+      https:
+        a6e572 com.commit451.gitlab/.activity.RoutingActivity filter 47ac640
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          Authority: "gitlab.com": -1
+          Path: "PatternMatcher{PREFIX: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        14d70d4 com.commit451.gitlab/.activity.LaunchActivity filter e51d27d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        62e1979 com.commit451.gitlab/.widget.UserFeedWidgetConfigureActivity filter 9f9e6be
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        8a9531f com.commit451.gitlab/.widget.ProjectFeedWidgetConfigureActivity filter 66066c
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.appwidget.action.APPWIDGET_UPDATE:
+        4edd435 com.commit451.gitlab/.widget.UserFeedWidgetProvider filter 5e9b0ca
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        e9a023b com.commit451.gitlab/.widget.ProjectFeedWidgetProvider filter 8e31d58
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          gitlab.com
+
+Registered ContentProviders:
+  com.commit451.gitlab/coil.util.CoilContentProvider:
+    Provider{47101de com.commit451.gitlab/coil.util.CoilContentProvider}
+  com.commit451.gitlab/pl.aprilapps.easyphotopicker.ExtendedFileProvider:
+    Provider{2639fbf com.commit451.gitlab/pl.aprilapps.easyphotopicker.ExtendedFileProvider}
+
+ContentProvider Authorities:
+  [com.commit451.gitlab.coil]:
+    Provider{47101de com.commit451.gitlab/coil.util.CoilContentProvider}
+      applicationInfo=ApplicationInfo{8cac860 com.commit451.gitlab}
+  [com.commit451.gitlab.easyphotopicker.fileprovider]:
+    Provider{2639fbf com.commit451.gitlab/pl.aprilapps.easyphotopicker.ExtendedFileProvider}
+      applicationInfo=ApplicationInfo{1a4c119 com.commit451.gitlab}
+
+Key Set Manager:
+  [com.commit451.gitlab]
+      Signing KeySets: 6874
+
+Packages:
+  Package [com.commit451.gitlab] (85205de):
+    userId=10782
+    pkg=Package{bbc78db com.commit451.gitlab}
+    codePath=/data/app/~~18gaIkSWEWMK3fHUAowUsg==/com.commit451.gitlab-XdOXd4kgeMp7pmbrGdJFWg==
+    resourcePath=/data/app/~~18gaIkSWEWMK3fHUAowUsg==/com.commit451.gitlab-XdOXd4kgeMp7pmbrGdJFWg==
+    legacyNativeLibraryDir=/data/app/~~18gaIkSWEWMK3fHUAowUsg==/com.commit451.gitlab-XdOXd4kgeMp7pmbrGdJFWg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2070200 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=2.7.2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.commit451.gitlab
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2022-11-30 21:21:36
+    lastUpdateTime=2022-11-30 21:21:38
+    packageSource=0
+    signatures=PackageSignatures{745f78 version:1, signatures:[9283851], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_MEDIA_IMAGES
+    install permissions:
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+    User 0: ceDataInode=106217 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2022-11-30 21:21:38
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-jRxe.frro
+        /data/resource-cache/com.android.systemui-accent-gcHd.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.messaging:
+      com.commit451.gitlab
+    com.google.android.apps.diagnosticstool:
+      com.commit451.gitlab
+    com.google.android.settings.intelligence:
+      com.commit451.gitlab
+    com.google.android.apps.accessibility.voiceaccess:
+      com.commit451.gitlab
+    com.zhiliaoapp.musically:
+      com.commit451.gitlab
+    com.truecaller:
+      com.commit451.gitlab
+    com.dv.adm:
+      com.commit451.gitlab
+    com.zappcues.gamingmode:
+      com.commit451.gitlab
+    com.jio.myjio:
+      com.commit451.gitlab
+  queryable via interaction:
+    User 0:
+      [com.android.location.fused,com.android.localtransport,com.google.android.iwlan,com.android.wallpaperbackup,com.google.android.settings.future.biometrics.faceenroll,com.android.dynsystem,com.android.settings,com.android.server.telecom,com.android.inputdevices,android,com.android.providers.settings,com.google.SSRestartDetector,com.android.keychain,com.android.qns]:
+        com.commit451.gitlab
+      com.android.chrome:
+        com.commit451.gitlab
+      com.google.android.inputmethod.latin:
+        com.commit451.gitlab
+  queryable via uses-library:
+
+Dexopt state:
+  [com.commit451.gitlab]
+    path: /data/app/~~18gaIkSWEWMK3fHUAowUsg==/com.commit451.gitlab-XdOXd4kgeMp7pmbrGdJFWg==/base.apk
+      arm64: [status=verify] [reason=install]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:false
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:0
+    mLastExecutionDurationIncludingSleepMs:0
+    mLastExecutionStartUptimeMs:0
+    mLastExecutionDurationMs:0
+    now:1713063
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.commit451.gitlab]
+     base.apk - 305

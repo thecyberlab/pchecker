@@ -1,0 +1,226 @@
+Activity Resolver Table:
+  Schemes:
+      instabug-bug:
+        4688a85 com.compscieddy.writeaday/com.instabug.bug.view.BugReportingActivity filter 5f7ce07
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "instabug-bug"
+          Authority: "instabug-disclaimer.com": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        83ae90b com.compscieddy.writeaday/.activities.LandingActivity filter 51d5021
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        d98c3e8 com.compscieddy.writeaday/.NewEntryWidgetConfigurationActivity filter 66b5c46
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        32c4a01 com.compscieddy.writeaday/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter a2ee259
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        62e00a6 com.compscieddy.writeaday/com.google.android.gms.analytics.CampaignTrackingReceiver filter 3f0f6d2
+          Action: "com.android.vending.INSTALL_REFERRER"
+        c2d0ae7 com.compscieddy.writeaday/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter b0fa6a0
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        e2a3694 com.compscieddy.writeaday/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 13943a3
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        f12853d com.compscieddy.writeaday/.TodayAppWidgetProvider filter bb30b34
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        9a98132 com.compscieddy.writeaday/.NewEntryAppWidgetProvider filter 6ddcd5d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        1356e83 com.compscieddy.writeaday/.WriteadayTileService filter dd88ccc permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      com.google.firebase.INSTANCE_ID_EVENT:
+        7be2800 com.compscieddy.writeaday/.MyFirebaseInstanceIDService filter 39276ff
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+      com.google.firebase.MESSAGING_EVENT:
+        c273839 com.compscieddy.writeaday/.MyFirebaseMessagingService filter 8c3ae1e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        4ea7e7e com.compscieddy.writeaday/com.google.firebase.messaging.FirebaseMessagingService filter 1e24b15
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+
+Registered ContentProviders:
+  com.compscieddy.writeaday/androidx.core.content.FileProvider:
+    Provider{dd66fdf com.compscieddy.writeaday/androidx.core.content.FileProvider}
+  com.compscieddy.writeaday/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{fddc42c com.compscieddy.writeaday/com.crashlytics.android.CrashlyticsInitProvider}
+  com.compscieddy.writeaday/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{93a1ef5 com.compscieddy.writeaday/com.google.firebase.provider.FirebaseInitProvider}
+  com.compscieddy.writeaday/com.facebook.internal.FacebookInitProvider:
+    Provider{9ac048a com.compscieddy.writeaday/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.compscieddy.writeaday.FacebookInitProvider]:
+    Provider{9ac048a com.compscieddy.writeaday/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{45c2afb com.compscieddy.writeaday}
+  [com.compscieddy.writeaday.fileprovider]:
+    Provider{dd66fdf com.compscieddy.writeaday/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{45c2afb com.compscieddy.writeaday}
+  [com.compscieddy.writeaday.crashlyticsinitprovider]:
+    Provider{fddc42c com.compscieddy.writeaday/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{45c2afb com.compscieddy.writeaday}
+  [com.compscieddy.writeaday.firebaseinitprovider]:
+    Provider{93a1ef5 com.compscieddy.writeaday/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{45c2afb com.compscieddy.writeaday}
+
+Key Set Manager:
+  [com.compscieddy.writeaday]
+      Signing KeySets: 9
+
+Packages:
+  Package [com.compscieddy.writeaday] (4926cc4):
+    userId=10212
+    pkg=Package{f6f8e88 com.compscieddy.writeaday}
+    codePath=/data/app/com.compscieddy.writeaday-CteiH3NyeFFYE1kws6KRzA==
+    resourcePath=/data/app/com.compscieddy.writeaday-CteiH3NyeFFYE1kws6KRzA==
+    legacyNativeLibraryDir=/data/app/com.compscieddy.writeaday-CteiH3NyeFFYE1kws6KRzA==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=179 minSdk=21 targetSdk=29
+    versionName=5.0
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{45c2afb com.compscieddy.writeaday}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE ]
+    dataDir=/data/user/0/com.compscieddy.writeaday
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2021-03-06 07:15:44
+    firstInstallTime=2021-03-06 07:15:45
+    lastUpdateTime=2021-03-06 07:15:45
+    signatures=PackageSignatures{31437ad version:1, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    requested permissions:
+      android.permission.WAKE_LOCK
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.GET_ACCOUNTS
+      android.permission.BLUETOOTH
+      android.permission.VIBRATE
+      com.android.vending.BILLING
+      android.permission.USE_FINGERPRINT
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=6696 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+
+Package Changes:
+  Sequence number=153
+  User 0:
+    seq=5, package=com.google.android.gms
+    seq=11, package=com.kajda.fuelio
+    seq=16, package=me.piere.christmas
+    seq=18, package=ak.alizandro.smartaudiobookplayer
+    seq=20, package=amazing.three_d.icons
+    seq=22, package=com.first75.voicerecorder2pro
+    seq=24, package=digifit.virtuagym.client.android
+    seq=26, package=com.paget96.lspeed
+    seq=28, package=yo.app
+    seq=32, package=com.in.w3d
+    seq=34, package=com.luzapplications.alessio.wallooppro
+    seq=36, package=com.alesp.orologiomondiale.pro
+    seq=38, package=co.windyapp.android
+    seq=40, package=com.yuanwofei.cardemulator.pro
+    seq=44, package=com.lb.app_manager
+    seq=48, package=com.microblink.photomath
+    seq=50, package=studio14.application.caeluswhite
+    seq=52, package=com.david.android.languageswitch
+    seq=54, package=com.perfectapps.muviz
+    seq=56, package=com.protectstar.ishredder.pro
+    seq=58, package=net.xnano.android.ftpserver
+    seq=60, package=com.aezowie.mycalpro
+    seq=62, package=com.bialy.zonelauncher
+    seq=66, package=com.indigomadina.tabloid
+    seq=68, package=com.plexapp.android
+    seq=70, package=com.mixplorer
+    seq=72, package=com.mobilefootie.wc2010
+    seq=74, package=de.dwd.warnapp
+    seq=76, package=oos.dark.material
+    seq=78, package=com.intsig.camscanner
+    seq=82, package=com.indigomadina.spheroid
+    seq=84, package=com.footej.camera
+    seq=89, package=com.cray.software.justreminderpro
+    seq=91, package=com.sofascore.results
+    seq=97, package=pl.solidexplorer2
+    seq=99, package=com.androidev.xhafe.earthquakepro
+    seq=101, package=be.inet.rainwidget.donate
+    seq=103, package=jp.gr.java_conf.soboku.batterymeter
+    seq=105, package=com.iioannou.phototools.pro
+    seq=108, package=com.unvoid.borealis
+    seq=112, package=com.happening.studios.swipeforfacebookfree
+    seq=114, package=com.rookiestudio.perfectviewer
+    seq=117, package=com.osheden.azulox
+    seq=120, package=com.shaiban.audioplayer.mplayer
+    seq=122, package=com.fullreader
+    seq=124, package=com.pakdata.easyurdu
+    seq=126, package=eu.faircode.netguard
+    seq=128, package=ru.yandex.music
+    seq=132, package=indigomadina.furatto.ui
+    seq=134, package=com.brit.swiftblack.layers
+    seq=136, package=com.brit.swiftdark.substratum
+    seq=138, package=o.o.joey
+    seq=140, package=at.bitfire.davdroid
+    seq=142, package=com.overlook.android.fing
+    seq=144, package=ru.involta.metro
+    seq=146, package=com.iudesk.android.photo.editor
+    seq=148, package=hastamev.oneuidark.com
+    seq=151, package=com.nll.asr
+    seq=152, package=com.compscieddy.writeaday
+
+
+Dexopt state:
+  [com.compscieddy.writeaday]
+    path: /data/app/com.compscieddy.writeaday-CteiH3NyeFFYE1kws6KRzA==/base.apk
+      arm: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.compscieddy.writeaday]
+     base.apk - 3632
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:
